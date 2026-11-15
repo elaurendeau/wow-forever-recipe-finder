@@ -17,7 +17,7 @@ Full doc index: [README.md](README.md).
 
 ## Branching
 
-`main` is this repository's intended mainline/default branch, matching the sister project's convention. **As of this repo's first commits, the actual default branch is still `master`** — rename it to `main` before this diverges further, and treat `master` as legacy from that point on, same as the sister project does. Feature branches are cut from `main` (or `master`, until renamed), and PRs target it.
+`main` is this repository's mainline/default branch, matching the sister project's convention. A `master` branch exists in history (the original default before the rename) — treat it as legacy; never create, target, or base new work off it. Feature branches are cut from `main`, and PRs target `main`.
 
 ## Diagnosis discipline
 
@@ -35,6 +35,6 @@ Whenever a bug or gap is found and fixed, add a test (or, if genuinely untestabl
 
 Whenever a UI layout is added or changed, check it against the approved mockup and the relevant [PRD.md](docs/PRD.md) requirement section before considering the work done. PRD.md's prose describes intent and requirements, not exact layout — when the two seem to disagree, the mockup wins on placement/structure/styling, and PRD.md wins on functional requirements (what must be shown, when, in what precision).
 
-**The mockup currently exists only as a Claude Design-canvas artifact, not yet a committed file in this repo** — export/commit it (as static HTML/CSS, the same non-framework treatment the sister project gives its own `docs/mockups/*.html`) before relying on "check the mockup" as an instruction a future session can actually follow without external context. Until that happens, treat the dark trading-terminal style described in [docs/TECH_STACK.md § UI Style](docs/TECH_STACK.md#ui-style) as the fallback source of truth.
+The settled reference is [docs/mockups/recipe-finder-reference.html](mockups/recipe-finder-reference.html) — open it directly in a browser, the same non-framework HTML/CSS/JS treatment the sister project gives its own `docs/mockups/*.html`. It started as a Claude Design-canvas artifact and was hand-converted to plain HTML/CSS/vanilla JS for this file; the two can drift if the artifact is iterated on again without this file being updated to match — this file is the one that counts for implementation.
 
 When a mockup doesn't yet cover a new element, update the mockup itself in the same change, not just the real component — a mockup that's drifted out of sync with the actual UI stops being a reliable reference for the next change.

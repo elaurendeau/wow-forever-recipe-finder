@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe Finder — Reference Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d12;
+    --surface: #16161e;
+    --surface-2: #1d1d27;
+    --fg: #ece9e2;
+    --muted: #8b8a97;
+    --border: #2b2b38;
+    --accent: #cf9a35;
+    --accent-fg: #1a1206;
+    --good: #4ade8a;
+    --bad: #f0786a;
+    --mock-bg: #2a2410;
+    --mock-fg: #e0b957;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+  a { color: var(--accent); }
+  ::placeholder { color: var(--muted); opacity: 1; }
+  input[type="checkbox"] { accent-color: var(--accent); }
+  button { font-family: inherit; }
+
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+  .topbar-left { display: flex; align-items: center; gap: 12px; }
+  h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 19px; }
+  .mock-pill {
+    background: var(--mock-bg); color: var(--mock-fg); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+  }
+  .freshness { color: var(--muted); font-size: 12.5px; font-family: var(--font-mono); }
+  .topbar-right { display: flex; align-items: center; gap: 10px; }
+  .icon-btn {
+    all: unset; cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center;
+    justify-content: center; border: 1px solid var(--border); border-radius: 7px;
+  }
+  .upload-pill {
+    display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 12px; background: var(--surface-2);
+  }
+  .upload-pill button { all: unset; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--accent); }
+
+  .page { padding: 20px 24px 50px; display: flex; flex-direction: column; gap: 14px; }
+
+  .tabs { display: flex; gap: 22px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .tab {
+    border: none; cursor: pointer; background: transparent; padding: 0 0 11px; font-family: var(--font-body);
+    font-size: 13.5px; font-weight: 600; display: flex; align-items: center; color: var(--fg);
+    border-bottom: 2px solid transparent;
+  }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab.placeholder { color: var(--muted); }
+  .soon-pill {
+    margin-left: 6px; font-size: 9.5px; font-weight: 700; color: var(--muted); background: var(--surface-2);
+    padding: 1px 6px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.03em;
+  }
+
+  .toggles { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .toggles label { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--fg); cursor: pointer; }
+  .toggles input[type="checkbox"] { width: 15px; height: 15px; }
+  .mock-note { margin-left: auto; font-size: 11.5px; color: var(--muted); font-style: italic; }
+
+  .empty-state {
+    background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 56px 24px;
+    text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .empty-state h3 { margin: 0; font-family: var(--font-display); color: var(--fg); font-size: 18px; }
+  .empty-state p { margin: 0; max-width: 46ch; font-size: 13.5px; }
+
+  .stats { display: flex; gap: 18px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+  .stats strong { color: var(--fg); font-size: 15px; font-family: var(--font-display); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 820px; }
+  th {
+    text-align: left; padding: 9px 14px 2px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); border-bottom: 1px solid var(--border);
+  }
+  th.num { text-align: right; }
+  th.sorted { color: var(--accent); }
+  .filter-row td { padding: 0 14px 8px; background: var(--surface-2); border-bottom: 1px solid var(--border); }
+  .filter-row td.num { text-align: right; }
+  .filter-row input {
+    width: 52px; font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-radius: 5px;
+    color: var(--muted); padding: 2px 6px; text-align: right; font-family: var(--font-mono);
+  }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  td { padding: 10px 14px; vertical-align: middle; }
+  td.num { text-align: right; font-family: var(--font-mono); }
+  .item-cell { display: flex; align-items: center; gap: 9px; }
+  .item-icon { width: 22px; height: 22px; border-radius: 5px; background: var(--surface-2); border: 1px solid var(--border); flex-shrink: 0; }
+  .item-name { font-weight: 600; }
+  .item-tier { color: var(--muted); font-size: 11px; }
+  .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .profit-pos { color: var(--good); font-weight: 600; }
+  .muted-cell { color: var(--muted); }
+
+  .calc-fab {
+    position: fixed; left: 24px; bottom: 24px; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center;
+    justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 16px; }
+    .topbar { padding: 12px 16px; flex-wrap: wrap; }
+    .freshness { order: 3; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7" stroke="#8b8a97" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="12" x2="20" y2="12" stroke="#8b8a97" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="17" x2="20" y2="17" stroke="#8b8a97" stroke-width="2" stroke-linecap="round"/></svg>
+    <h1>WoW Forever Recipe Finder</h1>
+    <span class="mock-pill">Mockup</span>
+  </div>
+  <div class="freshness">Last scan: 2h ago &middot; Forever-US</div>
+  <div class="topbar-right">
+    <span style="color: var(--muted); font-size: 12px;">Data</span>
+    <button type="button" class="icon-btn" aria-label="Refresh">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="23 4 23 10 17 10" stroke="#8b8a97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="1 20 1 14 7 14" stroke="#8b8a97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" stroke="#8b8a97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="upload-pill">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16V4M12 4L7 9M12 4l5 5" stroke="#cf9a35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="#cf9a35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <button type="button">Upload AppData.lua</button>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="tabs" id="tabs"></div>
+
+  <div class="toggles">
+    <label><input type="checkbox" checked> Trainer</label>
+    <label><input type="checkbox" checked> Drop</label>
+    <label><input type="checkbox" checked> Vendor</label>
+    <span class="mock-note">filters shown for layout &mdash; not wired up in this mockup</span>
+  </div>
+
+  <div id="emptyState" class="empty-state" hidden>
+    <h3 id="emptyLabel"></h3>
+    <p>Same pipeline as Tailoring/Enchanting &mdash; roughly 10&ndash;30 min of background scraping once we start it.</p>
+  </div>
+
+  <div id="tableSection">
+    <div class="stats" style="margin-bottom: 12px;">
+      <span><strong id="statShown"></strong> shown</span>
+      <span><strong id="statFull"></strong> full data</span>
+      <span><strong id="statGap"></strong> no AH data</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th class="num">Skill</th>
+            <th>Source</th>
+            <th class="num sorted">Sold/day &darr;</th>
+            <th class="num">Confidence</th>
+            <th class="num">Price</th>
+            <th class="num">Profit/day</th>
+          </tr>
+          <tr class="filter-row">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="num"><input type="text" placeholder="min"></td>
+            <td class="num"><input type="text" placeholder="min %"></td>
+            <td class="num"><input type="text" placeholder="max"></td>
+            <td class="num"><input type="text" placeholder="min"></td>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="calc-fab" aria-label="Crate cost calculator" title="Crate cost calculator">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" stroke="#1a1206" stroke-width="2"/><line x1="8" y1="6" x2="16" y2="6" stroke="#1a1206" stroke-width="2"/><circle cx="8" cy="11" r="1" fill="#1a1206"/><circle cx="12" cy="11" r="1" fill="#1a1206"/><circle cx="16" cy="11" r="1" fill="#1a1206"/><circle cx="8" cy="15" r="1" fill="#1a1206"/><circle cx="12" cy="15" r="1" fill="#1a1206"/><circle cx="16" cy="15" r="1" fill="#1a1206"/><line x1="8" y1="19" x2="16" y2="19" stroke="#1a1206" stroke-width="2"/></svg>
+</button>
+
+<script>
+  const TAILORING_ROWS = [
+    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.9", conf: "84%", price: "0.66g", profit: "31.31g" },
+    { name: "Bolt of Mageweave", tier: "Journeyman", skill: 140, source: "Trainer", spd: "202.0", conf: "74%", price: "0.30g", profit: "18.02g" },
+    { name: "Bolt of Woolen Cloth", tier: "Apprentice", skill: 55, source: "Trainer", spd: "521.5", conf: "81%", price: "0.03g", profit: "13.04g" },
+    { name: "Black Silk Pack", tier: "Journeyman", skill: 150, source: "Drop", spd: "90.6", conf: "64%", price: "0.69g", profit: "12.29g" },
+    { name: "Red Woolen Bag", tier: "Journeyman", skill: 90, source: "Drop", spd: "130.2", conf: "77%", price: "0.22g", profit: "8.97g" },
+    { name: "Robes of Arcana", tier: "Journeyman", skill: 125, source: "Drop", spd: "21.8", conf: "57%", price: "0.70g", profit: "4.19g" },
+  ];
+  const ENCHANTING_ROWS = [
+    { name: "Greater Magic Wand", tier: "Apprentice", skill: 70, source: "Trainer", spd: "552.0", conf: "66%", price: "0.29g", profit: "78.38g" },
+    { name: "Lesser Mystic Wand", tier: "Expert", skill: 155, source: "Trainer", spd: "14.8", conf: "52%", price: "0.50g", profit: "47.09g" },
+    { name: "Lesser Magic Wand", tier: "Apprentice", skill: 10, source: "Trainer", spd: "568.2", conf: "53%", price: "0.19g", profit: "12.50g" },
+    { name: "Minor Wizard Oil", tier: "Apprentice", skill: 45, source: "Vendor", spd: "117.2", conf: "57%", price: "0.29g", profit: "12.89g" },
+    { name: "Twisted Nether Wand", tier: "Expert", skill: 185, source: "Trainer", spd: "2.3", conf: "41%", price: "1.38g", profit: "n/a" },
+  ];
+  const PROFESSIONS = [
+    { key: "tailoring", label: "Tailoring", rows: TAILORING_ROWS, stats: { shown: 6, full: 182, gap: 280 } },
+    { key: "enchanting", label: "Enchanting", rows: ENCHANTING_ROWS, stats: { shown: 5, full: 9, gap: 71 } },
+    { key: "blacksmithing", label: "Blacksmithing", rows: null },
+    { key: "leatherworking", label: "Leatherworking", rows: null },
+    { key: "alchemy", label: "Alchemy", rows: null },
+    { key: "engineering", label: "Engineering", rows: null },
+    { key: "jewelcrafting", label: "Jewelcrafting", rows: null },
+    { key: "inscription", label: "Inscription", rows: null },
+    { key: "cooking", label: "Cooking", rows: null },
+    { key: "firstaid", label: "First Aid", rows: null },
+  ];
+
+  let active = "tailoring";
+
+  const tabsEl = document.getElementById("tabs");
+  function renderTabs() {
+    tabsEl.innerHTML = "";
+    PROFESSIONS.forEach((p) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "tab" + (p.key === active ? " active" : "") + (!p.rows ? " placeholder" : "");
+      btn.textContent = p.label;
+      if (!p.rows) {
+        const pill = document.createElement("span");
+        pill.className = "soon-pill";
+        pill.textContent = "soon";
+        btn.appendChild(pill);
+      }
+      btn.addEventListener("click", () => { active = p.key; render(); });
+      tabsEl.appendChild(btn);
+    });
+  }
+
+  function render() {
+    renderTabs();
+    const current = PROFESSIONS.find((p) => p.key === active);
+    const emptyState = document.getElementById("emptyState");
+    const tableSection = document.getElementById("tableSection");
+
+    if (!current.rows) {
+      emptyState.hidden = false;
+      tableSection.hidden = true;
+      document.getElementById("emptyLabel").textContent = current.label + " isn't scraped yet";
+      return;
+    }
+    emptyState.hidden = true;
+    tableSection.hidden = false;
+
+    document.getElementById("statShown").textContent = current.stats.shown;
+    document.getElementById("statFull").textContent = current.stats.full;
+    document.getElementById("statGap").textContent = current.stats.gap;
+
+    const tbody = document.getElementById("tableBody");
+    tbody.innerHTML = current.rows.map((row) => `
+      <tr>
+        <td>
+          <div class="item-cell">
+            <div class="item-icon"></div>
+            <div>
+              <div class="item-name">${row.name}</div>
+              <div class="item-tier">${row.tier}</div>
+            </div>
+          </div>
+        </td>
+        <td class="num muted-cell">${row.skill}</td>
+        <td><span class="source-pill">${row.source}</span></td>
+        <td class="num">${row.spd}</td>
+        <td class="num muted-cell">${row.conf}</td>
+        <td class="num">${row.price}</td>
+        <td class="num profit-pos">${row.profit}</td>
+      </tr>
+    `).join("");
+  }
+
+  render();
+</script>
+</body>
+</html>
