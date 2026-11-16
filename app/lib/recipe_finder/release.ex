@@ -24,12 +24,20 @@ defmodule WowForeverRecipeFinder.Release do
   file's catalog is replaced atomically, not appended. Run in a release
   via bin/seed (no Mix available there, hence a Release function rather
   than priv/repo/seeds.exs, which delegates here for dev/test use).
+
+  A full catalog load is a few thousand sequential queries in one
+  transaction — fine locally, but Ecto's default 15s per-query timeout
+  can be too tight over a hosted free-tier DB's connection/pooler
+  latency. This runs rarely (deploy boot, not a user request), so a
+  generous override here is the right tradeoff over chasing a timeout
+  flake with retries.
   """
   def seed do
     load_app()
 
     for repo <- repos() do
-      {:ok, _, _} = Ecto.Migrator.with_repo(repo, fn _repo -> load_catalog_seeds() end)
+      {:ok, _, _} =
+        Ecto.Migrator.with_repo(repo, fn _repo -> load_catalog_seeds() end, timeout: 120_000)
     end
   end
 
