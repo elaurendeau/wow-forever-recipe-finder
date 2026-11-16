@@ -1,0 +1,6345 @@
+{
+  "profession": {
+    "slug": "engineering",
+    "display_name": "Engineering"
+  },
+  "patterns": [
+    {
+      "name": "Rough Blasting Powder",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": null,
+      "wiki_slug": "Rough_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4357,
+        "display_name": "Rough Blasting Powder",
+        "wiki_slug": "Rough_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2835,
+          "display_name": "Rough Stone",
+          "wiki_slug": "Rough_Stone",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Reagent Bot",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "quest",
+      "wiki_slug": "Reagent_Bot",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279950,
+        "display_name": "Reagent Bot",
+        "wiki_slug": "Reagent_Bot"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4361,
+          "display_name": "Copper Tube",
+          "wiki_slug": "Copper_Tube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Crafted Light Shot",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": null,
+      "wiki_slug": "Crafted_Light_Shot",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 8067,
+        "display_name": "Crafted Light Shot",
+        "wiki_slug": "Crafted_Light_Shot"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Rough Dynamite",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": null,
+      "wiki_slug": "Rough_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4358,
+        "display_name": "Rough Dynamite",
+        "wiki_slug": "Rough_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4357,
+          "display_name": "Rough Blasting Powder",
+          "wiki_slug": "Rough_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2589,
+          "display_name": "Linen Cloth",
+          "wiki_slug": "Linen_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Handful of Copper Bolts",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": "trainer",
+      "wiki_slug": "Handful_of_Copper_Bolts",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4359,
+        "display_name": "Handful of Copper Bolts",
+        "wiki_slug": "Handful_of_Copper_Bolts"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Rough Copper Bomb",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": "trainer",
+      "wiki_slug": "Rough_Copper_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4360,
+        "display_name": "Rough Copper Bomb",
+        "wiki_slug": "Rough_Copper_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4357,
+          "display_name": "Rough Blasting Powder",
+          "wiki_slug": "Rough_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Arclight Spanner",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Arclight_Spanner",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6219,
+        "display_name": "Arclight Spanner",
+        "wiki_slug": "Arclight_Spanner"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "name": "Copper Tube",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Copper_Tube",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4361,
+        "display_name": "Copper Tube",
+        "wiki_slug": "Copper_Tube"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2880,
+          "display_name": "Weak Flux",
+          "wiki_slug": "Weak_Flux",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Rough Boomstick",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Rough_Boomstick",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4362,
+        "display_name": "Rough Boomstick",
+        "wiki_slug": "Rough_Boomstick"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4399,
+          "display_name": "Wooden Stock",
+          "wiki_slug": "Wooden_Stock",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Crude Scope",
+      "tier": "apprentice",
+      "skill": 60,
+      "source": "trainer",
+      "wiki_slug": "Crude_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4405,
+        "display_name": "Crude Scope",
+        "wiki_slug": "Crude_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 774,
+          "display_name": "Malachite",
+          "wiki_slug": "Malachite",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Copper Modulator",
+      "tier": "apprentice",
+      "skill": 65,
+      "source": "trainer",
+      "wiki_slug": "Copper_Modulator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4363,
+        "display_name": "Copper Modulator",
+        "wiki_slug": "Copper_Modulator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2589,
+          "display_name": "Linen Cloth",
+          "wiki_slug": "Linen_Cloth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Coarse Blasting Powder",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "trainer",
+      "wiki_slug": "Coarse_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4364,
+        "display_name": "Coarse Blasting Powder",
+        "wiki_slug": "Coarse_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2836,
+          "display_name": "Coarse Stone",
+          "wiki_slug": "Coarse_Stone",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Crafted Heavy Shot",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "trainer",
+      "wiki_slug": "Crafted_Heavy_Shot",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8068,
+        "display_name": "Crafted Heavy Shot",
+        "wiki_slug": "Crafted_Heavy_Shot"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Coarse Dynamite",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "trainer",
+      "wiki_slug": "Coarse_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4365,
+        "display_name": "Coarse Dynamite",
+        "wiki_slug": "Coarse_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2589,
+          "display_name": "Linen Cloth",
+          "wiki_slug": "Linen_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Target Dummy",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": "trainer",
+      "wiki_slug": "Target_Dummy",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4366,
+        "display_name": "Target Dummy",
+        "wiki_slug": "Target_Dummy"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Silver Contact",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "trainer",
+      "wiki_slug": "Silver_Contact",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4404,
+        "display_name": "Silver Contact",
+        "wiki_slug": "Silver_Contact"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2842,
+          "display_name": "Silver Bar",
+          "wiki_slug": "Silver_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "EZ-Thro Dynamite",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "drop",
+      "wiki_slug": "EZ-Thro_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6714,
+        "display_name": "EZ-Thro Dynamite",
+        "wiki_slug": "EZ-Thro_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Practice Lock",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "trainer",
+      "wiki_slug": "Practice_Lock",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6712,
+        "display_name": "Practice Lock",
+        "wiki_slug": "Practice_Lock"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2880,
+          "display_name": "Weak Flux",
+          "wiki_slug": "Weak_Flux",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flying Tiger Goggles",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "trainer",
+      "wiki_slug": "Flying_Tiger_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4368,
+        "display_name": "Flying Tiger Goggles",
+        "wiki_slug": "Flying_Tiger_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 818,
+          "display_name": "Tigerseye",
+          "wiki_slug": "Tigerseye",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Small Seaforium Charge",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "drop",
+      "wiki_slug": "Small_Seaforium_Charge",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4367,
+        "display_name": "Small Seaforium Charge",
+        "wiki_slug": "Small_Seaforium_Charge"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2318,
+          "display_name": "Light Leather",
+          "wiki_slug": "Light_Leather",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Bronze Tube",
+      "tier": "journeyman",
+      "skill": 105,
+      "source": "trainer",
+      "wiki_slug": "Bronze_Tube",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4371,
+        "display_name": "Bronze Tube",
+        "wiki_slug": "Bronze_Tube"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Large Copper Bomb",
+      "tier": "journeyman",
+      "skill": 105,
+      "source": "trainer",
+      "wiki_slug": "Large_Copper_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4370,
+        "display_name": "Large Copper Bomb",
+        "wiki_slug": "Large_Copper_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2840,
+          "display_name": "Copper Bar",
+          "wiki_slug": "Copper_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4404,
+          "display_name": "Silver Contact",
+          "wiki_slug": "Silver_Contact",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Deadly Blunderbuss",
+      "tier": "journeyman",
+      "skill": 105,
+      "source": "trainer",
+      "wiki_slug": "Deadly_Blunderbuss",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4369,
+        "display_name": "Deadly Blunderbuss",
+        "wiki_slug": "Deadly_Blunderbuss"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4406,
+          "display_name": "Standard Scope",
+          "wiki_slug": "Standard_Scope",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4399,
+          "display_name": "Wooden Stock",
+          "wiki_slug": "Wooden_Stock",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Standard Scope",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "trainer",
+      "wiki_slug": "Standard_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4406,
+        "display_name": "Standard Scope",
+        "wiki_slug": "Standard_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1206,
+          "display_name": "Moss Agate",
+          "wiki_slug": "Moss_Agate",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Small Bronze Bomb",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "trainer",
+      "wiki_slug": "Small_Bronze_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4374,
+        "display_name": "Small Bronze Bomb",
+        "wiki_slug": "Small_Bronze_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4404,
+          "display_name": "Silver Contact",
+          "wiki_slug": "Silver_Contact",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lovingly Crafted Boomstick",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "vendor",
+      "wiki_slug": "Lovingly_Crafted_Boomstick",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4372,
+        "display_name": "Lovingly Crafted Boomstick",
+        "wiki_slug": "Lovingly_Crafted_Boomstick"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4359,
+          "display_name": "Handful of Copper Bolts",
+          "wiki_slug": "Handful_of_Copper_Bolts",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4400,
+          "display_name": "Heavy Stock",
+          "wiki_slug": "Heavy_Stock",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1206,
+          "display_name": "Moss Agate",
+          "wiki_slug": "Moss_Agate",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Shadow Goggles",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "drop",
+      "wiki_slug": "Shadow_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4373,
+        "display_name": "Shadow Goggles",
+        "wiki_slug": "Shadow_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 1210,
+          "display_name": "Shadowgem",
+          "wiki_slug": "Shadowgem",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Crafted Solid Shot",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Crafted_Solid_Shot",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8069,
+        "display_name": "Crafted Solid Shot",
+        "wiki_slug": "Crafted_Solid_Shot"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Heavy Blasting Powder",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Heavy_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4377,
+        "display_name": "Heavy Blasting Powder",
+        "wiki_slug": "Heavy_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2838,
+          "display_name": "Heavy Stone",
+          "wiki_slug": "Heavy_Stone",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Heavy Dynamite",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Heavy_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4378,
+        "display_name": "Heavy Dynamite",
+        "wiki_slug": "Heavy_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Small Blue Rocket",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": null,
+      "wiki_slug": "Small_Blue_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21558,
+        "display_name": "Small Blue Rocket",
+        "wiki_slug": "Small_Blue_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Small Green Rocket",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": null,
+      "wiki_slug": "Small_Green_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21559,
+        "display_name": "Small Green Rocket",
+        "wiki_slug": "Small_Green_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Small Red Rocket",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": null,
+      "wiki_slug": "Small_Red_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21557,
+        "display_name": "Small Red Rocket",
+        "wiki_slug": "Small_Red_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flame Deflector",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "drop",
+      "wiki_slug": "Flame_Deflector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4376,
+        "display_name": "Flame Deflector",
+        "wiki_slug": "Flame_Deflector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4402,
+          "display_name": "Small Flame Sac",
+          "wiki_slug": "Small_Flame_Sac",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Whirring Bronze Gizmo",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Whirring_Bronze_Gizmo",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4375,
+        "display_name": "Whirring Bronze Gizmo",
+        "wiki_slug": "Whirring_Bronze_Gizmo"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Universal Remote",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "drop",
+      "wiki_slug": "Gnomish_Universal_Remote",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 7506,
+        "display_name": "Gnomish Universal Remote",
+        "wiki_slug": "Gnomish_Universal_Remote"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 814,
+          "display_name": "Flask of Oil",
+          "wiki_slug": "Flask_of_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 818,
+          "display_name": "Tigerseye",
+          "wiki_slug": "Tigerseye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 774,
+          "display_name": "Malachite",
+          "wiki_slug": "Malachite",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Silver-Plated Shotgun",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "trainer",
+      "wiki_slug": "Silver-plated_Shotgun",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4379,
+        "display_name": "Silver-Plated Shotgun",
+        "wiki_slug": "Silver-plated_Shotgun"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4400,
+          "display_name": "Heavy Stock",
+          "wiki_slug": "Heavy_Stock",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2842,
+          "display_name": "Silver Bar",
+          "wiki_slug": "Silver_Bar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Shredder Autosalvage Unit",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": "drop",
+      "wiki_slug": "Shredder_Autosalvage_Unit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 210147,
+        "display_name": "Shredder Autosalvage Unit",
+        "wiki_slug": "Shredder_Autosalvage_Unit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4382,
+          "display_name": "Bronze Framework",
+          "wiki_slug": "Bronze_Framework",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ornate Spyglass",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": "trainer",
+      "wiki_slug": "Ornate_Spyglass",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5507,
+        "display_name": "Ornate Spyglass",
+        "wiki_slug": "Ornate_Spyglass"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1206,
+          "display_name": "Moss Agate",
+          "wiki_slug": "Moss_Agate",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Repair Bot",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Repair_Bot_(Camping)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279949,
+        "display_name": "Repair Bot",
+        "wiki_slug": "Repair_Bot_(Camping)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Big Bronze Bomb",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "trainer",
+      "wiki_slug": "Big_Bronze_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4380,
+        "display_name": "Big Bronze Bomb",
+        "wiki_slug": "Big_Bronze_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4404,
+          "display_name": "Silver Contact",
+          "wiki_slug": "Silver_Contact",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Recombobulator",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Minor_Recombobulator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4381,
+        "display_name": "Minor Recombobulator",
+        "wiki_slug": "Minor_Recombobulator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1206,
+          "display_name": "Moss Agate",
+          "wiki_slug": "Moss_Agate",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Bronze Framework",
+      "tier": "journeyman",
+      "skill": 145,
+      "source": "trainer",
+      "wiki_slug": "Bronze_Framework",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4382,
+        "display_name": "Bronze Framework",
+        "wiki_slug": "Bronze_Framework"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Moonsight Rifle",
+      "tier": "journeyman",
+      "skill": 145,
+      "source": "drop",
+      "wiki_slug": "Moonsight_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4383,
+        "display_name": "Moonsight Rifle",
+        "wiki_slug": "Moonsight_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4400,
+          "display_name": "Heavy Stock",
+          "wiki_slug": "Heavy_Stock",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1705,
+          "display_name": "Lesser Moonstone",
+          "wiki_slug": "Lesser_Moonstone",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Aquadynamic Fish Attractor",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "trainer",
+      "wiki_slug": "Aquadynamic_Fish_Attractor",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6533,
+        "display_name": "Aquadynamic Fish Attractor",
+        "wiki_slug": "Aquadynamic_Fish_Attractor"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2841,
+          "display_name": "Bronze Bar",
+          "wiki_slug": "Bronze_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 6530,
+          "display_name": "Nightcrawlers",
+          "wiki_slug": "Nightcrawlers",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4364,
+          "display_name": "Coarse Blasting Powder",
+          "wiki_slug": "Coarse_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Blue Firework",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "vendor",
+      "wiki_slug": "Blue_Firework",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9312,
+        "display_name": "Blue Firework",
+        "wiki_slug": "Blue_Firework"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Green Firework",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "vendor",
+      "wiki_slug": "Green_Firework",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9313,
+        "display_name": "Green Firework",
+        "wiki_slug": "Green_Firework"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Red Firework",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "vendor",
+      "wiki_slug": "Red_Firework",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9318,
+        "display_name": "Red Firework",
+        "wiki_slug": "Red_Firework"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gold Power Core",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "trainer",
+      "wiki_slug": "Gold_Power_Core",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10558,
+        "display_name": "Gold Power Core",
+        "wiki_slug": "Gold_Power_Core"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3577,
+          "display_name": "Gold Bar",
+          "wiki_slug": "Gold_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Explosive Sheep",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "trainer",
+      "wiki_slug": "Explosive_Sheep",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4384,
+        "display_name": "Explosive Sheep",
+        "wiki_slug": "Explosive_Sheep"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4382,
+          "display_name": "Bronze Framework",
+          "wiki_slug": "Bronze_Framework",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Green Tinted Goggles",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "trainer",
+      "wiki_slug": "Green_Tinted_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4385,
+        "display_name": "Green Tinted Goggles",
+        "wiki_slug": "Green_Tinted_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 1206,
+          "display_name": "Moss Agate",
+          "wiki_slug": "Moss_Agate",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4368,
+          "display_name": "Flying Tiger Goggles",
+          "wiki_slug": "Flying_Tiger_Goggles",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ice Deflector",
+      "tier": "expert",
+      "skill": 155,
+      "source": "vendor",
+      "wiki_slug": "Ice_Deflector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4386,
+        "display_name": "Ice Deflector",
+        "wiki_slug": "Ice_Deflector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3829,
+          "display_name": "Frost Oil",
+          "wiki_slug": "Frost_Oil",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Iron Strut",
+      "tier": "expert",
+      "skill": 160,
+      "source": "trainer",
+      "wiki_slug": "Iron_Strut",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4387,
+        "display_name": "Iron Strut",
+        "wiki_slug": "Iron_Strut"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Discombobulator Ray",
+      "tier": "expert",
+      "skill": 160,
+      "source": "drop",
+      "wiki_slug": "Discombobulator_Ray",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4388,
+        "display_name": "Discombobulator Ray",
+        "wiki_slug": "Discombobulator_Ray"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Jumper Cables",
+      "tier": "expert",
+      "skill": 165,
+      "source": "drop",
+      "wiki_slug": "Goblin_Jumper_Cables",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 7148,
+        "display_name": "Goblin Jumper Cables",
+        "wiki_slug": "Goblin_Jumper_Cables"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 4375,
+          "display_name": "Whirring Bronze Gizmo",
+          "wiki_slug": "Whirring_Bronze_Gizmo",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 814,
+          "display_name": "Flask of Oil",
+          "wiki_slug": "Flask_of_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1210,
+          "display_name": "Shadowgem",
+          "wiki_slug": "Shadowgem",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Portable Bronze Mortar",
+      "tier": "expert",
+      "skill": 165,
+      "source": "drop",
+      "wiki_slug": "Portable_Bronze_Mortar",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4403,
+        "display_name": "Portable Bronze Mortar",
+        "wiki_slug": "Portable_Bronze_Mortar"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4387,
+          "display_name": "Iron Strut",
+          "wiki_slug": "Iron_Strut",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Gyrochronatom",
+      "tier": "expert",
+      "skill": 170,
+      "source": "trainer",
+      "wiki_slug": "Gyrochronatom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4389,
+        "display_name": "Gyrochronatom",
+        "wiki_slug": "Gyrochronatom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Solid Blasting Powder",
+      "tier": "expert",
+      "skill": 175,
+      "source": "trainer",
+      "wiki_slug": "Solid_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10505,
+        "display_name": "Solid Blasting Powder",
+        "wiki_slug": "Solid_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7912,
+          "display_name": "Solid Stone",
+          "wiki_slug": "Solid_Stone",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Solid Dynamite",
+      "tier": "expert",
+      "skill": 175,
+      "source": "trainer",
+      "wiki_slug": "Solid_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10507,
+        "display_name": "Solid Dynamite",
+        "wiki_slug": "Solid_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Large Blue Rocket",
+      "tier": "expert",
+      "skill": 175,
+      "source": null,
+      "wiki_slug": "Large_Blue_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21589,
+        "display_name": "Large Blue Rocket",
+        "wiki_slug": "Large_Blue_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Large Green Rocket",
+      "tier": "expert",
+      "skill": 175,
+      "source": null,
+      "wiki_slug": "Large_Green_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21590,
+        "display_name": "Large Green Rocket",
+        "wiki_slug": "Large_Green_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Large Red Rocket",
+      "tier": "expert",
+      "skill": 175,
+      "source": null,
+      "wiki_slug": "Large_Red_Rocket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21592,
+        "display_name": "Large Red Rocket",
+        "wiki_slug": "Large_Red_Rocket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Compact Harvest Reaper Kit",
+      "tier": "expert",
+      "skill": 175,
+      "source": "trainer",
+      "wiki_slug": "Compact_Harvest_Reaper_Kit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4391,
+        "display_name": "Compact Harvest Reaper Kit",
+        "wiki_slug": "Compact_Harvest_Reaper_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4387,
+          "display_name": "Iron Strut",
+          "wiki_slug": "Iron_Strut",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4382,
+          "display_name": "Bronze Framework",
+          "wiki_slug": "Bronze_Framework",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Gyromatic Micro-Adjustor",
+      "tier": "expert",
+      "skill": 175,
+      "source": "trainer",
+      "wiki_slug": "Gyromatic_Micro-Adjustor",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10498,
+        "display_name": "Gyromatic Micro-Adjustor",
+        "wiki_slug": "Gyromatic_Micro-Adjustor"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3859,
+          "display_name": "Steel Bar",
+          "wiki_slug": "Steel_Bar",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Iron Grenade",
+      "tier": "expert",
+      "skill": 175,
+      "source": "trainer",
+      "wiki_slug": "Iron_Grenade",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4390,
+        "display_name": "Iron Grenade",
+        "wiki_slug": "Iron_Grenade"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Bright-Eye Goggles",
+      "tier": "expert",
+      "skill": 175,
+      "source": "drop",
+      "wiki_slug": "Bright-Eye_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10499,
+        "display_name": "Bright-Eye Goggles",
+        "wiki_slug": "Bright-Eye_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Accurate Scope",
+      "tier": "expert",
+      "skill": 180,
+      "source": "vendor",
+      "wiki_slug": "Accurate_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4407,
+        "display_name": "Accurate Scope",
+        "wiki_slug": "Accurate_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4371,
+          "display_name": "Bronze Tube",
+          "wiki_slug": "Bronze_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Advanced Target Dummy",
+      "tier": "expert",
+      "skill": 185,
+      "source": "trainer",
+      "wiki_slug": "Advanced_Target_Dummy",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4392,
+        "display_name": "Advanced Target Dummy",
+        "wiki_slug": "Advanced_Target_Dummy"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4382,
+          "display_name": "Bronze Framework",
+          "wiki_slug": "Bronze_Framework",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4387,
+          "display_name": "Iron Strut",
+          "wiki_slug": "Iron_Strut",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flash Bomb",
+      "tier": "expert",
+      "skill": 185,
+      "source": "drop",
+      "wiki_slug": "Flash_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4852,
+        "display_name": "Flash Bomb",
+        "wiki_slug": "Flash_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4611,
+          "display_name": "Blue Pearl",
+          "wiki_slug": "Blue_Pearl",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Craftsman's Monocle",
+      "tier": "expert",
+      "skill": 185,
+      "source": "drop",
+      "wiki_slug": "Craftsman%27s_Monocle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4393,
+        "display_name": "Craftsman's Monocle",
+        "wiki_slug": "Craftsman%27s_Monocle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Big Iron Bomb",
+      "tier": "expert",
+      "skill": 190,
+      "source": "trainer",
+      "wiki_slug": "Big_Iron_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4394,
+        "display_name": "Big Iron Bomb",
+        "wiki_slug": "Big_Iron_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4404,
+          "display_name": "Silver Contact",
+          "wiki_slug": "Silver_Contact",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Snowmaster 9000",
+      "tier": "expert",
+      "skill": 190,
+      "source": "drop",
+      "wiki_slug": "Snowmaster_9000",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 17716,
+        "display_name": "Snowmaster 9000",
+        "wiki_slug": "Snowmaster_9000"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 17202,
+          "display_name": "Snowball",
+          "wiki_slug": "Snowball",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3829,
+          "display_name": "Frost Oil",
+          "wiki_slug": "Frost_Oil",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mithril Tube",
+      "tier": "expert",
+      "skill": 195,
+      "source": "trainer",
+      "wiki_slug": "Mithril_Tube",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10559,
+        "display_name": "Mithril Tube",
+        "wiki_slug": "Mithril_Tube"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Goblin Land Mine",
+      "tier": "expert",
+      "skill": 195,
+      "source": "drop",
+      "wiki_slug": "Goblin_Land_Mine",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4395,
+        "display_name": "Goblin Land Mine",
+        "wiki_slug": "Goblin_Land_Mine"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4377,
+          "display_name": "Heavy Blasting Powder",
+          "wiki_slug": "Heavy_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "EZ-Thro Dynamite II",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "EZ-Thro_Dynamite_II",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18588,
+        "display_name": "EZ-Thro Dynamite II",
+        "wiki_slug": "EZ-Thro_Dynamite_II"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Polished Truesilver Gears",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Polished_Truesilver_Gears",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 213383,
+        "display_name": "Polished Truesilver Gears",
+        "wiki_slug": "Polished_Truesilver_Gears"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 213381,
+          "display_name": "Pile of Tarnished Gears",
+          "wiki_slug": "Pile_of_Tarnished_Gears",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Large Seaforium Charge",
+      "tier": "expert",
+      "skill": 200,
+      "source": "drop",
+      "wiki_slug": "Large_Seaforium_Charge",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4398,
+        "display_name": "Large Seaforium Charge",
+        "wiki_slug": "Large_Seaforium_Charge"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mechanical Repair Kit",
+      "tier": "expert",
+      "skill": 200,
+      "source": "trainer",
+      "wiki_slug": "Mechanical_Repair_Kit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 11590,
+        "display_name": "Mechanical Repair Kit",
+        "wiki_slug": "Mechanical_Repair_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Unstable Trigger",
+      "tier": "expert",
+      "skill": 200,
+      "source": "trainer",
+      "wiki_slug": "Unstable_Trigger",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10560,
+        "display_name": "Unstable Trigger",
+        "wiki_slug": "Unstable_Trigger"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Cloaking Device",
+      "tier": "expert",
+      "skill": 200,
+      "source": "drop",
+      "wiki_slug": "Gnomish_Cloaking_Device",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4397,
+        "display_name": "Gnomish Cloaking Device",
+        "wiki_slug": "Gnomish_Cloaking_Device"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1705,
+          "display_name": "Lesser Moonstone",
+          "wiki_slug": "Lesser_Moonstone",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mechanical Dragonling",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Mechanical_Dragonling",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4396,
+        "display_name": "Mechanical Dragonling",
+        "wiki_slug": "Mechanical_Dragonling"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4382,
+          "display_name": "Bronze Framework",
+          "wiki_slug": "Bronze_Framework",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4387,
+          "display_name": "Iron Strut",
+          "wiki_slug": "Iron_Strut",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Rocket Fuel Recipe",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Rocket_Fuel_Recipe",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10644,
+        "display_name": "Goblin Rocket Fuel Recipe",
+        "wiki_slug": "Goblin_Rocket_Fuel_Recipe"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 39354,
+          "display_name": "Light Parchment",
+          "wiki_slug": "Light_Parchment",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10647,
+          "display_name": "Engineer's Ink",
+          "wiki_slug": "Engineer%27s_Ink",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Inlaid Mithril Cylinder Plans",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Inlaid_Mithril_Cylinder_Plans",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10713,
+        "display_name": "Inlaid Mithril Cylinder Plans",
+        "wiki_slug": "Inlaid_Mithril_Cylinder_Plans"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 39354,
+          "display_name": "Light Parchment",
+          "wiki_slug": "Light_Parchment",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10647,
+          "display_name": "Engineer's Ink",
+          "wiki_slug": "Engineer%27s_Ink",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lil' Smoky",
+      "tier": "expert",
+      "skill": 205,
+      "source": null,
+      "wiki_slug": "Lil%27_Smoky",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 11826,
+        "display_name": "Lil' Smoky",
+        "wiki_slug": "Lil%27_Smoky"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7075,
+          "display_name": "Core of Earth",
+          "wiki_slug": "Core_of_Earth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Pet Bombling",
+      "tier": "expert",
+      "skill": 205,
+      "source": null,
+      "wiki_slug": "Pet_Bombling",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 11825,
+        "display_name": "Pet Bombling",
+        "wiki_slug": "Pet_Bombling"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4394,
+          "display_name": "Big Iron Bomb",
+          "wiki_slug": "Big_Iron_Bomb",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7077,
+          "display_name": "Heart of Fire",
+          "wiki_slug": "Heart_of_Fire",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "name": "Soul Vessel",
+      "tier": "expert",
+      "skill": 205,
+      "source": "vendor",
+      "wiki_slug": "Soul_Vessel",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 211427,
+        "display_name": "Soul Vessel",
+        "wiki_slug": "Soul_Vessel"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1210,
+          "display_name": "Shadowgem",
+          "wiki_slug": "Shadowgem",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 9262,
+          "display_name": "Black Vitriol",
+          "wiki_slug": "Black_Vitriol",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16583,
+          "display_name": "Demonic Figurine",
+          "wiki_slug": "Demonic_Figurine",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Sapper Charge",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Sapper_Charge",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10646,
+        "display_name": "Goblin Sapper Charge",
+        "wiki_slug": "Goblin_Sapper_Charge"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Fire Goggles",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Fire_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10500,
+        "display_name": "Fire Goggles",
+        "wiki_slug": "Fire_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4385,
+          "display_name": "Green Tinted Goggles",
+          "wiki_slug": "Green_Tinted_Goggles",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7068,
+          "display_name": "Elemental Fire",
+          "wiki_slug": "Elemental_Fire",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Shrink Ray",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Shrink_Ray",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10716,
+        "display_name": "Gnomish Shrink Ray",
+        "wiki_slug": "Gnomish_Shrink_Ray"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Goblin Construction Helmet",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Construction_Helmet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10543,
+        "display_name": "Goblin Construction Helmet",
+        "wiki_slug": "Goblin_Construction_Helmet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7068,
+          "display_name": "Elemental Fire",
+          "wiki_slug": "Elemental_Fire",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Goblin Mining Helmet",
+      "tier": "expert",
+      "skill": 205,
+      "source": "vendor",
+      "wiki_slug": "Goblin_Mining_Helmet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10542,
+        "display_name": "Goblin Mining Helmet",
+        "wiki_slug": "Goblin_Mining_Helmet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7067,
+          "display_name": "Elemental Earth",
+          "wiki_slug": "Elemental_Earth",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Mithril Blunderbuss",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Mithril_Blunderbuss",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10508,
+        "display_name": "Mithril Blunderbuss",
+        "wiki_slug": "Mithril_Blunderbuss"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4400,
+          "display_name": "Heavy Stock",
+          "wiki_slug": "Heavy_Stock",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7068,
+          "display_name": "Elemental Fire",
+          "wiki_slug": "Elemental_Fire",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Hi-Impact Mithril Slugs",
+      "tier": "expert",
+      "skill": 210,
+      "source": "trainer",
+      "wiki_slug": "Hi-Impact_Mithril_Slugs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10512,
+        "display_name": "Hi-Impact Mithril Slugs",
+        "wiki_slug": "Hi-Impact_Mithril_Slugs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Deadly Scope",
+      "tier": "expert",
+      "skill": 210,
+      "source": "vendor",
+      "wiki_slug": "Deadly_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10546,
+        "display_name": "Deadly Scope",
+        "wiki_slug": "Deadly_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7909,
+          "display_name": "Aquamarine",
+          "wiki_slug": "Aquamarine",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Goggles",
+      "tier": "expert",
+      "skill": 210,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10545,
+        "display_name": "Gnomish Goggles",
+        "wiki_slug": "Gnomish_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10500,
+          "display_name": "Fire Goggles",
+          "wiki_slug": "Fire_Goggles",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Net-o-Matic Projector",
+      "tier": "expert",
+      "skill": 210,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Net-o-Matic_Projector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10720,
+        "display_name": "Gnomish Net-o-Matic Projector",
+        "wiki_slug": "Gnomish_Net-o-Matic_Projector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10285,
+          "display_name": "Shadow Silk",
+          "wiki_slug": "Shadow_Silk",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4337,
+          "display_name": "Thick Spider's Silk",
+          "wiki_slug": "Thick_Spider%27s_Silk",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Mithril Casing",
+      "tier": "expert",
+      "skill": 215,
+      "source": "trainer",
+      "wiki_slug": "Mithril_Casing",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10561,
+        "display_name": "Mithril Casing",
+        "wiki_slug": "Mithril_Casing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Mithril Frag Bomb",
+      "tier": "expert",
+      "skill": 215,
+      "source": "trainer",
+      "wiki_slug": "Mithril_Frag_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10514,
+        "display_name": "Mithril Frag Bomb",
+        "wiki_slug": "Mithril_Frag_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Harm Prevention Belt",
+      "tier": "expert",
+      "skill": 215,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Harm_Prevention_Belt",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10721,
+        "display_name": "Gnomish Harm Prevention Belt",
+        "wiki_slug": "Gnomish_Harm_Prevention_Belt"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7387,
+          "display_name": "Dusky Belt",
+          "wiki_slug": "Dusky_Belt",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7909,
+          "display_name": "Aquamarine",
+          "wiki_slug": "Aquamarine",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Catseye Ultra Goggles",
+      "tier": "expert",
+      "skill": 220,
+      "source": "drop",
+      "wiki_slug": "Catseye_Ultra_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10501,
+        "display_name": "Catseye Ultra Goggles",
+        "wiki_slug": "Catseye_Ultra_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7909,
+          "display_name": "Aquamarine",
+          "wiki_slug": "Aquamarine",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10592,
+          "display_name": "Catseye Elixir",
+          "wiki_slug": "Catseye_Elixir",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Mortar",
+      "tier": "expert",
+      "skill": 225,
+      "source": null,
+      "wiki_slug": "Goblin_Mortar",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10577,
+        "display_name": "Goblin Mortar",
+        "wiki_slug": "Goblin_Mortar"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7068,
+          "display_name": "Elemental Fire",
+          "wiki_slug": "Elemental_Fire",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ez-Thro Radiation Bomb",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Ez-Thro_Radiation_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 215168,
+        "display_name": "Ez-Thro Radiation Bomb",
+        "wiki_slug": "Ez-Thro_Radiation_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 215430,
+          "display_name": "Gnomeregan Fallout",
+          "wiki_slug": "Gnomeregan_Fallout",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "High-Yield Radiation Bomb",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "High-Yield_Radiation_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 215127,
+        "display_name": "High-Yield Radiation Bomb",
+        "wiki_slug": "High-Yield_Radiation_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 215430,
+          "display_name": "Gnomeregan Fallout",
+          "wiki_slug": "Gnomeregan_Fallout",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Whirling Truesilver Gearwall",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Whirling_Truesilver_Gearwall",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 213390,
+        "display_name": "Whirling Truesilver Gearwall",
+        "wiki_slug": "Whirling_Truesilver_Gearwall"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 213376,
+          "display_name": "Low-Background Truesilver Plates",
+          "wiki_slug": "Low-Background_Truesilver_Plates",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 213383,
+          "display_name": "Polished Truesilver Gears",
+          "wiki_slug": "Polished_Truesilver_Gears",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 213369,
+          "display_name": "Faintly Glowing Leather",
+          "wiki_slug": "Faintly_Glowing_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 15
+        }
+      ]
+    },
+    {
+      "name": "Blue Rocket Cluster",
+      "tier": "expert",
+      "skill": 225,
+      "source": null,
+      "wiki_slug": "Blue_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21571,
+        "display_name": "Blue Rocket Cluster",
+        "wiki_slug": "Blue_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Green Rocket Cluster",
+      "tier": "expert",
+      "skill": 225,
+      "source": null,
+      "wiki_slug": "Green_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21574,
+        "display_name": "Green Rocket Cluster",
+        "wiki_slug": "Green_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Red Rocket Cluster",
+      "tier": "expert",
+      "skill": 225,
+      "source": null,
+      "wiki_slug": "Red_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21576,
+        "display_name": "Red Rocket Cluster",
+        "wiki_slug": "Red_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Firework Launcher",
+      "tier": "expert",
+      "skill": 225,
+      "source": "quest",
+      "wiki_slug": "Firework_Launcher",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21569,
+        "display_name": "Firework Launcher",
+        "wiki_slug": "Firework_Launcher"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 9060,
+          "display_name": "Inlaid Mithril Cylinder",
+          "wiki_slug": "Inlaid_Mithril_Cylinder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Rocket Boots",
+      "tier": "expert",
+      "skill": 225,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Rocket_Boots",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10724,
+        "display_name": "Gnomish Rocket Boots",
+        "wiki_slug": "Gnomish_Rocket_Boots"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10026,
+          "display_name": "Black Mageweave Boots",
+          "wiki_slug": "Black_Mageweave_Boots",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 4389,
+          "display_name": "Gyrochronatom",
+          "wiki_slug": "Gyrochronatom",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Goblin Rocket Boots",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Goblin_Rocket_Boots",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 7189,
+        "display_name": "Goblin Rocket Boots",
+        "wiki_slug": "Goblin_Rocket_Boots"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10026,
+          "display_name": "Black Mageweave Boots",
+          "wiki_slug": "Black_Mageweave_Boots",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Parachute Cloak",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Parachute_Cloak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10518,
+        "display_name": "Parachute Cloak",
+        "wiki_slug": "Parachute_Cloak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4339,
+          "display_name": "Bolt of Mageweave",
+          "wiki_slug": "Bolt_of_Mageweave",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10285,
+          "display_name": "Shadow Silk",
+          "wiki_slug": "Shadow_Silk",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Spellpower Goggles Xtreme",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Spellpower_Goggles_Xtreme",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10502,
+        "display_name": "Spellpower Goggles Xtreme",
+        "wiki_slug": "Spellpower_Goggles_Xtreme"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Goblin Bomb Dispenser",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Bomb_Dispenser",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10587,
+        "display_name": "Goblin Bomb Dispenser",
+        "wiki_slug": "Goblin_Bomb_Dispenser"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4407,
+          "display_name": "Accurate Scope",
+          "wiki_slug": "Accurate_Scope",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Deepdive Helmet",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "vendor",
+      "wiki_slug": "Deepdive_Helmet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10506,
+        "display_name": "Deepdive Helmet",
+        "wiki_slug": "Deepdive_Helmet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 818,
+          "display_name": "Tigerseye",
+          "wiki_slug": "Tigerseye",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 774,
+          "display_name": "Malachite",
+          "wiki_slug": "Malachite",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Battle Chicken",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Battle_Chicken",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10725,
+        "display_name": "Gnomish Battle Chicken",
+        "wiki_slug": "Gnomish_Battle_Chicken"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 9060,
+          "display_name": "Inlaid Mithril Cylinder",
+          "wiki_slug": "Inlaid_Mithril_Cylinder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Rose Colored Goggles",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "trainer",
+      "wiki_slug": "Rose_Colored_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10503,
+        "display_name": "Rose Colored Goggles",
+        "wiki_slug": "Rose_Colored_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Hi-Explosive Bomb",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "trainer",
+      "wiki_slug": "Hi-Explosive_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10562,
+        "display_name": "Hi-Explosive Bomb",
+        "wiki_slug": "Hi-Explosive_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "The Big One",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "trainer",
+      "wiki_slug": "The_Big_One",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10586,
+        "display_name": "The Big One",
+        "wiki_slug": "The_Big_One"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10507,
+          "display_name": "Solid Dynamite",
+          "wiki_slug": "Solid_Dynamite",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Mind Control Cap",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Mind_Control_Cap",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10726,
+        "display_name": "Gnomish Mind Control Cap",
+        "wiki_slug": "Gnomish_Mind_Control_Cap"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Death Ray",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "trainer",
+      "wiki_slug": "Gnomish_Death_Ray",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10645,
+        "display_name": "Gnomish Death Ray",
+        "wiki_slug": "Gnomish_Death_Ray"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12808,
+          "display_name": "Essence of Undeath",
+          "wiki_slug": "Essence_of_Undeath",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7972,
+          "display_name": "Ichor of Undeath",
+          "wiki_slug": "Ichor_of_Undeath",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 9060,
+          "display_name": "Inlaid Mithril Cylinder",
+          "wiki_slug": "Inlaid_Mithril_Cylinder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Dragon Gun",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Dragon_Gun",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10727,
+        "display_name": "Goblin Dragon Gun",
+        "wiki_slug": "Goblin_Dragon_Gun"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Sniper Scope",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "drop",
+      "wiki_slug": "Sniper_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10548,
+        "display_name": "Sniper Scope",
+        "wiki_slug": "Sniper_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Mithril Gyro-Shot",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "trainer",
+      "wiki_slug": "Mithril_Gyro-Shot",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10513,
+        "display_name": "Mithril Gyro-Shot",
+        "wiki_slug": "Mithril_Gyro-Shot"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10505,
+          "display_name": "Solid Blasting Powder",
+          "wiki_slug": "Solid_Blasting_Powder",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Goblin Rocket Helmet",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Rocket_Helmet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10588,
+        "display_name": "Goblin Rocket Helmet",
+        "wiki_slug": "Goblin_Rocket_Helmet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10543,
+          "display_name": "Goblin Construction Helmet",
+          "wiki_slug": "Goblin_Construction_Helmet",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Green Lens",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "trainer",
+      "wiki_slug": "Green_Lens",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10504,
+        "display_name": "Green Lens",
+        "wiki_slug": "Green_Lens"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 1529,
+          "display_name": "Jade",
+          "wiki_slug": "Jade",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 7909,
+          "display_name": "Aquamarine",
+          "wiki_slug": "Aquamarine",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 10286,
+          "display_name": "Heart of the Wild",
+          "wiki_slug": "Heart_of_the_Wild_(crafting_reagent)",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8153,
+          "display_name": "Wildvine",
+          "wiki_slug": "Wildvine",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Void-Powered Invoker's Vambraces",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Void-Powered_Invoker%27s_Vambraces",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 221025,
+        "display_name": "Void-Powered Invoker's Vambraces",
+        "wiki_slug": "Void-Powered_Invoker%27s_Vambraces"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 221021,
+          "display_name": "Nightmare Seed",
+          "wiki_slug": "Nightmare_Seed_(Season_of_Discovery)",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 220688,
+          "display_name": "Inert Mantle of Nightmares",
+          "wiki_slug": "Inert_Mantle_of_Nightmares",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 220689,
+          "display_name": "Void-Powered Vambraces",
+          "wiki_slug": "Void-Powered_Vambraces",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Void-Powered Protector's Vambraces",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Void-Powered_Protector%27s_Vambraces",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 221027,
+        "display_name": "Void-Powered Protector's Vambraces",
+        "wiki_slug": "Void-Powered_Protector%27s_Vambraces"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 221021,
+          "display_name": "Nightmare Seed",
+          "wiki_slug": "Nightmare_Seed_(Season_of_Discovery)",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 220688,
+          "display_name": "Inert Mantle of Nightmares",
+          "wiki_slug": "Inert_Mantle_of_Nightmares",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 220689,
+          "display_name": "Void-Powered Vambraces",
+          "wiki_slug": "Void-Powered_Vambraces",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Void-Powered Slayer's Vambraces",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Void-Powered_Slayer%27s_Vambraces",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 221026,
+        "display_name": "Void-Powered Slayer's Vambraces",
+        "wiki_slug": "Void-Powered_Slayer%27s_Vambraces"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 221021,
+          "display_name": "Nightmare Seed",
+          "wiki_slug": "Nightmare_Seed_(Season_of_Discovery)",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 220688,
+          "display_name": "Inert Mantle of Nightmares",
+          "wiki_slug": "Inert_Mantle_of_Nightmares",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 220689,
+          "display_name": "Void-Powered Vambraces",
+          "wiki_slug": "Void-Powered_Vambraces",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Army Knife",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Gnomish_Army_Knife",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 40772,
+        "display_name": "Gnomish Army Knife",
+        "wiki_slug": "Gnomish_Army_Knife"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 36913,
+          "display_name": "Saronite Bar",
+          "wiki_slug": "Saronite_Bar",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 7005,
+          "display_name": "Skinning Knife",
+          "wiki_slug": "Skinning_Knife",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2901,
+          "display_name": "Mining Pick",
+          "wiki_slug": "Mining_Pick",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 5956,
+          "display_name": "Blacksmith Hammer",
+          "wiki_slug": "Blacksmith_Hammer",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Dense Blasting Powder",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "trainer",
+      "wiki_slug": "Dense_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15992,
+        "display_name": "Dense Blasting Powder",
+        "wiki_slug": "Dense_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12365,
+          "display_name": "Dense Stone",
+          "wiki_slug": "Dense_Stone",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Dense Dynamite",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "trainer",
+      "wiki_slug": "Dense_Dynamite",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18641,
+        "display_name": "Dense Dynamite",
+        "wiki_slug": "Dense_Dynamite"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Snake Burst Firework",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Snake_Burst_Firework",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 19026,
+        "display_name": "Snake Burst Firework",
+        "wiki_slug": "Snake_Burst_Firework"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8150,
+          "display_name": "Deeprock Salt",
+          "wiki_slug": "Deeprock_Salt",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mithril Mechanical Dragonling",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Mithril_Mechanical_Dragonling",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10576,
+        "display_name": "Mithril Mechanical Dragonling",
+        "wiki_slug": "Mithril_Mechanical_Dragonling"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7077,
+          "display_name": "Heart of Fire",
+          "wiki_slug": "Heart_of_Fire",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Salt Shaker",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "trainer",
+      "wiki_slug": "Salt_Shaker",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15846,
+        "display_name": "Salt Shaker",
+        "wiki_slug": "Salt_Shaker"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Creepy Censor Sensors",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Creepy_Censor_Sensors",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 236871,
+        "display_name": "Creepy Censor Sensors",
+        "wiki_slug": "Creepy_Censor_Sensors"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 12800,
+          "display_name": "Azerothian Diamond",
+          "wiki_slug": "Azerothian_Diamond",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "World Enlarger",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "drop",
+      "wiki_slug": "World_Enlarger",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18660,
+        "display_name": "World Enlarger",
+        "wiki_slug": "World_Enlarger"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "wiki_slug": "Unstable_Trigger",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3864,
+          "display_name": "Citrine",
+          "wiki_slug": "Citrine",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Truesilver Transformer",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "vendor",
+      "wiki_slug": "Truesilver_Transformer",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18631,
+        "display_name": "Truesilver Transformer",
+        "wiki_slug": "Truesilver_Transformer"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7067,
+          "display_name": "Elemental Earth",
+          "wiki_slug": "Elemental_Earth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7069,
+          "display_name": "Elemental Air",
+          "wiki_slug": "Elemental_Air",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gyrofreeze Ice Reflector",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "vendor",
+      "wiki_slug": "Gyrofreeze_Ice_Reflector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18634,
+        "display_name": "Gyrofreeze Ice Reflector",
+        "wiki_slug": "Gyrofreeze_Ice_Reflector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12361,
+          "display_name": "Blue Sapphire",
+          "wiki_slug": "Blue_Sapphire",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7078,
+          "display_name": "Essence of Fire",
+          "wiki_slug": "Essence_of_Fire",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3829,
+          "display_name": "Frost Oil",
+          "wiki_slug": "Frost_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Thorium Grenade",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "vendor",
+      "wiki_slug": "Thorium_Grenade",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15993,
+        "display_name": "Thorium Grenade",
+        "wiki_slug": "Thorium_Grenade"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Thorium Rifle",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "drop",
+      "wiki_slug": "Thorium_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15995,
+        "display_name": "Thorium Rifle",
+        "wiki_slug": "Thorium_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10559,
+          "display_name": "Mithril Tube",
+          "wiki_slug": "Mithril_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10546,
+          "display_name": "Deadly Scope",
+          "wiki_slug": "Deadly_Scope",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Thorium Widget",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "vendor",
+      "wiki_slug": "Thorium_Widget",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15994,
+        "display_name": "Thorium Widget",
+        "wiki_slug": "Thorium_Widget"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Jumper Cables XL",
+      "tier": "artisan",
+      "skill": 265,
+      "source": "drop",
+      "wiki_slug": "Goblin_Jumper_Cables_XL",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18587,
+        "display_name": "Goblin Jumper Cables XL",
+        "wiki_slug": "Goblin_Jumper_Cables_XL"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14227,
+          "display_name": "Ironweb Spider Silk",
+          "wiki_slug": "Ironweb_Spider_Silk",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Lifelike Mechanical Toad",
+      "tier": "artisan",
+      "skill": 265,
+      "source": "drop",
+      "wiki_slug": "Lifelike_Mechanical_Toad",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15996,
+        "display_name": "Lifelike Mechanical Toad",
+        "wiki_slug": "Lifelike_Mechanical_Toad"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12803,
+          "display_name": "Living Essence",
+          "wiki_slug": "Living_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Spellpower Goggles Xtreme Plus",
+      "tier": "artisan",
+      "skill": 270,
+      "source": "drop",
+      "wiki_slug": "Spellpower_Goggles_Xtreme_Plus",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15999,
+        "display_name": "Spellpower Goggles Xtreme Plus",
+        "wiki_slug": "Spellpower_Goggles_Xtreme_Plus"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10502,
+          "display_name": "Spellpower Goggles Xtreme",
+          "wiki_slug": "Spellpower_Goggles_Xtreme",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 12810,
+          "display_name": "Enchanted Leather",
+          "wiki_slug": "Enchanted_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "name": "Loot-A-Rang",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Loot-A-Rang",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 60854,
+        "display_name": "Loot-A-Rang",
+        "wiki_slug": "Loot-A-Rang"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 53039,
+          "display_name": "Hardened Elementium Bar",
+          "wiki_slug": "Hardened_Elementium_Bar",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 67749,
+          "display_name": "Electrified Ether",
+          "wiki_slug": "Electrified_Ether",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Large Blue Rocket Cluster",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Large_Blue_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21714,
+        "display_name": "Large Blue Rocket Cluster",
+        "wiki_slug": "Large_Blue_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Large Green Rocket Cluster",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Large_Green_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21716,
+        "display_name": "Large Green Rocket Cluster",
+        "wiki_slug": "Large_Green_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Large Red Rocket Cluster",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Large_Red_Rocket_Cluster",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21718,
+        "display_name": "Large Red Rocket Cluster",
+        "wiki_slug": "Large_Red_Rocket_Cluster"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Powerful Seaforium Charge",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Powerful_Seaforium_Charge",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18594,
+        "display_name": "Powerful Seaforium Charge",
+        "wiki_slug": "Powerful_Seaforium_Charge"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Recombobulator",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Major_Recombobulator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18637,
+        "display_name": "Major Recombobulator",
+        "wiki_slug": "Major_Recombobulator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Dark Iron Rifle",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Dark_Iron_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16004,
+        "display_name": "Dark Iron Rifle",
+        "wiki_slug": "Dark_Iron_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11371,
+          "display_name": "Dark Iron Bar",
+          "wiki_slug": "Dark_Iron_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 10546,
+          "display_name": "Deadly Scope",
+          "wiki_slug": "Deadly_Scope",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12361,
+          "display_name": "Blue Sapphire",
+          "wiki_slug": "Blue_Sapphire",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12799,
+          "display_name": "Large Opal",
+          "wiki_slug": "Large_Opal",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Firework Cluster Launcher",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "quest",
+      "wiki_slug": "Firework_Cluster_Launcher",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21570,
+        "display_name": "Firework Cluster Launcher",
+        "wiki_slug": "Firework_Cluster_Launcher"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Masterwork Target Dummy",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Masterwork_Target_Dummy",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16023,
+        "display_name": "Masterwork Target Dummy",
+        "wiki_slug": "Masterwork_Target_Dummy"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10561,
+          "display_name": "Mithril Casing",
+          "wiki_slug": "Mithril_Casing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Steam Tonk Controller",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "quest",
+      "wiki_slug": "Steam_Tonk_Controller",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 22728,
+        "display_name": "Steam Tonk Controller",
+        "wiki_slug": "Steam_Tonk_Controller"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Thorium Tube",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Thorium_Tube",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16000,
+        "display_name": "Thorium Tube",
+        "wiki_slug": "Thorium_Tube"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "name": "Dimensional Ripper - Everlook",
+      "tier": "artisan",
+      "skill": 285,
+      "source": null,
+      "wiki_slug": "Dimensional_Ripper_-_Everlook",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18984,
+        "display_name": "Dimensional Ripper - Everlook",
+        "wiki_slug": "Dimensional_Ripper_-_Everlook"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7077,
+          "display_name": "Heart of Fire",
+          "wiki_slug": "Heart_of_Fire",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10586,
+          "display_name": "The Big One",
+          "wiki_slug": "The_Big_One",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ultrasafe Transporter - Gadgetzan",
+      "tier": "artisan",
+      "skill": 285,
+      "source": null,
+      "wiki_slug": "Ultrasafe_Transporter_-_Gadgetzan",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18986,
+        "display_name": "Ultrasafe Transporter - Gadgetzan",
+        "wiki_slug": "Ultrasafe_Transporter_-_Gadgetzan"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3860,
+          "display_name": "Mithril Bar",
+          "wiki_slug": "Mithril_Bar",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7075,
+          "display_name": "Core of Earth",
+          "wiki_slug": "Core_of_Earth",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7079,
+          "display_name": "Globe of Water",
+          "wiki_slug": "Globe_of_Water",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7909,
+          "display_name": "Aquamarine",
+          "wiki_slug": "Aquamarine",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 9060,
+          "display_name": "Inlaid Mithril Cylinder",
+          "wiki_slug": "Inlaid_Mithril_Cylinder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Dark Iron Bomb",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "drop",
+      "wiki_slug": "Dark_Iron_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16005,
+        "display_name": "Dark Iron Bomb",
+        "wiki_slug": "Dark_Iron_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11371,
+          "display_name": "Dark Iron Bar",
+          "wiki_slug": "Dark_Iron_Bar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "Delicate Arcanite Converter",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "vendor",
+      "wiki_slug": "Delicate_Arcanite_Converter",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 16006,
+        "display_name": "Delicate Arcanite Converter",
+        "wiki_slug": "Delicate_Arcanite_Converter"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Thorium Shells",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "drop",
+      "wiki_slug": "Thorium_Shells",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 15997,
+        "display_name": "Thorium Shells",
+        "wiki_slug": "Thorium_Shells"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 15992,
+          "display_name": "Dense Blasting Powder",
+          "wiki_slug": "Dense_Blasting_Powder",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Hyper-Radiant Flame Reflector",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Hyper-Radiant_Flame_Reflector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18638,
+        "display_name": "Hyper-Radiant Flame Reflector",
+        "wiki_slug": "Hyper-Radiant_Flame_Reflector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11371,
+          "display_name": "Dark Iron Bar",
+          "wiki_slug": "Dark_Iron_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 7080,
+          "display_name": "Essence of Water",
+          "wiki_slug": "Essence_of_Water",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 12800,
+          "display_name": "Azerothian Diamond",
+          "wiki_slug": "Azerothian_Diamond",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Master Engineer's Goggles",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Master_Engineer%27s_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16008,
+        "display_name": "Master Engineer's Goggles",
+        "wiki_slug": "Master_Engineer%27s_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10500,
+          "display_name": "Fire Goggles",
+          "wiki_slug": "Fire_Goggles",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12364,
+          "display_name": "Huge Emerald",
+          "wiki_slug": "Huge_Emerald",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12810,
+          "display_name": "Enchanted Leather",
+          "wiki_slug": "Enchanted_Leather",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Voice Amplification Modulator",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Voice_Amplification_Modulator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16009,
+        "display_name": "Voice Amplification Modulator",
+        "wiki_slug": "Voice_Amplification_Modulator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12799,
+          "display_name": "Large Opal",
+          "wiki_slug": "Large_Opal",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Anarchist's Workbench",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Anarchist%27s_Workbench",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 279989,
+        "display_name": "Anarchist's Workbench",
+        "wiki_slug": "Anarchist%27s_Workbench"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Swiftfeather Arrow",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Swiftfeather_Arrow",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274387,
+        "display_name": "Swiftfeather Arrow",
+        "wiki_slug": "Swiftfeather_Arrow"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 251291,
+          "display_name": "Heavy Thorium Bar",
+          "wiki_slug": "Heavy_Thorium_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 17056,
+          "display_name": "Light Feather",
+          "wiki_slug": "Light_Feather",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 7069,
+          "display_name": "Elemental Air",
+          "wiki_slug": "Elemental_Air",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Swiftstrike Shot",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Swiftstrike_Shot",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274388,
+        "display_name": "Swiftstrike Shot",
+        "wiki_slug": "Swiftstrike_Shot"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 251291,
+          "display_name": "Heavy Thorium Bar",
+          "wiki_slug": "Heavy_Thorium_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 12365,
+          "display_name": "Dense Stone",
+          "wiki_slug": "Dense_Stone",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 7067,
+          "display_name": "Elemental Earth",
+          "wiki_slug": "Elemental_Earth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Arcane Bomb",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Arcane_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16040,
+        "display_name": "Arcane Bomb",
+        "wiki_slug": "Arcane_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Arcanite Dragonling",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Arcanite_Dragonling",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16022,
+        "display_name": "Arcanite Dragonling",
+        "wiki_slug": "Arcanite_Dragonling"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10576,
+          "display_name": "Mithril Mechanical Dragonling",
+          "wiki_slug": "Mithril_Mechanical_Dragonling",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Biznicks 247x128 Accurascope",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Biznicks_247x128_Accurascope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18283,
+        "display_name": "Biznicks 247x128 Accurascope",
+        "wiki_slug": "Biznicks_247x128_Accurascope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 17011,
+          "display_name": "Lava Core",
+          "wiki_slug": "Lava_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7076,
+          "display_name": "Essence of Earth",
+          "wiki_slug": "Essence_of_Earth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11371,
+          "display_name": "Dark Iron Bar",
+          "wiki_slug": "Dark_Iron_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Bloodvine Goggles",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Bloodvine_Goggles",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 19999,
+        "display_name": "Bloodvine Goggles",
+        "wiki_slug": "Bloodvine_Goggles"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7910,
+          "display_name": "Star Ruby",
+          "wiki_slug": "Star_Ruby",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12804,
+          "display_name": "Powerful Mojo",
+          "wiki_slug": "Powerful_Mojo",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 12810,
+          "display_name": "Enchanted Leather",
+          "wiki_slug": "Enchanted_Leather",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "name": "Bloodvine Lens",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Bloodvine_Lens",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 19998,
+        "display_name": "Bloodvine Lens",
+        "wiki_slug": "Bloodvine_Lens"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12655,
+          "display_name": "Enchanted Thorium Bar",
+          "wiki_slug": "Enchanted_Thorium_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 12800,
+          "display_name": "Azerothian Diamond",
+          "wiki_slug": "Azerothian_Diamond",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12804,
+          "display_name": "Powerful Mojo",
+          "wiki_slug": "Powerful_Mojo",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "name": "Core Marksman Rifle",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Core_Marksman_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18282,
+        "display_name": "Core Marksman Rifle",
+        "wiki_slug": "Core_Marksman_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 17010,
+          "display_name": "Fiery Core",
+          "wiki_slug": "Fiery_Core",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 17011,
+          "display_name": "Lava Core",
+          "wiki_slug": "Lava_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12360,
+          "display_name": "Arcanite Bar",
+          "wiki_slug": "Arcanite_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Field Repair Bot 74A",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Field_Repair_Bot_74A",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18232,
+        "display_name": "Field Repair Bot 74A",
+        "wiki_slug": "Field_Repair_Bot_74A"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12359,
+          "display_name": "Thorium Bar",
+          "wiki_slug": "Thorium_Bar",
+          "quantity": 16
+        },
+        {
+          "wowhead_id": 7191,
+          "display_name": "Fused Wiring",
+          "wiki_slug": "Fused_Wiring",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Flawless Arcanite Rifle",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flawless_Arcanite_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16007,
+        "display_name": "Flawless Arcanite Rifle",
+        "wiki_slug": "Flawless_Arcanite_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12360,
+          "display_name": "Arcanite Bar",
+          "wiki_slug": "Arcanite_Bar",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7078,
+          "display_name": "Essence of Fire",
+          "wiki_slug": "Essence_of_Fire",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7076,
+          "display_name": "Essence of Earth",
+          "wiki_slug": "Essence_of_Earth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12800,
+          "display_name": "Azerothian Diamond",
+          "wiki_slug": "Azerothian_Diamond",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12810,
+          "display_name": "Enchanted Leather",
+          "wiki_slug": "Enchanted_Leather",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Force Reactive Disk",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Force_Reactive_Disk",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18168,
+        "display_name": "Force Reactive Disk",
+        "wiki_slug": "Force_Reactive_Disk"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12360,
+          "display_name": "Arcanite Bar",
+          "wiki_slug": "Arcanite_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 7082,
+          "display_name": "Essence of Air",
+          "wiki_slug": "Essence_of_Air",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 12803,
+          "display_name": "Living Essence",
+          "wiki_slug": "Living_Essence",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 7076,
+          "display_name": "Essence of Earth",
+          "wiki_slug": "Essence_of_Earth",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "name": "Gnomish Poultryizer",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Gnomish_Poultryizer",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 23835,
+        "display_name": "Gnomish Poultryizer",
+        "wiki_slug": "Gnomish_Poultryizer"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 23785,
+          "display_name": "Hardened Adamantite Tube",
+          "wiki_slug": "Hardened_Adamantite_Tube",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 23786,
+          "display_name": "Khorium Power Core",
+          "wiki_slug": "Khorium_Power_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 22445,
+          "display_name": "Arcane Dust",
+          "wiki_slug": "Arcane_Dust",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 22449,
+          "display_name": "Large Prismatic Shard",
+          "wiki_slug": "Large_Prismatic_Shard",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Ultra-Flash Shadow Reflector",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Ultra-Flash_Shadow_Reflector",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18639,
+        "display_name": "Ultra-Flash Shadow Reflector",
+        "wiki_slug": "Ultra-Flash_Shadow_Reflector"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11371,
+          "display_name": "Dark Iron Bar",
+          "wiki_slug": "Dark_Iron_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 12803,
+          "display_name": "Living Essence",
+          "wiki_slug": "Living_Essence",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 12808,
+          "display_name": "Essence of Undeath",
+          "wiki_slug": "Essence_of_Undeath",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 12800,
+          "display_name": "Azerothian Diamond",
+          "wiki_slug": "Azerothian_Diamond",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12799,
+          "display_name": "Large Opal",
+          "wiki_slug": "Large_Opal",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Megabomb",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Arcane_Megabomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233984,
+        "display_name": "Arcane Megabomb",
+        "wiki_slug": "Arcane_Megabomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 20725,
+          "display_name": "Nexus Crystal",
+          "wiki_slug": "Nexus_Crystal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "G00 DV-1B3 Generator",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "G00_DV-1B3_Generator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233987,
+        "display_name": "G00 DV-1B3 Generator",
+        "wiki_slug": "G00_DV-1B3_Generator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 234005,
+          "display_name": "Obsidian Blasting Powder",
+          "wiki_slug": "Obsidian_Blasting_Powder",
+          "quantity": 20
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 30
+        },
+        {
+          "wowhead_id": 234009,
+          "display_name": "Bolt of Qiraji Silk",
+          "wiki_slug": "Bolt_of_Qiraji_Silk",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 234010,
+          "display_name": "Ancient Sandworm Bile",
+          "wiki_slug": "Ancient_Sandworm_Bile",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 234007,
+          "display_name": "Spiked Silithid Chitin",
+          "wiki_slug": "Spiked_Silithid_Chitin",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "name": "Obsidian Blasting Powder",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Obsidian_Blasting_Powder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 234005,
+        "display_name": "Obsidian Blasting Powder",
+        "wiki_slug": "Obsidian_Blasting_Powder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 22202,
+          "display_name": "Small Obsidian Shard",
+          "wiki_slug": "Small_Obsidian_Shard",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Obsidian Bomb",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Obsidian_Bomb",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233986,
+        "display_name": "Obsidian Bomb",
+        "wiki_slug": "Obsidian_Bomb"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 234005,
+          "display_name": "Obsidian Blasting Powder",
+          "wiki_slug": "Obsidian_Blasting_Powder",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 234007,
+          "display_name": "Spiked Silithid Chitin",
+          "wiki_slug": "Spiked_Silithid_Chitin",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234008,
+          "display_name": "Qiraji Silk",
+          "wiki_slug": "Qiraji_Silk",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12365,
+          "display_name": "Dense Stone",
+          "wiki_slug": "Dense_Stone",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "The Fumigator",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "The_Fumigator",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233985,
+        "display_name": "The Fumigator",
+        "wiki_slug": "The_Fumigator"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234005,
+          "display_name": "Obsidian Blasting Powder",
+          "wiki_slug": "Obsidian_Blasting_Powder",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Tuned Force Reactive Disk",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Tuned_Force_Reactive_Disk",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233988,
+        "display_name": "Tuned Force Reactive Disk",
+        "wiki_slug": "Tuned_Force_Reactive_Disk"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 18168,
+          "display_name": "Force Reactive Disk",
+          "wiki_slug": "Force_Reactive_Disk#Classic",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234007,
+          "display_name": "Spiked Silithid Chitin",
+          "wiki_slug": "Spiked_Silithid_Chitin",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 234003,
+          "display_name": "Obsidian-Infused Thorium Bar",
+          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 234005,
+          "display_name": "Obsidian Blasting Powder",
+          "wiki_slug": "Obsidian_Blasting_Powder",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Fiery Core Sharpshooter Rifle",
+      "tier": "artisan",
+      "skill": 320,
+      "source": null,
+      "wiki_slug": "Fiery_Core_Sharpshooter_Rifle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 227849,
+        "display_name": "Fiery Core Sharpshooter Rifle",
+        "wiki_slug": "Fiery_Core_Sharpshooter_Rifle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 17010,
+          "display_name": "Fiery Core",
+          "wiki_slug": "Fiery_Core",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 17011,
+          "display_name": "Lava Core",
+          "wiki_slug": "Lava_Core",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12360,
+          "display_name": "Arcanite Bar",
+          "wiki_slug": "Arcanite_Bar",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 16006,
+          "display_name": "Delicate Arcanite Converter",
+          "wiki_slug": "Delicate_Arcanite_Converter",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Obsidian Scope",
+      "tier": "artisan",
+      "skill": 320,
+      "source": null,
+      "wiki_slug": "Obsidian_Scope",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 235529,
+        "display_name": "Obsidian Scope",
+        "wiki_slug": "Obsidian_Scope"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16000,
+          "display_name": "Thorium Tube",
+          "wiki_slug": "Thorium_Tube",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12363,
+          "display_name": "Arcane Crystal",
+          "wiki_slug": "Arcane_Crystal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234003,
+          "display_name": "Obsidian-Infused Thorium Bar",
+          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Obsidian Shotgun",
+      "tier": "artisan",
+      "skill": 320,
+      "source": null,
+      "wiki_slug": "Obsidian_Shotgun",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 234434,
+        "display_name": "Obsidian Shotgun",
+        "wiki_slug": "Obsidian_Shotgun"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12360,
+          "display_name": "Arcanite Bar",
+          "wiki_slug": "Arcanite_Bar",
+          "quantity": 30
+        },
+        {
+          "wowhead_id": 234003,
+          "display_name": "Obsidian-Infused Thorium Bar",
+          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 20725,
+          "display_name": "Nexus Crystal",
+          "wiki_slug": "Nexus_Crystal",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 20868,
+          "display_name": "Lambent Idol",
+          "wiki_slug": "Lambent_Idol",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 20870,
+          "display_name": "Jasper Idol",
+          "wiki_slug": "Jasper_Idol",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 20881,
+          "display_name": "Idol of Strife",
+          "wiki_slug": "Idol_of_Strife",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Tranquil Mechanical Yeti",
+      "tier": "artisan",
+      "skill": 320,
+      "source": null,
+      "wiki_slug": "Tranquil_Mechanical_Yeti",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21277,
+        "display_name": "Tranquil Mechanical Yeti",
+        "wiki_slug": "Tranquil_Mechanical_Yeti"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 15407,
+          "display_name": "Cured Rugged Hide",
+          "wiki_slug": "Cured_Rugged_Hide",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 15994,
+          "display_name": "Thorium Widget",
+          "wiki_slug": "Thorium_Widget",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 7079,
+          "display_name": "Globe of Water",
+          "wiki_slug": "Globe_of_Water",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "wiki_slug": "Truesilver_Transformer",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10558,
+          "display_name": "Gold Power Core",
+          "wiki_slug": "Gold_Power_Core",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
