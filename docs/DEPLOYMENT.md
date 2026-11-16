@@ -61,11 +61,9 @@ A **new** Neon project/database for this app, separate from the sister project's
 
 1. New **Web Service**, this repo. **Environment:** Docker. **Root Directory:** `app`. **Dockerfile Path:** `Dockerfile`.
 2. **Environment Variables:** `DATABASE_URL` (from step 1), `SECRET_KEY_BASE` (`mix phx.gen.secret`), `PHX_HOST`, `PHX_SERVER=true`, `PORT=10000`.
-3. **Docker Command:** `/app/bin/start`.
-4. **Turn auto-deploy off.**
-5. Copy the **Deploy Hook** URL.
-6. Deploy once manually to confirm it boots and migrates against the fresh Neon database.
-7. **Run the catalog-building skill against the deployed app at least once per profession before considering it live** — an empty-catalog Render deploy is a correctly-running app with nothing in it yet, not a broken one, but it isn't a usable product either.
+3. **Docker Command:** leave blank — the image's own `CMD` is `/app/bin/start`, which chains `migrate` → `seed` → `server`, so no Render-specific override is needed (the same image boots correctly on any Docker host).
+4. Deploy once manually (or let auto-deploy run) to confirm it boots, migrates, and seeds against the fresh Neon database.
+5. **A profession's catalog ships in the repo at `priv/catalog_seeds/<slug>.json` and loads automatically on every boot via `bin/seed`** — it's safe to re-run (each file's catalog is replaced atomically). A profession with no seed file yet shows its tab as a "not scraped yet" placeholder rather than failing; run the catalog-building skill and commit its output to add one.
 
 ### 3. Wire the deploy hook into GitHub Actions
 
