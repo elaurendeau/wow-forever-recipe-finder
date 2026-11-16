@@ -154,7 +154,28 @@
                 <td class="num">{format_number(r.sold_per_day)}</td>
                 <td class="num rf-muted">{format_pct(r.sale_confidence_pct)}</td>
                 <td class="num">{format_copper(r.price_copper)}</td>
-                <td class="num rf-muted">{format_copper(r.mat_cost_copper)}</td>
+                <td class="num rf-muted">
+                  <%= if r.reagent_breakdown == [] do %>
+                    {format_copper(r.mat_cost_copper)}
+                  <% else %>
+                    <span
+                      class="rf-tooltip-trigger"
+                      id={"cost-tooltip-#{r.pattern.crafted_item.wowhead_id}"}
+                      phx-hook="HoverTooltip"
+                    >
+                      {format_copper(r.mat_cost_copper)}
+                      <div class="rf-tooltip">
+                        <div class="rf-tooltip-title">Crafting Cost</div>
+                        <%= for line <- r.reagent_breakdown do %>
+                          <div class="rf-tooltip-line">
+                            <span>{line.display_name} x{line.quantity}</span>
+                            <span class="rf-tooltip-price">{format_copper(line.line_total_copper)}</span>
+                          </div>
+                        <% end %>
+                      </div>
+                    </span>
+                  <% end %>
+                </td>
                 <td class={[
                   "num",
                   r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",

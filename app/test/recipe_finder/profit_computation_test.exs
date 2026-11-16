@@ -51,6 +51,9 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     assert result.profit_pct == 90.0
     assert result.missing_data_reasons == []
     assert ProfitResult.profitable?(result)
+    assert result.reagent_breakdown == [
+             %{display_name: "Bolt of Linen Cloth", quantity: 2, unit_price_copper: 50, line_total_copper: 100}
+           ]
   end
 
   test "crafted item has no sale data: price/profit are nil, reason recorded, never a fabricated zero" do
@@ -92,6 +95,14 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
 
     assert result.mat_cost_copper == nil
     assert :missing_reagent_price in result.missing_data_reasons
+
+    # The tooltip breakdown still shows the reagent that DID resolve,
+    # rather than going all-or-nothing the way mat_cost_copper does —
+    # it's exactly the one that's missing that a visitor needs to see.
+    assert result.reagent_breakdown == [
+             %{display_name: "Bolt of Linen Cloth", quantity: 2, unit_price_copper: 50, line_total_copper: 100},
+             %{display_name: "Coarse Thread", quantity: 1, unit_price_copper: nil, line_total_copper: nil}
+           ]
   end
 
   test "compute_results/2 sorts by net per-unit profit descending, incomplete results last" do

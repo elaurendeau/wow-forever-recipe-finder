@@ -100,6 +100,38 @@ const Hooks = {
       document.body.removeChild(textarea)
       done()
     }
+  },
+
+  HoverTooltip: {
+    // Positioned with position: fixed, computed here rather than via CSS
+    // position: absolute, because the table's wrapper sets overflow-x:
+    // auto — which per spec forces overflow-y to auto too, clipping an
+    // absolutely-positioned child near the top/bottom of the table.
+    // Fixed positioning escapes that ancestor's overflow entirely.
+    mounted() {
+      const tooltip = this.el.querySelector(".rf-tooltip")
+      if (!tooltip) return
+
+      this.el.addEventListener("mouseenter", () => {
+        tooltip.style.display = "block"
+        const trigger = this.el.getBoundingClientRect()
+        const tw = tooltip.offsetWidth
+        const th = tooltip.offsetHeight
+        let left = trigger.right - tw
+        let top = trigger.top - th - 6
+
+        if (top < 4) top = trigger.bottom + 6
+        if (left < 4) left = 4
+        if (left + tw > window.innerWidth - 4) left = window.innerWidth - tw - 4
+
+        tooltip.style.left = `${left}px`
+        tooltip.style.top = `${top}px`
+      })
+
+      this.el.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none"
+      })
+    }
   }
 }
 

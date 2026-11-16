@@ -124,6 +124,16 @@
   .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
   .profit-pos { color: var(--good); font-weight: 600; }
   .muted-cell { color: var(--muted); }
+  .tooltip-trigger { cursor: help; border-bottom: 1px dotted var(--muted); position: relative; }
+  .tooltip {
+    display: none; position: absolute; z-index: 50; min-width: 220px; right: 0; top: 100%; margin-top: 6px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.45); text-align: left; font-family: var(--font-body); font-size: 12.5px;
+  }
+  .tooltip-trigger:hover .tooltip { display: block; }
+  .tooltip-title { color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+  .tooltip-line { display: flex; justify-content: space-between; gap: 16px; color: var(--fg); padding: 2px 0; }
+  .tooltip-price { font-family: var(--font-mono); color: var(--muted); white-space: nowrap; }
 
   .calc-fab {
     position: fixed; left: 24px; bottom: 24px; width: 48px; height: 48px; border-radius: 50%;
@@ -225,7 +235,8 @@
 
 <script>
   const TAILORING_ROWS = [
-    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.900", conf: "84%", price: "0.66g", cost: "0.40g", profit: "(0.23g profit)", pct: "58%" },
+    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.900", conf: "84%", price: "0.66g", cost: "0.40g", profit: "(0.23g profit)", pct: "58%",
+      reagents: [{ name: "Bolt of Mageweave", qty: 2, total: "0.30g" }, { name: "Green Dye", qty: 1, total: "0.10g" }] },
     { name: "Bolt of Mageweave", tier: "Journeyman", skill: 140, source: "Trainer", spd: "202.000", conf: "74%", price: "0.30g", cost: "0.18g", profit: "(0.11g profit)", pct: "61%" },
     { name: "Bolt of Woolen Cloth", tier: "Apprentice", skill: 55, source: "Trainer", spd: "521.500", conf: "81%", price: "0.03g", cost: "0.01g", profit: "(0.02g profit)", pct: "200%" },
     { name: "Black Silk Pack", tier: "Journeyman", skill: 150, source: "Drop", spd: "90.600", conf: "64%", price: "0.69g", cost: "0.45g", profit: "(0.21g profit)", pct: "47%" },
@@ -309,7 +320,14 @@
         <td class="num">${row.spd}</td>
         <td class="num muted-cell">${row.conf}</td>
         <td class="num">${row.price}</td>
-        <td class="num muted-cell">${row.cost}</td>
+        <td class="num muted-cell">${row.reagents ? `
+          <span class="tooltip-trigger">${row.cost}
+            <div class="tooltip">
+              <div class="tooltip-title">Crafting Cost</div>
+              ${row.reagents.map((r) => `<div class="tooltip-line"><span>${r.name} x${r.qty}</span><span class="tooltip-price">${r.total}</span></div>`).join("")}
+            </div>
+          </span>
+        ` : row.cost}</td>
         <td class="num profit-pos">${row.profit}</td>
         <td class="num profit-pos">${row.pct}</td>
       </tr>

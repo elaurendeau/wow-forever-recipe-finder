@@ -18,11 +18,20 @@ defmodule WowForeverRecipeFinder.ProfitResult do
     :mat_cost_copper,
     :net_profit_per_unit_copper,
     :profit_pct,
-    :missing_data_reasons
+    :missing_data_reasons,
+    reagent_breakdown: []
   ]
 
   @type missing_data_reason ::
           :no_item_id | :no_sale_data | :no_reagents_found | :missing_reagent_price
+
+  @typedoc "One reagent line for the Cost column's hover tooltip — see docs/PRD.md § 7.3."
+  @type reagent_line :: %{
+          display_name: String.t(),
+          quantity: pos_integer(),
+          unit_price_copper: non_neg_integer() | nil,
+          line_total_copper: non_neg_integer() | nil
+        }
 
   @type t :: %__MODULE__{
           pattern: Pattern.t(),
@@ -32,7 +41,8 @@ defmodule WowForeverRecipeFinder.ProfitResult do
           mat_cost_copper: non_neg_integer() | nil,
           net_profit_per_unit_copper: integer() | nil,
           profit_pct: float() | nil,
-          missing_data_reasons: [missing_data_reason()]
+          missing_data_reasons: [missing_data_reason()],
+          reagent_breakdown: [reagent_line()]
         }
 
   @spec profitable?(t()) :: boolean()

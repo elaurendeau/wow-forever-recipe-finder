@@ -286,6 +286,41 @@ a {
 .rf-muted {
   color: var(--muted);
 }
+.rf-tooltip-trigger {
+  cursor: help;
+  border-bottom: 1px dotted var(--muted);
+}
+.rf-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  min-width: 220px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+}
+.rf-tooltip-title {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.rf-tooltip-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--fg);
+  padding: 2px 0;
+}
+.rf-tooltip-price {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  white-space: nowrap;
+}
 .rf-error {
   background: var(--bad);
   color: #2a0f0a;

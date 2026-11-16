@@ -70,6 +70,8 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
           sum_reagent_cost(reagents, snapshot, reasons)
       end
 
+    reagent_breakdown = build_reagent_breakdown(pattern.reagents, snapshot)
+
     {net_profit_per_unit, profit_pct} =
       case {price, mat_cost} do
         {p, m} when is_integer(p) and is_integer(m) ->
@@ -92,8 +94,30 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
       mat_cost_copper: mat_cost,
       net_profit_per_unit_copper: net_profit_per_unit,
       profit_pct: profit_pct,
-      missing_data_reasons: Enum.reverse(reasons)
+      missing_data_reasons: Enum.reverse(reasons),
+      reagent_breakdown: reagent_breakdown
     }
+  end
+
+  # For the Cost column's hover tooltip — per-reagent lines, independent
+  # of whether the aggregate mat_cost_copper above could be computed (a
+  # single missing reagent price shouldn't hide the ones that did
+  # resolve; the tooltip shows exactly which reagent is missing instead).
+  defp build_reagent_breakdown(reagents, snapshot) do
+    Enum.map(reagents, fn reagent ->
+      unit_price =
+        case PriceSnapshot.fetch_price(snapshot, reagent.item.wowhead_id) do
+          {:ok, item_price} -> item_price.price_copper
+          :error -> nil
+        end
+
+      %{
+        display_name: reagent.item.display_name,
+        quantity: reagent.quantity,
+        unit_price_copper: unit_price,
+        line_total_copper: unit_price && unit_price * reagent.quantity
+      }
+    end)
   end
 
   defp sum_reagent_cost(reagents, snapshot, reasons) do
