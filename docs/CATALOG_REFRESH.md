@@ -160,7 +160,9 @@ Wowhead's Forever data is datamined, and Forever is still changing. Before mergi
 
 The seeds load on the next deploy: `priv/repo/seeds.exs` and the release `seed` command load every `priv/catalog_seeds/*.json`.
 
-**A new profession's tab only appears in the UI if its slug is in `@professions` in `lib/recipe_finder_web/live/recipe_finder_live.ex`**, and in the mockup `docs/mockups/recipe-finder-reference.html` per CLAUDE.md's UI rule. As of 2026-11-16 the extracts for `mining`, `herbalism`, `skinning` and `fishing` exist, but those slugs aren't in the tab list yet.
+**A new profession's tab only appears in the UI if its slug is in `@professions` in `lib/recipe_finder_web/live/recipe_finder_live.ex`**, and in the mockup `docs/mockups/recipe-finder-reference.html` per CLAUDE.md's UI rule.
+
+`mining`, `herbalism`, `skinning` and `fishing` were extracted (see the table above) but their seed files were deliberately not committed — each has only 1–3 crafts, all Forever camping items, not a gathering profession's actual output (ore/herbs/leather aren't "crafted" from a reagent list). Not worth a tab. Re-extracting them if that changes is just re-running Step 1-6 above.
 
 ## 6. How Wowhead data maps to a seed file
 
