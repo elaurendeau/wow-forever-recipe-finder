@@ -63,6 +63,20 @@ a {
   font-size: 12.5px;
   font-family: var(--font-mono);
 }
+.rf-forget-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 6px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.rf-forget-link:hover {
+  opacity: 0.8;
+}
 .rf-upload-pill {
   display: flex;
   align-items: center;

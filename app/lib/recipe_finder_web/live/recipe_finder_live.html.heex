@@ -1,10 +1,11 @@
-<div class="rf-topbar">
+<div class="rf-topbar" id="recipe-finder" phx-hook="TsmSnapshot">
   <div class="rf-topbar-left">
     <h1 class="rf-title">WoW Forever Recipe Finder</h1>
   </div>
   <div class="rf-freshness">
     <%= if @captured_at do %>
-      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")}
+      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")} — saved in this browser
+      <button type="button" class="rf-forget-link" phx-click="clear_snapshot">forget</button>
     <% else %>
       No data uploaded yet
     <% end %>

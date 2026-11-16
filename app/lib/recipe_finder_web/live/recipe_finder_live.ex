@@ -56,22 +56,49 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
            {:ok, File.read!(path)}
          end) do
       [export_text] ->
-        case ProfitComputation.parse_export(export_text) do
-          {:ok, snapshot} ->
-            socket =
-              socket
-              |> assign(price_snapshot: snapshot, captured_at: DateTime.utc_now(), upload_error: nil)
-              |> recompute_results()
+        captured_at = DateTime.utc_now()
 
+        case load_export(socket, export_text, captured_at) do
+          {:ok, socket} ->
+            {:noreply,
+             push_event(socket, "store_snapshot", %{
+               data: export_text,
+               captured_at: DateTime.to_iso8601(captured_at)
+             })}
+
+          {:error, socket} ->
             {:noreply, socket}
-
-          {:error, reason} ->
-            {:noreply, assign(socket, upload_error: format_parse_error(reason))}
         end
 
       [] ->
         {:noreply, assign(socket, upload_error: "No file was uploaded.")}
     end
+  end
+
+  # Fired by the TsmSnapshot JS hook on mount when the browser has a
+  # previously-uploaded export cached in localStorage — lets a revisit
+  # skip re-uploading entirely, since no browser lets a script prefill
+  # an <input type="file">'s path for a user. See assets/js/app.js.
+  def handle_event("restore_snapshot", %{"data" => export_text} = params, socket) do
+    captured_at =
+      case DateTime.from_iso8601(params["captured_at"] || "") do
+        {:ok, dt, _offset} -> dt
+        {:error, _reason} -> DateTime.utc_now()
+      end
+
+    case load_export(socket, export_text, captured_at) do
+      {:ok, socket} -> {:noreply, socket}
+      {:error, socket} -> {:noreply, push_event(socket, "clear_snapshot", %{})}
+    end
+  end
+
+  def handle_event("clear_snapshot", _params, socket) do
+    socket =
+      socket
+      |> assign(price_snapshot: nil, captured_at: nil, results: [], upload_error: nil)
+      |> push_event("clear_snapshot", %{})
+
+    {:noreply, socket}
   end
 
   def handle_event("filter_changed", %{"filter" => params}, socket) do
@@ -98,6 +125,21 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
       if current.sort_by == field and current.sort_dir == :desc, do: :asc, else: :desc
 
     {:noreply, assign(socket, filter: %{current | sort_by: field, sort_dir: new_dir})}
+  end
+
+  defp load_export(socket, export_text, captured_at) do
+    case ProfitComputation.parse_export(export_text) do
+      {:ok, snapshot} ->
+        socket =
+          socket
+          |> assign(price_snapshot: snapshot, captured_at: captured_at, upload_error: nil)
+          |> recompute_results()
+
+        {:ok, socket}
+
+      {:error, reason} ->
+        {:error, assign(socket, upload_error: format_parse_error(reason))}
+    end
   end
 
   defp recompute_results(socket) do

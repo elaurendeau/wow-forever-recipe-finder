@@ -22,10 +22,53 @@ import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 
+// Browsers never let a script set an <input type="file">'s path (for any
+// site, cookies included — it's a security restriction, not something
+// this app can opt out of). The closest real equivalent to "remember my
+// file for me" is caching the export's own contents client-side, so a
+// revisit skips re-uploading entirely rather than pre-filling a picker.
+const SNAPSHOT_KEY = "rf_tsm_export"
+const CAPTURED_AT_KEY = "rf_tsm_captured_at"
+
+const Hooks = {
+  TsmSnapshot: {
+    mounted() {
+      let data, capturedAt
+      try {
+        data = localStorage.getItem(SNAPSHOT_KEY)
+        capturedAt = localStorage.getItem(CAPTURED_AT_KEY)
+      } catch (_e) {
+        data = null
+      }
+      if (data) this.pushEvent("restore_snapshot", {data, captured_at: capturedAt})
+
+      this.handleEvent("store_snapshot", ({data, captured_at}) => {
+        try {
+          localStorage.setItem(SNAPSHOT_KEY, data)
+          localStorage.setItem(CAPTURED_AT_KEY, captured_at)
+        } catch (_e) {
+          // Storage full or unavailable (private browsing, quota) — the
+          // upload itself already succeeded, so just skip persisting it.
+        }
+      })
+
+      this.handleEvent("clear_snapshot", () => {
+        try {
+          localStorage.removeItem(SNAPSHOT_KEY)
+          localStorage.removeItem(CAPTURED_AT_KEY)
+        } catch (_e) {
+          // Nothing to clean up if storage was never writable.
+        }
+      })
+    }
+  }
+}
+
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
-  params: {_csrf_token: csrfToken}
+  params: {_csrf_token: csrfToken},
+  hooks: Hooks
 })
 
 // Show progress bar on live navigation and form submits
