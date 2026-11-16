@@ -22,6 +22,19 @@ defmodule WowForeverRecipeFinder.TsmExportParserTest do
       assert price.price_copper == 285
       assert_in_delta price.sold_per_day, 41.919, 0.0001
       assert_in_delta price.sale_confidence_pct, 41.3, 0.0001
+
+      # Same item's AUCTIONDB_NON_COMMODITY_DATA row: {itemString: 5571,
+      # minBuyout: "9C", numAuctions: "K1", marketValueRecent: "9C"} —
+      # base-32 "9C" decodes to 300 (9*32 + 12).
+      assert price.recent_value_copper == 300
+
+      # AUCTIONDB_NON_COMMODITY_DATA only covers non-commodity items —
+      # most of the region-wide price map's items (commodities like
+      # cloth/ore bars) should have no recent value at all, never a
+      # fabricated figure for an item TSM didn't actually track there.
+      with_recent = Enum.count(snapshot.prices_by_item_id, fn {_id, p} -> p.recent_value_copper end)
+      assert with_recent > 0
+      assert with_recent < map_size(snapshot.prices_by_item_id)
     end
 
     test "parses the second real snapshot (captured a later session day)" do

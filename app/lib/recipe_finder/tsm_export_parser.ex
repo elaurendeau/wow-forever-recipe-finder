@@ -5,13 +5,19 @@ defmodule WowForeverRecipeFinder.TsmExportParser do
   this module implements — every numeric fact below (the base-32 digit
   set, the `/1000` and `/10` scaling) is cited there, not invented here.
 
-  Reads only `AUCTIONDB_REGION_SALE` (region-wide), per docs/PRD.md §
-  7.1: it's the only table carrying a sold-per-day figure at all.
+  Reads `AUCTIONDB_REGION_SALE` (region-wide) as the primary, required
+  table, per docs/PRD.md § 7.1: it's the only table carrying a
+  sold-per-day figure at all. Also reads `AUCTIONDB_NON_COMMODITY_DATA`
+  (realm-level) if present, to fill in `ItemPrice.recent_value_copper`
+  ("Recent Value" in TSM's own tooltip) — optional, since that table
+  only covers non-commodity items and a visitor's export might have
+  none, or several (one per realm they've scanned).
   """
 
   alias WowForeverRecipeFinder.{ItemPrice, PriceSnapshot}
 
   @table_name "AUCTIONDB_REGION_SALE"
+  @recent_value_table "AUCTIONDB_NON_COMMODITY_DATA"
 
   # One `LoadData("TABLE","Region",[[return {...}]])` line.
   @load_data_regex ~r/LoadData\("([^"]+)","([^"]+)",\[\[return (.*?)\]\]\)\s*--</s
@@ -37,6 +43,7 @@ defmodule WowForeverRecipeFinder.TsmExportParser do
           if map_size(prices_by_item_id) == 0 do
             {:error, {:no_usable_rows, @table_name}}
           else
+            prices_by_item_id = merge_recent_values(prices_by_item_id, export_text)
             {:ok, %PriceSnapshot{prices_by_item_id: prices_by_item_id}}
           end
         end
@@ -52,6 +59,16 @@ defmodule WowForeverRecipeFinder.TsmExportParser do
       [^table_name, _region, body] -> body
       _other -> nil
     end)
+  end
+
+  # Unlike find_table_body/2, returns every match — a visitor's export
+  # can carry one AUCTIONDB_NON_COMMODITY_DATA table per realm they've
+  # scanned, not just one.
+  defp find_all_table_bodies(export_text, table_name) do
+    @load_data_regex
+    |> Regex.scan(export_text, capture: :all_but_first)
+    |> Enum.filter(fn [name, _region, _body] -> name == table_name end)
+    |> Enum.map(fn [_name, _region, body] -> body end)
   end
 
   defp parse_table_body(body) do
@@ -167,6 +184,42 @@ defmodule WowForeverRecipeFinder.TsmExportParser do
         end)
 
       {:ok, prices}
+    end
+  end
+
+  # Best-effort: a missing/malformed AUCTIONDB_NON_COMMODITY_DATA table
+  # just means no recent-value figures get filled in, never a parse
+  # failure — it's an optional enrichment of the required region table.
+  defp merge_recent_values(prices_by_item_id, export_text) do
+    export_text
+    |> find_all_table_bodies(@recent_value_table)
+    |> Enum.reduce(prices_by_item_id, fn body, acc ->
+      case parse_table_body(body) do
+        {:ok, fields, rows} -> merge_recent_rows(acc, fields, rows)
+        {:error, _reason} -> acc
+      end
+    end)
+  end
+
+  defp merge_recent_rows(prices_by_item_id, fields, rows) do
+    with {:ok, item_idx} <- field_index(fields, "itemString"),
+         {:ok, recent_idx} <- field_index(fields, "marketValueRecent") do
+      rows
+      |> Enum.map(&decode_row/1)
+      |> Enum.reduce(prices_by_item_id, fn values, acc ->
+        with wowhead_id when is_integer(wowhead_id) <- Enum.at(values, item_idx),
+             recent when is_integer(recent) <- Enum.at(values, recent_idx),
+             true <- Map.has_key?(acc, wowhead_id) do
+          Map.update!(acc, wowhead_id, &%{&1 | recent_value_copper: recent})
+        else
+          # An item recent-valued but absent from the broader region
+          # table would need enforce_keys' other 3 fields to store —
+          # not worth fabricating those just to carry this one figure.
+          _ -> acc
+        end
+      end)
+    else
+      {:error, _reason} -> prices_by_item_id
     end
   end
 

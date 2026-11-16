@@ -52,13 +52,14 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
   def compute_result(%Pattern{} = pattern, %PriceSnapshot{} = snapshot) do
     reasons = []
 
-    {price, sold_per_day, confidence, reasons} =
+    {price, recent_value, sold_per_day, confidence, reasons} =
       case PriceSnapshot.fetch_price(snapshot, pattern.crafted_item.wowhead_id) do
         {:ok, item_price} ->
-          {item_price.price_copper, item_price.sold_per_day, item_price.sale_confidence_pct, reasons}
+          {item_price.price_copper, item_price.recent_value_copper, item_price.sold_per_day,
+           item_price.sale_confidence_pct, reasons}
 
         :error ->
-          {nil, nil, nil, [:no_sale_data | reasons]}
+          {nil, nil, nil, nil, [:no_sale_data | reasons]}
       end
 
     {mat_cost, reasons} =
@@ -89,6 +90,7 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
     %ProfitResult{
       pattern: pattern,
       price_copper: price,
+      recent_value_copper: recent_value,
       sold_per_day: sold_per_day,
       sale_confidence_pct: confidence,
       mat_cost_copper: mat_cost,

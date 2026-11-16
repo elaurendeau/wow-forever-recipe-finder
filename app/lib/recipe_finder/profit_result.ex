@@ -13,6 +13,7 @@ defmodule WowForeverRecipeFinder.ProfitResult do
   defstruct [
     :pattern,
     :price_copper,
+    :recent_value_copper,
     :sold_per_day,
     :sale_confidence_pct,
     :mat_cost_copper,
@@ -36,6 +37,7 @@ defmodule WowForeverRecipeFinder.ProfitResult do
   @type t :: %__MODULE__{
           pattern: Pattern.t(),
           price_copper: non_neg_integer() | nil,
+          recent_value_copper: non_neg_integer() | nil,
           sold_per_day: float() | nil,
           sale_confidence_pct: float() | nil,
           mat_cost_copper: non_neg_integer() | nil,

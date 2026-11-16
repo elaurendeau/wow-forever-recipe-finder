@@ -209,6 +209,7 @@
             <th class="num sorted">Sold/day &darr;</th>
             <th class="num">Confidence</th>
             <th class="num">Price</th>
+            <th class="num" title="TSM's realm-level &quot;Recent Value&quot; — only tracked for non-commodity items">Recent</th>
             <th class="num">Cost</th>
             <th class="num">Profit</th>
             <th class="num">%</th>
@@ -220,6 +221,7 @@
             <td class="num"><input type="text" placeholder="min"></td>
             <td class="num"><input type="text" placeholder="min %"></td>
             <td class="num"><input type="text" placeholder="max"></td>
+            <td class="num"></td>
             <td class="num"></td>
             <td class="num"><input type="text" placeholder="min"></td>
             <td class="num"><input type="text" placeholder="min %"></td>
@@ -237,7 +239,7 @@
 
 <script>
   const TAILORING_ROWS = [
-    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.900", conf: "84%", price: "0.66g", cost: "0.40g", profit: "(0.23g profit)", pct: "58%",
+    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.900", conf: "84%", price: "0.66g", recent: "0.70g", cost: "0.40g", profit: "(0.23g profit)", pct: "58%",
       reagents: [{ name: "Bolt of Mageweave", qty: 2, total: "0.30g" }, { name: "Green Dye", qty: 1, total: "0.10g" }] },
     { name: "Bolt of Mageweave", tier: "Journeyman", skill: 140, source: "Trainer", spd: "202.000", conf: "74%", price: "0.30g", cost: "0.18g", profit: "(0.11g profit)", pct: "61%" },
     { name: "Bolt of Woolen Cloth", tier: "Apprentice", skill: 55, source: "Trainer", spd: "521.500", conf: "81%", price: "0.03g", cost: "0.01g", profit: "(0.02g profit)", pct: "200%" },
@@ -322,6 +324,7 @@
         <td class="num">${row.spd}</td>
         <td class="num muted-cell">${row.conf}</td>
         <td class="num">${row.price}</td>
+        <td class="num muted-cell">${row.recent || "—"}</td>
         <td class="num muted-cell">${row.reagents ? `
           <span class="tooltip-trigger">${row.cost}
             <div class="tooltip">
