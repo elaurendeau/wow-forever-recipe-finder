@@ -192,6 +192,11 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
     Enum.find_value(@professions, slug, fn {s, label} -> s == slug && label end)
   end
 
+  # The "/forever" shape is this project's own server — see
+  # docs/DATA_SOURCES.md § Warcraft Wiki for the three observed shapes;
+  # the numeric item ID is shared across all of them.
+  defp wowhead_url(wowhead_id), do: "https://www.wowhead.com/forever/item=#{wowhead_id}"
+
   defp format_copper(nil), do: "—"
 
   defp format_copper(copper) do

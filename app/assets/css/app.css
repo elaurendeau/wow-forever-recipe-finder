@@ -256,6 +256,13 @@ a {
 }
 .rf-item-name {
   font-weight: 600;
+  color: var(--fg);
+  text-decoration: none;
+  display: inline-block;
+}
+.rf-item-name:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 .rf-item-tier {
   color: var(--muted);

@@ -118,7 +118,8 @@
   td.num { text-align: right; font-family: var(--font-mono); }
   .item-cell { display: flex; align-items: center; gap: 9px; }
   .item-icon { width: 22px; height: 22px; border-radius: 5px; background: var(--surface-2); border: 1px solid var(--border); flex-shrink: 0; }
-  .item-name { font-weight: 600; }
+  .item-name { font-weight: 600; color: var(--fg); text-decoration: none; display: inline-block; }
+  .item-name:hover { color: var(--accent); text-decoration: underline; }
   .item-tier { color: var(--muted); font-size: 11px; }
   .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
   .profit-pos { color: var(--good); font-weight: 600; }
@@ -298,7 +299,7 @@
           <div class="item-cell">
             <div class="item-icon"></div>
             <div>
-              <div class="item-name">${row.name}</div>
+              <a class="item-name" href="#" title="Opens the item's Wowhead page — not wired up in this mockup">${row.name}</a>
               <div class="item-tier">${row.tier}</div>
             </div>
           </div>

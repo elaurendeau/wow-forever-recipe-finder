@@ -139,7 +139,14 @@
             <%= for r <- filtered do %>
               <tr>
                 <td>
-                  <div class="rf-item-name">{r.pattern.name}</div>
+                  <a
+                    class="rf-item-name"
+                    href={wowhead_url(r.pattern.crafted_item.wowhead_id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {r.pattern.name}
+                  </a>
                   <div class="rf-item-tier">{to_string(r.pattern.tier)}</div>
                 </td>
                 <td class="num">{r.pattern.skill}</td>
