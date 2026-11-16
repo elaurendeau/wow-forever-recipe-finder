@@ -10,7 +10,7 @@ defmodule WowForeverRecipeFinder.CatalogSeedsTest do
   use ExUnit.Case, async: true
 
   @seed_dir Path.expand("../../priv/catalog_seeds", __DIR__)
-  @professions ~w(alchemy enchanting engineering tailoring)
+  @professions ~w(alchemy enchanting engineering tailoring blacksmithing leatherworking cooking firstaid)
   @tiers ~w(apprentice journeyman expert artisan)
   @sources [nil, "trainer", "vendor", "drop", "quest"]
   @statuses ~w(resolved no_wiki_page reagent_cost_incomplete)
