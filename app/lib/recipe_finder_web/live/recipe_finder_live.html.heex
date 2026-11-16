@@ -165,7 +165,16 @@
                     >
                       {format_copper(r.mat_cost_copper)}
                       <div class="rf-tooltip">
-                        <div class="rf-tooltip-title">Crafting Cost</div>
+                        <div class="rf-tooltip-title">
+                          <span class="rf-tooltip-label">Crafting Cost</span>
+                          <span class="rf-tooltip-total">{format_copper(r.mat_cost_copper)}</span>
+                          <span class={[
+                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",
+                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 && "rf-profit-neg"
+                          ]}>
+                            {format_profit(r.net_profit_per_unit_copper)}
+                          </span>
+                        </div>
                         <%= for line <- r.reagent_breakdown do %>
                           <div class="rf-tooltip-line">
                             <span>{line.display_name} x{line.quantity}</span>

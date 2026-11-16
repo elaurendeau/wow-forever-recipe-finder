@@ -305,9 +305,19 @@ a {
   font-size: 12.5px;
 }
 .rf-tooltip-title {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.rf-tooltip-label {
   color: var(--accent);
   font-weight: 700;
-  margin-bottom: 6px;
+}
+.rf-tooltip-total {
+  font-family: var(--font-mono);
+  color: var(--fg);
+  margin: 0 6px;
 }
 .rf-tooltip-line {
   display: flex;
