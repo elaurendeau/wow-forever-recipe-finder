@@ -3,4 +3,5 @@ set -eu
 
 cd -P -- "$(dirname -- "$0")"
 ./migrate
+./seed
 exec ./server
