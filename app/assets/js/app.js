@@ -61,6 +61,45 @@ const Hooks = {
         }
       })
     }
+  },
+
+  CopyButton: {
+    mounted() {
+      this.el.addEventListener("click", () => {
+        const text = this.el.dataset.copy
+        const original = this.el.textContent
+
+        const done = () => {
+          this.el.textContent = "Copied!"
+          setTimeout(() => { this.el.textContent = original }, 1500)
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(() => this.fallbackCopy(text, done))
+        } else {
+          this.fallbackCopy(text, done)
+        }
+      })
+    },
+    fallbackCopy(text, done) {
+      // document.execCommand is deprecated but still the only option
+      // when the async Clipboard API isn't available (older browsers,
+      // or a non-secure context).
+      const textarea = document.createElement("textarea")
+      textarea.value = text
+      textarea.style.position = "fixed"
+      textarea.style.opacity = "0"
+      document.body.appendChild(textarea)
+      textarea.focus()
+      textarea.select()
+      try {
+        document.execCommand("copy")
+      } catch (_e) {
+        // Nothing more we can do — the user can still select the text by hand.
+      }
+      document.body.removeChild(textarea)
+      done()
+    }
   }
 }
 

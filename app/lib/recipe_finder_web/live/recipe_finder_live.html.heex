@@ -19,6 +19,22 @@
 </div>
 
 <div class="rf-page">
+  <%= unless @captured_at do %>
+    <div class="rf-path-hint">
+      Default TSM export folder:
+      <code>C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns\TradeSkillMaster_AppHelper</code>
+      <button
+        type="button"
+        id="copy-tsm-path"
+        class="rf-copy-btn"
+        phx-hook="CopyButton"
+        data-copy="C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns\TradeSkillMaster_AppHelper"
+      >
+        Copy
+      </button>
+    </div>
+  <% end %>
+
   <%= if @upload_error do %>
     <div class="rf-error">{@upload_error}</div>
   <% end %>
