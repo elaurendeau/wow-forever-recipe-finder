@@ -28,9 +28,10 @@ defmodule WowForeverRecipeFinder.Release do
   A full catalog load is a few thousand sequential queries in one
   transaction — fine locally, but Ecto's default 15s per-query timeout
   can be too tight over a hosted free-tier DB's connection/pooler
-  latency. This runs rarely (deploy boot, not a user request), so a
-  generous override here is the right tradeoff over chasing a timeout
-  flake with retries.
+  latency. The repo-wide `timeout:` in config/runtime.exs is what
+  actually raises it (an option here doesn't reliably override a single
+  call's timeout); this one is kept as a harmless, explicit belt and
+  suspenders.
   """
   def seed do
     load_app()

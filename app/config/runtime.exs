@@ -35,7 +35,15 @@ if config_env() == :prod do
     ssl: true,
     url: database_url,
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-    socket_options: maybe_ipv6
+    socket_options: maybe_ipv6,
+    # Ecto's 15s default per-query timeout is tight for the one-off
+    # catalog seed's ~1600 sequential queries over Neon's free-tier
+    # connection/pooler latency from Render — see Release.seed/0. A
+    # repo-wide default (rather than a per-call override) is what
+    # Ecto.Migrator.with_repo's own :timeout opt actually feeds, since
+    # that opt configures the temporary repo's connection pool, not an
+    # individual call's timeout.
+    timeout: 120_000
 
   # The secret key base is used to sign/encrypt cookies and other secrets.
   # A default value is used in config/dev.exs and config/test.exs but you
