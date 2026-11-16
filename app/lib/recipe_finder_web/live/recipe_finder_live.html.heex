@@ -100,8 +100,11 @@
               <th class={th_class(@filter, :price)} phx-click="sort_by" phx-value-field="price">
                 Price{sort_indicator(@filter, :price)}
               </th>
-              <th class={th_class(@filter, :profit_per_day)} phx-click="sort_by" phx-value-field="profit_per_day">
-                Profit/day{sort_indicator(@filter, :profit_per_day)}
+              <th class={th_class(@filter, :profit)} phx-click="sort_by" phx-value-field="profit">
+                Profit{sort_indicator(@filter, :profit)}
+              </th>
+              <th class={th_class(@filter, :profit_pct)} phx-click="sort_by" phx-value-field="profit_pct">
+                %{sort_indicator(@filter, :profit_pct)}
               </th>
             </tr>
             <tr class="rf-table-filter-row">
@@ -123,12 +126,10 @@
                 <input type="text" name="filter[max_price_copper]" placeholder="max" value={@filter.max_price_copper} />
               </td>
               <td>
-                <input
-                  type="text"
-                  name="filter[min_profit_per_day_copper]"
-                  placeholder="min"
-                  value={@filter.min_profit_per_day_copper}
-                />
+                <input type="text" name="filter[min_profit_copper]" placeholder="min" value={@filter.min_profit_copper} />
+              </td>
+              <td>
+                <input type="text" name="filter[min_profit_pct]" placeholder="min %" value={@filter.min_profit_pct} />
               </td>
             </tr>
           </thead>
@@ -146,10 +147,17 @@
                 <td class="num">{format_copper(r.price_copper)}</td>
                 <td class={[
                   "num",
-                  r.net_profit_per_day_copper && r.net_profit_per_day_copper > 0 && "rf-profit-pos",
-                  r.net_profit_per_day_copper && r.net_profit_per_day_copper <= 0 && "rf-profit-neg"
+                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",
+                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 && "rf-profit-neg"
                 ]}>
-                  {format_copper(r.net_profit_per_day_copper)}
+                  {format_profit(r.net_profit_per_unit_copper)}
+                </td>
+                <td class={[
+                  "num",
+                  r.profit_pct && r.profit_pct > 0 && "rf-profit-pos",
+                  r.profit_pct && r.profit_pct <= 0 && "rf-profit-neg"
+                ]}>
+                  {format_pct(r.profit_pct)}
                 </td>
               </tr>
             <% end %>

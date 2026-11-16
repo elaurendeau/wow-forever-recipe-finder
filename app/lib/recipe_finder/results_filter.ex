@@ -16,8 +16,9 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
           optional(:min_sold_per_day) => float() | nil,
           optional(:min_confidence_pct) => float() | nil,
           optional(:max_price_copper) => non_neg_integer() | nil,
-          optional(:min_profit_per_day_copper) => float() | nil,
-          optional(:sort_by) => :sold_per_day | :confidence | :price | :profit_per_day,
+          optional(:min_profit_copper) => integer() | nil,
+          optional(:min_profit_pct) => float() | nil,
+          optional(:sort_by) => :sold_per_day | :confidence | :price | :profit | :profit_pct,
           optional(:sort_dir) => :asc | :desc
         }
 
@@ -28,7 +29,8 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
     min_sold_per_day: nil,
     min_confidence_pct: nil,
     max_price_copper: nil,
-    min_profit_per_day_copper: nil,
+    min_profit_copper: nil,
+    min_profit_pct: nil,
     sort_by: :sold_per_day,
     sort_dir: :desc
   }
@@ -56,7 +58,8 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
       threshold_match?(result.sold_per_day, criteria.min_sold_per_day, :min) and
       threshold_match?(result.sale_confidence_pct, criteria.min_confidence_pct, :min) and
       threshold_match?(result.price_copper, criteria.max_price_copper, :max) and
-      threshold_match?(result.net_profit_per_day_copper, criteria.min_profit_per_day_copper, :min)
+      threshold_match?(result.net_profit_per_unit_copper, criteria.min_profit_copper, :min) and
+      threshold_match?(result.profit_pct, criteria.min_profit_pct, :min)
   end
 
   defp search_match?(_result, ""), do: true
@@ -106,5 +109,6 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
   defp field_value(%ProfitResult{sold_per_day: v}, :sold_per_day), do: v
   defp field_value(%ProfitResult{sale_confidence_pct: v}, :confidence), do: v
   defp field_value(%ProfitResult{price_copper: v}, :price), do: v
-  defp field_value(%ProfitResult{net_profit_per_day_copper: v}, :profit_per_day), do: v
+  defp field_value(%ProfitResult{net_profit_per_unit_copper: v}, :profit), do: v
+  defp field_value(%ProfitResult{profit_pct: v}, :profit_pct), do: v
 end

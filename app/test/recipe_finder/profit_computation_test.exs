@@ -36,7 +36,7 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     }
   end
 
-  test "full data: computes price, mat cost, and net profit correctly" do
+  test "full data: computes price, mat cost, and net profit after the AH cut correctly" do
     cloth = item(1, "Bolt of Linen Cloth")
     shirt = item(2, "White Linen Shirt")
     pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
@@ -46,8 +46,9 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
 
     assert result.price_copper == 200
     assert result.mat_cost_copper == 100
-    assert result.net_profit_per_unit_copper == 100
-    assert result.net_profit_per_day_copper == 1000.0
+    # price after the 5% AH cut: round(200 * 0.95) = 190, minus the 100 mat cost
+    assert result.net_profit_per_unit_copper == 90
+    assert result.profit_pct == 90.0
     assert result.missing_data_reasons == []
     assert ProfitResult.profitable?(result)
   end
@@ -62,7 +63,7 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     result = ProfitComputation.compute_result(pat, snap)
 
     assert result.price_copper == nil
-    assert result.net_profit_per_day_copper == nil
+    assert result.net_profit_per_unit_copper == nil
     assert :no_sale_data in result.missing_data_reasons
     refute ProfitResult.profitable?(result)
   end
@@ -75,7 +76,7 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     result = ProfitComputation.compute_result(pat, snap)
 
     assert result.mat_cost_copper == nil
-    assert result.net_profit_per_day_copper == nil
+    assert result.net_profit_per_unit_copper == nil
     assert :no_reagents_found in result.missing_data_reasons
   end
 
@@ -93,7 +94,7 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     assert :missing_reagent_price in result.missing_data_reasons
   end
 
-  test "compute_results/2 sorts by net profit/day descending, incomplete results last" do
+  test "compute_results/2 sorts by net per-unit profit descending, incomplete results last" do
     gold_item = item(10, "Gold Bar")
     silver_item = item(20, "Silver Bar")
     mystery_item = item(30, "Mystery Box")
@@ -113,8 +114,8 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     results =
       Enum.map([incomplete, profitable_b, profitable_a], &ProfitComputation.compute_result(&1, snap))
       |> Enum.sort_by(fn
-        %ProfitResult{net_profit_per_day_copper: nil} -> {1, 0.0}
-        %ProfitResult{net_profit_per_day_copper: profit} -> {0, -profit}
+        %ProfitResult{net_profit_per_unit_copper: nil} -> {1, 0}
+        %ProfitResult{net_profit_per_unit_copper: profit} -> {0, -profit}
       end)
 
     assert Enum.map(results, & &1.pattern.crafted_item.display_name) == [

@@ -12,6 +12,9 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
 
   alias WowForeverRecipeFinder.{Pattern, PriceSnapshot, ProfitResult, TsmExportParser}
 
+  # The standard WoW/Classic cut taken on a successful auction sale.
+  @ah_cut_pct 0.05
+
   @doc """
   Parses an uploaded TSM export into a `PriceSnapshot`. A thin pass-
   through to `TsmExportParser` — exists so Web only ever calls into this
@@ -27,9 +30,8 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
 
   @doc """
   Every `ProfitResult` for a profession, given an already-parsed
-  `PriceSnapshot`. Results are sorted by net profit/day descending, with
-  patterns missing a computable profit sorted last — mirrors the
-  ordering this project's own earlier Python prototype used.
+  `PriceSnapshot`. Results are sorted by per-unit profit descending, with
+  patterns missing a computable profit sorted last.
   """
   @spec compute_results(String.t(), PriceSnapshot.t()) :: [ProfitResult.t()]
   def compute_results(profession_slug, %PriceSnapshot{} = snapshot) do
@@ -68,11 +70,15 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
           sum_reagent_cost(reagents, snapshot, reasons)
       end
 
-    {net_profit_per_unit, net_profit_per_day} =
-      case {price, mat_cost, sold_per_day} do
-        {p, m, spd} when is_integer(p) and is_integer(m) and is_float(spd) ->
-          unit = p - m
-          {unit, unit * spd}
+    {net_profit_per_unit, profit_pct} =
+      case {price, mat_cost} do
+        {p, m} when is_integer(p) and is_integer(m) ->
+          price_after_cut = round(p * (1 - @ah_cut_pct))
+          profit = price_after_cut - m
+          # ROI against what you spent — undefined (not zero) when the
+          # craft costs nothing, rather than a divide-by-zero.
+          pct = if m > 0, do: profit / m * 100, else: nil
+          {profit, pct}
 
         _incomplete ->
           {nil, nil}
@@ -85,7 +91,7 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
       sale_confidence_pct: confidence,
       mat_cost_copper: mat_cost,
       net_profit_per_unit_copper: net_profit_per_unit,
-      net_profit_per_day_copper: net_profit_per_day,
+      profit_pct: profit_pct,
       missing_data_reasons: Enum.reverse(reasons)
     }
   end
@@ -107,8 +113,8 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
     end
   end
 
-  defp sort_key(%ProfitResult{net_profit_per_day_copper: nil}), do: {1, 0.0}
-  defp sort_key(%ProfitResult{net_profit_per_day_copper: profit}), do: {0, -profit}
+  defp sort_key(%ProfitResult{net_profit_per_unit_copper: nil}), do: {1, 0}
+  defp sort_key(%ProfitResult{net_profit_per_unit_copper: profit}), do: {0, -profit}
 
   defp catalog_gateway do
     Application.get_env(

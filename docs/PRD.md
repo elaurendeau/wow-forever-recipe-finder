@@ -46,7 +46,8 @@ Primarily the builder (elaurendeau), extended to any other WoW Forever player wh
 | **Source** | How a pattern is learned/acquired: Trainer, Vendor, Drop, or Quest. |
 | **Sold/day** | `regionSoldPerDay` from the TSM export — the average number of a given item sold per day, region-wide. |
 | **Sale confidence** | `regionSalePercent` from the TSM export — how consistently TSM actually observed the item listed for sale; low values mean a thin, noisy sample. |
-| **Net profit/day** | `(price − total reagent cost) × sold/day` for a pattern's crafted item. |
+| **Net profit** | `price × (1 − AH cut) − total reagent cost` for a pattern's crafted item — the AH cut (5%, WoW/Classic's standard) is the cut the auction house takes on a successful sale, deducted before material cost. |
+| **Profit %** | Net profit as a percentage of total reagent cost (ROI on what crafting it cost) — undefined, not zero, when the craft costs nothing. |
 | **Catalog** | The static, shared reference data (patterns, reagents, tiers, sources) for one profession — stored server-side in Postgres, refreshed via a manual scrape skill, identical in shape across all visitors. |
 
 ## 7. Core Features
@@ -71,7 +72,7 @@ Server-stored, shared reference data per profession: every known pattern, its ti
 
 ### 7.3 Feature C — Profit Computation
 
-For every pattern in the active profession's catalog, join the uploaded price data against the catalog to compute: current price, sold/day, sale confidence, total reagent cost, net profit per unit, net profit per day, and revenue per day.
+For every pattern in the active profession's catalog, join the uploaded price data against the catalog to compute: current price, sold/day, sale confidence, total reagent cost, net profit per craft (after the AH cut), and profit %.
 
 **Requirements:**
 - A pattern missing price data (illiquid or unscanned), a missing item ID, or an incomplete reagent cost is flagged with the specific reason, never silently shown as zero profit.
@@ -86,7 +87,7 @@ The main view is a row of profession tabs; selecting one shows that profession's
 **Requirements:**
 - Free-text search by pattern/item name.
 - Source-type toggle (Trainer / Drop / Vendor / Quest).
-- Inline min/max threshold filters built into the relevant column headers (min sold/day, min confidence, max price, min profit/day) — not a separate filter bar.
+- Inline min/max threshold filters built into the relevant column headers (min sold/day, min confidence, max price, min profit, min profit %) — not a separate filter bar.
 - Sortable columns with a visible active-sort indicator.
 - A "profitable only" toggle (hide anything with net profit ≤ 0).
 

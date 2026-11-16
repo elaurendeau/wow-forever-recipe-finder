@@ -111,7 +111,8 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         min_sold_per_day: parse_float(Map.get(params, "min_sold_per_day")),
         min_confidence_pct: parse_float(Map.get(params, "min_confidence_pct")),
         max_price_copper: parse_int(Map.get(params, "max_price_copper")),
-        min_profit_per_day_copper: parse_float(Map.get(params, "min_profit_per_day_copper"))
+        min_profit_copper: parse_int(Map.get(params, "min_profit_copper")),
+        min_profit_pct: parse_float(Map.get(params, "min_profit_pct"))
       })
 
     {:noreply, assign(socket, filter: filter)}
@@ -211,11 +212,17 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
   end
 
   defp format_number(nil), do: "—"
-  defp format_number(n) when is_float(n), do: :erlang.float_to_binary(n, decimals: 1)
+  # 3 decimals to match TSM's own in-game tooltip ("Region Avg Daily Sold").
+  defp format_number(n) when is_float(n), do: :erlang.float_to_binary(n, decimals: 3)
   defp format_number(n), do: Integer.to_string(n)
 
   defp format_pct(nil), do: "—"
   defp format_pct(n), do: "#{:erlang.float_to_binary(n * 1.0, decimals: 0)}%"
+
+  # Matches TSM's own in-game tooltip style for Crafting Cost's profit
+  # figure: the copper amount in parens with a "profit" suffix.
+  defp format_profit(nil), do: "—"
+  defp format_profit(copper), do: "(#{format_copper(copper)} profit)"
 
   defp sort_indicator(filter, field) do
     cond do

@@ -22,8 +22,8 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
       sold_per_day: Keyword.get(opts, :spd, 10.0),
       sale_confidence_pct: Keyword.get(opts, :conf, 50.0),
       mat_cost_copper: 10,
-      net_profit_per_unit_copper: 90,
-      net_profit_per_day_copper: Keyword.get(opts, :profit, 900.0),
+      net_profit_per_unit_copper: Keyword.get(opts, :profit, 90),
+      profit_pct: Keyword.get(opts, :profit_pct, 900.0),
       missing_data_reasons: Keyword.get(opts, :reasons, [])
     }
   end
@@ -77,15 +77,37 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
 
   test "sorting: nils always sort last regardless of direction" do
     results = [
-      result("High", :trainer, profit: 500.0),
+      result("High", :trainer, profit: 500),
       result("Missing", :trainer, profit: nil, reasons: [:no_sale_data]),
-      result("Low", :trainer, profit: 10.0)
+      result("Low", :trainer, profit: 10)
     ]
 
-    desc = ResultsFilter.apply(results, %{sort_by: :profit_per_day, sort_dir: :desc, profitable_only?: false})
+    desc = ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :desc, profitable_only?: false})
     assert Enum.map(desc, & &1.pattern.name) == ["High", "Low", "Missing"]
 
-    asc = ResultsFilter.apply(results, %{sort_by: :profit_per_day, sort_dir: :asc, profitable_only?: false})
+    asc = ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :asc, profitable_only?: false})
     assert Enum.map(asc, & &1.pattern.name) == ["Low", "High", "Missing"]
+  end
+
+  test "sorting by profit percentage" do
+    results = [
+      result("Low ROI", :trainer, profit_pct: 20.0),
+      result("High ROI", :trainer, profit_pct: 300.0),
+      result("No ROI", :trainer, profit_pct: nil, reasons: [:no_reagents_found])
+    ]
+
+    desc = ResultsFilter.apply(results, %{sort_by: :profit_pct, sort_dir: :desc, profitable_only?: false})
+    assert Enum.map(desc, & &1.pattern.name) == ["High ROI", "Low ROI", "No ROI"]
+  end
+
+  test "threshold filter on profit percentage excludes rows below the minimum" do
+    results = [
+      result("Low ROI", :trainer, profit_pct: 20.0),
+      result("High ROI", :trainer, profit_pct: 300.0)
+    ]
+
+    filtered = ResultsFilter.apply(results, %{min_profit_pct: 100.0, profitable_only?: false})
+
+    assert Enum.map(filtered, & &1.pattern.name) == ["High ROI"]
   end
 end

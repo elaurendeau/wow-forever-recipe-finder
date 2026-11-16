@@ -17,7 +17,7 @@ defmodule WowForeverRecipeFinder.ProfitResult do
     :sale_confidence_pct,
     :mat_cost_copper,
     :net_profit_per_unit_copper,
-    :net_profit_per_day_copper,
+    :profit_pct,
     :missing_data_reasons
   ]
 
@@ -31,11 +31,11 @@ defmodule WowForeverRecipeFinder.ProfitResult do
           sale_confidence_pct: float() | nil,
           mat_cost_copper: non_neg_integer() | nil,
           net_profit_per_unit_copper: integer() | nil,
-          net_profit_per_day_copper: float() | nil,
+          profit_pct: float() | nil,
           missing_data_reasons: [missing_data_reason()]
         }
 
   @spec profitable?(t()) :: boolean()
-  def profitable?(%__MODULE__{net_profit_per_day_copper: nil}), do: false
-  def profitable?(%__MODULE__{net_profit_per_day_copper: profit}), do: profit > 0
+  def profitable?(%__MODULE__{net_profit_per_unit_copper: nil}), do: false
+  def profitable?(%__MODULE__{net_profit_per_unit_copper: profit}), do: profit > 0
 end

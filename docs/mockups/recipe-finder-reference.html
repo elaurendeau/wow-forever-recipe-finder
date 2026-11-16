@@ -196,7 +196,8 @@
             <th class="num sorted">Sold/day &darr;</th>
             <th class="num">Confidence</th>
             <th class="num">Price</th>
-            <th class="num">Profit/day</th>
+            <th class="num">Profit</th>
+            <th class="num">%</th>
           </tr>
           <tr class="filter-row">
             <td></td>
@@ -206,6 +207,7 @@
             <td class="num"><input type="text" placeholder="min %"></td>
             <td class="num"><input type="text" placeholder="max"></td>
             <td class="num"><input type="text" placeholder="min"></td>
+            <td class="num"><input type="text" placeholder="min %"></td>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
@@ -220,19 +222,19 @@
 
 <script>
   const TAILORING_ROWS = [
-    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.9", conf: "84%", price: "0.66g", profit: "31.31g" },
-    { name: "Bolt of Mageweave", tier: "Journeyman", skill: 140, source: "Trainer", spd: "202.0", conf: "74%", price: "0.30g", profit: "18.02g" },
-    { name: "Bolt of Woolen Cloth", tier: "Apprentice", skill: 55, source: "Trainer", spd: "521.5", conf: "81%", price: "0.03g", profit: "13.04g" },
-    { name: "Black Silk Pack", tier: "Journeyman", skill: 150, source: "Drop", spd: "90.6", conf: "64%", price: "0.69g", profit: "12.29g" },
-    { name: "Red Woolen Bag", tier: "Journeyman", skill: 90, source: "Drop", spd: "130.2", conf: "77%", price: "0.22g", profit: "8.97g" },
-    { name: "Robes of Arcana", tier: "Journeyman", skill: 125, source: "Drop", spd: "21.8", conf: "57%", price: "0.70g", profit: "4.19g" },
+    { name: "Green Silk Pack", tier: "Journeyman", skill: 140, source: "Drop", spd: "117.900", conf: "84%", price: "0.66g", profit: "(31.31g profit)", pct: "180%" },
+    { name: "Bolt of Mageweave", tier: "Journeyman", skill: 140, source: "Trainer", spd: "202.000", conf: "74%", price: "0.30g", profit: "(18.02g profit)", pct: "150%" },
+    { name: "Bolt of Woolen Cloth", tier: "Apprentice", skill: 55, source: "Trainer", spd: "521.500", conf: "81%", price: "0.03g", profit: "(13.04g profit)", pct: "650%" },
+    { name: "Black Silk Pack", tier: "Journeyman", skill: 150, source: "Drop", spd: "90.600", conf: "64%", price: "0.69g", profit: "(12.29g profit)", pct: "120%" },
+    { name: "Red Woolen Bag", tier: "Journeyman", skill: 90, source: "Drop", spd: "130.200", conf: "77%", price: "0.22g", profit: "(8.97g profit)", pct: "310%" },
+    { name: "Robes of Arcana", tier: "Journeyman", skill: 125, source: "Drop", spd: "21.800", conf: "57%", price: "0.70g", profit: "(4.19g profit)", pct: "45%" },
   ];
   const ENCHANTING_ROWS = [
-    { name: "Greater Magic Wand", tier: "Apprentice", skill: 70, source: "Trainer", spd: "552.0", conf: "66%", price: "0.29g", profit: "78.38g" },
-    { name: "Lesser Mystic Wand", tier: "Expert", skill: 155, source: "Trainer", spd: "14.8", conf: "52%", price: "0.50g", profit: "47.09g" },
-    { name: "Lesser Magic Wand", tier: "Apprentice", skill: 10, source: "Trainer", spd: "568.2", conf: "53%", price: "0.19g", profit: "12.50g" },
-    { name: "Minor Wizard Oil", tier: "Apprentice", skill: 45, source: "Vendor", spd: "117.2", conf: "57%", price: "0.29g", profit: "12.89g" },
-    { name: "Twisted Nether Wand", tier: "Expert", skill: 185, source: "Trainer", spd: "2.3", conf: "41%", price: "1.38g", profit: "n/a" },
+    { name: "Greater Magic Wand", tier: "Apprentice", skill: 70, source: "Trainer", spd: "552.000", conf: "66%", price: "0.29g", profit: "(78.38g profit)", pct: "900%" },
+    { name: "Lesser Mystic Wand", tier: "Expert", skill: 155, source: "Trainer", spd: "14.800", conf: "52%", price: "0.50g", profit: "(47.09g profit)", pct: "260%" },
+    { name: "Lesser Magic Wand", tier: "Apprentice", skill: 10, source: "Trainer", spd: "568.200", conf: "53%", price: "0.19g", profit: "(12.50g profit)", pct: "500%" },
+    { name: "Minor Wizard Oil", tier: "Apprentice", skill: 45, source: "Vendor", spd: "117.200", conf: "57%", price: "0.29g", profit: "(12.89g profit)", pct: "340%" },
+    { name: "Twisted Nether Wand", tier: "Expert", skill: 185, source: "Trainer", spd: "2.300", conf: "41%", price: "1.38g", profit: "n/a", pct: "—" },
   ];
   const PROFESSIONS = [
     { key: "tailoring", label: "Tailoring", rows: TAILORING_ROWS, stats: { shown: 6, full: 182, gap: 280 } },
@@ -305,6 +307,7 @@
         <td class="num muted-cell">${row.conf}</td>
         <td class="num">${row.price}</td>
         <td class="num profit-pos">${row.profit}</td>
+        <td class="num profit-pos">${row.pct}</td>
       </tr>
     `).join("");
   }
