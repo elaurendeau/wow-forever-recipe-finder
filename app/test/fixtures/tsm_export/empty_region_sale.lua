@@ -1,0 +1,1 @@
+select(2, ...).LoadData("AUCTIONDB_REGION_SALE","Forever-US",[[return {downloadTime=1,fields={"itemString","regionSale","regionSoldPerDay","regionSalePercent"},data={}}]]) --<AUCTIONDB_REGION_SALE,Forever-US,1>

@@ -1,0 +1,149 @@
+<div class="rf-topbar">
+  <div class="rf-topbar-left">
+    <h1 class="rf-title">WoW Forever Recipe Finder</h1>
+  </div>
+  <div class="rf-freshness">
+    <%= if @captured_at do %>
+      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")}
+    <% else %>
+      No data uploaded yet
+    <% end %>
+  </div>
+  <form phx-change="validate_upload" phx-submit="process_upload">
+    <div class="rf-upload-pill">
+      <.live_file_input upload={@uploads.tsm_export} />
+      <button type="submit">Upload</button>
+    </div>
+  </form>
+</div>
+
+<div class="rf-page">
+  <%= if @upload_error do %>
+    <div class="rf-error">{@upload_error}</div>
+  <% end %>
+
+  <div class="rf-tabs">
+    <%= for {slug, label} <- professions() do %>
+      <button
+        type="button"
+        class={[
+          "rf-tab",
+          @active_profession == slug && "active",
+          !MapSet.member?(@known_slugs, slug) && "placeholder"
+        ]}
+        phx-click="select_tab"
+        phx-value-slug={slug}
+      >
+        {label}
+        <%= unless MapSet.member?(@known_slugs, slug) do %>
+          <span class="rf-soon-pill">soon</span>
+        <% end %>
+      </button>
+    <% end %>
+  </div>
+
+  <%= if MapSet.member?(@known_slugs, @active_profession) do %>
+    <% filtered = ResultsFilter.apply(@results, @filter) %>
+    <form phx-change="filter_changed">
+      <div class="rf-filterbar">
+        <input type="text" name="filter[search]" placeholder="Search item name..." value={@filter.search} />
+        <%= for source <- ResultsFilter.known_sources() do %>
+          <label>
+            <input
+              type="checkbox"
+              name="filter[sources][]"
+              value={source}
+              checked={MapSet.member?(@filter.sources, source)}
+            /> {source_label(source)}
+          </label>
+        <% end %>
+        <label>
+          <input type="checkbox" name="filter[profitable_only]" checked={@filter.profitable_only?} /> Profitable only
+        </label>
+      </div>
+
+      <div class="rf-stats" style="margin: 12px 0;">
+        <span><strong>{length(filtered)}</strong> shown</span>
+        <span><strong>{length(@results)}</strong> total in catalog</span>
+      </div>
+
+      <div class="rf-table-wrap">
+        <table class="rf-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="num">Skill</th>
+              <th>Source</th>
+              <th class={th_class(@filter, :sold_per_day)} phx-click="sort_by" phx-value-field="sold_per_day">
+                Sold/day{sort_indicator(@filter, :sold_per_day)}
+              </th>
+              <th class={th_class(@filter, :confidence)} phx-click="sort_by" phx-value-field="confidence">
+                Confidence{sort_indicator(@filter, :confidence)}
+              </th>
+              <th class={th_class(@filter, :price)} phx-click="sort_by" phx-value-field="price">
+                Price{sort_indicator(@filter, :price)}
+              </th>
+              <th class={th_class(@filter, :profit_per_day)} phx-click="sort_by" phx-value-field="profit_per_day">
+                Profit/day{sort_indicator(@filter, :profit_per_day)}
+              </th>
+            </tr>
+            <tr class="rf-table-filter-row">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <input type="text" name="filter[min_sold_per_day]" placeholder="min" value={@filter.min_sold_per_day} />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="filter[min_confidence_pct]"
+                  placeholder="min %"
+                  value={@filter.min_confidence_pct}
+                />
+              </td>
+              <td>
+                <input type="text" name="filter[max_price_copper]" placeholder="max" value={@filter.max_price_copper} />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="filter[min_profit_per_day_copper]"
+                  placeholder="min"
+                  value={@filter.min_profit_per_day_copper}
+                />
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <%= for r <- filtered do %>
+              <tr>
+                <td>
+                  <div class="rf-item-name">{r.pattern.name}</div>
+                  <div class="rf-item-tier">{to_string(r.pattern.tier)}</div>
+                </td>
+                <td class="num">{r.pattern.skill}</td>
+                <td><span class="rf-source-pill">{if r.pattern.source, do: to_string(r.pattern.source), else: "—"}</span></td>
+                <td class="num">{format_number(r.sold_per_day)}</td>
+                <td class="num rf-muted">{format_pct(r.sale_confidence_pct)}</td>
+                <td class="num">{format_copper(r.price_copper)}</td>
+                <td class={[
+                  "num",
+                  r.net_profit_per_day_copper && r.net_profit_per_day_copper > 0 && "rf-profit-pos",
+                  r.net_profit_per_day_copper && r.net_profit_per_day_copper <= 0 && "rf-profit-neg"
+                ]}>
+                  {format_copper(r.net_profit_per_day_copper)}
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </form>
+  <% else %>
+    <div class="rf-empty">
+      <h3>{profession_label(@active_profession)} isn't scraped yet</h3>
+      <p>Same pipeline as Tailoring — roughly 10–30 min of background scraping once we start it.</p>
+    </div>
+  <% end %>
+</div>
