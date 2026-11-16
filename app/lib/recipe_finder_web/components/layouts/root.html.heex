@@ -7,8 +7,13 @@
     <.live_title default="WoW Forever Recipe Finder" suffix=" · Recipe Finder">
       {assigns[:page_title]}
     </.live_title>
-    <link rel="icon" type="image/svg+xml" href={~p"/favicon.svg"} />
-    <link rel="alternate icon" href={~p"/favicon.ico"} />
+    <%!-- ?v=2 busts browsers' notoriously sticky per-origin favicon cache —
+    many visitors (including during this session's own testing) loaded
+    this site many times before any favicon existed at all, and a plain
+    refresh often isn't enough to make Chrome re-check for one. Bump
+    the version if the icon ever needs to change again. --%>
+    <link rel="icon" type="image/svg+xml" href={"#{~p"/favicon.svg"}?v=2"} />
+    <link rel="alternate icon" href={"#{~p"/favicon.ico"}?v=2"} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
