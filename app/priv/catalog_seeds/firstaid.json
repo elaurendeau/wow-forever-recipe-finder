@@ -1,0 +1,842 @@
+{
+  "profession": {
+    "slug": "firstaid",
+    "display_name": "First Aid"
+  },
+  "patterns": [
+    {
+      "name": "Minor Healing Potion",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "trainer",
+      "wiki_slug": "Minor_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 118,
+        "display_name": "Minor Healing Potion",
+        "wiki_slug": "Minor_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244431
+    },
+    {
+      "name": "First Aid Kit",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "quest",
+      "wiki_slug": "First_Aid_Kit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279968,
+        "display_name": "First Aid Kit",
+        "wiki_slug": "First_Aid_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1251,
+          "display_name": "Linen Bandage",
+          "wiki_slug": "Linen_Bandage",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1230117
+    },
+    {
+      "name": "Linen Bandage",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": null,
+      "wiki_slug": "Linen_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 1251,
+        "display_name": "Linen Bandage",
+        "wiki_slug": "Linen_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2589,
+          "display_name": "Linen Cloth",
+          "wiki_slug": "Linen_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3275
+    },
+    {
+      "name": "Heavy Linen Bandage",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "trainer",
+      "wiki_slug": "Heavy_Linen_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2581,
+        "display_name": "Heavy Linen Bandage",
+        "wiki_slug": "Heavy_Linen_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2589,
+          "display_name": "Linen Cloth",
+          "wiki_slug": "Linen_Cloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 3276
+    },
+    {
+      "name": "Lesser Healing Potion",
+      "tier": "apprentice",
+      "skill": 55,
+      "source": "trainer",
+      "wiki_slug": "Lesser_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 858,
+        "display_name": "Lesser Healing Potion",
+        "wiki_slug": "Lesser_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244432
+    },
+    {
+      "name": "Anti-Venom",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "trainer",
+      "wiki_slug": "Anti-Venom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6452,
+        "display_name": "Anti-Venom",
+        "wiki_slug": "Anti-Venom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1475,
+          "display_name": "Small Venom Sac",
+          "wiki_slug": "Small_Venom_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7934
+    },
+    {
+      "name": "Wool Bandage",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "trainer",
+      "wiki_slug": "Wool_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3530,
+        "display_name": "Wool Bandage",
+        "wiki_slug": "Wool_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3277
+    },
+    {
+      "name": "Simple Poultice",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "trainer",
+      "wiki_slug": "Simple_Poultice",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255716,
+        "display_name": "Simple Poultice",
+        "wiki_slug": "Simple_Poultice"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3174,
+          "display_name": "Spider Ichor",
+          "wiki_slug": "Spider_Ichor",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2723,
+          "display_name": "Bottle of Dalaran Noir",
+          "wiki_slug": "Bottle_of_Dalaran_Noir",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1259342
+    },
+    {
+      "name": "Healing Potion",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "trainer",
+      "wiki_slug": "Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 929,
+        "display_name": "Healing Potion",
+        "wiki_slug": "Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244433
+    },
+    {
+      "name": "Heavy Wool Bandage",
+      "tier": "journeyman",
+      "skill": 115,
+      "source": "trainer",
+      "wiki_slug": "Heavy_Wool_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3531,
+        "display_name": "Heavy Wool Bandage",
+        "wiki_slug": "Heavy_Wool_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 3278
+    },
+    {
+      "name": "Woolen Tourniquet",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "trainer",
+      "wiki_slug": "Woolen_Tourniquet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255720,
+        "display_name": "Woolen Tourniquet",
+        "wiki_slug": "Woolen_Tourniquet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2592,
+          "display_name": "Wool Cloth",
+          "wiki_slug": "Wool_Cloth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2321,
+          "display_name": "Fine Thread",
+          "wiki_slug": "Fine_Thread",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1259347
+    },
+    {
+      "name": "Strong Anti-Venom",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "drop",
+      "wiki_slug": "Strong_Anti-Venom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6453,
+        "display_name": "Strong Anti-Venom",
+        "wiki_slug": "Strong_Anti-Venom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1288,
+          "display_name": "Large Venom Sac",
+          "wiki_slug": "Large_Venom_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7935
+    },
+    {
+      "name": "Toxin Study",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Toxin_Study",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279940,
+        "display_name": "Toxin Study",
+        "wiki_slug": "Toxin_Study"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6452,
+          "display_name": "Anti-Venom",
+          "wiki_slug": "Anti-Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8544,
+          "display_name": "Mageweave Bandage",
+          "wiki_slug": "Mageweave_Bandage",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1262996
+    },
+    {
+      "name": "Silk Bandage",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "trainer",
+      "wiki_slug": "Silk_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6450,
+        "display_name": "Silk Bandage",
+        "wiki_slug": "Silk_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7928
+    },
+    {
+      "name": "Clever Poultice",
+      "tier": "expert",
+      "skill": 160,
+      "source": "drop",
+      "wiki_slug": "Clever_Poultice",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255717,
+        "display_name": "Clever Poultice",
+        "wiki_slug": "Clever_Poultice"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1468,
+          "display_name": "Murloc Fin",
+          "wiki_slug": "Murloc_Fin",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2686,
+          "display_name": "Thunder Ale",
+          "wiki_slug": "Thunder_Ale",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1259343
+    },
+    {
+      "name": "Greater Healing Potion",
+      "tier": "expert",
+      "skill": 175,
+      "source": "drop",
+      "wiki_slug": "Greater_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 1710,
+        "display_name": "Greater Healing Potion",
+        "wiki_slug": "Greater_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244434
+    },
+    {
+      "name": "Heavy Silk Bandage",
+      "tier": "expert",
+      "skill": 180,
+      "source": "vendor",
+      "wiki_slug": "Heavy_Silk_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6451,
+        "display_name": "Heavy Silk Bandage",
+        "wiki_slug": "Heavy_Silk_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4306,
+          "display_name": "Silk Cloth",
+          "wiki_slug": "Silk_Cloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 7929
+    },
+    {
+      "name": "Mageweave Bandage",
+      "tier": "expert",
+      "skill": 210,
+      "source": "vendor",
+      "wiki_slug": "Mageweave_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8544,
+        "display_name": "Mageweave Bandage",
+        "wiki_slug": "Mageweave_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 10840
+    },
+    {
+      "name": "Leather Tourniquet",
+      "tier": "expert",
+      "skill": 220,
+      "source": "drop",
+      "wiki_slug": "Leather_Tourniquet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255721,
+        "display_name": "Leather Tourniquet",
+        "wiki_slug": "Leather_Tourniquet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4304,
+          "display_name": "Thick Leather",
+          "wiki_slug": "Thick_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4291,
+          "display_name": "Silken Thread",
+          "wiki_slug": "Silken_Thread",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1259348
+    },
+    {
+      "name": "Superior Poultice",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Superior_Poultice",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255718,
+        "display_name": "Superior Poultice",
+        "wiki_slug": "Superior_Poultice"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7070,
+          "display_name": "Elemental Water",
+          "wiki_slug": "Elemental_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2596,
+          "display_name": "Skin of Dwarven Stout",
+          "wiki_slug": "Skin_of_Dwarven_Stout",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1259344
+    },
+    {
+      "name": "Potent Anti-Venom",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "drop",
+      "wiki_slug": "Potent_Anti-Venom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255715,
+        "display_name": "Potent Anti-Venom",
+        "wiki_slug": "Potent_Anti-Venom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 255645,
+          "display_name": "Swollen Venom Sac",
+          "wiki_slug": "Swollen_Venom_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1259341
+    },
+    {
+      "name": "Superior Healing Potion",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "drop",
+      "wiki_slug": "Superior_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3928,
+        "display_name": "Superior Healing Potion",
+        "wiki_slug": "Superior_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244435
+    },
+    {
+      "name": "Heavy Mageweave Bandage",
+      "tier": "artisan",
+      "skill": 240,
+      "source": null,
+      "wiki_slug": "Heavy_Mageweave_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8545,
+        "display_name": "Heavy Mageweave Bandage",
+        "wiki_slug": "Heavy_Mageweave_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4338,
+          "display_name": "Mageweave Cloth",
+          "wiki_slug": "Mageweave_Cloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 10841
+    },
+    {
+      "name": "Runecloth Bandage",
+      "tier": "artisan",
+      "skill": 260,
+      "source": null,
+      "wiki_slug": "Runecloth_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 14529,
+        "display_name": "Runecloth Bandage",
+        "wiki_slug": "Runecloth_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18629
+    },
+    {
+      "name": "Surgical Tourniquet",
+      "tier": "artisan",
+      "skill": 280,
+      "source": "drop",
+      "wiki_slug": "Surgical_Tourniquet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255722,
+        "display_name": "Surgical Tourniquet",
+        "wiki_slug": "Surgical_Tourniquet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8170,
+          "display_name": "Rugged Leather",
+          "wiki_slug": "Rugged_Leather",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8343,
+          "display_name": "Heavy Silken Thread",
+          "wiki_slug": "Heavy_Silken_Thread",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1259349
+    },
+    {
+      "name": "Heavy Runecloth Bandage",
+      "tier": "artisan",
+      "skill": 290,
+      "source": null,
+      "wiki_slug": "Heavy_Runecloth_Bandage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 14530,
+        "display_name": "Heavy Runecloth Bandage",
+        "wiki_slug": "Heavy_Runecloth_Bandage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 14047,
+          "display_name": "Runecloth",
+          "wiki_slug": "Runecloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 18630
+    },
+    {
+      "name": "Major Healing Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "quest",
+      "wiki_slug": "Major_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13446,
+        "display_name": "Major Healing Potion",
+        "wiki_slug": "Major_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1244436
+    },
+    {
+      "name": "Powerful Poultice",
+      "tier": "artisan",
+      "skill": 295,
+      "source": "quest",
+      "wiki_slug": "Powerful_Poultice",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 255719,
+        "display_name": "Powerful Poultice",
+        "wiki_slug": "Powerful_Poultice"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7080,
+          "display_name": "Essence of Water",
+          "wiki_slug": "Essence_of_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2594,
+          "display_name": "Flagon of Dwarven Honeymead",
+          "wiki_slug": "Flagon_of_Dwarven_Honeymead",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1259345
+    },
+    {
+      "name": "Plague Doctor's Laboratory",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Plague_Doctor's_Laboratory",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279951,
+        "display_name": "Plague Doctor's Laboratory",
+        "wiki_slug": "Plague_Doctor's_Laboratory"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 6453,
+          "display_name": "Strong Anti-Venom",
+          "wiki_slug": "Strong_Anti-Venom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 14530,
+          "display_name": "Heavy Runecloth Bandage",
+          "wiki_slug": "Heavy_Runecloth_Bandage",
+          "quantity": 5
+        }
+      ],
+      "wowhead_spell_id": 1263001
+    },
+    {
+      "name": "Powerful Anti-Venom",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Powerful_Anti-Venom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 19440,
+        "display_name": "Powerful Anti-Venom",
+        "wiki_slug": "Powerful_Anti-Venom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 19441,
+          "display_name": "Huge Venom Sac",
+          "wiki_slug": "Huge_Venom_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 23787
+    }
+  ]
+}

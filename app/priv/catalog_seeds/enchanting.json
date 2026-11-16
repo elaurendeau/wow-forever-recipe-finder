@@ -7,7 +7,7 @@
     {
       "name": "Runed Copper Rod",
       "tier": "apprentice",
-      "skill": 1,
+      "skill": 5,
       "source": "trainer",
       "wiki_slug": "Runed_Copper_Rod",
       "resolution_status": "resolved",
@@ -24,18 +24,35 @@
           "quantity": 1
         },
         {
+          "wowhead_id": 247786,
+          "display_name": "Mote of Magic",
+          "wiki_slug": "Mote_of_Magic",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7421
+    },
+    {
+      "name": "Dust to Motes",
+      "tier": "apprentice",
+      "skill": 10,
+      "source": null,
+      "wiki_slug": "Dust_to_Motes",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247786,
+        "display_name": "Mote of Magic",
+        "wiki_slug": "Mote_of_Magic"
+      },
+      "reagents": [
+        {
           "wowhead_id": 10940,
           "display_name": "Strange Dust",
           "wiki_slug": "Strange_Dust",
           "quantity": 1
-        },
-        {
-          "wowhead_id": 10938,
-          "display_name": "Lesser Magic Essence",
-          "wiki_slug": "Lesser_Magic_Essence",
-          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 1245320
     },
     {
       "name": "Lesser Magic Wand",
@@ -62,7 +79,36 @@
           "wiki_slug": "Lesser_Magic_Essence",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 14293
+    },
+    {
+      "name": "Novice's Practice Wand",
+      "tier": "apprentice",
+      "skill": 10,
+      "source": null,
+      "wiki_slug": "Novice's_Practice_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247789,
+        "display_name": "Novice's Practice Wand",
+        "wiki_slug": "Novice's_Practice_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 247786,
+          "display_name": "Mote of Magic",
+          "wiki_slug": "Mote_of_Magic",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1245321
     },
     {
       "name": "Enchanted Lute",
@@ -89,7 +135,8 @@
           "wiki_slug": "Strange_Dust",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 1230643
     },
     {
       "name": "Minor Wizard Oil",
@@ -108,15 +155,22 @@
           "wowhead_id": 10940,
           "display_name": "Strange Dust",
           "wiki_slug": "Strange_Dust",
-          "quantity": 2
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 17034,
+          "display_name": "Maple Seed",
+          "wiki_slug": "Maple_Seed",
+          "quantity": 1
         },
         {
           "wowhead_id": 3371,
-          "display_name": "Crystal Vial",
+          "display_name": "Empty Vial",
           "wiki_slug": "Crystal_Vial",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25124
     },
     {
       "name": "Greater Magic Wand",
@@ -138,45 +192,13 @@
           "quantity": 1
         },
         {
-          "wowhead_id": 10939,
-          "display_name": "Greater Magic Essence",
-          "wiki_slug": "Greater_Magic_Essence",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "name": "Blackfathom Mana Oil",
-      "tier": "journeyman",
-      "skill": 100,
-      "source": null,
-      "wiki_slug": "Blackfathom_Mana_Oil",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 211848,
-        "display_name": "Blackfathom Mana Oil",
-        "wiki_slug": "Blackfathom_Mana_Oil"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 3372,
-          "display_name": "Leaded Vial",
-          "wiki_slug": "Leaded_Vial",
-          "quantity": 1
-        },
-        {
-          "wowhead_id": 10939,
-          "display_name": "Greater Magic Essence",
-          "wiki_slug": "Greater_Magic_Essence",
+          "wowhead_id": 10938,
+          "display_name": "Lesser Magic Essence",
+          "wiki_slug": "Lesser_Magic_Essence",
           "quantity": 2
-        },
-        {
-          "wowhead_id": 10940,
-          "display_name": "Strange Dust",
-          "wiki_slug": "Strange_Dust",
-          "quantity": 5
         }
-      ]
+      ],
+      "wowhead_spell_id": 14807
     },
     {
       "name": "Runed Silver Rod",
@@ -201,21 +223,22 @@
           "wowhead_id": 10940,
           "display_name": "Strange Dust",
           "wiki_slug": "Strange_Dust",
-          "quantity": 6
-        },
-        {
-          "wowhead_id": 10939,
-          "display_name": "Greater Magic Essence",
-          "wiki_slug": "Greater_Magic_Essence",
           "quantity": 3
         },
         {
-          "wowhead_id": 6218,
-          "display_name": "Runed Copper Rod",
-          "wiki_slug": "Runed_Copper_Rod",
+          "wowhead_id": 10938,
+          "display_name": "Lesser Magic Essence",
+          "wiki_slug": "Lesser_Magic_Essence",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 1210,
+          "display_name": "Shadowgem",
+          "wiki_slug": "Shadowgem",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 7795
     },
     {
       "name": "Scroll of Spatial Mending",
@@ -240,9 +263,130 @@
           "wowhead_id": 10940,
           "display_name": "Strange Dust",
           "wiki_slug": "Strange_Dust",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 448624
+    },
+    {
+      "name": "Mystic Mushroom",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "vendor",
+      "wiki_slug": "Mystic_Mushroom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249396,
+        "display_name": "Mystic Mushroom",
+        "wiki_slug": "Mystic_Mushroom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10978,
+          "display_name": "Small Glimmering Shard",
+          "wiki_slug": "Small_Glimmering_Shard",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10939,
+          "display_name": "Greater Magic Essence",
+          "wiki_slug": "Greater_Magic_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10940,
+          "display_name": "Strange Dust",
+          "wiki_slug": "Strange_Dust",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 4605,
+          "display_name": "Red-speckled Mushroom",
+          "wiki_slug": "Red-speckled_Mushroom",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248752
+    },
+    {
+      "name": "Polished Driftwood Icon",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "vendor",
+      "wiki_slug": "Polished_Driftwood_Icon",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249398,
+        "display_name": "Polished Driftwood Icon",
+        "wiki_slug": "Polished_Driftwood_Icon"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11084,
+          "display_name": "Large Glimmering Shard",
+          "wiki_slug": "Large_Glimmering_Shard",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10939,
+          "display_name": "Greater Magic Essence",
+          "wiki_slug": "Greater_Magic_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10940,
+          "display_name": "Strange Dust",
+          "wiki_slug": "Strange_Dust",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248755
+    },
+    {
+      "name": "Tenets of the Silver Hand",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "vendor",
+      "wiki_slug": "Tenets_of_the_Silver_Hand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249397,
+        "display_name": "Tenets of the Silver Hand",
+        "wiki_slug": "Tenets_of_the_Silver_Hand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11084,
+          "display_name": "Large Glimmering Shard",
+          "wiki_slug": "Large_Glimmering_Shard",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10939,
+          "display_name": "Greater Magic Essence",
+          "wiki_slug": "Greater_Magic_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10940,
+          "display_name": "Strange Dust",
+          "wiki_slug": "Strange_Dust",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3013,
+          "display_name": "Scroll of Protection",
+          "wiki_slug": "Scroll_of_Protection",
           "quantity": 5
         }
-      ]
+      ],
+      "wowhead_spell_id": 1248754
     },
     {
       "name": "Arcane Salvager",
@@ -269,7 +413,180 @@
           "wiki_slug": "Lesser_Nether_Essence",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 1263056
+    },
+    {
+      "name": "Glimmering Staff",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "vendor",
+      "wiki_slug": "Glimmering_Staff",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249392,
+        "display_name": "Glimmering Staff",
+        "wiki_slug": "Glimmering_Staff"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11084,
+          "display_name": "Large Glimmering Shard",
+          "wiki_slug": "Large_Glimmering_Shard",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 10978,
+          "display_name": "Small Glimmering Shard",
+          "wiki_slug": "Small_Glimmering_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11082,
+          "display_name": "Greater Astral Essence",
+          "wiki_slug": "Greater_Astral_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10940,
+          "display_name": "Strange Dust",
+          "wiki_slug": "Strange_Dust",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 249391,
+          "display_name": "Pyrite",
+          "wiki_slug": "Pyrite_(Forever)",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1248703
+    },
+    {
+      "name": "Orb of Mystic Insight",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "vendor",
+      "wiki_slug": "Orb_of_Mystic_Insight",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249394,
+        "display_name": "Orb of Mystic Insight",
+        "wiki_slug": "Orb_of_Mystic_Insight"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10978,
+          "display_name": "Small Glimmering Shard",
+          "wiki_slug": "Small_Glimmering_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11082,
+          "display_name": "Greater Astral Essence",
+          "wiki_slug": "Greater_Astral_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10940,
+          "display_name": "Strange Dust",
+          "wiki_slug": "Strange_Dust",
+          "quantity": 5
+        }
+      ],
+      "wowhead_spell_id": 1248745
+    },
+    {
+      "name": "Orb of Souls",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "vendor",
+      "wiki_slug": "Orb_of_Souls",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249395,
+        "display_name": "Orb of Souls",
+        "wiki_slug": "Orb_of_Souls"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10978,
+          "display_name": "Small Glimmering Shard",
+          "wiki_slug": "Small_Glimmering_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11082,
+          "display_name": "Greater Astral Essence",
+          "wiki_slug": "Greater_Astral_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11083,
+          "display_name": "Soul Dust",
+          "wiki_slug": "Soul_Dust_(Classic)",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1248748
+    },
+    {
+      "name": "Soulstaff",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "vendor",
+      "wiki_slug": "Soulstaff",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249393,
+        "display_name": "Soulstaff",
+        "wiki_slug": "Soulstaff"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11084,
+          "display_name": "Large Glimmering Shard",
+          "wiki_slug": "Large_Glimmering_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10978,
+          "display_name": "Small Glimmering Shard",
+          "wiki_slug": "Small_Glimmering_Shard",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11082,
+          "display_name": "Greater Astral Essence",
+          "wiki_slug": "Greater_Astral_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11083,
+          "display_name": "Soul Dust",
+          "wiki_slug": "Soul_Dust_(Classic)",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 1210,
+          "display_name": "Shadowgem",
+          "wiki_slug": "Shadowgem",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1248739
     },
     {
       "name": "Minor Mana Oil",
@@ -286,17 +603,24 @@
       "reagents": [
         {
           "wowhead_id": 11083,
-          "display_name": "Soul Dust (Classic)",
+          "display_name": "Soul Dust",
           "wiki_slug": "Soul_Dust_(Classic)",
-          "quantity": 3
+          "quantity": 1
         },
         {
-          "wowhead_id": 3371,
-          "display_name": "Crystal Vial",
-          "wiki_slug": "Crystal_Vial",
+          "wowhead_id": 17034,
+          "display_name": "Maple Seed",
+          "wiki_slug": "Maple_Seed",
           "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25125
     },
     {
       "name": "Runed Golden Rod",
@@ -327,21 +651,16 @@
           "wowhead_id": 11082,
           "display_name": "Greater Astral Essence",
           "wiki_slug": "Greater_Astral_Essence",
-          "quantity": 2
+          "quantity": 1
         },
         {
           "wowhead_id": 11083,
-          "display_name": "Soul Dust (Classic)",
+          "display_name": "Soul Dust",
           "wiki_slug": "Soul_Dust_(Classic)",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 6339,
-          "display_name": "Runed Silver Rod",
-          "wiki_slug": "Runed_Silver_Rod",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 13628
     },
     {
       "name": "Lesser Mystic Wand",
@@ -367,14 +686,9 @@
           "display_name": "Lesser Mystic Essence",
           "wiki_slug": "Lesser_Mystic_Essence",
           "quantity": 1
-        },
-        {
-          "wowhead_id": 11083,
-          "display_name": "Soul Dust (Classic)",
-          "wiki_slug": "Soul_Dust_(Classic)",
-          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 14809
     },
     {
       "name": "Greater Mystic Wand",
@@ -384,7 +698,7 @@
       "wiki_slug": "Greater_Mystic_Wand",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 11290,
+        "wowhead_id": 217287,
         "display_name": "Greater Mystic Wand",
         "wiki_slug": "Greater_Mystic_Wand"
       },
@@ -396,18 +710,53 @@
           "quantity": 1
         },
         {
-          "wowhead_id": 16202,
-          "display_name": "Lesser Eternal Essence",
-          "wiki_slug": "Lesser_Eternal_Essence",
-          "quantity": 2
+          "wowhead_id": 11134,
+          "display_name": "Lesser Mystic Essence",
+          "wiki_slug": "Lesser_Mystic_Essence",
+          "quantity": 1
         },
         {
-          "wowhead_id": 16204,
-          "display_name": "Light Illusion Dust",
-          "wiki_slug": "Light_Illusion_Dust",
-          "quantity": 4
+          "wowhead_id": 11137,
+          "display_name": "Vision Dust",
+          "wiki_slug": "Vision_Dust",
+          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 14810
+    },
+    {
+      "name": "Twisted Nether Wand",
+      "tier": "expert",
+      "skill": 185,
+      "source": "drop",
+      "wiki_slug": "Twisted_Nether_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249144,
+        "display_name": "Twisted Nether Wand",
+        "wiki_slug": "Twisted_Nether_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11174,
+          "display_name": "Lesser Nether Essence",
+          "wiki_slug": "Lesser_Nether_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248461
     },
     {
       "name": "Lesser Wizard Oil",
@@ -426,15 +775,22 @@
           "wowhead_id": 11137,
           "display_name": "Vision Dust",
           "wiki_slug": "Vision_Dust",
-          "quantity": 3
+          "quantity": 1
         },
         {
-          "wowhead_id": 3371,
-          "display_name": "Crystal Vial",
-          "wiki_slug": "Crystal_Vial",
+          "wowhead_id": 17035,
+          "display_name": "Stranglethorn Seed",
+          "wiki_slug": "Stranglethorn_Seed",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25126
     },
     {
       "name": "Runed Truesilver Rod",
@@ -465,42 +821,460 @@
           "wowhead_id": 11135,
           "display_name": "Greater Mystic Essence",
           "wiki_slug": "Greater_Mystic_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11137,
+          "display_name": "Vision Dust",
+          "wiki_slug": "Vision_Dust",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 13702
+    },
+    {
+      "name": "Libram of Invocation",
+      "tier": "expert",
+      "skill": 210,
+      "source": "vendor",
+      "wiki_slug": "Libram_of_Invocation",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249442,
+        "display_name": "Libram of Invocation",
+        "wiki_slug": "Libram_of_Invocation"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2289,
+          "display_name": "Scroll of Strength II",
+          "wiki_slug": "Scroll_of_Strength_II",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1249006
+    },
+    {
+      "name": "Talons of Wrath",
+      "tier": "expert",
+      "skill": 210,
+      "source": "vendor",
+      "wiki_slug": "Talons_of_Wrath",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249441,
+        "display_name": "Talons of Wrath",
+        "wiki_slug": "Talons_of_Wrath"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248974
+    },
+    {
+      "name": "Totem of Ancestral Protection",
+      "tier": "expert",
+      "skill": 210,
+      "source": "vendor",
+      "wiki_slug": "Totem_of_Ancestral_Protection",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249443,
+        "display_name": "Totem of Ancestral Protection",
+        "wiki_slug": "Totem_of_Ancestral_Protection"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 249432,
+          "display_name": "Sandpaper",
+          "wiki_slug": "Sandpaper",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 249410,
+          "display_name": "Sulfuric Acid",
+          "wiki_slug": "Sulfuric_Acid",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249015
+    },
+    {
+      "name": "Dreambough Wand",
+      "tier": "expert",
+      "skill": 215,
+      "source": "drop",
+      "wiki_slug": "Dreambough_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249234,
+        "display_name": "Dreambough Wand",
+        "wiki_slug": "Dreambough_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11174,
+          "display_name": "Lesser Nether Essence",
+          "wiki_slug": "Lesser_Nether_Essence",
           "quantity": 2
         },
         {
           "wowhead_id": 11137,
           "display_name": "Vision Dust",
           "wiki_slug": "Vision_Dust",
-          "quantity": 2
+          "quantity": 1
         },
         {
-          "wowhead_id": 11130,
-          "display_name": "Runed Golden Rod",
-          "wiki_slug": "Runed_Golden_Rod",
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 1248509
     },
     {
-      "name": "Sigil of Living Dreams",
-      "tier": "artisan",
-      "skill": 250,
-      "source": null,
-      "wiki_slug": "Sigil_of_Living_Dreams",
+      "name": "Dreamstaff",
+      "tier": "expert",
+      "skill": 220,
+      "source": "vendor",
+      "wiki_slug": "Dreamstaff",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 221028,
-        "display_name": "Sigil of Living Dreams",
-        "wiki_slug": "Sigil_of_Living_Dreams"
+        "wowhead_id": 249454,
+        "display_name": "Dreamstaff",
+        "wiki_slug": "Dreamstaff"
       },
       "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11177,
+          "display_name": "Small Radiant Shard",
+          "wiki_slug": "Small_Radiant_Shard",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 6
+        },
         {
           "wowhead_id": 11176,
           "display_name": "Dream Dust",
           "wiki_slug": "Dream_Dust",
-          "quantity": 5
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 4
         }
-      ]
+      ],
+      "wowhead_spell_id": 1249064
+    },
+    {
+      "name": "Radiant Staff",
+      "tier": "expert",
+      "skill": 220,
+      "source": "vendor",
+      "wiki_slug": "Radiant_Staff",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249453,
+        "display_name": "Radiant Staff",
+        "wiki_slug": "Radiant_Staff"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 11177,
+          "display_name": "Small Radiant Shard",
+          "wiki_slug": "Small_Radiant_Shard",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1249061
+    },
+    {
+      "name": "Truesilver Conduit",
+      "tier": "expert",
+      "skill": 220,
+      "source": "vendor",
+      "wiki_slug": "Truesilver_Conduit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249455,
+        "display_name": "Truesilver Conduit",
+        "wiki_slug": "Truesilver_Conduit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11178,
+          "display_name": "Large Radiant Shard",
+          "wiki_slug": "Large_Radiant_Shard",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 11177,
+          "display_name": "Small Radiant Shard",
+          "wiki_slug": "Small_Radiant_Shard",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249069
+    },
+    {
+      "name": "Twisting Essence Jar",
+      "tier": "expert",
+      "skill": 220,
+      "source": "vendor",
+      "wiki_slug": "Twisting_Essence_Jar",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249456,
+        "display_name": "Twisting Essence Jar",
+        "wiki_slug": "Twisting_Essence_Jar"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6037,
+          "display_name": "Truesilver Bar",
+          "wiki_slug": "Truesilver_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 11175,
+          "display_name": "Greater Nether Essence",
+          "wiki_slug": "Greater_Nether_Essence",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 11135,
+          "display_name": "Greater Mystic Essence",
+          "wiki_slug": "Greater_Mystic_Essence",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249070
+    },
+    {
+      "name": "Lesser Eternal Wand",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "drop",
+      "wiki_slug": "Lesser_Eternal_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249232,
+        "display_name": "Lesser Eternal Wand",
+        "wiki_slug": "Lesser_Eternal_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16202,
+          "display_name": "Lesser Eternal Essence",
+          "wiki_slug": "Lesser_Eternal_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248505
     },
     {
       "name": "Enchanted Leather",
@@ -522,12 +1296,13 @@
           "quantity": 1
         },
         {
-          "wowhead_id": 16203,
-          "display_name": "Greater Eternal Essence",
-          "wiki_slug": "Greater_Eternal_Essence",
-          "quantity": 3
+          "wowhead_id": 16202,
+          "display_name": "Lesser Eternal Essence",
+          "wiki_slug": "Lesser_Eternal_Essence",
+          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 17181
     },
     {
       "name": "Enchanted Thorium",
@@ -538,8 +1313,8 @@
       "resolution_status": "resolved",
       "crafted_item": {
         "wowhead_id": 12655,
-        "display_name": "Enchanted Thorium",
-        "wiki_slug": "Enchanted_Thorium"
+        "display_name": "Enchanted Thorium Bar",
+        "wiki_slug": "Enchanted_Thorium_Bar"
       },
       "reagents": [
         {
@@ -554,7 +1329,8 @@
           "wiki_slug": "Dream_Dust",
           "quantity": 3
         }
-      ]
+      ],
+      "wowhead_spell_id": 17180
     },
     {
       "name": "Lesser Mana Oil",
@@ -573,21 +1349,124 @@
           "wowhead_id": 11176,
           "display_name": "Dream Dust",
           "wiki_slug": "Dream_Dust",
-          "quantity": 3
+          "quantity": 1
         },
         {
           "wowhead_id": 8831,
           "display_name": "Purple Lotus",
           "wiki_slug": "Purple_Lotus",
-          "quantity": 2
+          "quantity": 1
         },
         {
-          "wowhead_id": 3371,
+          "wowhead_id": 8925,
           "display_name": "Crystal Vial",
-          "wiki_slug": "Crystal_Vial",
+          "wiki_slug": "Crystal_Vial_(Classic)",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25127
+    },
+    {
+      "name": "Dormant Heart of the Mountain",
+      "tier": "artisan",
+      "skill": 265,
+      "source": "drop",
+      "wiki_slug": "Dormant_Heart_of_the_Mountain",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249473,
+        "display_name": "Dormant Heart of the Mountain",
+        "wiki_slug": "Dormant_Heart_of_the_Mountain"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11382,
+          "display_name": "Blood of the Mountain",
+          "wiki_slug": "Blood_of_the_Mountain",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7080,
+          "display_name": "Essence of Water",
+          "wiki_slug": "Essence_of_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14343,
+          "display_name": "Small Brilliant Shard",
+          "wiki_slug": "Small_Brilliant_Shard",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1249114
+    },
+    {
+      "name": "Frozen Heart of the Mountain",
+      "tier": "artisan",
+      "skill": 265,
+      "source": null,
+      "wiki_slug": "Frozen_Heart_of_the_Mountain",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249469,
+        "display_name": "Frozen Heart of the Mountain",
+        "wiki_slug": "Frozen_Heart_of_the_Mountain"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11382,
+          "display_name": "Blood of the Mountain",
+          "wiki_slug": "Blood_of_the_Mountain",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12808,
+          "display_name": "Essence of Undeath",
+          "wiki_slug": "Essence_of_Undeath",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14343,
+          "display_name": "Small Brilliant Shard",
+          "wiki_slug": "Small_Brilliant_Shard",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1249107
+    },
+    {
+      "name": "Molten Heart of the Mountain",
+      "tier": "artisan",
+      "skill": 265,
+      "source": "drop",
+      "wiki_slug": "Molten_Heart_of_the_Mountain",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249470,
+        "display_name": "Molten Heart of the Mountain",
+        "wiki_slug": "Molten_Heart_of_the_Mountain"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11382,
+          "display_name": "Blood of the Mountain",
+          "wiki_slug": "Blood_of_the_Mountain",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 7076,
+          "display_name": "Essence of Earth",
+          "wiki_slug": "Essence_of_Earth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14343,
+          "display_name": "Small Brilliant Shard",
+          "wiki_slug": "Small_Brilliant_Shard",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1249112
     },
     {
       "name": "Smoking Heart of the Mountain",
@@ -603,51 +1482,133 @@
       },
       "reagents": [
         {
+          "wowhead_id": 11382,
+          "display_name": "Blood of the Mountain",
+          "wiki_slug": "Blood_of_the_Mountain",
+          "quantity": 1
+        },
+        {
           "wowhead_id": 7078,
           "display_name": "Essence of Fire",
           "wiki_slug": "Essence_of_Fire",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 14343,
+          "display_name": "Small Brilliant Shard",
+          "wiki_slug": "Small_Brilliant_Shard",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 15596
+    },
+    {
+      "name": "Brilliant Wand",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Brilliant_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249385,
+        "display_name": "Brilliant Wand",
+        "wiki_slug": "Brilliant_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
           "quantity": 3
         },
         {
           "wowhead_id": 14344,
           "display_name": "Large Brilliant Shard",
           "wiki_slug": "Large_Brilliant_Shard",
-          "quantity": 3
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 1248650
     },
     {
-      "name": "Conductive Shield Coating",
+      "name": "Greater Eternal Wand",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Greater_Eternal_Wand",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249237,
+        "display_name": "Greater Eternal Wand",
+        "wiki_slug": "Greater_Eternal_Wand"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1248515
+    },
+    {
+      "name": "Wizard Oil",
       "tier": "artisan",
       "skill": 275,
       "source": "vendor",
-      "wiki_slug": "Conductive_Shield_Coating",
+      "wiki_slug": "Wizard_Oil",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 228980,
-        "display_name": "Conductive Shield Coating",
-        "wiki_slug": "Conductive_Shield_Coating"
+        "wowhead_id": 20750,
+        "display_name": "Wizard Oil",
+        "wiki_slug": "Wizard_Oil"
       },
       "reagents": [
         {
           "wowhead_id": 16204,
           "display_name": "Illusion Dust",
           "wiki_slug": "Illusion_Dust",
-          "quantity": 2
+          "quantity": 3
         },
         {
           "wowhead_id": 4625,
           "display_name": "Firebloom",
           "wiki_slug": "Firebloom",
-          "quantity": 1
+          "quantity": 2
         },
         {
           "wowhead_id": 8925,
-          "display_name": "Crystal Vial (Classic)",
+          "display_name": "Crystal Vial",
           "wiki_slug": "Crystal_Vial_(Classic)",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25128
     },
     {
       "name": "Runed Arcanite Rod",
@@ -655,27 +1616,71 @@
       "skill": 290,
       "source": "vendor",
       "wiki_slug": "Runed_Arcanite_Rod",
-      "resolution_status": "reagent_cost_incomplete",
+      "resolution_status": "resolved",
       "crafted_item": {
         "wowhead_id": 16207,
         "display_name": "Runed Arcanite Rod",
         "wiki_slug": "Runed_Arcanite_Rod"
       },
-      "reagents": []
+      "reagents": [
+        {
+          "wowhead_id": 16206,
+          "display_name": "Arcanite Rod",
+          "wiki_slug": "Arcanite_Rod",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13926,
+          "display_name": "Golden Pearl",
+          "wiki_slug": "Golden_Pearl",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 14343,
+          "display_name": "Small Brilliant Shard",
+          "wiki_slug": "Small_Brilliant_Shard",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 14344,
+          "display_name": "Large Brilliant Shard",
+          "wiki_slug": "Large_Brilliant_Shard",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 20051
     },
     {
-      "name": "Arcane Forge (Camping)",
+      "name": "Arcane Forge",
       "tier": "artisan",
       "skill": 300,
       "source": null,
       "wiki_slug": "Arcane_Forge_(Camping)",
-      "resolution_status": "reagent_cost_incomplete",
+      "resolution_status": "resolved",
       "crafted_item": {
         "wowhead_id": 279987,
-        "display_name": "Arcane Forge (Camping)",
+        "display_name": "Arcane Forge",
         "wiki_slug": "Arcane_Forge_(Camping)"
       },
       "reagents": [
+        {
+          "wowhead_id": 273128,
+          "display_name": "Maker's Spark",
+          "wiki_slug": "Maker's_Spark",
+          "quantity": 1
+        },
         {
           "wowhead_id": 14344,
           "display_name": "Large Brilliant Shard",
@@ -688,7 +1693,8 @@
           "wiki_slug": "Greater_Eternal_Essence",
           "quantity": 4
         }
-      ]
+      ],
+      "wowhead_spell_id": 1263082
     },
     {
       "name": "Brilliant Mana Oil",
@@ -698,7 +1704,7 @@
       "wiki_slug": "Brilliant_Mana_Oil",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 203862,
+        "wowhead_id": 20748,
         "display_name": "Brilliant Mana Oil",
         "wiki_slug": "Brilliant_Mana_Oil"
       },
@@ -716,12 +1722,13 @@
           "quantity": 3
         },
         {
-          "wowhead_id": 3371,
-          "display_name": "Crystal Vial",
-          "wiki_slug": "Crystal_Vial",
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25130
     },
     {
       "name": "Brilliant Wizard Oil",
@@ -731,7 +1738,7 @@
       "wiki_slug": "Brilliant_Wizard_Oil",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 203865,
+        "wowhead_id": 20749,
         "display_name": "Brilliant Wizard Oil",
         "wiki_slug": "Brilliant_Wizard_Oil"
       },
@@ -749,182 +1756,165 @@
           "quantity": 3
         },
         {
-          "wowhead_id": 3371,
-          "display_name": "Crystal Vial",
-          "wiki_slug": "Crystal_Vial",
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
           "quantity": 1
         }
-      ]
+      ],
+      "wowhead_spell_id": 25129
     },
     {
-      "name": "Enchanted Repellent",
+      "name": "Idol of Swiftness",
       "tier": "artisan",
       "skill": 300,
-      "source": "vendor",
-      "wiki_slug": "Enchanted_Repellent",
+      "source": null,
+      "wiki_slug": "Idol_of_Swiftness",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 233996,
-        "display_name": "Enchanted Repellent",
-        "wiki_slug": "Enchanted_Repellent"
+        "wowhead_id": 279250,
+        "display_name": "Idol of Swiftness",
+        "wiki_slug": "Idol_of_Swiftness"
       },
       "reagents": [
         {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 3
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 1
         },
         {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 3
+          "wowhead_id": 20725,
+          "display_name": "Nexus Crystal",
+          "wiki_slug": "Nexus_Crystal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 2
         },
         {
           "wowhead_id": 16204,
           "display_name": "Illusion Dust",
           "wiki_slug": "Illusion_Dust",
-          "quantity": 2
+          "quantity": 12
         }
-      ]
+      ],
+      "wowhead_spell_id": 1306524
     },
     {
-      "name": "Scroll: Wrath of the Swarm",
+      "name": "Idol of the Dream",
       "tier": "artisan",
       "skill": 300,
-      "source": "drop",
-      "wiki_slug": "Scroll:_Wrath_of_the_Swarm",
+      "source": "vendor",
+      "wiki_slug": "Idol_of_the_Dream",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 233995,
-        "display_name": "Scroll: Wrath of the Swarm",
-        "wiki_slug": "Scroll:_Wrath_of_the_Swarm"
+        "wowhead_id": 220606,
+        "display_name": "Idol of the Dream",
+        "wiki_slug": "Idol_of_the_Dream"
       },
       "reagents": [
+        {
+          "wowhead_id": 14344,
+          "display_name": "Large Brilliant Shard",
+          "wiki_slug": "Large_Brilliant_Shard",
+          "quantity": 2
+        },
         {
           "wowhead_id": 16203,
           "display_name": "Greater Eternal Essence",
           "wiki_slug": "Greater_Eternal_Essence",
-          "quantity": 1
-        },
-        {
-          "wowhead_id": 14047,
-          "display_name": "Runecloth",
-          "wiki_slug": "Runecloth",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "name": "Enchanted Mushroom",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Enchanted_Mushroom",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234002,
-        "display_name": "Enchanted Mushroom",
-        "wiki_slug": "Enchanted_Mushroom"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 20
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
           "quantity": 4
         },
         {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Enchanted Prayer Tome",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Enchanted_Prayer_Tome",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234000,
-        "display_name": "Enchanted Prayer Tome",
-        "wiki_slug": "Enchanted_Prayer_Tome"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234008,
-          "display_name": "Qiraji Silk",
-          "wiki_slug": "Qiraji_Silk",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Enchanted Stopwatch",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Enchanted_Stopwatch",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 233993,
-        "display_name": "Enchanted Stopwatch",
-        "wiki_slug": "Enchanted_Stopwatch"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234005,
-          "display_name": "Obsidian Blasting Powder",
-          "wiki_slug": "Obsidian_Blasting_Powder",
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
           "quantity": 6
         },
+        {
+          "wowhead_id": 249431,
+          "display_name": "Viridian Dye",
+          "wiki_slug": "Viridian_Dye",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1249128
+    },
+    {
+      "name": "Idol of the Ursine Twins",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Idol_of_the_Ursine_Twins",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279251,
+        "display_name": "Idol of the Ursine Twins",
+        "wiki_slug": "Idol_of_the_Ursine_Twins"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 20725,
+          "display_name": "Nexus Crystal",
+          "wiki_slug": "Nexus_Crystal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 12
+        }
+      ],
+      "wowhead_spell_id": 1306525
+    },
+    {
+      "name": "Libram of Holy Alacrity",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Libram_of_Holy_Alacrity",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 228175,
+        "display_name": "Libram of Holy Alacrity",
+        "wiki_slug": "Libram_of_Holy_Alacrity"
+      },
+      "reagents": [
         {
           "wowhead_id": 14344,
           "display_name": "Large Brilliant Shard",
@@ -932,561 +1922,261 @@
           "quantity": 4
         },
         {
-          "wowhead_id": 2459,
-          "display_name": "Swiftness Potion",
-          "wiki_slug": "Swiftness_Potion",
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
           "quantity": 3
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 249431,
+          "display_name": "Viridian Dye",
+          "wiki_slug": "Viridian_Dye",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10308,
+          "display_name": "Scroll of Intellect IV",
+          "wiki_slug": "Scroll_of_Intellect_IV",
+          "quantity": 4
         }
-      ]
+      ],
+      "wowhead_spell_id": 1249152
     },
     {
-      "name": "Enchanted Totem",
+      "name": "Libram of Infusion",
       "tier": "artisan",
-      "skill": 320,
+      "skill": 300,
       "source": null,
-      "wiki_slug": "Enchanted_Totem",
+      "wiki_slug": "Libram_of_Infusion",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 234001,
-        "display_name": "Enchanted Totem",
-        "wiki_slug": "Enchanted_Totem"
+        "wowhead_id": 279248,
+        "display_name": "Libram of Infusion",
+        "wiki_slug": "Libram_of_Infusion"
       },
       "reagents": [
+        {
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 1
+        },
         {
           "wowhead_id": 20725,
           "display_name": "Nexus Crystal",
           "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
+          "quantity": 1
         },
         {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
           "quantity": 2
         },
         {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 12
         }
-      ]
+      ],
+      "wowhead_spell_id": 1306522
     },
     {
-      "name": "Idol of Feline Ferocity",
+      "name": "Steadfast Libram",
       "tier": "artisan",
-      "skill": 320,
+      "skill": 300,
       "source": null,
-      "wiki_slug": "Idol_of_Feline_Ferocity",
+      "wiki_slug": "Steadfast_Libram",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 234469,
-        "display_name": "Idol of Feline Ferocity",
-        "wiki_slug": "Idol_of_Feline_Ferocity"
+        "wowhead_id": 279247,
+        "display_name": "Steadfast Libram",
+        "wiki_slug": "Steadfast_Libram"
       },
       "reagents": [
+        {
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 1
+        },
         {
           "wowhead_id": 20725,
           "display_name": "Nexus Crystal",
           "wiki_slug": "Nexus_Crystal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
           "quantity": 2
         },
         {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 20
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 4
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 4
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 12
         }
-      ]
+      ],
+      "wowhead_spell_id": 1306521
     },
     {
-      "name": "Idol of Sidereal Wrath",
+      "name": "Torch of Light",
       "tier": "artisan",
-      "skill": 320,
+      "skill": 300,
       "source": null,
-      "wiki_slug": "Idol_of_Sidereal_Wrath",
+      "wiki_slug": "Torch_of_Light",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 234474,
-        "display_name": "Idol of Sidereal Wrath",
-        "wiki_slug": "Idol_of_Sidereal_Wrath"
+        "wowhead_id": 279246,
+        "display_name": "Torch of Light",
+        "wiki_slug": "Torch_of_Light"
       },
       "reagents": [
+        {
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 2
+        },
         {
           "wowhead_id": 20725,
           "display_name": "Nexus Crystal",
           "wiki_slug": "Nexus_Crystal",
-          "quantity": 2
+          "quantity": 1
         },
         {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 20
+          "wowhead_id": 14344,
+          "display_name": "Large Brilliant Shard",
+          "wiki_slug": "Large_Brilliant_Shard",
+          "quantity": 6
         },
         {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 4
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Idol of Ursin Power",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Idol_of_Ursin_Power",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234468,
-        "display_name": "Idol of Ursin Power",
-        "wiki_slug": "Idol_of_Ursin_Power"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 20
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 4
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Libram of Righteousness",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Libram_of_Righteousness",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234477,
-        "display_name": "Libram of Righteousness",
-        "wiki_slug": "Libram_of_Righteousness"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234008,
-          "display_name": "Qiraji Silk",
-          "wiki_slug": "Qiraji_Silk",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Libram of Sanctity",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Libram_of_Sanctity",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234476,
-        "display_name": "Libram of Sanctity",
-        "wiki_slug": "Libram_of_Sanctity"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234008,
-          "display_name": "Qiraji Silk",
-          "wiki_slug": "Qiraji_Silk",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Libram of the Exorcist",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Libram_of_the_Exorcist",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234475,
-        "display_name": "Libram of the Exorcist",
-        "wiki_slug": "Libram_of_the_Exorcist"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234008,
-          "display_name": "Qiraji Silk",
-          "wiki_slug": "Qiraji_Silk",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "name": "Lodestone of Retaliation",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Lodestone_of_Retaliation",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 233992,
-        "display_name": "Lodestone of Retaliation",
-        "wiki_slug": "Lodestone_of_Retaliation"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 234007,
-          "display_name": "Spiked Silithid Chitin",
-          "wiki_slug": "Spiked_Silithid_Chitin",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
+          "wowhead_id": 16202,
+          "display_name": "Lesser Eternal Essence",
+          "wiki_slug": "Lesser_Eternal_Essence",
           "quantity": 5
+        }
+      ],
+      "wowhead_spell_id": 1306520
+    },
+    {
+      "name": "Totem of Thunder",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Totem_of_Thunder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 228176,
+        "display_name": "Totem of Thunder",
+        "wiki_slug": "Totem_of_Thunder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 14344,
+          "display_name": "Large Brilliant Shard",
+          "wiki_slug": "Large_Brilliant_Shard",
+          "quantity": 1
         },
         {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 249431,
+          "display_name": "Viridian Dye",
+          "wiki_slug": "Viridian_Dye",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 249430,
+          "display_name": "Magenta Dye",
+          "wiki_slug": "Magenta_Dye",
           "quantity": 4
         },
         {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 10
-        }
-      ]
-    },
-    {
-      "name": "Ruby-Encrusted Broach",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Ruby-Encrusted_Broach",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 233994,
-        "display_name": "Ruby-Encrusted Broach",
-        "wiki_slug": "Ruby-Encrusted_Broach"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 234007,
-          "display_name": "Spiked Silithid Chitin",
-          "wiki_slug": "Spiked_Silithid_Chitin",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 5
-        },
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 6
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234011,
-          "display_name": "Qiraji Stalker Venom",
-          "wiki_slug": "Qiraji_Stalker_Venom",
-          "quantity": 10
-        }
-      ]
-    },
-    {
-      "name": "Speedstone",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Speedstone",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 233990,
-        "display_name": "Speedstone",
-        "wiki_slug": "Speedstone"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 234006,
-          "display_name": "Monstrous Silithid Chitin",
-          "wiki_slug": "Monstrous_Silithid_Chitin",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234010,
-          "display_name": "Ancient Sandworm Bile",
-          "wiki_slug": "Ancient_Sandworm_Bile",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 6
-        },
-        {
-          "wowhead_id": 234004,
-          "display_name": "Obsidian Grinding Stone",
-          "wiki_slug": "Obsidian_Grinding_Stone",
-          "quantity": 6
-        },
-        {
-          "wowhead_id": 2452,
-          "display_name": "Swiftthistle",
-          "wiki_slug": "Swiftthistle",
-          "quantity": 20
-        }
-      ]
-    },
-    {
-      "name": "Totem of Flowing Magma",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Totem_of_Flowing_Magma",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234479,
-        "display_name": "Totem of Flowing Magma",
-        "wiki_slug": "Totem_of_Flowing_Magma"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "wowhead_id": 249409,
+          "display_name": "Cerulean Dye",
+          "wiki_slug": "Cerulean_Dye",
           "quantity": 2
         },
         {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 4
         }
-      ]
+      ],
+      "wowhead_spell_id": 1249154
     },
     {
-      "name": "Totem of Pyroclastic Thunder",
+      "name": "Totem of Urgency",
       "tier": "artisan",
-      "skill": 320,
+      "skill": 300,
       "source": null,
-      "wiki_slug": "Totem_of_Pyroclastic_Thunder",
+      "wiki_slug": "Totem_of_Urgency",
       "resolution_status": "resolved",
       "crafted_item": {
-        "wowhead_id": 234480,
-        "display_name": "Totem of Pyroclastic Thunder",
-        "wiki_slug": "Totem_of_Pyroclastic_Thunder"
+        "wowhead_id": 279249,
+        "display_name": "Totem of Urgency",
+        "wiki_slug": "Totem_of_Urgency"
       },
       "reagents": [
+        {
+          "wowhead_id": 274030,
+          "display_name": "Malleable Essence of Nature",
+          "wiki_slug": "Malleable_Essence_of_Nature",
+          "quantity": 1
+        },
         {
           "wowhead_id": 20725,
           "display_name": "Nexus Crystal",
           "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
+          "quantity": 1
         },
         {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
           "quantity": 2
         },
         {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
+          "wowhead_id": 16204,
+          "display_name": "Illusion Dust",
+          "wiki_slug": "Illusion_Dust",
+          "quantity": 12
         }
-      ]
-    },
-    {
-      "name": "Totem of Thunderous Strikes",
-      "tier": "artisan",
-      "skill": 320,
-      "source": null,
-      "wiki_slug": "Totem_of_Thunderous_Strikes",
-      "resolution_status": "resolved",
-      "crafted_item": {
-        "wowhead_id": 234478,
-        "display_name": "Totem of Thunderous Strikes",
-        "wiki_slug": "Totem_of_Thunderous_Strikes"
-      },
-      "reagents": [
-        {
-          "wowhead_id": 20725,
-          "display_name": "Nexus Crystal",
-          "wiki_slug": "Nexus_Crystal",
-          "quantity": 3
-        },
-        {
-          "wowhead_id": 234012,
-          "display_name": "Hive Thistle",
-          "wiki_slug": "Hive_Thistle",
-          "quantity": 10
-        },
-        {
-          "wowhead_id": 234003,
-          "display_name": "Obsidian-Infused Thorium Bar",
-          "wiki_slug": "Obsidian-Infused_Thorium_Bar",
-          "quantity": 2
-        },
-        {
-          "wowhead_id": 12810,
-          "display_name": "Enchanted Leather",
-          "wiki_slug": "Enchanted_Leather",
-          "quantity": 3
-        }
-      ]
+      ],
+      "wowhead_spell_id": 1306523
     }
   ]
 }

@@ -42,3 +42,40 @@ Verified facts:
 - **Category tags are the real correctness check for an item-ID match, not optional metadata.** Every item page carries `/wiki/Category:...` links; a genuine profession-crafted item carries a category containing that profession's name (e.g. `Tailoring_crafted_items`). **Confirmed real failure mode this session:** scraping Tailoring by name-match alone produced 6 wrong matches out of 269 (ambiguous names resolving to an unrelated wiki page) — a Blacksmithing mail-armor item, a Leatherworking item, a plate-armor item, a cosmetic item, and two removed/beta-only items, none of them Tailoring at all. All 6 were caught, after the fact, by checking each resolved item's own category tags against the expected profession — see [ARCHITECTURE.md § Contract Tests via Fixtures](ARCHITECTURE.md#3-contract-tests-via-fixtures) for why this check belongs in the scraper itself, not a one-off manual audit.
 - **Not every pattern has a wiki page yet.** WoW Forever is live beta content; roughly 40% of Tailoring's pattern list had no resolvable wiki page at time of scraping (confirmed: the page literally doesn't exist, not a fetch failure) — see [ARCHITECTURE.md § Catalog Construction](ARCHITECTURE.md#catalog-construction-manual-per-profession) for how this is recorded rather than treated as an error.
 - **Rate limiting / access:** plain, unauthenticated GET requests work reliably with no special headers. **`wowhead.com` itself returns HTTP 403 (Cloudflare bot protection) to automated requests and must never be fetched directly** — every fact above comes from `warcraft.wiki.gg` alone, which has no such protection. No published rate limit was found; this project's own scraping used a conservative, deliberately chosen **1.0–1.8s randomized delay between every single sequential request, zero concurrency**, with a 30–60s backoff on any 429/503/challenge response — across several hundred real requests this session, this threshold was never hit even once. Treat that cadence as the floor, not something to tune faster without a real reason.
+
+## Wowhead (WoW Forever recipe data)
+
+**Source:** Wowhead's WoW Forever spell list per profession: `https://www.wowhead.com/forever/spells/professions/<slug>` for primary professions, `https://www.wowhead.com/forever/spells/secondary-skills/<slug>` for Cooking, First Aid and Fishing. Confirmed for all 12 crafting professions; the full list and the step-by-step extraction procedure are in [CATALOG_REFRESH.md](CATALOG_REFRESH.md).
+**Auth:** None, but **automated requests are blocked** (HTTP 403, Cloudflare). See the rule above: never fetch it from a script. Read it only from a real, human-operated browser session.
+**Last verified:** 2026-11-16, by reading the live pages in a browser.
+**Procedure:** [CATALOG_REFRESH.md](CATALOG_REFRESH.md) and `app/priv/catalog_seeds/tools/wowhead_forever_export.js`.
+
+**Why it's the source of truth for reagents.** On 2026-11-16 all four committed seeds were checked recipe by recipe against this data. Only 405 of 693 patterns matched. The Warcraft Wiki pages these seeds were scraped from mostly list the **Classic** recipes, and WoW Forever changed many of them:
+- Alchemy vials: many recipes use Leaded Vial or Crystal Vial instead of Empty Vial.
+- Quantities: Bolt of Runecloth takes 5 Runecloth, not 4; flasks take 30/10 herbs, not 7/3.
+- New Forever reagents: Viridian, Cerulean and Magenta Dye; Bloodvine; Pristine Hide/Scale; Copper Modulator; and others.
+
+The scrape had also pulled in 75 Season of Discovery item IDs that aren't in Forever, and some reagent IDs from later expansions (e.g. `156930` for Dream/Vision Dust, `39354` for Blank Parchment). The seeds were then regenerated from this data.
+
+Verified facts:
+- The page defines `g_listviews.spells.data`: one object per profession spell. The fields used:
+  - `id`: spell ID
+  - `name`
+  - `creates`: `[itemId, minQty, maxQty]`; absent for enchants and profession-rank spells
+  - `learnedat`: required skill
+  - `reagents`: `[[itemId, qty], ...]`
+  - `source`: array of codes; 2 = drop, 4 = quest, 5 = vendor, 6 = trainer. Codes 16 and 21 also appear and are unmapped.
+- `g_items[itemId].name_enus` gives the display name for every item ID referenced on the page.
+- An unknown profession slug does **not** 404: Wowhead silently serves its generic all-professions list (title "Forever Profession Spells", capped at 1,000 rows). The exporter refuses that page.
+- **Comprehension** (skill 3012, taught by mage trainers) is new in Forever but has no crafts. Its spells read found scrolls, so there's no seed for it.
+- `envChange.status` (`new` / `updated` / `unchanged`) shows how Forever changed each recipe relative to Classic.
+
+**How the seeds map from it:**
+- Only spells with a `creates` item and `0 < learnedat < 9999` are kept. Enchants produce no item, and the app prices crafted items only.
+- `skill` = `learnedat`.
+- `tier` comes from skill: ≤75 apprentice, ≤150 journeyman, ≤225 expert, otherwise artisan. These bands match the old wiki-derived seeds' ranges.
+- `source` comes from the first mapped code, falling back to the previous seed's value, otherwise null.
+- `wiki_slug` (pattern and item) keeps the previous seed's value where one existed. Otherwise it's the name with spaces as underscores.
+- Each pattern also records `wowhead_spell_id` for traceability. `CatalogSeeder` ignores that field.
+
+`test/recipe_finder/catalog_seeds_test.exs` pins a few Forever-specific recipes so a regression back to Classic data fails the build.
