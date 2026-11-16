@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0d0d12"/>
+  <g transform="translate(16 16)">
+    <!-- parchment scroll -->
+    <path d="M -8 -10 C -10 -10 -11 -8.5 -11 -7 L -11 7 C -11 8.5 -10 10 -8 10
+             L 8 10 C 10 10 11 8.5 11 7 L 11 -7 C 11 -8.5 10 -10 8 -10 Z"
+          fill="#ece9e2" stroke="#cf9a35" stroke-width="1.4"/>
+    <!-- rolled edges -->
+    <rect x="-11" y="-10.6" width="22" height="3.4" rx="1.7" fill="#cf9a35"/>
+    <rect x="-11" y="7.2" width="22" height="3.4" rx="1.7" fill="#cf9a35"/>
+    <!-- recipe lines -->
+    <line x1="-6.5" y1="-2.5" x2="6.5" y2="-2.5" stroke="#0d0d12" stroke-width="1.3" stroke-linecap="round"/>
+    <line x1="-6.5" y1="1" x2="4" y2="1" stroke="#0d0d12" stroke-width="1.3" stroke-linecap="round"/>
+    <line x1="-6.5" y1="4.5" x2="5.5" y2="4.5" stroke="#0d0d12" stroke-width="1.3" stroke-linecap="round"/>
+  </g>
+</svg>

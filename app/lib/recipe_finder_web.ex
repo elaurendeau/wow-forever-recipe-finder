@@ -23,7 +23,7 @@ defmodule WowForeverRecipeFinderWeb do
   # into `WowForeverRecipeFinder.Repo` or a gateway module directly.
   use Boundary, deps: [WowForeverRecipeFinder], exports: [Endpoint]
 
-  def static_paths, do: ~w(assets fonts images favicon.ico robots.txt)
+  def static_paths, do: ~w(assets fonts images favicon.ico favicon.svg robots.txt)
 
   def router do
     quote do
