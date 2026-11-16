@@ -227,6 +227,7 @@ a {
   padding: 0 14px 8px;
   background: var(--surface-2);
   border-bottom: 1px solid var(--border);
+  text-align: right;
 }
 .rf-table-filter-row input {
   width: 64px;

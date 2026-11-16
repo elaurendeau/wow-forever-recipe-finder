@@ -100,6 +100,7 @@
               <th class={th_class(@filter, :price)} phx-click="sort_by" phx-value-field="price">
                 Price{sort_indicator(@filter, :price)}
               </th>
+              <th class="num">Cost</th>
               <th class={th_class(@filter, :profit)} phx-click="sort_by" phx-value-field="profit">
                 Profit{sort_indicator(@filter, :profit)}
               </th>
@@ -125,6 +126,7 @@
               <td>
                 <input type="text" name="filter[max_price_copper]" placeholder="max" value={@filter.max_price_copper} />
               </td>
+              <td></td>
               <td>
                 <input type="text" name="filter[min_profit_copper]" placeholder="min" value={@filter.min_profit_copper} />
               </td>
@@ -145,6 +147,7 @@
                 <td class="num">{format_number(r.sold_per_day)}</td>
                 <td class="num rf-muted">{format_pct(r.sale_confidence_pct)}</td>
                 <td class="num">{format_copper(r.price_copper)}</td>
+                <td class="num rf-muted">{format_copper(r.mat_cost_copper)}</td>
                 <td class={[
                   "num",
                   r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",
