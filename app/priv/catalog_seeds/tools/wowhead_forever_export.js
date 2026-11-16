@@ -32,6 +32,8 @@
     leatherworking: ["leatherworking", "Leatherworking"],
     tailoring: ["tailoring", "Tailoring"],
     mining: ["mining", "Mining"],
+    herbalism: ["herbalism", "Herbalism"],
+    skinning: ["skinning", "Skinning"],
     cooking: ["cooking", "Cooking"],
     "first-aid": ["firstaid", "First Aid"],
   };
@@ -76,6 +78,13 @@
     }
     const spellsLv = window.g_listviews?.spells?.data;
     if (!Array.isArray(spellsLv)) throw new Error("Recipe table (g_listviews.spells) not found. Let the page finish loading.");
+    // An unknown/unsupported profession slug makes Wowhead silently serve its
+    // generic "all profession spells" list (title "Forever Profession Spells",
+    // capped at 1000 rows) instead of a 404. Refuse it rather than export a
+    // mixed bag of other professions' recipes.
+    if (/Profession Spells/.test(document.title)) {
+      throw new Error(`Wowhead served the generic all-professions list for "${pageSlug}", so it has no recipe page of its own.`);
+    }
     if (spellsLv.length >= 1000) throw new Error("Wowhead capped this list at 1000 rows; the export would be incomplete.");
 
     const [slug, displayName] = PROFESSIONS[pageSlug];
