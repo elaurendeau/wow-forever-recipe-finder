@@ -45,9 +45,10 @@ Verified facts:
 
 ## Wowhead (WoW Forever recipe data)
 
-**Source:** Wowhead's WoW Forever spell list per profession, `https://www.wowhead.com/forever/spells/professions/<profession>` (confirmed for `alchemy`, `enchanting`, `engineering`, `tailoring`).
+**Source:** Wowhead's WoW Forever spell list per profession: `https://www.wowhead.com/forever/spells/professions/<slug>` for primary professions, `https://www.wowhead.com/forever/spells/secondary-skills/<slug>` for Cooking, First Aid and Fishing. Confirmed for all 12 crafting professions; the full list and the step-by-step extraction procedure are in [CATALOG_REFRESH.md](CATALOG_REFRESH.md).
 **Auth:** None, but **automated requests are blocked** (HTTP 403, Cloudflare). See the rule above: never fetch it from a script. Read it only from a real, human-operated browser session.
 **Last verified:** 2026-11-16, by reading the live pages in a browser.
+**Procedure:** [CATALOG_REFRESH.md](CATALOG_REFRESH.md) and `app/priv/catalog_seeds/tools/wowhead_forever_export.js`.
 
 **Why it's the source of truth for reagents.** On 2026-11-16 all four committed seeds were checked recipe by recipe against this data. Only 405 of 693 patterns matched. The Warcraft Wiki pages these seeds were scraped from mostly list the **Classic** recipes, and WoW Forever changed many of them:
 - Alchemy vials: many recipes use Leaded Vial or Crystal Vial instead of Empty Vial.
@@ -65,6 +66,8 @@ Verified facts:
   - `reagents`: `[[itemId, qty], ...]`
   - `source`: array of codes; 2 = drop, 4 = quest, 5 = vendor, 6 = trainer. Codes 16 and 21 also appear and are unmapped.
 - `g_items[itemId].name_enus` gives the display name for every item ID referenced on the page.
+- An unknown profession slug does **not** 404: Wowhead silently serves its generic all-professions list (title "Forever Profession Spells", capped at 1,000 rows). The exporter refuses that page.
+- **Comprehension** (skill 3012, taught by mage trainers) is new in Forever but has no crafts. Its spells read found scrolls, so there's no seed for it.
 - `envChange.status` (`new` / `updated` / `unchanged`) shows how Forever changed each recipe relative to Classic.
 
 **How the seeds map from it:**

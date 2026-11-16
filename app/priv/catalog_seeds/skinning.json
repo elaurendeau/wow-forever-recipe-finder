@@ -1,0 +1,104 @@
+{
+  "profession": {
+    "slug": "skinning",
+    "display_name": "Skinning"
+  },
+  "patterns": [
+    {
+      "name": "Camp Chair",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "quest",
+      "wiki_slug": "Camp_Chair",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279979,
+        "display_name": "Camp Chair",
+        "wiki_slug": "Camp_Chair"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2318,
+          "display_name": "Light Leather",
+          "wiki_slug": "Light_Leather",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1229517
+    },
+    {
+      "name": "Field Guide",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Field_Guide",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279969,
+        "display_name": "Field Guide",
+        "wiki_slug": "Field_Guide"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2319,
+          "display_name": "Medium Leather",
+          "wiki_slug": "Medium_Leather",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 5784,
+          "display_name": "Slimy Murloc Scale",
+          "wiki_slug": "Slimy_Murloc_Scale",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2321,
+          "display_name": "Fine Thread",
+          "wiki_slug": "Fine_Thread",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1262985
+    },
+    {
+      "name": "Trapper's Workbench",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Trapper's_Workbench",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279938,
+        "display_name": "Trapper's Workbench",
+        "wiki_slug": "Trapper's_Workbench"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4234,
+          "display_name": "Heavy Leather",
+          "wiki_slug": "Heavy_Leather",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1262982
+    }
+  ]
+}

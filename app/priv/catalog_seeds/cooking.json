@@ -1,0 +1,3610 @@
+{
+  "profession": {
+    "slug": "cooking",
+    "display_name": "Cooking"
+  },
+  "patterns": [
+    {
+      "name": "Brilliant Smallfish",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "vendor",
+      "wiki_slug": "Brilliant_Smallfish",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6290,
+        "display_name": "Brilliant Smallfish",
+        "wiki_slug": "Brilliant_Smallfish"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6291,
+          "display_name": "Raw Brilliant Smallfish",
+          "wiki_slug": "Raw_Brilliant_Smallfish",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7751
+    },
+    {
+      "name": "Crispy Bat Wing",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "vendor",
+      "wiki_slug": "Crispy_Bat_Wing",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12224,
+        "display_name": "Crispy Bat Wing",
+        "wiki_slug": "Crispy_Bat_Wing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12223,
+          "display_name": "Meaty Bat Wing",
+          "wiki_slug": "Meaty_Bat_Wing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15935
+    },
+    {
+      "name": "Gingerbread Cookie",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "vendor",
+      "wiki_slug": "Gingerbread_Cookie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 17197,
+        "display_name": "Gingerbread Cookie",
+        "wiki_slug": "Gingerbread_Cookie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6889,
+          "display_name": "Small Egg",
+          "wiki_slug": "Small_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 17194,
+          "display_name": "Holiday Spices",
+          "wiki_slug": "Holiday_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 21143
+    },
+    {
+      "name": "Herb Baked Egg",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": null,
+      "wiki_slug": "Herb_Baked_Egg",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6888,
+        "display_name": "Herb Baked Egg",
+        "wiki_slug": "Herb_Baked_Egg"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6889,
+          "display_name": "Small Egg",
+          "wiki_slug": "Small_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 8604
+    },
+    {
+      "name": "Slitherskin Mackerel",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "vendor",
+      "wiki_slug": "Slitherskin_Mackerel",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 787,
+        "display_name": "Slitherskin Mackerel",
+        "wiki_slug": "Slitherskin_Mackerel"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6303,
+          "display_name": "Raw Slitherskin Mackerel",
+          "wiki_slug": "Raw_Slitherskin_Mackerel",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7752
+    },
+    {
+      "name": "Kaldorei Spider Kabob",
+      "tier": "apprentice",
+      "skill": 10,
+      "source": "quest",
+      "wiki_slug": "Kaldorei_Spider_Kabob",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5472,
+        "display_name": "Kaldorei Spider Kabob",
+        "wiki_slug": "Kaldorei_Spider_Kabob"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5465,
+          "display_name": "Small Spider Leg",
+          "wiki_slug": "Small_Spider_Leg",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6412
+    },
+    {
+      "name": "Spiced Wolf Meat",
+      "tier": "apprentice",
+      "skill": 10,
+      "source": "trainer",
+      "wiki_slug": "Spiced_Wolf_Meat",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2680,
+        "display_name": "Spiced Wolf Meat",
+        "wiki_slug": "Spiced_Wolf_Meat"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2672,
+          "display_name": "Stringy Wolf Meat",
+          "wiki_slug": "Stringy_Wolf_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2539
+    },
+    {
+      "name": "Basic Campfire",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "trainer",
+      "wiki_slug": "Basic_Campfire",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279981,
+        "display_name": "Basic Campfire Kit",
+        "wiki_slug": "Basic_Campfire_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4470,
+          "display_name": "Simple Wood",
+          "wiki_slug": "Simple_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1229737
+    },
+    {
+      "name": "Scorpid Surprise",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "vendor",
+      "wiki_slug": "Scorpid_Surprise",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5473,
+        "display_name": "Scorpid Surprise",
+        "wiki_slug": "Scorpid_Surprise"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5466,
+          "display_name": "Scorpid Stinger",
+          "wiki_slug": "Scorpid_Stinger",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6413
+    },
+    {
+      "name": "Beer Basted Boar Ribs",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "quest",
+      "wiki_slug": "Beer_Basted_Boar_Ribs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2888,
+        "display_name": "Beer Basted Boar Ribs",
+        "wiki_slug": "Beer_Basted_Boar_Ribs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2886,
+          "display_name": "Crag Boar Rib",
+          "wiki_slug": "Crag_Boar_Rib",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2894,
+          "display_name": "Rhapsody Malt",
+          "wiki_slug": "Rhapsody_Malt",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2795
+    },
+    {
+      "name": "Peace Tea",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "drop",
+      "wiki_slug": "Peace_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249865,
+        "display_name": "Peace Tea",
+        "wiki_slug": "Peace_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249957
+    },
+    {
+      "name": "Skywall Souffle",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "quest",
+      "wiki_slug": "Skywall_Souffle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 263509,
+        "display_name": "Skywall Souffle",
+        "wiki_slug": "Skywall_Souffle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6889,
+          "display_name": "Small Egg",
+          "wiki_slug": "Small_Egg",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10284,
+          "display_name": "Simple Flour",
+          "wiki_slug": "Simple_Flour",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1270633
+    },
+    {
+      "name": "Tasty Raptor Bites",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "drop",
+      "wiki_slug": "Tasty_Raptor_Bites",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250079,
+        "display_name": "Tasty Raptor Bites",
+        "wiki_slug": "Tasty_Raptor_Bites"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3685,
+          "display_name": "Raptor Egg",
+          "wiki_slug": "Raptor_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250156
+    },
+    {
+      "name": "Venomous Smoothie",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "vendor",
+      "wiki_slug": "Venomous_Smoothie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249871,
+        "display_name": "Venomous Smoothie",
+        "wiki_slug": "Venomous_Smoothie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1475,
+          "display_name": "Small Venom Sac",
+          "wiki_slug": "Small_Venom_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249963
+    },
+    {
+      "name": "Egg Nog",
+      "tier": "apprentice",
+      "skill": 35,
+      "source": "vendor",
+      "wiki_slug": "Egg_Nog",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 17198,
+        "display_name": "Egg Nog",
+        "wiki_slug": "Egg_Nog"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6889,
+          "display_name": "Small Egg",
+          "wiki_slug": "Small_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1179,
+          "display_name": "Ice Cold Milk",
+          "wiki_slug": "Ice_Cold_Milk",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 17196,
+          "display_name": "Holiday Spirits",
+          "wiki_slug": "Holiday_Spirits",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 17194,
+          "display_name": "Holiday Spices",
+          "wiki_slug": "Holiday_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 21144
+    },
+    {
+      "name": "Pincer Bites",
+      "tier": "apprentice",
+      "skill": 35,
+      "source": "quest",
+      "wiki_slug": "Pincer_Bites",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 263512,
+        "display_name": "Pincer Bites",
+        "wiki_slug": "Pincer_Bites"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2675,
+          "display_name": "Crawler Claw",
+          "wiki_slug": "Crawler_Claw",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 10284,
+          "display_name": "Simple Flour",
+          "wiki_slug": "Simple_Flour",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1270635
+    },
+    {
+      "name": "Roasted Kodo Meat",
+      "tier": "apprentice",
+      "skill": 35,
+      "source": "vendor",
+      "wiki_slug": "Roasted_Kodo_Meat",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5474,
+        "display_name": "Roasted Kodo Meat",
+        "wiki_slug": "Roasted_Kodo_Meat"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5467,
+          "display_name": "Kodo Meat",
+          "wiki_slug": "Kodo_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6414
+    },
+    {
+      "name": "Smoked Bear Meat",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "vendor",
+      "wiki_slug": "Smoked_Bear_Meat",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6890,
+        "display_name": "Smoked Bear Meat",
+        "wiki_slug": "Smoked_Bear_Meat"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3173,
+          "display_name": "Bear Meat",
+          "wiki_slug": "Bear_Meat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 8607
+    },
+    {
+      "name": "Charred Wolf Meat",
+      "tier": "apprentice",
+      "skill": 45,
+      "source": null,
+      "wiki_slug": "Charred_Wolf_Meat",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2679,
+        "display_name": "Charred Wolf Meat",
+        "wiki_slug": "Charred_Wolf_Meat"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2672,
+          "display_name": "Stringy Wolf Meat",
+          "wiki_slug": "Stringy_Wolf_Meat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2538
+    },
+    {
+      "name": "Roasted Boar Meat",
+      "tier": "apprentice",
+      "skill": 45,
+      "source": null,
+      "wiki_slug": "Roasted_Boar_Meat",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2681,
+        "display_name": "Roasted Boar Meat",
+        "wiki_slug": "Roasted_Boar_Meat"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 769,
+          "display_name": "Chunk of Boar Meat",
+          "wiki_slug": "Chunk_of_Boar_Meat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2540
+    },
+    {
+      "name": "Boiled Clams",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Boiled_Clams",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5525,
+        "display_name": "Boiled Clams",
+        "wiki_slug": "Boiled_Clams"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5503,
+          "display_name": "Clam Meat",
+          "wiki_slug": "Clam_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6499
+    },
+    {
+      "name": "Coyote Steak",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Coyote_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2684,
+        "display_name": "Coyote Steak",
+        "wiki_slug": "Coyote_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2673,
+          "display_name": "Coyote Meat",
+          "wiki_slug": "Coyote_Meat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2541
+    },
+    {
+      "name": "Fillet of Frenzy",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "vendor",
+      "wiki_slug": "Fillet_of_Frenzy",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5476,
+        "display_name": "Fillet of Frenzy",
+        "wiki_slug": "Fillet_of_Frenzy"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5468,
+          "display_name": "Soft Frenzy Flesh",
+          "wiki_slug": "Soft_Frenzy_Flesh",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6415
+    },
+    {
+      "name": "Goretusk Liver Pie",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "quest",
+      "wiki_slug": "Goretusk_Liver_Pie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 724,
+        "display_name": "Goretusk Liver Pie",
+        "wiki_slug": "Goretusk_Liver_Pie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 723,
+          "display_name": "Goretusk Liver",
+          "wiki_slug": "Goretusk_Liver",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2542
+    },
+    {
+      "name": "Loch Frenzy Delight",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "vendor",
+      "wiki_slug": "Loch_Frenzy_Delight",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6316,
+        "display_name": "Loch Frenzy Delight",
+        "wiki_slug": "Loch_Frenzy_Delight"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6317,
+          "display_name": "Raw Loch Frenzy",
+          "wiki_slug": "Raw_Loch_Frenzy",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7754
+    },
+    {
+      "name": "Longjaw Mud Snapper",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "vendor",
+      "wiki_slug": "Longjaw_Mud_Snapper",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4592,
+        "display_name": "Longjaw Mud Snapper",
+        "wiki_slug": "Longjaw_Mud_Snapper"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6289,
+          "display_name": "Raw Longjaw Mud Snapper",
+          "wiki_slug": "Raw_Longjaw_Mud_Snapper",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7753
+    },
+    {
+      "name": "Rainbow Fin Albacore",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "vendor",
+      "wiki_slug": "Rainbow_Fin_Albacore",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5095,
+        "display_name": "Rainbow Fin Albacore",
+        "wiki_slug": "Rainbow_Fin_Albacore"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6361,
+          "display_name": "Raw Rainbow Fin Albacore",
+          "wiki_slug": "Raw_Rainbow_Fin_Albacore",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7827
+    },
+    {
+      "name": "Strider Stew",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "quest",
+      "wiki_slug": "Strider_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5477,
+        "display_name": "Strider Stew",
+        "wiki_slug": "Strider_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5469,
+          "display_name": "Strider Meat",
+          "wiki_slug": "Strider_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4536,
+          "display_name": "Shiny Red Apple",
+          "wiki_slug": "Shiny_Red_Apple",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6416
+    },
+    {
+      "name": "Blood Sausage",
+      "tier": "apprentice",
+      "skill": 60,
+      "source": "quest",
+      "wiki_slug": "Blood_Sausage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3220,
+        "display_name": "Blood Sausage",
+        "wiki_slug": "Blood_Sausage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3173,
+          "display_name": "Bear Meat",
+          "wiki_slug": "Bear_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3172,
+          "display_name": "Boar Intestines",
+          "wiki_slug": "Boar_Intestines",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3174,
+          "display_name": "Spider Ichor",
+          "wiki_slug": "Spider_Ichor",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3371
+    },
+    {
+      "name": "Thistle Tea",
+      "tier": "apprentice",
+      "skill": 60,
+      "source": "quest",
+      "wiki_slug": "Thistle_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 7676,
+        "display_name": "Thistle Tea",
+        "wiki_slug": "Thistle_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 9513
+    },
+    {
+      "name": "Breakfast Omelette",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "drop",
+      "wiki_slug": "Breakfast_Omelette",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250080,
+        "display_name": "Breakfast Omelette",
+        "wiki_slug": "Breakfast_Omelette"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6889,
+          "display_name": "Small Egg",
+          "wiki_slug": "Small_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250157
+    },
+    {
+      "name": "Crab Cake",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "trainer",
+      "wiki_slug": "Crab_Cake",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2683,
+        "display_name": "Crab Cake",
+        "wiki_slug": "Crab_Cake"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2674,
+          "display_name": "Crawler Meat",
+          "wiki_slug": "Crawler_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2544
+    },
+    {
+      "name": "Twice-Spiced Raptor Slice",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "drop",
+      "wiki_slug": "Twice-Spiced_Raptor_Slice",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250077,
+        "display_name": "Twice-Spiced Raptor Slice",
+        "wiki_slug": "Twice-Spiced_Raptor_Slice"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1250154
+    },
+    {
+      "name": "Westfall Stew",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": "quest",
+      "wiki_slug": "Westfall_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 733,
+        "display_name": "Westfall Stew",
+        "wiki_slug": "Westfall_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 729,
+          "display_name": "Stringy Vulture Meat",
+          "wiki_slug": "Stringy_Vulture_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 731,
+          "display_name": "Goretusk Snout",
+          "wiki_slug": "Goretusk_Snout",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2543
+    },
+    {
+      "name": "Crocolisk Steak",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "quest",
+      "wiki_slug": "Crocolisk_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3662,
+        "display_name": "Crocolisk Steak",
+        "wiki_slug": "Crocolisk_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2924,
+          "display_name": "Crocolisk Meat",
+          "wiki_slug": "Crocolisk_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3370
+    },
+    {
+      "name": "Dry Pork Ribs",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "trainer",
+      "wiki_slug": "Dry_Pork_Ribs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2687,
+        "display_name": "Dry Pork Ribs",
+        "wiki_slug": "Dry_Pork_Ribs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2677,
+          "display_name": "Boar Ribs",
+          "wiki_slug": "Boar_Ribs",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2546
+    },
+    {
+      "name": "Smoked Sagefish",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "vendor",
+      "wiki_slug": "Smoked_Sagefish",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21072,
+        "display_name": "Smoked Sagefish",
+        "wiki_slug": "Smoked_Sagefish"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 21071,
+          "display_name": "Raw Sagefish",
+          "wiki_slug": "Raw_Sagefish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 25704
+    },
+    {
+      "name": "Cooked Crab Claw",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": "drop",
+      "wiki_slug": "Cooked_Crab_Claw",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2682,
+        "display_name": "Cooked Crab Claw",
+        "wiki_slug": "Cooked_Crab_Claw"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2675,
+          "display_name": "Crawler Claw",
+          "wiki_slug": "Crawler_Claw",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2545
+    },
+    {
+      "name": "Savory Deviate Delight",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": "drop",
+      "wiki_slug": "Savory_Deviate_Delight",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6657,
+        "display_name": "Savory Deviate Delight",
+        "wiki_slug": "Savory_Deviate_Delight"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6522,
+          "display_name": "Deviate Fish",
+          "wiki_slug": "Deviate_Fish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 8238
+    },
+    {
+      "name": "Savory Whimsyfin Delight",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": "drop",
+      "wiki_slug": "Savory_Whimsyfin_Delight",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 251525,
+        "display_name": "Savory Whimsyfin Delight",
+        "wiki_slug": "Savory_Whimsyfin_Delight"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 251524,
+          "display_name": "Whimsyfin",
+          "wiki_slug": "Whimsyfin",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1252566
+    },
+    {
+      "name": "Clam Chowder",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "vendor",
+      "wiki_slug": "Clam_Chowder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5526,
+        "display_name": "Clam Chowder",
+        "wiki_slug": "Clam_Chowder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5503,
+          "display_name": "Clam Meat",
+          "wiki_slug": "Clam_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1179,
+          "display_name": "Ice Cold Milk",
+          "wiki_slug": "Ice_Cold_Milk",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6501
+    },
+    {
+      "name": "Dig Rat Stew",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "quest",
+      "wiki_slug": "Dig_Rat_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5478,
+        "display_name": "Dig Rat Stew",
+        "wiki_slug": "Dig_Rat_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5051,
+          "display_name": "Dig Rat",
+          "wiki_slug": "Dig_Rat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6417
+    },
+    {
+      "name": "Journeyman Campfire",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "drop",
+      "wiki_slug": "Journeyman_Campfire",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279961,
+        "display_name": "Journeyman Campfire Kit",
+        "wiki_slug": "Journeyman_Campfire_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11291,
+          "display_name": "Star Wood",
+          "wiki_slug": "Star_Wood",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1283400
+    },
+    {
+      "name": "Murloc Fin Soup",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "quest",
+      "wiki_slug": "Murloc_Fin_Soup",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3663,
+        "display_name": "Murloc Fin Soup",
+        "wiki_slug": "Murloc_Fin_Soup"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1468,
+          "display_name": "Murloc Fin",
+          "wiki_slug": "Murloc_Fin",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3372
+    },
+    {
+      "name": "Bristle Whisker Catfish",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "vendor",
+      "wiki_slug": "Bristle_Whisker_Catfish",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4593,
+        "display_name": "Bristle Whisker Catfish",
+        "wiki_slug": "Bristle_Whisker_Catfish"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6308,
+          "display_name": "Raw Bristle Whisker Catfish",
+          "wiki_slug": "Raw_Bristle_Whisker_Catfish",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7755
+    },
+    {
+      "name": "Crispy Lizard Tail",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "vendor",
+      "wiki_slug": "Crispy_Lizard_Tail",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5479,
+        "display_name": "Crispy Lizard Tail",
+        "wiki_slug": "Crispy_Lizard_Tail"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5470,
+          "display_name": "Thunder Lizard Tail",
+          "wiki_slug": "Thunder_Lizard_Tail",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6418
+    },
+    {
+      "name": "Redridge Goulash",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "quest",
+      "wiki_slug": "Redridge_Goulash",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 1082,
+        "display_name": "Redridge Goulash",
+        "wiki_slug": "Redridge_Goulash"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1081,
+          "display_name": "Crisp Spider Meat",
+          "wiki_slug": "Crisp_Spider_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1080,
+          "display_name": "Tough Condor Meat",
+          "wiki_slug": "Tough_Condor_Meat",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2547
+    },
+    {
+      "name": "Royal Tea",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "drop",
+      "wiki_slug": "Royal_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249866,
+        "display_name": "Royal Tea",
+        "wiki_slug": "Royal_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1179,
+          "display_name": "Ice Cold Milk",
+          "wiki_slug": "Ice_Cold_Milk",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249958
+    },
+    {
+      "name": "Seasoned Wolf Kabob",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "quest",
+      "wiki_slug": "Seasoned_Wolf_Kabob",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 1017,
+        "display_name": "Seasoned Wolf Kabob",
+        "wiki_slug": "Seasoned_Wolf_Kabob"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1015,
+          "display_name": "Lean Wolf Flank",
+          "wiki_slug": "Lean_Wolf_Flank",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2549
+    },
+    {
+      "name": "Slimy Smoothie",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "vendor",
+      "wiki_slug": "Slimy_Smoothie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249872,
+        "display_name": "Slimy Smoothie",
+        "wiki_slug": "Slimy_Smoothie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1179,
+          "display_name": "Ice Cold Milk",
+          "wiki_slug": "Ice_Cold_Milk",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3174,
+          "display_name": "Spider Ichor",
+          "wiki_slug": "Spider_Ichor",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249964
+    },
+    {
+      "name": "Big Bear Steak",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "quest",
+      "wiki_slug": "Big_Bear_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3726,
+        "display_name": "Big Bear Steak",
+        "wiki_slug": "Big_Bear_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3730,
+          "display_name": "Big Bear Meat",
+          "wiki_slug": "Big_Bear_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3397
+    },
+    {
+      "name": "Gooey Spider Cake",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "quest",
+      "wiki_slug": "Gooey_Spider_Cake",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3666,
+        "display_name": "Gooey Spider Cake",
+        "wiki_slug": "Gooey_Spider_Cake"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2251,
+          "display_name": "Gooey Spider Leg",
+          "wiki_slug": "Gooey_Spider_Leg",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3377
+    },
+    {
+      "name": "Lean Venison",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "vendor",
+      "wiki_slug": "Lean_Venison",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5480,
+        "display_name": "Lean Venison",
+        "wiki_slug": "Lean_Venison"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5471,
+          "display_name": "Stag Meat",
+          "wiki_slug": "Stag_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 6419
+    },
+    {
+      "name": "Succulent Pork Ribs",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "drop",
+      "wiki_slug": "Succulent_Pork_Ribs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2685,
+        "display_name": "Succulent Pork Ribs",
+        "wiki_slug": "Succulent_Pork_Ribs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2677,
+          "display_name": "Boar Ribs",
+          "wiki_slug": "Boar_Ribs",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 2548
+    },
+    {
+      "name": "Crocolisk Gumbo",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "quest",
+      "wiki_slug": "Crocolisk_Gumbo",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3664,
+        "display_name": "Crocolisk Gumbo",
+        "wiki_slug": "Crocolisk_Gumbo"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3667,
+          "display_name": "Tender Crocolisk Meat",
+          "wiki_slug": "Tender_Crocolisk_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3373
+    },
+    {
+      "name": "Goblin Deviled Clams",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Goblin_Deviled_Clams",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5527,
+        "display_name": "Goblin Deviled Clams",
+        "wiki_slug": "Goblin_Deviled_Clams"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5504,
+          "display_name": "Tangy Clam Meat",
+          "wiki_slug": "Tangy_Clam_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 6500
+    },
+    {
+      "name": "Hot Lion Chops",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "quest",
+      "wiki_slug": "Hot_Lion_Chops",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3727,
+        "display_name": "Hot Lion Chops",
+        "wiki_slug": "Hot_Lion_Chops"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3731,
+          "display_name": "Lion Meat",
+          "wiki_slug": "Lion_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3398
+    },
+    {
+      "name": "Lean Wolf Steak",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "vendor",
+      "wiki_slug": "Lean_Wolf_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12209,
+        "display_name": "Lean Wolf Steak",
+        "wiki_slug": "Lean_Wolf_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1015,
+          "display_name": "Lean Wolf Flank",
+          "wiki_slug": "Lean_Wolf_Flank",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15853
+    },
+    {
+      "name": "Mrrggl Smrrthle",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "vendor",
+      "wiki_slug": "Mrrggl_Smrrthle",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249873,
+        "display_name": "Mrrggl Smrrthle",
+        "wiki_slug": "Mrrggl_Smrrthle"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1205,
+          "display_name": "Melon Juice",
+          "wiki_slug": "Melon_Juice",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 1468,
+          "display_name": "Murloc Fin",
+          "wiki_slug": "Murloc_Fin",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249965
+    },
+    {
+      "name": "Root Tea",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "drop",
+      "wiki_slug": "Root_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249867,
+        "display_name": "Root Tea",
+        "wiki_slug": "Root_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1205,
+          "display_name": "Melon Juice",
+          "wiki_slug": "Melon_Juice",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249959
+    },
+    {
+      "name": "Curiously Tasty Omelet",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "quest",
+      "wiki_slug": "Curiously_Tasty_Omelet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3665,
+        "display_name": "Curiously Tasty Omelet",
+        "wiki_slug": "Curiously_Tasty_Omelet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3685,
+          "display_name": "Raptor Egg",
+          "wiki_slug": "Raptor_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3376
+    },
+    {
+      "name": "Cookie's Feast",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Cookie's_Feast",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279957,
+        "display_name": "Cookie's Feast",
+        "wiki_slug": "Cookie's_Feast"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12037,
+          "display_name": "Mystery Meat",
+          "wiki_slug": "Mystery_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12204,
+          "display_name": "Heavy Kodo Meat",
+          "wiki_slug": "Heavy_Kodo_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1262978
+    },
+    {
+      "name": "Heavy Crocolisk Stew",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "vendor",
+      "wiki_slug": "Heavy_Crocolisk_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 20074,
+        "display_name": "Heavy Crocolisk Stew",
+        "wiki_slug": "Heavy_Crocolisk_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3667,
+          "display_name": "Tender Crocolisk Meat",
+          "wiki_slug": "Tender_Crocolisk_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 24418
+    },
+    {
+      "name": "Tasty Lion Steak",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "quest",
+      "wiki_slug": "Tasty_Lion_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3728,
+        "display_name": "Tasty Lion Steak",
+        "wiki_slug": "Tasty_Lion_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3731,
+          "display_name": "Lion Meat",
+          "wiki_slug": "Lion_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3399
+    },
+    {
+      "name": "Barbecued Buzzard Wing",
+      "tier": "expert",
+      "skill": 175,
+      "source": "quest",
+      "wiki_slug": "Barbecued_Buzzard_Wing",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4457,
+        "display_name": "Barbecued Buzzard Wing",
+        "wiki_slug": "Barbecued_Buzzard_Wing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3404,
+          "display_name": "Buzzard Wing",
+          "wiki_slug": "Buzzard_Wing",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 4094
+    },
+    {
+      "name": "Bear Brisket",
+      "tier": "expert",
+      "skill": 175,
+      "source": "drop",
+      "wiki_slug": "Bear_Brisket",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250074,
+        "display_name": "Bear Brisket",
+        "wiki_slug": "Bear_Brisket"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3730,
+          "display_name": "Big Bear Meat",
+          "wiki_slug": "Big_Bear_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250151
+    },
+    {
+      "name": "Carrion Surprise",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Carrion_Surprise",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12213,
+        "display_name": "Carrion Surprise",
+        "wiki_slug": "Carrion_Surprise"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12037,
+          "display_name": "Mystery Meat",
+          "wiki_slug": "Mystery_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15863
+    },
+    {
+      "name": "Giant Clam Scorcho",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Giant_Clam_Scorcho",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6038,
+        "display_name": "Giant Clam Scorcho",
+        "wiki_slug": "Giant_Clam_Scorcho"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4655,
+          "display_name": "Giant Clam Meat",
+          "wiki_slug": "Giant_Clam_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7213
+    },
+    {
+      "name": "Giant Scrambled Eggs",
+      "tier": "expert",
+      "skill": 175,
+      "source": "drop",
+      "wiki_slug": "Giant_Scrambled_Eggs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250078,
+        "display_name": "Giant Scrambled Eggs",
+        "wiki_slug": "Giant_Scrambled_Eggs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12207,
+          "display_name": "Giant Egg",
+          "wiki_slug": "Giant_Egg",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250155
+    },
+    {
+      "name": "Hot Wolf Ribs",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Hot_Wolf_Ribs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13851,
+        "display_name": "Hot Wolf Ribs",
+        "wiki_slug": "Hot_Wolf_Ribs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12203,
+          "display_name": "Red Wolf Meat",
+          "wiki_slug": "Red_Wolf_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15856
+    },
+    {
+      "name": "Jungle Stew",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Jungle_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12212,
+        "display_name": "Jungle Stew",
+        "wiki_slug": "Jungle_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12202,
+          "display_name": "Tiger Meat",
+          "wiki_slug": "Tiger_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4536,
+          "display_name": "Shiny Red Apple",
+          "wiki_slug": "Shiny_Red_Apple",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 15861
+    },
+    {
+      "name": "Mithril Headed Trout",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Mithril_Headed_Trout",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8364,
+        "display_name": "Mithril Head Trout",
+        "wiki_slug": "Mithril_Head_Trout"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8365,
+          "display_name": "Raw Mithril Head Trout",
+          "wiki_slug": "Raw_Mithril_Head_Trout",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 20916
+    },
+    {
+      "name": "Mystery Stew",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Mystery_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12214,
+        "display_name": "Mystery Stew",
+        "wiki_slug": "Mystery_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12037,
+          "display_name": "Mystery Meat",
+          "wiki_slug": "Mystery_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2596,
+          "display_name": "Skin of Dwarven Stout",
+          "wiki_slug": "Skin_of_Dwarven_Stout",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15865
+    },
+    {
+      "name": "Roast Raptor",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Roast_Raptor",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12210,
+        "display_name": "Roast Raptor",
+        "wiki_slug": "Roast_Raptor"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15855
+    },
+    {
+      "name": "Rockscale Cod",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Rockscale_Cod",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4594,
+        "display_name": "Rockscale Cod",
+        "wiki_slug": "Rockscale_Cod"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6362,
+          "display_name": "Raw Rockscale Cod",
+          "wiki_slug": "Raw_Rockscale_Cod",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 7828
+    },
+    {
+      "name": "Sagefish Delight",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Sagefish_Delight",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21217,
+        "display_name": "Sagefish Delight",
+        "wiki_slug": "Sagefish_Delight"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 21153,
+          "display_name": "Raw Greater Sagefish",
+          "wiki_slug": "Raw_Greater_Sagefish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 25954
+    },
+    {
+      "name": "Soothing Turtle Bisque",
+      "tier": "expert",
+      "skill": 175,
+      "source": "quest",
+      "wiki_slug": "Soothing_Turtle_Bisque",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3729,
+        "display_name": "Soothing Turtle Bisque",
+        "wiki_slug": "Soothing_Turtle_Bisque"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3712,
+          "display_name": "Turtle Meat",
+          "wiki_slug": "Turtle_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 3400
+    },
+    {
+      "name": "Calcified Smoothie",
+      "tier": "expert",
+      "skill": 180,
+      "source": "vendor",
+      "wiki_slug": "Calcified_Smoothie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249874,
+        "display_name": "Calcified Smoothie",
+        "wiki_slug": "Calcified_Smoothie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1708,
+          "display_name": "Sweet Nectar",
+          "wiki_slug": "Sweet_Nectar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 5637,
+          "display_name": "Large Fang",
+          "wiki_slug": "Large_Fang",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249966
+    },
+    {
+      "name": "Raging Raptor Ribs",
+      "tier": "expert",
+      "skill": 180,
+      "source": "drop",
+      "wiki_slug": "Raging_Raptor_Ribs",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250073,
+        "display_name": "Raging Raptor Ribs",
+        "wiki_slug": "Raging_Raptor_Ribs"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250150
+    },
+    {
+      "name": "Triage Tea",
+      "tier": "expert",
+      "skill": 180,
+      "source": "drop",
+      "wiki_slug": "Triage_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249868,
+        "display_name": "Triage Tea",
+        "wiki_slug": "Triage_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1708,
+          "display_name": "Sweet Nectar",
+          "wiki_slug": "Sweet_Nectar",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249960
+    },
+    {
+      "name": "Plain Ol' Paletusk",
+      "tier": "expert",
+      "skill": 185,
+      "source": "quest",
+      "wiki_slug": "Plain_Ol'_Paletusk",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274976,
+        "display_name": "Plain Ol' Paletusk",
+        "wiki_slug": "Plain_Ol'_Paletusk"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 769,
+          "display_name": "Chunk of Boar Meat",
+          "wiki_slug": "Chunk_of_Boar_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2678,
+          "display_name": "Mild Spices",
+          "wiki_slug": "Mild_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1295834
+    },
+    {
+      "name": "Briny Seafood Stew",
+      "tier": "expert",
+      "skill": 200,
+      "source": "quest",
+      "wiki_slug": "Briny_Seafood_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274971,
+        "display_name": "Briny Seafood Stew",
+        "wiki_slug": "Briny_Seafood_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 12206,
+          "display_name": "Tender Crab Meat",
+          "wiki_slug": "Tender_Crab_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1295805
+    },
+    {
+      "name": "Dragonbreath Chili",
+      "tier": "expert",
+      "skill": 200,
+      "source": "drop",
+      "wiki_slug": "Dragonbreath_Chili",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12217,
+        "display_name": "Dragonbreath Chili",
+        "wiki_slug": "Dragonbreath_Chili"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12037,
+          "display_name": "Mystery Meat",
+          "wiki_slug": "Mystery_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 4402,
+          "display_name": "Small Flame Sac",
+          "wiki_slug": "Small_Flame_Sac",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15906
+    },
+    {
+      "name": "Expert Campfire",
+      "tier": "expert",
+      "skill": 200,
+      "source": "drop",
+      "wiki_slug": "Expert_Campfire",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279974,
+        "display_name": "Expert Campfire Kit",
+        "wiki_slug": "Expert_Campfire_Kit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 272941,
+          "display_name": "Thick Logs",
+          "wiki_slug": "Thick_Logs",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1291341
+    },
+    {
+      "name": "Heavy Kodo Stew",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Heavy_Kodo_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12215,
+        "display_name": "Heavy Kodo Stew",
+        "wiki_slug": "Heavy_Kodo_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12204,
+          "display_name": "Heavy Kodo Meat",
+          "wiki_slug": "Heavy_Kodo_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 15910
+    },
+    {
+      "name": "Spicy Smoothie",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Spicy_Smoothie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249875,
+        "display_name": "Spicy Smoothie",
+        "wiki_slug": "Spicy_Smoothie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1645,
+          "display_name": "Moonberry Juice",
+          "wiki_slug": "Moonberry_Juice",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4402,
+          "display_name": "Small Flame Sac",
+          "wiki_slug": "Small_Flame_Sac",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249967
+    },
+    {
+      "name": "Spider Sausage",
+      "tier": "expert",
+      "skill": 200,
+      "source": "trainer",
+      "wiki_slug": "Spider_Sausage",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 17222,
+        "display_name": "Spider Sausage",
+        "wiki_slug": "Spider_Sausage"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12205,
+          "display_name": "White Spider Meat",
+          "wiki_slug": "White_Spider_Meat",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 21175
+    },
+    {
+      "name": "Sunny Tea",
+      "tier": "expert",
+      "skill": 200,
+      "source": "drop",
+      "wiki_slug": "Sunny_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249869,
+        "display_name": "Sunny Tea",
+        "wiki_slug": "Sunny_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1645,
+          "display_name": "Moonberry Juice",
+          "wiki_slug": "Moonberry_Juice",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249961
+    },
+    {
+      "name": "Spinefin Halibut",
+      "tier": "expert",
+      "skill": 210,
+      "source": null,
+      "wiki_slug": "Spinefin_Halibut",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8957,
+        "display_name": "Spinefin Halibut",
+        "wiki_slug": "Spinefin_Halibut"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8959,
+          "display_name": "Raw Spinefin Halibut",
+          "wiki_slug": "Raw_Spinefin_Halibut",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1247741
+    },
+    {
+      "name": "Goldthorn Tea",
+      "tier": "expert",
+      "skill": 215,
+      "source": null,
+      "wiki_slug": "Goldthorn_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10841,
+        "display_name": "Goldthorn Tea",
+        "wiki_slug": "Goldthorn_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 13028
+    },
+    {
+      "name": "Cooked Glossy Mightfish",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Cooked_Glossy_Mightfish",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13927,
+        "display_name": "Cooked Glossy Mightfish",
+        "wiki_slug": "Cooked_Glossy_Mightfish"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13754,
+          "display_name": "Raw Glossy Mightfish",
+          "wiki_slug": "Raw_Glossy_Mightfish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18239
+    },
+    {
+      "name": "Filet of Redgill",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Filet_of_Redgill",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13930,
+        "display_name": "Filet of Redgill",
+        "wiki_slug": "Filet_of_Redgill"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13758,
+          "display_name": "Raw Redgill",
+          "wiki_slug": "Raw_Redgill",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18241
+    },
+    {
+      "name": "Monster Omelet",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Monster_Omelet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12218,
+        "display_name": "Monster Omelet",
+        "wiki_slug": "Monster_Omelet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12207,
+          "display_name": "Giant Egg",
+          "wiki_slug": "Giant_Egg",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 15933
+    },
+    {
+      "name": "Plated Armorfish",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Plated_Armorfish",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 286152,
+        "display_name": "Plated Armorfish",
+        "wiki_slug": "Plated_Armorfish"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13890,
+          "display_name": "Raw Plated Armorfish",
+          "wiki_slug": "Raw_Plated_Armorfish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1319313
+    },
+    {
+      "name": "Raptor Rouladen",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Raptor_Rouladen",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250076,
+        "display_name": "Raptor Rouladen",
+        "wiki_slug": "Raptor_Rouladen"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250153
+    },
+    {
+      "name": "Savory Stag Sliders",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Savory_Stag_Sliders",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250065,
+        "display_name": "Savory Stag Sliders",
+        "wiki_slug": "Savory_Stag_Sliders"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5471,
+          "display_name": "Stag Meat",
+          "wiki_slug": "Stag_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250142
+    },
+    {
+      "name": "Spiced Chili Crab",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Spiced_Chili_Crab",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12216,
+        "display_name": "Spiced Chili Crab",
+        "wiki_slug": "Spiced_Chili_Crab"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12206,
+          "display_name": "Tender Crab Meat",
+          "wiki_slug": "Tender_Crab_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 15915
+    },
+    {
+      "name": "Spotted Yellowtail",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Spotted_Yellowtail",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6887,
+        "display_name": "Spotted Yellowtail",
+        "wiki_slug": "Spotted_Yellowtail"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4603,
+          "display_name": "Raw Spotted Yellowtail",
+          "wiki_slug": "Raw_Spotted_Yellowtail",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18238
+    },
+    {
+      "name": "Tender Wolf Steak",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Tender_Wolf_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18045,
+        "display_name": "Tender Wolf Steak",
+        "wiki_slug": "Tender_Wolf_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12208,
+          "display_name": "Tender Wolf Meat",
+          "wiki_slug": "Tender_Wolf_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 22480
+    },
+    {
+      "name": "Undermine Clam Chowder",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Undermine_Clam_Chowder",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 16766,
+        "display_name": "Undermine Clam Chowder",
+        "wiki_slug": "Undermine_Clam_Chowder"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7974,
+          "display_name": "Zesty Clam Meat",
+          "wiki_slug": "Zesty_Clam_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 1179,
+          "display_name": "Ice Cold Milk",
+          "wiki_slug": "Ice_Cold_Milk",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 20626
+    },
+    {
+      "name": "Grilled Squid",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "vendor",
+      "wiki_slug": "Grilled_Squid",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13928,
+        "display_name": "Grilled Squid",
+        "wiki_slug": "Grilled_Squid"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13755,
+          "display_name": "Raw Winter Squid",
+          "wiki_slug": "Raw_Winter_Squid",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18240
+    },
+    {
+      "name": "Hot Smoked Bass",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "vendor",
+      "wiki_slug": "Hot_Smoked_Bass",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13929,
+        "display_name": "Hot Smoked Bass",
+        "wiki_slug": "Hot_Smoked_Bass"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13756,
+          "display_name": "Raw Summer Bass",
+          "wiki_slug": "Raw_Summer_Bass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 18242
+    },
+    {
+      "name": "Filet o' Flank",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Filet_o'_Flank",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 238638,
+        "display_name": "Filet o' Flank",
+        "wiki_slug": "Filet_o'_Flank"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12203,
+          "display_name": "Red Wolf Meat",
+          "wiki_slug": "Red_Wolf_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 239016,
+          "display_name": "Holy Salts",
+          "wiki_slug": "Holy_Salts",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1225759
+    },
+    {
+      "name": "Nightfin Soup",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Nightfin_Soup",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13931,
+        "display_name": "Nightfin Soup",
+        "wiki_slug": "Nightfin_Soup"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13759,
+          "display_name": "Raw Nightfin Snapper",
+          "wiki_slug": "Raw_Nightfin_Snapper",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18243
+    },
+    {
+      "name": "Poached Sunscale Salmon",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Poached_Sunscale_Salmon",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13932,
+        "display_name": "Poached Sunscale Salmon",
+        "wiki_slug": "Poached_Sunscale_Salmon"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13760,
+          "display_name": "Raw Sunscale Salmon",
+          "wiki_slug": "Raw_Sunscale_Salmon",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18244
+    },
+    {
+      "name": "Prowler Steak",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Prowler_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 238637,
+        "display_name": "Prowler Steak",
+        "wiki_slug": "Prowler_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12202,
+          "display_name": "Tiger Meat",
+          "wiki_slug": "Tiger_Meat",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 239016,
+          "display_name": "Holy Salts",
+          "wiki_slug": "Holy_Salts",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1225758
+    },
+    {
+      "name": "Sage's Tea",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Sage's_Tea",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249870,
+        "display_name": "Sage's Tea",
+        "wiki_slug": "Sage's_Tea"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8766,
+          "display_name": "Morning Glory Dew",
+          "wiki_slug": "Morning_Glory_Dew",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1249962
+    },
+    {
+      "name": "Sunrise Omelette",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Sunrise_Omelette",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 238639,
+        "display_name": "Sunrise Omelette",
+        "wiki_slug": "Sunrise_Omelette"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12207,
+          "display_name": "Giant Egg",
+          "wiki_slug": "Giant_Egg",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 239016,
+          "display_name": "Holy Salts",
+          "wiki_slug": "Holy_Salts",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1225760
+    },
+    {
+      "name": "Wicked Smoothie",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Wicked_Smoothie",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249876,
+        "display_name": "Wicked Smoothie",
+        "wiki_slug": "Wicked_Smoothie"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8766,
+          "display_name": "Morning Glory Dew",
+          "wiki_slug": "Morning_Glory_Dew",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 8146,
+          "display_name": "Wicked Claw",
+          "wiki_slug": "Wicked_Claw",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1249968
+    },
+    {
+      "name": "Baked Salmon",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Baked_Salmon",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13935,
+        "display_name": "Baked Salmon",
+        "wiki_slug": "Baked_Salmon"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13889,
+          "display_name": "Raw Whitescale Salmon",
+          "wiki_slug": "Raw_Whitescale_Salmon",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18247
+    },
+    {
+      "name": "Bat Hachee",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Bat_Hachee",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250067,
+        "display_name": "Bat Hachee",
+        "wiki_slug": "Bat_Hachee"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12223,
+          "display_name": "Meaty Bat Wing",
+          "wiki_slug": "Meaty_Bat_Wing",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1250144
+    },
+    {
+      "name": "Bear Bruscitti",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Bear_Bruscitti",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250070,
+        "display_name": "Bear Bruscitti",
+        "wiki_slug": "Bear_Bruscitti"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3730,
+          "display_name": "Big Bear Meat",
+          "wiki_slug": "Big_Bear_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250147
+    },
+    {
+      "name": "Clam Linguine",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Clam_Linguine",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250081,
+        "display_name": "Clam Linguine",
+        "wiki_slug": "Clam_Linguine"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7974,
+          "display_name": "Zesty Clam Meat",
+          "wiki_slug": "Zesty_Clam_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250158
+    },
+    {
+      "name": "Flank au Poivre",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Flank_au_Poivre",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250069,
+        "display_name": "Flank au Poivre",
+        "wiki_slug": "Flank_au_Poivre"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12203,
+          "display_name": "Red Wolf Meat",
+          "wiki_slug": "Red_Wolf_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250146
+    },
+    {
+      "name": "Lobster Stew",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Lobster_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13933,
+        "display_name": "Lobster Stew",
+        "wiki_slug": "Lobster_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13888,
+          "display_name": "Darkclaw Lobster",
+          "wiki_slug": "Darkclaw_Lobster",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18245
+    },
+    {
+      "name": "Mightfish Steak",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Mightfish_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13934,
+        "display_name": "Mightfish Steak",
+        "wiki_slug": "Mightfish_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13893,
+          "display_name": "Large Raw Mightfish",
+          "wiki_slug": "Large_Raw_Mightfish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 18246
+    },
+    {
+      "name": "Prehistoric Pulled Raptor",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Prehistoric_Pulled_Raptor",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250075,
+        "display_name": "Prehistoric Pulled Raptor",
+        "wiki_slug": "Prehistoric_Pulled_Raptor"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250152
+    },
+    {
+      "name": "Runn Tum Tuber Surprise",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Runn_Tum_Tuber_Surprise",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18254,
+        "display_name": "Runn Tum Tuber Surprise",
+        "wiki_slug": "Runn_Tum_Tuber_Surprise"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 18255,
+          "display_name": "Runn Tum Tuber",
+          "wiki_slug": "Runn_Tum_Tuber",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 22761
+    },
+    {
+      "name": "Savory Turtle Stew",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Savory_Turtle_Stew",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250068,
+        "display_name": "Savory Turtle Stew",
+        "wiki_slug": "Savory_Turtle_Stew"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3712,
+          "display_name": "Turtle Meat",
+          "wiki_slug": "Turtle_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250145
+    },
+    {
+      "name": "Soaring Pamplona",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Soaring_Pamplona",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250066,
+        "display_name": "Soaring Pamplona",
+        "wiki_slug": "Soaring_Pamplona"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3404,
+          "display_name": "Buzzard Wing",
+          "wiki_slug": "Buzzard_Wing",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 3
+        }
+      ],
+      "wowhead_spell_id": 1250143
+    },
+    {
+      "name": "Steaming Stag Steak",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "quest",
+      "wiki_slug": "Steaming_Stag_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250071,
+        "display_name": "Steaming Stag Steak",
+        "wiki_slug": "Steaming_Stag_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5471,
+          "display_name": "Stag Meat",
+          "wiki_slug": "Stag_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1250148
+    },
+    {
+      "name": "Sweetpaw Jam",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Sweetpaw_Jam",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 267341,
+        "display_name": "Sweetpaw Jam",
+        "wiki_slug": "Sweetpaw_Jam"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 249796,
+          "display_name": "Hyjal Berries",
+          "wiki_slug": "Hyjal_Berries",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1294014
+    },
+    {
+      "name": "Swiftstrike Steak",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Swiftstrike_Steak",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250072,
+        "display_name": "Swiftstrike Steak",
+        "wiki_slug": "Swiftstrike_Steak"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 12202,
+          "display_name": "Tiger Meat",
+          "wiki_slug": "Tiger_Meat",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 1250149
+    },
+    {
+      "name": "Grand Lobster Banquet",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Grand_Lobster_Banquet",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 238642,
+        "display_name": "Grand Lobster Banquet",
+        "wiki_slug": "Grand_Lobster_Banquet"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13888,
+          "display_name": "Darkclaw Lobster",
+          "wiki_slug": "Darkclaw_Lobster",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 3712,
+          "display_name": "Turtle Meat",
+          "wiki_slug": "Turtle_Meat",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3404,
+          "display_name": "Buzzard Wing",
+          "wiki_slug": "Buzzard_Wing",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 239017,
+          "display_name": "Exquisite Spices",
+          "wiki_slug": "Exquisite_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1225763
+    },
+    {
+      "name": "Specklefin Feast",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Specklefin_Feast",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 238641,
+        "display_name": "Specklefin Feast",
+        "wiki_slug": "Specklefin_Feast"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4603,
+          "display_name": "Raw Spotted Yellowtail",
+          "wiki_slug": "Raw_Spotted_Yellowtail",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 12184,
+          "display_name": "Raptor Flesh",
+          "wiki_slug": "Raptor_Flesh",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 6362,
+          "display_name": "Raw Rockscale Cod",
+          "wiki_slug": "Raw_Rockscale_Cod",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 239017,
+          "display_name": "Exquisite Spices",
+          "wiki_slug": "Exquisite_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 1225762
+    },
+    {
+      "name": "Dirge's Kickin' Chimaerok Chops",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "quest",
+      "wiki_slug": "Dirge's_Kickin'_Chimaerok_Chops",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21023,
+        "display_name": "Dirge's Kickin' Chimaerok Chops",
+        "wiki_slug": "Dirge's_Kickin'_Chimaerok_Chops"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2692,
+          "display_name": "Hot Spices",
+          "wiki_slug": "Hot_Spices",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "wiki_slug": "Goblin_Rocket_Fuel",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8150,
+          "display_name": "Deeprock Salt",
+          "wiki_slug": "Deeprock_Salt",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 21024,
+          "display_name": "Chimaerok Tenderloin",
+          "wiki_slug": "Chimaerok_Tenderloin",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 25659
+    },
+    {
+      "name": "Iron Oven",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Iron_Oven",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279982,
+        "display_name": "Iron Oven",
+        "wiki_slug": "Iron_Oven"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10284,
+          "display_name": "Simple Flour",
+          "wiki_slug": "Simple_Flour",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 159,
+          "display_name": "Refreshing Spring Water",
+          "wiki_slug": "Refreshing_Spring_Water",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 4
+        }
+      ],
+      "wowhead_spell_id": 1263067
+    },
+    {
+      "name": "Smoked Desert Dumplings",
+      "tier": "artisan",
+      "skill": 325,
+      "source": "quest",
+      "wiki_slug": "Smoked_Desert_Dumplings",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 20452,
+        "display_name": "Smoked Desert Dumplings",
+        "wiki_slug": "Smoked_Desert_Dumplings"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 20424,
+          "display_name": "Sandworm Meat",
+          "wiki_slug": "Sandworm_Meat",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3713,
+          "display_name": "Soothing Spices",
+          "wiki_slug": "Soothing_Spices",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 24801
+    }
+  ]
+}
