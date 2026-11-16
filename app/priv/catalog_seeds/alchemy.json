@@ -1,0 +1,5783 @@
+{
+  "profession": {
+    "slug": "alchemy",
+    "display_name": "Alchemy"
+  },
+  "patterns": [
+    {
+      "name": "Minor Arcane Elixir",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": null,
+      "wiki_slug": "Minor_Arcane_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247754,
+        "display_name": "Minor Arcane Elixir",
+        "wiki_slug": "Minor_Arcane_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Minor Force",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": null,
+      "wiki_slug": "Elixir_of_Minor_Force",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247755,
+        "display_name": "Elixir of Minor Force",
+        "wiki_slug": "Elixir_of_Minor_Force"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Minor Defense",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": null,
+      "wiki_slug": "Elixir_of_Minor_Defense",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5997,
+        "display_name": "Elixir of Minor Defense",
+        "wiki_slug": "Elixir_of_Minor_Defense"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Minor Spirit",
+      "tier": "apprentice",
+      "skill": 15,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Minor_Spirit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250344,
+        "display_name": "Elixir of Minor Spirit",
+        "wiki_slug": "Elixir_of_Minor_Spirit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Lion's Strength",
+      "tier": "apprentice",
+      "skill": 15,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Lion's_Strength",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2454,
+        "display_name": "Elixir of Lion's Strength",
+        "wiki_slug": "Elixir_of_Lion's_Strength"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Weak Troll's Blood Elixir",
+      "tier": "apprentice",
+      "skill": 15,
+      "source": "trainer",
+      "wiki_slug": "Weak_Troll's_Blood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3382,
+        "display_name": "Weak Troll's Blood Elixir",
+        "wiki_slug": "Weak_Troll's_Blood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mana Well",
+      "tier": "apprentice",
+      "skill": 20,
+      "source": "trainer",
+      "wiki_slug": "Mana_Well",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279956,
+        "display_name": "Mana Well",
+        "wiki_slug": "Mana_Well"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Mageblood Elixir",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "drop",
+      "wiki_slug": "Minor_Mageblood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250339,
+        "display_name": "Minor Mageblood Elixir",
+        "wiki_slug": "Minor_Mageblood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Mana Potion",
+      "tier": "apprentice",
+      "skill": 25,
+      "source": "trainer",
+      "wiki_slug": "Minor_Mana_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2455,
+        "display_name": "Minor Mana Potion",
+        "wiki_slug": "Minor_Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Mender's Potion",
+      "tier": "apprentice",
+      "skill": 30,
+      "source": "drop",
+      "wiki_slug": "Minor_Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250944,
+        "display_name": "Minor Mender's Potion",
+        "wiki_slug": "Minor_Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Spellblasting Potion",
+      "tier": "apprentice",
+      "skill": 35,
+      "source": "drop",
+      "wiki_slug": "Minor_Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250932,
+        "display_name": "Minor Spellblasting Potion",
+        "wiki_slug": "Minor_Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Frenzy Potion",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "drop",
+      "wiki_slug": "Minor_Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250938,
+        "display_name": "Minor Frenzy Potion",
+        "wiki_slug": "Minor_Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Cerulean Dye",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "trainer",
+      "wiki_slug": "Cerulean_Dye",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249409,
+        "display_name": "Cerulean Dye",
+        "wiki_slug": "Cerulean_Dye"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 249399,
+          "display_name": "Frilled Lichen",
+          "wiki_slug": "Frilled_Lichen",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Sulfuric Acid",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "trainer",
+      "wiki_slug": "Sulfuric_Acid",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249410,
+        "display_name": "Sulfuric Acid",
+        "wiki_slug": "Sulfuric_Acid"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 249391,
+          "display_name": "Pyrite (Forever)",
+          "wiki_slug": "Pyrite_(Forever)",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Rejuvenation Potion",
+      "tier": "apprentice",
+      "skill": 40,
+      "source": "trainer",
+      "wiki_slug": "Minor_Rejuvenation_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2456,
+        "display_name": "Minor Rejuvenation Potion",
+        "wiki_slug": "Minor_Rejuvenation_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Cleric's Elixir",
+      "tier": "apprentice",
+      "skill": 45,
+      "source": "drop",
+      "wiki_slug": "Minor_Cleric's_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250330,
+        "display_name": "Minor Cleric's Elixir",
+        "wiki_slug": "Minor_Cleric's_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Discolored Healing Potion",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "quest",
+      "wiki_slug": "Minor_Discolored_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 4596,
+        "display_name": "Minor Discolored Healing Potion",
+        "wiki_slug": "Minor_Discolored_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Minor Fortitude",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Minor_Fortitude",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2458,
+        "display_name": "Elixir of Minor Fortitude",
+        "wiki_slug": "Elixir_of_Minor_Fortitude"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2447,
+          "display_name": "Peacebloom",
+          "wiki_slug": "Peacebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Minor Agility",
+      "tier": "apprentice",
+      "skill": 50,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Minor_Agility",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2457,
+        "display_name": "Elixir of Minor Agility",
+        "wiki_slug": "Elixir_of_Minor_Agility"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Swiftness Potion",
+      "tier": "apprentice",
+      "skill": 60,
+      "source": "drop",
+      "wiki_slug": "Swiftness_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 2459,
+        "display_name": "Swiftness Potion",
+        "wiki_slug": "Swiftness_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Rage Potion",
+      "tier": "apprentice",
+      "skill": 60,
+      "source": "vendor",
+      "wiki_slug": "Rage_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5631,
+        "display_name": "Rage Potion",
+        "wiki_slug": "Rage_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5635,
+          "display_name": "Sharp Claw",
+          "wiki_slug": "Sharp_Claw",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Lesser Spirit",
+      "tier": "apprentice",
+      "skill": 65,
+      "source": null,
+      "wiki_slug": "Elixir_of_Lesser_Spirit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250345,
+        "display_name": "Elixir of Lesser Spirit",
+        "wiki_slug": "Elixir_of_Lesser_Spirit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Mageblood Elixir",
+      "tier": "apprentice",
+      "skill": 75,
+      "source": null,
+      "wiki_slug": "Lesser_Mageblood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250340,
+        "display_name": "Lesser Mageblood Elixir",
+        "wiki_slug": "Lesser_Mageblood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Blackmouth Oil",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "trainer",
+      "wiki_slug": "Blackmouth_Oil",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6370,
+        "display_name": "Blackmouth Oil",
+        "wiki_slug": "Blackmouth_Oil"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6358,
+          "display_name": "Oily Blackmouth",
+          "wiki_slug": "Oily_Blackmouth",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Lesser Mender's Potion",
+      "tier": "journeyman",
+      "skill": 80,
+      "source": "drop",
+      "wiki_slug": "Lesser_Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250945,
+        "display_name": "Lesser Mender's Potion",
+        "wiki_slug": "Lesser_Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Discolored Healing Potion",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": null,
+      "wiki_slug": "Lesser_Discolored_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247239,
+        "display_name": "Lesser Discolored Healing Potion",
+        "wiki_slug": "Lesser_Discolored_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Spellblasting Potion",
+      "tier": "journeyman",
+      "skill": 85,
+      "source": "drop",
+      "wiki_slug": "Lesser_Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250933,
+        "display_name": "Lesser Spellblasting Potion",
+        "wiki_slug": "Lesser_Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 765,
+          "display_name": "Silverleaf",
+          "wiki_slug": "Silverleaf",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Coalesced Regret",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "vendor",
+      "wiki_slug": "Elixir_of_Coalesced_Regret",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 210708,
+        "display_name": "Elixir of Coalesced Regret",
+        "wiki_slug": "Elixir_of_Coalesced_Regret"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3369,
+          "display_name": "Grave Moss",
+          "wiki_slug": "Grave_Moss",
+          "quantity": 5
+        },
+        {
+          "wowhead_id": 11083,
+          "display_name": "Soul Dust (Classic)",
+          "wiki_slug": "Soul_Dust_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Frenzy Potion",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "drop",
+      "wiki_slug": "Lesser_Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250939,
+        "display_name": "Lesser Frenzy Potion",
+        "wiki_slug": "Lesser_Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Wisdom",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Wisdom",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3383,
+        "display_name": "Elixir of Wisdom",
+        "wiki_slug": "Elixir_of_Wisdom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Giant Growth",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Giant_Growth",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6662,
+        "display_name": "Elixir of Giant Growth",
+        "wiki_slug": "Elixir_of_Giant_Growth"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6522,
+          "display_name": "Deviate Fish",
+          "wiki_slug": "Deviate_Fish",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Water Breathing",
+      "tier": "journeyman",
+      "skill": 90,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Water_Breathing",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 5996,
+        "display_name": "Elixir of Water Breathing",
+        "wiki_slug": "Elixir_of_Water_Breathing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6370,
+          "display_name": "Blackmouth Oil",
+          "wiki_slug": "Blackmouth_Oil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Cleric's Elixir",
+      "tier": "journeyman",
+      "skill": 95,
+      "source": null,
+      "wiki_slug": "Lesser_Cleric's_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250331,
+        "display_name": "Lesser Cleric's Elixir",
+        "wiki_slug": "Lesser_Cleric's_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Lesser Intellect",
+      "tier": "journeyman",
+      "skill": 95,
+      "source": null,
+      "wiki_slug": "Elixir_of_Lesser_Intellect",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250353,
+        "display_name": "Elixir of Lesser Intellect",
+        "wiki_slug": "Elixir_of_Lesser_Intellect"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Swim Speed Potion",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "trainer",
+      "wiki_slug": "Swim_Speed_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6372,
+        "display_name": "Swim Speed Potion",
+        "wiki_slug": "Swim_Speed_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6370,
+          "display_name": "Blackmouth Oil",
+          "wiki_slug": "Blackmouth_Oil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Holy Protection Potion",
+      "tier": "journeyman",
+      "skill": 100,
+      "source": "vendor",
+      "wiki_slug": "Holy_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6051,
+        "display_name": "Holy Protection Potion",
+        "wiki_slug": "Holy_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Minor Magic Resistance Potion",
+      "tier": "journeyman",
+      "skill": 110,
+      "source": "drop",
+      "wiki_slug": "Minor_Magic_Resistance_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 3384,
+        "display_name": "Minor Magic Resistance Potion",
+        "wiki_slug": "Minor_Magic_Resistance_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Spirit",
+      "tier": "journeyman",
+      "skill": 115,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Spirit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250346,
+        "display_name": "Elixir of Spirit",
+        "wiki_slug": "Elixir_of_Spirit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Arcane Elixir (Forever)",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": null,
+      "wiki_slug": "Lesser_Arcane_Elixir_(Forever)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250342,
+        "display_name": "Lesser Arcane Elixir (Forever)",
+        "wiki_slug": "Lesser_Arcane_Elixir_(Forever)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Magenta Dye",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "trainer",
+      "wiki_slug": "Magenta_Dye",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249430,
+        "display_name": "Magenta Dye",
+        "wiki_slug": "Magenta_Dye"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 249424,
+          "display_name": "Rosecap",
+          "wiki_slug": "Rosecap",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Mana Potion",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "trainer",
+      "wiki_slug": "Lesser_Mana_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3385,
+        "display_name": "Lesser Mana Potion",
+        "wiki_slug": "Lesser_Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 785,
+          "display_name": "Mageroyal",
+          "wiki_slug": "Mageroyal",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Potion of Curing",
+      "tier": "journeyman",
+      "skill": 120,
+      "source": "drop",
+      "wiki_slug": "Potion_of_Curing",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3386,
+        "display_name": "Potion of Curing",
+        "wiki_slug": "Potion_of_Curing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 1288,
+          "display_name": "Large Venom Sac",
+          "wiki_slug": "Large_Venom_Sac",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Strong Troll's Blood Elixir",
+      "tier": "journeyman",
+      "skill": 125,
+      "source": "trainer",
+      "wiki_slug": "Strong_Troll's_Blood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3388,
+        "display_name": "Strong Troll's Blood Elixir",
+        "wiki_slug": "Strong_Troll's_Blood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mender's Potion",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": null,
+      "wiki_slug": "Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250946,
+        "display_name": "Mender's Potion",
+        "wiki_slug": "Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Wintersbite",
+          "wiki_slug": "Wintersbite",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Fire Oil",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "trainer",
+      "wiki_slug": "Fire_Oil",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6371,
+        "display_name": "Fire Oil",
+        "wiki_slug": "Fire_Oil"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6359,
+          "display_name": "Firefin Snapper",
+          "wiki_slug": "Firefin_Snapper",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Defense",
+      "tier": "journeyman",
+      "skill": 130,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Defense",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3389,
+        "display_name": "Elixir of Defense",
+        "wiki_slug": "Elixir_of_Defense"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Discolored Healing Potion (Forever)",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": null,
+      "wiki_slug": "Discolored_Healing_Potion_(Forever)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247240,
+        "display_name": "Discolored Healing Potion (Forever)",
+        "wiki_slug": "Discolored_Healing_Potion_(Forever)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Spellblasting Potion",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": null,
+      "wiki_slug": "Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250934,
+        "display_name": "Spellblasting Potion",
+        "wiki_slug": "Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3369,
+          "display_name": "Grave Moss",
+          "wiki_slug": "Grave_Moss",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Empty Vial",
+          "wiki_slug": "Empty_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Intellect",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Intellect",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250354,
+        "display_name": "Elixir of Intellect",
+        "wiki_slug": "Elixir_of_Intellect"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Shadow Protection Potion",
+      "tier": "journeyman",
+      "skill": 135,
+      "source": "vendor",
+      "wiki_slug": "Shadow_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6048,
+        "display_name": "Shadow Protection Potion",
+        "wiki_slug": "Shadow_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3369,
+          "display_name": "Grave Moss",
+          "wiki_slug": "Grave_Moss",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Fermenter",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": null,
+      "wiki_slug": "Fermenter",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 279970,
+        "display_name": "Fermenter",
+        "wiki_slug": "Fermenter"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Frenzy Potion",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": null,
+      "wiki_slug": "Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250940,
+        "display_name": "Frenzy Potion",
+        "wiki_slug": "Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 2450,
+          "display_name": "Briarthorn",
+          "wiki_slug": "Briarthorn",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Firepower",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Firepower",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6373,
+        "display_name": "Elixir of Firepower",
+        "wiki_slug": "Elixir_of_Firepower"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6371,
+          "display_name": "Fire Oil",
+          "wiki_slug": "Fire_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Lesser Agility",
+      "tier": "journeyman",
+      "skill": 140,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Lesser_Agility",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3390,
+        "display_name": "Elixir of Lesser Agility",
+        "wiki_slug": "Elixir_of_Lesser_Agility"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2452,
+          "display_name": "Swiftthistle",
+          "wiki_slug": "Swiftthistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Cleric's Elixir",
+      "tier": "journeyman",
+      "skill": 145,
+      "source": "drop",
+      "wiki_slug": "Cleric's_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250332,
+        "display_name": "Cleric's Elixir",
+        "wiki_slug": "Cleric's_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Wintersbite",
+          "wiki_slug": "Wintersbite",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Strength",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Strength",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250349,
+        "display_name": "Elixir of Strength",
+        "wiki_slug": "Elixir_of_Strength"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Fortitude (Forever)",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Fortitude_(Forever)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250334,
+        "display_name": "Elixir of Fortitude (Forever)",
+        "wiki_slug": "Elixir_of_Fortitude_(Forever)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Free Action Potion",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "vendor",
+      "wiki_slug": "Free_Action_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5634,
+        "display_name": "Free Action Potion",
+        "wiki_slug": "Free_Action_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6370,
+          "display_name": "Blackmouth Oil",
+          "wiki_slug": "Blackmouth_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Ogre's Strength",
+      "tier": "journeyman",
+      "skill": 150,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Ogre's_Strength",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3391,
+        "display_name": "Elixir of Ogre's Strength",
+        "wiki_slug": "Elixir_of_Ogre's_Strength"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 2449,
+          "display_name": "Earthroot",
+          "wiki_slug": "Earthroot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mana Potion",
+      "tier": "expert",
+      "skill": 160,
+      "source": "trainer",
+      "wiki_slug": "Mana_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 3827,
+        "display_name": "Mana Potion",
+        "wiki_slug": "Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Spirit",
+      "tier": "expert",
+      "skill": 165,
+      "source": null,
+      "wiki_slug": "Elixir_of_Greater_Spirit",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250347,
+        "display_name": "Elixir of Greater Spirit",
+        "wiki_slug": "Elixir_of_Greater_Spirit"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8836,
+          "display_name": "Arthas' Tears",
+          "wiki_slug": "Arthas'_Tears",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Invisibility Potion",
+      "tier": "expert",
+      "skill": 165,
+      "source": "trainer",
+      "wiki_slug": "Lesser_Invisibility_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 3823,
+        "display_name": "Lesser Invisibility Potion",
+        "wiki_slug": "Lesser_Invisibility_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Shadow Oil",
+      "tier": "expert",
+      "skill": 165,
+      "source": "vendor",
+      "wiki_slug": "Shadow_Oil",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3824,
+        "display_name": "Shadow Oil",
+        "wiki_slug": "Shadow_Oil"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3369,
+          "display_name": "Grave Moss",
+          "wiki_slug": "Grave_Moss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Fire Protection Potion",
+      "tier": "expert",
+      "skill": 165,
+      "source": "vendor",
+      "wiki_slug": "Fire_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6049,
+        "display_name": "Fire Protection Potion",
+        "wiki_slug": "Fire_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4402,
+          "display_name": "Small Flame Sac",
+          "wiki_slug": "Small_Flame_Sac",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 6371,
+          "display_name": "Fire Oil",
+          "wiki_slug": "Fire_Oil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Discolored Healing Potion",
+      "tier": "expert",
+      "skill": 175,
+      "source": null,
+      "wiki_slug": "Greater_Discolored_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247241,
+        "display_name": "Greater Discolored Healing Potion",
+        "wiki_slug": "Greater_Discolored_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Mageblood Elixir",
+      "tier": "expert",
+      "skill": 175,
+      "source": null,
+      "wiki_slug": "Greater_Mageblood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250341,
+        "display_name": "Greater Mageblood Elixir",
+        "wiki_slug": "Greater_Mageblood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8836,
+          "display_name": "Arthas' Tears",
+          "wiki_slug": "Arthas'_Tears",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Great Rage Potion",
+      "tier": "expert",
+      "skill": 175,
+      "source": "vendor",
+      "wiki_slug": "Great_Rage_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 5633,
+        "display_name": "Great Rage Potion",
+        "wiki_slug": "Great_Rage_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 5637,
+          "display_name": "Large Fang",
+          "wiki_slug": "Large_Fang",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Fortitude",
+      "tier": "expert",
+      "skill": 165,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Fortitude",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 3825,
+        "display_name": "Elixir of Fortitude",
+        "wiki_slug": "Elixir_of_Fortitude"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Mender's Potion",
+      "tier": "expert",
+      "skill": 180,
+      "source": "trainer",
+      "wiki_slug": "Greater_Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250947,
+        "display_name": "Greater Mender's Potion",
+        "wiki_slug": "Greater_Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8836,
+          "display_name": "Arthas' Tears",
+          "wiki_slug": "Arthas'_Tears",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Troll's Blood Elixir",
+      "tier": "expert",
+      "skill": 180,
+      "source": "drop",
+      "wiki_slug": "Major_Troll's_Blood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3826,
+        "display_name": "Major Troll's Blood Elixir",
+        "wiki_slug": "Major_Troll's_Blood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Spellblasting Potion",
+      "tier": "expert",
+      "skill": 185,
+      "source": "quest",
+      "wiki_slug": "Greater_Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250935,
+        "display_name": "Greater Spellblasting Potion",
+        "wiki_slug": "Greater_Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Agility",
+      "tier": "expert",
+      "skill": 185,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Agility",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 8949,
+        "display_name": "Elixir of Agility",
+        "wiki_slug": "Elixir_of_Agility"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Frenzy Potion",
+      "tier": "expert",
+      "skill": 190,
+      "source": "quest",
+      "wiki_slug": "Greater_Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250941,
+        "display_name": "Greater Frenzy Potion",
+        "wiki_slug": "Greater_Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Frost Protection Potion",
+      "tier": "expert",
+      "skill": 190,
+      "source": "vendor",
+      "wiki_slug": "Frost_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6050,
+        "display_name": "Frost Protection Potion",
+        "wiki_slug": "Frost_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Dragon's Teeth",
+          "wiki_slug": "Dragon's_Teeth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Arcane Elixir",
+      "tier": "expert",
+      "skill": 190,
+      "source": "vendor",
+      "wiki_slug": "Lesser_Arcane_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 217398,
+        "display_name": "Lesser Arcane Elixir",
+        "wiki_slug": "Lesser_Arcane_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3356,
+          "display_name": "Kingsblood",
+          "wiki_slug": "Kingsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Nature Protection Potion",
+      "tier": "expert",
+      "skill": 190,
+      "source": "vendor",
+      "wiki_slug": "Nature_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6052,
+        "display_name": "Nature Protection Potion",
+        "wiki_slug": "Nature_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3820,
+          "display_name": "Stranglekelp",
+          "wiki_slug": "Stranglekelp",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Frost Power",
+      "tier": "expert",
+      "skill": 190,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Frost_Power",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 17708,
+        "display_name": "Elixir of Frost Power",
+        "wiki_slug": "Elixir_of_Frost_Power"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Dragon's Teeth",
+          "wiki_slug": "Dragon's_Teeth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Potion of Predatory Senses",
+      "tier": "expert",
+      "skill": 195,
+      "source": null,
+      "wiki_slug": "Potion_of_Predatory_Senses",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250327,
+        "display_name": "Potion of Predatory Senses",
+        "wiki_slug": "Potion_of_Predatory_Senses"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Cleric's Elixir",
+      "tier": "expert",
+      "skill": 195,
+      "source": null,
+      "wiki_slug": "Greater_Cleric's_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250333,
+        "display_name": "Greater Cleric's Elixir",
+        "wiki_slug": "Greater_Cleric's_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8836,
+          "display_name": "Arthas' Tears",
+          "wiki_slug": "Arthas'_Tears",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Defense",
+      "tier": "expert",
+      "skill": 195,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Greater_Defense",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8951,
+        "display_name": "Elixir of Greater Defense",
+        "wiki_slug": "Elixir_of_Greater_Defense"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Detect Lesser Invisibility",
+      "tier": "expert",
+      "skill": 195,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Detect_Lesser_Invisibility",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3828,
+        "display_name": "Elixir of Detect Lesser Invisibility",
+        "wiki_slug": "Elixir_of_Detect_Lesser_Invisibility"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Insulating Gniodine",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Insulating_Gniodine",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 213372,
+        "display_name": "Insulating Gniodine",
+        "wiki_slug": "Insulating_Gniodine"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 213371,
+          "display_name": "Crate of Tainted Gniodine Solution",
+          "wiki_slug": "Crate_of_Tainted_Gniodine_Solution",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Fortitude",
+      "tier": "expert",
+      "skill": 200,
+      "source": null,
+      "wiki_slug": "Elixir_of_Greater_Fortitude",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250335,
+        "display_name": "Elixir of Greater Fortitude",
+        "wiki_slug": "Elixir_of_Greater_Fortitude"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Frost Oil",
+      "tier": "expert",
+      "skill": 200,
+      "source": "vendor",
+      "wiki_slug": "Frost_Oil",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 3829,
+        "display_name": "Frost Oil",
+        "wiki_slug": "Frost_Oil"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3819,
+          "display_name": "Dragon's Teeth",
+          "wiki_slug": "Dragon's_Teeth",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Catseye Elixir",
+      "tier": "expert",
+      "skill": 200,
+      "source": "trainer",
+      "wiki_slug": "Catseye_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 10592,
+        "display_name": "Catseye Elixir",
+        "wiki_slug": "Catseye_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3818,
+          "display_name": "Fadeleaf",
+          "wiki_slug": "Fadeleaf",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Oil of Immolation",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Oil_of_Immolation",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 8956,
+        "display_name": "Oil of Immolation",
+        "wiki_slug": "Oil_of_Immolation"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Mana Potion",
+      "tier": "expert",
+      "skill": 205,
+      "source": "trainer",
+      "wiki_slug": "Greater_Mana_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 6149,
+        "display_name": "Greater Mana Potion",
+        "wiki_slug": "Greater_Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblin Rocket Fuel",
+      "tier": "expert",
+      "skill": 210,
+      "source": null,
+      "wiki_slug": "Goblin_Rocket_Fuel",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9061,
+        "display_name": "Goblin Rocket Fuel",
+        "wiki_slug": "Goblin_Rocket_Fuel"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 9260,
+          "display_name": "Volatile Rum",
+          "wiki_slug": "Volatile_Rum",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Magic Resistance Potion",
+      "tier": "expert",
+      "skill": 210,
+      "source": "drop",
+      "wiki_slug": "Magic_Resistance_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 9036,
+        "display_name": "Magic Resistance Potion",
+        "wiki_slug": "Magic_Resistance_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Viridian Dye",
+      "tier": "expert",
+      "skill": 215,
+      "source": "trainer",
+      "wiki_slug": "Viridian_Dye",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 249431,
+        "display_name": "Viridian Dye",
+        "wiki_slug": "Viridian_Dye"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 249274,
+          "display_name": "Stranglevine",
+          "wiki_slug": "Stranglevine",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Water Breathing",
+      "tier": "expert",
+      "skill": 215,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Greater_Water_Breathing",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18294,
+        "display_name": "Elixir of Greater Water Breathing",
+        "wiki_slug": "Elixir_of_Greater_Water_Breathing"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7972,
+          "display_name": "Ichor of Undeath",
+          "wiki_slug": "Ichor_of_Undeath",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lesser Stoneshield Potion",
+      "tier": "expert",
+      "skill": 215,
+      "source": "quest",
+      "wiki_slug": "Lesser_Stoneshield_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 4623,
+        "display_name": "Lesser Stoneshield Potion",
+        "wiki_slug": "Lesser_Stoneshield_Potion"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Restorative Potion",
+      "tier": "expert",
+      "skill": 225,
+      "source": null,
+      "wiki_slug": "Restorative_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 9030,
+        "display_name": "Restorative Potion",
+        "wiki_slug": "Restorative_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7067,
+          "display_name": "Elemental Earth",
+          "wiki_slug": "Elemental_Earth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Wildvine Potion",
+      "tier": "expert",
+      "skill": 225,
+      "source": "drop",
+      "wiki_slug": "Wildvine_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9144,
+        "display_name": "Wildvine Potion",
+        "wiki_slug": "Wildvine_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8153,
+          "display_name": "Wildvine",
+          "wiki_slug": "Wildvine",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Philosopher's Stone (trinket)",
+      "tier": "expert",
+      "skill": 225,
+      "source": "vendor",
+      "wiki_slug": "Philosopher's_Stone_(trinket)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9149,
+        "display_name": "Philosopher's Stone (trinket)",
+        "wiki_slug": "Philosopher's_Stone_(trinket)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3575,
+          "display_name": "Iron Bar",
+          "wiki_slug": "Iron_Bar",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 9262,
+          "display_name": "Black Vitriol",
+          "wiki_slug": "Black_Vitriol",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Superior Discolored Healing Potion",
+      "tier": "artisan",
+      "skill": 230,
+      "source": null,
+      "wiki_slug": "Superior_Discolored_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 247242,
+        "display_name": "Superior Discolored Healing Potion",
+        "wiki_slug": "Superior_Discolored_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Superior Mender's Potion",
+      "tier": "artisan",
+      "skill": 230,
+      "source": null,
+      "wiki_slug": "Superior_Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250948,
+        "display_name": "Superior Mender's Potion",
+        "wiki_slug": "Superior_Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8836,
+          "display_name": "Arthas' Tears",
+          "wiki_slug": "Arthas'_Tears",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Detect Undead",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Detect_Undead",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9154,
+        "display_name": "Elixir of Detect Undead",
+        "wiki_slug": "Elixir_of_Detect_Undead"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Dreamless Sleep Potion",
+      "tier": "artisan",
+      "skill": 230,
+      "source": "trainer",
+      "wiki_slug": "Dreamless_Sleep_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 12190,
+        "display_name": "Dreamless Sleep Potion",
+        "wiki_slug": "Dreamless_Sleep_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Superior Spellblasting Potion",
+      "tier": "artisan",
+      "skill": 235,
+      "source": null,
+      "wiki_slug": "Superior_Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250936,
+        "display_name": "Superior Spellblasting Potion",
+        "wiki_slug": "Superior_Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Wintersbite",
+          "wiki_slug": "Wintersbite",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Arcane Elixir",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "trainer",
+      "wiki_slug": "Arcane_Elixir",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 9155,
+        "display_name": "Arcane Elixir",
+        "wiki_slug": "Arcane_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Invisibility Potion",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "drop",
+      "wiki_slug": "Invisibility_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9172,
+        "display_name": "Invisibility Potion",
+        "wiki_slug": "Invisibility_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Intellect",
+      "tier": "artisan",
+      "skill": 235,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Greater_Intellect",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9179,
+        "display_name": "Elixir of Greater Intellect",
+        "wiki_slug": "Elixir_of_Greater_Intellect"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3358,
+          "display_name": "Khadgar's Whisker",
+          "wiki_slug": "Khadgar's_Whisker",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Superior Frenzy Potion",
+      "tier": "artisan",
+      "skill": 240,
+      "source": null,
+      "wiki_slug": "Superior_Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250942,
+        "display_name": "Superior Frenzy Potion",
+        "wiki_slug": "Superior_Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gift of Arthas",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "drop",
+      "wiki_slug": "Gift_of_Arthas",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9088,
+        "display_name": "Gift of Arthas",
+        "wiki_slug": "Gift_of_Arthas"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Dream Vision",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Dream_Vision",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9197,
+        "display_name": "Elixir of Dream Vision",
+        "wiki_slug": "Elixir_of_Dream_Vision"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8831,
+          "display_name": "Purple Lotus",
+          "wiki_slug": "Purple_Lotus",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Agility",
+      "tier": "artisan",
+      "skill": 240,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Greater_Agility",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9187,
+        "display_name": "Elixir of Greater Agility",
+        "wiki_slug": "Elixir_of_Greater_Agility"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Dragonfire Potion",
+      "tier": "artisan",
+      "skill": 245,
+      "source": null,
+      "wiki_slug": "Dragonfire_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250953,
+        "display_name": "Dragonfire Potion",
+        "wiki_slug": "Dragonfire_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ghost Dye",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "vendor",
+      "wiki_slug": "Ghost_Dye",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9210,
+        "display_name": "Ghost Dye",
+        "wiki_slug": "Ghost_Dye"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 4342,
+          "display_name": "Purple Dye",
+          "wiki_slug": "Purple_Dye",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Giants",
+      "tier": "artisan",
+      "skill": 245,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Giants",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9206,
+        "display_name": "Elixir of Giants",
+        "wiki_slug": "Elixir_of_Giants"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Restless Dreams",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Flask_of_Restless_Dreams",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 222952,
+        "display_name": "Flask of Restless Dreams",
+        "wiki_slug": "Flask_of_Restless_Dreams"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 221021,
+          "display_name": "Nightmare Seed (Season of Discovery)",
+          "wiki_slug": "Nightmare_Seed_(Season_of_Discovery)",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 220688,
+          "display_name": "Inert Mantle of Nightmares",
+          "wiki_slug": "Inert_Mantle_of_Nightmares",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Everlasting Nightmares",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Flask_of_Everlasting_Nightmares",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 221024,
+        "display_name": "Flask of Everlasting Nightmares",
+        "wiki_slug": "Flask_of_Everlasting_Nightmares"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 221021,
+          "display_name": "Nightmare Seed (Season of Discovery)",
+          "wiki_slug": "Nightmare_Seed_(Season_of_Discovery)",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 220688,
+          "display_name": "Inert Mantle of Nightmares",
+          "wiki_slug": "Inert_Mantle_of_Nightmares",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Stonescale Oil",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "trainer",
+      "wiki_slug": "Stonescale_Oil",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13423,
+        "display_name": "Stonescale Oil",
+        "wiki_slug": "Stonescale_Oil"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13422,
+          "display_name": "Stonescale Eel",
+          "wiki_slug": "Stonescale_Eel",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Phalanx",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Phalanx",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250329,
+        "display_name": "Elixir of the Phalanx",
+        "wiki_slug": "Elixir_of_the_Phalanx"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Distilled Firewater",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Distilled_Firewater",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 246948,
+        "display_name": "Distilled Firewater",
+        "wiki_slug": "Distilled_Firewater"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3819,
+          "display_name": "Wintersbite",
+          "wiki_slug": "Wintersbite",
+          "quantity": 14
+        },
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Shadow Power",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Elixir_of_Shadow_Power",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 9264,
+        "display_name": "Elixir of Shadow Power",
+        "wiki_slug": "Elixir_of_Shadow_Power"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Holy Power",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Holy_Power",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 21546,
+        "display_name": "Elixir of Holy Power",
+        "wiki_slug": "Elixir_of_Holy_Power"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 6371,
+          "display_name": "Fire Oil",
+          "wiki_slug": "Fire_Oil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Demonslaying",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "vendor",
+      "wiki_slug": "Elixir_of_Demonslaying",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9224,
+        "display_name": "Elixir of Demonslaying",
+        "wiki_slug": "Elixir_of_Demonslaying"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Detect Demon",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "trainer",
+      "wiki_slug": "Elixir_of_Detect_Demon",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9233,
+        "display_name": "Elixir of Detect Demon",
+        "wiki_slug": "Elixir_of_Detect_Demon"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Limited Invulnerability Potion",
+      "tier": "artisan",
+      "skill": 250,
+      "source": "drop",
+      "wiki_slug": "Limited_Invulnerability_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3387,
+        "display_name": "Limited Invulnerability Potion",
+        "wiki_slug": "Limited_Invulnerability_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Discolored Healing Potion",
+      "tier": "artisan",
+      "skill": 250,
+      "source": null,
+      "wiki_slug": "Major_Discolored_Healing_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 241650,
+        "display_name": "Major Discolored Healing Potion",
+        "wiki_slug": "Major_Discolored_Healing_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Plaguebloom (herb)",
+          "wiki_slug": "Plaguebloom_(herb)",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 730,
+          "display_name": "Murloc Eye",
+          "wiki_slug": "Murloc_Eye",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mighty Rage Potion",
+      "tier": "artisan",
+      "skill": 255,
+      "source": "drop",
+      "wiki_slug": "Mighty_Rage_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13442,
+        "display_name": "Mighty Rage Potion",
+        "wiki_slug": "Mighty_Rage_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Superior Mana Potion",
+      "tier": "artisan",
+      "skill": 260,
+      "source": "vendor",
+      "wiki_slug": "Superior_Mana_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13443,
+        "display_name": "Superior Mana Potion",
+        "wiki_slug": "Superior_Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Caustic Smog Potion",
+      "tier": "artisan",
+      "skill": 265,
+      "source": null,
+      "wiki_slug": "Caustic_Smog_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250951,
+        "display_name": "Caustic Smog Potion",
+        "wiki_slug": "Caustic_Smog_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3369,
+          "display_name": "Grave Moss",
+          "wiki_slug": "Grave_Moss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Greater Defense",
+      "tier": "artisan",
+      "skill": 265,
+      "source": "vendor",
+      "wiki_slug": "Elixir_of_Greater_Defense",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 8951,
+        "display_name": "Elixir of Greater Defense",
+        "wiki_slug": "Elixir_of_Greater_Defense"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3355,
+          "display_name": "Wild Steelbloom",
+          "wiki_slug": "Wild_Steelbloom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3821,
+          "display_name": "Goldthorn",
+          "wiki_slug": "Goldthorn",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3372,
+          "display_name": "Leaded Vial",
+          "wiki_slug": "Leaded_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Sages",
+      "tier": "artisan",
+      "skill": 270,
+      "source": "vendor",
+      "wiki_slug": "Elixir_of_the_Sages",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13447,
+        "display_name": "Elixir of the Sages",
+        "wiki_slug": "Elixir_of_the_Sages"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Sorrowmoss",
+          "wiki_slug": "Sorrowmoss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Transmute: Undeath to Water",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Transmute:_Undeath_to_Water",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13486,
+        "display_name": "Transmute: Undeath to Water",
+        "wiki_slug": "Transmute:_Undeath_to_Water"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Earth to Water",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Transmute:_Earth_to_Water",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13484,
+        "display_name": "Transmute: Earth to Water",
+        "wiki_slug": "Transmute:_Earth_to_Water"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Air to Fire",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Transmute:_Air_to_Fire",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13482,
+        "display_name": "Transmute: Air to Fire",
+        "wiki_slug": "Transmute:_Air_to_Fire"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Water to Undeath",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Transmute:_Water_to_Undeath",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13487,
+        "display_name": "Transmute: Water to Undeath",
+        "wiki_slug": "Transmute:_Water_to_Undeath"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Earth to Life",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Transmute:_Earth_to_Life",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13489,
+        "display_name": "Transmute: Earth to Life",
+        "wiki_slug": "Transmute:_Earth_to_Life"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Water to Air",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Transmute:_Water_to_Air",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13485,
+        "display_name": "Transmute: Water to Air",
+        "wiki_slug": "Transmute:_Water_to_Air"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Fire to Earth",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Transmute:_Fire_to_Earth",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13483,
+        "display_name": "Transmute: Fire to Earth",
+        "wiki_slug": "Transmute:_Fire_to_Earth"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Transmute: Life to Earth",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Transmute:_Life_to_Earth",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13488,
+        "display_name": "Transmute: Life to Earth",
+        "wiki_slug": "Transmute:_Life_to_Earth"
+      },
+      "reagents": []
+    },
+    {
+      "name": "Potion of Venomous Blood",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Potion_of_Venomous_Blood",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250950,
+        "display_name": "Potion of Venomous Blood",
+        "wiki_slug": "Potion_of_Venomous_Blood"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Plaguebloom (herb)",
+          "wiki_slug": "Plaguebloom_(herb)",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Whale",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Whale",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250348,
+        "display_name": "Elixir of the Whale",
+        "wiki_slug": "Elixir_of_the_Whale"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Sages",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Elixir_of_Sages",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250338,
+        "display_name": "Elixir of Sages",
+        "wiki_slug": "Elixir_of_Sages"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Ferocity",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Elixir_of_Ferocity",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250350,
+        "display_name": "Elixir of Ferocity",
+        "wiki_slug": "Elixir_of_Ferocity"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8845,
+          "display_name": "Ghost Mushroom",
+          "wiki_slug": "Ghost_Mushroom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Cunning",
+      "tier": "artisan",
+      "skill": 275,
+      "source": null,
+      "wiki_slug": "Elixir_of_Cunning",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250328,
+        "display_name": "Elixir of Cunning",
+        "wiki_slug": "Elixir_of_Cunning"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mageblood Elixir",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Mageblood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 20007,
+        "display_name": "Mageblood Elixir",
+        "wiki_slug": "Mageblood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Sorrowmoss",
+          "wiki_slug": "Sorrowmoss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Dreamless Sleep Potion",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "vendor",
+      "wiki_slug": "Greater_Dreamless_Sleep_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 20002,
+        "display_name": "Greater Dreamless Sleep Potion",
+        "wiki_slug": "Greater_Dreamless_Sleep_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Brute Force",
+      "tier": "artisan",
+      "skill": 275,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_Brute_Force",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13453,
+        "display_name": "Elixir of Brute Force",
+        "wiki_slug": "Elixir_of_Brute_Force"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Sorrowmoss",
+          "wiki_slug": "Sorrowmoss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Owl",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Owl",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250337,
+        "display_name": "Elixir of the Owl",
+        "wiki_slug": "Elixir_of_the_Owl"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Potion of Elemental Purging",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Potion_of_Elemental_Purging",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250954,
+        "display_name": "Potion of Elemental Purging",
+        "wiki_slug": "Potion_of_Elemental_Purging"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 4625,
+          "display_name": "Firebloom",
+          "wiki_slug": "Firebloom",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3819,
+          "display_name": "Wintersbite",
+          "wiki_slug": "Wintersbite",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Potion of Beast Slaying",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Potion_of_Beast_Slaying",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250955,
+        "display_name": "Potion of Beast Slaying",
+        "wiki_slug": "Potion_of_Beast_Slaying"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Plaguebloom (herb)",
+          "wiki_slug": "Plaguebloom_(herb)",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Mender's Potion",
+      "tier": "artisan",
+      "skill": 280,
+      "source": null,
+      "wiki_slug": "Major_Mender's_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250949,
+        "display_name": "Major Mender's Potion",
+        "wiki_slug": "Major_Mender's_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Mongoose",
+      "tier": "artisan",
+      "skill": 280,
+      "source": "drop",
+      "wiki_slug": "Elixir_of_the_Mongoose",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13452,
+        "display_name": "Elixir of the Mongoose",
+        "wiki_slug": "Elixir_of_the_Mongoose"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Sorrowmoss",
+          "wiki_slug": "Sorrowmoss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Stoneshield Potion",
+      "tier": "artisan",
+      "skill": 280,
+      "source": "drop",
+      "wiki_slug": "Greater_Stoneshield_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13455,
+        "display_name": "Greater Stoneshield Potion",
+        "wiki_slug": "Greater_Stoneshield_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13423,
+          "display_name": "Stonescale Oil",
+          "wiki_slug": "Stonescale_Oil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 10620,
+          "display_name": "Thorium Ore",
+          "wiki_slug": "Thorium_Ore",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Spellblasting Potion",
+      "tier": "artisan",
+      "skill": 285,
+      "source": null,
+      "wiki_slug": "Major_Spellblasting_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250937,
+        "display_name": "Major Spellblasting Potion",
+        "wiki_slug": "Major_Spellblasting_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Wicked Regeneration",
+      "tier": "artisan",
+      "skill": 285,
+      "source": null,
+      "wiki_slug": "Elixir_of_Wicked_Regeneration",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250336,
+        "display_name": "Elixir of Wicked Regeneration",
+        "wiki_slug": "Elixir_of_Wicked_Regeneration"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Nature Power",
+      "tier": "artisan",
+      "skill": 285,
+      "source": null,
+      "wiki_slug": "Elixir_of_Nature_Power",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250343,
+        "display_name": "Elixir of Nature Power",
+        "wiki_slug": "Elixir_of_Nature_Power"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 8838,
+          "display_name": "Sungrass",
+          "wiki_slug": "Sungrass",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Arcane Elixir",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "drop",
+      "wiki_slug": "Greater_Arcane_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13454,
+        "display_name": "Greater Arcane Elixir",
+        "wiki_slug": "Greater_Arcane_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Living Action Potion",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "vendor",
+      "wiki_slug": "Living_Action_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 20008,
+        "display_name": "Living Action Potion",
+        "wiki_slug": "Living_Action_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Purification Potion",
+      "tier": "artisan",
+      "skill": 285,
+      "source": "drop",
+      "wiki_slug": "Purification_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13462,
+        "display_name": "Purification Potion",
+        "wiki_slug": "Purification_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13466,
+          "display_name": "Sorrowmoss",
+          "wiki_slug": "Sorrowmoss",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Frenzy Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": null,
+      "wiki_slug": "Major_Frenzy_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250943,
+        "display_name": "Major Frenzy Potion",
+        "wiki_slug": "Major_Frenzy_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13466,
+          "display_name": "Plaguebloom (herb)",
+          "wiki_slug": "Plaguebloom_(herb)",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Fire Protection Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Greater_Fire_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13457,
+        "display_name": "Greater Fire Protection Potion",
+        "wiki_slug": "Greater_Fire_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7068,
+          "display_name": "Elemental Fire",
+          "wiki_slug": "Elemental_Fire",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Troll's Blood Elixir",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "vendor",
+      "wiki_slug": "Major_Troll's_Blood_Elixir",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 3826,
+        "display_name": "Major Troll's Blood Elixir",
+        "wiki_slug": "Major_Troll's_Blood_Elixir"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3357,
+          "display_name": "Liferoot",
+          "wiki_slug": "Liferoot",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 2453,
+          "display_name": "Bruiseweed",
+          "wiki_slug": "Bruiseweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Shadow Protection Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Greater_Shadow_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13459,
+        "display_name": "Greater Shadow Protection Potion",
+        "wiki_slug": "Greater_Shadow_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 3824,
+          "display_name": "Shadow Oil",
+          "wiki_slug": "Shadow_Oil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Frost Protection Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Greater_Frost_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13456,
+        "display_name": "Greater Frost Protection Potion",
+        "wiki_slug": "Greater_Frost_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7070,
+          "display_name": "Elemental Water",
+          "wiki_slug": "Elemental_Water",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Nature Protection Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Greater_Nature_Protection_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13458,
+        "display_name": "Greater Nature Protection Potion",
+        "wiki_slug": "Greater_Nature_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7067,
+          "display_name": "Elemental Earth",
+          "wiki_slug": "Elemental_Earth",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Arcane Protection Potion",
+      "tier": "artisan",
+      "skill": 290,
+      "source": "drop",
+      "wiki_slug": "Greater_Arcane_Protection_Potion",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13461,
+        "display_name": "Greater Arcane Protection Potion",
+        "wiki_slug": "Greater_Arcane_Protection_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 11176,
+          "display_name": "Dream Dust",
+          "wiki_slug": "Dream_Dust",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Mana Potion",
+      "tier": "artisan",
+      "skill": 295,
+      "source": "drop",
+      "wiki_slug": "Major_Mana_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13444,
+        "display_name": "Major Mana Potion",
+        "wiki_slug": "Major_Mana_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Alchemy Laboratory (Camping)",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Alchemy_Laboratory_(Camping)",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 279990,
+        "display_name": "Alchemy Laboratory (Camping)",
+        "wiki_slug": "Alchemy_Laboratory_(Camping)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Grizzly",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Grizzly",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 250351,
+        "display_name": "Elixir of the Grizzly",
+        "wiki_slug": "Elixir_of_the_Grizzly"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 8839,
+          "display_name": "Blindweed",
+          "wiki_slug": "Blindweed",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Major Rejuvenation Potion",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Major_Rejuvenation_Potion",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 18253,
+        "display_name": "Major Rejuvenation Potion",
+        "wiki_slug": "Major_Rejuvenation_Potion"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 10286,
+          "display_name": "Heart of the Wild (crafting reagent)",
+          "wiki_slug": "Heart_of_the_Wild_(crafting_reagent)",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 4
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Alchemist's Stone (Forever)",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "vendor",
+      "wiki_slug": "Alchemist's_Stone_(Forever)",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13503,
+        "display_name": "Alchemist's Stone (Forever)",
+        "wiki_slug": "Alchemist's_Stone_(Forever)"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 7078,
+          "display_name": "Essence of Fire",
+          "wiki_slug": "Essence_of_Fire",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 7076,
+          "display_name": "Essence of Earth",
+          "wiki_slug": "Essence_of_Earth",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 7082,
+          "display_name": "Essence of Air",
+          "wiki_slug": "Essence_of_Air",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 7080,
+          "display_name": "Essence of Water",
+          "wiki_slug": "Essence_of_Water",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 12803,
+          "display_name": "Living Essence",
+          "wiki_slug": "Living_Essence",
+          "quantity": 8
+        },
+        {
+          "wowhead_id": 9262,
+          "display_name": "Black Vitriol",
+          "wiki_slug": "Black_Vitriol",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Flask of the Titans",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flask_of_the_Titans",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13510,
+        "display_name": "Flask of the Titans",
+        "wiki_slug": "Flask_of_the_Titans"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 8846,
+          "display_name": "Gromsblood",
+          "wiki_slug": "Gromsblood",
+          "quantity": 7
+        },
+        {
+          "wowhead_id": 13423,
+          "display_name": "Stonescale Oil",
+          "wiki_slug": "Stonescale_Oil",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Supreme Power",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flask_of_Supreme_Power",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 13512,
+        "display_name": "Flask of Supreme Power",
+        "wiki_slug": "Flask_of_Supreme_Power"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 7
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Distilled Wisdom",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flask_of_Distilled_Wisdom",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13511,
+        "display_name": "Flask of Distilled Wisdom",
+        "wiki_slug": "Flask_of_Distilled_Wisdom"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 7
+        },
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Chromatic Resistance",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flask_of_Chromatic_Resistance",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13513,
+        "display_name": "Flask of Chromatic Resistance",
+        "wiki_slug": "Flask_of_Chromatic_Resistance"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 7
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 3
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 3371,
+          "display_name": "Crystal Vial",
+          "wiki_slug": "Crystal_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Petrification",
+      "tier": "artisan",
+      "skill": 300,
+      "source": "drop",
+      "wiki_slug": "Flask_of_Petrification",
+      "resolution_status": "reagent_cost_incomplete",
+      "crafted_item": {
+        "wowhead_id": 13506,
+        "display_name": "Flask of Petrification",
+        "wiki_slug": "Flask_of_Petrification"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13423,
+          "display_name": "Stonescale Oil",
+          "wiki_slug": "Stonescale_Oil",
+          "quantity": 30
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 10
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Natural Accuracy",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Flask_of_Natural_Accuracy",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274273,
+        "display_name": "Flask of Natural Accuracy",
+        "wiki_slug": "Flask_of_Natural_Accuracy"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 248822,
+          "display_name": "Death Lotus",
+          "wiki_slug": "Death_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 248821,
+          "display_name": "Demonsage",
+          "wiki_slug": "Demonsage",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 13464,
+          "display_name": "Golden Sansam",
+          "wiki_slug": "Golden_Sansam",
+          "quantity": 9
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Natural Aggression",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Flask_of_Natural_Aggression",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274274,
+        "display_name": "Flask of Natural Aggression",
+        "wiki_slug": "Flask_of_Natural_Aggression"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 248822,
+          "display_name": "Death Lotus",
+          "wiki_slug": "Death_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 248821,
+          "display_name": "Demonsage",
+          "wiki_slug": "Demonsage",
+          "quantity": 18
+        },
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Natural Precision",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Flask_of_Natural_Precision",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274275,
+        "display_name": "Flask of Natural Precision",
+        "wiki_slug": "Flask_of_Natural_Precision"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 248822,
+          "display_name": "Death Lotus",
+          "wiki_slug": "Death_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 248823,
+          "display_name": "Marefoil",
+          "wiki_slug": "Marefoil",
+          "quantity": 12
+        },
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 9
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Natural Swiftness",
+      "tier": "artisan",
+      "skill": 300,
+      "source": null,
+      "wiki_slug": "Flask_of_Natural_Swiftness",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 274276,
+        "display_name": "Flask of Natural Swiftness",
+        "wiki_slug": "Flask_of_Natural_Swiftness"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 248822,
+          "display_name": "Death Lotus",
+          "wiki_slug": "Death_Lotus",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 248823,
+          "display_name": "Marefoil",
+          "wiki_slug": "Marefoil",
+          "quantity": 18
+        },
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 18256,
+          "display_name": "Imbued Vial",
+          "wiki_slug": "Imbued_Vial",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Gurubashi Mojo Madness",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Gurubashi_Mojo_Madness",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 19931,
+        "display_name": "Gurubashi Mojo Madness",
+        "wiki_slug": "Gurubashi_Mojo_Madness"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 19943,
+          "display_name": "Massive Mojo",
+          "wiki_slug": "Massive_Mojo",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 12804,
+          "display_name": "Powerful Mojo",
+          "wiki_slug": "Powerful_Mojo",
+          "quantity": 6
+        },
+        {
+          "wowhead_id": 13468,
+          "display_name": "Black Lotus",
+          "wiki_slug": "Black_Lotus",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of Alacrity",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Elixir_of_Alacrity",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233977,
+        "display_name": "Elixir of Alacrity",
+        "wiki_slug": "Elixir_of_Alacrity"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13463,
+          "display_name": "Dreamfoil",
+          "wiki_slug": "Dreamfoil",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Honey Badger",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Honey_Badger",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233967,
+        "display_name": "Elixir of the Honey Badger",
+        "wiki_slug": "Elixir_of_the_Honey_Badger"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13465,
+          "display_name": "Mountain Silversage",
+          "wiki_slug": "Mountain_Silversage",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Ironside",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Ironside",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233969,
+        "display_name": "Elixir of the Ironside",
+        "wiki_slug": "Elixir_of_the_Ironside"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13467,
+          "display_name": "Icecap",
+          "wiki_slug": "Icecap",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Elixir of the Mage-Lord",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Elixir_of_the_Mage-Lord",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233968,
+        "display_name": "Elixir of the Mage-Lord",
+        "wiki_slug": "Elixir_of_the_Mage-Lord"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 13466,
+          "display_name": "Plaguebloom (herb)",
+          "wiki_slug": "Plaguebloom_(herb)",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 2
+        },
+        {
+          "wowhead_id": 234011,
+          "display_name": "Qiraji Stalker Venom",
+          "wiki_slug": "Qiraji_Stalker_Venom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Unyielding Sorrow",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Flask_of_Unyielding_Sorrow",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233966,
+        "display_name": "Flask of Unyielding Sorrow",
+        "wiki_slug": "Flask_of_Unyielding_Sorrow"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234012,
+          "display_name": "Hive Thistle",
+          "wiki_slug": "Hive_Thistle",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13511,
+          "display_name": "Flask of Distilled Wisdom",
+          "wiki_slug": "Flask_of_Distilled_Wisdom",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flask of Madness",
+      "tier": "artisan",
+      "skill": 315,
+      "source": null,
+      "wiki_slug": "Flask_of_Madness",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 233962,
+        "display_name": "Flask of Madness",
+        "wiki_slug": "Flask_of_Madness"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 16203,
+          "display_name": "Greater Eternal Essence",
+          "wiki_slug": "Greater_Eternal_Essence",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 234010,
+          "display_name": "Ancient Sandworm Bile",
+          "wiki_slug": "Ancient_Sandworm_Bile",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 13513,
+          "display_name": "Flask of Chromatic Resistance",
+          "wiki_slug": "Flask_of_Chromatic_Resistance",
+          "quantity": 1
+        },
+        {
+          "wowhead_id": 8925,
+          "display_name": "Crystal Vial (Classic)",
+          "wiki_slug": "Crystal_Vial_(Classic)",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
