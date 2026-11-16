@@ -54,7 +54,7 @@ Implements [PRD.md § 7.2](PRD.md#72-feature-b--profession-catalogs), run via a 
 1. Scrape the profession's pattern-list page(s) on Warcraft Wiki for every pattern: name, tier, skill, source.
 2. For each pattern, resolve its crafted item's own wiki page to extract its Wowhead item ID, **then validate via the category cross-check described above** before accepting the match.
 3. Resolve each reagent the same way.
-4. A pattern whose wiki page doesn't exist yet (new WoW Forever content, undocumented) is kept in the catalog with that fact recorded, not dropped — WoW Forever is live beta content, and "not yet on the wiki" is expected, ongoing, and distinct from "scrape failed."
+4. A pattern whose wiki page doesn't exist yet (new WoW Forever content, undocumented) is **currently dropped from the seed file** rather than kept with the fact recorded — `Pattern.crafted_item_id` has no nullable path through `CatalogSeeder`/the schema to store one at all (confirmed: both the real `tailoring.json` and `enchanting.json` seeds omit these patterns entirely, ~40% and ~40% of their respective candidate lists). Recording them properly (a `crafted_item_id` nullable column, a seeder/UI path for "not yet on the wiki" as its own visible state) is real, scoped work, not yet done — WoW Forever is live beta content, so this gap will keep mattering as more content ships undocumented.
 5. The result replaces that profession's catalog atomically (same principle as the sister project's generation-swap — a bad/partial scrape run must never leave the catalog half-overwritten) — see [SCHEMA.md](SCHEMA.md) for the concrete mechanism.
 
 ## Failure Handling
