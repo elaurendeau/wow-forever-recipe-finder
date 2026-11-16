@@ -49,6 +49,8 @@ Unlike the sister project, there is no persistent ingestion checkpoint or change
 
 ### Catalog Construction (manual, per profession)
 
+> **Update 2026-11-16:** reagent lists, skills and the pattern set in `priv/catalog_seeds/*.json` now come from Wowhead's WoW Forever spell data, read from a real browser session. The Warcraft Wiki scrape below produced Classic-era reagents and Season of Discovery items; see [DATA_SOURCES.md § Wowhead](DATA_SOURCES.md#wowhead-wow-forever-recipe-data). The steps below describe the original wiki pipeline.
+
 Implements [PRD.md § 7.2](PRD.md#72-feature-b--profession-catalogs), run via a `.claude/skill` (see [TECH_STACK.md § Catalog refresh](TECH_STACK.md#catalog-refresh)):
 
 1. Scrape the profession's pattern-list page(s) on Warcraft Wiki for every pattern: name, tier, skill, source.
