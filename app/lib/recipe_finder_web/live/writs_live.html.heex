@@ -1,0 +1,177 @@
+<div class="rf-topbar" id="writs-page" phx-hook="TsmSnapshot">
+  <div class="rf-topbar-left">
+    <h1 class="rf-title">Craftsman's Writ Route Optimizer</h1>
+    <a class="rf-nav-link" href={~p"/"}>← Recipe Finder</a>
+  </div>
+  <div class="rf-freshness">
+    <%= if @captured_at do %>
+      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")} — saved in this browser
+      <button type="button" class="rf-forget-link" phx-click="clear_snapshot">forget</button>
+    <% else %>
+      No data uploaded yet
+    <% end %>
+  </div>
+  <form id="upload-form" phx-change="validate_upload" phx-submit="process_upload">
+    <div class="rf-upload-pill">
+      <.live_file_input upload={@uploads.tsm_export} />
+      <button type="submit">Upload</button>
+    </div>
+  </form>
+</div>
+
+<div class="rf-page">
+  <div class="rf-writs-intro">
+    Buy the writ item and its required turn-in from the Auction House, hand both in for reputation. Cost is always
+    TSM's realm-level <strong>Recent Value</strong>
+    for every item — never the crafting-reagent cost, even for an
+    item this app also tracks as a pattern elsewhere. Horde only for now; zone/travel routing is planned next.
+  </div>
+
+  <%= if @upload_error do %>
+    <div class="rf-error">{@upload_error}</div>
+  <% end %>
+
+  <% filtered = WritResultsFilter.apply(@results, @filter) %>
+  <form id="filter-form" phx-change="filter_changed">
+    <div class="rf-filterbar">
+      <input
+        type="text"
+        name="filter[search]"
+        placeholder="Search writ name..."
+        value={@filter.search}
+      />
+    </div>
+
+    <div class="rf-stats" style="margin: 12px 0;">
+      <span><strong>{length(filtered)}</strong> shown</span>
+      <span><strong>{length(@results)}</strong> total writs</span>
+    </div>
+
+    <div class="rf-table-wrap">
+      <table class="rf-table">
+        <thead>
+          <tr>
+            <th>Writ</th>
+            <th>Profession</th>
+            <th>Tier</th>
+            <th>Zone</th>
+            <th>Hand-in NPC</th>
+            <th class={th_class(@filter, :cost)} phx-click="sort_by" phx-value-field="cost">
+              Cost{sort_indicator(@filter, :cost)}
+            </th>
+            <th
+              class={th_class(@filter, :reputation)}
+              phx-click="sort_by"
+              phx-value-field="reputation"
+            >
+              Reputation{sort_indicator(@filter, :reputation)}
+            </th>
+            <th
+              class={th_class(@filter, :rep_per_gold)}
+              phx-click="sort_by"
+              phx-value-field="rep_per_gold"
+              title="Total reputation divided by total cost in gold"
+            >
+              Rep/Gold{sort_indicator(@filter, :rep_per_gold)}
+            </th>
+          </tr>
+          <tr class="rf-table-filter-row">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <input
+                type="text"
+                name="filter[max_cost_copper]"
+                placeholder="max"
+                value={@filter.max_cost_copper}
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="filter[min_reputation]"
+                placeholder="min"
+                value={@filter.min_reputation}
+              />
+            </td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <%= for r <- filtered do %>
+            <tr>
+              <td>
+                <a
+                  class="rf-item-name"
+                  href={wowhead_quest_url(r.writ.wowhead_quest_id || 0)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {r.writ.name}
+                </a>
+                <div class="rf-item-tier">
+                  {r.writ.hand_in_npc_name && "at #{r.writ.hand_in_npc_name}"}
+                </div>
+              </td>
+              <td>{Enum.map_join(r.writ.profession_slugs, " / ", &profession_label/1)}</td>
+              <td><span class="rf-source-pill">{tier_label(r.writ.tier)}</span></td>
+              <td class="rf-muted">{r.writ.hand_in_zone || "—"}</td>
+              <td class="rf-muted">{r.writ.hand_in_npc_name || "—"}</td>
+              <td class="num rf-muted">
+                <%= cond do %>
+                  <% pending_data?(r) -> %>
+                    <span
+                      class="writ-pending-pill"
+                      title="This writ's required item hasn't been extracted yet — not that it needs nothing."
+                    >
+                      awaiting data
+                    </span>
+                  <% r.total_cost_copper == nil -> %>
+                    —
+                  <% true -> %>
+                    <span
+                      class="rf-tooltip-trigger"
+                      id={"writ-cost-tooltip-#{r.writ.id}"}
+                      phx-hook="HoverTooltip"
+                    >
+                      {format_copper(r.total_cost_copper)}
+                      <div class="rf-tooltip">
+                        <div class="rf-tooltip-title">
+                          <span class="rf-tooltip-label">Writ Cost</span>
+                          <span class="rf-tooltip-total">{format_copper(r.total_cost_copper)}</span>
+                        </div>
+                        <div class="rf-tooltip-line">
+                          <span>{r.writ.writ_item_display_name}</span>
+                          <span class="rf-tooltip-price">{format_copper(r.writ_item_cost_copper)}</span>
+                        </div>
+                        <%= for line <- r.required_item_breakdown do %>
+                          <div class="rf-tooltip-line">
+                            <span>{line.display_name} x{line.quantity}</span>
+                            <span class="rf-tooltip-price">{format_copper(line.line_total_copper)}</span>
+                          </div>
+                        <% end %>
+                      </div>
+                    </span>
+                <% end %>
+              </td>
+              <td class="num">
+                {r.total_reputation}
+                <div class="rf-item-tier">
+                  {Enum.map_join(
+                    r.writ.reputation_rewards,
+                    " / ",
+                    &"#{&1.amount} #{&1.faction_display_name}"
+                  )}
+                </div>
+              </td>
+              <td class="num rf-profit-pos">{format_rep_per_gold(r.rep_per_gold)}</td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </form>
+</div>

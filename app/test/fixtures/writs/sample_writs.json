@@ -1,0 +1,76 @@
+{
+  "source": {
+    "note": "Hand-trimmed fixture for tests — see docs/ELIXIR_TEST_MANIFESTO.md. Real-shaped, not a live Wowhead capture.",
+    "retrieved": "2026-11-16"
+  },
+  "factions": {
+    "2586": "Azeroth Commerce Authority",
+    "2587": "Durotar Supply and Logistics"
+  },
+  "writs": [
+    {
+      "name": "Craftsman's Writ: Elixir of Ogre's Strength",
+      "data_status": "complete",
+      "writ_item": { "wowhead_id": 5571, "display_name": "Craftsman's Writ: Elixir of Ogre's Strength" },
+      "quest_id": 94004,
+      "repeat": "daily",
+      "professions": ["alchemy"],
+      "tier": "journeyman",
+      "required_items": [
+        { "wowhead_id": 264031, "display_name": "Elixir of Ogre Strength", "quantity": 1 }
+      ],
+      "hand_in": { "npc_id": 257281, "npc_name": "Sos'mol", "zone": "Alterac Mountains" },
+      "rewards": {
+        "reputation": [
+          { "faction_id": 2586, "amount": 75 },
+          { "faction_id": 2587, "amount": 75 }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Bronze Mace",
+      "data_status": "pending_quest_page",
+      "writ_item": { "wowhead_id": 264024, "display_name": "Craftsman's Writ: Heavy Bronze Mace" },
+      "quest_id": 94224,
+      "repeat": null,
+      "professions": ["blacksmithing"],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": { "npc_id": null, "npc_name": "Gorgrash", "zone": "Hillsbrad Foothills" },
+      "rewards": {
+        "reputation": [
+          { "faction_id": 2586, "amount": 75 },
+          { "faction_id": 2587, "amount": 75 }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Goblin Rocket Fuel",
+      "data_status": "complete",
+      "writ_item": { "wowhead_id": 999990001, "display_name": "Craftsman's Writ: Goblin Rocket Fuel" },
+      "quest_id": 94265,
+      "repeat": "daily",
+      "professions": ["alchemy", "engineering"],
+      "tier": "expert",
+      "required_items": [
+        { "wowhead_id": 999990002, "display_name": "Goblin Rocket Fuel", "quantity": 1 }
+      ],
+      "hand_in": { "npc_id": null, "npc_name": "Duke Hydraxis", "zone": "Azshara" },
+      "rewards": {
+        "reputation": [
+          { "faction_id": 2586, "amount": 125 },
+          { "faction_id": 2587, "amount": 125 }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    }
+  ]
+}

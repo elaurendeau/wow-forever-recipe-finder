@@ -19,8 +19,10 @@ defmodule WowForeverRecipeFinder.Release do
   end
 
   @doc """
-  Loads every profession catalog under priv/catalog_seeds/*.json — see
-  docs/ARCHITECTURE.md § Catalog Construction. Safe to re-run: each
+  Loads every profession catalog under priv/catalog_seeds/*.json (see
+  docs/ARCHITECTURE.md § Catalog Construction) and the Craftsman's Writ
+  catalog under priv/writ_seeds/*.json (see docs/PRD.md § 7.8 and
+  docs/SCHEMA.md § Craftsman's Writ catalog). Safe to re-run: each
   file's catalog is replaced atomically, not appended. Run in a release
   via bin/seed (no Mix available there, hence a Release function rather
   than priv/repo/seeds.exs, which delegates here for dev/test use).
@@ -38,19 +40,26 @@ defmodule WowForeverRecipeFinder.Release do
 
     for repo <- repos() do
       {:ok, _, _} =
-        Ecto.Migrator.with_repo(repo, fn _repo -> load_catalog_seeds() end, timeout: 120_000)
+        Ecto.Migrator.with_repo(
+          repo,
+          fn _repo ->
+            load_seeds("catalog_seeds", &WowForeverRecipeFinder.CatalogSeeder.load_from_file!/1)
+            load_seeds("writ_seeds", &WowForeverRecipeFinder.WritCatalogSeeder.load_from_file!/1)
+          end,
+          timeout: 120_000
+        )
     end
   end
 
-  defp load_catalog_seeds do
+  defp load_seeds(priv_subdir, load_from_file) do
     :recipe_finder
     |> :code.priv_dir()
-    |> Path.join("catalog_seeds")
+    |> Path.join(priv_subdir)
     |> Path.join("*.json")
     |> Path.wildcard()
     |> Enum.each(fn path ->
-      IO.puts("Loading catalog from #{path}...")
-      WowForeverRecipeFinder.CatalogSeeder.load_from_file!(path)
+      IO.puts("Loading #{priv_subdir} from #{path}...")
+      load_from_file.(path)
     end)
   end
 

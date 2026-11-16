@@ -1,0 +1,5558 @@
+{
+  "source": {
+    "writ_list": "https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards",
+    "quests": "https://www.wowhead.com/forever/quests/name:Craftsman's+Writ",
+    "quest_page": "https://www.wowhead.com/forever/quest=<quest_id>",
+    "retrieved": "2026-11-16"
+  },
+  "factions": {
+    "2586": "Azeroth Commerce Authority",
+    "2587": "Durotar Supply and Logistics"
+  },
+  "writs": [
+    {
+      "name": "Craftsman's Writ: Elixir of Ogre's Strength",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264011,
+        "display_name": "Craftsman's Writ: Elixir of Ogre's Strength"
+      },
+      "quest_id": 94004,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 3391,
+          "display_name": "Elixir of Ogre Strength",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Elixir of Ogre Strength",
+              "skill": 150,
+              "wowhead_spell_id": 3188
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257281,
+        "npc_name": "Sos'mol",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Elixir of Wisdom",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264012,
+        "display_name": "Craftsman's Writ: Elixir of Wisdom"
+      },
+      "quest_id": 94212,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 3383,
+          "display_name": "Elixir of Wisdom",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Elixir of Wisdom",
+              "skill": 90,
+              "wowhead_spell_id": 3171
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257296,
+        "npc_name": "Muggol Breezebeard",
+        "zone": "Arathi Highlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lesser Mana Potion",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264013,
+        "display_name": "Craftsman's Writ: Lesser Mana Potion"
+      },
+      "quest_id": 94213,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 3385,
+          "display_name": "Lesser Mana Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Lesser Mana Potion",
+              "skill": 120,
+              "wowhead_spell_id": 3173
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257315,
+        "npc_name": "Ash'alari",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadow Protection Potion",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264014,
+        "display_name": "Craftsman's Writ: Shadow Protection Potion"
+      },
+      "quest_id": 94214,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 6048,
+          "display_name": "Shadow Protection Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Shadow Protection Potion",
+              "skill": 135,
+              "wowhead_spell_id": 7256
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 3134,
+        "npc_name": "Kzixx",
+        "zone": "Duskwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Free Action Potion",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264015,
+        "display_name": "Craftsman's Writ: Free Action Potion"
+      },
+      "quest_id": 94215,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 5634,
+          "display_name": "Free Action Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Free Action Potion",
+              "skill": 150,
+              "wowhead_spell_id": 6624
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 261928,
+        "npc_name": "Webbed Mudsnout Gnoll",
+        "zone": "Hillsbrad Foothills"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Elixir of Lesser Agility",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264016,
+        "display_name": "Craftsman's Writ: Elixir of Lesser Agility"
+      },
+      "quest_id": 94216,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 3390,
+          "display_name": "Elixir of Lesser Agility",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Elixir of Lesser Agility",
+              "skill": 140,
+              "wowhead_spell_id": 2333
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 4201,
+        "npc_name": "Ziz Fizziks",
+        "zone": "Stonetalon Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lesser Troll's Blood Elixir",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264017,
+        "display_name": "Craftsman's Writ: Lesser Troll's Blood Elixir"
+      },
+      "quest_id": 94217,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 3388,
+          "display_name": "Lesser Troll's Blood Elixir",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Lesser Troll's Blood Elixir",
+              "skill": 125,
+              "wowhead_spell_id": 3176
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 14508,
+        "npc_name": "Short John Mithril",
+        "zone": "Stranglethorn Vale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Elixir of Defense",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264018,
+        "display_name": "Craftsman's Writ: Elixir of Defense"
+      },
+      "quest_id": 94218,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 8951,
+          "display_name": "Elixir of Defense",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Elixir of Defense",
+              "skill": 195,
+              "wowhead_spell_id": 11450
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 4720,
+        "npc_name": "Rizzle Brassbolts",
+        "zone": "Thousand Needles"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Draught of Water Breathing",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264019,
+        "display_name": "Craftsman's Writ: Draught of Water Breathing"
+      },
+      "quest_id": 94219,
+      "repeat": "daily",
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 5996,
+          "display_name": "Draught of Water Breathing",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Draught of Water Breathing",
+              "skill": 90,
+              "wowhead_spell_id": 7179
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 8305,
+        "npc_name": "Kixxle",
+        "zone": "Wetlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Pearl-Handled Dagger",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264020,
+        "display_name": "Craftsman's Writ: Pearl-Handled Dagger"
+      },
+      "quest_id": 94220,
+      "repeat": "daily",
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 5540,
+          "display_name": "Pearl-handled Dagger",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Pearl-handled Dagger",
+              "skill": 85,
+              "wowhead_spell_id": 6517
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257282,
+        "npc_name": "Alan Sneeks",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Golden Rod",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264021,
+        "display_name": "Craftsman's Writ: Golden Rod"
+      },
+      "quest_id": 94221,
+      "repeat": "daily",
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 11128,
+          "display_name": "Golden Rod",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Golden Rod",
+              "skill": 125,
+              "wowhead_spell_id": 14379
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257296,
+        "npc_name": "Muggol Breezebeard",
+        "zone": "Arathi Highlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Iridescent Hammer",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264022,
+        "display_name": "Craftsman's Writ: Iridescent Hammer"
+      },
+      "quest_id": 94222,
+      "repeat": "daily",
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 5541,
+          "display_name": "Iridescent Hammer",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Iridescent Hammer",
+              "skill": 140,
+              "wowhead_spell_id": 6518
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": 257316,
+        "npc_name": "Cowardly Peon",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Silver Skeleton Key",
+      "data_status": "complete",
+      "writ_item": {
+        "wowhead_id": 264023,
+        "display_name": "Craftsman's Writ: Silver Skeleton Key"
+      },
+      "quest_id": 94223,
+      "repeat": "daily",
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": [
+        {
+          "wowhead_id": 15869,
+          "display_name": "Silver Skeleton Key",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Silver Skeleton Key",
+              "skill": 75,
+              "wowhead_spell_id": 19666
+            }
+          ]
+        }
+      ],
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Battered Trunk",
+        "zone": "Duskwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Bronze Mace",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264024,
+        "display_name": "Craftsman's Writ: Heavy Bronze Mace"
+      },
+      "quest_id": 94224,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Gorgrash",
+        "zone": "Hillsbrad Foothills"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Rough Bronze Leggings",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264025,
+        "display_name": "Craftsman's Writ: Rough Bronze Leggings"
+      },
+      "quest_id": 94225,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Ziz Fizziks",
+        "zone": "Stonetalon Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Green Iron Gauntlets",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264026,
+        "display_name": "Craftsman's Writ: Green Iron Gauntlets"
+      },
+      "quest_id": 94226,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "\"Sea Wolf\" MacKinley",
+        "zone": "Stranglethorn Vale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Big Bronze Knife",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264027,
+        "display_name": "Craftsman's Writ: Big Bronze Knife"
+      },
+      "quest_id": 94227,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "\"Plucky\" Johnson",
+        "zone": "Thousand Needles"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Green Iron Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264028,
+        "display_name": "Craftsman's Writ: Green Iron Boots"
+      },
+      "quest_id": 94228,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kixxle",
+        "zone": "Wetlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Ornate Spyglass",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264029,
+        "display_name": "Craftsman's Writ: Ornate Spyglass"
+      },
+      "quest_id": 94229,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Alan Sneeks",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Explosive Sheep",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264030,
+        "display_name": "Craftsman's Writ: Explosive Sheep"
+      },
+      "quest_id": 94230,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Alyce",
+        "zone": "Arathi Highlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Moonsight Rifle",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264031,
+        "display_name": "Craftsman's Writ: Moonsight Rifle"
+      },
+      "quest_id": 94231,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Grembly",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Minor Recombobulator",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264032,
+        "display_name": "Craftsman's Writ: Minor Recombobulator"
+      },
+      "quest_id": 94232,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kzixx",
+        "zone": "Duskwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Practice Lock",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264033,
+        "display_name": "Craftsman's Writ: Practice Lock"
+      },
+      "quest_id": 94233,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Gorgrash",
+        "zone": "Hillsbrad Foothills"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadow Goggles",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264034,
+        "display_name": "Craftsman's Writ: Shadow Goggles"
+      },
+      "quest_id": 94234,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Ziz Fizziks",
+        "zone": "Stonetalon Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Gnomish Universal Remote",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264035,
+        "display_name": "Craftsman's Writ: Gnomish Universal Remote"
+      },
+      "quest_id": 94235,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Scooty",
+        "zone": "Stranglethorn Vale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Big Bronze Bomb",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264036,
+        "display_name": "Craftsman's Writ: Big Bronze Bomb"
+      },
+      "quest_id": 94236,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Razzeric",
+        "zone": "Thousand Needles"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Crafted Solid Shot",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264037,
+        "display_name": "Craftsman's Writ: Crafted Solid Shot"
+      },
+      "quest_id": 94237,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kixxle",
+        "zone": "Wetlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Leather Ball",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264038,
+        "display_name": "Craftsman's Writ: Heavy Leather Ball"
+      },
+      "quest_id": 94238,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Sos'mol",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Fine Leather Pants",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264039,
+        "display_name": "Craftsman's Writ: Fine Leather Pants"
+      },
+      "quest_id": 94239,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Alyce",
+        "zone": "Arathi Highlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Herbalist's Gloves",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264040,
+        "display_name": "Craftsman's Writ: Herbalist's Gloves"
+      },
+      "quest_id": 94240,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Murache",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Dark Leather Tunic",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264041,
+        "display_name": "Craftsman's Writ: Dark Leather Tunic"
+      },
+      "quest_id": 94241,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kzixx",
+        "zone": "Duskwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Pilferer's Gloves",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264042,
+        "display_name": "Craftsman's Writ: Pilferer's Gloves"
+      },
+      "quest_id": 94242,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kris Legace",
+        "zone": "Hillsbrad Foothills"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Quiver",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264043,
+        "display_name": "Craftsman's Writ: Heavy Quiver"
+      },
+      "quest_id": 94243,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Ziz Fizziks",
+        "zone": "Stonetalon Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Dark Leather Shoulders",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264044,
+        "display_name": "Craftsman's Writ: Dark Leather Shoulders"
+      },
+      "quest_id": 94244,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Narkk",
+        "zone": "Stranglethorn Vale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Barbaric Gloves",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264045,
+        "display_name": "Craftsman's Writ: Barbaric Gloves"
+      },
+      "quest_id": 94245,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Goblin Pit Boss",
+        "zone": "Thousand Needles"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Red Whelp Gloves",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264046,
+        "display_name": "Craftsman's Writ: Red Whelp Gloves"
+      },
+      "quest_id": 94246,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kixxle",
+        "zone": "Wetlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lesser Wizard's Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264047,
+        "display_name": "Craftsman's Writ: Lesser Wizard's Robe"
+      },
+      "quest_id": 94247,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Alan Sneeks",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Blue Overalls",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264048,
+        "display_name": "Craftsman's Writ: Blue Overalls"
+      },
+      "quest_id": 94248,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Alyce",
+        "zone": "Arathi Highlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Azure Silk Hood",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264049,
+        "display_name": "Craftsman's Writ: Azure Silk Hood"
+      },
+      "quest_id": 94249,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Cowardly Peon",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Small Silk Pack",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264050,
+        "display_name": "Craftsman's Writ: Small Silk Pack"
+      },
+      "quest_id": 94250,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kzixx",
+        "zone": "Duskwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Phoenix Pants",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264051,
+        "display_name": "Craftsman's Writ: Phoenix Pants"
+      },
+      "quest_id": 94251,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Red Woolen Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264052,
+        "display_name": "Craftsman's Writ: Red Woolen Boots"
+      },
+      "quest_id": 94252,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Ziz Fizziks",
+        "zone": "Stonetalon Mountains"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Colorful Kilt",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264053,
+        "display_name": "Craftsman's Writ: Colorful Kilt"
+      },
+      "quest_id": 94253,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Hekshi",
+        "zone": "Stranglethorn Vale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Greater Adept's Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264054,
+        "display_name": "Craftsman's Writ: Greater Adept's Robe"
+      },
+      "quest_id": 94254,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Magus Tirth",
+        "zone": "Thousand Needles"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Spider Silk Slippers",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264055,
+        "display_name": "Craftsman's Writ: Spider Silk Slippers"
+      },
+      "quest_id": 94255,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "journeyman",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kixxle",
+        "zone": "Wetlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 75
+          },
+          {
+            "faction_id": 2587,
+            "amount": 75
+          }
+        ],
+        "money_copper": 0,
+        "items": [
+          {
+            "wowhead_id": 284584,
+            "quantity": 1
+          }
+        ],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Frost Protection Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264056,
+        "display_name": "Craftsman's Writ: Frost Protection Potion"
+      },
+      "quest_id": 94256,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Lotwil Veriatus",
+        "zone": "Badlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lesser Invisibility Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264057,
+        "display_name": "Craftsman's Writ: Lesser Invisibility Potion"
+      },
+      "quest_id": 94257,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Centaur Pariah",
+        "zone": "Desolace"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lesser Stoneshield Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264058,
+        "display_name": "Craftsman's Writ: Lesser Stoneshield Potion"
+      },
+      "quest_id": 94258,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Mudcrush Durtfeet",
+        "zone": "Dustwallow Marsh"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Nature Protection Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264059,
+        "display_name": "Craftsman's Writ: Nature Protection Potion"
+      },
+      "quest_id": 94259,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Greta Mosshoof",
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Catseye Draught",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264060,
+        "display_name": "Craftsman's Writ: Catseye Draught"
+      },
+      "quest_id": 94260,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Feralas"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Great Rage Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264061,
+        "display_name": "Craftsman's Writ: Great Rage Potion"
+      },
+      "quest_id": 94261,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Dendrite Starblaze",
+        "zone": "Moonglade"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mana Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264062,
+        "display_name": "Craftsman's Writ: Mana Potion"
+      },
+      "quest_id": 94262,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Ash'alari",
+        "zone": "Ashenvale"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Fire Protection Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264063,
+        "display_name": "Craftsman's Writ: Fire Protection Potion"
+      },
+      "quest_id": 94263,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Durganon",
+        "zone": "Searing Gorge"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadow Oil",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264064,
+        "display_name": "Craftsman's Writ: Shadow Oil"
+      },
+      "quest_id": 94264,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Mukomonji",
+        "zone": "Swamp of Sorrows"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Goblin Rocket Fuel",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264065,
+        "display_name": "Craftsman's Writ: Goblin Rocket Fuel"
+      },
+      "quest_id": 94265,
+      "repeat": null,
+      "professions": [
+        "alchemy",
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Duke Hydraxis",
+        "zone": "Azshara"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Elixir of Agility",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264066,
+        "display_name": "Craftsman's Writ: Elixir of Agility"
+      },
+      "quest_id": 94266,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "The Hinterlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wildvine Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264067,
+        "display_name": "Craftsman's Writ: Wildvine Potion"
+      },
+      "quest_id": 94267,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Spark Nilminer",
+        "zone": "Un'Goro Crater"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Steel Plate Helm",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264068,
+        "display_name": "Craftsman's Writ: Steel Plate Helm"
+      },
+      "quest_id": 94268,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Inlaid Mithril Cylinder",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264069,
+        "display_name": "Craftsman's Writ: Inlaid Mithril Cylinder"
+      },
+      "quest_id": 94269,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Bibbly F'utzbuckle",
+        "zone": "Desolace"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Steel Weapon Chain",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264070,
+        "display_name": "Craftsman's Writ: Steel Weapon Chain"
+      },
+      "quest_id": 94270,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Dustwallow Marsh"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Ornate Mithril Shoulders",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264071,
+        "display_name": "Craftsman's Writ: Ornate Mithril Shoulders"
+      },
+      "quest_id": 94271,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Taronn Redfeather",
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Blue Glittering Axe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264072,
+        "display_name": "Craftsman's Writ: Blue Glittering Axe"
+      },
+      "quest_id": 94272,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Moonsteel Broadsword",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264073,
+        "display_name": "Craftsman's Writ: Moonsteel Broadsword"
+      },
+      "quest_id": 94273,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Meliri",
+        "zone": "Moonglade"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Golden Scale Coif",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264074,
+        "display_name": "Craftsman's Writ: Golden Scale Coif"
+      },
+      "quest_id": 94274,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Spek",
+        "zone": "Riverglades"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Solid Sharpening Stone",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264075,
+        "display_name": "Craftsman's Writ: Solid Sharpening Stone"
+      },
+      "quest_id": 94275,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wicked Mithril Blade",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264076,
+        "display_name": "Craftsman's Writ: Wicked Mithril Blade"
+      },
+      "quest_id": 94276,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Truesilver Rod",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264077,
+        "display_name": "Craftsman's Writ: Truesilver Rod"
+      },
+      "quest_id": 94277,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Golden Scale Gauntlets",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264078,
+        "display_name": "Craftsman's Writ: Golden Scale Gauntlets"
+      },
+      "quest_id": 94278,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Mithril Axe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264079,
+        "display_name": "Craftsman's Writ: Heavy Mithril Axe"
+      },
+      "quest_id": 94279,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Un'Goro Crater"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mechanical Dragonling",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264080,
+        "display_name": "Craftsman's Writ: Mechanical Dragonling"
+      },
+      "quest_id": 94280,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Advanced Target Dummy",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264081,
+        "display_name": "Craftsman's Writ: Advanced Target Dummy"
+      },
+      "quest_id": 94281,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Desolace"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Craftsman's Monocle",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264082,
+        "display_name": "Craftsman's Writ: Craftsman's Monocle"
+      },
+      "quest_id": 94282,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Dustwallow Marsh"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Goblin Land Mine",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264083,
+        "display_name": "Craftsman's Writ: Goblin Land Mine"
+      },
+      "quest_id": 94283,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Catseye Ultra Goggles",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264084,
+        "display_name": "Craftsman's Writ: Catseye Ultra Goggles"
+      },
+      "quest_id": 94284,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Feralas"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Unstable Trigger",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264085,
+        "display_name": "Craftsman's Writ: Unstable Trigger"
+      },
+      "quest_id": 94285,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Narianna",
+        "zone": "Moonglade"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Flash Bomb",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264086,
+        "display_name": "Craftsman's Writ: Flash Bomb"
+      },
+      "quest_id": 94286,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Spek",
+        "zone": "Riverglades"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Fire Goggles",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264087,
+        "display_name": "Craftsman's Writ: Fire Goggles"
+      },
+      "quest_id": 94287,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mithril Frag Bomb",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264088,
+        "display_name": "Craftsman's Writ: Mithril Frag Bomb"
+      },
+      "quest_id": 94288,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Gyromatic Micro-Adjuster",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264089,
+        "display_name": "Craftsman's Writ: Gyromatic Micro-Adjuster"
+      },
+      "quest_id": 94289,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mechanical Repair Kit",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264090,
+        "display_name": "Craftsman's Writ: Mechanical Repair Kit"
+      },
+      "quest_id": 94290,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Dark Iron Bomb",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264091,
+        "display_name": "Craftsman's Writ: Dark Iron Bomb"
+      },
+      "quest_id": 94291,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Comfortable Leather Hat",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264092,
+        "display_name": "Craftsman's Writ: Comfortable Leather Hat"
+      },
+      "quest_id": 94292,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Badlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Guardian Cloak",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264093,
+        "display_name": "Craftsman's Writ: Guardian Cloak"
+      },
+      "quest_id": 94293,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Desolace"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Dusky Bracers",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264094,
+        "display_name": "Craftsman's Writ: Dusky Bracers"
+      },
+      "quest_id": 94294,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Dustwallow Marsh"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wild Leather Helmet",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264095,
+        "display_name": "Craftsman's Writ: Wild Leather Helmet"
+      },
+      "quest_id": 94295,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wild Leather Shoulders",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264096,
+        "display_name": "Craftsman's Writ: Wild Leather Shoulders"
+      },
+      "quest_id": 94296,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Feralas"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Quickdraw Quiver",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264097,
+        "display_name": "Craftsman's Writ: Quickdraw Quiver"
+      },
+      "quest_id": 94297,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Narianna <Bowyer>",
+        "zone": "Moonglade"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Swift Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264098,
+        "display_name": "Craftsman's Writ: Swift Boots"
+      },
+      "quest_id": 94298,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Spek",
+        "zone": "Riverglades"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Nightscape Shoulders",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264099,
+        "display_name": "Craftsman's Writ: Nightscape Shoulders"
+      },
+      "quest_id": 94299,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Searing Gorge"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Big Voodoo Mask",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264100,
+        "display_name": "Craftsman's Writ: Big Voodoo Mask"
+      },
+      "quest_id": 94300,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Swamp of Sorrows"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Big Voodoo Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264101,
+        "display_name": "Craftsman's Writ: Big Voodoo Robe"
+      },
+      "quest_id": 94301,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Yeh'kinya",
+        "zone": "Tanaris"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Turtle Scale Breastplate",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264102,
+        "display_name": "Craftsman's Writ: Turtle Scale Breastplate"
+      },
+      "quest_id": 94302,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Thick Leather Ammo Pouch",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264103,
+        "display_name": "Craftsman's Writ: Thick Leather Ammo Pouch"
+      },
+      "quest_id": 94303,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Un'Goro Crater"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mageweave Bag",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264104,
+        "display_name": "Craftsman's Writ: Mageweave Bag"
+      },
+      "quest_id": 94304,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Badlands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadoweave Gloves",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264105,
+        "display_name": "Craftsman's Writ: Shadoweave Gloves"
+      },
+      "quest_id": 94305,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Desolace"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Crimson Silk Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264106,
+        "display_name": "Craftsman's Writ: Crimson Silk Robe"
+      },
+      "quest_id": 94306,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Dustwallow Marsh"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadoweave Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264107,
+        "display_name": "Craftsman's Writ: Shadoweave Robe"
+      },
+      "quest_id": 94307,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Eridan Bluewind",
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Enchanted Mageweave Pouch",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264108,
+        "display_name": "Craftsman's Writ: Enchanted Mageweave Pouch"
+      },
+      "quest_id": 94308,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Felwood"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Star Belt",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264109,
+        "display_name": "Craftsman's Writ: Star Belt"
+      },
+      "quest_id": 94309,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Mylentha Riverbend",
+        "zone": "Moonglade"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Black Mageweave Vest",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264110,
+        "display_name": "Craftsman's Writ: Black Mageweave Vest"
+      },
+      "quest_id": 94310,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Riverglades"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Red Mageweave Pants",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264111,
+        "display_name": "Craftsman's Writ: Red Mageweave Pants"
+      },
+      "quest_id": 94311,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Searing Gorge"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Orange Martial Shirt",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264112,
+        "display_name": "Craftsman's Writ: Orange Martial Shirt"
+      },
+      "quest_id": 94312,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Swamp of Sorrows"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: White Bandit Mask",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264113,
+        "display_name": "Craftsman's Writ: White Bandit Mask"
+      },
+      "quest_id": 94313,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Cindercloth Robe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264114,
+        "display_name": "Craftsman's Writ: Cindercloth Robe"
+      },
+      "quest_id": 94314,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Earthen Silk Belt",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264115,
+        "display_name": "Craftsman's Writ: Earthen Silk Belt"
+      },
+      "quest_id": 94315,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "expert",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Un'Goro Crater"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 125
+          },
+          {
+            "faction_id": 2587,
+            "amount": 125
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Potion of Demonslaying",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264116,
+        "display_name": "Craftsman's Writ: Potion of Demonslaying"
+      },
+      "quest_id": 94316,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Dreamless Sleep Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264117,
+        "display_name": "Craftsman's Writ: Dreamless Sleep Potion"
+      },
+      "quest_id": 94317,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kum'isha the Collector",
+        "zone": "Blasted Lands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Greater Fire Protection Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264118,
+        "display_name": "Craftsman's Writ: Greater Fire Protection Potion"
+      },
+      "quest_id": 94318,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Draught of Detect Demon",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264119,
+        "display_name": "Craftsman's Writ: Draught of Detect Demon"
+      },
+      "quest_id": 94319,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Hastings <The Caretaker>",
+        "zone": "Deadwind Pass"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Gift of Arthas",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264120,
+        "display_name": "Craftsman's Writ: Gift of Arthas"
+      },
+      "quest_id": 94320,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Flask of Chromatic Resistance",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264121,
+        "display_name": "Craftsman's Writ: Flask of Chromatic Resistance"
+      },
+      "quest_id": 94321,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Limited Invulnerability Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264122,
+        "display_name": "Craftsman's Writ: Limited Invulnerability Potion"
+      },
+      "quest_id": 94322,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Major Rejuvenation Potion",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264123,
+        "display_name": "Craftsman's Writ: Major Rejuvenation Potion"
+      },
+      "quest_id": 94323,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Distilled Firewater",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264124,
+        "display_name": "Craftsman's Writ: Distilled Firewater"
+      },
+      "quest_id": 94324,
+      "repeat": null,
+      "professions": [
+        "alchemy"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Bor'dorc",
+        "zone": "Winterspring"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Radiant Circlet",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264125,
+        "display_name": "Craftsman's Writ: Radiant Circlet"
+      },
+      "quest_id": 94325,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Radiant Belt",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264126,
+        "display_name": "Craftsman's Writ: Radiant Belt"
+      },
+      "quest_id": 94326,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Orcish War Leggings",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264127,
+        "display_name": "Craftsman's Writ: Orcish War Leggings"
+      },
+      "quest_id": 94327,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Mithril Spurs",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264128,
+        "display_name": "Craftsman's Writ: Mithril Spurs"
+      },
+      "quest_id": 94328,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Deadwind Pass"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Imperial Plate Chest",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264129,
+        "display_name": "Craftsman's Writ: Imperial Plate Chest"
+      },
+      "quest_id": 94329,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Darkrune Gauntlets",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264130,
+        "display_name": "Craftsman's Writ: Darkrune Gauntlets"
+      },
+      "quest_id": 94330,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Huge Thorium Battleaxe",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264131,
+        "display_name": "Craftsman's Writ: Huge Thorium Battleaxe"
+      },
+      "quest_id": 94331,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Arcanite Skeleton Key",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264132,
+        "display_name": "Craftsman's Writ: Arcanite Skeleton Key"
+      },
+      "quest_id": 94332,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Ebon Shiv",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264133,
+        "display_name": "Craftsman's Writ: Ebon Shiv"
+      },
+      "quest_id": 94333,
+      "repeat": null,
+      "professions": [
+        "blacksmithing"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Masterwork Target Dummy",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264134,
+        "display_name": "Craftsman's Writ: Masterwork Target Dummy"
+      },
+      "quest_id": 94334,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Green Lens",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264135,
+        "display_name": "Craftsman's Writ: Green Lens"
+      },
+      "quest_id": 94335,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Lifelike Mechanical Toad",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264136,
+        "display_name": "Craftsman's Writ: Lifelike Mechanical Toad"
+      },
+      "quest_id": 94336,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Gnomish Alarm-O-Bot",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264137,
+        "display_name": "Craftsman's Writ: Gnomish Alarm-O-Bot"
+      },
+      "quest_id": 94337,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Goblin Jumper Cables XL",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264138,
+        "display_name": "Craftsman's Writ: Goblin Jumper Cables XL"
+      },
+      "quest_id": 94338,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Field Repair Bot 74A",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264139,
+        "display_name": "Craftsman's Writ: Field Repair Bot 74A"
+      },
+      "quest_id": 94339,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Truesilver Transformer",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264140,
+        "display_name": "Craftsman's Writ: Truesilver Transformer"
+      },
+      "quest_id": 94340,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Sniper Scope",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264141,
+        "display_name": "Craftsman's Writ: Sniper Scope"
+      },
+      "quest_id": 94341,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Tranquil Mechanical Yeti",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264142,
+        "display_name": "Craftsman's Writ: Tranquil Mechanical Yeti"
+      },
+      "quest_id": 94342,
+      "repeat": null,
+      "professions": [
+        "engineering"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wicked Leather Pants",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264143,
+        "display_name": "Craftsman's Writ: Wicked Leather Pants"
+      },
+      "quest_id": 94343,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Gordok Ogre Suit",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264144,
+        "display_name": "Craftsman's Writ: Gordok Ogre Suit"
+      },
+      "quest_id": 94344,
+      "repeat": null,
+      "professions": [
+        "leatherworking",
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Volcanic Breastplate",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264145,
+        "display_name": "Craftsman's Writ: Volcanic Breastplate"
+      },
+      "quest_id": 94345,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Runic Leather Headband",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264146,
+        "display_name": "Craftsman's Writ: Runic Leather Headband"
+      },
+      "quest_id": 94346,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Hastings <The Caretaker>",
+        "zone": "Deadwind Pass"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wicked Leather Bracers",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264147,
+        "display_name": "Craftsman's Writ: Wicked Leather Bracers"
+      },
+      "quest_id": 94347,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Chimeric Vest",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264148,
+        "display_name": "Craftsman's Writ: Chimeric Vest"
+      },
+      "quest_id": 94348,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Heavy Scorpid Helm",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264149,
+        "display_name": "Craftsman's Writ: Heavy Scorpid Helm"
+      },
+      "quest_id": 94349,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Runic Leather Bracers",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264150,
+        "display_name": "Craftsman's Writ: Runic Leather Bracers"
+      },
+      "quest_id": 94350,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Frostsaber Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264151,
+        "display_name": "Craftsman's Writ: Frostsaber Boots"
+      },
+      "quest_id": 94351,
+      "repeat": null,
+      "professions": [
+        "leatherworking"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Wizardweave Turban",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264152,
+        "display_name": "Craftsman's Writ: Wizardweave Turban"
+      },
+      "quest_id": 94352,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Runecloth Bag",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264153,
+        "display_name": "Craftsman's Writ: Runecloth Bag"
+      },
+      "quest_id": 94353,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Kum'isha the Collector",
+        "zone": "Blasted Lands"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Runecloth Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264154,
+        "display_name": "Craftsman's Writ: Runecloth Boots"
+      },
+      "quest_id": 94354,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Tuxedo Jacket",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264155,
+        "display_name": "Craftsman's Writ: Tuxedo Jacket"
+      },
+      "quest_id": 94355,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Hastings <The Caretaker>",
+        "zone": "Deadwind Pass"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Felcloth Boots",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264156,
+        "display_name": "Craftsman's Writ: Felcloth Boots"
+      },
+      "quest_id": 94356,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Cenarion Herb Bag",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264157,
+        "display_name": "Craftsman's Writ: Cenarion Herb Bag"
+      },
+      "quest_id": 94357,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Shadoweave Mask",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264158,
+        "display_name": "Craftsman's Writ: Shadoweave Mask"
+      },
+      "quest_id": 94358,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Silithus"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Ghostweave Vest",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264159,
+        "display_name": "Craftsman's Writ: Ghostweave Vest"
+      },
+      "quest_id": 94359,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": null
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    },
+    {
+      "name": "Craftsman's Writ: Soul Pouch",
+      "data_status": "pending_quest_page",
+      "writ_item": {
+        "wowhead_id": 264160,
+        "display_name": "Craftsman's Writ: Soul Pouch"
+      },
+      "quest_id": 94360,
+      "repeat": null,
+      "professions": [
+        "tailoring"
+      ],
+      "tier": "artisan",
+      "required_items": null,
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": null,
+        "zone": "Winterspring"
+      },
+      "rewards": {
+        "reputation": [
+          {
+            "faction_id": 2586,
+            "amount": 200
+          },
+          {
+            "faction_id": 2587,
+            "amount": 200
+          }
+        ],
+        "money_copper": 0,
+        "items": [],
+        "item_choices": []
+      }
+    }
+  ]
+}

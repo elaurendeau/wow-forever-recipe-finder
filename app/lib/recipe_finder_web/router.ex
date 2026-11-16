@@ -18,6 +18,7 @@ defmodule WowForeverRecipeFinderWeb.Router do
     pipe_through :browser
 
     live "/", RecipeFinderLive
+    live "/writs", WritsLive
   end
 
   # Other scopes may use custom stacks.

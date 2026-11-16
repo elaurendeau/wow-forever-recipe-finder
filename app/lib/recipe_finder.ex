@@ -27,7 +27,18 @@ defmodule WowForeverRecipeFinder do
   # would itself warn ("unknown module listed as export") since the
   # module doesn't exist to check in those environments.
   test_only_exports = if Mix.env() == :test, do: [DataCase], else: []
+
   use Boundary,
     deps: [],
-    exports: [ProfitComputation, CatalogSeeder, ProfitResult, ResultsFilter] ++ test_only_exports
+    exports:
+      [
+        ProfitComputation,
+        CatalogSeeder,
+        ProfitResult,
+        ResultsFilter,
+        WritEfficiency,
+        WritCatalogSeeder,
+        WritEfficiencyResult,
+        WritResultsFilter
+      ] ++ test_only_exports
 end

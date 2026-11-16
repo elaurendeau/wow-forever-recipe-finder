@@ -46,6 +46,56 @@ pattern_reagent
 
 A pattern's crafted item and its reagents are both rows in `item` — the same table, since an item (e.g. Bolt of Linen Cloth) can be both a crafted output of one pattern and a reagent of another. `resolution_status` lives on `pattern`, not as a separate table, so an incomplete/unresolved pattern is still queryable and visible in the UI as a known gap (per [PRD.md § 7.2](PRD.md#72-feature-b--profession-catalogs)) rather than invisible.
 
+## Craftsman's Writ catalog (static, rebuilt via a manual seed import) — added 2026-11-16
+
+Same static-reference-data principle as the profession catalogs above, for [PRD.md § 7.8](PRD.md#78-feature-h--craftsmans-writ-route-optimizer). **Deliberately not sharing the `item`/`pattern` tables above:** a writ's items are Wowhead-sourced AH-tradeable items, not Warcraft-Wiki-resolved crafting-catalog entries — `item.wiki_slug` has no meaningful value for them, and coupling the two independently-evolving datasets isn't worth the complexity for what Phase 1 needs. If a future phase needs to join a writ's required item back to a crafting pattern we already track (e.g. to compare AH cost against craft cost), that's new work, not assumed here (see PRD's Non-Goals for this feature).
+
+```
+faction
+  id                 PK
+  wowhead_faction_id unique — the external faction ID as the writ extraction carries it (e.g. 2586, 2587)
+  display_name       e.g. "Azeroth Commerce Authority"
+
+writ
+  id                      PK
+  name                    e.g. "Craftsman's Writ: Elixir of Ogre's Strength"
+  wowhead_quest_id        unique — the quest_id the extraction carries, so a reseed can upsert by identity
+  writ_item_wowhead_id    the AH-bought item that starts the writ (not a FK into `item` — see above)
+  writ_item_display_name
+  profession_slugs        {:array, :string} — almost always one slug, occasionally two (e.g. an item craftable
+                           by either Alchemy or Engineering) — never assume exactly one
+  tier                    enum: apprentice | journeyman | expert | artisan (same bands as pattern.tier)
+  repeat                  nullable string — only a literal "daily" is trusted; null means "not yet confirmed
+                           either way" per PRD § 7.8's edge-case list, never "one-time"
+  hand_in_npc_name        nullable — some writs genuinely have no named NPC yet (a container, or unresolved)
+  hand_in_zone            nullable
+  reward_money_copper     integer, default 0 — every writ seen in the first extraction is 0; still a real
+                           field, not assumed to always be
+  resolution_status       enum: complete | pending_quest_page — mirrors the extraction's own `data_status`;
+                           `pending_quest_page` means required items aren't known yet, not that none exist,
+                           and the writ is still a row here, visible, never dropped (same rule as
+                           pattern.resolution_status above)
+
+writ_required_item
+  id            PK
+  writ_id       FK -> writ
+  wowhead_id    the turn-in item's item ID
+  display_name
+  quantity      integer
+
+  unique (writ_id, wowhead_id)
+
+writ_reputation_reward
+  id          PK
+  writ_id     FK -> writ
+  faction_id  FK -> faction
+  amount      integer
+
+  unique (writ_id, faction_id)
+```
+
+**Deliberately not modeled in Phase 1:** `rewards.items` / `rewards.item_choices` from the extraction (bonus reward items a writ grants) aren't persisted at all yet — Phase 1's ranking only counts reputation and `reward_money_copper`, per PRD § 7.8's Non-Goals. Adding them is a future, scoped extension, not assumed here.
+
 ## Deliberately not a table: anything from an uploaded TSM export
 
 Prices, sold-per-day, sale confidence, and every computed `ProfitResult` ([ARCHITECTURE.md § Anti-Corruption Layer](ARCHITECTURE.md#1-anti-corruption-layer)) are **never written here.** A request parses the upload, joins it against the `pattern`/`pattern_reagent`/`item` tables above entirely in memory, and returns the result to the LiveView session — which hands it to the client for `localStorage` persistence (see [TECH_STACK.md § Stack](TECH_STACK.md#stack)). There is no `price_snapshot` table, no `profit_result` table, and none should be added without first revisiting the [PRD.md § 4 Non-Goals](PRD.md#4-non-goals) decision this deliberately reflects.

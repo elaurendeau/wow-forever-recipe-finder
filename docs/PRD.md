@@ -49,6 +49,9 @@ Primarily the builder (elaurendeau), extended to any other WoW Forever player wh
 | **Net profit** | `price × (1 − AH cut) − total reagent cost` for a pattern's crafted item — the AH cut (5%, WoW/Classic's standard) is the cut the auction house takes on a successful sale, deducted before material cost. |
 | **Profit %** | Net profit as a percentage of total reagent cost (ROI on what crafting it cost) — undefined, not zero, when the craft costs nothing. |
 | **Catalog** | The static, shared reference data (patterns, reagents, tiers, sources) for one profession — stored server-side in Postgres, refreshed via a manual scrape skill, identical in shape across all visitors. |
+| **Craftsman's Writ** | A repeatable quest: buy a "writ" item from the AH, buy (never craft, per § 7.8) the specific item it asks for, hand both in to a named NPC in a named zone for reputation (and sometimes gold). See § 7.8. |
+| **Recent Value** | `marketValueRecent` from the TSM export's realm-level `AUCTIONDB_NON_COMMODITY_DATA` table — unlike Sale Avg, never populated for commodity items. The only price figure used for Craftsman's Writ cost (§ 7.8), per this session's explicit decision. |
+| **Rep per gold spent** | A writ's total reputation reward divided by its total cost in gold (writ item + every required item, all at Recent Value) — § 7.8's ranking objective. |
 
 ## 7. Core Features
 
@@ -98,3 +101,53 @@ Once a file is processed, the computed per-profession results are stored in the 
 ### 7.7 Feature G — Data Freshness Indicator
 
 The UI displays when the currently-shown snapshot was computed (from the upload timestamp held client-side), so a player is never looking at stale numbers without knowing it — same underlying concern as the reference project's Data Freshness Banner, adapted to a client-held timestamp rather than a server-tracked one.
+
+### 7.8 Feature H — Craftsman's Writ Route Optimizer
+
+**Added 2026-11-16.** A separate page (not a tab on the main Recipe Finder page) for WoW Forever's Craftsman's Writ system: daily/repeatable quests bought from the Auction House as a "writ" item, completed by handing in a specific crafted/tradeable item at a specific NPC, rewarding reputation (with two factions simultaneously: Azeroth Commerce Authority and Durotar Supply and Logistics) and sometimes gold. The goal is to rank writs — and, eventually, sequence a visiting order across zones — by how efficiently they convert AH gold into reputation.
+
+**Decisions locked in before implementation (per the drilling conversation this session):**
+- **Horde only, for now.** Zone/travel-path modeling (Phase 2/3 below) assumes the Horde flight network. Alliance support is a real future goal, not a non-goal, but out of scope for this round.
+- **Cost is always "buy from the AH," never "craft it yourself."** Both the writ item and every required turn-in item are costed at their TSM **Recent Value** (`recent_value_copper` — the realm-level figure, never the region-wide Sale Avg used elsewhere in this app) — explicitly chosen over the existing crafting-reagent-cost engine, even for turn-in items this app already tracks as a crafting pattern elsewhere (e.g. "Elixir of Ogre Strength" under Alchemy). This is a deliberate simplification, not an oversight.
+- **Ranking objective: reputation gained per gold spent** (`total_reputation / (total_cost_copper / 10_000)`), not raw gold profit and not raw reputation.
+- **Fidelity is phased.** This section covers Phase 1 only — a filterable/sortable ranked table, no pathing. Phase 2 (group writs by zone/hub) and Phase 3 (full flight-path travel-time sequencing, with a fidelity toggle across all three modes) are real planned work, deferred until more of the writ dataset is resolved and a Horde travel graph exists — see "Deferred to Phase 2/3" below.
+
+**Data provenance:** the writ catalog comes from a Wowhead-sourced extraction (same family of source as `docs/CATALOG_REFRESH.md`'s profession catalogs, see `docs/DATA_SOURCES.md` for the exact shape once committed). The first extraction delivered to this app is **partial by design** — a `data_status` of `pending_quest_page` on a writ means its required turn-in item(s) haven't been fetched yet, not that none exist. A second, fuller extraction pass is expected to follow and must be re-seedable without manual cleanup.
+
+**Use cases discovered (per docs/ELIXIR_TEST_MANIFESTO.md's discovery procedure) — each must have a covering test:**
+
+*Happy path:*
+- A writ with `resolution_status: :complete` (known writ item + all required items) and full AH Recent Value coverage in the visitor's uploaded snapshot computes total cost, total reputation, and rep-per-gold efficiency, and sorts among the rest by that efficiency.
+- Visiting this page after already uploading a snapshot on the main Recipe Finder page shows computed rows immediately — the two pages share the same client-held snapshot (same `localStorage` keys, same `TsmSnapshot` hook), so a visitor never re-uploads per page.
+- A fresh, snapshot-less visit shows the same upload prompt / empty state as the main page.
+
+*Boundary/edge conditions:*
+- A writ with `resolution_status: :pending_quest_page` (required items not yet known) is **always rendered, never dropped** — same "flagged, not hidden" rule as `Pattern.resolution_status` — with cost shown as a visible pending/unknown state, and sorts last regardless of sort direction (same nils-last convention as `ResultsFilter`).
+- A writ item or required item that IS known, but has no `recent_value_copper` in the visitor's own snapshot (e.g. it's a commodity TSM only tracks region-wide — `AUCTIONDB_NON_COMMODITY_DATA` never covers these at all, confirmed in `docs/DATA_SOURCES.md`) computes a `nil` cost with a specific recorded reason — never a fabricated zero.
+- A writ requiring more than one distinct turn-in item (the schema supports N, via a join table, even though every writ seen in the first extraction needs exactly one).
+- A writ listing more than one profession (e.g. "Craftsman's Writ: Goblin Rocket Fuel" lists both Alchemy and Engineering) stores and displays the full set, never collapsing to one.
+- `repeat: null` means **"not yet confirmed," never "non-repeating."** Only a literal `"daily"` value is trusted and surfaced as a repeat indicator; `null` renders as unknown, not as "one-time."
+- A writ with no hand-in NPC name (`null`) still shows its zone; the NPC cell renders "—".
+- Multiple writs sharing the same hand-in zone are both shown as distinct rows — no collapsing by zone in Phase 1 (that grouping is Phase 2's job).
+
+*Error/failure paths:*
+- An uploaded file that isn't a recognizable TSM export surfaces the same existing upload error as the main page — this page reuses `ProfitComputation.parse_export/1` rather than re-implementing parsing, so this path is already covered by existing tests and isn't retested here beyond confirming the same assign is used.
+- A malformed writ-catalog seed file (missing a required field) fails the seeder loudly, inside its transaction — never silently skipping one writ and committing the rest, mirroring `CatalogSeeder`.
+
+*State-dependent variations:*
+- Forgetting the snapshot on the main Recipe Finder page also clears it here (shared storage) — visiting this page afterward shows the same no-data state.
+- Re-running the writ seeder once the fuller extraction lands replaces `pending_quest_page` rows with `complete` ones **atomically** — a partial reseed must never leave some writs half-updated.
+
+**Requirements (Phase 1 — this round):**
+- New page, linked from the main Recipe Finder page's nav, not a new profession tab.
+- Table columns: writ name, profession(s), tier, hand-in zone, hand-in NPC, total cost (AH Recent Value only), total reputation (both factions shown), rep-per-gold efficiency — sortable, with the same inline min/max filter-row convention as the existing results table.
+- A writ with pending data is visible with a clear "awaiting extraction" indicator, not hidden and not silently costed as free.
+
+**Deferred to Phase 2/3 (documented here so a future session doesn't have to re-derive the decision):**
+- **Phase 2 — zone grouping:** group writs by a hand-authored "shares a Horde flight hub" zone grouping, order zone visits by that grouping. Needs a small, explicitly-labeled-as-approximate zone→hub reference table; not scraped/verified data, since no such verified source exists for WoW Forever specifically.
+- **Phase 3 — full travel-time pathing:** a Horde flight-path/boat graph with travel-time estimates, used to compute a near-optimal full visiting order. Same provenance caveat as Phase 2, at higher fidelity and higher authoring/maintenance cost.
+- **A fidelity toggle** across ranked-table / zone-grouped / full-pathing once Phase 2 and 3 exist.
+- **Alliance support**, once Horde is proven out.
+- **Valuing reward items** (`rewards.items`, `rewards.item_choices`) via their own AH price and folding them into the efficiency metric — not persisted at all in Phase 1; only reputation and `money_copper` are counted.
+- **Any crafting-cost comparison** for turn-in items we already track as patterns elsewhere — Phase 1 always assumes buying from the AH, per the locked-in decision above.
+- **Netting a non-zero `money_copper` reward into the cost side of the rep-per-gold ratio.** Every writ in the extraction delivered so far rewards 0 gold, so `reward_money_copper` is modeled and stored but not yet subtracted from cost in `WritEfficiency`. Revisit if a future extraction pass surfaces a writ with a real gold reward.

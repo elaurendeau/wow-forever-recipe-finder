@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Craftsman's Writ Route Optimizer — Reference Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d12;
+    --surface: #16161e;
+    --surface-2: #1d1d27;
+    --fg: #ece9e2;
+    --muted: #8b8a97;
+    --border: #2b2b38;
+    --accent: #cf9a35;
+    --accent-fg: #1a1206;
+    --good: #4ade8a;
+    --bad: #f0786a;
+    --mock-bg: #2a2410;
+    --mock-fg: #e0b957;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+  a { color: var(--accent); }
+  ::placeholder { color: var(--muted); opacity: 1; }
+  button { font-family: inherit; }
+
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+  .topbar-left { display: flex; align-items: center; gap: 12px; }
+  h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 19px; }
+  .mock-pill {
+    background: var(--mock-bg); color: var(--mock-fg); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+  }
+  .nav-link {
+    font-size: 12.5px; font-weight: 600; text-decoration: none; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px 11px;
+  }
+  .freshness { color: var(--muted); font-size: 12.5px; font-family: var(--font-mono); }
+  .upload-pill {
+    display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 12px; background: var(--surface-2);
+  }
+  .upload-pill button { all: unset; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--accent); }
+
+  .page { padding: 20px 24px 50px; display: flex; flex-direction: column; gap: 14px; }
+
+  .intro {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 90ch;
+  }
+
+  .filterbar {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;
+  }
+  .filterbar input[type="text"] {
+    padding: 8px 10px; border-radius: 7px; border: 1px solid var(--border); background: var(--bg);
+    color: var(--fg); font-family: var(--font-body); font-size: 13px;
+  }
+
+  .stats { display: flex; gap: 18px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+  .stats strong { color: var(--fg); font-size: 15px; font-family: var(--font-display); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 900px; }
+  th {
+    text-align: left; padding: 9px 14px 2px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); border-bottom: 1px solid var(--border);
+  }
+  th.num { text-align: right; }
+  th.sorted { color: var(--accent); }
+  .filter-row td { padding: 0 14px 8px; background: var(--surface-2); border-bottom: 1px solid var(--border); }
+  .filter-row td.num { text-align: right; }
+  .filter-row input {
+    width: 60px; font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-radius: 5px;
+    color: var(--muted); padding: 2px 6px; text-align: right; font-family: var(--font-mono);
+  }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  td { padding: 10px 14px; vertical-align: middle; }
+  td.num { text-align: right; font-family: var(--font-mono); }
+  .item-name { font-weight: 600; color: var(--fg); text-decoration: none; display: inline-block; }
+  .item-name:hover { color: var(--accent); text-decoration: underline; }
+  .item-sub { color: var(--muted); font-size: 11px; }
+  .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .pending-pill {
+    font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px dashed var(--border);
+    color: var(--muted); cursor: help;
+  }
+  .profit-pos { color: var(--good); font-weight: 600; }
+  .muted-cell { color: var(--muted); }
+  .tooltip-trigger { cursor: help; border-bottom: 1px dotted var(--muted); position: relative; }
+  .tooltip {
+    display: none; position: absolute; z-index: 50; min-width: 220px; right: 0; top: 100%; margin-top: 6px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.45); text-align: left; font-family: var(--font-body); font-size: 12.5px;
+  }
+  .tooltip-trigger:hover .tooltip { display: block; }
+  .tooltip-title { margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .tooltip-label { color: var(--accent); font-weight: 700; }
+  .tooltip-total { font-family: var(--font-mono); color: var(--fg); margin: 0 6px; }
+  .tooltip-line { display: flex; justify-content: space-between; gap: 16px; color: var(--fg); padding: 2px 0; }
+  .tooltip-price { font-family: var(--font-mono); color: var(--muted); white-space: nowrap; }
+
+  .mock-note { font-size: 11.5px; color: var(--muted); font-style: italic; margin-top: -4px; }
+
+  @media (max-width: 600px) {
+    .page { padding: 16px; }
+    .topbar { padding: 12px 16px; flex-wrap: wrap; }
+    .freshness { order: 3; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <h1>Craftsman's Writ Route Optimizer</h1>
+    <a class="nav-link" href="#">← Recipe Finder</a>
+    <span class="mock-pill">Mockup</span>
+  </div>
+  <div class="freshness">Snapshot from 2026-11-16 23:17 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
+  <div class="upload-pill">
+    <button type="button">Upload</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="intro">
+    Buy the writ item and its required turn-in from the Auction House, hand both in for reputation. Cost is always
+    TSM's realm-level <strong>Recent Value</strong> for every item — never the crafting-reagent cost, even for an
+    item this app also tracks as a pattern elsewhere. Horde only for now; zone/travel routing is planned next.
+  </div>
+
+  <div class="filterbar">
+    <input type="text" placeholder="Search writ name...">
+    <span class="mock-note">filter shown for layout — not wired up in this mockup</span>
+  </div>
+
+  <div class="stats" style="margin-bottom: 4px;">
+    <span><strong id="statShown"></strong> shown</span>
+    <span><strong id="statFull"></strong> total writs</span>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Writ</th>
+          <th>Profession</th>
+          <th>Tier</th>
+          <th>Zone</th>
+          <th>Hand-in NPC</th>
+          <th class="num">Cost</th>
+          <th class="num">Reputation</th>
+          <th class="num sorted">Rep/Gold &darr;</th>
+        </tr>
+        <tr class="filter-row">
+          <td></td><td></td><td></td><td></td><td></td>
+          <td class="num"><input type="text" placeholder="max"></td>
+          <td class="num"><input type="text" placeholder="min"></td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  const ROWS = [
+    {
+      name: "Craftsman's Writ: Lesser Troll's Blood Elixir", npc: "Short John Mithril", profession: "Alchemy",
+      tier: "Journeyman", zone: "Stranglethorn Vale", cost: "7s 21c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
+      repPerGold: "2080.4 rep/g",
+      tooltip: { total: "7s 21c", lines: [{ name: "Craftsman's Writ: Lesser Troll's Blood Elixir", total: "3s 74c" }, { name: "Lesser Troll's Blood Elixir x1", total: "3s 47c" }] },
+    },
+    {
+      name: "Craftsman's Writ: Shadow Protection Potion", npc: "Kzixx", profession: "Alchemy",
+      tier: "Journeyman", zone: "Duskwood", cost: "22s 50c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
+      repPerGold: "666.7 rep/g",
+    },
+    {
+      name: "Craftsman's Writ: Heavy Bronze Mace", npc: "Gorgrash", profession: "Blacksmithing",
+      tier: "Journeyman", zone: "Hillsbrad Foothills", cost: null, pending: true, rep: "150",
+      repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics", repPerGold: "—",
+    },
+  ];
+
+  document.getElementById("statShown").textContent = ROWS.length;
+  document.getElementById("statFull").textContent = "150";
+
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = ROWS.map((row) => `
+    <tr>
+      <td>
+        <a class="item-name" href="#" title="Opens the writ's Wowhead quest page — not wired up in this mockup">${row.name}</a>
+        <div class="item-sub">at ${row.npc}</div>
+      </td>
+      <td>${row.profession}</td>
+      <td><span class="source-pill">${row.tier}</span></td>
+      <td class="muted-cell">${row.zone}</td>
+      <td class="muted-cell">${row.npc}</td>
+      <td class="num muted-cell">${row.pending ? `<span class="pending-pill" title="This writ's required item hasn't been extracted yet — not that it needs nothing.">awaiting data</span>` : row.tooltip ? `
+        <span class="tooltip-trigger">${row.cost}
+          <div class="tooltip">
+            <div class="tooltip-title"><span class="tooltip-label">Writ Cost</span><span class="tooltip-total">${row.tooltip.total}</span></div>
+            ${row.tooltip.lines.map((l) => `<div class="tooltip-line"><span>${l.name}</span><span class="tooltip-price">${l.total}</span></div>`).join("")}
+          </div>
+        </span>
+      ` : row.cost}</td>
+      <td class="num">${row.rep}<div class="item-sub">${row.repBreakdown}</div></td>
+      <td class="num profit-pos">${row.repPerGold}</td>
+    </tr>
+  `).join("");
+</script>
+</body>
+</html>

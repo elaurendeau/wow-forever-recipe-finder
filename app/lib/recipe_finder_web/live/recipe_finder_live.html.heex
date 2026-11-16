@@ -1,6 +1,7 @@
 <div class="rf-topbar" id="recipe-finder" phx-hook="TsmSnapshot">
   <div class="rf-topbar-left">
     <h1 class="rf-title">WoW Forever Recipe Finder</h1>
+    <a class="rf-nav-link" href={~p"/writs"}>Craftsman's Writs →</a>
   </div>
   <div class="rf-freshness">
     <%= if @captured_at do %>
@@ -63,7 +64,12 @@
     <% filtered = ResultsFilter.apply(@results, @filter) %>
     <form phx-change="filter_changed">
       <div class="rf-filterbar">
-        <input type="text" name="filter[search]" placeholder="Search item name..." value={@filter.search} />
+        <input
+          type="text"
+          name="filter[search]"
+          placeholder="Search item name..."
+          value={@filter.search}
+        />
         <%= for source <- ResultsFilter.known_sources() do %>
           <label>
             <input
@@ -75,7 +81,11 @@
           </label>
         <% end %>
         <label>
-          <input type="checkbox" name="filter[profitable_only]" checked={@filter.profitable_only?} /> Profitable only
+          <input
+            type="checkbox"
+            name="filter[profitable_only]"
+            checked={@filter.profitable_only?}
+          /> Profitable only
         </label>
       </div>
 
@@ -91,10 +101,18 @@
               <th>Item</th>
               <th class="num">Skill</th>
               <th>Source</th>
-              <th class={th_class(@filter, :sold_per_day)} phx-click="sort_by" phx-value-field="sold_per_day">
+              <th
+                class={th_class(@filter, :sold_per_day)}
+                phx-click="sort_by"
+                phx-value-field="sold_per_day"
+              >
                 Sold/day{sort_indicator(@filter, :sold_per_day)}
               </th>
-              <th class={th_class(@filter, :confidence)} phx-click="sort_by" phx-value-field="confidence">
+              <th
+                class={th_class(@filter, :confidence)}
+                phx-click="sort_by"
+                phx-value-field="confidence"
+              >
                 Confidence{sort_indicator(@filter, :confidence)}
               </th>
               <th class={th_class(@filter, :price)} phx-click="sort_by" phx-value-field="price">
@@ -112,7 +130,11 @@
               <th class={th_class(@filter, :profit)} phx-click="sort_by" phx-value-field="profit">
                 Profit{sort_indicator(@filter, :profit)}
               </th>
-              <th class={th_class(@filter, :profit_pct)} phx-click="sort_by" phx-value-field="profit_pct">
+              <th
+                class={th_class(@filter, :profit_pct)}
+                phx-click="sort_by"
+                phx-value-field="profit_pct"
+              >
                 %{sort_indicator(@filter, :profit_pct)}
               </th>
               <th
@@ -129,7 +151,12 @@
               <td></td>
               <td></td>
               <td>
-                <input type="text" name="filter[min_sold_per_day]" placeholder="min" value={@filter.min_sold_per_day} />
+                <input
+                  type="text"
+                  name="filter[min_sold_per_day]"
+                  placeholder="min"
+                  value={@filter.min_sold_per_day}
+                />
               </td>
               <td>
                 <input
@@ -140,7 +167,12 @@
                 />
               </td>
               <td>
-                <input type="text" name="filter[max_price_copper]" placeholder="max" value={@filter.max_price_copper} />
+                <input
+                  type="text"
+                  name="filter[max_price_copper]"
+                  placeholder="max"
+                  value={@filter.max_price_copper}
+                />
               </td>
               <td>
                 <input
@@ -152,10 +184,20 @@
               </td>
               <td></td>
               <td>
-                <input type="text" name="filter[min_profit_copper]" placeholder="min" value={@filter.min_profit_copper} />
+                <input
+                  type="text"
+                  name="filter[min_profit_copper]"
+                  placeholder="min"
+                  value={@filter.min_profit_copper}
+                />
               </td>
               <td>
-                <input type="text" name="filter[min_profit_pct]" placeholder="min %" value={@filter.min_profit_pct} />
+                <input
+                  type="text"
+                  name="filter[min_profit_pct]"
+                  placeholder="min %"
+                  value={@filter.min_profit_pct}
+                />
               </td>
               <td>
                 <input
@@ -182,7 +224,11 @@
                   <div class="rf-item-tier">{to_string(r.pattern.tier)}</div>
                 </td>
                 <td class="num">{r.pattern.skill}</td>
-                <td><span class="rf-source-pill">{if r.pattern.source, do: to_string(r.pattern.source), else: "—"}</span></td>
+                <td>
+                  <span class="rf-source-pill">{if r.pattern.source,
+                    do: to_string(r.pattern.source),
+                    else: "—"}</span>
+                </td>
                 <td class="num">{format_number(r.sold_per_day)}</td>
                 <td class="num rf-muted">{format_pct(r.sale_confidence_pct)}</td>
                 <td class="num">{format_copper(r.price_copper)}</td>
@@ -202,8 +248,10 @@
                           <span class="rf-tooltip-label">Crafting Cost</span>
                           <span class="rf-tooltip-total">{format_copper(r.mat_cost_copper)}</span>
                           <span class={[
-                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",
-                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 && "rf-profit-neg"
+                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 &&
+                              "rf-profit-pos",
+                            r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 &&
+                              "rf-profit-neg"
                           ]}>
                             {format_profit(r.net_profit_per_unit_copper)}
                           </span>
@@ -220,8 +268,10 @@
                 </td>
                 <td class={[
                   "num",
-                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 && "rf-profit-pos",
-                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 && "rf-profit-neg"
+                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper > 0 &&
+                    "rf-profit-pos",
+                  r.net_profit_per_unit_copper && r.net_profit_per_unit_copper <= 0 &&
+                    "rf-profit-neg"
                 ]}>
                   {format_profit(r.net_profit_per_unit_copper)}
                 </td>
@@ -234,8 +284,10 @@
                 </td>
                 <td class={[
                   "num",
-                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper > 0 && "rf-profit-pos",
-                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper <= 0 && "rf-profit-neg"
+                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper > 0 &&
+                    "rf-profit-pos",
+                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper <= 0 &&
+                    "rf-profit-neg"
                 ]}>
                   {format_profit(r.recent_profit_per_unit_copper)}
                 </td>
@@ -248,7 +300,9 @@
   <% else %>
     <div class="rf-empty">
       <h3>{profession_label(@active_profession)} isn't scraped yet</h3>
-      <p>Same pipeline as Tailoring — roughly 10–30 min of background scraping once we start it.</p>
+      <p>
+        Same pipeline as Tailoring — roughly 10–30 min of background scraping once we start it.
+      </p>
     </div>
   <% end %>
 </div>

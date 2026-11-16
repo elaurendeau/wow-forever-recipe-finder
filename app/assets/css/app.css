@@ -52,6 +52,19 @@ a {
   align-items: center;
   gap: 12px;
 }
+.rf-nav-link {
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 11px;
+}
+.rf-nav-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 .rf-title {
   margin: 0;
   font-family: var(--font-display);
@@ -351,6 +364,23 @@ a {
   margin-bottom: 14px;
   font-size: 13px;
   color: var(--muted);
+}
+.rf-writs-intro {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.writ-pending-pill {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px dashed var(--border);
+  color: var(--muted);
+  cursor: help;
 }
 .rf-path-hint code {
   font-family: var(--font-mono);
