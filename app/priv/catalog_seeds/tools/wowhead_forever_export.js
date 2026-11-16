@@ -11,8 +11,10 @@
  * Data-shape reference: docs/DATA_SOURCES.md § Wowhead (WoW Forever recipe data).
  *
  * Usage:
- *   1. Open https://www.wowhead.com/forever/spells/professions/<wowhead-slug>
- *      (e.g. .../professions/first-aid) and wait for the recipe table to load.
+ *   1. Open the profession's Wowhead page and wait for the recipe table to load:
+ *        primary:   https://www.wowhead.com/forever/spells/professions/<slug>
+ *        secondary: https://www.wowhead.com/forever/spells/secondary-skills/<slug>
+ *      (cooking, first-aid and fishing are secondary skills).
  *   2. Paste this whole file into the DevTools console (F12 -> Console).
  *   3. Run:   await exportForeverSeed()
  *      The browser downloads `forever_seed_<slug>.json` and the console logs a
@@ -34,8 +36,10 @@
     mining: ["mining", "Mining"],
     herbalism: ["herbalism", "Herbalism"],
     skinning: ["skinning", "Skinning"],
+    // Secondary skills live under /forever/spells/secondary-skills/<slug>.
     cooking: ["cooking", "Cooking"],
     "first-aid": ["firstaid", "First Aid"],
+    fishing: ["fishing", "Fishing"],
   };
 
   // The previous committed seeds, used only to carry over each pattern's and
@@ -70,10 +74,10 @@
   }
 
   window.exportForeverSeed = async function ({ download = true } = {}) {
-    const pageSlug = location.pathname.match(/\/forever\/spells\/professions\/([^/?#]+)/)?.[1];
+    const pageSlug = location.pathname.match(/\/forever\/spells\/(?:professions|secondary-skills)\/([^/?#]+)/)?.[1];
     if (!pageSlug || !PROFESSIONS[pageSlug]) {
       throw new Error(
-        `Open a supported page first: https://www.wowhead.com/forever/spells/professions/<one of ${Object.keys(PROFESSIONS).join(", ")}>`
+        `Open a supported page first: https://www.wowhead.com/forever/spells/{professions|secondary-skills}/<one of ${Object.keys(PROFESSIONS).join(", ")}>`
       );
     }
     const spellsLv = window.g_listviews?.spells?.data;
