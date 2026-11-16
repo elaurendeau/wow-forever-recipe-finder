@@ -73,19 +73,8 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
 
     reagent_breakdown = build_reagent_breakdown(pattern.reagents, snapshot)
 
-    {net_profit_per_unit, profit_pct} =
-      case {price, mat_cost} do
-        {p, m} when is_integer(p) and is_integer(m) ->
-          price_after_cut = round(p * (1 - @ah_cut_pct))
-          profit = price_after_cut - m
-          # ROI against what you spent — undefined (not zero) when the
-          # craft costs nothing, rather than a divide-by-zero.
-          pct = if m > 0, do: profit / m * 100, else: nil
-          {profit, pct}
-
-        _incomplete ->
-          {nil, nil}
-      end
+    {net_profit_per_unit, profit_pct} = compute_profit(price, mat_cost)
+    {recent_profit_per_unit, _recent_profit_pct} = compute_profit(recent_value, mat_cost)
 
     %ProfitResult{
       pattern: pattern,
@@ -96,9 +85,25 @@ defmodule WowForeverRecipeFinder.ProfitComputation do
       mat_cost_copper: mat_cost,
       net_profit_per_unit_copper: net_profit_per_unit,
       profit_pct: profit_pct,
+      recent_profit_per_unit_copper: recent_profit_per_unit,
       missing_data_reasons: Enum.reverse(reasons),
       reagent_breakdown: reagent_breakdown
     }
+  end
+
+  # Shared by the Price-based Profit and the Recent-Value-based Recent
+  # Profit — same AH cut, same "undefined ROI on a free craft" rule.
+  defp compute_profit(sale_price, mat_cost) do
+    case {sale_price, mat_cost} do
+      {p, m} when is_integer(p) and is_integer(m) ->
+        price_after_cut = round(p * (1 - @ah_cut_pct))
+        profit = price_after_cut - m
+        pct = if m > 0, do: profit / m * 100, else: nil
+        {profit, pct}
+
+      _incomplete ->
+        {nil, nil}
+    end
   end
 
   # For the Cost column's hover tooltip — per-reagent lines, independent

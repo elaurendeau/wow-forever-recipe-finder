@@ -56,6 +56,46 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
            ]
   end
 
+  test "recent profit is computed from recent_value_copper, independently of price_copper" do
+    cloth = item(1, "Bolt of Linen Cloth")
+    shirt = item(2, "White Linen Shirt")
+    pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
+
+    snap = %PriceSnapshot{
+      prices_by_item_id: %{
+        1 => %WowForeverRecipeFinder.ItemPrice{wowhead_id: 1, price_copper: 50, sold_per_day: 100.0, sale_confidence_pct: 90.0},
+        2 => %WowForeverRecipeFinder.ItemPrice{
+          wowhead_id: 2,
+          price_copper: 200,
+          sold_per_day: 10.0,
+          sale_confidence_pct: 80.0,
+          recent_value_copper: 300
+        }
+      }
+    }
+
+    result = ProfitComputation.compute_result(pat, snap)
+
+    assert result.price_copper == 200
+    assert result.recent_value_copper == 300
+    # Price-based profit stays on the 200 price: round(200*0.95)-100 = 90.
+    assert result.net_profit_per_unit_copper == 90
+    # Recent profit uses recent_value_copper instead: round(300*0.95)-100 = 185.
+    assert result.recent_profit_per_unit_copper == 185
+  end
+
+  test "recent profit is nil when recent_value_copper is nil (e.g. a commodity item)" do
+    cloth = item(1, "Bolt of Linen Cloth")
+    shirt = item(2, "White Linen Shirt")
+    pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
+    snap = snapshot([{1, 50, 100.0, 90.0}, {2, 200, 10.0, 80.0}])
+
+    result = ProfitComputation.compute_result(pat, snap)
+
+    assert result.recent_value_copper == nil
+    assert result.recent_profit_per_unit_copper == nil
+  end
+
   test "crafted item has no sale data: price/profit are nil, reason recorded, never a fabricated zero" do
     cloth = item(1, "Bolt of Linen Cloth")
     shirt = item(2, "White Linen Shirt")

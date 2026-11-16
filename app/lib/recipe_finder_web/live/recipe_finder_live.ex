@@ -11,6 +11,11 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
 
   alias WowForeverRecipeFinder.{ProfitComputation, ResultsFilter}
 
+  # Jewelcrafting and Inscription don't exist in WoW Forever at all
+  # (confirmed: the Wowhead export tool's own profession list in
+  # priv/catalog_seeds/tools/wowhead_forever_export.js never included
+  # either) — not "not scraped yet" like the others once were, so no
+  # tab for them at all rather than a permanent "soon" pill.
   @professions [
     {"tailoring", "Tailoring"},
     {"enchanting", "Enchanting"},
@@ -18,8 +23,6 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
     {"leatherworking", "Leatherworking"},
     {"alchemy", "Alchemy"},
     {"engineering", "Engineering"},
-    {"jewelcrafting", "Jewelcrafting"},
-    {"inscription", "Inscription"},
     {"cooking", "Cooking"},
     {"firstaid", "First Aid"}
   ]
@@ -111,8 +114,10 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         min_sold_per_day: parse_float(Map.get(params, "min_sold_per_day")),
         min_confidence_pct: parse_float(Map.get(params, "min_confidence_pct")),
         max_price_copper: parse_int(Map.get(params, "max_price_copper")),
+        max_recent_value_copper: parse_int(Map.get(params, "max_recent_value_copper")),
         min_profit_copper: parse_int(Map.get(params, "min_profit_copper")),
-        min_profit_pct: parse_float(Map.get(params, "min_profit_pct"))
+        min_profit_pct: parse_float(Map.get(params, "min_profit_pct")),
+        min_recent_profit_copper: parse_int(Map.get(params, "min_recent_profit_copper"))
       })
 
     {:noreply, assign(socket, filter: filter)}

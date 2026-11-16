@@ -19,6 +19,7 @@ defmodule WowForeverRecipeFinder.ProfitResult do
     :mat_cost_copper,
     :net_profit_per_unit_copper,
     :profit_pct,
+    :recent_profit_per_unit_copper,
     :missing_data_reasons,
     reagent_breakdown: []
   ]
@@ -43,6 +44,7 @@ defmodule WowForeverRecipeFinder.ProfitResult do
           mat_cost_copper: non_neg_integer() | nil,
           net_profit_per_unit_copper: integer() | nil,
           profit_pct: float() | nil,
+          recent_profit_per_unit_copper: integer() | nil,
           missing_data_reasons: [missing_data_reason()],
           reagent_breakdown: [reagent_line()]
         }
