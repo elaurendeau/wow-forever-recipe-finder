@@ -452,10 +452,22 @@ a {
   border-top: 1px solid var(--border);
   padding-top: 10px;
 }
-.rf-shopping-list-items {
+.rf-shopping-list-groups {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
+}
+.rf-shopping-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.rf-shopping-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 13px;
 }
 .rf-shopping-list-line {
   display: flex;
@@ -463,6 +475,27 @@ a {
   gap: 10px;
   font-size: 13px;
   font-family: var(--font-mono);
+  padding-left: 26px;
+}
+.rf-writ-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.rf-writ-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
 }
 .writ-pending-pill {
   font-size: 11px;

@@ -37,8 +37,10 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         filter: WritResultsFilter.default_criteria(),
         # Per docs/PRD.md § 7.9: selection is session-only for this
         # round, deliberately not persisted to localStorage like the
-        # uploaded snapshot is.
-        selected_writ_ids: MapSet.new(),
+        # uploaded snapshot is. An ordered list, not a MapSet — order
+        # is the source of the number shown next to each checked row
+        # and each shopping-list group.
+        selected_writ_ids: [],
         # The shopping list lives behind a FAB + popup (not inline in
         # the page flow, so selecting rows never shifts the table) —
         # `shopping_list_unseen?` drives the FAB's "modified since you
@@ -101,7 +103,7 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         captured_at: nil,
         results: [],
         upload_error: nil,
-        selected_writ_ids: MapSet.new(),
+        selected_writ_ids: [],
         shopping_list_open?: false,
         shopping_list_unseen?: false
       )
@@ -114,10 +116,13 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
     id = String.to_integer(id_str)
     selected = socket.assigns.selected_writ_ids
 
-    selected =
-      if MapSet.member?(selected, id),
-        do: MapSet.delete(selected, id),
-        else: MapSet.put(selected, id)
+    # Appended, not prepended — the first writ checked is #1. A
+    # writ's number is just its position in this list, recomputed on
+    # every render (selection_number/2 below), so unchecking one
+    # shifts everything after it down by one — same as removing a
+    # line from a numbered list. Re-checking it later appends it
+    # again at the end, with whatever number that position is now.
+    selected = if id in selected, do: List.delete(selected, id), else: selected ++ [id]
 
     # Only flag "unseen" while the popup is closed — a change made
     # while it's open is already visible, no badge needed for it.
@@ -130,7 +135,11 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
 
   def handle_event("clear_selection", _params, socket) do
     {:noreply,
-     assign(socket, selected_writ_ids: MapSet.new(), shopping_list_open?: false, shopping_list_unseen?: false)}
+     assign(socket,
+       selected_writ_ids: [],
+       shopping_list_open?: false,
+       shopping_list_unseen?: false
+     )}
   end
 
   def handle_event("toggle_shopping_list_panel", _params, socket) do
@@ -234,6 +243,16 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
   defp format_rep_per_gold(v), do: "#{:erlang.float_to_binary(v * 1.0, decimals: 1)} rep/g"
 
   defp pending_data?(result), do: :no_required_items_data in result.missing_data_reasons
+
+  # The little number shown next to a checked row's checkbox, and the
+  # same number tagging that writ's group in the shopping-list popup —
+  # nil (not rendered) for a writ that isn't selected at all.
+  defp selection_number(selected_writ_ids, writ_id) do
+    case Enum.find_index(selected_writ_ids, &(&1 == writ_id)) do
+      nil -> nil
+      index -> index + 1
+    end
+  end
 
   defp sort_indicator(filter, field) do
     cond do

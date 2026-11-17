@@ -32,36 +32,31 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
     }
   end
 
-  test "build/2 includes the writ item and required items only for selected writs" do
-    selected =
-      result(
-        id: 1,
-        writ_item_display_name: "Craftsman's Writ: Elixir of Ogre's Strength",
-        writ_item_cost: 300,
-        required_item_breakdown: [
-          %{
-            display_name: "Elixir of Ogre Strength",
-            quantity: 1,
-            unit_price_copper: 300,
-            line_total_copper: 300
-          }
-        ]
-      )
+  test "build_groups/2 returns one group per selected writ, numbered in selection order" do
+    a = result(id: 1, name: "Craftsman's Writ: A")
+    b = result(id: 2, name: "Craftsman's Writ: B")
+    c = result(id: 3, name: "Craftsman's Writ: C")
 
-    unselected =
-      result(id: 2, writ_item_display_name: "Craftsman's Writ: Unselected", writ_item_cost: 999)
+    # Selected B first, then A — numbering follows selection order, not writ id.
+    groups = WritShoppingList.build_groups([a, b, c], [2, 1])
 
-    lines = WritShoppingList.build([selected, unselected], MapSet.new([1]))
-
-    assert Enum.map(lines, & &1.display_name) == [
-             "Craftsman's Writ: Elixir of Ogre's Strength",
-             "Elixir of Ogre Strength"
+    assert Enum.map(groups, &{&1.number, &1.writ.name}) == [
+             {1, "Craftsman's Writ: B"},
+             {2, "Craftsman's Writ: A"}
            ]
-
-    refute Enum.any?(lines, &(&1.display_name == "Craftsman's Writ: Unselected"))
   end
 
-  test "build/2 sums quantities when two selected writs need the same item name" do
+  test "build_groups/2 excludes unselected writs" do
+    selected = result(id: 1, name: "Craftsman's Writ: Selected")
+    unselected = result(id: 2, name: "Craftsman's Writ: Unselected")
+
+    groups = WritShoppingList.build_groups([selected, unselected], [1])
+
+    assert length(groups) == 1
+    assert hd(groups).writ.name == "Craftsman's Writ: Selected"
+  end
+
+  test "each group's lines are the writ item followed by its required items, never merged with another writ's" do
     a =
       result(
         id: 1,
@@ -81,7 +76,7 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
       result(
         id: 2,
         writ_item_display_name: "Craftsman's Writ: B",
-        writ_item_cost: 100,
+        writ_item_cost: 200,
         required_item_breakdown: [
           %{
             display_name: "Thorium Bar",
@@ -92,14 +87,42 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
         ]
       )
 
-    lines = WritShoppingList.build([a, b], MapSet.new([1, 2]))
-    thorium = Enum.find(lines, &(&1.display_name == "Thorium Bar"))
+    [group_a, group_b] = WritShoppingList.build_groups([a, b], [1, 2])
 
-    assert thorium.quantity == 7
-    assert thorium.line_total_copper == 350
+    # Both groups independently list "Thorium Bar" with their OWN
+    # writ's quantity — not summed into one shared line.
+    assert group_a.lines == [
+             %{
+               display_name: "Craftsman's Writ: A",
+               quantity: 1,
+               unit_price_copper: 100,
+               line_total_copper: 100
+             },
+             %{
+               display_name: "Thorium Bar",
+               quantity: 2,
+               unit_price_copper: 50,
+               line_total_copper: 100
+             }
+           ]
+
+    assert group_b.lines == [
+             %{
+               display_name: "Craftsman's Writ: B",
+               quantity: 1,
+               unit_price_copper: 200,
+               line_total_copper: 200
+             },
+             %{
+               display_name: "Thorium Bar",
+               quantity: 5,
+               unit_price_copper: 50,
+               line_total_copper: 250
+             }
+           ]
   end
 
-  test "build/2 keeps an item on the list even when its cost is unknown, never dropping it" do
+  test "a group's lines still appear even when the writ's cost is unknown, never dropped" do
     pending =
       result(
         id: 1,
@@ -115,8 +138,8 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
         ]
       )
 
-    lines = WritShoppingList.build([pending], MapSet.new([1]))
-    mystery = Enum.find(lines, &(&1.display_name == "Mystery Item"))
+    [group] = WritShoppingList.build_groups([pending], [1])
+    mystery = Enum.find(group.lines, &(&1.display_name == "Mystery Item"))
 
     assert mystery.quantity == 1
     assert mystery.line_total_copper == nil
@@ -131,26 +154,26 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
     assert WritShoppingList.total_cost_copper(lines) == nil
   end
 
-  test "total_cost_copper/1 sums every line when all costs are known" do
+  test "total_cost_copper/1 sums every line across every group, even repeated item names" do
     lines = [
-      %{display_name: "A", quantity: 1, unit_price_copper: 100, line_total_copper: 100},
-      %{display_name: "B", quantity: 2, unit_price_copper: 50, line_total_copper: 100}
+      %{display_name: "Thorium Bar", quantity: 2, unit_price_copper: 50, line_total_copper: 100},
+      %{display_name: "Thorium Bar", quantity: 5, unit_price_copper: 50, line_total_copper: 250}
     ]
 
-    assert WritShoppingList.total_cost_copper(lines) == 200
+    assert WritShoppingList.total_cost_copper(lines) == 350
   end
 
   test "total_cost_copper/1 is 0 for an empty list" do
     assert WritShoppingList.total_cost_copper([]) == 0
   end
 
-  test "total_reputation/2 sums only selected writs' reputation" do
+  test "total_reputation/2 sums only selected writs' reputation, in no particular order" do
     a = result(id: 1, reputation: 75)
     b = result(id: 2, reputation: 150)
 
-    assert WritShoppingList.total_reputation([a, b], MapSet.new([1])) == 75
-    assert WritShoppingList.total_reputation([a, b], MapSet.new([1, 2])) == 225
-    assert WritShoppingList.total_reputation([a, b], MapSet.new()) == 0
+    assert WritShoppingList.total_reputation([a, b], [1]) == 75
+    assert WritShoppingList.total_reputation([a, b], [2, 1]) == 225
+    assert WritShoppingList.total_reputation([a, b], []) == 0
   end
 
   test "to_auctionator_text/2 matches Auctionator's real Shopping List format: *** header then one name per line, no quantities" do
@@ -169,5 +192,15 @@ defmodule WowForeverRecipeFinder.WritShoppingListTest do
     assert text == "*** WoW Forever Writs\nDark Iron Ore\nThorium Bar\n"
     refute text =~ "20"
     refute text =~ "7"
+  end
+
+  test "to_auctionator_text/2 lists a repeated item name only once, across groups" do
+    lines = [
+      %{display_name: "Thorium Bar", quantity: 2, unit_price_copper: 50, line_total_copper: 100},
+      %{display_name: "Thorium Bar", quantity: 5, unit_price_copper: 50, line_total_copper: 250}
+    ]
+
+    assert WritShoppingList.to_auctionator_text("WoW Forever Writs", lines) ==
+             "*** WoW Forever Writs\nThorium Bar\n"
   end
 end

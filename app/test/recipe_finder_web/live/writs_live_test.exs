@@ -189,5 +189,48 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       assert html =~ "Craftsman&#39;s Writ: Heavy Bronze Mace"
       assert html =~ "total cost"
     end
+
+    test "each checked writ gets a number in selection order, and the popup groups by that same number",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      first_id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      second_id = writ_id!("Craftsman's Writ: Heavy Bronze Mace")
+
+      html1 = view |> element("input[phx-value-id='#{first_id}']") |> render_click()
+      # The first writ checked shows a "1" badge right away, on the table row itself.
+      assert html1 =~ ~r/rf-writ-number[^>]*>\s*1\s*</
+
+      html2 = view |> element("input[phx-value-id='#{second_id}']") |> render_click()
+      assert html2 =~ ~r/rf-writ-number[^>]*>\s*2\s*</
+
+      popup = open_shopping_list(view)
+
+      # Both writs' own groups show up, each tagged with its number,
+      # each still listing its own writ item line under that group.
+      assert popup =~
+               ~r/rf-writ-number[^>]*>\s*1\s*<\/span>\s*<span>Craftsman&#39;s Writ: Elixir of Ogre&#39;s Strength/
+
+      assert popup =~
+               ~r/rf-writ-number[^>]*>\s*2\s*<\/span>\s*<span>Craftsman&#39;s Writ: Heavy Bronze Mace/
+    end
+
+    test "unchecking the first of two selected writs renumbers the remaining one", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      first_id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      second_id = writ_id!("Craftsman's Writ: Heavy Bronze Mace")
+
+      view |> element("input[phx-value-id='#{first_id}']") |> render_click()
+      view |> element("input[phx-value-id='#{second_id}']") |> render_click()
+      html = view |> element("input[phx-value-id='#{first_id}']") |> render_click()
+
+      # The remaining writ (formerly #2) is now #1 — numbers reflect
+      # current position, not a sticky tag assigned once.
+      assert html =~ ~r/rf-writ-number[^>]*>\s*1\s*</
+      refute html =~ ~r/rf-writ-number[^>]*>\s*2\s*</
+    end
   end
 end

@@ -154,26 +154,28 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 
 ### 7.9 Feature I — Writ Shopping List
 
-**Added 2026-11-17, revised 2026-11-17.** A visitor checks the writs they intend to do; the page aggregates every writ item and required item across the selection into one shopping list (quantities summed across writs that need the same item), and a copy button exports it in a format the [Auctionator](https://github.com/tiny/auctionator) addon's Shopping List feature can import.
+**Added 2026-11-17, revised 2026-11-17 (twice).** A visitor checks the writs they intend to do; the page builds a shopping list — one group per selected writ, its writ item and required item(s) together — and a copy button exports it in a format the [Auctionator](https://github.com/tiny/auctionator) addon's Shopping List feature can import.
 
 **Presentation: a FAB + popup, not an inline panel.** The first cut placed the shopping list inline in the page flow, which shifted the whole results table down every time a row was checked — rejected on sight. It now lives behind a floating action button — bottom-right (this app's own as-yet-unbuilt calculator FAB in `docs/mockups/recipe-finder-reference.html` sits bottom-left; deliberately the opposite corner here, not an inconsistency) — which only appears once at least one writ is selected. A small red badge appears on the FAB whenever the selection changes while the popup is closed, and clears the moment the popup is opened — so a visitor who's mid-browse always has an unobtrusive "something changed" signal without the page ever shifting under them.
+
+**Numbered, grouped by writ — not merged by item name.** A second revision: each checked row shows a small number badge (1, 2, 3…, in the order checked), and the popup groups that writ's items under the same number, rather than merging same-named items from different writs into one flat deduplicated-by-name line (the first cut's approach). A visitor can now tell, at a glance, which writ a given item in the list is actually for. Numbers are a row's *current position* in the selection, recomputed live — unchecking one shifts every later number down by one, same as deleting a line from a numbered list; re-checking it later appends it at the end with whatever number that position is now. The Auctionator export text still deduplicates identical item names across groups (its format has no use for a repeated watch-list entry), and the running total cost still sums every line correctly regardless of grouping, since copper totals don't care whether they were added up per-group or all at once.
 
 **Verified, not guessed, per CLAUDE.md's Diagnosis Discipline:** Auctionator's shopping-list export/import format was read directly from its own Lua source (`Atr_ShpList_Export_GetText` and `Atr_SList_ImportCore` in `AuctionatorConfig.lua`) rather than assumed from memory or a forum post. The real format is a `*** <List Name>` header line followed by one plain item display name per line, until the next `***` line or end of text — **no item IDs, no quantities**. Auctionator's shopping list is a watch-list of names, not a cart with amounts. This directly shapes the design below: quantities are this app's own display concern, dropped entirely from the exported text.
 
 **Use cases:**
 
 *Happy path:*
-- Checking a writ's row checkbox adds its writ item and required item(s) to the shopping list and makes the FAB appear — the results table itself never shifts.
-- Clicking the FAB opens the popup: quantities and (where computable) per-item and total AH cost in Recent Value, plus total reputation across every selected writ.
-- Two selected writs that happen to need the same item name sum to one line with the combined quantity, not two separate lines.
-- The copy button copies `*** <list name>\n<item name>\n<item name>...` — verified-format text ready to paste into Auctionator's own Import dialog.
-- Unchecking a writ removes its contribution from the list; if another selected writ still needs that same item, its line's quantity drops rather than disappearing.
+- Checking a writ's row checkbox shows a number badge next to it (its position in selection order) and makes the FAB appear — the results table itself never shifts.
+- Clicking the FAB opens the popup: one group per selected writ, each tagged with its own number, its writ item and required item(s) listed together with quantities and (where computable) per-item and total AH cost in Recent Value, plus total reputation across every selected writ.
+- The copy button copies `*** <list name>\n<item name>\n<item name>...` (every distinct item name across every group, deduplicated once) — verified-format text ready to paste into Auctionator's own Import dialog.
+- Unchecking a writ removes its whole group from the list; every later writ's number shifts down by one to close the gap.
 - Unchecking the last selected writ (or clicking "clear" inside the popup) empties the selection and hides the FAB and popup entirely.
 
 *Boundary/edge conditions:*
-- A selected writ with no computable cost (missing Recent Value, or `pending_quest_page` prior to the full extraction) still contributes its item(s) to the shopping list by name/quantity — cost and the running total show as unknown (`—`) rather than silently excluding the item or fabricating a cost.
-- A required item needed in bulk (e.g. 200 Crafted Solid Shot for one real writ in the catalog) shows its real quantity in the panel; the exported Auctionator text still lists its name exactly once, since the format has no quantity field at all.
+- A selected writ with no computable cost (missing Recent Value, or `pending_quest_page` prior to the full extraction) still forms its own group, listed by name/quantity — cost and the running total show as unknown (`—`) rather than silently excluding the item or fabricating a cost.
+- A required item needed in bulk (e.g. 200 Crafted Solid Shot for one real writ in the catalog) shows its real quantity inside that writ's own group; the exported Auctionator text still lists its name exactly once, since the format has no quantity field at all.
+- Two different selected writs that happen to need the same item name each keep their own group and their own line for it (never merged into one line) — only the Auctionator export text, and the running total cost, treat them as what they are: two real, separate purchases.
 - Checking/unchecking more rows while the popup is already open never shows the red badge — the visitor is already looking at the list, so there's nothing to flag. The badge only appears for changes made while the popup is closed, and only clears again once it's reopened.
 
 *State-dependent variations:*
-- Selection, popup-open state, and the "unseen changes" badge all live in LiveView socket state only for this round — none of it persists across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.
+- Selection (an ordered list, not a set — order is what the number badges and group order are derived from), popup-open state, and the "unseen changes" badge all live in LiveView socket state only for this round — none of it persists across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.

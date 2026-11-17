@@ -1,10 +1,16 @@
 defmodule WowForeverRecipeFinder.WritShoppingList do
   @moduledoc """
-  Aggregates the writ item and every required item across a visitor's
-  selected writs into one shopping list — per docs/PRD.md § 7.9, one
-  line per distinct item name, quantities summed across every selected
-  writ that needs it. Pure function, no I/O — see
+  Builds the shopping list for a visitor's selected writs — per
+  docs/PRD.md § 7.9, one group per selected writ (writ item + its
+  required item(s)), in selection order, numbered 1.. so each group
+  can be identified back to the same number shown next to that writ's
+  checkbox in the table. Pure functions, no I/O — see
   docs/ELIXIR_TEST_MANIFESTO.md § What Still Gets a Plain Unit Test.
+
+  Deliberately **not** merged into one flat list by item name across
+  writs (an earlier cut did this) — grouping by writ, each tagged with
+  its selection number, is what the feature's own use case calls for:
+  seeing which writ a given item is for.
 
   `to_auctionator_text/2` exports Auctionator's real Shopping List
   format, verified directly from its own Lua source
@@ -12,10 +18,12 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
   `AuctionatorConfig.lua`) rather than assumed — a `*** <list name>`
   header line, then one plain item display name per line. That format
   has **no quantity field at all**, so quantities computed here are
-  this app's own display concern and are dropped entirely on export.
+  this app's own display concern and are dropped entirely on export;
+  a name appearing in more than one group is deduplicated there too,
+  since a repeated watch-list entry would be meaningless to it.
   """
 
-  alias WowForeverRecipeFinder.WritEfficiencyResult
+  alias WowForeverRecipeFinder.{Writ, WritEfficiencyResult}
 
   @type line :: %{
           display_name: String.t(),
@@ -24,21 +32,26 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
           line_total_copper: non_neg_integer() | nil
         }
 
-  @doc "One line per distinct item name across every selected writ's writ item + required items, quantities summed."
-  @spec build([WritEfficiencyResult.t()], MapSet.t()) :: [line()]
-  def build(results, selected_writ_ids) do
-    results
-    |> Enum.filter(&MapSet.member?(selected_writ_ids, &1.writ.id))
-    |> Enum.flat_map(&writ_lines/1)
-    |> merge_by_name()
-    |> Enum.sort_by(& &1.display_name)
+  @type group :: %{number: pos_integer(), writ: Writ.t(), lines: [line()]}
+
+  @doc "One group per selected writ, in selection order, numbered 1.. — the writ item line first, then its required items."
+  @spec build_groups([WritEfficiencyResult.t()], [pos_integer()]) :: [group()]
+  def build_groups(results, selected_writ_ids_in_order) do
+    results_by_writ_id = Map.new(results, &{&1.writ.id, &1})
+
+    selected_writ_ids_in_order
+    |> Enum.with_index(1)
+    |> Enum.map(fn {writ_id, number} ->
+      result = Map.fetch!(results_by_writ_id, writ_id)
+      %{number: number, writ: result.writ, lines: writ_lines(result)}
+    end)
   end
 
-  @doc "Total reputation if every selected writ were turned in — nil selections contribute nothing, never a fabricated figure."
-  @spec total_reputation([WritEfficiencyResult.t()], MapSet.t()) :: non_neg_integer()
+  @doc "Total reputation if every selected writ were turned in."
+  @spec total_reputation([WritEfficiencyResult.t()], [pos_integer()]) :: non_neg_integer()
   def total_reputation(results, selected_writ_ids) do
     results
-    |> Enum.filter(&MapSet.member?(selected_writ_ids, &1.writ.id))
+    |> Enum.filter(&(&1.writ.id in selected_writ_ids))
     |> Enum.map(& &1.total_reputation)
     |> Enum.sum()
   end
@@ -56,7 +69,8 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
   @doc "Auctionator's real Shopping List import/export text — see the moduledoc for where this format was verified."
   @spec to_auctionator_text(String.t(), [line()]) :: String.t()
   def to_auctionator_text(list_name, lines) do
-    "*** #{list_name}\n" <> Enum.map_join(lines, "\n", & &1.display_name) <> "\n"
+    names = lines |> Enum.uniq_by(& &1.display_name) |> Enum.map(& &1.display_name)
+    "*** #{list_name}\n" <> Enum.join(names, "\n") <> "\n"
   end
 
   defp writ_lines(%WritEfficiencyResult{} = result) do
@@ -70,20 +84,5 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
     }
 
     [writ_item_line | result.required_item_breakdown]
-  end
-
-  defp merge_by_name(lines) do
-    lines
-    |> Enum.group_by(& &1.display_name)
-    |> Enum.map(fn {name, group} -> merge_group(name, group) end)
-  end
-
-  defp merge_group(name, group) do
-    %{
-      display_name: name,
-      quantity: Enum.sum(Enum.map(group, & &1.quantity)),
-      unit_price_copper: Enum.find_value(group, & &1.unit_price_copper),
-      line_total_copper: total_cost_copper(group)
-    }
   end
 end

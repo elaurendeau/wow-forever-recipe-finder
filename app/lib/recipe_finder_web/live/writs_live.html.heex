@@ -99,13 +99,16 @@
       <tbody>
         <%= for r <- filtered do %>
           <tr>
-            <td>
+            <td class="rf-writ-select">
               <input
                 type="checkbox"
                 phx-click="toggle_writ_selection"
                 phx-value-id={r.writ.id}
-                checked={MapSet.member?(@selected_writ_ids, r.writ.id)}
+                checked={r.writ.id in @selected_writ_ids}
               />
+              <%= if (n = selection_number(@selected_writ_ids, r.writ.id)) do %>
+                <span class="rf-writ-number">{n}</span>
+              <% end %>
             </td>
             <td>
               <a
@@ -179,7 +182,7 @@
   </div>
 </div>
 
-<%= if MapSet.size(@selected_writ_ids) > 0 do %>
+<%= if @selected_writ_ids != [] do %>
   <button
     type="button"
     class="rf-shopping-fab"
@@ -204,7 +207,8 @@
   </button>
 
   <%= if @shopping_list_open? do %>
-    <% shopping_lines = WritShoppingList.build(@results, @selected_writ_ids) %>
+    <% groups = WritShoppingList.build_groups(@results, @selected_writ_ids) %>
+    <% all_lines = Enum.flat_map(groups, & &1.lines) %>
     <div class="rf-shopping-popup">
       <div class="rf-shopping-popup-header">
         <strong>Shopping List</strong>
@@ -218,16 +222,24 @@
         </button>
       </div>
       <div>
-        <strong>{MapSet.size(@selected_writ_ids)}</strong>
+        <strong>{length(@selected_writ_ids)}</strong>
         writs selected —
         <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
-        total rep, {format_copper(WritShoppingList.total_cost_copper(shopping_lines))} total cost
+        total rep, {format_copper(WritShoppingList.total_cost_copper(all_lines))} total cost
       </div>
-      <div class="rf-shopping-list-items">
-        <%= for line <- shopping_lines do %>
-          <div class="rf-shopping-list-line">
-            <span>{line.display_name} x{line.quantity}</span>
-            <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+      <div class="rf-shopping-list-groups">
+        <%= for group <- groups do %>
+          <div class="rf-shopping-group">
+            <div class="rf-shopping-group-header">
+              <span class="rf-writ-number">{group.number}</span>
+              <span>{group.writ.name}</span>
+            </div>
+            <%= for line <- group.lines do %>
+              <div class="rf-shopping-list-line">
+                <span>{line.display_name} x{line.quantity}</span>
+                <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
@@ -236,7 +248,7 @@
         <span
           id="auctionator-copy"
           phx-hook="CopyButton"
-          data-copy={WritShoppingList.to_auctionator_text("WoW Forever Writs", shopping_lines)}
+          data-copy={WritShoppingList.to_auctionator_text("WoW Forever Writs", all_lines)}
         >
           <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
         </span>

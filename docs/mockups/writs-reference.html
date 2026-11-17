@@ -90,10 +90,18 @@
   .shopping-popup-close:hover { color: var(--fg); }
   .shopping-popup[hidden] { display: none; }
   .shopping-list-actions { display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid var(--border); padding-top: 10px; }
-  .shopping-list-items { display: flex; flex-direction: column; gap: 4px; }
-  .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); }
+  .shopping-list-groups { display: flex; flex-direction: column; gap: 10px; }
+  .shopping-group { display: flex; flex-direction: column; gap: 3px; }
+  .shopping-group-header { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; }
+  .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); padding-left: 26px; }
   .copy-btn { background: var(--accent); color: var(--accent-fg); border: none; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; }
   .clear-link { background: none; border: none; padding: 0; color: var(--accent); font-family: var(--font-mono); font-size: 12.5px; text-decoration: underline; cursor: pointer; }
+  .writ-select { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .writ-number {
+    display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
+    border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-size: 11px;
+    font-weight: 700; font-family: var(--font-mono); flex-shrink: 0;
+  }
 
   .stats { display: flex; gap: 18px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
   .stats strong { color: var(--fg); font-size: 15px; font-family: var(--font-display); }
@@ -209,11 +217,17 @@
     <button type="button" class="shopping-popup-close" id="shoppingPopupClose" aria-label="Close">&times;</button>
   </div>
   <div><strong>2</strong> writs selected — <strong>300</strong> total rep, 29s 71c total cost</div>
-  <div class="shopping-list-items">
-    <div class="shopping-list-line"><span>Craftsman's Writ: Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 74c</span></div>
-    <div class="shopping-list-line"><span>Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 47c</span></div>
-    <div class="shopping-list-line"><span>Craftsman's Writ: Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
-    <div class="shopping-list-line"><span>Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+  <div class="shopping-list-groups">
+    <div class="shopping-group">
+      <div class="shopping-group-header"><span class="writ-number">1</span><span>Craftsman's Writ: Lesser Troll's Blood Elixir</span></div>
+      <div class="shopping-list-line"><span>Craftsman's Writ: Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 74c</span></div>
+      <div class="shopping-list-line"><span>Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 47c</span></div>
+    </div>
+    <div class="shopping-group">
+      <div class="shopping-group-header"><span class="writ-number">2</span><span>Craftsman's Writ: Shadow Protection Potion</span></div>
+      <div class="shopping-list-line"><span>Craftsman's Writ: Shadow Protection Potion x1</span><span class="muted-cell">15s 0c</span></div>
+      <div class="shopping-list-line"><span>Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+    </div>
   </div>
   <div class="shopping-list-actions">
     <button type="button" class="clear-link">clear</button>
@@ -241,13 +255,13 @@
     {
       name: "Craftsman's Writ: Lesser Troll's Blood Elixir", npc: "Short John Mithril", profession: "Alchemy",
       tier: "Journeyman", zone: "Stranglethorn Vale", cost: "7s 21c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
-      repPerGold: "2080.4 rep/g", checked: true,
+      repPerGold: "2080.4 rep/g", checked: true, number: 1,
       tooltip: { total: "7s 21c", lines: [{ name: "Craftsman's Writ: Lesser Troll's Blood Elixir", total: "3s 74c" }, { name: "Lesser Troll's Blood Elixir x1", total: "3s 47c" }] },
     },
     {
       name: "Craftsman's Writ: Shadow Protection Potion", npc: "Kzixx", profession: "Alchemy",
       tier: "Journeyman", zone: "Duskwood", cost: "22s 50c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
-      repPerGold: "666.7 rep/g", checked: true,
+      repPerGold: "666.7 rep/g", checked: true, number: 2,
     },
     {
       name: "Craftsman's Writ: Heavy Bronze Mace", npc: "Gorgrash", profession: "Blacksmithing",
@@ -262,7 +276,10 @@
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = ROWS.map((row) => `
     <tr>
-      <td><input type="checkbox" ${row.checked ? "checked" : ""}></td>
+      <td class="writ-select">
+        <input type="checkbox" ${row.checked ? "checked" : ""}>
+        ${row.checked ? `<span class="writ-number">${row.number}</span>` : ""}
+      </td>
       <td>
         <a class="item-name" href="#" title="Opens the writ's Wowhead quest page — not wired up in this mockup">${row.name}</a>
         <div class="item-sub">at ${row.npc}</div>
