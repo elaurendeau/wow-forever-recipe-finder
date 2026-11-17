@@ -684,20 +684,34 @@
     },
     {
       "name": "Craftsman's Writ: Heavy Bronze Mace",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264024,
         "display_name": "Craftsman's Writ: Heavy Bronze Mace"
       },
       "quest_id": 94224,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3491,
+          "display_name": "Heavy Bronze Mace",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Heavy Bronze Mace",
+              "skill": 105,
+              "wowhead_spell_id": 3296
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 261932,
         "npc_name": "Gorgrash",
         "zone": "Hillsbrad Foothills"
       },
@@ -719,20 +733,34 @@
     },
     {
       "name": "Craftsman's Writ: Rough Bronze Leggings",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264025,
         "display_name": "Craftsman's Writ: Rough Bronze Leggings"
       },
       "quest_id": 94225,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 2865,
+          "display_name": "Rough Bronze Leggings",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Rough Bronze Leggings",
+              "skill": 80,
+              "wowhead_spell_id": 2668
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
         "zone": "Stonetalon Mountains"
       },
@@ -754,20 +782,34 @@
     },
     {
       "name": "Craftsman's Writ: Green Iron Gauntlets",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264026,
         "display_name": "Craftsman's Writ: Green Iron Gauntlets"
       },
       "quest_id": 94226,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3485,
+          "display_name": "Green Iron Gauntlets",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Green Iron Gauntlets",
+              "skill": 150,
+              "wowhead_spell_id": 3336
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 2501,
         "npc_name": "\"Sea Wolf\" MacKinley",
         "zone": "Stranglethorn Vale"
       },
@@ -794,20 +836,34 @@
     },
     {
       "name": "Craftsman's Writ: Big Bronze Knife",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264027,
         "display_name": "Craftsman's Writ: Big Bronze Knife"
       },
       "quest_id": 94227,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3848,
+          "display_name": "Big Bronze Knife",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Big Bronze Knife",
+              "skill": 80,
+              "wowhead_spell_id": 3491
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 6626,
         "npc_name": "\"Plucky\" Johnson",
         "zone": "Thousand Needles"
       },
@@ -829,20 +885,34 @@
     },
     {
       "name": "Craftsman's Writ: Green Iron Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264028,
         "display_name": "Craftsman's Writ: Green Iron Boots"
       },
       "quest_id": 94228,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3484,
+          "display_name": "Green Iron Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Green Iron Boots",
+              "skill": 145,
+              "wowhead_spell_id": 3334
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 8305,
         "npc_name": "Kixxle",
         "zone": "Wetlands"
       },
@@ -864,20 +934,34 @@
     },
     {
       "name": "Craftsman's Writ: Ornate Spyglass",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264029,
         "display_name": "Craftsman's Writ: Ornate Spyglass"
       },
       "quest_id": 94229,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 5507,
+          "display_name": "Ornate Spyglass",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Ornate Spyglass",
+              "skill": 135,
+              "wowhead_spell_id": 6458
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257282,
         "npc_name": "Alan Sneeks",
         "zone": "Alterac Mountains"
       },
@@ -899,20 +983,34 @@
     },
     {
       "name": "Craftsman's Writ: Explosive Sheep",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264030,
         "display_name": "Craftsman's Writ: Explosive Sheep"
       },
       "quest_id": 94230,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4384,
+          "display_name": "Explosive Sheep",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Explosive Sheep",
+              "skill": 150,
+              "wowhead_spell_id": 3955
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257304,
         "npc_name": "Alyce",
         "zone": "Arathi Highlands"
       },
@@ -934,20 +1032,34 @@
     },
     {
       "name": "Craftsman's Writ: Moonsight Rifle",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264031,
         "display_name": "Craftsman's Writ: Moonsight Rifle"
       },
       "quest_id": 94231,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4383,
+          "display_name": "Moonsight Rifle",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Moonsight Rifle",
+              "skill": 145,
+              "wowhead_spell_id": 3954
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257317,
         "npc_name": "Grembly",
         "zone": "Ashenvale"
       },
@@ -974,20 +1086,34 @@
     },
     {
       "name": "Craftsman's Writ: Minor Recombobulator",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264032,
         "display_name": "Craftsman's Writ: Minor Recombobulator"
       },
       "quest_id": 94232,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4381,
+          "display_name": "Minor Recombobulator",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Minor Recombobulator",
+              "skill": 140,
+              "wowhead_spell_id": 3952
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 3134,
         "npc_name": "Kzixx",
         "zone": "Duskwood"
       },
@@ -1009,20 +1135,34 @@
     },
     {
       "name": "Craftsman's Writ: Practice Lock",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264033,
         "display_name": "Craftsman's Writ: Practice Lock"
       },
       "quest_id": 94233,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6712,
+          "display_name": "Practice Lock",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Practice Lock",
+              "skill": 100,
+              "wowhead_spell_id": 8334
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 261932,
         "npc_name": "Gorgrash",
         "zone": "Hillsbrad Foothills"
       },
@@ -1049,20 +1189,34 @@
     },
     {
       "name": "Craftsman's Writ: Shadow Goggles",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264034,
         "display_name": "Craftsman's Writ: Shadow Goggles"
       },
       "quest_id": 94234,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4373,
+          "display_name": "Shadow Goggles",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Shadow Goggles",
+              "skill": 120,
+              "wowhead_spell_id": 3940
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
         "zone": "Stonetalon Mountains"
       },
@@ -1089,20 +1243,34 @@
     },
     {
       "name": "Craftsman's Writ: Gnomish Universal Remote",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264035,
         "display_name": "Craftsman's Writ: Gnomish Universal Remote"
       },
       "quest_id": 94235,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7506,
+          "display_name": "Gnomish Universal Remote",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Gnomish Universal Remote",
+              "skill": 125,
+              "wowhead_spell_id": 9269
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 7853,
         "npc_name": "Scooty",
         "zone": "Stranglethorn Vale"
       },
@@ -1129,20 +1297,34 @@
     },
     {
       "name": "Craftsman's Writ: Big Bronze Bomb",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264036,
         "display_name": "Craftsman's Writ: Big Bronze Bomb"
       },
       "quest_id": 94236,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4380,
+          "display_name": "Big Bronze Bomb",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Big Bronze Bomb",
+              "skill": 140,
+              "wowhead_spell_id": 3950
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4706,
         "npc_name": "Razzeric",
         "zone": "Thousand Needles"
       },
@@ -1169,20 +1351,34 @@
     },
     {
       "name": "Craftsman's Writ: Crafted Solid Shot",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264037,
         "display_name": "Craftsman's Writ: Crafted Solid Shot"
       },
       "quest_id": 94237,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8069,
+          "display_name": "Crafted Solid Shot",
+          "quantity": 200,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Crafted Solid Shot",
+              "skill": 125,
+              "wowhead_spell_id": 3947
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 8305,
         "npc_name": "Kixxle",
         "zone": "Wetlands"
       },
@@ -1209,20 +1405,34 @@
     },
     {
       "name": "Craftsman's Writ: Heavy Leather Ball",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264038,
         "display_name": "Craftsman's Writ: Heavy Leather Ball"
       },
       "quest_id": 94238,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18662,
+          "display_name": "Heavy Leather Ball",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Heavy Leather Ball",
+              "skill": 150,
+              "wowhead_spell_id": 23190
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257281,
         "npc_name": "Sos'mol",
         "zone": "Alterac Mountains"
       },
@@ -1249,20 +1459,34 @@
     },
     {
       "name": "Craftsman's Writ: Fine Leather Pants",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264039,
         "display_name": "Craftsman's Writ: Fine Leather Pants"
       },
       "quest_id": 94239,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 5958,
+          "display_name": "Fine Leather Pants",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Fine Leather Pants",
+              "skill": 80,
+              "wowhead_spell_id": 7133
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257304,
         "npc_name": "Alyce",
         "zone": "Arathi Highlands"
       },
@@ -1284,20 +1508,34 @@
     },
     {
       "name": "Craftsman's Writ: Herbalist's Gloves",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264040,
         "display_name": "Craftsman's Writ: Herbalist's Gloves"
       },
       "quest_id": 94240,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7349,
+          "display_name": "Herbalist's Gloves",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Herbalist's Gloves",
+              "skill": 110,
+              "wowhead_spell_id": 9146
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257322,
         "npc_name": "Murache",
         "zone": "Ashenvale"
       },
@@ -1319,20 +1557,34 @@
     },
     {
       "name": "Craftsman's Writ: Dark Leather Tunic",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264041,
         "display_name": "Craftsman's Writ: Dark Leather Tunic"
       },
       "quest_id": 94241,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 2317,
+          "display_name": "Dark Leather Tunic",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Dark Leather Tunic",
+              "skill": 75,
+              "wowhead_spell_id": 2169
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 3134,
         "npc_name": "Kzixx",
         "zone": "Duskwood"
       },
@@ -1359,20 +1611,34 @@
     },
     {
       "name": "Craftsman's Writ: Pilferer's Gloves",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264042,
         "display_name": "Craftsman's Writ: Pilferer's Gloves"
       },
       "quest_id": 94242,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7358,
+          "display_name": "Pilferer's Gloves",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Pilferer's Gloves",
+              "skill": 115,
+              "wowhead_spell_id": 9148
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 3536,
         "npc_name": "Kris Legace",
         "zone": "Hillsbrad Foothills"
       },
@@ -1394,20 +1660,34 @@
     },
     {
       "name": "Craftsman's Writ: Heavy Quiver",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264043,
         "display_name": "Craftsman's Writ: Heavy Quiver"
       },
       "quest_id": 94243,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7371,
+          "display_name": "Heavy Quiver",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Heavy Quiver",
+              "skill": 125,
+              "wowhead_spell_id": 9193
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
         "zone": "Stonetalon Mountains"
       },
@@ -1429,20 +1709,34 @@
     },
     {
       "name": "Craftsman's Writ: Dark Leather Shoulders",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264044,
         "display_name": "Craftsman's Writ: Dark Leather Shoulders"
       },
       "quest_id": 94244,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4252,
+          "display_name": "Dark Leather Shoulders",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Dark Leather Shoulders",
+              "skill": 115,
+              "wowhead_spell_id": 3769
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 2663,
         "npc_name": "Narkk",
         "zone": "Stranglethorn Vale"
       },
@@ -1464,20 +1758,34 @@
     },
     {
       "name": "Craftsman's Writ: Barbaric Gloves",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264045,
         "display_name": "Craftsman's Writ: Barbaric Gloves"
       },
       "quest_id": 94245,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4254,
+          "display_name": "Barbaric Gloves",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Barbaric Gloves",
+              "skill": 125,
+              "wowhead_spell_id": 3771
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4496,
         "npc_name": "Goblin Pit Boss",
         "zone": "Thousand Needles"
       },
@@ -1504,20 +1812,34 @@
     },
     {
       "name": "Craftsman's Writ: Red Whelp Gloves",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264046,
         "display_name": "Craftsman's Writ: Red Whelp Gloves"
       },
       "quest_id": 94246,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7284,
+          "display_name": "Red Whelp Gloves",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Red Whelp Gloves",
+              "skill": 95,
+              "wowhead_spell_id": 9072
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 8305,
         "npc_name": "Kixxle",
         "zone": "Wetlands"
       },
@@ -1539,20 +1861,34 @@
     },
     {
       "name": "Craftsman's Writ: Lesser Wizard's Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264047,
         "display_name": "Craftsman's Writ: Lesser Wizard's Robe"
       },
       "quest_id": 94247,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 5766,
+          "display_name": "Lesser Wizard's Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Lesser Wizard's Robe",
+              "skill": 110,
+              "wowhead_spell_id": 6690
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257282,
         "npc_name": "Alan Sneeks",
         "zone": "Alterac Mountains"
       },
@@ -1579,20 +1915,34 @@
     },
     {
       "name": "Craftsman's Writ: Blue Overalls",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264048,
         "display_name": "Craftsman's Writ: Blue Overalls"
       },
       "quest_id": 94248,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6263,
+          "display_name": "Blue Overalls",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Blue Overalls",
+              "skill": 75,
+              "wowhead_spell_id": 7639
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257304,
         "npc_name": "Alyce",
         "zone": "Arathi Highlands"
       },
@@ -1619,20 +1969,34 @@
     },
     {
       "name": "Craftsman's Writ: Azure Silk Hood",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264049,
         "display_name": "Craftsman's Writ: Azure Silk Hood"
       },
       "quest_id": 94249,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7048,
+          "display_name": "Azure Silk Hood",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Azure Silk Hood",
+              "skill": 120,
+              "wowhead_spell_id": 8760
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 257316,
         "npc_name": "Cowardly Peon",
         "zone": "Ashenvale"
       },
@@ -1659,20 +2023,34 @@
     },
     {
       "name": "Craftsman's Writ: Small Silk Pack",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264050,
         "display_name": "Craftsman's Writ: Small Silk Pack"
       },
       "quest_id": 94250,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4245,
+          "display_name": "Small Silk Pack",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Small Silk Pack",
+              "skill": 125,
+              "wowhead_spell_id": 3813
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 3134,
         "npc_name": "Kzixx",
         "zone": "Duskwood"
       },
@@ -1699,20 +2077,34 @@
     },
     {
       "name": "Craftsman's Writ: Phoenix Pants",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264051,
         "display_name": "Craftsman's Writ: Phoenix Pants"
       },
       "quest_id": 94251,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4317,
+          "display_name": "Phoenix Pants",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Phoenix Pants",
+              "skill": 100,
+              "wowhead_spell_id": 3851
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 6176,
         "npc_name": "Bath'rah the Windwatcher",
         "zone": "Alterac Mountains"
       },
@@ -1734,20 +2126,34 @@
     },
     {
       "name": "Craftsman's Writ: Red Woolen Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264052,
         "display_name": "Craftsman's Writ: Red Woolen Boots"
       },
       "quest_id": 94252,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4313,
+          "display_name": "Red Woolen Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Red Woolen Boots",
+              "skill": 75,
+              "wowhead_spell_id": 3847
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
         "zone": "Stonetalon Mountains"
       },
@@ -1769,20 +2175,34 @@
     },
     {
       "name": "Craftsman's Writ: Colorful Kilt",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264053,
         "display_name": "Craftsman's Writ: Colorful Kilt"
       },
       "quest_id": 94253,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10048,
+          "display_name": "Colorful Kilt",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Colorful Kilt",
+              "skill": 70,
+              "wowhead_spell_id": 12047
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 261961,
         "npc_name": "Hekshi",
         "zone": "Stranglethorn Vale"
       },
@@ -1804,20 +2224,34 @@
     },
     {
       "name": "Craftsman's Writ: Greater Adept's Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264054,
         "display_name": "Craftsman's Writ: Greater Adept's Robe"
       },
       "quest_id": 94254,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6264,
+          "display_name": "Greater Adept's Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Greater Adept's Robe",
+              "skill": 90,
+              "wowhead_spell_id": 7643
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 6548,
         "npc_name": "Magus Tirth",
         "zone": "Thousand Needles"
       },
@@ -1839,20 +2273,34 @@
     },
     {
       "name": "Craftsman's Writ: Spider Silk Slippers",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264055,
         "display_name": "Craftsman's Writ: Spider Silk Slippers"
       },
       "quest_id": 94255,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "journeyman",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4321,
+          "display_name": "Spider Silk Slippers",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Spider Silk Slippers",
+              "skill": 115,
+              "wowhead_spell_id": 3856
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 8305,
         "npc_name": "Kixxle",
         "zone": "Wetlands"
       },
@@ -1879,20 +2327,34 @@
     },
     {
       "name": "Craftsman's Writ: Frost Protection Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264056,
         "display_name": "Craftsman's Writ: Frost Protection Potion"
       },
       "quest_id": 94256,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6050,
+          "display_name": "Frost Protection Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Frost Protection Potion",
+              "skill": 190,
+              "wowhead_spell_id": 7258
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 2921,
         "npc_name": "Lotwil Veriatus",
         "zone": "Badlands"
       },
@@ -1914,20 +2376,34 @@
     },
     {
       "name": "Craftsman's Writ: Lesser Invisibility Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264057,
         "display_name": "Craftsman's Writ: Lesser Invisibility Potion"
       },
       "quest_id": 94257,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3823,
+          "display_name": "Lesser Invisibility Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Lesser Invisibility Potion",
+              "skill": 165,
+              "wowhead_spell_id": 3448
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 13717,
         "npc_name": "Centaur Pariah",
         "zone": "Desolace"
       },
@@ -1949,20 +2425,34 @@
     },
     {
       "name": "Craftsman's Writ: Lesser Stoneshield Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264058,
         "display_name": "Craftsman's Writ: Lesser Stoneshield Potion"
       },
       "quest_id": 94258,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4623,
+          "display_name": "Lesser Stoneshield Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Lesser Stoneshield Potion",
+              "skill": 215,
+              "wowhead_spell_id": 4942
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 4503,
         "npc_name": "Mudcrush Durtfeet",
         "zone": "Dustwallow Marsh"
       },
@@ -1984,20 +2474,34 @@
     },
     {
       "name": "Craftsman's Writ: Nature Protection Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264059,
         "display_name": "Craftsman's Writ: Nature Protection Potion"
       },
       "quest_id": 94259,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6052,
+          "display_name": "Nature Protection Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Nature Protection Potion",
+              "skill": 190,
+              "wowhead_spell_id": 7259
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 10922,
         "npc_name": "Greta Mosshoof",
         "zone": "Felwood"
       },
@@ -2019,21 +2523,35 @@
     },
     {
       "name": "Craftsman's Writ: Catseye Draught",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264060,
         "display_name": "Craftsman's Writ: Catseye Draught"
       },
       "quest_id": 94260,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10592,
+          "display_name": "Catseye Draught",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Catseye Draught",
+              "skill": 200,
+              "wowhead_spell_id": 12609
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262143,
+        "npc_name": "Scout Raroul",
         "zone": "Feralas"
       },
       "rewards": {
@@ -2054,20 +2572,34 @@
     },
     {
       "name": "Craftsman's Writ: Great Rage Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264061,
         "display_name": "Craftsman's Writ: Great Rage Potion"
       },
       "quest_id": 94261,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 5633,
+          "display_name": "Great Rage Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Great Rage Potion",
+              "skill": 175,
+              "wowhead_spell_id": 6618
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 11802,
         "npc_name": "Dendrite Starblaze",
         "zone": "Moonglade"
       },
@@ -2089,22 +2621,36 @@
     },
     {
       "name": "Craftsman's Writ: Mana Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264062,
         "display_name": "Craftsman's Writ: Mana Potion"
       },
       "quest_id": 94262,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3827,
+          "display_name": "Mana Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Mana Potion",
+              "skill": 160,
+              "wowhead_spell_id": 3452
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Ash'alari",
-        "zone": "Ashenvale"
+        "npc_id": 262284,
+        "npc_name": "Spek",
+        "zone": "Riverglades"
       },
       "rewards": {
         "reputation": [
@@ -2124,20 +2670,34 @@
     },
     {
       "name": "Craftsman's Writ: Fire Protection Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264063,
         "display_name": "Craftsman's Writ: Fire Protection Potion"
       },
       "quest_id": 94263,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6049,
+          "display_name": "Fire Protection Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Fire Protection Potion",
+              "skill": 165,
+              "wowhead_spell_id": 7257
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262294,
         "npc_name": "Durganon",
         "zone": "Searing Gorge"
       },
@@ -2159,20 +2719,34 @@
     },
     {
       "name": "Craftsman's Writ: Shadow Oil",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264064,
         "display_name": "Craftsman's Writ: Shadow Oil"
       },
       "quest_id": 94264,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3824,
+          "display_name": "Shadow Oil",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Shadow Oil",
+              "skill": 165,
+              "wowhead_spell_id": 3449
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262306,
         "npc_name": "Mukomonji",
         "zone": "Swamp of Sorrows"
       },
@@ -2194,23 +2768,36 @@
     },
     {
       "name": "Craftsman's Writ: Goblin Rocket Fuel",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264065,
         "display_name": "Craftsman's Writ: Goblin Rocket Fuel"
       },
       "quest_id": 94265,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
-        "alchemy",
-        "engineering"
+        "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9061,
+          "display_name": "Goblin Rocket Fuel",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Goblin Rocket Fuel",
+              "skill": 210,
+              "wowhead_spell_id": 11456
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Duke Hydraxis",
-        "zone": "Azshara"
+        "npc_id": 5594,
+        "npc_name": "Alchemist Pestlezugg",
+        "zone": "Tanaris"
       },
       "rewards": {
         "reputation": [
@@ -2230,21 +2817,35 @@
     },
     {
       "name": "Craftsman's Writ: Elixir of Agility",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264066,
         "display_name": "Craftsman's Writ: Elixir of Agility"
       },
       "quest_id": 94266,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8949,
+          "display_name": "Elixir of Agility",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Elixir of Agility",
+              "skill": 185,
+              "wowhead_spell_id": 11449
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262388,
+        "npc_name": "Juo",
         "zone": "The Hinterlands"
       },
       "rewards": {
@@ -2265,20 +2866,34 @@
     },
     {
       "name": "Craftsman's Writ: Wildvine Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264067,
         "display_name": "Craftsman's Writ: Wildvine Potion"
       },
       "quest_id": 94267,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9144,
+          "display_name": "Wildvine Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Wildvine Potion",
+              "skill": 225,
+              "wowhead_spell_id": 11458
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 9272,
         "npc_name": "Spark Nilminer",
         "zone": "Un'Goro Crater"
       },
@@ -2300,22 +2915,36 @@
     },
     {
       "name": "Craftsman's Writ: Steel Plate Helm",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264068,
         "display_name": "Craftsman's Writ: Steel Plate Helm"
       },
       "quest_id": 94268,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7922,
+          "display_name": "Steel Plate Helm",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Steel Plate Helm",
+              "skill": 190,
+              "wowhead_spell_id": 9935
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 257429,
+        "npc_name": "Furious Shadowforge Digger",
+        "zone": "Badlands"
       },
       "rewards": {
         "reputation": [
@@ -2335,20 +2964,34 @@
     },
     {
       "name": "Craftsman's Writ: Inlaid Mithril Cylinder",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264069,
         "display_name": "Craftsman's Writ: Inlaid Mithril Cylinder"
       },
       "quest_id": 94269,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
-        "engineering"
+        "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9060,
+          "display_name": "Inlaid Mithril Cylinder",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Inlaid Mithril Cylinder",
+              "skill": 200,
+              "wowhead_spell_id": 11454
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 11438,
         "npc_name": "Bibbly F'utzbuckle",
         "zone": "Desolace"
       },
@@ -2370,21 +3013,35 @@
     },
     {
       "name": "Craftsman's Writ: Steel Weapon Chain",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264070,
         "display_name": "Craftsman's Writ: Steel Weapon Chain"
       },
       "quest_id": 94270,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 6041,
+          "display_name": "Steel Weapon Chain",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Steel Weapon Chain",
+              "skill": 190,
+              "wowhead_spell_id": 7224
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 270919,
+        "npc_name": "Ugbert",
         "zone": "Dustwallow Marsh"
       },
       "rewards": {
@@ -2405,20 +3062,34 @@
     },
     {
       "name": "Craftsman's Writ: Ornate Mithril Shoulders",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264071,
         "display_name": "Craftsman's Writ: Ornate Mithril Shoulders"
       },
       "quest_id": 94271,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7928,
+          "display_name": "Ornate Mithril Shoulders",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Ornate Mithril Shoulders",
+              "skill": 225,
+              "wowhead_spell_id": 9952
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 10921,
         "npc_name": "Taronn Redfeather",
         "zone": "Felwood"
       },
@@ -2440,22 +3111,36 @@
     },
     {
       "name": "Craftsman's Writ: Blue Glittering Axe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264072,
         "display_name": "Craftsman's Writ: Blue Glittering Axe"
       },
       "quest_id": 94272,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7942,
+          "display_name": "Blue Glittering Axe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Blue Glittering Axe",
+              "skill": 220,
+              "wowhead_spell_id": 9995
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262143,
+        "npc_name": "Scout Raroul",
+        "zone": "Feralas"
       },
       "rewards": {
         "reputation": [
@@ -2475,20 +3160,34 @@
     },
     {
       "name": "Craftsman's Writ: Moonsteel Broadsword",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264073,
         "display_name": "Craftsman's Writ: Moonsteel Broadsword"
       },
       "quest_id": 94273,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3853,
+          "display_name": "Moonsteel Broadsword",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Moonsteel Broadsword",
+              "skill": 180,
+              "wowhead_spell_id": 3496
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 12024,
         "npc_name": "Meliri",
         "zone": "Moonglade"
       },
@@ -2510,20 +3209,34 @@
     },
     {
       "name": "Craftsman's Writ: Golden Scale Coif",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264074,
         "display_name": "Craftsman's Writ: Golden Scale Coif"
       },
       "quest_id": 94274,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3837,
+          "display_name": "Golden Scale Coif",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Golden Scale Coif",
+              "skill": 190,
+              "wowhead_spell_id": 3503
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262284,
         "npc_name": "Spek",
         "zone": "Riverglades"
       },
@@ -2545,22 +3258,36 @@
     },
     {
       "name": "Craftsman's Writ: Solid Sharpening Stone",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264075,
         "display_name": "Craftsman's Writ: Solid Sharpening Stone"
       },
       "quest_id": 94275,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7964,
+          "display_name": "Solid Sharpening Stone",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Solid Sharpening Stone",
+              "skill": 175,
+              "wowhead_spell_id": 9918
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 14624,
+        "npc_name": "Master Smith Burninate",
+        "zone": "Searing Gorge"
       },
       "rewards": {
         "reputation": [
@@ -2580,22 +3307,36 @@
     },
     {
       "name": "Craftsman's Writ: Wicked Mithril Blade",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264076,
         "display_name": "Craftsman's Writ: Wicked Mithril Blade"
       },
       "quest_id": 94276,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7943,
+          "display_name": "Wicked Mithril Blade",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Wicked Mithril Blade",
+              "skill": 225,
+              "wowhead_spell_id": 9997
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262306,
+        "npc_name": "Mukomonji",
+        "zone": "Swamp of Sorrows"
       },
       "rewards": {
         "reputation": [
@@ -2615,22 +3356,36 @@
     },
     {
       "name": "Craftsman's Writ: Truesilver Rod",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264077,
         "display_name": "Craftsman's Writ: Truesilver Rod"
       },
       "quest_id": 94277,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 11144,
+          "display_name": "Truesilver Rod",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Truesilver Rod",
+              "skill": 175,
+              "wowhead_spell_id": 14380
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 7408,
+        "npc_name": "Spigot Operator Luglunket",
+        "zone": "Tanaris"
       },
       "rewards": {
         "reputation": [
@@ -2650,22 +3405,36 @@
     },
     {
       "name": "Craftsman's Writ: Golden Scale Gauntlets",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264078,
         "display_name": "Craftsman's Writ: Golden Scale Gauntlets"
       },
       "quest_id": 94278,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9366,
+          "display_name": "Golden Scale Gauntlets",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Golden Scale Gauntlets",
+              "skill": 205,
+              "wowhead_spell_id": 11643
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 7801,
+        "npc_name": "Gilveradin Sunchaser",
+        "zone": "The Hinterlands"
       },
       "rewards": {
         "reputation": [
@@ -2685,21 +3454,35 @@
     },
     {
       "name": "Craftsman's Writ: Heavy Mithril Axe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264079,
         "display_name": "Craftsman's Writ: Heavy Mithril Axe"
       },
       "quest_id": 94279,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7941,
+          "display_name": "Heavy Mithril Axe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Heavy Mithril Axe",
+              "skill": 185,
+              "wowhead_spell_id": 9993
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 9619,
+        "npc_name": "Torwa Pathfinder",
         "zone": "Un'Goro Crater"
       },
       "rewards": {
@@ -2720,22 +3503,36 @@
     },
     {
       "name": "Craftsman's Writ: Mechanical Dragonling",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264080,
         "display_name": "Craftsman's Writ: Mechanical Dragonling"
       },
       "quest_id": 94280,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4396,
+          "display_name": "Mechanical Dragonling",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Mechanical Dragonling",
+              "skill": 200,
+              "wowhead_spell_id": 3969
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 257437,
+        "npc_name": "Garyanne Fleezlebop",
+        "zone": "Badlands"
       },
       "rewards": {
         "reputation": [
@@ -2755,21 +3552,35 @@
     },
     {
       "name": "Craftsman's Writ: Advanced Target Dummy",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264081,
         "display_name": "Craftsman's Writ: Advanced Target Dummy"
       },
       "quest_id": 94281,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4392,
+          "display_name": "Advanced Target Dummy",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Advanced Target Dummy",
+              "skill": 185,
+              "wowhead_spell_id": 3965
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 11438,
+        "npc_name": "Bibbly F'utzbuckle",
         "zone": "Desolace"
       },
       "rewards": {
@@ -2790,21 +3601,35 @@
     },
     {
       "name": "Craftsman's Writ: Craftsman's Monocle",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264082,
         "display_name": "Craftsman's Writ: Craftsman's Monocle"
       },
       "quest_id": 94282,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4393,
+          "display_name": "Craftsman's Monocle",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Craftsman's Monocle",
+              "skill": 185,
+              "wowhead_spell_id": 3966
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262072,
+        "npc_name": "The Ravenous",
         "zone": "Dustwallow Marsh"
       },
       "rewards": {
@@ -2825,21 +3650,35 @@
     },
     {
       "name": "Craftsman's Writ: Goblin Land Mine",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264083,
         "display_name": "Craftsman's Writ: Goblin Land Mine"
       },
       "quest_id": 94283,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4395,
+          "display_name": "Goblin Land Mine",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Goblin Land Mine",
+              "skill": 195,
+              "wowhead_spell_id": 3968
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 11019,
+        "npc_name": "Jessir Moonbow",
         "zone": "Felwood"
       },
       "rewards": {
@@ -2860,21 +3699,35 @@
     },
     {
       "name": "Craftsman's Writ: Catseye Ultra Goggles",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264084,
         "display_name": "Craftsman's Writ: Catseye Ultra Goggles"
       },
       "quest_id": 94284,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10501,
+          "display_name": "Catseye Ultra Goggles",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Catseye Ultra Goggles",
+              "skill": 220,
+              "wowhead_spell_id": 12607
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262143,
+        "npc_name": "Scout Raroul",
         "zone": "Feralas"
       },
       "rewards": {
@@ -2895,20 +3748,34 @@
     },
     {
       "name": "Craftsman's Writ: Unstable Trigger",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264085,
         "display_name": "Craftsman's Writ: Unstable Trigger"
       },
       "quest_id": 94285,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10560,
+          "display_name": "Unstable Trigger",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Unstable Trigger",
+              "skill": 200,
+              "wowhead_spell_id": 12591
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 12029,
         "npc_name": "Narianna",
         "zone": "Moonglade"
       },
@@ -2930,20 +3797,34 @@
     },
     {
       "name": "Craftsman's Writ: Flash Bomb",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264086,
         "display_name": "Craftsman's Writ: Flash Bomb"
       },
       "quest_id": 94286,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4852,
+          "display_name": "Flash Bomb",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Flash Bomb",
+              "skill": 185,
+              "wowhead_spell_id": 8243
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262284,
         "npc_name": "Spek",
         "zone": "Riverglades"
       },
@@ -2965,22 +3846,36 @@
     },
     {
       "name": "Craftsman's Writ: Fire Goggles",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264087,
         "display_name": "Craftsman's Writ: Fire Goggles"
       },
       "quest_id": 94287,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10500,
+          "display_name": "Fire Goggles",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Fire Goggles",
+              "skill": 205,
+              "wowhead_spell_id": 12594
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262294,
+        "npc_name": "Durganon",
+        "zone": "Searing Gorge"
       },
       "rewards": {
         "reputation": [
@@ -3000,22 +3895,36 @@
     },
     {
       "name": "Craftsman's Writ: Mithril Frag Bomb",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264088,
         "display_name": "Craftsman's Writ: Mithril Frag Bomb"
       },
       "quest_id": 94288,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10514,
+          "display_name": "Mithril Frag Bomb",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Mithril Frag Bomb",
+              "skill": 215,
+              "wowhead_spell_id": 12603
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262379,
+        "npc_name": "Bullets Bigblast",
+        "zone": "Swamp of Sorrows"
       },
       "rewards": {
         "reputation": [
@@ -3035,22 +3944,36 @@
     },
     {
       "name": "Craftsman's Writ: Gyromatic Micro-Adjuster",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264089,
         "display_name": "Craftsman's Writ: Gyromatic Micro-Adjuster"
       },
       "quest_id": 94289,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10498,
+          "display_name": "Gyromatic Micro-Adjustor",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Gyromatic Micro-Adjustor",
+              "skill": 175,
+              "wowhead_spell_id": 12590
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 14743,
+        "npc_name": "Jhordy Lapforge",
+        "zone": "Tanaris"
       },
       "rewards": {
         "reputation": [
@@ -3070,22 +3993,36 @@
     },
     {
       "name": "Craftsman's Writ: Mechanical Repair Kit",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264090,
         "display_name": "Craftsman's Writ: Mechanical Repair Kit"
       },
       "quest_id": 94290,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 11590,
+          "display_name": "Mechanical Repair Kit",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Mechanical Repair Kit",
+              "skill": 200,
+              "wowhead_spell_id": 15255
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 5634,
+        "npc_name": "Rhapsody Shindigger",
+        "zone": "The Hinterlands"
       },
       "rewards": {
         "reputation": [
@@ -3105,18 +4042,32 @@
     },
     {
       "name": "Craftsman's Writ: Dark Iron Bomb",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264091,
         "display_name": "Craftsman's Writ: Dark Iron Bomb"
       },
       "quest_id": 94291,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 16005,
+          "display_name": "Dark Iron Bomb",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Dark Iron Bomb",
+              "skill": 285,
+              "wowhead_spell_id": 19799
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -3140,21 +4091,35 @@
     },
     {
       "name": "Craftsman's Writ: Comfortable Leather Hat",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264092,
         "display_name": "Craftsman's Writ: Comfortable Leather Hat"
       },
       "quest_id": 94292,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8174,
+          "display_name": "Comfortable Leather Hat",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Comfortable Leather Hat",
+              "skill": 175,
+              "wowhead_spell_id": 10490
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 2888,
+        "npc_name": "Garek",
         "zone": "Badlands"
       },
       "rewards": {
@@ -3175,21 +4140,35 @@
     },
     {
       "name": "Craftsman's Writ: Guardian Cloak",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264093,
         "display_name": "Craftsman's Writ: Guardian Cloak"
       },
       "quest_id": 94293,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 5965,
+          "display_name": "Guardian Cloak",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Guardian Cloak",
+              "skill": 160,
+              "wowhead_spell_id": 7153
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 11863,
+        "npc_name": "Azore Aldamort",
         "zone": "Desolace"
       },
       "rewards": {
@@ -3210,21 +4189,35 @@
     },
     {
       "name": "Craftsman's Writ: Dusky Bracers",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264094,
         "display_name": "Craftsman's Writ: Dusky Bracers"
       },
       "quest_id": 94294,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7378,
+          "display_name": "Dusky Bracers",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Dusky Bracers",
+              "skill": 160,
+              "wowhead_spell_id": 9201
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262072,
+        "npc_name": "The Ravenous",
         "zone": "Dustwallow Marsh"
       },
       "rewards": {
@@ -3245,21 +4238,35 @@
     },
     {
       "name": "Craftsman's Writ: Wild Leather Helmet",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264095,
         "display_name": "Craftsman's Writ: Wild Leather Helmet"
       },
       "quest_id": 94295,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8214,
+          "display_name": "Wild Leather Helmet",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Wild Leather Helmet",
+              "skill": 200,
+              "wowhead_spell_id": 10546
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 10924,
+        "npc_name": "Ivy Leafrunner",
         "zone": "Felwood"
       },
       "rewards": {
@@ -3280,21 +4287,35 @@
     },
     {
       "name": "Craftsman's Writ: Wild Leather Shoulders",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264096,
         "display_name": "Craftsman's Writ: Wild Leather Shoulders"
       },
       "quest_id": 94296,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8210,
+          "display_name": "Wild Leather Shoulders",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Wild Leather Shoulders",
+              "skill": 195,
+              "wowhead_spell_id": 10529
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262143,
+        "npc_name": "Scout Raroul",
         "zone": "Feralas"
       },
       "rewards": {
@@ -3315,21 +4336,35 @@
     },
     {
       "name": "Craftsman's Writ: Quickdraw Quiver",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264097,
         "display_name": "Craftsman's Writ: Quickdraw Quiver"
       },
       "quest_id": 94297,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8217,
+          "display_name": "Quickdraw Quiver",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Quickdraw Quiver",
+              "skill": 200,
+              "wowhead_spell_id": 14930
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Narianna <Bowyer>",
+        "npc_id": 12029,
+        "npc_name": "Narianna",
         "zone": "Moonglade"
       },
       "rewards": {
@@ -3350,20 +4385,34 @@
     },
     {
       "name": "Craftsman's Writ: Swift Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264098,
         "display_name": "Craftsman's Writ: Swift Boots"
       },
       "quest_id": 94298,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7391,
+          "display_name": "Swift Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Swift Boots",
+              "skill": 175,
+              "wowhead_spell_id": 9208
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262284,
         "npc_name": "Spek",
         "zone": "Riverglades"
       },
@@ -3385,21 +4434,35 @@
     },
     {
       "name": "Craftsman's Writ: Nightscape Shoulders",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264099,
         "display_name": "Craftsman's Writ: Nightscape Shoulders"
       },
       "quest_id": 94299,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8192,
+          "display_name": "Nightscape Shoulders",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Nightscape Shoulders",
+              "skill": 185,
+              "wowhead_spell_id": 10516
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 14628,
+        "npc_name": "Evonice Sootsmoker",
         "zone": "Searing Gorge"
       },
       "rewards": {
@@ -3420,21 +4483,35 @@
     },
     {
       "name": "Craftsman's Writ: Big Voodoo Mask",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264100,
         "display_name": "Craftsman's Writ: Big Voodoo Mask"
       },
       "quest_id": 94300,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8201,
+          "display_name": "Big Voodoo Mask",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Big Voodoo Mask",
+              "skill": 195,
+              "wowhead_spell_id": 10531
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262306,
+        "npc_name": "Mukomonji",
         "zone": "Swamp of Sorrows"
       },
       "rewards": {
@@ -3455,20 +4532,34 @@
     },
     {
       "name": "Craftsman's Writ: Big Voodoo Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264101,
         "display_name": "Craftsman's Writ: Big Voodoo Robe"
       },
       "quest_id": 94301,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8200,
+          "display_name": "Big Voodoo Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Big Voodoo Robe",
+              "skill": 190,
+              "wowhead_spell_id": 10520
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 8579,
         "npc_name": "Yeh'kinya",
         "zone": "Tanaris"
       },
@@ -3490,22 +4581,36 @@
     },
     {
       "name": "Craftsman's Writ: Turtle Scale Breastplate",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264102,
         "display_name": "Craftsman's Writ: Turtle Scale Breastplate"
       },
       "quest_id": 94302,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8189,
+          "display_name": "Turtle Scale Breastplate",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Turtle Scale Breastplate",
+              "skill": 185,
+              "wowhead_spell_id": 10511
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262388,
+        "npc_name": "Juo",
+        "zone": "The Hinterlands"
       },
       "rewards": {
         "reputation": [
@@ -3525,21 +4630,35 @@
     },
     {
       "name": "Craftsman's Writ: Thick Leather Ammo Pouch",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264103,
         "display_name": "Craftsman's Writ: Thick Leather Ammo Pouch"
       },
       "quest_id": 94303,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 8218,
+          "display_name": "Thick Leather Ammo Pouch",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Thick Leather Ammo Pouch",
+              "skill": 200,
+              "wowhead_spell_id": 14932
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 12959,
+        "npc_name": "Nergal",
         "zone": "Un'Goro Crater"
       },
       "rewards": {
@@ -3560,21 +4679,35 @@
     },
     {
       "name": "Craftsman's Writ: Mageweave Bag",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264104,
         "display_name": "Craftsman's Writ: Mageweave Bag"
       },
       "quest_id": 94304,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10050,
+          "display_name": "Mageweave Bag",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Mageweave Bag",
+              "skill": 190,
+              "wowhead_spell_id": 12065
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 2817,
+        "npc_name": "Rigglefuzz",
         "zone": "Badlands"
       },
       "rewards": {
@@ -3595,21 +4728,35 @@
     },
     {
       "name": "Craftsman's Writ: Shadoweave Gloves",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264105,
         "display_name": "Craftsman's Writ: Shadoweave Gloves"
       },
       "quest_id": 94305,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10023,
+          "display_name": "Shadoweave Gloves",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Shadoweave Gloves",
+              "skill": 190,
+              "wowhead_spell_id": 12071
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 13656,
+        "npc_name": "Willow",
         "zone": "Desolace"
       },
       "rewards": {
@@ -3630,21 +4777,35 @@
     },
     {
       "name": "Craftsman's Writ: Crimson Silk Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264106,
         "display_name": "Craftsman's Writ: Crimson Silk Robe"
       },
       "quest_id": 94306,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7063,
+          "display_name": "Crimson Silk Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Crimson Silk Robe",
+              "skill": 170,
+              "wowhead_spell_id": 8802
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 6546,
+        "npc_name": "Tabetha",
         "zone": "Dustwallow Marsh"
       },
       "rewards": {
@@ -3665,20 +4826,34 @@
     },
     {
       "name": "Craftsman's Writ: Shadoweave Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264107,
         "display_name": "Craftsman's Writ: Shadoweave Robe"
       },
       "quest_id": 94307,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10004,
+          "display_name": "Shadoweave Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Shadoweave Robe",
+              "skill": 180,
+              "wowhead_spell_id": 12055
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 9116,
         "npc_name": "Eridan Bluewind",
         "zone": "Felwood"
       },
@@ -3700,21 +4875,35 @@
     },
     {
       "name": "Craftsman's Writ: Enchanted Mageweave Pouch",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264108,
         "display_name": "Craftsman's Writ: Enchanted Mageweave Pouch"
       },
       "quest_id": 94308,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 22246,
+          "display_name": "Enchanted Mageweave Pouch",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Enchanted Mageweave Pouch",
+              "skill": 190,
+              "wowhead_spell_id": 27658
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 14470,
+        "npc_name": "Impsy",
         "zone": "Felwood"
       },
       "rewards": {
@@ -3735,20 +4924,34 @@
     },
     {
       "name": "Craftsman's Writ: Star Belt",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264109,
         "display_name": "Craftsman's Writ: Star Belt"
       },
       "quest_id": 94309,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 4329,
+          "display_name": "Star Belt",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Star Belt",
+              "skill": 165,
+              "wowhead_spell_id": 3864
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 11795,
         "npc_name": "Mylentha Riverbend",
         "zone": "Moonglade"
       },
@@ -3770,21 +4973,35 @@
     },
     {
       "name": "Craftsman's Writ: Black Mageweave Vest",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264110,
         "display_name": "Craftsman's Writ: Black Mageweave Vest"
       },
       "quest_id": 94310,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9998,
+          "display_name": "Black Mageweave Vest",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Black Mageweave Vest",
+              "skill": 170,
+              "wowhead_spell_id": 12048
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262284,
+        "npc_name": "Spek",
         "zone": "Riverglades"
       },
       "rewards": {
@@ -3805,21 +5022,35 @@
     },
     {
       "name": "Craftsman's Writ: Red Mageweave Pants",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264111,
         "display_name": "Craftsman's Writ: Red Mageweave Pants"
       },
       "quest_id": 94311,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10009,
+          "display_name": "Red Mageweave Pants",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Red Mageweave Pants",
+              "skill": 180,
+              "wowhead_spell_id": 12060
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 14634,
+        "npc_name": "Lookout Captain Lolo Longstriker",
         "zone": "Searing Gorge"
       },
       "rewards": {
@@ -3840,21 +5071,35 @@
     },
     {
       "name": "Craftsman's Writ: Orange Martial Shirt",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264112,
         "display_name": "Craftsman's Writ: Orange Martial Shirt"
       },
       "quest_id": 94312,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10052,
+          "display_name": "Orange Martial Shirt",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Orange Martial Shirt",
+              "skill": 185,
+              "wowhead_spell_id": 12064
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 262379,
+        "npc_name": "Bullets Bigblast",
         "zone": "Swamp of Sorrows"
       },
       "rewards": {
@@ -3875,22 +5120,36 @@
     },
     {
       "name": "Craftsman's Writ: White Bandit Mask",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264113,
         "display_name": "Craftsman's Writ: White Bandit Mask"
       },
       "quest_id": 94313,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10008,
+          "display_name": "White Bandit Mask",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "White Bandit Mask",
+              "skill": 180,
+              "wowhead_spell_id": 12059
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 6568,
+        "npc_name": "Vizzklick",
+        "zone": "Tanaris"
       },
       "rewards": {
         "reputation": [
@@ -3910,22 +5169,36 @@
     },
     {
       "name": "Craftsman's Writ: Cindercloth Robe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264114,
         "display_name": "Craftsman's Writ: Cindercloth Robe"
       },
       "quest_id": 94314,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10042,
+          "display_name": "Cindercloth Robe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Cindercloth Robe",
+              "skill": 190,
+              "wowhead_spell_id": 12069
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 5598,
+        "npc_name": "Atal'ai Exile",
+        "zone": "The Hinterlands"
       },
       "rewards": {
         "reputation": [
@@ -3945,21 +5218,35 @@
     },
     {
       "name": "Craftsman's Writ: Earthen Silk Belt",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264115,
         "display_name": "Craftsman's Writ: Earthen Silk Belt"
       },
       "quest_id": 94315,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "expert",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7061,
+          "display_name": "Earthen Silk Belt",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Earthen Silk Belt",
+              "skill": 160,
+              "wowhead_spell_id": 8797
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 9273,
+        "npc_name": "Petra Grossen",
         "zone": "Un'Goro Crater"
       },
       "rewards": {
@@ -3980,22 +5267,36 @@
     },
     {
       "name": "Craftsman's Writ: Potion of Demonslaying",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264116,
         "display_name": "Craftsman's Writ: Potion of Demonslaying"
       },
       "quest_id": 94316,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9224,
+          "display_name": "Potion of Demon Slaying",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Potion of Demon Slaying",
+              "skill": 250,
+              "wowhead_spell_id": 11477
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 8379,
+        "npc_name": "Archmage Xylem",
+        "zone": "Azshara"
       },
       "rewards": {
         "reputation": [
@@ -4015,20 +5316,34 @@
     },
     {
       "name": "Craftsman's Writ: Dreamless Sleep Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264117,
         "display_name": "Craftsman's Writ: Dreamless Sleep Potion"
       },
       "quest_id": 94317,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 12190,
+          "display_name": "Dreamless Sleep Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Dreamless Sleep Potion",
+              "skill": 230,
+              "wowhead_spell_id": 15833
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 7363,
         "npc_name": "Kum'isha the Collector",
         "zone": "Blasted Lands"
       },
@@ -4050,18 +5365,32 @@
     },
     {
       "name": "Craftsman's Writ: Greater Fire Protection Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264118,
         "display_name": "Craftsman's Writ: Greater Fire Protection Potion"
       },
       "quest_id": 94318,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 13457,
+          "display_name": "Greater Fire Protection Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Greater Fire Protection Potion",
+              "skill": 290,
+              "wowhead_spell_id": 17574
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4085,21 +5414,35 @@
     },
     {
       "name": "Craftsman's Writ: Draught of Detect Demon",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264119,
         "display_name": "Craftsman's Writ: Draught of Detect Demon"
       },
       "quest_id": 94319,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9233,
+          "display_name": "Draught of Detect Demon",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Draught of Detect Demon",
+              "skill": 250,
+              "wowhead_spell_id": 11478
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Hastings <The Caretaker>",
+        "npc_id": 257743,
+        "npc_name": "Hastings",
         "zone": "Deadwind Pass"
       },
       "rewards": {
@@ -4120,22 +5463,36 @@
     },
     {
       "name": "Craftsman's Writ: Gift of Arthas",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264120,
         "display_name": "Craftsman's Writ: Gift of Arthas"
       },
       "quest_id": 94320,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 9088,
+          "display_name": "Gift of Arthas",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Gift of Arthas",
+              "skill": 240,
+              "wowhead_spell_id": 11466
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 11706,
+        "npc_name": "Adon",
+        "zone": "Eastern Plaguelands"
       },
       "rewards": {
         "reputation": [
@@ -4155,18 +5512,32 @@
     },
     {
       "name": "Craftsman's Writ: Flask of Chromatic Resistance",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264121,
         "display_name": "Craftsman's Writ: Flask of Chromatic Resistance"
       },
       "quest_id": 94321,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 13513,
+          "display_name": "Flask of Chromatic Resistance",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Flask of Chromatic Resistance",
+              "skill": 300,
+              "wowhead_spell_id": 17638
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4190,22 +5561,36 @@
     },
     {
       "name": "Craftsman's Writ: Limited Invulnerability Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264122,
         "display_name": "Craftsman's Writ: Limited Invulnerability Potion"
       },
       "quest_id": 94322,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 3387,
+          "display_name": "Limited Invulnerability Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Limited Invulnerability Potion",
+              "skill": 250,
+              "wowhead_spell_id": 3175
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 11805,
+        "npc_name": "Jarund Stoutstrider",
+        "zone": "Silithus"
       },
       "rewards": {
         "reputation": [
@@ -4225,22 +5610,36 @@
     },
     {
       "name": "Craftsman's Writ: Major Rejuvenation Potion",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264123,
         "display_name": "Craftsman's Writ: Major Rejuvenation Potion"
       },
       "quest_id": 94323,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18253,
+          "display_name": "Major Rejuvenation Potion",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Major Rejuvenation Potion",
+              "skill": 300,
+              "wowhead_spell_id": 22732
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262024,
+        "npc_name": "Kirala Fairgrass",
+        "zone": "Western Plaguelands"
       },
       "rewards": {
         "reputation": [
@@ -4260,20 +5659,34 @@
     },
     {
       "name": "Craftsman's Writ: Distilled Firewater",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264124,
         "display_name": "Craftsman's Writ: Distilled Firewater"
       },
       "quest_id": 94324,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "alchemy"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 246948,
+          "display_name": "Distilled Firewater",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "alchemy",
+              "pattern_name": "Distilled Firewater",
+              "skill": 250,
+              "wowhead_spell_id": 1244421
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 262041,
         "npc_name": "Bor'dorc",
         "zone": "Winterspring"
       },
@@ -4295,18 +5708,32 @@
     },
     {
       "name": "Craftsman's Writ: Radiant Circlet",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264125,
         "display_name": "Craftsman's Writ: Radiant Circlet"
       },
       "quest_id": 94325,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 12417,
+          "display_name": "Radiant Circlet",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Radiant Circlet",
+              "skill": 295,
+              "wowhead_spell_id": 16659
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4330,18 +5757,32 @@
     },
     {
       "name": "Craftsman's Writ: Radiant Belt",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264126,
         "display_name": "Craftsman's Writ: Radiant Belt"
       },
       "quest_id": 94326,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 12416,
+          "display_name": "Radiant Belt",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Radiant Belt",
+              "skill": 260,
+              "wowhead_spell_id": 16645
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4365,18 +5806,32 @@
     },
     {
       "name": "Craftsman's Writ: Orcish War Leggings",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264127,
         "display_name": "Craftsman's Writ: Orcish War Leggings"
       },
       "quest_id": 94327,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7929,
+          "display_name": "Orcish War Leggings",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Orcish War Leggings",
+              "skill": 230,
+              "wowhead_spell_id": 9957
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4400,21 +5855,35 @@
     },
     {
       "name": "Craftsman's Writ: Mithril Spurs",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264128,
         "display_name": "Craftsman's Writ: Mithril Spurs"
       },
       "quest_id": 94328,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7969,
+          "display_name": "Mithril Spurs",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Mithril Spurs",
+              "skill": 235,
+              "wowhead_spell_id": 9964
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 257750,
+        "npc_name": "Calliard",
         "zone": "Deadwind Pass"
       },
       "rewards": {
@@ -4435,18 +5904,32 @@
     },
     {
       "name": "Craftsman's Writ: Imperial Plate Chest",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264129,
         "display_name": "Craftsman's Writ: Imperial Plate Chest"
       },
       "quest_id": 94329,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 12422,
+          "display_name": "Imperial Plate Chest",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Imperial Plate Chest",
+              "skill": 300,
+              "wowhead_spell_id": 16663
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4470,18 +5953,32 @@
     },
     {
       "name": "Craftsman's Writ: Darkrune Gauntlets",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264130,
         "display_name": "Craftsman's Writ: Darkrune Gauntlets"
       },
       "quest_id": 94330,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 20549,
+          "display_name": "Darkrune Gauntlets",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Darkrune Gauntlets",
+              "skill": 300,
+              "wowhead_spell_id": 24912
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4505,18 +6002,32 @@
     },
     {
       "name": "Craftsman's Writ: Huge Thorium Battleaxe",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264131,
         "display_name": "Craftsman's Writ: Huge Thorium Battleaxe"
       },
       "quest_id": 94331,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 12775,
+          "display_name": "Huge Thorium Battleaxe",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Huge Thorium Battleaxe",
+              "skill": 280,
+              "wowhead_spell_id": 16971
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4540,18 +6051,32 @@
     },
     {
       "name": "Craftsman's Writ: Arcanite Skeleton Key",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264132,
         "display_name": "Craftsman's Writ: Arcanite Skeleton Key"
       },
       "quest_id": 94332,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15872,
+          "display_name": "Arcanite Skeleton Key",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Arcanite Skeleton Key",
+              "skill": 250,
+              "wowhead_spell_id": 19669
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4575,18 +6100,32 @@
     },
     {
       "name": "Craftsman's Writ: Ebon Shiv",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264133,
         "display_name": "Craftsman's Writ: Ebon Shiv"
       },
       "quest_id": 94333,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "blacksmithing"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 7947,
+          "display_name": "Ebon Shiv",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "blacksmithing",
+              "pattern_name": "Ebon Shiv",
+              "skill": 255,
+              "wowhead_spell_id": 10013
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4610,22 +6149,36 @@
     },
     {
       "name": "Craftsman's Writ: Masterwork Target Dummy",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264134,
         "display_name": "Craftsman's Writ: Masterwork Target Dummy"
       },
       "quest_id": 94334,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 16023,
+          "display_name": "Masterwork Target Dummy",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Masterwork Target Dummy",
+              "skill": 275,
+              "wowhead_spell_id": 19814
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 11705,
+        "npc_name": "Rayan Dawnrisen",
+        "zone": "Azshara"
       },
       "rewards": {
         "reputation": [
@@ -4645,22 +6198,36 @@
     },
     {
       "name": "Craftsman's Writ: Green Lens",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264135,
         "display_name": "Craftsman's Writ: Green Lens"
       },
       "quest_id": 94335,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10504,
+          "display_name": "Green Lens",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Green Lens",
+              "skill": 245,
+              "wowhead_spell_id": 12622
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 7363,
+        "npc_name": "Kum'isha the Collector",
+        "zone": "Blasted Lands"
       },
       "rewards": {
         "reputation": [
@@ -4680,18 +6247,32 @@
     },
     {
       "name": "Craftsman's Writ: Lifelike Mechanical Toad",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264136,
         "display_name": "Craftsman's Writ: Lifelike Mechanical Toad"
       },
       "quest_id": 94336,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15996,
+          "display_name": "Lifelike Mechanical Toad",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Lifelike Mechanical Toad",
+              "skill": 265,
+              "wowhead_spell_id": 19793
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4715,18 +6296,32 @@
     },
     {
       "name": "Craftsman's Writ: Gnomish Alarm-O-Bot",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264137,
         "display_name": "Craftsman's Writ: Gnomish Alarm-O-Bot"
       },
       "quest_id": 94337,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18645,
+          "display_name": "Gnomish Alarm-O-Bot",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Alarm-O-Bot",
+              "skill": 265,
+              "wowhead_spell_id": 23096
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4750,18 +6345,32 @@
     },
     {
       "name": "Craftsman's Writ: Goblin Jumper Cables XL",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264138,
         "display_name": "Craftsman's Writ: Goblin Jumper Cables XL"
       },
       "quest_id": 94338,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18587,
+          "display_name": "Goblin Jumper Cables XL",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Goblin Jumper Cables XL",
+              "skill": 265,
+              "wowhead_spell_id": 23078
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4785,18 +6394,32 @@
     },
     {
       "name": "Craftsman's Writ: Field Repair Bot 74A",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264139,
         "display_name": "Craftsman's Writ: Field Repair Bot 74A"
       },
       "quest_id": 94339,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18232,
+          "display_name": "Field Repair Bot 74A",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Field Repair Bot 74A",
+              "skill": 300,
+              "wowhead_spell_id": 22704
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4820,22 +6443,36 @@
     },
     {
       "name": "Craftsman's Writ: Truesilver Transformer",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264140,
         "display_name": "Craftsman's Writ: Truesilver Transformer"
       },
       "quest_id": 94340,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18631,
+          "display_name": "Truesilver Transformer",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Truesilver Transformer",
+              "skill": 260,
+              "wowhead_spell_id": 23071
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 15175,
+        "npc_name": "Khur Hornstriker",
+        "zone": "Silithus"
       },
       "rewards": {
         "reputation": [
@@ -4855,22 +6492,36 @@
     },
     {
       "name": "Craftsman's Writ: Sniper Scope",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264141,
         "display_name": "Craftsman's Writ: Sniper Scope"
       },
       "quest_id": 94341,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10548,
+          "display_name": "Sniper Scope",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Sniper Scope",
+              "skill": 240,
+              "wowhead_spell_id": 12620
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262033,
+        "npc_name": "Suspicious Adventurer",
+        "zone": "Western Plaguelands"
       },
       "rewards": {
         "reputation": [
@@ -4890,18 +6541,32 @@
     },
     {
       "name": "Craftsman's Writ: Tranquil Mechanical Yeti",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264142,
         "display_name": "Craftsman's Writ: Tranquil Mechanical Yeti"
       },
       "quest_id": 94342,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "engineering"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 21277,
+          "display_name": "Tranquil Mechanical Yeti",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "engineering",
+              "pattern_name": "Tranquil Mechanical Yeti",
+              "skill": 320,
+              "wowhead_spell_id": 26011
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4925,18 +6590,32 @@
     },
     {
       "name": "Craftsman's Writ: Wicked Leather Pants",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264143,
         "display_name": "Craftsman's Writ: Wicked Leather Pants"
       },
       "quest_id": 94343,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15087,
+          "display_name": "Wicked Leather Pants",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Wicked Leather Pants",
+              "skill": 265,
+              "wowhead_spell_id": 19083
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4960,19 +6639,39 @@
     },
     {
       "name": "Craftsman's Writ: Gordok Ogre Suit",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264144,
         "display_name": "Craftsman's Writ: Gordok Ogre Suit"
       },
       "quest_id": 94344,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking",
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 18258,
+          "display_name": "Gordok Ogre Suit",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Gordok Ogre Suit",
+              "skill": 285,
+              "wowhead_spell_id": 22815
+            },
+            {
+              "profession": "tailoring",
+              "pattern_name": "Gordok Ogre Suit",
+              "skill": 285,
+              "wowhead_spell_id": 22813
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -4996,18 +6695,32 @@
     },
     {
       "name": "Craftsman's Writ: Volcanic Breastplate",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264145,
         "display_name": "Craftsman's Writ: Volcanic Breastplate"
       },
       "quest_id": 94345,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15053,
+          "display_name": "Volcanic Breastplate",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Volcanic Breastplate",
+              "skill": 260,
+              "wowhead_spell_id": 19076
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5031,21 +6744,35 @@
     },
     {
       "name": "Craftsman's Writ: Runic Leather Headband",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264146,
         "display_name": "Craftsman's Writ: Runic Leather Headband"
       },
       "quest_id": 94346,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15094,
+          "display_name": "Runic Leather Headband",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Runic Leather Headband",
+              "skill": 265,
+              "wowhead_spell_id": 19082
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Hastings <The Caretaker>",
+        "npc_id": 257743,
+        "npc_name": "Hastings",
         "zone": "Deadwind Pass"
       },
       "rewards": {
@@ -5066,22 +6793,36 @@
     },
     {
       "name": "Craftsman's Writ: Wicked Leather Bracers",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264147,
         "display_name": "Craftsman's Writ: Wicked Leather Bracers"
       },
       "quest_id": 94347,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15084,
+          "display_name": "Wicked Leather Bracers",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Wicked Leather Bracers",
+              "skill": 240,
+              "wowhead_spell_id": 19052
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 11536,
+        "npc_name": "Quartermaster Miranda Breechlock",
+        "zone": "Eastern Plaguelands"
       },
       "rewards": {
         "reputation": [
@@ -5101,18 +6842,32 @@
     },
     {
       "name": "Craftsman's Writ: Chimeric Vest",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264148,
         "display_name": "Craftsman's Writ: Chimeric Vest"
       },
       "quest_id": 94348,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15075,
+          "display_name": "Chimeric Vest",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Chimeric Vest",
+              "skill": 265,
+              "wowhead_spell_id": 19081
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5136,18 +6891,32 @@
     },
     {
       "name": "Craftsman's Writ: Heavy Scorpid Helm",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264149,
         "display_name": "Craftsman's Writ: Heavy Scorpid Helm"
       },
       "quest_id": 94349,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15080,
+          "display_name": "Heavy Scorpid Helm",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Heavy Scorpid Helm",
+              "skill": 270,
+              "wowhead_spell_id": 19088
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5171,22 +6940,36 @@
     },
     {
       "name": "Craftsman's Writ: Runic Leather Bracers",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264150,
         "display_name": "Craftsman's Writ: Runic Leather Bracers"
       },
       "quest_id": 94350,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15092,
+          "display_name": "Runic Leather Bracers",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Runic Leather Bracers",
+              "skill": 250,
+              "wowhead_spell_id": 19065
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
-        "zone": null
+        "npc_id": 262016,
+        "npc_name": "Fallen Adventurer",
+        "zone": "Western Plaguelands"
       },
       "rewards": {
         "reputation": [
@@ -5206,18 +6989,32 @@
     },
     {
       "name": "Craftsman's Writ: Frostsaber Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264151,
         "display_name": "Craftsman's Writ: Frostsaber Boots"
       },
       "quest_id": 94351,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "leatherworking"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 15071,
+          "display_name": "Frostsaber Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "leatherworking",
+              "pattern_name": "Frostsaber Boots",
+              "skill": 250,
+              "wowhead_spell_id": 19066
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5241,18 +7038,32 @@
     },
     {
       "name": "Craftsman's Writ: Wizardweave Turban",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264152,
         "display_name": "Craftsman's Writ: Wizardweave Turban"
       },
       "quest_id": 94352,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 14130,
+          "display_name": "Wizardweave Turban",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Wizardweave Turban",
+              "skill": 260,
+              "wowhead_spell_id": 18450
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5276,20 +7087,34 @@
     },
     {
       "name": "Craftsman's Writ: Runecloth Bag",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264153,
         "display_name": "Craftsman's Writ: Runecloth Bag"
       },
       "quest_id": 94353,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 14046,
+          "display_name": "Runecloth Bag",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Runecloth Bag",
+              "skill": 215,
+              "wowhead_spell_id": 18405
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
+        "npc_id": 7363,
         "npc_name": "Kum'isha the Collector",
         "zone": "Blasted Lands"
       },
@@ -5311,18 +7136,32 @@
     },
     {
       "name": "Craftsman's Writ: Runecloth Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264154,
         "display_name": "Craftsman's Writ: Runecloth Boots"
       },
       "quest_id": 94354,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 13864,
+          "display_name": "Runecloth Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Runecloth Boots",
+              "skill": 235,
+              "wowhead_spell_id": 18423
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5346,21 +7185,35 @@
     },
     {
       "name": "Craftsman's Writ: Tuxedo Jacket",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264155,
         "display_name": "Craftsman's Writ: Tuxedo Jacket"
       },
       "quest_id": 94355,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10036,
+          "display_name": "Tuxedo Jacket",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Tuxedo Jacket",
+              "skill": 140,
+              "wowhead_spell_id": 12093
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": "Hastings <The Caretaker>",
+        "npc_id": 257743,
+        "npc_name": "Hastings",
         "zone": "Deadwind Pass"
       },
       "rewards": {
@@ -5381,18 +7234,32 @@
     },
     {
       "name": "Craftsman's Writ: Felcloth Boots",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264156,
         "display_name": "Craftsman's Writ: Felcloth Boots"
       },
       "quest_id": 94356,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 14108,
+          "display_name": "Felcloth Boots",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Felcloth Boots",
+              "skill": 240,
+              "wowhead_spell_id": 18437
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5416,18 +7283,32 @@
     },
     {
       "name": "Craftsman's Writ: Cenarion Herb Bag",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264157,
         "display_name": "Craftsman's Writ: Cenarion Herb Bag"
       },
       "quest_id": 94357,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 22251,
+          "display_name": "Cenarion Herb Bag",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Cenarion Herb Bag",
+              "skill": 230,
+              "wowhead_spell_id": 27724
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5451,21 +7332,35 @@
     },
     {
       "name": "Craftsman's Writ: Shadoweave Mask",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264158,
         "display_name": "Craftsman's Writ: Shadoweave Mask"
       },
       "quest_id": 94358,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 10025,
+          "display_name": "Shadoweave Mask",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Shadoweave Mask",
+              "skill": 245,
+              "wowhead_spell_id": 12086
+            }
+          ]
+        }
+      ],
       "hand_in": {
-        "npc_id": null,
-        "npc_name": null,
+        "npc_id": 15194,
+        "npc_name": "Hermit Ortell",
         "zone": "Silithus"
       },
       "rewards": {
@@ -5486,18 +7381,32 @@
     },
     {
       "name": "Craftsman's Writ: Ghostweave Vest",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264159,
         "display_name": "Craftsman's Writ: Ghostweave Vest"
       },
       "quest_id": 94359,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 14141,
+          "display_name": "Ghostweave Vest",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Ghostweave Vest",
+              "skill": 225,
+              "wowhead_spell_id": 18416
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
@@ -5521,18 +7430,32 @@
     },
     {
       "name": "Craftsman's Writ: Soul Pouch",
-      "data_status": "pending_quest_page",
+      "data_status": "complete",
       "writ_item": {
         "wowhead_id": 264160,
         "display_name": "Craftsman's Writ: Soul Pouch"
       },
       "quest_id": 94360,
-      "repeat": null,
+      "repeat": "daily",
       "professions": [
         "tailoring"
       ],
       "tier": "artisan",
-      "required_items": null,
+      "required_items": [
+        {
+          "wowhead_id": 21340,
+          "display_name": "Soul Pouch",
+          "quantity": 1,
+          "recipes": [
+            {
+              "profession": "tailoring",
+              "pattern_name": "Soul Pouch",
+              "skill": 215,
+              "wowhead_spell_id": 26085
+            }
+          ]
+        }
+      ],
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
