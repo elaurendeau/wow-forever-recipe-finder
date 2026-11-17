@@ -32,8 +32,19 @@
   <% end %>
 
   <% filtered = WritResultsFilter.apply(@results, @filter) %>
-  <% pins = if @world_map, do: WritMapPlacement.hand_in_pins(filtered, @world_map), else: []
-  pin_id_by_writ_id = WritMapPlacement.pin_id_by_writ_id(pins) %>
+  <% # Every result, not just the currently filtered/visible ones — a
+  # checked writ stays on the map even if a later filter change
+  # would otherwise hide its row (same rule as the shopping list,
+  # which also reads @results rather than filtered).
+  pins = if @world_map, do: WritMapPlacement.hand_in_pins(@results, @world_map), else: []
+  pin_id_by_writ_id = WritMapPlacement.pin_id_by_writ_id(pins)
+
+  checked_pin_ids =
+    MapSet.new(
+      for pin <- pins, Enum.any?(pin.results, &(&1.writ.id in @selected_writ_ids)), do: pin.id
+    )
+
+  checked_pins = Enum.filter(pins, &(&1.id in checked_pin_ids)) %>
   <form id="filter-form" phx-change="filter_changed">
     <div class="rf-filterbar">
       <input
@@ -376,7 +387,11 @@
               <g
                 :for={pin <- pins}
                 id={"wm-pin-#{pin.id}"}
-                class={["rf-map-pin", @selected_pin_id == pin.id && "selected"]}
+                class={[
+                  "rf-map-pin",
+                  pin.id in checked_pin_ids && "checked",
+                  @selected_pin_id == pin.id && "viewing"
+                ]}
                 transform={"translate(#{pin.x} #{pin.y})"}
                 phx-click="select_pin"
                 phx-value-id={pin.id}
@@ -409,7 +424,7 @@
         <div class="rf-map-panel">
           <%= if selected do %>
             <div class="rf-map-panel-head">
-              <button type="button" class="rf-forget-link" phx-click="clear_pin">← All pins</button>
+              <button type="button" class="rf-forget-link" phx-click="clear_pin">← Checked writs</button>
               <h3>{pin_title(selected)}</h3>
               <div class="rf-muted">
                 {selected.zone}
@@ -430,12 +445,18 @@
             </div>
           <% else %>
             <div class="rf-map-panel-head">
-              <h3>{length(pins)} pin(s) on the map</h3>
-              <div class="rf-muted">Click a pin to see its writs.</div>
+              <h3>{length(checked_pins)} checked writ(s) on the map</h3>
+              <div class="rf-muted">
+                <%= if checked_pins == [] do %>
+                  Check a writ's row in the table (or hover one) to see where it's turned in.
+                <% else %>
+                  Click a pin to see its writs.
+                <% end %>
+              </div>
             </div>
             <div class="rf-map-panel-list">
               <div
-                :for={pin <- pins}
+                :for={pin <- checked_pins}
                 class="rf-map-panel-row"
                 phx-click="select_pin"
                 phx-value-id={pin.id}

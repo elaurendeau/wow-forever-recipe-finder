@@ -706,8 +706,21 @@ a {
 .rf-map-scaled {
   transform: scale(var(--k));
 }
+/* The map starts with no writ pins at all — only a pin for a writ
+   that's checked (shopping list) or currently hovered in the table
+   is shown; "viewing" is the click-to-open-detail state and also
+   reveals its own pin. See docs/PRD.md § 7.10. */
 .rf-map-pin {
   cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+.rf-map-pin.checked,
+.rf-map-pin.hovered,
+.rf-map-pin.viewing {
+  opacity: 1;
+  pointer-events: auto;
 }
 .rf-map-pin-dot {
   fill: var(--accent);
@@ -716,7 +729,7 @@ a {
   vector-effect: non-scaling-stroke;
 }
 .rf-map-pin:hover .rf-map-pin-dot,
-.rf-map-pin.selected .rf-map-pin-dot {
+.rf-map-pin.viewing .rf-map-pin-dot {
   fill: #f2c26b;
 }
 .rf-map-pin-ring {
@@ -727,11 +740,21 @@ a {
 }
 /* Hover-flash from a table row (see WritRowHover in app.js) — no
    server round-trip, so it can only toggle a class on a pin already
-   in the DOM, not insert the selection ring. A brighter dot + glow
-   is enough to read as "here it is" without that. */
+   in the DOM, not insert the selection ring. A blinking dot + glow
+   reads as "here it is" without that. */
 .rf-map-pin.hovered .rf-map-pin-dot {
   fill: #f2c26b;
   filter: drop-shadow(0 0 calc(4px * var(--k)) #f2c26b);
+  animation: rf-pin-blink 0.8s ease-in-out infinite;
+}
+@keyframes rf-pin-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
 }
 .rf-map-pin-count {
   fill: var(--accent-fg);

@@ -263,7 +263,7 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       assert html =~ "Elixir of Ogre&#39;s Strength"
     end
 
-    test "clicking the map FAB opens a floating panel (not a full-page modal) listing every placed pin",
+    test "clicking the map FAB opens a floating panel (not a full-page modal), starting with no writs checked",
          %{
            conn: conn
          } do
@@ -274,38 +274,68 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
 
       assert html =~ "rf-map-popup"
       refute html =~ "rf-map-backdrop"
-      # Sos'mol (Elixir of Ogre's Strength's hand-in) is placed; Heavy
-      # Bronze Mace's hand-in has no coordinates at all and is not.
-      assert html =~ "Sos&#39;mol"
+      assert html =~ "0 checked writ(s) on the map"
     end
 
-    test "a writ whose hand-in has no coordinates at all is never shown as a pin", %{conn: conn} do
+    test "a pin exists in the map's DOM but stays invisible (opacity:0, no checked/viewing/hovered class) until checked",
+         %{conn: conn} do
       {:ok, view, _html} = live(conn, ~p"/writs")
       upload_tsm_export(view)
 
-      view |> element("button.rf-map-fab") |> render_click()
-      # Gorgrash (Heavy Bronze Mace's hand-in, no zone_id/coordinates in
-      # the fixture) is legitimately in the table's NPC column — scope
-      # to the map's own pin list, not the whole page, to prove it has
-      # no pin rather than merely that the word appears somewhere.
-      panel_html = view |> element(".rf-map-panel-list") |> render()
+      html = view |> element("button.rf-map-fab") |> render_click()
 
-      refute panel_html =~ "Gorgrash"
+      # Sos'mol's pin is rendered (so client-side hover can target it),
+      # but carries no "checked"/"viewing" class and isn't in the
+      # default panel list — per docs/PRD.md § 7.10, nothing shows on
+      # the map until a writ is checked or hovered.
+      assert html =~ ~s(id="wm-pin-npc-257281")
+      refute html =~ ~s(id="wm-pin-npc-257281" class="rf-map-pin checked)
+      refute html =~ "Sos&#39;mol</strong>"
     end
 
-    test "clicking a pin's row in the panel shows that NPC's writs and a waypoint command", %{
-      conn: conn
-    } do
+    test "checking a writ's row puts its pin on the map (the \"checked\" class) and in the panel list",
+         %{conn: conn} do
       {:ok, view, _html} = live(conn, ~p"/writs")
       upload_tsm_export(view)
 
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      html = view |> element("button.rf-map-fab") |> render_click()
+
+      assert html =~ ~s(id="wm-pin-npc-257281" class="rf-map-pin checked")
+      assert html =~ "1 checked writ(s) on the map"
+      assert html =~ "Sos&#39;mol</strong>"
+    end
+
+    test "unchecking the writ removes its pin from the map again", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      html = view |> element("button.rf-map-fab") |> render_click()
+
+      refute html =~ ~s(id="wm-pin-npc-257281" class="rf-map-pin checked")
+      assert html =~ "0 checked writ(s) on the map"
+    end
+
+    test "clicking a checked pin's row in the panel shows that NPC's writs and a waypoint command",
+         %{
+           conn: conn
+         } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
       view |> element("button.rf-map-fab") |> render_click()
       html = view |> element(".rf-map-panel-row", "Sos'mol") |> render_click()
 
       assert html =~ "Sos&#39;mol"
       assert html =~ "Craftsman&#39;s Writ: Elixir of Ogre&#39;s Strength"
       assert html =~ "/way Alterac Mountains"
-      assert html =~ "← All pins"
+      assert html =~ "← Checked writs"
     end
 
     test "each table row carries its pin id as a data attribute, for the client-side hover-flash",
