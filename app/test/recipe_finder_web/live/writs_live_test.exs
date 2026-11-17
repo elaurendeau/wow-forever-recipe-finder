@@ -345,5 +345,49 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
 
       assert html =~ ~s(data-pin-id="npc-257281")
     end
+
+    test "checking a writ shows the total expected reputation on the map canvas and in the popup header",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      view |> element("button.rf-map-fab") |> render_click()
+
+      # The fixture writ pays 75 rep to each of two factions — the
+      # total shown is the sum (150), same as the main table's own
+      # Reputation column, not either faction's amount alone. Scoped
+      # to the on-canvas badge specifically, not the whole page, so
+      # this can't pass from an unrelated "75" elsewhere (e.g. the
+      # table's own per-faction breakdown text).
+      canvas_badge = view |> element(".rf-map-total-rep") |> render()
+      assert canvas_badge =~ "150"
+      assert canvas_badge =~ "total rep if you do all of them"
+
+      panel_total = view |> element(".rf-map-panel-head") |> render()
+      assert panel_total =~ "150"
+      assert panel_total =~ "total rep if you do all of them"
+    end
+
+    test "opening the map closes the shopping list popup, and vice versa", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+
+      html = open_shopping_list(view)
+      assert html =~ "Copy for Auctionator"
+      refute html =~ "rf-map-popup"
+
+      html = view |> element("button.rf-map-fab") |> render_click()
+      assert html =~ "rf-map-popup"
+      refute html =~ "Copy for Auctionator"
+
+      html = open_shopping_list(view)
+      assert html =~ "Copy for Auctionator"
+      refute html =~ "rf-map-popup"
+    end
   end
 end

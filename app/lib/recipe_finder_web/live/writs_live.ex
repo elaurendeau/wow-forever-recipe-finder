@@ -169,7 +169,14 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
     # Opening it marks everything seen; closing it leaves "seen" as-is.
     unseen? = if open?, do: false, else: socket.assigns.shopping_list_unseen?
 
-    {:noreply, assign(socket, shopping_list_open?: open?, shopping_list_unseen?: unseen?)}
+    socket =
+      socket
+      |> assign(shopping_list_open?: open?, shopping_list_unseen?: unseen?)
+      # Only one floating panel at a time — otherwise they stack and
+      # cover each other (and the FAB that would close them).
+      |> then(fn s -> if open?, do: assign(s, map_open?: false), else: s end)
+
+    {:noreply, socket}
   end
 
   def handle_event("filter_changed", %{"filter" => params}, socket) do
@@ -190,7 +197,14 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
   end
 
   def handle_event("toggle_map_panel", _params, socket) do
-    {:noreply, assign(socket, map_open?: not socket.assigns.map_open?)}
+    open? = not socket.assigns.map_open?
+    # Same mutual-exclusion rule as the shopping list's own toggle.
+    socket =
+      socket
+      |> assign(map_open?: open?)
+      |> then(fn s -> if open?, do: assign(s, shopping_list_open?: false), else: s end)
+
+    {:noreply, socket}
   end
 
   def handle_event("select_pin", %{"id" => id}, socket) do

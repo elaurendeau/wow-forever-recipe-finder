@@ -11,6 +11,10 @@
    truth, this is its implementation in the real app.
    --------------------------------------------------------------------- */
 :root {
+  /* Height of the stacked FAB column (cart + map buttons, plus a gap)
+     from the bottom of the viewport — both floating popups reserve
+     this much space so they never cover either button. */
+  --rf-fab-reserve: 148px;
   --bg: #0d0d12;
   --surface: #16161e;
   --surface-2: #1d1d27;
@@ -388,7 +392,10 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-  z-index: 60;
+  /* Above both popups (61/65) — a FAB must always stay visible and
+     clickable to close/reopen itself or switch to the other panel,
+     never covered by either floating popup. */
+  z-index: 70;
 }
 .rf-shopping-fab-badge {
   position: absolute;
@@ -409,7 +416,7 @@ a {
 .rf-shopping-popup {
   position: fixed;
   right: 24px;
-  bottom: 84px;
+  bottom: var(--rf-fab-reserve);
   width: 360px;
   max-width: calc(100vw - 48px);
   max-height: 70vh;
@@ -577,7 +584,7 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-  z-index: 60;
+  z-index: 70;
 }
 
 /* A floating panel, not a full-screen modal — the table stays visible
@@ -589,7 +596,7 @@ a {
   top: 84px;
   right: 24px;
   width: min(820px, 58vw);
-  height: min(680px, calc(100vh - 120px));
+  height: min(680px, calc(100vh - 84px - var(--rf-fab-reserve)));
   background: var(--surface);
   border: 1px solid var(--accent);
   border-radius: 12px;
@@ -666,6 +673,22 @@ a {
   height: 30px;
   padding: 0;
   font-size: 16px;
+}
+.rf-map-total-rep {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 2;
+  background: rgba(22, 22, 30, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.rf-map-total-rep strong {
+  color: var(--accent);
+  font-family: var(--font-display);
 }
 
 .rf-writ-map {

@@ -348,6 +348,12 @@
             <button type="button" data-zoom="in" title="Zoom in">+</button>
             <button type="button" data-zoom="out" title="Zoom out">−</button>
           </div>
+          <%= if @selected_writ_ids != [] do %>
+            <div class="rf-map-total-rep">
+              <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+              total rep if you do all of them
+            </div>
+          <% end %>
 
           <svg
             id="rf-writ-map"
@@ -446,6 +452,12 @@
           <% else %>
             <div class="rf-map-panel-head">
               <h3>{length(checked_pins)} checked writ(s) on the map</h3>
+              <%= if @selected_writ_ids != [] do %>
+                <div>
+                  <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+                  total rep if you do all of them
+                </div>
+              <% end %>
               <div class="rf-muted">
                 <%= if checked_pins == [] do %>
                   Check a writ's row in the table (or hover one) to see where it's turned in.
