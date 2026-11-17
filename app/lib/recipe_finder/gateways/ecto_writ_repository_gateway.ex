@@ -10,7 +10,7 @@ defmodule WowForeverRecipeFinder.Gateways.EctoWritRepositoryGateway do
   @behaviour WowForeverRecipeFinder.Gateways.WritRepositoryGateway
 
   alias WowForeverRecipeFinder.Repo
-  alias WowForeverRecipeFinder.{ReputationReward, Writ, WritRequiredItem}
+  alias WowForeverRecipeFinder.{ReputationReward, Writ, WritHandIn, WritRequiredItem}
   alias WowForeverRecipeFinder.Gateways.Schema
 
   @impl true
@@ -31,14 +31,31 @@ defmodule WowForeverRecipeFinder.Gateways.EctoWritRepositoryGateway do
       profession_slugs: row.profession_slugs,
       tier: parse_tier!(row.tier),
       repeat: row.repeat,
-      hand_in_npc_name: row.hand_in_npc_name,
-      hand_in_zone: row.hand_in_zone,
+      hand_in: to_hand_in(row),
       reward_money_copper: row.reward_money_copper,
       resolution_status: parse_resolution_status!(row.resolution_status),
       required_items: Enum.map(row.writ_required_items, &to_required_item/1),
       reputation_rewards: Enum.map(row.writ_reputation_rewards, &to_reputation_reward/1)
     }
   end
+
+  defp to_hand_in(%Schema.Writ{} = row) do
+    %WritHandIn{
+      npc_id: row.hand_in_npc_id,
+      npc_name: row.hand_in_npc_name,
+      zone: row.hand_in_zone,
+      zone_id: row.hand_in_zone_id,
+      way_x: row.hand_in_way_x,
+      way_y: row.hand_in_way_y,
+      friendly_to: Enum.map(row.hand_in_friendly_to || [], &parse_faction!/1)
+    }
+  end
+
+  defp parse_faction!("alliance"), do: :alliance
+  defp parse_faction!("horde"), do: :horde
+
+  defp parse_faction!(other),
+    do: raise(ArgumentError, "unknown writ hand-in faction: #{inspect(other)}")
 
   # Explicit, closed mappings — see EctoCatalogRepositoryGateway for
   # why this beats String.to_existing_atom/1 here.

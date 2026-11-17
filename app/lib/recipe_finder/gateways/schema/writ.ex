@@ -18,7 +18,12 @@ defmodule WowForeverRecipeFinder.Gateways.Schema.Writ do
     field :tier, :string
     field :repeat, :string
     field :hand_in_npc_name, :string
+    field :hand_in_npc_id, :integer
     field :hand_in_zone, :string
+    field :hand_in_zone_id, :integer
+    field :hand_in_way_x, :float
+    field :hand_in_way_y, :float
+    field :hand_in_friendly_to, {:array, :string}
     field :reward_money_copper, :integer
     field :resolution_status, :string
 

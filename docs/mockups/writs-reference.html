@@ -69,6 +69,38 @@
   }
   .filterbar label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); white-space: nowrap; }
 
+  .side-toggle { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+  .side-toggle-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-right: 2px; }
+  .side-chip { border: 1px solid var(--border); background: var(--surface); color: var(--fg); font-size: 12.5px; font-weight: 600; padding: 5px 11px; border-radius: 999px; cursor: pointer; }
+  .side-chip.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+
+  .map-fab {
+    position: fixed; right: 24px; bottom: 84px; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--surface-2); border: 1px solid var(--accent); cursor: pointer; display: flex;
+    align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.4); z-index: 60;
+  }
+  /* A floating panel, not a full-screen modal — the table stays visible and hoverable
+     beside/behind it, so hovering a row can flash its pin on the map (see PRD § 7.10). */
+  .map-popup {
+    display: none;
+    position: fixed; top: 84px; right: 24px; width: min(820px, 58vw); height: min(680px, calc(100vh - 120px));
+    background: var(--surface); border: 1px solid var(--accent);
+    border-radius: 12px; box-shadow: 0 16px 40px rgba(0,0,0,.5); padding: 16px 18px 18px;
+    flex-direction: column; gap: 12px; z-index: 65;
+  }
+  .map-popup.open { display: flex; }
+  .map-popup-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+  .map-layout { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 14px; }
+  .map-card {
+    position: relative; background: #0f1622; border: 1px solid var(--border); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 12.5px;
+  }
+  .map-tools { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; }
+  .map-tools button { background: rgba(22,22,30,.92); border: 1px solid var(--border); color: var(--fg); font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 7px; cursor: pointer; }
+  .map-panel { overflow-y: auto; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; font-size: 13px; }
+  .map-panel-row { display: flex; flex-direction: column; gap: 2px; padding: 6px 8px; border-radius: 6px; margin-bottom: 4px; }
+  .map-panel-row:hover { background: var(--surface-2); }
+
   .shopping-fab {
     position: fixed; right: 24px; bottom: 24px; width: 48px; height: 48px; border-radius: 50%;
     background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center;
@@ -168,7 +200,9 @@
   <div class="intro">
     Buy the writ item and its required turn-in from the Auction House, hand both in for reputation. Cost is always
     TSM's realm-level <strong>Recent Value</strong> for every item — never the crafting-reagent cost, even for an
-    item this app also tracks as a pattern elsewhere. Horde only for now; zone/travel routing is planned next.
+    item this app also tracks as a pattern elsewhere. Horde-only by default below; switch to Alliance or Either
+    with the toggle. The map FAB (bottom-right, above the shopping cart) places every shown writ's hand-in NPC on
+    a real vector world map.
   </div>
 
   <div class="filterbar">
@@ -176,6 +210,13 @@
     <label>Max cost <input type="text" placeholder="any"></label>
     <label>Min reputation <input type="text" placeholder="any"></label>
     <span class="mock-note">filter shown for layout — not wired up in this mockup</span>
+  </div>
+
+  <div class="side-toggle">
+    <span class="side-toggle-label">I play</span>
+    <button type="button" class="side-chip on">Horde</button>
+    <button type="button" class="side-chip">Alliance</button>
+    <button type="button" class="side-chip">Either</button>
   </div>
 
   <div class="stats" style="margin-bottom: 4px;">
@@ -234,6 +275,48 @@
     <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
   </div>
 </div>
+
+<button type="button" class="map-fab" id="mapFab" aria-label="Writ route map" title="Writ route map">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z" stroke="#cf9a35" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M9 4v14M15 6v14" stroke="#cf9a35" stroke-width="2"/>
+  </svg>
+</button>
+
+<div class="map-popup" id="mapPopup">
+  <div class="map-popup-header">
+    <strong>Writ Route Map</strong>
+    <button type="button" class="shopping-popup-close" id="mapPopupClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="map-layout">
+    <div class="map-card">
+      <div class="map-tools">
+        <button type="button">Full map</button>
+        <button type="button">Kalimdor</button>
+        <button type="button">Eastern Kingdoms</button>
+      </div>
+      real vector world map (zones/continents from priv/world_map/world_map_vectors.json) — pannable/zoomable,
+      schematic only in this mockup
+    </div>
+    <div class="map-panel">
+      <div class="item-sub" style="margin-bottom: 8px;">3 pins on the map · click one to see its writs</div>
+      <div class="map-panel-row"><strong>Short John Mithril</strong><span class="muted-cell">Stranglethorn Vale · 1 writ</span></div>
+      <div class="map-panel-row"><strong>Kzixx</strong><span class="muted-cell">Duskwood · 1 writ</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // No backdrop, deliberately — the table stays visible and hoverable
+  // next to this panel (see the mock-note above the table): that's
+  // what lets a row-hover flash a pin elsewhere in this app's real JS.
+  document.getElementById("mapFab").addEventListener("click", () => {
+    document.getElementById("mapPopup").classList.add("open");
+  });
+  document.getElementById("mapPopupClose").addEventListener("click", () => {
+    document.getElementById("mapPopup").classList.remove("open");
+  });
+</script>
 
 <script>
   // Demonstrates the real behavior: the FAB carries a red "modified

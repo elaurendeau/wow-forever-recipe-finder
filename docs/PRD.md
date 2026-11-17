@@ -179,3 +179,29 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 
 *State-dependent variations:*
 - Selection (an ordered list, not a set — order is what the number badges and group order are derived from), popup-open state, and the "unseen changes" badge all live in LiveView socket state only for this round — none of it persists across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.
+
+### 7.10 Feature J — Craftsman's Writs Map
+
+**Added 2026-11-17.** A second FAB, stacked above the shopping-cart one, opens a vector world map placing every filtered writ's hand-in NPC as a pin — the zone/travel-path fidelity this feature's Phase 2/3 always planned to reach (§ 7.8), arriving sooner once a real vector world-map source (`priv/world_map/world_map_vectors.json`, see [DATA_SOURCES.md](DATA_SOURCES.md#wowhead-wow-forever-world-map)) became available, rather than the screenshot-tracing/recoloring this session tried first and abandoned.
+
+**A faction toggle, defaulting to Horde — replacing the text-only "Horde only for now" note.** Per § 7.8's locked-in decision, the page now actually enforces it rather than just stating it: `WritResultsFilter`'s `side` criterion defaults to `:horde`, filtering both the table and the map identically (not two separately-filtered views of the same data). "Either"/`:any` and "Alliance" are one click away via chips next to the existing search/cost/reputation filters.
+
+**Use cases discovered (per docs/ELIXIR_TEST_MANIFESTO.md's discovery procedure):**
+
+*Happy path:*
+- A hand-in with a known zone and in-game coordinates (`way_x`/`way_y`, percentages of that zone's own map rectangle) is placed on the shared canvas via that zone's `rect` and shown as a pin.
+- Several writs sharing the same hand-in NPC (by Wowhead NPC id) share one pin, numbered with how many (filtered) writs it carries; clicking it opens a side panel listing them, with a `/way <zone> <x> <y>` waypoint command and a copy button.
+- Hovering a table row while the map popup is open flashes that row's pin on the map — client-side only (no server round-trip: hover fires far more often than a filter change, and a pin's position never changes based on hover), via a `data-pin-id` attribute per row and a delegated listener on the table body.
+- Zoom (wheel + buttons), drag-to-pan, and per-continent shortcut buttons are client-side only (same `WritMap` JS hook pattern as the shopping-list's `CopyButton`) and survive every filter/pin-selection LiveView patch.
+
+*Boundary/edge conditions:*
+- A hand-in reported **neutral** (Wowhead reaction `0`) to every faction is never hidden by the faction toggle regardless of which side is selected — see docs/DATA_SOURCES.md's verified reaction semantics; only a hand-in explicitly friendly to the *other* faction only is excluded.
+- A writ whose hand-in isn't known/placeable yet (no zone id, or a zone id the map has no rectangle for) is never shown as a pin, but is also never dropped from the page — same "listed, never dropped" rule as § 7.8's `pending_quest_page` state, surfaced in its own section below the table.
+- A hand-in with coordinates but no NPC id in the data still gets its own pin, keyed by zone + spot rather than NPC id.
+- If the vector world-map file is missing or malformed, the map FAB simply doesn't render (the table/shopping-list still work) rather than crashing the page — a specific, named `WorldMapLoadError`, never a silent empty map.
+
+*State-dependent variations:*
+- Switching the faction toggle clears any currently-open pin selection (the previously-selected pin's writs may no longer be visible under the new filter).
+- The world map itself is loaded once at mount (static reference data, identical for every visitor) — a filter change re-filters the already-loaded map's pins, never re-fetches the map.
+
+**Deliberately not done in this round:** matching every one of the vector file's ~50 zone/subzone polygons individually back to a specific writ's zone by name beyond what `zone_id` already resolves; a fidelity toggle between this map view and a future full flight-path-time-aware route (the map now has the real flight-master/ship/zeppelin/tram route data to build that from, but using it for actual pathing is new, scoped work, not assumed here).

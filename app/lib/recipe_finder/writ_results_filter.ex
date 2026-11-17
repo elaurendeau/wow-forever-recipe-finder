@@ -10,18 +10,25 @@ defmodule WowForeverRecipeFinder.WritResultsFilter do
 
   alias WowForeverRecipeFinder.WritEfficiencyResult
 
+  @type side :: :any | :alliance | :horde
+
   @type criteria :: %{
           optional(:search) => String.t(),
           optional(:min_reputation) => non_neg_integer() | nil,
           optional(:max_cost_copper) => non_neg_integer() | nil,
+          optional(:side) => side(),
           optional(:sort_by) => :cost | :reputation | :rep_per_gold,
           optional(:sort_dir) => :asc | :desc
         }
 
+  # Per docs/PRD.md § 7.8's locked-in decision ("Horde only, for
+  # now") — the default view, not the only one; :any/:alliance stay
+  # one click away via the faction toggle.
   @default_criteria %{
     search: "",
     min_reputation: nil,
     max_cost_copper: nil,
+    side: :horde,
     sort_by: :rep_per_gold,
     sort_dir: :desc
   }
@@ -41,7 +48,8 @@ defmodule WowForeverRecipeFinder.WritResultsFilter do
   defp matches?(%WritEfficiencyResult{} = result, criteria) do
     search_match?(result, criteria.search) and
       threshold_match?(result.total_reputation, criteria.min_reputation, :min) and
-      threshold_match?(result.total_cost_copper, criteria.max_cost_copper, :max)
+      threshold_match?(result.total_cost_copper, criteria.max_cost_copper, :max) and
+      side_match?(result, criteria.side)
   end
 
   defp search_match?(_result, ""), do: true
@@ -49,6 +57,22 @@ defmodule WowForeverRecipeFinder.WritResultsFilter do
   defp search_match?(%WritEfficiencyResult{writ: writ}, search) do
     String.contains?(String.downcase(writ.name), String.downcase(search))
   end
+
+  # A hand-in is only ever excluded by the faction toggle when
+  # Wowhead's data explicitly says it's friendly to a *different*
+  # faction than the one selected. Two cases deliberately bypass the
+  # toggle entirely, per docs/DATA_SOURCES.md's verified reaction
+  # semantics (1 friendly, 0 neutral, -1 hostile — never "blocked"):
+  # a hand-in that isn't known/placed yet (never hidden by any
+  # filter, per PRD § 7.8), and a hand-in reported neutral to every
+  # faction (`friendly_to == []` with real zone data) — neutral means
+  # approachable by anyone, not "friendly to neither".
+  defp side_match?(_result, :any), do: true
+  defp side_match?(%WritEfficiencyResult{writ: %{hand_in: %{zone_id: nil}}}, _side), do: true
+  defp side_match?(%WritEfficiencyResult{writ: %{hand_in: %{friendly_to: []}}}, _side), do: true
+
+  defp side_match?(%WritEfficiencyResult{writ: %{hand_in: %{friendly_to: friendly}}}, side),
+    do: side in friendly
 
   # A threshold that isn't set never excludes a row. A row missing the
   # underlying value (nil) is excluded once a threshold IS set, per

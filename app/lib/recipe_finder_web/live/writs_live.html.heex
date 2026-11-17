@@ -32,6 +32,8 @@
   <% end %>
 
   <% filtered = WritResultsFilter.apply(@results, @filter) %>
+  <% pins = if @world_map, do: WritMapPlacement.hand_in_pins(filtered, @world_map), else: []
+  pin_id_by_writ_id = WritMapPlacement.pin_id_by_writ_id(pins) %>
   <form id="filter-form" phx-change="filter_changed">
     <div class="rf-filterbar">
       <input
@@ -60,6 +62,19 @@
       </label>
     </div>
   </form>
+
+  <div class="rf-side-toggle" id="wm-side-toggle">
+    <span class="rf-side-toggle-label">I play</span>
+    <button
+      :for={{param, label} <- sides()}
+      type="button"
+      class={["rf-side-chip", side_selected?(@filter, param) && "on"]}
+      phx-click="set_side"
+      phx-value-side={param}
+    >
+      {label}
+    </button>
+  </div>
 
   <div class="rf-stats" style="margin: 12px 0;">
     <span><strong>{length(filtered)}</strong> shown</span>
@@ -96,9 +111,9 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="writs-table-body" phx-hook="WritRowHover">
         <%= for r <- filtered do %>
-          <tr>
+          <tr data-pin-id={Map.get(pin_id_by_writ_id, r.writ.id)}>
             <td class="rf-writ-select">
               <input
                 type="checkbox"
@@ -120,13 +135,13 @@
                 {r.writ.name}
               </a>
               <div class="rf-item-tier">
-                {r.writ.hand_in_npc_name && "at #{r.writ.hand_in_npc_name}"}
+                {r.writ.hand_in.npc_name && "at #{r.writ.hand_in.npc_name}"}
               </div>
             </td>
             <td>{Enum.map_join(r.writ.profession_slugs, " / ", &profession_label/1)}</td>
             <td><span class="rf-source-pill">{tier_label(r.writ.tier)}</span></td>
-            <td class="rf-muted">{r.writ.hand_in_zone || "—"}</td>
-            <td class="rf-muted">{r.writ.hand_in_npc_name || "—"}</td>
+            <td class="rf-muted">{r.writ.hand_in.zone || "—"}</td>
+            <td class="rf-muted">{r.writ.hand_in.npc_name || "—"}</td>
             <td class="num rf-muted">
               <%= cond do %>
                 <% pending_data?(r) -> %>
@@ -252,6 +267,185 @@
         >
           <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
         </span>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+
+<%= if @world_map do %>
+  <button
+    type="button"
+    class="rf-map-fab"
+    phx-click="toggle_map_panel"
+    aria-label="Writ route map"
+    title="Writ route map"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"
+        stroke="var(--accent)"
+        stroke-width="2"
+        stroke-linejoin="round"
+      />
+      <path d="M9 4v14M15 6v14" stroke="var(--accent)" stroke-width="2" />
+    </svg>
+  </button>
+
+  <%= if @map_open? do %>
+    <% selected = selected_pin(pins, @selected_pin_id) %>
+    <div class="rf-map-popup">
+      <div class="rf-map-popup-header">
+        <strong>Writ Route Map</strong>
+        <button
+          type="button"
+          class="rf-shopping-popup-close"
+          phx-click="toggle_map_panel"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+      </div>
+
+      <div class="rf-map-layout">
+        <div class="rf-map-card">
+          <div class="rf-map-tools">
+            <button
+              type="button"
+              phx-click={
+                JS.dispatch("rf:map-show-view",
+                  to: "#rf-writ-map",
+                  detail: %{view_box: full_view_box()}
+                )
+              }
+            >
+              Full map
+            </button>
+            <button
+              :for={continent <- @world_map.continents}
+              type="button"
+              phx-click={
+                JS.dispatch("rf:map-show-view",
+                  to: "#rf-writ-map",
+                  detail: %{view_box: rect_view_box(continent.rect)}
+                )
+              }
+            >
+              {continent_label(continent.key)}
+            </button>
+          </div>
+          <div class="rf-map-zoom">
+            <button type="button" data-zoom="in" title="Zoom in">+</button>
+            <button type="button" data-zoom="out" title="Zoom out">−</button>
+          </div>
+
+          <svg
+            id="rf-writ-map"
+            class="rf-writ-map"
+            phx-hook="WritMap"
+            viewBox={full_view_box()}
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="World map of Craftsman's Writ hand-in NPCs"
+          >
+            <g id="rf-map-base" phx-update="ignore">
+              <path
+                :for={continent <- @world_map.continents}
+                class="rf-map-land"
+                fill-rule="evenodd"
+                d={svg_path(continent.land)}
+              />
+              <path
+                :for={zone <- @world_map.zones}
+                class="rf-map-zone"
+                fill-rule="evenodd"
+                d={svg_path(zone.polygons)}
+              >
+                <title :if={zone.name}>{zone.name}</title>
+              </path>
+              <text
+                :for={zone <- @world_map.zones}
+                :if={zone.name && zone.label}
+                x={elem(zone.label, 0)}
+                y={elem(zone.label, 1)}
+                class="rf-map-zone-label"
+              >
+                {zone.name}
+              </text>
+            </g>
+            <g id="rf-map-pins">
+              <g
+                :for={pin <- pins}
+                id={"wm-pin-#{pin.id}"}
+                class={["rf-map-pin", @selected_pin_id == pin.id && "selected"]}
+                transform={"translate(#{pin.x} #{pin.y})"}
+                phx-click="select_pin"
+                phx-value-id={pin.id}
+              >
+                <title>{pin_title(pin)} · {length(pin.results)} writ(s)</title>
+                <g class="rf-map-scaled">
+                  <circle :if={@selected_pin_id == pin.id} r="14.4" class="rf-map-pin-ring" />
+                  <circle r="9" class="rf-map-pin-dot" />
+                  <text class="rf-map-pin-count">{length(pin.results)}</text>
+                  <circle
+                    :if={:alliance in pin.friendly_to}
+                    cx="-6.75"
+                    cy="-7.2"
+                    r="2.9"
+                    class="rf-map-faction alliance"
+                  />
+                  <circle
+                    :if={:horde in pin.friendly_to}
+                    cx="6.75"
+                    cy="-7.2"
+                    r="2.9"
+                    class="rf-map-faction horde"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="rf-map-panel">
+          <%= if selected do %>
+            <div class="rf-map-panel-head">
+              <button type="button" class="rf-forget-link" phx-click="clear_pin">← All pins</button>
+              <h3>{pin_title(selected)}</h3>
+              <div class="rf-muted">
+                {selected.zone}
+                <span
+                  id={"waypoint-copy-#{selected.id}"}
+                  phx-hook="CopyButton"
+                  data-copy={WritMapPlacement.waypoint_command(selected)}
+                  title="Copy waypoint (TomTom)"
+                >
+                  <button type="button" class="rf-copy-btn">{WritMapPlacement.waypoint_command(
+                    selected
+                  )}</button>
+                </span>
+              </div>
+            </div>
+            <div class="rf-map-panel-list">
+              <div :for={r <- selected.results} class="rf-map-panel-writ">{r.writ.name}</div>
+            </div>
+          <% else %>
+            <div class="rf-map-panel-head">
+              <h3>{length(pins)} pin(s) on the map</h3>
+              <div class="rf-muted">Click a pin to see its writs.</div>
+            </div>
+            <div class="rf-map-panel-list">
+              <div
+                :for={pin <- pins}
+                class="rf-map-panel-row"
+                phx-click="select_pin"
+                phx-value-id={pin.id}
+              >
+                <strong>{pin_title(pin)}</strong>
+                <span class="rf-muted">{pin.zone} · {length(pin.results)} writ(s)</span>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   <% end %>

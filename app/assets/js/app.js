@@ -135,6 +135,141 @@ const Hooks = {
   }
 }
 
+// Writ Route Map (docs/PRD.md § 7.10). The server renders the SVG once
+// with the whole-canvas viewBox; zoom/pan live here so they survive
+// every filter/pin-selection patch. `updated()` re-applies the current
+// viewBox because a LiveView patch would otherwise reset it to the
+// server-rendered one. `--k` (canvas units per screen pixel) keeps
+// pins and labels a constant on-screen size at any zoom — see
+// .rf-map-scaled / .rf-map-zone-label in app.css.
+const MIN_VIEW_WIDTH = 1500
+const MAX_VIEW_WIDTH = 60000
+
+Hooks.WritMap = {
+  mounted() {
+    this.viewBox = this.el.getAttribute("viewBox").split(/\s+/).map(Number)
+    this.card = this.el.closest(".rf-map-card")
+    this.drag = null
+
+    this.el.addEventListener("wheel", (e) => {
+      e.preventDefault()
+      const p = this.toCanvas(e)
+      this.zoomAt(e.deltaY > 0 ? 1.2 : 1 / 1.2, p.x, p.y)
+    }, {passive: false})
+
+    this.el.addEventListener("pointerdown", (e) => {
+      if (e.button !== 0) return
+      this.drag = {x: e.clientX, y: e.clientY, start: this.viewBox.slice(), moved: false}
+      this.el.classList.add("dragging")
+    })
+    this.onMove = (e) => {
+      if (!this.drag) return
+      const k = this.scale()
+      const dx = (e.clientX - this.drag.x) * k
+      const dy = (e.clientY - this.drag.y) * k
+      if (Math.abs(e.clientX - this.drag.x) + Math.abs(e.clientY - this.drag.y) > 3) this.drag.moved = true
+      this.viewBox = [this.drag.start[0] - dx, this.drag.start[1] - dy, this.viewBox[2], this.viewBox[3]]
+      this.el.setAttribute("viewBox", this.viewBox.join(" "))
+    }
+    this.onUp = () => {
+      if (!this.drag) return
+      this.suppressClick = this.drag.moved
+      this.drag = null
+      this.el.classList.remove("dragging")
+    }
+    window.addEventListener("pointermove", this.onMove)
+    window.addEventListener("pointerup", this.onUp)
+
+    // A drag that ends over a pin must not also select it.
+    this.el.addEventListener("click", (e) => {
+      if (this.suppressClick) {
+        e.stopPropagation()
+        e.preventDefault()
+      }
+      this.suppressClick = false
+    }, true)
+
+    this.card.querySelectorAll("[data-zoom]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const [x, y, w, h] = this.viewBox
+        this.zoomAt(button.dataset.zoom === "in" ? 1 / 1.5 : 1.5, x + w / 2, y + h / 2)
+      })
+    })
+
+    // Dispatched by the continent-shortcut buttons via JS.dispatch — a
+    // plain view change, no server round-trip needed for it.
+    this.el.addEventListener("rf:map-show-view", (e) => {
+      this.viewBox = e.detail.view_box.split(/\s+/).map(Number)
+      this.apply()
+    })
+
+    this.resizeObserver = new ResizeObserver(() => this.apply())
+    this.resizeObserver.observe(this.el)
+    this.apply()
+  },
+
+  updated() { this.apply() },
+
+  destroyed() {
+    window.removeEventListener("pointermove", this.onMove)
+    window.removeEventListener("pointerup", this.onUp)
+    this.resizeObserver.disconnect()
+  },
+
+  apply() {
+    this.el.setAttribute("viewBox", this.viewBox.join(" "))
+    this.el.style.setProperty("--k", this.scale())
+  },
+
+  // preserveAspectRatio="xMidYMid meet": the larger ratio wins.
+  scale() {
+    const r = this.el.getBoundingClientRect()
+    return Math.max(this.viewBox[2] / (r.width || 1), this.viewBox[3] / (r.height || 1))
+  },
+
+  zoomAt(factor, cx, cy) {
+    const [x, y, w, h] = this.viewBox
+    const nw = Math.min(Math.max(w * factor, MIN_VIEW_WIDTH), MAX_VIEW_WIDTH)
+    const nh = nw * h / w
+    this.viewBox = [cx - (cx - x) * nw / w, cy - (cy - y) * nh / h, nw, nh]
+    this.apply()
+  },
+
+  toCanvas(e) {
+    const pt = this.el.createSVGPoint()
+    pt.x = e.clientX
+    pt.y = e.clientY
+    return pt.matrixTransform(this.el.getScreenCTM().inverse())
+  }
+}
+
+// Flashes a writ row's matching map pin on hover, entirely client-side
+// (no server round-trip — hover fires far too often for that, and the
+// pin's own position never changes based on hover). One delegated
+// listener on the table body rather than one per row.
+Hooks.WritRowHover = {
+  mounted() {
+    this.onOver = (e) => {
+      const row = e.target.closest("tr[data-pin-id]")
+      if (!row || !row.dataset.pinId) return
+      const pin = document.getElementById(`wm-pin-${row.dataset.pinId}`)
+      if (pin) pin.classList.add("hovered")
+    }
+    this.onOut = (e) => {
+      const row = e.target.closest("tr[data-pin-id]")
+      if (!row || !row.dataset.pinId) return
+      const pin = document.getElementById(`wm-pin-${row.dataset.pinId}`)
+      if (pin) pin.classList.remove("hovered")
+    }
+    this.el.addEventListener("mouseover", this.onOver)
+    this.el.addEventListener("mouseout", this.onOut)
+  },
+  destroyed() {
+    this.el.removeEventListener("mouseover", this.onOver)
+    this.el.removeEventListener("mouseout", this.onOut)
+  }
+}
+
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,

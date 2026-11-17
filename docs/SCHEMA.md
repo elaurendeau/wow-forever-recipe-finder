@@ -68,7 +68,17 @@ writ
   repeat                  nullable string — only a literal "daily" is trusted; null means "not yet confirmed
                            either way" per PRD § 7.8's edge-case list, never "one-time"
   hand_in_npc_name        nullable — some writs genuinely have no named NPC yet (a container, or unresolved)
+  hand_in_npc_id          nullable — the NPC's own Wowhead id; groups several writs under one map pin
   hand_in_zone            nullable
+  hand_in_zone_id         nullable — the zone's Wowhead area id, used to place the hand-in on the vector
+                           world map (see "World map vectors" below) via that zone's rect; null for the
+                           same writs `hand_in_zone`/`hand_in_npc_name` are null for (hand-in not known yet)
+  hand_in_way_x           nullable float — in-game zone-percentage coordinate (0-100), what `/way` takes
+  hand_in_way_y           nullable float — same, Y axis
+  hand_in_friendly_to     {:array, :string}, default [] — which faction(s) ("alliance"/"horde") Wowhead
+                           reports the hand-in NPC as friendly to. **Not** "which faction(s) can turn this
+                           in" — added 2026-11-17, see docs/DATA_SOURCES.md for why 0 ("neutral") is
+                           deliberately excluded from this list rather than treated as "blocked"
   reward_money_copper     integer, default 0 — every writ seen in the first extraction is 0; still a real
                            field, not assumed to always be
   resolution_status       enum: complete | pending_quest_page — mirrors the extraction's own `data_status`;
@@ -95,6 +105,10 @@ writ_reputation_reward
 ```
 
 **Deliberately not modeled in Phase 1:** `rewards.items` / `rewards.item_choices` from the extraction (bonus reward items a writ grants) aren't persisted at all yet — Phase 1's ranking only counts reputation and `reward_money_copper`, per PRD § 7.8's Non-Goals. Adding them is a future, scoped extension, not assumed here.
+
+## World map vectors — deliberately NOT in Postgres — added 2026-11-17
+
+`priv/world_map/world_map_vectors.json` (continent coastlines, zone/subzone polygons, town points — see [DATA_SOURCES.md § Wowhead WoW Forever World Map](DATA_SOURCES.md#wowhead-wow-forever-world-map)) is loaded straight from that committed file at request time by `PrivFileWorldMapGateway`, **never written to a table**, even though every other static reference dataset in this app (the profession catalogs above, the writ catalog above) lives in Postgres. This is a deliberate exception, not an inconsistency: that convention exists because catalog rows are *filtered and joined via SQL* (a pattern's reagents, a writ's reputation rewards). The world map is never filtered or joined at all — every request that needs it loads the whole file and renders it as-is (a handful of nested polygon arrays, read wholesale). Normalizing ~52 zones' worth of nested ring/point arrays into relational tables would add real schema and query complexity for zero query benefit. Revisit only if some future feature needs to filter/query map geometry in SQL, which nothing does today.
 
 ## Deliberately not a table: anything from an uploaded TSM export
 

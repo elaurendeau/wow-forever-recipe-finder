@@ -528,3 +528,268 @@ a {
 .rf-copy-btn:hover {
   opacity: 0.9;
 }
+
+/* ---------------------------------------------------------------------
+   Writ Route Map (docs/PRD.md § 7.10) — a FAB + popup over the vector
+   world map, stacked above the shopping-cart FAB. Mirrors
+   docs/mockups/writs-reference.html's map section.
+   --------------------------------------------------------------------- */
+.rf-side-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+.rf-side-toggle-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-right: 2px;
+}
+.rf-side-chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.rf-side-chip.on {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.rf-map-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 84px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  z-index: 60;
+}
+
+/* A floating panel, not a full-screen modal — the table stays visible
+   and hoverable beside/behind it, which is what lets hovering a row
+   flash its pin on the map (WritRowHover in app.js) actually work.
+   No dimmed backdrop, same spirit as .rf-shopping-popup. */
+.rf-map-popup {
+  position: fixed;
+  top: 84px;
+  right: 24px;
+  width: min(820px, 58vw);
+  height: min(680px, calc(100vh - 120px));
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 65;
+}
+@media (max-width: 900px) {
+  .rf-map-popup {
+    width: calc(100vw - 48px);
+  }
+}
+.rf-map-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+.rf-map-popup-header strong {
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+
+.rf-map-layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 14px;
+}
+.rf-map-card {
+  position: relative;
+  background: #0f1622;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.rf-map-tools {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.rf-map-tools button,
+.rf-map-zoom button {
+  background: rgba(22, 22, 30, 0.92);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.rf-map-zoom {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+.rf-map-zoom button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.rf-writ-map {
+  --k: 60;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+.rf-writ-map.dragging {
+  cursor: grabbing;
+}
+.rf-map-land {
+  fill: #23232e;
+}
+.rf-map-zone {
+  fill: #23232e;
+  stroke: #3a3a4a;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.rf-map-zone:hover {
+  fill: #34323f;
+}
+.rf-map-zone-label {
+  fill: #6f6d7d;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: calc(12.5px * var(--k));
+  text-anchor: middle;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-opacity: 0.6;
+  stroke-width: calc(3px * var(--k));
+}
+.rf-map-scaled {
+  transform: scale(var(--k));
+}
+.rf-map-pin {
+  cursor: pointer;
+}
+.rf-map-pin-dot {
+  fill: var(--accent);
+  stroke: var(--accent-fg);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+.rf-map-pin:hover .rf-map-pin-dot,
+.rf-map-pin.selected .rf-map-pin-dot {
+  fill: #f2c26b;
+}
+.rf-map-pin-ring {
+  fill: none;
+  stroke: #f2c26b;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+/* Hover-flash from a table row (see WritRowHover in app.js) — no
+   server round-trip, so it can only toggle a class on a pin already
+   in the DOM, not insert the selection ring. A brighter dot + glow
+   is enough to read as "here it is" without that. */
+.rf-map-pin.hovered .rf-map-pin-dot {
+  fill: #f2c26b;
+  filter: drop-shadow(0 0 calc(4px * var(--k)) #f2c26b);
+}
+.rf-map-pin-count {
+  fill: var(--accent-fg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+.rf-map-faction {
+  stroke: var(--bg);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.rf-map-faction.alliance {
+  fill: #5b8def;
+}
+.rf-map-faction.horde {
+  fill: #e0574f;
+}
+
+.rf-map-panel {
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.rf-map-panel-head h3 {
+  margin: 4px 0 2px;
+  font-size: 14px;
+}
+.rf-map-panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+.rf-map-panel-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.rf-map-panel-row:hover {
+  background: var(--surface-2);
+}
+.rf-map-panel-writ {
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+@media (max-width: 760px) {
+  .rf-map-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) 200px;
+  }
+}

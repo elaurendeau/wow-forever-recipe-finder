@@ -233,4 +233,87 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       refute html =~ ~r/rf-writ-number[^>]*>\s*2\s*</
     end
   end
+
+  describe "writ route map (docs/PRD.md § 7.10) — FAB + floating panel, table stays visible" do
+    test "the map FAB is shown once the real world map loads", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      html = upload_tsm_export(view)
+
+      assert html =~ "rf-map-fab"
+    end
+
+    test "the Horde faction toggle is on by default, Alliance is not", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      html = upload_tsm_export(view)
+
+      assert html =~ ~r/rf-side-chip on[^>]*>\s*Horde/
+      refute html =~ ~r/rf-side-chip on[^>]*>\s*Alliance/
+    end
+
+    test "switching to Alliance hides a writ friendly to Horde only, without a re-upload", %{
+      conn: conn
+    } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      # Goblin Rocket Fuel's fixture hand-in is {alliance: -1, horde: 1}.
+      html = view |> element("button.rf-side-chip", "Alliance") |> render_click()
+
+      refute html =~ "Goblin Rocket Fuel"
+      assert html =~ "Elixir of Ogre&#39;s Strength"
+    end
+
+    test "clicking the map FAB opens a floating panel (not a full-page modal) listing every placed pin",
+         %{
+           conn: conn
+         } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      html = view |> element("button.rf-map-fab") |> render_click()
+
+      assert html =~ "rf-map-popup"
+      refute html =~ "rf-map-backdrop"
+      # Sos'mol (Elixir of Ogre's Strength's hand-in) is placed; Heavy
+      # Bronze Mace's hand-in has no coordinates at all and is not.
+      assert html =~ "Sos&#39;mol"
+    end
+
+    test "a writ whose hand-in has no coordinates at all is never shown as a pin", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      view |> element("button.rf-map-fab") |> render_click()
+      # Gorgrash (Heavy Bronze Mace's hand-in, no zone_id/coordinates in
+      # the fixture) is legitimately in the table's NPC column — scope
+      # to the map's own pin list, not the whole page, to prove it has
+      # no pin rather than merely that the word appears somewhere.
+      panel_html = view |> element(".rf-map-panel-list") |> render()
+
+      refute panel_html =~ "Gorgrash"
+    end
+
+    test "clicking a pin's row in the panel shows that NPC's writs and a waypoint command", %{
+      conn: conn
+    } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      view |> element("button.rf-map-fab") |> render_click()
+      html = view |> element(".rf-map-panel-row", "Sos'mol") |> render_click()
+
+      assert html =~ "Sos&#39;mol"
+      assert html =~ "Craftsman&#39;s Writ: Elixir of Ogre&#39;s Strength"
+      assert html =~ "/way Alterac Mountains"
+      assert html =~ "← All pins"
+    end
+
+    test "each table row carries its pin id as a data attribute, for the client-side hover-flash",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      html = upload_tsm_export(view)
+
+      assert html =~ ~s(data-pin-id="npc-257281")
+    end
+  end
 end

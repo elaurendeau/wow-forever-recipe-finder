@@ -19,7 +19,14 @@
       "required_items": [
         { "wowhead_id": 264031, "display_name": "Elixir of Ogre Strength", "quantity": 1 }
       ],
-      "hand_in": { "npc_id": 257281, "npc_name": "Sos'mol", "zone": "Alterac Mountains" },
+      "hand_in": {
+        "npc_id": 257281,
+        "npc_name": "Sos'mol",
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": { "x": 38.4, "y": 61.2 },
+        "reaction": { "alliance": 1, "horde": 1 }
+      },
       "rewards": {
         "reputation": [
           { "faction_id": 2586, "amount": 75 },
@@ -61,7 +68,14 @@
       "required_items": [
         { "wowhead_id": 999990002, "display_name": "Goblin Rocket Fuel", "quantity": 1 }
       ],
-      "hand_in": { "npc_id": null, "npc_name": "Duke Hydraxis", "zone": "Azshara" },
+      "hand_in": {
+        "npc_id": null,
+        "npc_name": "Duke Hydraxis",
+        "zone": "Azshara",
+        "zone_id": 16,
+        "coordinates": { "x": 10.0, "y": 20.0 },
+        "reaction": { "alliance": -1, "horde": 1 }
+      },
       "rewards": {
         "reputation": [
           { "faction_id": 2586, "amount": 125 },

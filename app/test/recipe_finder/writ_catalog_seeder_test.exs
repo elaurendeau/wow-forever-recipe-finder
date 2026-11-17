@@ -26,8 +26,13 @@ defmodule WowForeverRecipeFinder.WritCatalogSeederTest do
     complete = writ!(writs, "Craftsman's Writ: Elixir of Ogre's Strength")
     assert %Writ{resolution_status: :complete, tier: :journeyman, repeat: "daily"} = complete
     assert complete.profession_slugs == ["alchemy"]
-    assert complete.hand_in_npc_name == "Sos'mol"
-    assert complete.hand_in_zone == "Alterac Mountains"
+    assert complete.hand_in.npc_id == 257_281
+    assert complete.hand_in.npc_name == "Sos'mol"
+    assert complete.hand_in.zone == "Alterac Mountains"
+    assert complete.hand_in.zone_id == 36
+    assert complete.hand_in.way_x == 38.4
+    assert complete.hand_in.way_y == 61.2
+    assert complete.hand_in.friendly_to == [:alliance, :horde]
 
     assert complete.required_items == [
              %WritRequiredItem{
@@ -51,7 +56,21 @@ defmodule WowForeverRecipeFinder.WritCatalogSeederTest do
     assert pending.resolution_status == :pending_quest_page
     assert pending.required_items == []
     assert pending.repeat == nil
-    assert pending.hand_in_npc_name == "Gorgrash"
+    assert pending.hand_in.npc_name == "Gorgrash"
+    assert pending.hand_in.way_x == nil
+    assert pending.hand_in.friendly_to == []
+  end
+
+  test "a hand-in reported hostile to one faction and friendly to the other keeps both, not collapsed" do
+    :ok = WritCatalogSeeder.load_from_file!(@fixture_path)
+
+    rocket_fuel =
+      writ!(EctoWritRepositoryGateway.list_writs(), "Craftsman's Writ: Goblin Rocket Fuel")
+
+    # Wowhead reaction: 1 friendly, 0 neutral, -1 hostile — only
+    # strictly-friendly factions are listed; -1 (Alliance here) is
+    # excluded the same way 0/neutral would be.
+    assert rocket_fuel.hand_in.friendly_to == [:horde]
   end
 
   test "a writ listing more than one profession keeps the full set" do

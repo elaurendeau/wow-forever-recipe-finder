@@ -21,12 +21,24 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
   alias WowForeverRecipeFinder.{
     ProfitComputation,
     WritEfficiency,
+    WritMapPlacement,
     WritResultsFilter,
     WritShoppingList
   }
 
+  # The whole populated canvas minus Wowhead's dead left margin — see
+  # docs/DATA_SOURCES.md § Wowhead WoW Forever World Map. Loaded once
+  # at mount since it's static reference data, same for every visitor.
+  @full_view_box "8192 0 36352 37888"
+
   @impl true
   def mount(_params, _session, socket) do
+    {world_map, map_load_error} =
+      case WritMapPlacement.load_world_map() do
+        {:ok, world_map} -> {world_map, nil}
+        {:error, error} -> {nil, error}
+      end
+
     socket =
       socket
       |> assign(
@@ -46,7 +58,15 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         # `shopping_list_unseen?` drives the FAB's "modified since you
         # last opened it" badge.
         shopping_list_open?: false,
-        shopping_list_unseen?: false
+        shopping_list_unseen?: false,
+        # The map lives behind its own FAB + popup, stacked above the
+        # shopping-cart one — per docs/PRD.md § 7.10. Loaded once at
+        # mount (not per-filter-change): it's the same static vector
+        # data for every visitor regardless of what's checked/filtered.
+        world_map: world_map,
+        map_load_error: map_load_error,
+        map_open?: false,
+        selected_pin_id: nil
       )
       |> allow_upload(:tsm_export, accept: ~w(.lua), max_entries: 1, max_file_size: 20_000_000)
 
@@ -105,7 +125,9 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         upload_error: nil,
         selected_writ_ids: [],
         shopping_list_open?: false,
-        shopping_list_unseen?: false
+        shopping_list_unseen?: false,
+        map_open?: false,
+        selected_pin_id: nil
       )
       |> push_event("clear_snapshot", %{})
 
@@ -160,6 +182,23 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
       })
 
     {:noreply, assign(socket, filter: filter)}
+  end
+
+  def handle_event("set_side", %{"side" => side}, socket) do
+    filter = %{socket.assigns.filter | side: String.to_existing_atom(side)}
+    {:noreply, assign(socket, filter: filter, selected_pin_id: nil)}
+  end
+
+  def handle_event("toggle_map_panel", _params, socket) do
+    {:noreply, assign(socket, map_open?: not socket.assigns.map_open?)}
+  end
+
+  def handle_event("select_pin", %{"id" => id}, socket) do
+    {:noreply, assign(socket, selected_pin_id: id)}
+  end
+
+  def handle_event("clear_pin", _params, socket) do
+    {:noreply, assign(socket, selected_pin_id: nil)}
   end
 
   def handle_event("sort_by", %{"field" => field}, socket) do
@@ -244,6 +283,25 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
 
   defp pending_data?(result), do: :no_required_items_data in result.missing_data_reasons
 
+  # SVG path data for a WorldMap polygon list — `fill-rule="evenodd"`
+  # on the element lets several rings (a landmass plus an island, a
+  # zone plus a lake carved out of it) share one path and render
+  # holes correctly, per docs/CODE_STYLE.md's Humble Object rule:
+  # pure view-formatting, no business logic.
+  defp svg_path(polygons) do
+    Enum.map_join(polygons, " ", fn rings -> Enum.map_join(rings, " ", &ring_path/1) end)
+  end
+
+  defp ring_path([]), do: ""
+
+  defp ring_path([{x0, y0} | rest]) do
+    "M#{fmt_coord(x0)} #{fmt_coord(y0)}" <>
+      Enum.map_join(rest, "", fn {x, y} -> " L#{fmt_coord(x)} #{fmt_coord(y)}" end) <> " Z"
+  end
+
+  defp fmt_coord(n) when is_integer(n), do: Integer.to_string(n)
+  defp fmt_coord(n), do: :erlang.float_to_binary(n * 1.0, decimals: 1)
+
   # The little number shown next to a checked row's checkbox, and the
   # same number tagging that writ's group in the shopping-list popup —
   # nil (not rendered) for a writ that isn't selected at all.
@@ -253,6 +311,28 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
       index -> index + 1
     end
   end
+
+  defp full_view_box, do: @full_view_box
+
+  defp sides, do: [{"horde", "Horde"}, {"alliance", "Alliance"}, {"any", "Either"}]
+
+  defp side_selected?(filter, side_param), do: Atom.to_string(filter.side) == side_param
+
+  # The pin currently open in the side panel, or nil — looked up by id
+  # each render rather than carried as a full pin in the socket so a
+  # filter change that drops a pin's last writ also drops the panel.
+  defp selected_pin(_pins, nil), do: nil
+  defp selected_pin(pins, id), do: Enum.find(pins, &(&1.id == id))
+
+  defp pin_title(%{npc_name: nil}), do: "Unknown NPC"
+  defp pin_title(%{npc_name: name}), do: name
+
+  defp continent_label("kalimdor"), do: "Kalimdor"
+  defp continent_label("eastern-kingdoms"), do: "Eastern Kingdoms"
+  defp continent_label("zephras-isle"), do: "Zephras Isle"
+  defp continent_label(key), do: String.capitalize(key)
+
+  defp rect_view_box({{x1, y1}, {x2, y2}}), do: "#{x1} #{y1} #{x2 - x1} #{y2 - y1}"
 
   defp sort_indicator(filter, field) do
     cond do

@@ -63,6 +63,8 @@ defmodule WowForeverRecipeFinder.WritCatalogSeeder do
     hand_in = attrs["hand_in"] || %{}
     rewards = attrs["rewards"] || %{}
 
+    {way_x, way_y} = way_point(hand_in["coordinates"])
+
     writ =
       Repo.insert!(%Writ{
         name: attrs["name"],
@@ -73,7 +75,12 @@ defmodule WowForeverRecipeFinder.WritCatalogSeeder do
         tier: attrs["tier"],
         repeat: attrs["repeat"],
         hand_in_npc_name: hand_in["npc_name"],
+        hand_in_npc_id: hand_in["npc_id"],
         hand_in_zone: hand_in["zone"],
+        hand_in_zone_id: hand_in["zone_id"],
+        hand_in_way_x: way_x,
+        hand_in_way_y: way_y,
+        hand_in_friendly_to: friendly_factions(hand_in["reaction"]),
         reward_money_copper: rewards["money_copper"] || 0,
         resolution_status: attrs["data_status"]
       })
@@ -87,6 +94,22 @@ defmodule WowForeverRecipeFinder.WritCatalogSeeder do
 
     writ
   end
+
+  defp way_point(%{"x" => x, "y" => y}) when is_number(x) and is_number(y), do: {x * 1.0, y * 1.0}
+  defp way_point(_unknown), do: {nil, nil}
+
+  # Wowhead's reaction codes: 1 friendly, 0 neutral, -1 hostile — verified
+  # against the real extraction (a naive "0 means blocked" reading
+  # produced writs neutral/0 to BOTH factions simultaneously, which
+  # can't be real for completable content; see docs/DATA_SOURCES.md).
+  # Only strictly-friendly (1) factions are listed here.
+  defp friendly_factions(%{"alliance" => alliance, "horde" => horde}) do
+    [{"alliance", alliance}, {"horde", horde}]
+    |> Enum.filter(fn {_faction, reaction} -> reaction == 1 end)
+    |> Enum.map(fn {faction, _reaction} -> faction end)
+  end
+
+  defp friendly_factions(_unknown), do: []
 
   defp insert_required_item!(writ, item_attrs) do
     Repo.insert!(%WritRequiredItem{

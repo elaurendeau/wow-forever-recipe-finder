@@ -41,7 +41,26 @@
       "hand_in": {
         "npc_id": 257281,
         "npc_name": "Sos'mol",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 38.4,
+          "y": 61.2
+        },
+        "all_coordinates": [
+          {
+            "x": 38.4,
+            "y": 61.2
+          },
+          {
+            "x": 38.6,
+            "y": 61
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -58,6 +77,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -95,7 +115,30 @@
       "hand_in": {
         "npc_id": 257296,
         "npc_name": "Muggol Breezebeard",
-        "zone": "Arathi Highlands"
+        "zone": "Arathi Highlands",
+        "zone_id": 45,
+        "coordinates": {
+          "x": 48.8,
+          "y": 55.8
+        },
+        "all_coordinates": [
+          {
+            "x": 48.4,
+            "y": 55.8
+          },
+          {
+            "x": 48.6,
+            "y": 55.4
+          },
+          {
+            "x": 48.8,
+            "y": 55.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -112,6 +155,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -149,7 +193,26 @@
       "hand_in": {
         "npc_id": 257315,
         "npc_name": "Ash'alari",
-        "zone": "Ashenvale"
+        "zone": "Ashenvale",
+        "zone_id": 331,
+        "coordinates": {
+          "x": 60.2,
+          "y": 72.6
+        },
+        "all_coordinates": [
+          {
+            "x": 60.2,
+            "y": 72.4
+          },
+          {
+            "x": 60.2,
+            "y": 72.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -166,6 +229,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -203,7 +267,26 @@
       "hand_in": {
         "npc_id": 3134,
         "npc_name": "Kzixx",
-        "zone": "Duskwood"
+        "zone": "Duskwood",
+        "zone_id": 10,
+        "coordinates": {
+          "x": 81.8,
+          "y": 19.8
+        },
+        "all_coordinates": [
+          {
+            "x": 81.4,
+            "y": 19.8
+          },
+          {
+            "x": 81.8,
+            "y": 19.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -220,6 +303,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -257,7 +341,26 @@
       "hand_in": {
         "npc_id": 261928,
         "npc_name": "Webbed Mudsnout Gnoll",
-        "zone": "Hillsbrad Foothills"
+        "zone": "Hillsbrad Foothills",
+        "zone_id": 267,
+        "coordinates": {
+          "x": 62.4,
+          "y": 69
+        },
+        "all_coordinates": [
+          {
+            "x": 62.4,
+            "y": 69
+          },
+          {
+            "x": 62.6,
+            "y": 69
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -274,6 +377,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -311,7 +415,26 @@
       "hand_in": {
         "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
-        "zone": "Stonetalon Mountains"
+        "zone": "Stonetalon Mountains",
+        "zone_id": 406,
+        "coordinates": {
+          "x": 59,
+          "y": 62.4
+        },
+        "all_coordinates": [
+          {
+            "x": 59,
+            "y": 62.4
+          },
+          {
+            "x": 59,
+            "y": 62.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -328,6 +451,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -365,7 +489,42 @@
       "hand_in": {
         "npc_id": 14508,
         "npc_name": "Short John Mithril",
-        "zone": "Stranglethorn Vale"
+        "zone": "Stranglethorn Vale",
+        "zone_id": 33,
+        "coordinates": {
+          "x": 29.6,
+          "y": 47.4
+        },
+        "all_coordinates": [
+          {
+            "x": 29.4,
+            "y": 47.4
+          },
+          {
+            "x": 29.6,
+            "y": 47.4
+          },
+          {
+            "x": 29.6,
+            "y": 47.6
+          },
+          {
+            "x": 30,
+            "y": 48.8
+          },
+          {
+            "x": 31,
+            "y": 48.4
+          },
+          {
+            "x": 31,
+            "y": 48.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -382,6 +541,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -419,7 +579,30 @@
       "hand_in": {
         "npc_id": 4720,
         "npc_name": "Rizzle Brassbolts",
-        "zone": "Thousand Needles"
+        "zone": "Thousand Needles",
+        "zone_id": 400,
+        "coordinates": {
+          "x": 77.2,
+          "y": 77.4
+        },
+        "all_coordinates": [
+          {
+            "x": 77.2,
+            "y": 77.4
+          },
+          {
+            "x": 77.4,
+            "y": 77.6
+          },
+          {
+            "x": 77.6,
+            "y": 77.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -468,7 +651,22 @@
       "hand_in": {
         "npc_id": 8305,
         "npc_name": "Kixxle",
-        "zone": "Wetlands"
+        "zone": "Wetlands",
+        "zone_id": 11,
+        "coordinates": {
+          "x": 50.2,
+          "y": 37.8
+        },
+        "all_coordinates": [
+          {
+            "x": 50.2,
+            "y": 37.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -517,7 +715,26 @@
       "hand_in": {
         "npc_id": 257282,
         "npc_name": "Alan Sneeks",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 30.4,
+          "y": 61
+        },
+        "all_coordinates": [
+          {
+            "x": 30.4,
+            "y": 61
+          },
+          {
+            "x": 30.6,
+            "y": 61
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -566,7 +783,30 @@
       "hand_in": {
         "npc_id": 257296,
         "npc_name": "Muggol Breezebeard",
-        "zone": "Arathi Highlands"
+        "zone": "Arathi Highlands",
+        "zone_id": 45,
+        "coordinates": {
+          "x": 48.8,
+          "y": 55.8
+        },
+        "all_coordinates": [
+          {
+            "x": 48.4,
+            "y": 55.8
+          },
+          {
+            "x": 48.6,
+            "y": 55.4
+          },
+          {
+            "x": 48.8,
+            "y": 55.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -615,7 +855,22 @@
       "hand_in": {
         "npc_id": 257316,
         "npc_name": "Cowardly Peon",
-        "zone": "Ashenvale"
+        "zone": "Ashenvale",
+        "zone_id": 331,
+        "coordinates": {
+          "x": 78.4,
+          "y": 68.8
+        },
+        "all_coordinates": [
+          {
+            "x": 78.4,
+            "y": 68.8
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -664,7 +919,22 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": "Battered Trunk",
-        "zone": "Duskwood"
+        "zone": "Duskwood",
+        "zone_id": 10,
+        "coordinates": {
+          "x": 26.2,
+          "y": 36.2
+        },
+        "all_coordinates": [
+          {
+            "x": 26.2,
+            "y": 36.2
+          }
+        ],
+        "reaction": {
+          "alliance": null,
+          "horde": null
+        }
       },
       "rewards": {
         "reputation": [
@@ -713,7 +983,26 @@
       "hand_in": {
         "npc_id": 261932,
         "npc_name": "Gorgrash",
-        "zone": "Hillsbrad Foothills"
+        "zone": "Hillsbrad Foothills",
+        "zone_id": 267,
+        "coordinates": {
+          "x": 80,
+          "y": 48.2
+        },
+        "all_coordinates": [
+          {
+            "x": 80,
+            "y": 48.2
+          },
+          {
+            "x": 80,
+            "y": 48.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -762,7 +1051,26 @@
       "hand_in": {
         "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
-        "zone": "Stonetalon Mountains"
+        "zone": "Stonetalon Mountains",
+        "zone_id": 406,
+        "coordinates": {
+          "x": 59,
+          "y": 62.4
+        },
+        "all_coordinates": [
+          {
+            "x": 59,
+            "y": 62.4
+          },
+          {
+            "x": 59,
+            "y": 62.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -811,7 +1119,22 @@
       "hand_in": {
         "npc_id": 2501,
         "npc_name": "\"Sea Wolf\" MacKinley",
-        "zone": "Stranglethorn Vale"
+        "zone": "Stranglethorn Vale",
+        "zone_id": 33,
+        "coordinates": {
+          "x": 27.8,
+          "y": 77
+        },
+        "all_coordinates": [
+          {
+            "x": 27.8,
+            "y": 77
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -828,6 +1151,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -865,7 +1189,30 @@
       "hand_in": {
         "npc_id": 6626,
         "npc_name": "\"Plucky\" Johnson",
-        "zone": "Thousand Needles"
+        "zone": "Thousand Needles",
+        "zone_id": 400,
+        "coordinates": {
+          "x": 79.6,
+          "y": 75.6
+        },
+        "all_coordinates": [
+          {
+            "x": 79.4,
+            "y": 75.6
+          },
+          {
+            "x": 79.6,
+            "y": 75.4
+          },
+          {
+            "x": 79.6,
+            "y": 75.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -914,7 +1261,22 @@
       "hand_in": {
         "npc_id": 8305,
         "npc_name": "Kixxle",
-        "zone": "Wetlands"
+        "zone": "Wetlands",
+        "zone_id": 11,
+        "coordinates": {
+          "x": 50.2,
+          "y": 37.8
+        },
+        "all_coordinates": [
+          {
+            "x": 50.2,
+            "y": 37.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -963,7 +1325,26 @@
       "hand_in": {
         "npc_id": 257282,
         "npc_name": "Alan Sneeks",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 30.4,
+          "y": 61
+        },
+        "all_coordinates": [
+          {
+            "x": 30.4,
+            "y": 61
+          },
+          {
+            "x": 30.6,
+            "y": 61
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1012,7 +1393,26 @@
       "hand_in": {
         "npc_id": 257304,
         "npc_name": "Alyce",
-        "zone": "Arathi Highlands"
+        "zone": "Arathi Highlands",
+        "zone_id": 45,
+        "coordinates": {
+          "x": 34,
+          "y": 23.2
+        },
+        "all_coordinates": [
+          {
+            "x": 34,
+            "y": 23.2
+          },
+          {
+            "x": 34,
+            "y": 23.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1061,7 +1461,22 @@
       "hand_in": {
         "npc_id": 257317,
         "npc_name": "Grembly",
-        "zone": "Ashenvale"
+        "zone": "Ashenvale",
+        "zone_id": 331,
+        "coordinates": {
+          "x": 82.2,
+          "y": 50.8
+        },
+        "all_coordinates": [
+          {
+            "x": 82.2,
+            "y": 50.8
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1078,6 +1493,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1115,7 +1531,26 @@
       "hand_in": {
         "npc_id": 3134,
         "npc_name": "Kzixx",
-        "zone": "Duskwood"
+        "zone": "Duskwood",
+        "zone_id": 10,
+        "coordinates": {
+          "x": 81.8,
+          "y": 19.8
+        },
+        "all_coordinates": [
+          {
+            "x": 81.4,
+            "y": 19.8
+          },
+          {
+            "x": 81.8,
+            "y": 19.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -1164,7 +1599,26 @@
       "hand_in": {
         "npc_id": 261932,
         "npc_name": "Gorgrash",
-        "zone": "Hillsbrad Foothills"
+        "zone": "Hillsbrad Foothills",
+        "zone_id": 267,
+        "coordinates": {
+          "x": 80,
+          "y": 48.2
+        },
+        "all_coordinates": [
+          {
+            "x": 80,
+            "y": 48.2
+          },
+          {
+            "x": 80,
+            "y": 48.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1181,6 +1635,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1218,7 +1673,26 @@
       "hand_in": {
         "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
-        "zone": "Stonetalon Mountains"
+        "zone": "Stonetalon Mountains",
+        "zone_id": 406,
+        "coordinates": {
+          "x": 59,
+          "y": 62.4
+        },
+        "all_coordinates": [
+          {
+            "x": 59,
+            "y": 62.4
+          },
+          {
+            "x": 59,
+            "y": 62.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1235,6 +1709,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1272,7 +1747,26 @@
       "hand_in": {
         "npc_id": 7853,
         "npc_name": "Scooty",
-        "zone": "Stranglethorn Vale"
+        "zone": "Stranglethorn Vale",
+        "zone_id": 33,
+        "coordinates": {
+          "x": 27.6,
+          "y": 77.4
+        },
+        "all_coordinates": [
+          {
+            "x": 27.4,
+            "y": 77.4
+          },
+          {
+            "x": 27.6,
+            "y": 77.4
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1289,6 +1783,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1326,7 +1821,22 @@
       "hand_in": {
         "npc_id": 4706,
         "npc_name": "Razzeric",
-        "zone": "Thousand Needles"
+        "zone": "Thousand Needles",
+        "zone_id": 400,
+        "coordinates": {
+          "x": 80.2,
+          "y": 76
+        },
+        "all_coordinates": [
+          {
+            "x": 80.2,
+            "y": 76
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1343,6 +1853,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1380,7 +1891,22 @@
       "hand_in": {
         "npc_id": 8305,
         "npc_name": "Kixxle",
-        "zone": "Wetlands"
+        "zone": "Wetlands",
+        "zone_id": 11,
+        "coordinates": {
+          "x": 50.2,
+          "y": 37.8
+        },
+        "all_coordinates": [
+          {
+            "x": 50.2,
+            "y": 37.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -1397,6 +1923,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1434,7 +1961,26 @@
       "hand_in": {
         "npc_id": 257281,
         "npc_name": "Sos'mol",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 38.4,
+          "y": 61.2
+        },
+        "all_coordinates": [
+          {
+            "x": 38.4,
+            "y": 61.2
+          },
+          {
+            "x": 38.6,
+            "y": 61
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1451,6 +1997,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1488,7 +2035,26 @@
       "hand_in": {
         "npc_id": 257304,
         "npc_name": "Alyce",
-        "zone": "Arathi Highlands"
+        "zone": "Arathi Highlands",
+        "zone_id": 45,
+        "coordinates": {
+          "x": 34,
+          "y": 23.2
+        },
+        "all_coordinates": [
+          {
+            "x": 34,
+            "y": 23.2
+          },
+          {
+            "x": 34,
+            "y": 23.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1537,7 +2103,22 @@
       "hand_in": {
         "npc_id": 257322,
         "npc_name": "Murache",
-        "zone": "Ashenvale"
+        "zone": "Ashenvale",
+        "zone_id": 331,
+        "coordinates": {
+          "x": 64.6,
+          "y": 80
+        },
+        "all_coordinates": [
+          {
+            "x": 64.6,
+            "y": 80
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1586,7 +2167,26 @@
       "hand_in": {
         "npc_id": 3134,
         "npc_name": "Kzixx",
-        "zone": "Duskwood"
+        "zone": "Duskwood",
+        "zone_id": 10,
+        "coordinates": {
+          "x": 81.8,
+          "y": 19.8
+        },
+        "all_coordinates": [
+          {
+            "x": 81.4,
+            "y": 19.8
+          },
+          {
+            "x": 81.8,
+            "y": 19.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -1603,6 +2203,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1640,7 +2241,22 @@
       "hand_in": {
         "npc_id": 3536,
         "npc_name": "Kris Legace",
-        "zone": "Hillsbrad Foothills"
+        "zone": "Hillsbrad Foothills",
+        "zone_id": 267,
+        "coordinates": {
+          "x": 80,
+          "y": 39
+        },
+        "all_coordinates": [
+          {
+            "x": 80,
+            "y": 39
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1689,7 +2305,26 @@
       "hand_in": {
         "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
-        "zone": "Stonetalon Mountains"
+        "zone": "Stonetalon Mountains",
+        "zone_id": 406,
+        "coordinates": {
+          "x": 59,
+          "y": 62.4
+        },
+        "all_coordinates": [
+          {
+            "x": 59,
+            "y": 62.4
+          },
+          {
+            "x": 59,
+            "y": 62.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1738,7 +2373,26 @@
       "hand_in": {
         "npc_id": 2663,
         "npc_name": "Narkk",
-        "zone": "Stranglethorn Vale"
+        "zone": "Stranglethorn Vale",
+        "zone_id": 33,
+        "coordinates": {
+          "x": 28.2,
+          "y": 74.4
+        },
+        "all_coordinates": [
+          {
+            "x": 28.2,
+            "y": 74.4
+          },
+          {
+            "x": 28.2,
+            "y": 74.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1787,7 +2441,26 @@
       "hand_in": {
         "npc_id": 4496,
         "npc_name": "Goblin Pit Boss",
-        "zone": "Thousand Needles"
+        "zone": "Thousand Needles",
+        "zone_id": 400,
+        "coordinates": {
+          "x": 79.8,
+          "y": 76.6
+        },
+        "all_coordinates": [
+          {
+            "x": 79.8,
+            "y": 76.4
+          },
+          {
+            "x": 79.8,
+            "y": 76.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1804,6 +2477,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1841,7 +2515,22 @@
       "hand_in": {
         "npc_id": 8305,
         "npc_name": "Kixxle",
-        "zone": "Wetlands"
+        "zone": "Wetlands",
+        "zone_id": 11,
+        "coordinates": {
+          "x": 50.2,
+          "y": 37.8
+        },
+        "all_coordinates": [
+          {
+            "x": 50.2,
+            "y": 37.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -1890,7 +2579,26 @@
       "hand_in": {
         "npc_id": 257282,
         "npc_name": "Alan Sneeks",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 30.4,
+          "y": 61
+        },
+        "all_coordinates": [
+          {
+            "x": 30.4,
+            "y": 61
+          },
+          {
+            "x": 30.6,
+            "y": 61
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1907,6 +2615,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1944,7 +2653,26 @@
       "hand_in": {
         "npc_id": 257304,
         "npc_name": "Alyce",
-        "zone": "Arathi Highlands"
+        "zone": "Arathi Highlands",
+        "zone_id": 45,
+        "coordinates": {
+          "x": 34,
+          "y": 23.2
+        },
+        "all_coordinates": [
+          {
+            "x": 34,
+            "y": 23.2
+          },
+          {
+            "x": 34,
+            "y": 23.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -1961,6 +2689,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -1998,7 +2727,22 @@
       "hand_in": {
         "npc_id": 257316,
         "npc_name": "Cowardly Peon",
-        "zone": "Ashenvale"
+        "zone": "Ashenvale",
+        "zone_id": 331,
+        "coordinates": {
+          "x": 78.4,
+          "y": 68.8
+        },
+        "all_coordinates": [
+          {
+            "x": 78.4,
+            "y": 68.8
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2015,6 +2759,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -2052,7 +2797,26 @@
       "hand_in": {
         "npc_id": 3134,
         "npc_name": "Kzixx",
-        "zone": "Duskwood"
+        "zone": "Duskwood",
+        "zone_id": 10,
+        "coordinates": {
+          "x": 81.8,
+          "y": 19.8
+        },
+        "all_coordinates": [
+          {
+            "x": 81.4,
+            "y": 19.8
+          },
+          {
+            "x": 81.8,
+            "y": 19.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2069,6 +2833,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -2106,7 +2871,26 @@
       "hand_in": {
         "npc_id": 6176,
         "npc_name": "Bath'rah the Windwatcher",
-        "zone": "Alterac Mountains"
+        "zone": "Alterac Mountains",
+        "zone_id": 36,
+        "coordinates": {
+          "x": 80.4,
+          "y": 66.8
+        },
+        "all_coordinates": [
+          {
+            "x": 80.4,
+            "y": 63
+          },
+          {
+            "x": 80.4,
+            "y": 66.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2155,7 +2939,26 @@
       "hand_in": {
         "npc_id": 4201,
         "npc_name": "Ziz Fizziks",
-        "zone": "Stonetalon Mountains"
+        "zone": "Stonetalon Mountains",
+        "zone_id": 406,
+        "coordinates": {
+          "x": 59,
+          "y": 62.4
+        },
+        "all_coordinates": [
+          {
+            "x": 59,
+            "y": 62.4
+          },
+          {
+            "x": 59,
+            "y": 62.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2204,7 +3007,26 @@
       "hand_in": {
         "npc_id": 261961,
         "npc_name": "Hekshi",
-        "zone": "Stranglethorn Vale"
+        "zone": "Stranglethorn Vale",
+        "zone_id": 33,
+        "coordinates": {
+          "x": 50.6,
+          "y": 19.2
+        },
+        "all_coordinates": [
+          {
+            "x": 50.4,
+            "y": 19.2
+          },
+          {
+            "x": 50.6,
+            "y": 19.2
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2253,7 +3075,26 @@
       "hand_in": {
         "npc_id": 6548,
         "npc_name": "Magus Tirth",
-        "zone": "Thousand Needles"
+        "zone": "Thousand Needles",
+        "zone_id": 400,
+        "coordinates": {
+          "x": 78.2,
+          "y": 75.8
+        },
+        "all_coordinates": [
+          {
+            "x": 78.2,
+            "y": 75.8
+          },
+          {
+            "x": 78.4,
+            "y": 75.4
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2302,7 +3143,22 @@
       "hand_in": {
         "npc_id": 8305,
         "npc_name": "Kixxle",
-        "zone": "Wetlands"
+        "zone": "Wetlands",
+        "zone_id": 11,
+        "coordinates": {
+          "x": 50.2,
+          "y": 37.8
+        },
+        "all_coordinates": [
+          {
+            "x": 50.2,
+            "y": 37.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2319,6 +3175,7 @@
         "items": [
           {
             "wowhead_id": 284584,
+            "display_name": "Coin Pouch",
             "quantity": 1
           }
         ],
@@ -2356,7 +3213,30 @@
       "hand_in": {
         "npc_id": 2921,
         "npc_name": "Lotwil Veriatus",
-        "zone": "Badlands"
+        "zone": "Badlands",
+        "zone_id": 3,
+        "coordinates": {
+          "x": 25.8,
+          "y": 45
+        },
+        "all_coordinates": [
+          {
+            "x": 25.8,
+            "y": 44.4
+          },
+          {
+            "x": 25.8,
+            "y": 45
+          },
+          {
+            "x": 26,
+            "y": 45.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2405,7 +3285,62 @@
       "hand_in": {
         "npc_id": 13717,
         "npc_name": "Centaur Pariah",
-        "zone": "Desolace"
+        "zone": "Desolace",
+        "zone_id": 405,
+        "coordinates": {
+          "x": 50.4,
+          "y": 86.6
+        },
+        "all_coordinates": [
+          {
+            "x": 43.4,
+            "y": 84.8
+          },
+          {
+            "x": 43.6,
+            "y": 84.8
+          },
+          {
+            "x": 44.4,
+            "y": 85.6
+          },
+          {
+            "x": 45,
+            "y": 86.2
+          },
+          {
+            "x": 45.6,
+            "y": 86.4
+          },
+          {
+            "x": 46.2,
+            "y": 86.6
+          },
+          {
+            "x": 47.4,
+            "y": 87
+          },
+          {
+            "x": 48.4,
+            "y": 87
+          },
+          {
+            "x": 48.6,
+            "y": 87
+          },
+          {
+            "x": 50.4,
+            "y": 86.4
+          },
+          {
+            "x": 50.4,
+            "y": 86.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2454,7 +3389,22 @@
       "hand_in": {
         "npc_id": 4503,
         "npc_name": "Mudcrush Durtfeet",
-        "zone": "Dustwallow Marsh"
+        "zone": "Dustwallow Marsh",
+        "zone_id": 15,
+        "coordinates": {
+          "x": 35,
+          "y": 38.2
+        },
+        "all_coordinates": [
+          {
+            "x": 35,
+            "y": 38.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2503,7 +3453,22 @@
       "hand_in": {
         "npc_id": 10922,
         "npc_name": "Greta Mosshoof",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 51.2,
+          "y": 82.2
+        },
+        "all_coordinates": [
+          {
+            "x": 51.2,
+            "y": 82.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2552,7 +3517,26 @@
       "hand_in": {
         "npc_id": 262143,
         "npc_name": "Scout Raroul",
-        "zone": "Feralas"
+        "zone": "Feralas",
+        "zone_id": 357,
+        "coordinates": {
+          "x": 72.4,
+          "y": 52.4
+        },
+        "all_coordinates": [
+          {
+            "x": 72.4,
+            "y": 52.4
+          },
+          {
+            "x": 72.4,
+            "y": 52.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2601,7 +3585,26 @@
       "hand_in": {
         "npc_id": 11802,
         "npc_name": "Dendrite Starblaze",
-        "zone": "Moonglade"
+        "zone": "Moonglade",
+        "zone_id": 493,
+        "coordinates": {
+          "x": 56.2,
+          "y": 30.4
+        },
+        "all_coordinates": [
+          {
+            "x": 56.2,
+            "y": 30.4
+          },
+          {
+            "x": 56.2,
+            "y": 30.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2650,7 +3653,22 @@
       "hand_in": {
         "npc_id": 262284,
         "npc_name": "Spek",
-        "zone": "Riverglades"
+        "zone": "Riverglades",
+        "zone_id": 16591,
+        "coordinates": {
+          "x": 76.8,
+          "y": 54
+        },
+        "all_coordinates": [
+          {
+            "x": 76.8,
+            "y": 54
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2699,7 +3717,22 @@
       "hand_in": {
         "npc_id": 262294,
         "npc_name": "Durganon",
-        "zone": "Searing Gorge"
+        "zone": "Searing Gorge",
+        "zone_id": 51,
+        "coordinates": {
+          "x": 41,
+          "y": 58.4
+        },
+        "all_coordinates": [
+          {
+            "x": 41,
+            "y": 58.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2748,7 +3781,34 @@
       "hand_in": {
         "npc_id": 262306,
         "npc_name": "Mukomonji",
-        "zone": "Swamp of Sorrows"
+        "zone": "Swamp of Sorrows",
+        "zone_id": 8,
+        "coordinates": {
+          "x": 62.2,
+          "y": 52.8
+        },
+        "all_coordinates": [
+          {
+            "x": 62,
+            "y": 52.4
+          },
+          {
+            "x": 62.2,
+            "y": 52.8
+          },
+          {
+            "x": 62.6,
+            "y": 52.4
+          },
+          {
+            "x": 62.6,
+            "y": 53.2
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2797,7 +3857,22 @@
       "hand_in": {
         "npc_id": 5594,
         "npc_name": "Alchemist Pestlezugg",
-        "zone": "Tanaris"
+        "zone": "Tanaris",
+        "zone_id": 440,
+        "coordinates": {
+          "x": 50.8,
+          "y": 27
+        },
+        "all_coordinates": [
+          {
+            "x": 50.8,
+            "y": 27
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2846,7 +3921,22 @@
       "hand_in": {
         "npc_id": 262388,
         "npc_name": "Juo",
-        "zone": "The Hinterlands"
+        "zone": "The Hinterlands",
+        "zone_id": 47,
+        "coordinates": {
+          "x": 80,
+          "y": 55.4
+        },
+        "all_coordinates": [
+          {
+            "x": 80,
+            "y": 55.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2895,7 +3985,34 @@
       "hand_in": {
         "npc_id": 9272,
         "npc_name": "Spark Nilminer",
-        "zone": "Un'Goro Crater"
+        "zone": "Un'Goro Crater",
+        "zone_id": 490,
+        "coordinates": {
+          "x": 43.6,
+          "y": 7.4
+        },
+        "all_coordinates": [
+          {
+            "x": 43.4,
+            "y": 7.4
+          },
+          {
+            "x": 43.4,
+            "y": 7.6
+          },
+          {
+            "x": 43.6,
+            "y": 7.4
+          },
+          {
+            "x": 43.6,
+            "y": 7.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -2944,7 +4061,34 @@
       "hand_in": {
         "npc_id": 257429,
         "npc_name": "Furious Shadowforge Digger",
-        "zone": "Badlands"
+        "zone": "Badlands",
+        "zone_id": 3,
+        "coordinates": {
+          "x": 44.4,
+          "y": 11.4
+        },
+        "all_coordinates": [
+          {
+            "x": 44.4,
+            "y": 11.4
+          },
+          {
+            "x": 44.4,
+            "y": 11.8
+          },
+          {
+            "x": 44.6,
+            "y": 11.4
+          },
+          {
+            "x": 44.6,
+            "y": 11.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -2993,7 +4137,22 @@
       "hand_in": {
         "npc_id": 11438,
         "npc_name": "Bibbly F'utzbuckle",
-        "zone": "Desolace"
+        "zone": "Desolace",
+        "zone_id": 405,
+        "coordinates": {
+          "x": 62.2,
+          "y": 38.8
+        },
+        "all_coordinates": [
+          {
+            "x": 62.2,
+            "y": 38.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3042,7 +4201,22 @@
       "hand_in": {
         "npc_id": 270919,
         "npc_name": "Ugbert",
-        "zone": "Dustwallow Marsh"
+        "zone": "Dustwallow Marsh",
+        "zone_id": 15,
+        "coordinates": {
+          "x": 40.8,
+          "y": 28
+        },
+        "all_coordinates": [
+          {
+            "x": 40.8,
+            "y": 28
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3091,7 +4265,22 @@
       "hand_in": {
         "npc_id": 10921,
         "npc_name": "Taronn Redfeather",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 50.8,
+          "y": 81.6
+        },
+        "all_coordinates": [
+          {
+            "x": 50.8,
+            "y": 81.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3140,7 +4329,26 @@
       "hand_in": {
         "npc_id": 262143,
         "npc_name": "Scout Raroul",
-        "zone": "Feralas"
+        "zone": "Feralas",
+        "zone_id": 357,
+        "coordinates": {
+          "x": 72.4,
+          "y": 52.4
+        },
+        "all_coordinates": [
+          {
+            "x": 72.4,
+            "y": 52.4
+          },
+          {
+            "x": 72.4,
+            "y": 52.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3189,7 +4397,26 @@
       "hand_in": {
         "npc_id": 12024,
         "npc_name": "Meliri",
-        "zone": "Moonglade"
+        "zone": "Moonglade",
+        "zone_id": 493,
+        "coordinates": {
+          "x": 51.2,
+          "y": 42.2
+        },
+        "all_coordinates": [
+          {
+            "x": 51.2,
+            "y": 42.2
+          },
+          {
+            "x": 51.2,
+            "y": 42.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3238,7 +4465,22 @@
       "hand_in": {
         "npc_id": 262284,
         "npc_name": "Spek",
-        "zone": "Riverglades"
+        "zone": "Riverglades",
+        "zone_id": 16591,
+        "coordinates": {
+          "x": 76.8,
+          "y": 54
+        },
+        "all_coordinates": [
+          {
+            "x": 76.8,
+            "y": 54
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3287,7 +4529,34 @@
       "hand_in": {
         "npc_id": 14624,
         "npc_name": "Master Smith Burninate",
-        "zone": "Searing Gorge"
+        "zone": "Searing Gorge",
+        "zone_id": 51,
+        "coordinates": {
+          "x": 38.6,
+          "y": 28.4
+        },
+        "all_coordinates": [
+          {
+            "x": 38.4,
+            "y": 28.4
+          },
+          {
+            "x": 38.4,
+            "y": 28.6
+          },
+          {
+            "x": 38.6,
+            "y": 28.4
+          },
+          {
+            "x": 38.6,
+            "y": 28.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3336,7 +4605,34 @@
       "hand_in": {
         "npc_id": 262306,
         "npc_name": "Mukomonji",
-        "zone": "Swamp of Sorrows"
+        "zone": "Swamp of Sorrows",
+        "zone_id": 8,
+        "coordinates": {
+          "x": 62.2,
+          "y": 52.8
+        },
+        "all_coordinates": [
+          {
+            "x": 62,
+            "y": 52.4
+          },
+          {
+            "x": 62.2,
+            "y": 52.8
+          },
+          {
+            "x": 62.6,
+            "y": 52.4
+          },
+          {
+            "x": 62.6,
+            "y": 53.2
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3385,7 +4681,22 @@
       "hand_in": {
         "npc_id": 7408,
         "npc_name": "Spigot Operator Luglunket",
-        "zone": "Tanaris"
+        "zone": "Tanaris",
+        "zone_id": 440,
+        "coordinates": {
+          "x": 52.4,
+          "y": 28.4
+        },
+        "all_coordinates": [
+          {
+            "x": 52.4,
+            "y": 28.4
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3434,7 +4745,26 @@
       "hand_in": {
         "npc_id": 7801,
         "npc_name": "Gilveradin Sunchaser",
-        "zone": "The Hinterlands"
+        "zone": "The Hinterlands",
+        "zone_id": 47,
+        "coordinates": {
+          "x": 26.6,
+          "y": 48.4
+        },
+        "all_coordinates": [
+          {
+            "x": 26.6,
+            "y": 48.4
+          },
+          {
+            "x": 26.6,
+            "y": 48.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3483,7 +4813,26 @@
       "hand_in": {
         "npc_id": 9619,
         "npc_name": "Torwa Pathfinder",
-        "zone": "Un'Goro Crater"
+        "zone": "Un'Goro Crater",
+        "zone_id": 490,
+        "coordinates": {
+          "x": 71.6,
+          "y": 76
+        },
+        "all_coordinates": [
+          {
+            "x": 71.4,
+            "y": 76
+          },
+          {
+            "x": 71.6,
+            "y": 76
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3532,7 +4881,22 @@
       "hand_in": {
         "npc_id": 257437,
         "npc_name": "Garyanne Fleezlebop",
-        "zone": "Badlands"
+        "zone": "Badlands",
+        "zone_id": 3,
+        "coordinates": {
+          "x": 67.6,
+          "y": 51.8
+        },
+        "all_coordinates": [
+          {
+            "x": 67.6,
+            "y": 51.8
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3581,7 +4945,22 @@
       "hand_in": {
         "npc_id": 11438,
         "npc_name": "Bibbly F'utzbuckle",
-        "zone": "Desolace"
+        "zone": "Desolace",
+        "zone_id": 405,
+        "coordinates": {
+          "x": 62.2,
+          "y": 38.8
+        },
+        "all_coordinates": [
+          {
+            "x": 62.2,
+            "y": 38.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3630,7 +5009,26 @@
       "hand_in": {
         "npc_id": 262072,
         "npc_name": "The Ravenous",
-        "zone": "Dustwallow Marsh"
+        "zone": "Dustwallow Marsh",
+        "zone_id": 15,
+        "coordinates": {
+          "x": 54,
+          "y": 56.4
+        },
+        "all_coordinates": [
+          {
+            "x": 54,
+            "y": 56.4
+          },
+          {
+            "x": 54,
+            "y": 56.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3679,7 +5077,22 @@
       "hand_in": {
         "npc_id": 11019,
         "npc_name": "Jessir Moonbow",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 51.2,
+          "y": 82
+        },
+        "all_coordinates": [
+          {
+            "x": 51.2,
+            "y": 82
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3728,7 +5141,26 @@
       "hand_in": {
         "npc_id": 262143,
         "npc_name": "Scout Raroul",
-        "zone": "Feralas"
+        "zone": "Feralas",
+        "zone_id": 357,
+        "coordinates": {
+          "x": 72.4,
+          "y": 52.4
+        },
+        "all_coordinates": [
+          {
+            "x": 72.4,
+            "y": 52.4
+          },
+          {
+            "x": 72.4,
+            "y": 52.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3777,7 +5209,22 @@
       "hand_in": {
         "npc_id": 12029,
         "npc_name": "Narianna",
-        "zone": "Moonglade"
+        "zone": "Moonglade",
+        "zone_id": 493,
+        "coordinates": {
+          "x": 53.2,
+          "y": 42.6
+        },
+        "all_coordinates": [
+          {
+            "x": 53.2,
+            "y": 42.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -3826,7 +5273,22 @@
       "hand_in": {
         "npc_id": 262284,
         "npc_name": "Spek",
-        "zone": "Riverglades"
+        "zone": "Riverglades",
+        "zone_id": 16591,
+        "coordinates": {
+          "x": 76.8,
+          "y": 54
+        },
+        "all_coordinates": [
+          {
+            "x": 76.8,
+            "y": 54
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3875,7 +5337,22 @@
       "hand_in": {
         "npc_id": 262294,
         "npc_name": "Durganon",
-        "zone": "Searing Gorge"
+        "zone": "Searing Gorge",
+        "zone_id": 51,
+        "coordinates": {
+          "x": 41,
+          "y": 58.4
+        },
+        "all_coordinates": [
+          {
+            "x": 41,
+            "y": 58.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3924,7 +5401,26 @@
       "hand_in": {
         "npc_id": 262379,
         "npc_name": "Bullets Bigblast",
-        "zone": "Swamp of Sorrows"
+        "zone": "Swamp of Sorrows",
+        "zone_id": 8,
+        "coordinates": {
+          "x": 70,
+          "y": 41.4
+        },
+        "all_coordinates": [
+          {
+            "x": 69.8,
+            "y": 41.6
+          },
+          {
+            "x": 70,
+            "y": 41.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -3973,7 +5469,22 @@
       "hand_in": {
         "npc_id": 14743,
         "npc_name": "Jhordy Lapforge",
-        "zone": "Tanaris"
+        "zone": "Tanaris",
+        "zone_id": 440,
+        "coordinates": {
+          "x": 52.2,
+          "y": 26.8
+        },
+        "all_coordinates": [
+          {
+            "x": 52.2,
+            "y": 26.8
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4022,7 +5533,26 @@
       "hand_in": {
         "npc_id": 5634,
         "npc_name": "Rhapsody Shindigger",
-        "zone": "The Hinterlands"
+        "zone": "The Hinterlands",
+        "zone_id": 47,
+        "coordinates": {
+          "x": 26.8,
+          "y": 48.4
+        },
+        "all_coordinates": [
+          {
+            "x": 26.8,
+            "y": 48.4
+          },
+          {
+            "x": 26.8,
+            "y": 48.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4071,7 +5601,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -4120,7 +5654,26 @@
       "hand_in": {
         "npc_id": 2888,
         "npc_name": "Garek",
-        "zone": "Badlands"
+        "zone": "Badlands",
+        "zone_id": 3,
+        "coordinates": {
+          "x": 61.8,
+          "y": 54.2
+        },
+        "all_coordinates": [
+          {
+            "x": 61.8,
+            "y": 54.2
+          },
+          {
+            "x": 61.8,
+            "y": 54.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4169,7 +5722,22 @@
       "hand_in": {
         "npc_id": 11863,
         "npc_name": "Azore Aldamort",
-        "zone": "Desolace"
+        "zone": "Desolace",
+        "zone_id": 405,
+        "coordinates": {
+          "x": 38.8,
+          "y": 27.2
+        },
+        "all_coordinates": [
+          {
+            "x": 38.8,
+            "y": 27.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4218,7 +5786,26 @@
       "hand_in": {
         "npc_id": 262072,
         "npc_name": "The Ravenous",
-        "zone": "Dustwallow Marsh"
+        "zone": "Dustwallow Marsh",
+        "zone_id": 15,
+        "coordinates": {
+          "x": 54,
+          "y": 56.4
+        },
+        "all_coordinates": [
+          {
+            "x": 54,
+            "y": 56.4
+          },
+          {
+            "x": 54,
+            "y": 56.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4267,7 +5854,26 @@
       "hand_in": {
         "npc_id": 10924,
         "npc_name": "Ivy Leafrunner",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 50.8,
+          "y": 81.6
+        },
+        "all_coordinates": [
+          {
+            "x": 50.8,
+            "y": 81.4
+          },
+          {
+            "x": 50.8,
+            "y": 81.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4316,7 +5922,26 @@
       "hand_in": {
         "npc_id": 262143,
         "npc_name": "Scout Raroul",
-        "zone": "Feralas"
+        "zone": "Feralas",
+        "zone_id": 357,
+        "coordinates": {
+          "x": 72.4,
+          "y": 52.4
+        },
+        "all_coordinates": [
+          {
+            "x": 72.4,
+            "y": 52.4
+          },
+          {
+            "x": 72.4,
+            "y": 52.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4365,7 +5990,22 @@
       "hand_in": {
         "npc_id": 12029,
         "npc_name": "Narianna",
-        "zone": "Moonglade"
+        "zone": "Moonglade",
+        "zone_id": 493,
+        "coordinates": {
+          "x": 53.2,
+          "y": 42.6
+        },
+        "all_coordinates": [
+          {
+            "x": 53.2,
+            "y": 42.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4414,7 +6054,22 @@
       "hand_in": {
         "npc_id": 262284,
         "npc_name": "Spek",
-        "zone": "Riverglades"
+        "zone": "Riverglades",
+        "zone_id": 16591,
+        "coordinates": {
+          "x": 76.8,
+          "y": 54
+        },
+        "all_coordinates": [
+          {
+            "x": 76.8,
+            "y": 54
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4463,7 +6118,30 @@
       "hand_in": {
         "npc_id": 14628,
         "npc_name": "Evonice Sootsmoker",
-        "zone": "Searing Gorge"
+        "zone": "Searing Gorge",
+        "zone_id": 51,
+        "coordinates": {
+          "x": 38.4,
+          "y": 27.8
+        },
+        "all_coordinates": [
+          {
+            "x": 38,
+            "y": 27.4
+          },
+          {
+            "x": 38.4,
+            "y": 27.8
+          },
+          {
+            "x": 38.6,
+            "y": 27.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4512,7 +6190,34 @@
       "hand_in": {
         "npc_id": 262306,
         "npc_name": "Mukomonji",
-        "zone": "Swamp of Sorrows"
+        "zone": "Swamp of Sorrows",
+        "zone_id": 8,
+        "coordinates": {
+          "x": 62.2,
+          "y": 52.8
+        },
+        "all_coordinates": [
+          {
+            "x": 62,
+            "y": 52.4
+          },
+          {
+            "x": 62.2,
+            "y": 52.8
+          },
+          {
+            "x": 62.6,
+            "y": 52.4
+          },
+          {
+            "x": 62.6,
+            "y": 53.2
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4561,7 +6266,22 @@
       "hand_in": {
         "npc_id": 8579,
         "npc_name": "Yeh'kinya",
-        "zone": "Tanaris"
+        "zone": "Tanaris",
+        "zone_id": 440,
+        "coordinates": {
+          "x": 67,
+          "y": 22.4
+        },
+        "all_coordinates": [
+          {
+            "x": 67,
+            "y": 22.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4610,7 +6330,22 @@
       "hand_in": {
         "npc_id": 262388,
         "npc_name": "Juo",
-        "zone": "The Hinterlands"
+        "zone": "The Hinterlands",
+        "zone_id": 47,
+        "coordinates": {
+          "x": 80,
+          "y": 55.4
+        },
+        "all_coordinates": [
+          {
+            "x": 80,
+            "y": 55.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -4659,7 +6394,22 @@
       "hand_in": {
         "npc_id": 12959,
         "npc_name": "Nergal",
-        "zone": "Un'Goro Crater"
+        "zone": "Un'Goro Crater",
+        "zone_id": 490,
+        "coordinates": {
+          "x": 43.2,
+          "y": 7.8
+        },
+        "all_coordinates": [
+          {
+            "x": 43.2,
+            "y": 7.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4708,7 +6458,30 @@
       "hand_in": {
         "npc_id": 2817,
         "npc_name": "Rigglefuzz",
-        "zone": "Badlands"
+        "zone": "Badlands",
+        "zone_id": 3,
+        "coordinates": {
+          "x": 42.4,
+          "y": 52.8
+        },
+        "all_coordinates": [
+          {
+            "x": 42.4,
+            "y": 52.4
+          },
+          {
+            "x": 42.4,
+            "y": 52.8
+          },
+          {
+            "x": 42.6,
+            "y": 53
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4757,7 +6530,26 @@
       "hand_in": {
         "npc_id": 13656,
         "npc_name": "Willow",
-        "zone": "Desolace"
+        "zone": "Desolace",
+        "zone_id": 405,
+        "coordinates": {
+          "x": 62.2,
+          "y": 39.6
+        },
+        "all_coordinates": [
+          {
+            "x": 62,
+            "y": 39.4
+          },
+          {
+            "x": 62.2,
+            "y": 39.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4806,7 +6598,22 @@
       "hand_in": {
         "npc_id": 6546,
         "npc_name": "Tabetha",
-        "zone": "Dustwallow Marsh"
+        "zone": "Dustwallow Marsh",
+        "zone_id": 15,
+        "coordinates": {
+          "x": 46,
+          "y": 57
+        },
+        "all_coordinates": [
+          {
+            "x": 46,
+            "y": 57
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4855,7 +6662,26 @@
       "hand_in": {
         "npc_id": 9116,
         "npc_name": "Eridan Bluewind",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 51.2,
+          "y": 81.6
+        },
+        "all_coordinates": [
+          {
+            "x": 51.2,
+            "y": 81.4
+          },
+          {
+            "x": 51.2,
+            "y": 81.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4904,7 +6730,26 @@
       "hand_in": {
         "npc_id": 14470,
         "npc_name": "Impsy",
-        "zone": "Felwood"
+        "zone": "Felwood",
+        "zone_id": 361,
+        "coordinates": {
+          "x": 41.4,
+          "y": 44.8
+        },
+        "all_coordinates": [
+          {
+            "x": 41.4,
+            "y": 44.8
+          },
+          {
+            "x": 41.6,
+            "y": 44.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -4953,7 +6798,22 @@
       "hand_in": {
         "npc_id": 11795,
         "npc_name": "Mylentha Riverbend",
-        "zone": "Moonglade"
+        "zone": "Moonglade",
+        "zone_id": 493,
+        "coordinates": {
+          "x": 51.8,
+          "y": 32.8
+        },
+        "all_coordinates": [
+          {
+            "x": 51.8,
+            "y": 32.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5002,7 +6862,22 @@
       "hand_in": {
         "npc_id": 262284,
         "npc_name": "Spek",
-        "zone": "Riverglades"
+        "zone": "Riverglades",
+        "zone_id": 16591,
+        "coordinates": {
+          "x": 76.8,
+          "y": 54
+        },
+        "all_coordinates": [
+          {
+            "x": 76.8,
+            "y": 54
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5051,7 +6926,30 @@
       "hand_in": {
         "npc_id": 14634,
         "npc_name": "Lookout Captain Lolo Longstriker",
-        "zone": "Searing Gorge"
+        "zone": "Searing Gorge",
+        "zone_id": 51,
+        "coordinates": {
+          "x": 37.6,
+          "y": 26.6
+        },
+        "all_coordinates": [
+          {
+            "x": 37.4,
+            "y": 26.6
+          },
+          {
+            "x": 37.6,
+            "y": 26.4
+          },
+          {
+            "x": 37.6,
+            "y": 26.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5100,7 +6998,26 @@
       "hand_in": {
         "npc_id": 262379,
         "npc_name": "Bullets Bigblast",
-        "zone": "Swamp of Sorrows"
+        "zone": "Swamp of Sorrows",
+        "zone_id": 8,
+        "coordinates": {
+          "x": 70,
+          "y": 41.4
+        },
+        "all_coordinates": [
+          {
+            "x": 69.8,
+            "y": 41.6
+          },
+          {
+            "x": 70,
+            "y": 41.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5149,7 +7066,22 @@
       "hand_in": {
         "npc_id": 6568,
         "npc_name": "Vizzklick",
-        "zone": "Tanaris"
+        "zone": "Tanaris",
+        "zone_id": 440,
+        "coordinates": {
+          "x": 51,
+          "y": 27.4
+        },
+        "all_coordinates": [
+          {
+            "x": 51,
+            "y": 27.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5198,7 +7130,22 @@
       "hand_in": {
         "npc_id": 5598,
         "npc_name": "Atal'ai Exile",
-        "zone": "The Hinterlands"
+        "zone": "The Hinterlands",
+        "zone_id": 47,
+        "coordinates": {
+          "x": 33.6,
+          "y": 75.2
+        },
+        "all_coordinates": [
+          {
+            "x": 33.6,
+            "y": 75.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5247,7 +7194,30 @@
       "hand_in": {
         "npc_id": 9273,
         "npc_name": "Petra Grossen",
-        "zone": "Un'Goro Crater"
+        "zone": "Un'Goro Crater",
+        "zone_id": 490,
+        "coordinates": {
+          "x": 43.6,
+          "y": 7.2
+        },
+        "all_coordinates": [
+          {
+            "x": 43.2,
+            "y": 7.3
+          },
+          {
+            "x": 43.6,
+            "y": 7.2
+          },
+          {
+            "x": 43.6,
+            "y": 7.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5296,7 +7266,30 @@
       "hand_in": {
         "npc_id": 8379,
         "npc_name": "Archmage Xylem",
-        "zone": "Azshara"
+        "zone": "Azshara",
+        "zone_id": 16,
+        "coordinates": {
+          "x": 29.2,
+          "y": 40.2
+        },
+        "all_coordinates": [
+          {
+            "x": 29.2,
+            "y": 40.2
+          },
+          {
+            "x": 29.6,
+            "y": 40.4
+          },
+          {
+            "x": 29.6,
+            "y": 40.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5345,7 +7338,30 @@
       "hand_in": {
         "npc_id": 7363,
         "npc_name": "Kum'isha the Collector",
-        "zone": "Blasted Lands"
+        "zone": "Blasted Lands",
+        "zone_id": 4,
+        "coordinates": {
+          "x": 51.8,
+          "y": 35.6
+        },
+        "all_coordinates": [
+          {
+            "x": 51.8,
+            "y": 35.4
+          },
+          {
+            "x": 51.8,
+            "y": 35.6
+          },
+          {
+            "x": 53,
+            "y": 33.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5394,7 +7410,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5443,7 +7463,26 @@
       "hand_in": {
         "npc_id": 257743,
         "npc_name": "Hastings",
-        "zone": "Deadwind Pass"
+        "zone": "Deadwind Pass",
+        "zone_id": 41,
+        "coordinates": {
+          "x": 47.2,
+          "y": 75
+        },
+        "all_coordinates": [
+          {
+            "x": 46.6,
+            "y": 75.6
+          },
+          {
+            "x": 47.2,
+            "y": 75
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5492,7 +7531,30 @@
       "hand_in": {
         "npc_id": 11706,
         "npc_name": "Adon",
-        "zone": "Eastern Plaguelands"
+        "zone": "Eastern Plaguelands",
+        "zone_id": 139,
+        "coordinates": {
+          "x": 58.4,
+          "y": 17.2
+        },
+        "all_coordinates": [
+          {
+            "x": 51,
+            "y": 11.6
+          },
+          {
+            "x": 58.4,
+            "y": 17.2
+          },
+          {
+            "x": 58.6,
+            "y": 17.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5541,7 +7603,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5590,7 +7656,22 @@
       "hand_in": {
         "npc_id": 11805,
         "npc_name": "Jarund Stoutstrider",
-        "zone": "Silithus"
+        "zone": "Silithus",
+        "zone_id": 1377,
+        "coordinates": {
+          "x": 82,
+          "y": 18
+        },
+        "all_coordinates": [
+          {
+            "x": 82,
+            "y": 18
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -5639,7 +7720,26 @@
       "hand_in": {
         "npc_id": 262024,
         "npc_name": "Kirala Fairgrass",
-        "zone": "Western Plaguelands"
+        "zone": "Western Plaguelands",
+        "zone_id": 28,
+        "coordinates": {
+          "x": 59.4,
+          "y": 53
+        },
+        "all_coordinates": [
+          {
+            "x": 59.4,
+            "y": 53
+          },
+          {
+            "x": 59.6,
+            "y": 53.4
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5688,7 +7788,22 @@
       "hand_in": {
         "npc_id": 262041,
         "npc_name": "Bor'dorc",
-        "zone": "Winterspring"
+        "zone": "Winterspring",
+        "zone_id": 618,
+        "coordinates": {
+          "x": 64.8,
+          "y": 33.2
+        },
+        "all_coordinates": [
+          {
+            "x": 64.8,
+            "y": 33.2
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5737,7 +7852,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5786,7 +7905,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5835,7 +7958,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5884,7 +8011,26 @@
       "hand_in": {
         "npc_id": 257750,
         "npc_name": "Calliard",
-        "zone": "Deadwind Pass"
+        "zone": "Deadwind Pass",
+        "zone_id": 41,
+        "coordinates": {
+          "x": 48.2,
+          "y": 68.6
+        },
+        "all_coordinates": [
+          {
+            "x": 48,
+            "y": 68.2
+          },
+          {
+            "x": 48.2,
+            "y": 68.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -5933,7 +8079,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -5982,7 +8132,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6031,7 +8185,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6080,7 +8238,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6129,7 +8291,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6178,7 +8344,22 @@
       "hand_in": {
         "npc_id": 11705,
         "npc_name": "Rayan Dawnrisen",
-        "zone": "Azshara"
+        "zone": "Azshara",
+        "zone_id": 16,
+        "coordinates": {
+          "x": 30,
+          "y": 40.2
+        },
+        "all_coordinates": [
+          {
+            "x": 30,
+            "y": 40.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -6227,7 +8408,30 @@
       "hand_in": {
         "npc_id": 7363,
         "npc_name": "Kum'isha the Collector",
-        "zone": "Blasted Lands"
+        "zone": "Blasted Lands",
+        "zone_id": 4,
+        "coordinates": {
+          "x": 51.8,
+          "y": 35.6
+        },
+        "all_coordinates": [
+          {
+            "x": 51.8,
+            "y": 35.4
+          },
+          {
+            "x": 51.8,
+            "y": 35.6
+          },
+          {
+            "x": 53,
+            "y": 33.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -6276,7 +8480,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6325,7 +8533,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6374,7 +8586,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6423,7 +8639,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6472,7 +8692,22 @@
       "hand_in": {
         "npc_id": 15175,
         "npc_name": "Khur Hornstriker",
-        "zone": "Silithus"
+        "zone": "Silithus",
+        "zone_id": 1377,
+        "coordinates": {
+          "x": 48.8,
+          "y": 37
+        },
+        "all_coordinates": [
+          {
+            "x": 48.8,
+            "y": 37
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -6521,7 +8756,26 @@
       "hand_in": {
         "npc_id": 262033,
         "npc_name": "Suspicious Adventurer",
-        "zone": "Western Plaguelands"
+        "zone": "Western Plaguelands",
+        "zone_id": 28,
+        "coordinates": {
+          "x": 65.6,
+          "y": 76.2
+        },
+        "all_coordinates": [
+          {
+            "x": 65.4,
+            "y": 76
+          },
+          {
+            "x": 65.6,
+            "y": 76.2
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -6570,7 +8824,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6619,7 +8877,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6675,7 +8937,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6724,7 +8990,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6773,7 +9043,26 @@
       "hand_in": {
         "npc_id": 257743,
         "npc_name": "Hastings",
-        "zone": "Deadwind Pass"
+        "zone": "Deadwind Pass",
+        "zone_id": 41,
+        "coordinates": {
+          "x": 47.2,
+          "y": 75
+        },
+        "all_coordinates": [
+          {
+            "x": 46.6,
+            "y": 75.6
+          },
+          {
+            "x": 47.2,
+            "y": 75
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -6822,7 +9111,26 @@
       "hand_in": {
         "npc_id": 11536,
         "npc_name": "Quartermaster Miranda Breechlock",
-        "zone": "Eastern Plaguelands"
+        "zone": "Eastern Plaguelands",
+        "zone_id": 139,
+        "coordinates": {
+          "x": 81.6,
+          "y": 60
+        },
+        "all_coordinates": [
+          {
+            "x": 81.4,
+            "y": 60
+          },
+          {
+            "x": 81.6,
+            "y": 60
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -6871,7 +9179,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6920,7 +9232,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -6969,7 +9285,26 @@
       "hand_in": {
         "npc_id": 262016,
         "npc_name": "Fallen Adventurer",
-        "zone": "Western Plaguelands"
+        "zone": "Western Plaguelands",
+        "zone_id": 28,
+        "coordinates": {
+          "x": 38,
+          "y": 72.4
+        },
+        "all_coordinates": [
+          {
+            "x": 38,
+            "y": 72.4
+          },
+          {
+            "x": 38,
+            "y": 72.6
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -7018,7 +9353,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7067,7 +9406,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7116,7 +9459,30 @@
       "hand_in": {
         "npc_id": 7363,
         "npc_name": "Kum'isha the Collector",
-        "zone": "Blasted Lands"
+        "zone": "Blasted Lands",
+        "zone_id": 4,
+        "coordinates": {
+          "x": 51.8,
+          "y": 35.6
+        },
+        "all_coordinates": [
+          {
+            "x": 51.8,
+            "y": 35.4
+          },
+          {
+            "x": 51.8,
+            "y": 35.6
+          },
+          {
+            "x": 53,
+            "y": 33.8
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -7165,7 +9531,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7214,7 +9584,26 @@
       "hand_in": {
         "npc_id": 257743,
         "npc_name": "Hastings",
-        "zone": "Deadwind Pass"
+        "zone": "Deadwind Pass",
+        "zone_id": 41,
+        "coordinates": {
+          "x": 47.2,
+          "y": 75
+        },
+        "all_coordinates": [
+          {
+            "x": 46.6,
+            "y": 75.6
+          },
+          {
+            "x": 47.2,
+            "y": 75
+          }
+        ],
+        "reaction": {
+          "alliance": 0,
+          "horde": 0
+        }
       },
       "rewards": {
         "reputation": [
@@ -7263,7 +9652,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7312,7 +9705,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7361,7 +9758,22 @@
       "hand_in": {
         "npc_id": 15194,
         "npc_name": "Hermit Ortell",
-        "zone": "Silithus"
+        "zone": "Silithus",
+        "zone_id": 1377,
+        "coordinates": {
+          "x": 67,
+          "y": 69.6
+        },
+        "all_coordinates": [
+          {
+            "x": 67,
+            "y": 69.6
+          }
+        ],
+        "reaction": {
+          "alliance": 1,
+          "horde": 1
+        }
       },
       "rewards": {
         "reputation": [
@@ -7410,7 +9822,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": null
+        "zone": null,
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [
@@ -7459,7 +9875,11 @@
       "hand_in": {
         "npc_id": null,
         "npc_name": null,
-        "zone": "Winterspring"
+        "zone": "Winterspring",
+        "zone_id": null,
+        "coordinates": null,
+        "all_coordinates": [],
+        "reaction": null
       },
       "rewards": {
         "reputation": [

@@ -1,0 +1,52 @@
+{
+  "source": {
+    "note": "Hand-trimmed fixture for tests — see docs/ELIXIR_TEST_MANIFESTO.md. Real-shaped (real continent keys, real zone names/areas/rects), but polygons are simplified rectangles rather than the real traced coastline detail.",
+    "retrieved": "2026-11-17"
+  },
+  "continents": [
+    {
+      "key": "kalimdor",
+      "map": 1,
+      "rect": [[0, 0], [25088, 28672]],
+      "land": [[[[100, 100], [25000, 100], [25000, 28500], [100, 28500]]]]
+    },
+    {
+      "key": "eastern-kingdoms",
+      "map": 0,
+      "rect": [[32768, 8192], [44544, 29696]],
+      "land": [[[[32800, 8200], [44500, 8200], [44500, 29600], [32800, 29600]]]]
+    }
+  ],
+  "zones": [
+    {
+      "area": 14,
+      "name": "Durotar",
+      "kind": "zone",
+      "continent": "kalimdor",
+      "label": [20806, 16340],
+      "rect": [[18268, 14648], [23344, 18032]],
+      "polygons": [[[[18268, 14648], [23344, 14648], [23344, 18032], [18268, 18032]]]]
+    },
+    {
+      "area": 36,
+      "name": "Alterac Mountains",
+      "kind": "zone",
+      "continent": "eastern-kingdoms",
+      "label": [37968, 13792],
+      "rect": [[36624, 12896], [39312, 14688]],
+      "polygons": [[[[36624, 12896], [39312, 12896], [39312, 14688], [36624, 14688]]]]
+    },
+    {
+      "area": 999999,
+      "name": null,
+      "kind": null,
+      "continent": "kalimdor",
+      "label": null,
+      "rect": null,
+      "polygons": [[[[5000, 5000], [5100, 5000], [5100, 5100], [5000, 5100]]]]
+    }
+  ],
+  "towns": [
+    {"name": "Orgrimmar", "kind": "capital", "x": 20590.6, "y": 14650.1}
+  ]
+}

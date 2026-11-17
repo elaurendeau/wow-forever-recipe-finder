@@ -50,6 +50,23 @@ Verified facts:
 **Last verified:** 2026-11-16, by reading the live pages in a browser.
 **Procedure:** [CATALOG_REFRESH.md](CATALOG_REFRESH.md) and `app/priv/catalog_seeds/tools/wowhead_forever_export.js`.
 
+## Craftsman's Writs (`priv/writ_seeds/craftsmans_writs.json`)
+
+**Source:** each Craftsman's Writ quest page under `wowhead.com/forever/quest=<id>` (same 403-to-scripts rule as above — browser-read only). Feeds [PRD.md § 7.8](PRD.md#78-feature-h--craftsmans-writ-route-optimizer).
+
+- **`hand_in.reaction` is `{alliance: N, horde: N}` with `N` one of `1` (friendly), `0` (neutral), `-1` (hostile) — verified against the real 150-writ extraction, not assumed from documentation.** An earlier reading of this field in this project ("0 means that faction can't turn this in") was wrong and was caught by checking the data itself: that reading produced 35 writs reported `{alliance: 0, horde: 0}` simultaneously, which can't be true for genuinely completable content. The real extraction has **zero** writs with a `-1` anywhere (added 2026-11-17) — every placed hand-in is either friendly-to-both (71), neutral-to-both (36, one of them with a malformed `{alliance: null, horde: null}` reaction object rather than `0/0`), friendly-Alliance-only (10), or friendly-Horde-only (5). `WritCatalogSeeder.friendly_factions/1` only ever records `1` (strictly friendly) into `hand_in_friendly_to`; neutral and "no reaction data at all" both end up as `[]` and **must not be conflated** when filtering by faction — see `WritResultsFilter`'s `side_match?/2` and its own comment for why a `[]` hand-in is never excluded by the faction toggle.
+- **`hand_in.coordinates`** (`{x, y}`, 0–100) are percentages of the hand-in's own zone's map rectangle, not absolute canvas coordinates — confirmed by computing a known NPC's canvas position from it (via the zone rect in `world_map_vectors.json`, below) and checking it lands inside that zone's real polygon.
+- **28 writs have no hand-in NPC on Wowhead at all** (`hand_in.npc_id`/`zone_id`/`coordinates`/`reaction` all absent) — recorded, not hidden, per `WritMapPlacement.unplaced_results/2` and PRD § 7.8's "listed, never dropped" rule.
+
+## Wowhead WoW Forever World Map (`priv/world_map/world_map_vectors.json`)
+
+**Source:** derived from Wowhead's own in-browser world-map tool (`wowhead.com/forever/world-map`) and its backing data endpoint — not downloaded as map tile images (no Blizzard map art is kept in this repo; see the now-superseded screenshot-tracing/recoloring mockup attempts this session, abandoned once this vector source was available). Feeds [PRD.md § 7.10](PRD.md#710-feature-j--craftsmans-writs-map).
+
+- **One shared canvas.** Every continent's coastline, every zone/subzone polygon, and every town point are coordinates on one canvas (`canvas: {width, height, left}`); each continent's own placement on it is `continents[].rect`. This resolves what was an open question earlier this session (whether a Wowhead `x%/y%` hand-in coordinate was zone-local or continent-level) — it's zone-local, and `continents[].rect` / `zones[].rect` are exactly what's needed to place it on the shared canvas; see `WritMapPlacement.hand_in_pins/2`.
+- **Verified independently, not just trusted:** `zones[].rect` for Durotar and the real `/way`-style coordinates for a real NPC (Sos'mol, Alterac Mountains) were cross-checked by computing the expected canvas position by hand and confirming `WritMapPlacement` produces the same point (see `writ_map_placement_test.exs`); the rendered continent shapes were also eyeballed against the real in-game world-map screenshots captured earlier this session (before this vector source existed) and match.
+- **Not every zone/subzone has a name.** A handful of polygon entries carry `name: null` (decorative/unclaimed land Wowhead's own tool doesn't label) — still rendered, per the same "flagged, not hidden" convention as everywhere else in this app.
+- **No map tile images, textures, or screenshots are committed anywhere in this repo** — only this vector JSON (polygons, rects, points). The map is rendered as flat-colored SVG shapes in this app's own dark theme, not Blizzard's art.
+
 **Why it's the source of truth for reagents.** On 2026-11-16 all four committed seeds were checked recipe by recipe against this data. Only 405 of 693 patterns matched. The Warcraft Wiki pages these seeds were scraped from mostly list the **Classic** recipes, and WoW Forever changed many of them:
 - Alchemy vials: many recipes use Leaded Vial or Crystal Vial instead of Empty Vial.
 - Quantities: Bolt of Runecloth takes 5 Runecloth, not 4; flasks take 30/10 herbs, not 7/3.

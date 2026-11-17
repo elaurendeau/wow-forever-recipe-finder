@@ -7,7 +7,7 @@ defmodule WowForeverRecipeFinder.Writ do
   `WowForeverRecipeFinder.Gateways.Schema.Writ`.
   """
 
-  alias WowForeverRecipeFinder.{ReputationReward, WritRequiredItem}
+  alias WowForeverRecipeFinder.{ReputationReward, WritHandIn, WritRequiredItem}
 
   @enforce_keys [
     :name,
@@ -30,12 +30,11 @@ defmodule WowForeverRecipeFinder.Writ do
     :profession_slugs,
     :tier,
     :repeat,
-    :hand_in_npc_name,
-    :hand_in_zone,
     :reward_money_copper,
     :resolution_status,
     :required_items,
-    :reputation_rewards
+    :reputation_rewards,
+    hand_in: %WritHandIn{friendly_to: []}
   ]
 
   @type tier :: :apprentice | :journeyman | :expert | :artisan
@@ -58,8 +57,7 @@ defmodule WowForeverRecipeFinder.Writ do
           profession_slugs: [String.t()],
           tier: tier(),
           repeat: String.t() | nil,
-          hand_in_npc_name: String.t() | nil,
-          hand_in_zone: String.t() | nil,
+          hand_in: WritHandIn.t(),
           reward_money_copper: non_neg_integer(),
           resolution_status: resolution_status(),
           required_items: [WritRequiredItem.t()],
