@@ -67,6 +67,18 @@
     padding: 8px 10px; border-radius: 7px; border: 1px solid var(--border); background: var(--bg);
     color: var(--fg); font-family: var(--font-body); font-size: 13px;
   }
+  .filterbar label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  .shopping-list {
+    background: var(--surface); border: 1px solid var(--accent); border-radius: 10px;
+    padding: 12px 16px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .shopping-list-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; }
+  .shopping-list-actions { display: flex; align-items: center; gap: 14px; }
+  .shopping-list-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 20px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); }
+  .copy-btn { background: var(--accent); color: var(--accent-fg); border: none; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .clear-link { background: none; border: none; padding: 0; color: var(--accent); font-family: var(--font-mono); font-size: 12.5px; text-decoration: underline; cursor: pointer; }
 
   .stats { display: flex; gap: 18px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
   .stats strong { color: var(--fg); font-size: 15px; font-family: var(--font-display); }
@@ -79,12 +91,6 @@
   }
   th.num { text-align: right; }
   th.sorted { color: var(--accent); }
-  .filter-row td { padding: 0 14px 8px; background: var(--surface-2); border-bottom: 1px solid var(--border); }
-  .filter-row td.num { text-align: right; }
-  .filter-row input {
-    width: 60px; font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-radius: 5px;
-    color: var(--muted); padding: 2px 6px; text-align: right; font-family: var(--font-mono);
-  }
   tbody tr { border-bottom: 1px solid var(--border); }
   tbody tr:last-child { border-bottom: none; }
   td { padding: 10px 14px; vertical-align: middle; }
@@ -144,7 +150,25 @@
 
   <div class="filterbar">
     <input type="text" placeholder="Search writ name...">
+    <label>Max cost <input type="text" placeholder="any"></label>
+    <label>Min reputation <input type="text" placeholder="any"></label>
     <span class="mock-note">filter shown for layout — not wired up in this mockup</span>
+  </div>
+
+  <div class="shopping-list">
+    <div class="shopping-list-header">
+      <span><strong>2</strong> writs selected — <strong>300</strong> total rep, 29s 71c total cost</span>
+      <span class="shopping-list-actions">
+        <button type="button" class="clear-link">clear</button>
+        <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
+      </span>
+    </div>
+    <div class="shopping-list-items">
+      <div class="shopping-list-line"><span>Craftsman's Writ: Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 74c</span></div>
+      <div class="shopping-list-line"><span>Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 47c</span></div>
+      <div class="shopping-list-line"><span>Craftsman's Writ: Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+      <div class="shopping-list-line"><span>Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+    </div>
   </div>
 
   <div class="stats" style="margin-bottom: 4px;">
@@ -156,6 +180,7 @@
     <table>
       <thead>
         <tr>
+          <th></th>
           <th>Writ</th>
           <th>Profession</th>
           <th>Tier</th>
@@ -164,12 +189,6 @@
           <th class="num">Cost</th>
           <th class="num">Reputation</th>
           <th class="num sorted">Rep/Gold &darr;</th>
-        </tr>
-        <tr class="filter-row">
-          <td></td><td></td><td></td><td></td><td></td>
-          <td class="num"><input type="text" placeholder="max"></td>
-          <td class="num"><input type="text" placeholder="min"></td>
-          <td></td>
         </tr>
       </thead>
       <tbody id="tableBody"></tbody>
@@ -182,13 +201,13 @@
     {
       name: "Craftsman's Writ: Lesser Troll's Blood Elixir", npc: "Short John Mithril", profession: "Alchemy",
       tier: "Journeyman", zone: "Stranglethorn Vale", cost: "7s 21c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
-      repPerGold: "2080.4 rep/g",
+      repPerGold: "2080.4 rep/g", checked: true,
       tooltip: { total: "7s 21c", lines: [{ name: "Craftsman's Writ: Lesser Troll's Blood Elixir", total: "3s 74c" }, { name: "Lesser Troll's Blood Elixir x1", total: "3s 47c" }] },
     },
     {
       name: "Craftsman's Writ: Shadow Protection Potion", npc: "Kzixx", profession: "Alchemy",
       tier: "Journeyman", zone: "Duskwood", cost: "22s 50c", rep: "150", repBreakdown: "75 Azeroth Commerce Authority / 75 Durotar Supply and Logistics",
-      repPerGold: "666.7 rep/g",
+      repPerGold: "666.7 rep/g", checked: true,
     },
     {
       name: "Craftsman's Writ: Heavy Bronze Mace", npc: "Gorgrash", profession: "Blacksmithing",
@@ -203,6 +222,7 @@
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = ROWS.map((row) => `
     <tr>
+      <td><input type="checkbox" ${row.checked ? "checked" : ""}></td>
       <td>
         <a class="item-name" href="#" title="Opens the writ's Wowhead quest page — not wired up in this mockup">${row.name}</a>
         <div class="item-sub">at ${row.npc}</div>

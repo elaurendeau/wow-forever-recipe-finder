@@ -151,3 +151,25 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 - **Valuing reward items** (`rewards.items`, `rewards.item_choices`) via their own AH price and folding them into the efficiency metric — not persisted at all in Phase 1; only reputation and `money_copper` are counted.
 - **Any crafting-cost comparison** for turn-in items we already track as patterns elsewhere — Phase 1 always assumes buying from the AH, per the locked-in decision above.
 - **Netting a non-zero `money_copper` reward into the cost side of the rep-per-gold ratio.** Every writ in the extraction delivered so far rewards 0 gold, so `reward_money_copper` is modeled and stored but not yet subtracted from cost in `WritEfficiency`. Revisit if a future extraction pass surfaces a writ with a real gold reward.
+
+### 7.9 Feature I — Writ Shopping List
+
+**Added 2026-11-17.** A visitor checks the writs they intend to do; the page aggregates every writ item and required item across the selection into one shopping list (quantities summed across writs that need the same item), and a copy button exports it in a format the [Auctionator](https://github.com/tiny/auctionator) addon's Shopping List feature can import.
+
+**Verified, not guessed, per CLAUDE.md's Diagnosis Discipline:** Auctionator's shopping-list export/import format was read directly from its own Lua source (`Atr_ShpList_Export_GetText` and `Atr_SList_ImportCore` in `AuctionatorConfig.lua`) rather than assumed from memory or a forum post. The real format is a `*** <List Name>` header line followed by one plain item display name per line, until the next `***` line or end of text — **no item IDs, no quantities**. Auctionator's shopping list is a watch-list of names, not a cart with amounts. This directly shapes the design below: quantities are this app's own display concern, dropped entirely from the exported text.
+
+**Use cases:**
+
+*Happy path:*
+- Checking a writ's row checkbox adds its writ item and required item(s) to a shopping-list panel, with quantities and (where computable) per-item and total AH cost in Recent Value.
+- Two selected writs that happen to need the same item name sum to one line with the combined quantity, not two separate lines.
+- The copy button copies `*** <list name>\n<item name>\n<item name>...` — verified-format text ready to paste into Auctionator's own Import dialog.
+- Unchecking a writ removes its contribution from the list; if another selected writ still needs that same item, its line's quantity drops rather than disappearing.
+- Clearing the whole selection hides the panel.
+
+*Boundary/edge conditions:*
+- A selected writ with no computable cost (missing Recent Value, or `pending_quest_page` prior to the full extraction) still contributes its item(s) to the shopping list by name/quantity — cost and the running total show as unknown (`—`) rather than silently excluding the item or fabricating a cost.
+- A required item needed in bulk (e.g. 200 Crafted Solid Shot for one real writ in the catalog) shows its real quantity in the panel; the exported Auctionator text still lists its name exactly once, since the format has no quantity field at all.
+
+*State-dependent variations:*
+- Selection lives in LiveView socket state only for this round — it does **not** persist across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.

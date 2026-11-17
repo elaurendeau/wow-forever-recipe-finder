@@ -11,6 +11,7 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
 
   import Phoenix.LiveViewTest
 
+  alias WowForeverRecipeFinder.Gateways.EctoWritRepositoryGateway
   alias WowForeverRecipeFinder.WritCatalogSeeder
 
   @writs_fixture Path.join([__DIR__, "..", "..", "fixtures", "writs", "sample_writs.json"])
@@ -85,5 +86,73 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
 
     assert html =~ "No data uploaded yet"
     refute html =~ "Elixir of Ogre&#39;s Strength"
+  end
+
+  describe "shopping list (docs/PRD.md § 7.9)" do
+    defp writ_id!(name) do
+      EctoWritRepositoryGateway.list_writs()
+      |> Enum.find(&(&1.name == name))
+      |> Map.fetch!(:id)
+    end
+
+    test "no panel is shown until a writ is checked", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      html = upload_tsm_export(view)
+
+      refute html =~ "Copy for Auctionator"
+    end
+
+    test "checking a writ adds its writ item and required item to the shopping list panel", %{
+      conn: conn
+    } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      html = view |> element("input[phx-value-id='#{id}']") |> render_click()
+
+      assert html =~ "<strong>1</strong>"
+      assert html =~ "writs selected"
+      assert html =~ "Craftsman&#39;s Writ: Elixir of Ogre&#39;s Strength"
+      assert html =~ "Elixir of Ogre Strength"
+      assert html =~ "Copy for Auctionator"
+    end
+
+    test "the Auctionator export text has Auctionator's real *** header and one item name per line, no quantities",
+         %{
+           conn: conn
+         } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      html = view |> element("input[phx-value-id='#{id}']") |> render_click()
+
+      assert html =~
+               "data-copy=\"*** WoW Forever Writs\nCraftsman&#39;s Writ: Elixir of Ogre&#39;s Strength\nElixir of Ogre Strength\n\""
+    end
+
+    test "unchecking a writ removes it, and clearing the selection hides the panel", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      html = view |> element("input[phx-value-id='#{id}']") |> render_click()
+
+      refute html =~ "Copy for Auctionator"
+    end
+
+    test "a selected writ with unknown cost still appears on the list by name, cost shown as unknown",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      pending_id = writ_id!("Craftsman's Writ: Heavy Bronze Mace")
+      html = view |> element("input[phx-value-id='#{pending_id}']") |> render_click()
+
+      assert html =~ "Craftsman&#39;s Writ: Heavy Bronze Mace"
+      assert html =~ "total cost"
+    end
   end
 end

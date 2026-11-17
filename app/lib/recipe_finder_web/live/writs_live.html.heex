@@ -40,138 +40,173 @@
         placeholder="Search writ name..."
         value={@filter.search}
       />
-    </div>
-
-    <div class="rf-stats" style="margin: 12px 0;">
-      <span><strong>{length(filtered)}</strong> shown</span>
-      <span><strong>{length(@results)}</strong> total writs</span>
-    </div>
-
-    <div class="rf-table-wrap">
-      <table class="rf-table">
-        <thead>
-          <tr>
-            <th>Writ</th>
-            <th>Profession</th>
-            <th>Tier</th>
-            <th>Zone</th>
-            <th>Hand-in NPC</th>
-            <th class={th_class(@filter, :cost)} phx-click="sort_by" phx-value-field="cost">
-              Cost{sort_indicator(@filter, :cost)}
-            </th>
-            <th
-              class={th_class(@filter, :reputation)}
-              phx-click="sort_by"
-              phx-value-field="reputation"
-            >
-              Reputation{sort_indicator(@filter, :reputation)}
-            </th>
-            <th
-              class={th_class(@filter, :rep_per_gold)}
-              phx-click="sort_by"
-              phx-value-field="rep_per_gold"
-              title="Total reputation divided by total cost in gold"
-            >
-              Rep/Gold{sort_indicator(@filter, :rep_per_gold)}
-            </th>
-          </tr>
-          <tr class="rf-table-filter-row">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <input
-                type="text"
-                name="filter[max_cost_copper]"
-                placeholder="max"
-                value={@filter.max_cost_copper}
-              />
-            </td>
-            <td>
-              <input
-                type="text"
-                name="filter[min_reputation]"
-                placeholder="min"
-                value={@filter.min_reputation}
-              />
-            </td>
-            <td></td>
-          </tr>
-        </thead>
-        <tbody>
-          <%= for r <- filtered do %>
-            <tr>
-              <td>
-                <a
-                  class="rf-item-name"
-                  href={wowhead_quest_url(r.writ.wowhead_quest_id || 0)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {r.writ.name}
-                </a>
-                <div class="rf-item-tier">
-                  {r.writ.hand_in_npc_name && "at #{r.writ.hand_in_npc_name}"}
-                </div>
-              </td>
-              <td>{Enum.map_join(r.writ.profession_slugs, " / ", &profession_label/1)}</td>
-              <td><span class="rf-source-pill">{tier_label(r.writ.tier)}</span></td>
-              <td class="rf-muted">{r.writ.hand_in_zone || "—"}</td>
-              <td class="rf-muted">{r.writ.hand_in_npc_name || "—"}</td>
-              <td class="num rf-muted">
-                <%= cond do %>
-                  <% pending_data?(r) -> %>
-                    <span
-                      class="writ-pending-pill"
-                      title="This writ's required item hasn't been extracted yet — not that it needs nothing."
-                    >
-                      awaiting data
-                    </span>
-                  <% r.total_cost_copper == nil -> %>
-                    —
-                  <% true -> %>
-                    <span
-                      class="rf-tooltip-trigger"
-                      id={"writ-cost-tooltip-#{r.writ.id}"}
-                      phx-hook="HoverTooltip"
-                    >
-                      {format_copper(r.total_cost_copper)}
-                      <div class="rf-tooltip">
-                        <div class="rf-tooltip-title">
-                          <span class="rf-tooltip-label">Writ Cost</span>
-                          <span class="rf-tooltip-total">{format_copper(r.total_cost_copper)}</span>
-                        </div>
-                        <div class="rf-tooltip-line">
-                          <span>{r.writ.writ_item_display_name}</span>
-                          <span class="rf-tooltip-price">{format_copper(r.writ_item_cost_copper)}</span>
-                        </div>
-                        <%= for line <- r.required_item_breakdown do %>
-                          <div class="rf-tooltip-line">
-                            <span>{line.display_name} x{line.quantity}</span>
-                            <span class="rf-tooltip-price">{format_copper(line.line_total_copper)}</span>
-                          </div>
-                        <% end %>
-                      </div>
-                    </span>
-                <% end %>
-              </td>
-              <td class="num">
-                {r.total_reputation}
-                <div class="rf-item-tier">
-                  {Enum.map_join(
-                    r.writ.reputation_rewards,
-                    " / ",
-                    &"#{&1.amount} #{&1.faction_display_name}"
-                  )}
-                </div>
-              </td>
-              <td class="num rf-profit-pos">{format_rep_per_gold(r.rep_per_gold)}</td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
+      <label>
+        Max cost
+        <input
+          type="text"
+          name="filter[max_cost_copper]"
+          placeholder="any"
+          value={@filter.max_cost_copper}
+        />
+      </label>
+      <label>
+        Min reputation
+        <input
+          type="text"
+          name="filter[min_reputation]"
+          placeholder="any"
+          value={@filter.min_reputation}
+        />
+      </label>
     </div>
   </form>
+
+  <%= if MapSet.size(@selected_writ_ids) > 0 do %>
+    <% shopping_lines = WritShoppingList.build(@results, @selected_writ_ids) %>
+    <div class="rf-shopping-list">
+      <div class="rf-shopping-list-header">
+        <span>
+          <strong>{MapSet.size(@selected_writ_ids)}</strong>
+          writs selected —
+          <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+          total rep, {format_copper(WritShoppingList.total_cost_copper(shopping_lines))} total cost
+        </span>
+        <span class="rf-shopping-list-actions">
+          <button type="button" class="rf-forget-link" phx-click="clear_selection">clear</button>
+          <span
+            id="auctionator-copy"
+            phx-hook="CopyButton"
+            data-copy={WritShoppingList.to_auctionator_text("WoW Forever Writs", shopping_lines)}
+          >
+            <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
+          </span>
+        </span>
+      </div>
+      <div class="rf-shopping-list-items">
+        <%= for line <- shopping_lines do %>
+          <div class="rf-shopping-list-line">
+            <span>{line.display_name} x{line.quantity}</span>
+            <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="rf-stats" style="margin: 12px 0;">
+    <span><strong>{length(filtered)}</strong> shown</span>
+    <span><strong>{length(@results)}</strong> total writs</span>
+  </div>
+
+  <div class="rf-table-wrap">
+    <table class="rf-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Writ</th>
+          <th>Profession</th>
+          <th>Tier</th>
+          <th>Zone</th>
+          <th>Hand-in NPC</th>
+          <th class={th_class(@filter, :cost)} phx-click="sort_by" phx-value-field="cost">
+            Cost{sort_indicator(@filter, :cost)}
+          </th>
+          <th
+            class={th_class(@filter, :reputation)}
+            phx-click="sort_by"
+            phx-value-field="reputation"
+          >
+            Reputation{sort_indicator(@filter, :reputation)}
+          </th>
+          <th
+            class={th_class(@filter, :rep_per_gold)}
+            phx-click="sort_by"
+            phx-value-field="rep_per_gold"
+            title="Total reputation divided by total cost in gold"
+          >
+            Rep/Gold{sort_indicator(@filter, :rep_per_gold)}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= for r <- filtered do %>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                phx-click="toggle_writ_selection"
+                phx-value-id={r.writ.id}
+                checked={MapSet.member?(@selected_writ_ids, r.writ.id)}
+              />
+            </td>
+            <td>
+              <a
+                class="rf-item-name"
+                href={wowhead_quest_url(r.writ.wowhead_quest_id || 0)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {r.writ.name}
+              </a>
+              <div class="rf-item-tier">
+                {r.writ.hand_in_npc_name && "at #{r.writ.hand_in_npc_name}"}
+              </div>
+            </td>
+            <td>{Enum.map_join(r.writ.profession_slugs, " / ", &profession_label/1)}</td>
+            <td><span class="rf-source-pill">{tier_label(r.writ.tier)}</span></td>
+            <td class="rf-muted">{r.writ.hand_in_zone || "—"}</td>
+            <td class="rf-muted">{r.writ.hand_in_npc_name || "—"}</td>
+            <td class="num rf-muted">
+              <%= cond do %>
+                <% pending_data?(r) -> %>
+                  <span
+                    class="writ-pending-pill"
+                    title="This writ's required item hasn't been extracted yet — not that it needs nothing."
+                  >
+                    awaiting data
+                  </span>
+                <% r.total_cost_copper == nil -> %>
+                  —
+                <% true -> %>
+                  <span
+                    class="rf-tooltip-trigger"
+                    id={"writ-cost-tooltip-#{r.writ.id}"}
+                    phx-hook="HoverTooltip"
+                  >
+                    {format_copper(r.total_cost_copper)}
+                    <div class="rf-tooltip">
+                      <div class="rf-tooltip-title">
+                        <span class="rf-tooltip-label">Writ Cost</span>
+                        <span class="rf-tooltip-total">{format_copper(r.total_cost_copper)}</span>
+                      </div>
+                      <div class="rf-tooltip-line">
+                        <span>{r.writ.writ_item_display_name}</span>
+                        <span class="rf-tooltip-price">{format_copper(r.writ_item_cost_copper)}</span>
+                      </div>
+                      <%= for line <- r.required_item_breakdown do %>
+                        <div class="rf-tooltip-line">
+                          <span>{line.display_name} x{line.quantity}</span>
+                          <span class="rf-tooltip-price">{format_copper(line.line_total_copper)}</span>
+                        </div>
+                      <% end %>
+                    </div>
+                  </span>
+              <% end %>
+            </td>
+            <td class="num">
+              {r.total_reputation}
+              <div class="rf-item-tier">
+                {Enum.map_join(
+                  r.writ.reputation_rewards,
+                  " / ",
+                  &"#{&1.amount} #{&1.faction_display_name}"
+                )}
+              </div>
+            </td>
+            <td class="num rf-profit-pos">{format_rep_per_gold(r.rep_per_gold)}</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
