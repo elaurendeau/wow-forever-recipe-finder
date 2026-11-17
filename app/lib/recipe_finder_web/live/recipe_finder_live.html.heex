@@ -1,6 +1,10 @@
 <div class="rf-topbar" id="recipe-finder" phx-hook="TsmSnapshot">
   <div class="rf-topbar-left">
     <h1 class="rf-title">WoW Forever Recipe Finder</h1>
+    <nav class="rf-nav">
+      <.link navigate={~p"/"} class="active">Recipes</.link>
+      <.link navigate={~p"/writs"}>Craftsman's Writs</.link>
+    </nav>
   </div>
   <div class="rf-freshness">
     <%= if @captured_at do %>

@@ -98,3 +98,24 @@ Once a file is processed, the computed per-profession results are stored in the 
 ### 7.7 Feature G — Data Freshness Indicator
 
 The UI displays when the currently-shown snapshot was computed (from the upload timestamp held client-side), so a player is never looking at stale numbers without knowing it — same underlying concern as the reference project's Data Freshness Banner, adapted to a client-held timestamp rather than a server-tracked one.
+
+### 7.8 Feature H — Craftsman's Writs Map
+
+A second page (`/writs`, linked from the top bar next to "Recipes") lists every WoW Forever Craftsman's Writ — the daily quests that ask for one crafted item — and places each one's hand-in NPC on a vector world map, so a player can plan which writs to fill and where to turn them in. Static reference data only: nothing is uploaded, nothing depends on the TSM snapshot.
+
+Data comes from two committed files, both captured from Wowhead's WoW Forever pages (see [DATA_SOURCES.md](DATA_SOURCES.md) § Wowhead WoW Forever):
+
+- `priv/writs/craftsmans_writs.json` — 150 writs: tier, profession(s), required item + quantity + the recipe/skill that crafts it, hand-in NPC + zone + coordinates (when known), faction reaction, rewards.
+- `priv/world_map/world_map_vectors.json` — continent coastlines and zone polygons on Wowhead's world-map canvas; no map textures are kept.
+
+**Requirements / use cases:**
+- The map draws every continent and zone from vectors only; a writ's hand-in is placed at its in-game zone coordinates (`x%`, `y%` of the zone's map rectangle).
+- One pin per hand-in NPC, labelled with how many of the currently-filtered writs that NPC takes; an NPC with no matching writ shows no pin. A hand-in with coordinates but no NPC name/id in the data (Silver Skeleton Key) still gets its own pin, shown as "Unknown NPC".
+- Reputation shows one faction's amount (75 / 125 / 200 by tier): each writ pays the same to the Alliance and the Horde trade faction, and a player earns only their own.
+- Filters: profession (multi-select; none selected = all), tier (Journeyman / Expert / Artisan; none selected = all), "I play" (Either / Alliance / Horde — hides NPCs whose reaction data isn't friendly to that faction), and free-text search over writ name, required item, NPC and zone (case-insensitive).
+- A writ needing two professions (Gordok Ogre Suit: Leatherworking and Tailoring) matches either profession's filter, and counts toward both profession totals.
+- Side panel, default state: every placed writ matching the filters, grouped by zone, with its count; each row shows tier, profession + skill, required item × quantity (linked to Wowhead), and rewards (reputation, money only when non-zero, reward items).
+- Selecting a pin (or a writ row) shows that NPC's writs only, the zone, and a `/way <zone> <x> <y>` waypoint command with a copy button; a "back" control returns to the full list.
+- Writs whose hand-in isn't known yet (no NPC coordinates in the data) are never dropped: they're listed in a separate "Hand-in not known yet" section, still subject to the filters.
+- Continent shortcuts (Azeroth / Kalimdor / Zephras Isle / Eastern Kingdoms), zoom (buttons + mouse wheel) and drag-to-pan are client-side only and survive filter changes.
+- If either data file is missing or malformed, the page shows a clear error state instead of crashing or rendering an empty map silently.

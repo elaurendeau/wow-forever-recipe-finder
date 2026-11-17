@@ -1,0 +1,1 @@
+Hand-made broken data files (2026-11-17) for the WritAtlas "fail loudly" paths: malformed_json = truncated JSON; unexpected_shape = valid JSON whose writ entry lacks the required fields. Not captured from any external source.

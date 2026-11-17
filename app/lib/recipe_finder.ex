@@ -29,5 +29,5 @@ defmodule WowForeverRecipeFinder do
   test_only_exports = if Mix.env() == :test, do: [DataCase], else: []
   use Boundary,
     deps: [],
-    exports: [ProfitComputation, CatalogSeeder, ProfitResult, ResultsFilter] ++ test_only_exports
+    exports: [ProfitComputation, CatalogSeeder, ProfitResult, ResultsFilter, WritAtlas] ++ test_only_exports
 end

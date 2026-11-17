@@ -37,4 +37,6 @@ Whenever a UI layout is added or changed, check it against the approved mockup a
 
 The settled reference is [docs/mockups/recipe-finder-reference.html](mockups/recipe-finder-reference.html) — open it directly in a browser, the same non-framework HTML/CSS/JS treatment the sister project gives its own `docs/mockups/*.html`. It started as a Claude Design-canvas artifact and was hand-converted to plain HTML/CSS/vanilla JS for this file; the two can drift if the artifact is iterated on again without this file being updated to match — this file is the one that counts for implementation.
 
+The Craftsman's Writs page ([PRD.md § 7.8](docs/PRD.md)) has its own reference, [docs/mockups/writs-map-reference.html](docs/mockups/writs-map-reference.html) — self-contained (the real writ and vector-map data are embedded), open it directly in a browser.
+
 When a mockup doesn't yet cover a new element, update the mockup itself in the same change, not just the real component — a mockup that's drifted out of sync with the actual UI stops being a reliable reference for the next change.

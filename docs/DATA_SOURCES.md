@@ -42,3 +42,23 @@ Verified facts:
 - **Category tags are the real correctness check for an item-ID match, not optional metadata.** Every item page carries `/wiki/Category:...` links; a genuine profession-crafted item carries a category containing that profession's name (e.g. `Tailoring_crafted_items`). **Confirmed real failure mode this session:** scraping Tailoring by name-match alone produced 6 wrong matches out of 269 (ambiguous names resolving to an unrelated wiki page) — a Blacksmithing mail-armor item, a Leatherworking item, a plate-armor item, a cosmetic item, and two removed/beta-only items, none of them Tailoring at all. All 6 were caught, after the fact, by checking each resolved item's own category tags against the expected profession — see [ARCHITECTURE.md § Contract Tests via Fixtures](ARCHITECTURE.md#3-contract-tests-via-fixtures) for why this check belongs in the scraper itself, not a one-off manual audit.
 - **Not every pattern has a wiki page yet.** WoW Forever is live beta content; roughly 40% of Tailoring's pattern list had no resolvable wiki page at time of scraping (confirmed: the page literally doesn't exist, not a fetch failure) — see [ARCHITECTURE.md § Catalog Construction](ARCHITECTURE.md#catalog-construction-manual-per-profession) for how this is recorded rather than treated as an error.
 - **Rate limiting / access:** plain, unauthenticated GET requests work reliably with no special headers. **`wowhead.com` itself returns HTTP 403 (Cloudflare bot protection) to automated requests and must never be fetched directly** — every fact above comes from `warcraft.wiki.gg` alone, which has no such protection. No published rate limit was found; this project's own scraping used a conservative, deliberately chosen **1.0–1.8s randomized delay between every single sequential request, zero concurrency**, with a 30–60s backoff on any 429/503/challenge response — across several hundred real requests this session, this threshold was never hit even once. Treat that cadence as the floor, not something to tune faster without a real reason.
+
+## Wowhead WoW Forever (Craftsman's Writs & World Map)
+
+**Source:** [wowhead.com/forever](https://www.wowhead.com/forever) — read **only from a real, signed-in-as-nobody browser session**, one page at a time, never by a script hitting the site directly (see the 403 note above).
+**Captured:** 2026-11-16/17, by hand-paced reads in a browser (15 s between writ quest pages; 4–6 s between map image tiles; stop on the first non-200).
+**Feeds:** [PRD.md § 7.8](PRD.md) (Feature H — Craftsman's Writs Map).
+
+### `priv/writs/craftsmans_writs.json`
+
+- **Writ list:** the guide [Craftsman's Writs overview](https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards) (one table per profession) + the quest search `/forever/quests/name:Craftsman's Writ` (`g_listviews.quests.data`, category 16941 = 150 Forever writ quests, matched 1:1 by name; gives reputation, money, reward items).
+- **Required item + quantity:** each quest page's objective list (`table.icon-list`, `data-icon-list-quantity`); the writ item itself is listed first and skipped.
+- **Hand-in NPC + coordinates:** each quest page's `End:` NPC link and its `new Mapper({...})` objectives (`point: "end"`, `coord: [x, y]` zone percentages, `reactalliance`/`reacthorde`).
+- **Gap, recorded not hidden:** 28 writs (mostly Artisan) have no hand-in NPC on Wowhead yet — crowd-sourced data not reported so far, not a parse failure. Their `hand_in.coordinates` is `null`.
+- Professions come from which seed recipe actually crafts the required item; the guide files two writs under a different profession (Goblin Rocket Fuel, Inlaid Mithril Cylinder).
+
+### `priv/world_map/world_map_layout.json` and `world_map_vectors.json`
+
+- **Layout** is Wowhead's own world-map data file (`nether.wowhead.com/forever/data/world-map`): a single shared canvas (44544 × 37888 px, 512 px = one 533.33-yard chunk), each continent's offset on it, every zone's rectangle (`rect`, used to turn zone `x%, y%` into canvas coordinates), towns/landmarks, and transport routes (flight paths, boats, zeppelins, tram).
+- **Vectors** are derived, not downloaded: zone membership from Wowhead's 32-px zone grid, land vs. water from the zoom-4 map tiles' alpha channel (water is fully transparent), traced and simplified to ≤ 6 px with shared borders simplified once so neighbours never gap or overlap. Land the game assigns to no zone is merged into the neighbouring zone it shares the longest border with, matching how the in-game map draws it. **No tile images are kept.**
+- Four regions have no name in Wowhead's data (areas 408, 16756, 17065, 17066) and are drawn unnamed.

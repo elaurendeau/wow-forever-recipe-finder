@@ -1,0 +1,215 @@
+<div class="rf-topbar">
+  <div class="rf-topbar-left">
+    <h1 class="rf-title">WoW Forever Recipe Finder</h1>
+    <nav class="rf-nav">
+      <.link navigate={~p"/"}>Recipes</.link>
+      <.link navigate={~p"/writs"} class="active">Craftsman's Writs</.link>
+    </nav>
+  </div>
+</div>
+
+<div class="rf-page">
+  <%= if @load_error do %>
+    <div class="rf-error" id="writs-load-error">{format_load_error(@load_error)}</div>
+  <% else %>
+    <div class="wm-filters">
+      <div class="wm-chips" id="wm-profession-chips">
+        <span class="wm-group-label">Profession</span>
+        <button
+          :for={{slug, label} <- professions()}
+          type="button"
+          class={["wm-chip", MapSet.member?(@criteria.professions, slug) && "on"]}
+          phx-click="toggle_profession"
+          phx-value-profession={slug}
+        >
+          {label}<span class="wm-chip-count">{Map.get(@profession_counts, slug, 0)}</span>
+        </button>
+      </div>
+      <div class="wm-chips" id="wm-tier-chips">
+        <span class="wm-group-label">Tier</span>
+        <button
+          :for={tier <- tiers()}
+          type="button"
+          class={["wm-chip", MapSet.member?(@criteria.tiers, tier) && "on"]}
+          phx-click="toggle_tier"
+          phx-value-tier={tier}
+        >
+          {tier_label(tier)}<span class="wm-chip-count">{Map.get(@tier_counts, tier, 0)}</span>
+        </button>
+      </div>
+      <div class="wm-chips" id="wm-side-chips">
+        <span class="wm-group-label">I play</span>
+        <button
+          :for={{param, label} <- sides()}
+          type="button"
+          class={["wm-chip", side_selected?(@criteria, param) && "on"]}
+          phx-click="set_side"
+          phx-value-side={param}
+        >
+          {label}
+        </button>
+      </div>
+      <form phx-change="search" phx-submit="search" id="wm-search-form">
+        <input
+          class="wm-search"
+          type="text"
+          name="search"
+          value={@criteria.search}
+          placeholder="Search writ, item, NPC…"
+          phx-debounce="200"
+          autocomplete="off"
+        />
+      </form>
+    </div>
+
+    <div class="wm-layout">
+      <div class="wm-map-card">
+        <div class="wm-map-tools">
+          <button
+            :for={{key, label} <- continent_labels()}
+            type="button"
+            class={[@view == key && "on"]}
+            phx-click="show_view"
+            phx-value-view={key}
+          >
+            {label}
+          </button>
+        </div>
+        <div class="wm-zoom">
+          <button type="button" data-zoom="in" title="Zoom in">+</button>
+          <button type="button" data-zoom="out" title="Zoom out">−</button>
+        </div>
+        <svg
+          id="wm-map"
+          class="wm-map"
+          phx-hook="WritMap"
+          viewBox={initial_view_box()}
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="World map of Craftsman's Writ hand-in NPCs"
+        >
+          <g id="wm-base" phx-update="ignore">
+            <path
+              :for={continent <- @world_map.continents}
+              class="wm-land"
+              fill-rule="evenodd"
+              d={svg_path(continent.land)}
+            />
+            <path
+              :for={zone <- @world_map.zones}
+              class={["wm-zone", MapSet.member?(@hot_areas, zone.area) && "hot"]}
+              fill-rule="evenodd"
+              d={svg_path(zone.polygons)}
+            >
+              <title :if={zone_title(zone)}>{zone_title(zone)}</title>
+            </path>
+            <path
+              :for={continent <- @world_map.continents}
+              class="wm-coast"
+              fill-rule="evenodd"
+              d={svg_path(continent.land)}
+            />
+            <g class="wm-towns">
+              <g :for={town <- @world_map.towns} transform={"translate(#{elem(town.point, 0)} #{elem(town.point, 1)})"}>
+                <g class="wm-scaled">
+                  <circle r="2.5" class="wm-town" />
+                  <text x="5" y="3.5" class="wm-town-label">{town.name}</text>
+                </g>
+              </g>
+            </g>
+            <text
+              :for={zone <- zone_labels(@world_map)}
+              x={elem(zone.label, 0)}
+              y={elem(zone.label, 1)}
+              class="wm-zone-label"
+            >
+              {zone.name}
+            </text>
+          </g>
+          <g id="wm-pins">
+            <g
+              :for={pin <- @pins}
+              id={"wm-pin-#{pin.id}"}
+              class={["wm-pin", @selected_pin && @selected_pin.id == pin.id && "selected"]}
+              transform={"translate(#{pin.x} #{pin.y})"}
+              phx-click="select_pin"
+              phx-value-id={pin.id}
+            >
+              <title>{pin_title(pin)} · {writ_count_label(length(pin.writs))}</title>
+              <g class="wm-scaled">
+                <circle :if={@selected_pin && @selected_pin.id == pin.id} r="14.4" class="wm-pin-ring" />
+                <circle r="9" class="wm-pin-dot" />
+                <text class="wm-pin-count">{length(pin.writs)}</text>
+                <circle :if={:alliance in pin.friendly_to} cx="-6.75" cy="-7.2" r="2.9" class="wm-faction alliance" />
+                <circle :if={:horde in pin.friendly_to} cx="6.75" cy="-7.2" r="2.9" class="wm-faction horde" />
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="wm-legend">
+          <span><i class="wm-dot accent"></i>Hand-in NPC (number = writs)</span>
+          <span><i class="wm-dot alliance"></i>Alliance</span>
+          <span><i class="wm-dot horde"></i>Horde</span>
+        </div>
+      </div>
+
+      <div class="wm-panel" id="wm-panel">
+        <%= if @selected_pin do %>
+          <div class="wm-panel-head">
+            <button type="button" class="wm-back" phx-click="clear_pin">← All writs</button>
+            <h2>{@selected_pin.npc_name || "Unknown NPC"}</h2>
+            <div class="wm-sub">
+              {@selected_pin.zone}
+              <button
+                type="button"
+                id="wm-copy-way"
+                class="wm-way"
+                phx-hook="CopyButton"
+                data-copy={WritAtlas.waypoint_command(@selected_pin)}
+                title="Copy waypoint (TomTom)"
+              >
+                {WritAtlas.waypoint_command(@selected_pin)}
+              </button>
+            </div>
+          </div>
+          <div class="wm-list">
+            <.writ_row :for={writ <- @selected_pin.writs} writ={writ} with_location={false} />
+          </div>
+        <% else %>
+          <div class="wm-panel-head">
+            <h2>{writ_count_label(placed_count(@placed_by_zone))} on the map</h2>
+            <div class="wm-sub">Click a pin or a writ to see the hand-in NPC.</div>
+          </div>
+          <div class="wm-list">
+            <%= if @placed_by_zone == [] do %>
+              <div class="wm-writ">No writs match the filters.</div>
+            <% end %>
+            <%= for {zone, writs} <- @placed_by_zone do %>
+              <div class="wm-zone-head">{zone} · {length(writs)}</div>
+              <.writ_row :for={writ <- writs} writ={writ} with_location={true} />
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="wm-unknown" id="wm-unknown">
+      <h3>Hand-in not known yet · {length(@unplaced)}</h3>
+      <p>Wowhead doesn't list a turn-in NPC for these writs yet, so they can't be placed on the map.</p>
+      <div class="wm-unknown-grid">
+        <div :for={writ <- @unplaced}>
+          {writ.name}
+          <span>
+            · {tier_label(writ.tier)} · {professions_label(writ, "/")}
+            <%= if writ.hand_in.zone do %>
+              · {writ.hand_in.zone}
+            <% end %>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="wm-note">
+      Writ and map data captured from Wowhead's WoW Forever pages. Faction dots reflect Wowhead's reaction data for the NPC and may not match the game exactly.
+    </div>
+  <% end %>
+</div>

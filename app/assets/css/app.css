@@ -330,3 +330,453 @@ a {
 .rf-copy-btn:hover {
   opacity: 0.9;
 }
+
+/* ---------------------------------------------------------------------
+   Top-bar navigation between the Recipes and Craftsman's Writs pages.
+   --------------------------------------------------------------------- */
+.rf-nav {
+  display: flex;
+  gap: 4px;
+  margin-left: 10px;
+}
+.rf-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 7px;
+}
+.rf-nav a.active {
+  color: var(--accent);
+  background: var(--surface-2);
+}
+
+/* ---------------------------------------------------------------------
+   Craftsman's Writs map (docs/PRD.md § 7.8). Mirrors
+   docs/mockups/writs-map-reference.html — that file is the visual
+   source of truth for this page.
+   --------------------------------------------------------------------- */
+.wm-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+}
+.wm-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wm-group-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-right: 2px;
+}
+.wm-chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.wm-chip.on {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+.wm-chip-count {
+  opacity: 0.65;
+  font-weight: 500;
+  margin-left: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+.wm-search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  width: 220px;
+}
+
+.wm-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 14px;
+  align-items: start;
+}
+.wm-map-card {
+  position: relative;
+  background: #0f1622;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wm-map-tools {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.wm-map-tools button,
+.wm-zoom button {
+  background: rgba(22, 22, 30, 0.92);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.wm-map-tools button.on {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.wm-zoom {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+.wm-zoom button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.wm-map {
+  --k: 60;
+  display: block;
+  width: 100%;
+  height: 72vh;
+  min-height: 420px;
+  cursor: grab;
+  touch-action: none;
+}
+.wm-map.dragging {
+  cursor: grabbing;
+}
+.wm-land {
+  fill: #23232e;
+}
+.wm-zone {
+  fill: #23232e;
+  stroke: #3a3a4a;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.wm-zone.hot {
+  fill: #2c2a35;
+}
+.wm-zone:hover {
+  fill: #34323f;
+}
+.wm-coast {
+  fill: none;
+  stroke: #4a4a5c;
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+/* Pins and town markers are drawn in screen-pixel units, scaled by --k. */
+.wm-scaled {
+  transform: scale(var(--k));
+}
+.wm-zone-label {
+  fill: #6f6d7d;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: calc(12.5px * var(--k));
+  text-anchor: middle;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-opacity: 0.6;
+  stroke-width: calc(3px * var(--k));
+}
+.wm-towns {
+  display: none;
+}
+.wm-map.wm-zoomed-in .wm-towns {
+  display: inline;
+}
+.wm-town {
+  fill: #57556a;
+}
+.wm-town-label {
+  fill: #6a687a;
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  pointer-events: none;
+}
+.wm-pin {
+  cursor: pointer;
+}
+.wm-pin-dot {
+  fill: var(--accent);
+  stroke: var(--accent-fg);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+.wm-pin:hover .wm-pin-dot,
+.wm-pin.selected .wm-pin-dot {
+  fill: #f2c26b;
+}
+.wm-pin-ring {
+  fill: none;
+  stroke: #f2c26b;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+.wm-pin-count {
+  fill: var(--accent-fg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+.wm-faction {
+  stroke: var(--bg);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.wm-faction.alliance {
+  fill: #5b8def;
+}
+.wm-faction.horde {
+  fill: #e0574f;
+}
+.wm-legend {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 12px;
+  font-size: 11.5px;
+  color: var(--muted);
+  background: rgba(22, 22, 30, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+.wm-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+.wm-dot.accent {
+  background: var(--accent);
+}
+.wm-dot.alliance {
+  background: #5b8def;
+}
+.wm-dot.horde {
+  background: #e0574f;
+}
+
+.wm-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  max-height: calc(72vh + 2px);
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wm-panel-head {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.wm-panel-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+.wm-sub {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 3px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wm-way {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 7px;
+  color: var(--fg);
+  cursor: pointer;
+}
+.wm-back {
+  all: unset;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.wm-list {
+  overflow-y: auto;
+  flex: 1;
+}
+.wm-zone-head {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  padding: 8px 14px 4px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+.wm-writ {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.wm-writ:hover {
+  background: var(--surface-2);
+}
+.wm-writ-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+.wm-writ-name {
+  font-weight: 600;
+  font-size: 13.5px;
+}
+.wm-writ-meta {
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-top: 2px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.wm-tier {
+  font-size: 10.5px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.wm-tier.journeyman {
+  color: #9fd3a8;
+}
+.wm-tier.expert {
+  color: #8fb6ef;
+}
+.wm-tier.artisan {
+  color: #d6a3f0;
+}
+.wm-need {
+  margin-top: 5px;
+  font-size: 12.5px;
+}
+.wm-need a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+}
+.wm-qty {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-right: 4px;
+}
+.wm-rewards {
+  margin-top: 4px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.wm-reward + .wm-reward::before {
+  content: " · ";
+  color: var(--muted);
+}
+.wm-reward.rep {
+  color: var(--good);
+}
+.wm-reward.money {
+  color: #e0c070;
+}
+
+.wm-unknown {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.wm-unknown h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+.wm-unknown p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.wm-unknown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 6px 14px;
+  font-size: 12.5px;
+}
+.wm-unknown-grid span {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+.wm-note {
+  font-size: 11.5px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .wm-layout {
+    grid-template-columns: 1fr;
+  }
+  .wm-panel {
+    max-height: none;
+  }
+  .wm-map {
+    height: 60vh;
+  }
+}
+@media (max-width: 600px) {
+  .wm-search {
+    width: 100%;
+  }
+}
