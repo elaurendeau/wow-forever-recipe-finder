@@ -154,22 +154,26 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 
 ### 7.9 Feature I — Writ Shopping List
 
-**Added 2026-11-17.** A visitor checks the writs they intend to do; the page aggregates every writ item and required item across the selection into one shopping list (quantities summed across writs that need the same item), and a copy button exports it in a format the [Auctionator](https://github.com/tiny/auctionator) addon's Shopping List feature can import.
+**Added 2026-11-17, revised 2026-11-17.** A visitor checks the writs they intend to do; the page aggregates every writ item and required item across the selection into one shopping list (quantities summed across writs that need the same item), and a copy button exports it in a format the [Auctionator](https://github.com/tiny/auctionator) addon's Shopping List feature can import.
+
+**Presentation: a FAB + popup, not an inline panel.** The first cut placed the shopping list inline in the page flow, which shifted the whole results table down every time a row was checked — rejected on sight. It now lives behind a floating action button — bottom-right (this app's own as-yet-unbuilt calculator FAB in `docs/mockups/recipe-finder-reference.html` sits bottom-left; deliberately the opposite corner here, not an inconsistency) — which only appears once at least one writ is selected. A small red badge appears on the FAB whenever the selection changes while the popup is closed, and clears the moment the popup is opened — so a visitor who's mid-browse always has an unobtrusive "something changed" signal without the page ever shifting under them.
 
 **Verified, not guessed, per CLAUDE.md's Diagnosis Discipline:** Auctionator's shopping-list export/import format was read directly from its own Lua source (`Atr_ShpList_Export_GetText` and `Atr_SList_ImportCore` in `AuctionatorConfig.lua`) rather than assumed from memory or a forum post. The real format is a `*** <List Name>` header line followed by one plain item display name per line, until the next `***` line or end of text — **no item IDs, no quantities**. Auctionator's shopping list is a watch-list of names, not a cart with amounts. This directly shapes the design below: quantities are this app's own display concern, dropped entirely from the exported text.
 
 **Use cases:**
 
 *Happy path:*
-- Checking a writ's row checkbox adds its writ item and required item(s) to a shopping-list panel, with quantities and (where computable) per-item and total AH cost in Recent Value.
+- Checking a writ's row checkbox adds its writ item and required item(s) to the shopping list and makes the FAB appear — the results table itself never shifts.
+- Clicking the FAB opens the popup: quantities and (where computable) per-item and total AH cost in Recent Value, plus total reputation across every selected writ.
 - Two selected writs that happen to need the same item name sum to one line with the combined quantity, not two separate lines.
 - The copy button copies `*** <list name>\n<item name>\n<item name>...` — verified-format text ready to paste into Auctionator's own Import dialog.
 - Unchecking a writ removes its contribution from the list; if another selected writ still needs that same item, its line's quantity drops rather than disappearing.
-- Clearing the whole selection hides the panel.
+- Unchecking the last selected writ (or clicking "clear" inside the popup) empties the selection and hides the FAB and popup entirely.
 
 *Boundary/edge conditions:*
 - A selected writ with no computable cost (missing Recent Value, or `pending_quest_page` prior to the full extraction) still contributes its item(s) to the shopping list by name/quantity — cost and the running total show as unknown (`—`) rather than silently excluding the item or fabricating a cost.
 - A required item needed in bulk (e.g. 200 Crafted Solid Shot for one real writ in the catalog) shows its real quantity in the panel; the exported Auctionator text still lists its name exactly once, since the format has no quantity field at all.
+- Checking/unchecking more rows while the popup is already open never shows the red badge — the visitor is already looking at the list, so there's nothing to flag. The badge only appears for changes made while the popup is closed, and only clears again once it's reopened.
 
 *State-dependent variations:*
-- Selection lives in LiveView socket state only for this round — it does **not** persist across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.
+- Selection, popup-open state, and the "unseen changes" badge all live in LiveView socket state only for this round — none of it persists across a page reload or in `localStorage`, unlike the uploaded snapshot. A deliberate v1 scope cut, not an oversight; revisit if visitors want a selection that survives a refresh.

@@ -374,34 +374,88 @@ a {
   color: var(--muted);
   line-height: 1.5;
 }
-.rf-shopping-list {
+.rf-shopping-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  z-index: 60;
+}
+.rf-shopping-fab-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: var(--bad);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg);
+}
+.rf-shopping-popup {
+  position: fixed;
+  right: 24px;
+  bottom: 84px;
+  width: 360px;
+  max-width: calc(100vw - 48px);
+  max-height: 70vh;
+  overflow-y: auto;
   background: var(--surface);
   border: 1px solid var(--accent);
   border-radius: 10px;
-  padding: 12px 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  z-index: 61;
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 13px;
 }
-.rf-shopping-list-header {
+.rf-shopping-popup-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  font-size: 13px;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.rf-shopping-popup-close {
+  all: unset;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 6px;
+}
+.rf-shopping-popup-close:hover {
+  color: var(--fg);
 }
 .rf-shopping-list-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
-}
-.rf-shopping-list-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 4px 20px;
   border-top: 1px solid var(--border);
   padding-top: 10px;
+}
+.rf-shopping-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .rf-shopping-list-line {
   display: flex;

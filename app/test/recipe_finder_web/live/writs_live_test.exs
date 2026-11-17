@@ -88,21 +88,25 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
     refute html =~ "Elixir of Ogre&#39;s Strength"
   end
 
-  describe "shopping list (docs/PRD.md § 7.9)" do
+  describe "shopping list (docs/PRD.md § 7.9) — FAB + popup, never shifts the table" do
     defp writ_id!(name) do
       EctoWritRepositoryGateway.list_writs()
       |> Enum.find(&(&1.name == name))
       |> Map.fetch!(:id)
     end
 
-    test "no panel is shown until a writ is checked", %{conn: conn} do
+    defp open_shopping_list(view) do
+      view |> element("button.rf-shopping-fab") |> render_click()
+    end
+
+    test "no FAB is shown until a writ is checked", %{conn: conn} do
       {:ok, view, _html} = live(conn, ~p"/writs")
       html = upload_tsm_export(view)
 
-      refute html =~ "Copy for Auctionator"
+      refute html =~ "rf-shopping-fab"
     end
 
-    test "checking a writ adds its writ item and required item to the shopping list panel", %{
+    test "checking a writ shows the FAB with an unseen badge, but the popup stays closed", %{
       conn: conn
     } do
       {:ok, view, _html} = live(conn, ~p"/writs")
@@ -111,6 +115,23 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
       html = view |> element("input[phx-value-id='#{id}']") |> render_click()
 
+      assert html =~ "rf-shopping-fab"
+      assert html =~ "rf-shopping-fab-badge"
+      refute html =~ "Copy for Auctionator"
+    end
+
+    test "clicking the FAB opens the popup with the writ item and required item, and clears the badge",
+         %{
+           conn: conn
+         } do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      html = open_shopping_list(view)
+
+      refute html =~ "rf-shopping-fab-badge"
       assert html =~ "<strong>1</strong>"
       assert html =~ "writs selected"
       assert html =~ "Craftsman&#39;s Writ: Elixir of Ogre&#39;s Strength"
@@ -126,13 +147,14 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       upload_tsm_export(view)
 
       id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
-      html = view |> element("input[phx-value-id='#{id}']") |> render_click()
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      html = open_shopping_list(view)
 
       assert html =~
                "data-copy=\"*** WoW Forever Writs\nCraftsman&#39;s Writ: Elixir of Ogre&#39;s Strength\nElixir of Ogre Strength\n\""
     end
 
-    test "unchecking a writ removes it, and clearing the selection hides the panel", %{conn: conn} do
+    test "unchecking the only selected writ hides the FAB and popup entirely", %{conn: conn} do
       {:ok, view, _html} = live(conn, ~p"/writs")
       upload_tsm_export(view)
 
@@ -140,7 +162,19 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       view |> element("input[phx-value-id='#{id}']") |> render_click()
       html = view |> element("input[phx-value-id='#{id}']") |> render_click()
 
-      refute html =~ "Copy for Auctionator"
+      refute html =~ "rf-shopping-fab"
+    end
+
+    test "the clear button empties the selection and hides the FAB", %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/writs")
+      upload_tsm_export(view)
+
+      id = writ_id!("Craftsman's Writ: Elixir of Ogre's Strength")
+      view |> element("input[phx-value-id='#{id}']") |> render_click()
+      open_shopping_list(view)
+      html = view |> element("button", "clear") |> render_click()
+
+      refute html =~ "rf-shopping-fab"
     end
 
     test "a selected writ with unknown cost still appears on the list by name, cost shown as unknown",
@@ -149,7 +183,8 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       upload_tsm_export(view)
 
       pending_id = writ_id!("Craftsman's Writ: Heavy Bronze Mace")
-      html = view |> element("input[phx-value-id='#{pending_id}']") |> render_click()
+      view |> element("input[phx-value-id='#{pending_id}']") |> render_click()
+      html = open_shopping_list(view)
 
       assert html =~ "Craftsman&#39;s Writ: Heavy Bronze Mace"
       assert html =~ "total cost"

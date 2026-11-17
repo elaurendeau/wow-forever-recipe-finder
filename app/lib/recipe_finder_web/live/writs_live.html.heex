@@ -61,38 +61,6 @@
     </div>
   </form>
 
-  <%= if MapSet.size(@selected_writ_ids) > 0 do %>
-    <% shopping_lines = WritShoppingList.build(@results, @selected_writ_ids) %>
-    <div class="rf-shopping-list">
-      <div class="rf-shopping-list-header">
-        <span>
-          <strong>{MapSet.size(@selected_writ_ids)}</strong>
-          writs selected —
-          <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
-          total rep, {format_copper(WritShoppingList.total_cost_copper(shopping_lines))} total cost
-        </span>
-        <span class="rf-shopping-list-actions">
-          <button type="button" class="rf-forget-link" phx-click="clear_selection">clear</button>
-          <span
-            id="auctionator-copy"
-            phx-hook="CopyButton"
-            data-copy={WritShoppingList.to_auctionator_text("WoW Forever Writs", shopping_lines)}
-          >
-            <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
-          </span>
-        </span>
-      </div>
-      <div class="rf-shopping-list-items">
-        <%= for line <- shopping_lines do %>
-          <div class="rf-shopping-list-line">
-            <span>{line.display_name} x{line.quantity}</span>
-            <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
-
   <div class="rf-stats" style="margin: 12px 0;">
     <span><strong>{length(filtered)}</strong> shown</span>
     <span><strong>{length(@results)}</strong> total writs</span>
@@ -210,3 +178,69 @@
     </table>
   </div>
 </div>
+
+<%= if MapSet.size(@selected_writ_ids) > 0 do %>
+  <button
+    type="button"
+    class="rf-shopping-fab"
+    phx-click="toggle_shopping_list_panel"
+    aria-label="Shopping list"
+    title="Shopping list"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="9" cy="20" r="1" fill="#1a1206" />
+      <circle cx="17" cy="20" r="1" fill="#1a1206" />
+      <path
+        d="M3 4h2l2.4 12.2a2 2 0 002 1.8h7.2a2 2 0 002-1.8L20 8H6"
+        stroke="#1a1206"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <%= if @shopping_list_unseen? do %>
+      <span class="rf-shopping-fab-badge">!</span>
+    <% end %>
+  </button>
+
+  <%= if @shopping_list_open? do %>
+    <% shopping_lines = WritShoppingList.build(@results, @selected_writ_ids) %>
+    <div class="rf-shopping-popup">
+      <div class="rf-shopping-popup-header">
+        <strong>Shopping List</strong>
+        <button
+          type="button"
+          class="rf-shopping-popup-close"
+          phx-click="toggle_shopping_list_panel"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+      </div>
+      <div>
+        <strong>{MapSet.size(@selected_writ_ids)}</strong>
+        writs selected —
+        <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+        total rep, {format_copper(WritShoppingList.total_cost_copper(shopping_lines))} total cost
+      </div>
+      <div class="rf-shopping-list-items">
+        <%= for line <- shopping_lines do %>
+          <div class="rf-shopping-list-line">
+            <span>{line.display_name} x{line.quantity}</span>
+            <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+          </div>
+        <% end %>
+      </div>
+      <div class="rf-shopping-list-actions">
+        <button type="button" class="rf-forget-link" phx-click="clear_selection">clear</button>
+        <span
+          id="auctionator-copy"
+          phx-hook="CopyButton"
+          data-copy={WritShoppingList.to_auctionator_text("WoW Forever Writs", shopping_lines)}
+        >
+          <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
+        </span>
+      </div>
+    </div>
+  <% end %>
+<% end %>

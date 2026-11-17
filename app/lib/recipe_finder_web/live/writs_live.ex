@@ -38,7 +38,13 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         # Per docs/PRD.md § 7.9: selection is session-only for this
         # round, deliberately not persisted to localStorage like the
         # uploaded snapshot is.
-        selected_writ_ids: MapSet.new()
+        selected_writ_ids: MapSet.new(),
+        # The shopping list lives behind a FAB + popup (not inline in
+        # the page flow, so selecting rows never shifts the table) —
+        # `shopping_list_unseen?` drives the FAB's "modified since you
+        # last opened it" badge.
+        shopping_list_open?: false,
+        shopping_list_unseen?: false
       )
       |> allow_upload(:tsm_export, accept: ~w(.lua), max_entries: 1, max_file_size: 20_000_000)
 
@@ -95,7 +101,9 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         captured_at: nil,
         results: [],
         upload_error: nil,
-        selected_writ_ids: MapSet.new()
+        selected_writ_ids: MapSet.new(),
+        shopping_list_open?: false,
+        shopping_list_unseen?: false
       )
       |> push_event("clear_snapshot", %{})
 
@@ -111,11 +119,26 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         do: MapSet.delete(selected, id),
         else: MapSet.put(selected, id)
 
-    {:noreply, assign(socket, selected_writ_ids: selected)}
+    # Only flag "unseen" while the popup is closed — a change made
+    # while it's open is already visible, no badge needed for it.
+    {:noreply,
+     assign(socket,
+       selected_writ_ids: selected,
+       shopping_list_unseen?: not socket.assigns.shopping_list_open?
+     )}
   end
 
   def handle_event("clear_selection", _params, socket) do
-    {:noreply, assign(socket, selected_writ_ids: MapSet.new())}
+    {:noreply,
+     assign(socket, selected_writ_ids: MapSet.new(), shopping_list_open?: false, shopping_list_unseen?: false)}
+  end
+
+  def handle_event("toggle_shopping_list_panel", _params, socket) do
+    open? = not socket.assigns.shopping_list_open?
+    # Opening it marks everything seen; closing it leaves "seen" as-is.
+    unseen? = if open?, do: false, else: socket.assigns.shopping_list_unseen?
+
+    {:noreply, assign(socket, shopping_list_open?: open?, shopping_list_unseen?: unseen?)}
   end
 
   def handle_event("filter_changed", %{"filter" => params}, socket) do

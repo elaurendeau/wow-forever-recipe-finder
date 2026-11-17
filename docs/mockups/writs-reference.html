@@ -69,13 +69,28 @@
   }
   .filterbar label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); white-space: nowrap; }
 
-  .shopping-list {
-    background: var(--surface); border: 1px solid var(--accent); border-radius: 10px;
-    padding: 12px 16px; display: flex; flex-direction: column; gap: 10px;
+  .shopping-fab {
+    position: fixed; right: 24px; bottom: 24px; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center;
+    justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.4); z-index: 60;
   }
-  .shopping-list-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; }
-  .shopping-list-actions { display: flex; align-items: center; gap: 14px; }
-  .shopping-list-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 20px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .shopping-fab-badge {
+    position: absolute; top: -3px; right: -3px; background: var(--bad); color: #fff; font-size: 11px;
+    font-weight: 700; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; border: 2px solid var(--bg);
+  }
+  .shopping-popup {
+    position: fixed; right: 24px; bottom: 84px; width: 360px; max-width: calc(100vw - 48px); max-height: 70vh;
+    overflow-y: auto; background: var(--surface); border: 1px solid var(--accent); border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5); z-index: 61; padding: 14px 16px; display: flex;
+    flex-direction: column; gap: 10px; font-size: 13px;
+  }
+  .shopping-popup-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .shopping-popup-close { all: unset; cursor: pointer; color: var(--muted); font-size: 18px; line-height: 1; padding: 2px 6px; }
+  .shopping-popup-close:hover { color: var(--fg); }
+  .shopping-popup[hidden] { display: none; }
+  .shopping-list-actions { display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .shopping-list-items { display: flex; flex-direction: column; gap: 4px; }
   .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); }
   .copy-btn { background: var(--accent); color: var(--accent-fg); border: none; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; }
   .clear-link { background: none; border: none; padding: 0; color: var(--accent); font-family: var(--font-mono); font-size: 12.5px; text-decoration: underline; cursor: pointer; }
@@ -155,22 +170,6 @@
     <span class="mock-note">filter shown for layout — not wired up in this mockup</span>
   </div>
 
-  <div class="shopping-list">
-    <div class="shopping-list-header">
-      <span><strong>2</strong> writs selected — <strong>300</strong> total rep, 29s 71c total cost</span>
-      <span class="shopping-list-actions">
-        <button type="button" class="clear-link">clear</button>
-        <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
-      </span>
-    </div>
-    <div class="shopping-list-items">
-      <div class="shopping-list-line"><span>Craftsman's Writ: Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 74c</span></div>
-      <div class="shopping-list-line"><span>Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 47c</span></div>
-      <div class="shopping-list-line"><span>Craftsman's Writ: Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
-      <div class="shopping-list-line"><span>Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
-    </div>
-  </div>
-
   <div class="stats" style="margin-bottom: 4px;">
     <span><strong id="statShown"></strong> shown</span>
     <span><strong id="statFull"></strong> total writs</span>
@@ -195,6 +194,47 @@
     </table>
   </div>
 </div>
+
+<button type="button" class="shopping-fab" id="shoppingFab" aria-label="Shopping list" title="Shopping list">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="9" cy="20" r="1" fill="#1a1206"/><circle cx="17" cy="20" r="1" fill="#1a1206"/>
+    <path d="M3 4h2l2.4 12.2a2 2 0 002 1.8h7.2a2 2 0 002-1.8L20 8H6" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span class="shopping-fab-badge" id="shoppingFabBadge">!</span>
+</button>
+
+<div class="shopping-popup" id="shoppingPopup" hidden>
+  <div class="shopping-popup-header">
+    <strong>Shopping List</strong>
+    <button type="button" class="shopping-popup-close" id="shoppingPopupClose" aria-label="Close">&times;</button>
+  </div>
+  <div><strong>2</strong> writs selected — <strong>300</strong> total rep, 29s 71c total cost</div>
+  <div class="shopping-list-items">
+    <div class="shopping-list-line"><span>Craftsman's Writ: Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 74c</span></div>
+    <div class="shopping-list-line"><span>Lesser Troll's Blood Elixir x1</span><span class="muted-cell">3s 47c</span></div>
+    <div class="shopping-list-line"><span>Craftsman's Writ: Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+    <div class="shopping-list-line"><span>Shadow Protection Potion x1</span><span class="muted-cell">11s 25c</span></div>
+  </div>
+  <div class="shopping-list-actions">
+    <button type="button" class="clear-link">clear</button>
+    <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
+  </div>
+</div>
+
+<script>
+  // Demonstrates the real behavior: the FAB carries a red "modified
+  // since last opened" badge; opening the popup clears it. Not wired
+  // to the row checkboxes above in this mockup — just the open/close
+  // and badge mechanics, which is the part this mockup exists to show.
+  const fab = document.getElementById("shoppingFab");
+  const badge = document.getElementById("shoppingFabBadge");
+  const popup = document.getElementById("shoppingPopup");
+  fab.addEventListener("click", () => {
+    popup.hidden = !popup.hidden;
+    if (!popup.hidden) badge.style.display = "none";
+  });
+  document.getElementById("shoppingPopupClose").addEventListener("click", () => { popup.hidden = true; });
+</script>
 
 <script>
   const ROWS = [
