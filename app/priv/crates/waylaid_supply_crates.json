@@ -1,0 +1,953 @@
+{
+  "source": {
+    "site": "https://www.wowhead.com/forever",
+    "captured": "2026-11-17",
+    "pages": [
+      "/forever/items/name:crate",
+      "/forever/item=<id> (tooltip 'Use: Fill the crate with any bundle from the following list')",
+      "/forever/quests/name:sealed",
+      "/forever/guide/azeroth-commerce-authority-reputation-professions"
+    ],
+    "notes": [
+      "fill_options: any ONE bundle fills the crate. null = not captured yet (Wowhead rate-limited the session).",
+      "wowhead_id on a fill option is resolved from priv/catalog_seeds by exact name; null = not in the seeds.",
+      "Hand-in quests are not yet tied to a specific Sealed crate; sealed_crate_id is null until each quest page is read."
+    ]
+  },
+  "currency": {
+    "wowhead_id": 3402,
+    "name": "Merchant's Favor"
+  },
+  "factions": [
+    {
+      "side": "alliance",
+      "name": "Azeroth Commerce Authority",
+      "faction_id": 2586,
+      "camp": {
+        "zone": "Redridge Mountains",
+        "subzone": "Three Corners",
+        "way_x": 10.5,
+        "way_y": 72.7
+      },
+      "hand_in": {
+        "npc_name": "Marcy Baker",
+        "zone": "Redridge Mountains",
+        "way_x": 9.6,
+        "way_y": 70.9
+      }
+    },
+    {
+      "side": "horde",
+      "name": "Durotar Supply and Logistics",
+      "faction_id": 2587,
+      "camp": {
+        "zone": "The Barrens",
+        "subzone": "outside Crossroads",
+        "way_x": 42.0,
+        "way_y": 34.0
+      },
+      "hand_in": null
+    }
+  ],
+  "waylaid_crates": [
+    {
+      "wowhead_id": 248682,
+      "name": "Waylaid Crate: Apprentice Herbs",
+      "tier": "apprentice",
+      "category": "herbs",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247426,
+      "fill_options": [
+        {
+          "display_name": "Peacebloom",
+          "wowhead_id": 2447,
+          "quantity": 20
+        },
+        {
+          "display_name": "Silverleaf",
+          "wowhead_id": 765,
+          "quantity": 20
+        },
+        {
+          "display_name": "Earthroot",
+          "wowhead_id": 2449,
+          "quantity": 10
+        },
+        {
+          "display_name": "Mageroyal",
+          "wowhead_id": 785,
+          "quantity": 10
+        },
+        {
+          "display_name": "Briarthorn",
+          "wowhead_id": 2450,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248683,
+      "name": "Waylaid Crate: Apprentice Ore",
+      "tier": "apprentice",
+      "category": "ore",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247427,
+      "fill_options": [
+        {
+          "display_name": "Copper Ore",
+          "wowhead_id": null,
+          "quantity": 20
+        },
+        {
+          "display_name": "Tin Ore",
+          "wowhead_id": null,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248684,
+      "name": "Waylaid Crate: Apprentice Textiles",
+      "tier": "apprentice",
+      "category": "textiles",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247428,
+      "fill_options": [
+        {
+          "display_name": "Linen Cloth",
+          "wowhead_id": 2589,
+          "quantity": 40
+        },
+        {
+          "display_name": "Light Leather",
+          "wowhead_id": 2318,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248685,
+      "name": "Waylaid Crate: Apprentice Curiosities",
+      "tier": "apprentice",
+      "category": "curiosities",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247429,
+      "fill_options": [
+        {
+          "display_name": "Strange Dust",
+          "wowhead_id": 10940,
+          "quantity": 20
+        },
+        {
+          "display_name": "Greater Magic Essence",
+          "wowhead_id": 10939,
+          "quantity": 4
+        },
+        {
+          "display_name": "Small Glimmering Shard",
+          "wowhead_id": null,
+          "quantity": 6
+        },
+        {
+          "display_name": "Large Glimmering Shard",
+          "wowhead_id": null,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248686,
+      "name": "Waylaid Crate: Journeyman Herbs",
+      "tier": "journeyman",
+      "category": "herbs",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247430,
+      "fill_options": [
+        {
+          "display_name": "Stranglekelp",
+          "wowhead_id": 3820,
+          "quantity": 10
+        },
+        {
+          "display_name": "Bruiseweed",
+          "wowhead_id": 2453,
+          "quantity": 10
+        },
+        {
+          "display_name": "Wild Steelbloom",
+          "wowhead_id": 3355,
+          "quantity": 10
+        },
+        {
+          "display_name": "Grave Moss",
+          "wowhead_id": 3369,
+          "quantity": 10
+        },
+        {
+          "display_name": "Kingsblood",
+          "wowhead_id": 3356,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248687,
+      "name": "Waylaid Crate: Journeyman Ore",
+      "tier": "journeyman",
+      "category": "ore",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247431,
+      "fill_options": [
+        {
+          "display_name": "Silver Ore",
+          "wowhead_id": null,
+          "quantity": 10
+        },
+        {
+          "display_name": "Iron Ore",
+          "wowhead_id": null,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248688,
+      "name": "Waylaid Crate: Journeyman Textiles",
+      "tier": "journeyman",
+      "category": "textiles",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247432,
+      "fill_options": [
+        {
+          "display_name": "Wool Cloth",
+          "wowhead_id": 2592,
+          "quantity": 20
+        },
+        {
+          "display_name": "Silk Cloth",
+          "wowhead_id": 4306,
+          "quantity": 40
+        },
+        {
+          "display_name": "Medium Leather",
+          "wowhead_id": 2319,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248689,
+      "name": "Waylaid Crate: Journeyman Curiosities",
+      "tier": "journeyman",
+      "category": "curiosities",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "stock_spell_id": 1247433,
+      "fill_options": [
+        {
+          "display_name": "Soul Dust",
+          "wowhead_id": null,
+          "quantity": 20
+        },
+        {
+          "display_name": "Greater Astral Essence",
+          "wowhead_id": 11082,
+          "quantity": 4
+        },
+        {
+          "display_name": "Small Glowing Shard",
+          "wowhead_id": null,
+          "quantity": 6
+        },
+        {
+          "display_name": "Large Glowing Shard",
+          "wowhead_id": null,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248690,
+      "name": "Waylaid Crate: Earthly Expert Herbs",
+      "tier": "expert",
+      "category": "herbs",
+      "variant": "earthly",
+      "quality": "common",
+      "required_level": 20,
+      "stock_spell_id": 1247434,
+      "fill_options": [
+        {
+          "display_name": "Liferoot",
+          "wowhead_id": 3357,
+          "quantity": 20
+        },
+        {
+          "display_name": "Fadeleaf",
+          "wowhead_id": 3818,
+          "quantity": 10
+        },
+        {
+          "display_name": "Goldthorn",
+          "wowhead_id": 3821,
+          "quantity": 10
+        },
+        {
+          "display_name": "Khadgar's Whisker",
+          "wowhead_id": 3358,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248691,
+      "name": "Waylaid Crate: Flowering Expert Herbs",
+      "tier": "expert",
+      "category": "herbs",
+      "variant": "flowering",
+      "quality": "common",
+      "required_level": 20,
+      "stock_spell_id": 1247435,
+      "fill_options": [
+        {
+          "display_name": "Wintersbite",
+          "wowhead_id": 3819,
+          "quantity": 10
+        },
+        {
+          "display_name": "Firebloom",
+          "wowhead_id": 4625,
+          "quantity": 10
+        },
+        {
+          "display_name": "Purple Lotus",
+          "wowhead_id": 8831,
+          "quantity": 20
+        },
+        {
+          "display_name": "Arthas' Tears",
+          "wowhead_id": 8836,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248692,
+      "name": "Waylaid Crate: Expert Ore",
+      "tier": "expert",
+      "category": "ore",
+      "variant": null,
+      "quality": "common",
+      "required_level": 20,
+      "stock_spell_id": 1247436,
+      "fill_options": [
+        {
+          "display_name": "Gold Ore",
+          "wowhead_id": null,
+          "quantity": 10
+        },
+        {
+          "display_name": "Mithril Ore",
+          "wowhead_id": null,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248693,
+      "name": "Waylaid Crate: Expert Textiles",
+      "tier": "expert",
+      "category": "textiles",
+      "variant": null,
+      "quality": "common",
+      "required_level": 20,
+      "stock_spell_id": 1247437,
+      "fill_options": [
+        {
+          "display_name": "Mageweave Cloth",
+          "wowhead_id": 4338,
+          "quantity": 40
+        },
+        {
+          "display_name": "Heavy Leather",
+          "wowhead_id": 4234,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248694,
+      "name": "Waylaid Crate: Expert Curiosities",
+      "tier": "expert",
+      "category": "curiosities",
+      "variant": null,
+      "quality": "common",
+      "required_level": 20,
+      "stock_spell_id": 1247438,
+      "fill_options": [
+        {
+          "display_name": "Vision Dust",
+          "wowhead_id": 11137,
+          "quantity": 20
+        },
+        {
+          "display_name": "Greater Mystic Essence",
+          "wowhead_id": 11135,
+          "quantity": 4
+        },
+        {
+          "display_name": "Small Radiant Shard",
+          "wowhead_id": null,
+          "quantity": 6
+        },
+        {
+          "display_name": "Large Radiant Shard",
+          "wowhead_id": null,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248695,
+      "name": "Waylaid Crate: Earthly Artisan Herbs",
+      "tier": "artisan",
+      "category": "herbs",
+      "variant": "earthly",
+      "quality": "common",
+      "required_level": 35,
+      "stock_spell_id": 1247439,
+      "fill_options": [
+        {
+          "display_name": "Golden Sansam",
+          "wowhead_id": 13464,
+          "quantity": 10
+        },
+        {
+          "display_name": "Sungrass",
+          "wowhead_id": 8838,
+          "quantity": 20
+        },
+        {
+          "display_name": "Blindweed",
+          "wowhead_id": 8839,
+          "quantity": 10
+        },
+        {
+          "display_name": "Ghost Mushroom",
+          "wowhead_id": 8845,
+          "quantity": 10
+        },
+        {
+          "display_name": "Gromsblood",
+          "wowhead_id": 8846,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248696,
+      "name": "Waylaid Crate: Flowering Artisan Herbs",
+      "tier": "artisan",
+      "category": "herbs",
+      "variant": "flowering",
+      "quality": "common",
+      "required_level": 35,
+      "stock_spell_id": 1247440,
+      "fill_options": [
+        {
+          "display_name": "Dreamfoil",
+          "wowhead_id": 13463,
+          "quantity": 20
+        },
+        {
+          "display_name": "Mountain Silversage",
+          "wowhead_id": 13465,
+          "quantity": 20
+        },
+        {
+          "display_name": "Plaguebloom",
+          "wowhead_id": null,
+          "quantity": 20
+        },
+        {
+          "display_name": "Icecap",
+          "wowhead_id": 13467,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248697,
+      "name": "Waylaid Crate: Artisan Ore",
+      "tier": "artisan",
+      "category": "ore",
+      "variant": null,
+      "quality": "common",
+      "required_level": 35,
+      "stock_spell_id": 1247441,
+      "fill_options": [
+        {
+          "display_name": "Truesilver Ore",
+          "wowhead_id": null,
+          "quantity": 10
+        },
+        {
+          "display_name": "Thorium Ore",
+          "wowhead_id": 10620,
+          "quantity": 20
+        },
+        {
+          "display_name": "Dark Iron Ore",
+          "wowhead_id": null,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248698,
+      "name": "Waylaid Crate: Artisan Textiles",
+      "tier": "artisan",
+      "category": "textiles",
+      "variant": null,
+      "quality": "common",
+      "required_level": 35,
+      "stock_spell_id": 1247442,
+      "fill_options": [
+        {
+          "display_name": "Runecloth",
+          "wowhead_id": 14047,
+          "quantity": 40
+        },
+        {
+          "display_name": "Thick Leather",
+          "wowhead_id": 4304,
+          "quantity": 20
+        },
+        {
+          "display_name": "Rugged Leather",
+          "wowhead_id": 8170,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248699,
+      "name": "Waylaid Crate: Artisan Curiosities",
+      "tier": "artisan",
+      "category": "curiosities",
+      "variant": null,
+      "quality": "common",
+      "required_level": 35,
+      "stock_spell_id": 1247443,
+      "fill_options": [
+        {
+          "display_name": "Dream Dust",
+          "wowhead_id": 11176,
+          "quantity": 20
+        },
+        {
+          "display_name": "Greater Nether Essence",
+          "wowhead_id": null,
+          "quantity": 4
+        },
+        {
+          "display_name": "Small Brilliant Shard",
+          "wowhead_id": null,
+          "quantity": 6
+        },
+        {
+          "display_name": "Large Brilliant Shard",
+          "wowhead_id": 14344,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248702,
+      "name": "Waylaid Crate: Apprentice Fabrics",
+      "tier": "apprentice",
+      "category": "fabrics",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247446,
+      "fill_options": [
+        {
+          "display_name": "Cured Light Hide",
+          "wowhead_id": null,
+          "quantity": 2
+        },
+        {
+          "display_name": "Bolt of Linen Cloth",
+          "wowhead_id": 2996,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248703,
+      "name": "Waylaid Crate: Apprentice Ingots",
+      "tier": "apprentice",
+      "category": "ingots",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247447,
+      "fill_options": [
+        {
+          "display_name": "Copper Bar",
+          "wowhead_id": 2840,
+          "quantity": 20
+        },
+        {
+          "display_name": "Tin Bar",
+          "wowhead_id": null,
+          "quantity": 20
+        },
+        {
+          "display_name": "Bronze Bar",
+          "wowhead_id": 2841,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248704,
+      "name": "Waylaid Crate: Apprentice Parts",
+      "tier": "apprentice",
+      "category": "parts",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247448,
+      "fill_options": [
+        {
+          "display_name": "Handful of Copper Bolts",
+          "wowhead_id": 4359,
+          "quantity": 16
+        },
+        {
+          "display_name": "Copper Tube",
+          "wowhead_id": 4361,
+          "quantity": 16
+        },
+        {
+          "display_name": "Copper Modulator",
+          "wowhead_id": 4363,
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248705,
+      "name": "Waylaid Crate: Journeyman Fabrics",
+      "tier": "journeyman",
+      "category": "fabrics",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247449,
+      "fill_options": [
+        {
+          "display_name": "Bolt of Woolen Cloth",
+          "wowhead_id": 2997,
+          "quantity": 6
+        },
+        {
+          "display_name": "Bolt of Silk Cloth",
+          "wowhead_id": 4305,
+          "quantity": 10
+        },
+        {
+          "display_name": "Cured Medium Hide",
+          "wowhead_id": null,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248706,
+      "name": "Waylaid Crate: Journeyman Ingots",
+      "tier": "journeyman",
+      "category": "ingots",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247450,
+      "fill_options": [
+        {
+          "display_name": "Silver Bar",
+          "wowhead_id": 2842,
+          "quantity": 10
+        },
+        {
+          "display_name": "Iron Bar",
+          "wowhead_id": 3575,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248707,
+      "name": "Waylaid Crate: Journeyman Parts",
+      "tier": "journeyman",
+      "category": "parts",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 10,
+      "stock_spell_id": 1247451,
+      "fill_options": [
+        {
+          "display_name": "Bronze Tube",
+          "wowhead_id": 4371,
+          "quantity": 8
+        },
+        {
+          "display_name": "Whirring Bronze Gizmo",
+          "wowhead_id": 4375,
+          "quantity": 7
+        },
+        {
+          "display_name": "Bronze Framework",
+          "wowhead_id": 4382,
+          "quantity": 4
+        },
+        {
+          "display_name": "Gold Power Core",
+          "wowhead_id": 10558,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "wowhead_id": 248708,
+      "name": "Waylaid Crate: Expert Fabrics",
+      "tier": "expert",
+      "category": "fabrics",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 20,
+      "stock_spell_id": null,
+      "fill_options": null
+    },
+    {
+      "wowhead_id": 248709,
+      "name": "Waylaid Crate: Expert Ingots",
+      "tier": "expert",
+      "category": "ingots",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 20,
+      "stock_spell_id": null,
+      "fill_options": null
+    },
+    {
+      "wowhead_id": 248710,
+      "name": "Waylaid Crate: Expert Parts",
+      "tier": "expert",
+      "category": "parts",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 20,
+      "stock_spell_id": null,
+      "fill_options": null
+    },
+    {
+      "wowhead_id": 248711,
+      "name": "Waylaid Crate: Artisan Fabrics",
+      "tier": "artisan",
+      "category": "fabrics",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 35,
+      "stock_spell_id": null,
+      "fill_options": null
+    },
+    {
+      "wowhead_id": 248712,
+      "name": "Waylaid Crate: Artisan Ingots",
+      "tier": "artisan",
+      "category": "ingots",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 35,
+      "stock_spell_id": null,
+      "fill_options": null
+    },
+    {
+      "wowhead_id": 248713,
+      "name": "Waylaid Crate: Artisan Parts",
+      "tier": "artisan",
+      "category": "parts",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 35,
+      "stock_spell_id": null,
+      "fill_options": null
+    }
+  ],
+  "sealed_crates": [
+    {
+      "wowhead_id": 248765,
+      "name": "Sealed Apprentice Crate",
+      "tier": "apprentice",
+      "quality": "common"
+    },
+    {
+      "wowhead_id": 248770,
+      "name": "Sealed Apprentice Crate",
+      "tier": "apprentice",
+      "quality": "uncommon"
+    },
+    {
+      "wowhead_id": 248775,
+      "name": "Sealed Apprentice Crate",
+      "tier": "apprentice",
+      "quality": "rare"
+    },
+    {
+      "wowhead_id": 248766,
+      "name": "Sealed Journeyman Crate",
+      "tier": "journeyman",
+      "quality": "common"
+    },
+    {
+      "wowhead_id": 248771,
+      "name": "Sealed Journeyman Crate",
+      "tier": "journeyman",
+      "quality": "uncommon"
+    },
+    {
+      "wowhead_id": 248776,
+      "name": "Sealed Journeyman Crate",
+      "tier": "journeyman",
+      "quality": "rare"
+    },
+    {
+      "wowhead_id": 248767,
+      "name": "Sealed Expert Crate",
+      "tier": "expert",
+      "quality": "common"
+    },
+    {
+      "wowhead_id": 248772,
+      "name": "Sealed Expert Crate",
+      "tier": "expert",
+      "quality": "uncommon"
+    },
+    {
+      "wowhead_id": 248777,
+      "name": "Sealed Expert Crate",
+      "tier": "expert",
+      "quality": "rare"
+    },
+    {
+      "wowhead_id": 248768,
+      "name": "Sealed Artisan Crate",
+      "tier": "artisan",
+      "quality": "common"
+    },
+    {
+      "wowhead_id": 248773,
+      "name": "Sealed Artisan Crate",
+      "tier": "artisan",
+      "quality": "uncommon"
+    },
+    {
+      "wowhead_id": 248778,
+      "name": "Sealed Artisan Crate",
+      "tier": "artisan",
+      "quality": "rare"
+    },
+    {
+      "wowhead_id": 248769,
+      "name": "Sealed Elite Crate",
+      "tier": "elite",
+      "quality": "common"
+    },
+    {
+      "wowhead_id": 248774,
+      "name": "Sealed Elite Crate",
+      "tier": "elite",
+      "quality": "uncommon"
+    },
+    {
+      "wowhead_id": 248779,
+      "name": "Sealed Elite Crate",
+      "tier": "elite",
+      "quality": "rare"
+    }
+  ],
+  "hand_in_quests": [
+    {
+      "quest_id": 91899,
+      "name": "A Sealed Crate",
+      "merchants_favor": 5,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91900,
+      "name": "A Sealed Crate",
+      "merchants_favor": 10,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91901,
+      "name": "A Sealed Crate",
+      "merchants_favor": 15,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91902,
+      "name": "A Sealed Crate",
+      "merchants_favor": 20,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91904,
+      "name": "A Sealed Crate",
+      "merchants_favor": 10,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91905,
+      "name": "A Sealed Crate",
+      "merchants_favor": 20,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91906,
+      "name": "A Sealed Crate",
+      "merchants_favor": 30,
+      "reputation": 0,
+      "sealed_crate_id": null
+    },
+    {
+      "quest_id": 91907,
+      "name": "A Sealed Crate",
+      "merchants_favor": 40,
+      "reputation": 0,
+      "sealed_crate_id": null
+    }
+  ]
+}
