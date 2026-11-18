@@ -106,6 +106,39 @@ writ_reputation_reward
 
 **Deliberately not modeled in Phase 1:** `rewards.items` / `rewards.item_choices` from the extraction (bonus reward items a writ grants) aren't persisted at all yet — Phase 1's ranking only counts reputation and `reward_money_copper`, per PRD § 7.8's Non-Goals. Adding them is a future, scoped extension, not assumed here.
 
+## Waylaid Crate catalog (static, rebuilt via a manual seed import) — added 2026-11-18
+
+Same static-reference-data principle as the writ catalog above, for [PRD.md § 7.11](PRD.md#711-feature-k--merchants-favor-crate-ranking). **Deliberately not sharing the writ tables above, or `item`/`pattern`:** a crate's fill materials are a mix of Wowhead-sourced AH-tradeable items (same family as writ turn-ins) and, for Ore crates, raw materials this app's catalog seeds have never resolved an id for at all (Mining was never scraped — see [DATA_SOURCES.md](DATA_SOURCES.md#waylaid-crates-privcrate_seedswaylaid_supply_cratesjson)) — not worth coupling to either existing table family for what this round needs.
+
+```
+waylaid_crate
+  id                     PK
+  wowhead_id             unique — the crate item's own Wowhead item id
+  name                   e.g. "Waylaid Crate: Apprentice Ore"
+  tier                   enum: apprentice | journeyman | expert | artisan (same bands as pattern.tier/writ.tier)
+  category               e.g. "herbs", "ore", "ingots", "parts", "fabrics", "textiles", "curiosities"
+  variant                nullable — e.g. "earthly herbs" / "flowering herbs"; only set on the two Expert/
+                          Artisan Herbs crates that have it, null for every other crate
+  quality                enum: common | uncommon
+  required_level         integer
+  fill_options_captured  boolean, default false — false means "Wowhead rate-limited the extraction before
+                          this crate's fill options were read," not "this crate needs nothing to fill it."
+                          6 of the first 30 crates captured have this false. See PRD § 7.11's edge cases.
+
+waylaid_crate_fill_option
+  id               PK
+  waylaid_crate_id FK -> waylaid_crate, on_delete: delete_all
+  display_name     e.g. "Copper Ore"
+  wowhead_id       nullable — null means this material has no resolved id in priv/catalog_seeds (every Ore
+                   crate's fill options are null here, since Mining was never one of the scraped professions
+                   — a structural gap, not a per-row data-entry miss)
+  quantity         integer — how many of this material fill the crate
+
+  unique (waylaid_crate_id, display_name)
+```
+
+**Deliberately not modeled in this round:** `sealed_crate` and `hand_in_quest` (the extraction's other two top-level keys, `sealed_crates`/`hand_in_quests`) — every one of the 8 captured hand-in quests has an unresolved `sealed_crate_id: null`, so there's no reliable mapping yet from a filled crate to the Merchant's Favor amount it yields. Persisting an unmapped/guessed relationship would be worse than not persisting it at all. See PRD § 7.11's "Deferred" section — this is the single concrete blocker on the favor-target shopping-list mode the user originally asked for.
+
 ## World map vectors — deliberately NOT in Postgres — added 2026-11-17
 
 `priv/world_map/world_map_vectors.json` (continent coastlines, zone/subzone polygons, town points — see [DATA_SOURCES.md § Wowhead WoW Forever World Map](DATA_SOURCES.md#wowhead-wow-forever-world-map)) is loaded straight from that committed file at request time by `PrivFileWorldMapGateway`, **never written to a table**, even though every other static reference dataset in this app (the profession catalogs above, the writ catalog above) lives in Postgres. This is a deliberate exception, not an inconsistency: that convention exists because catalog rows are *filtered and joined via SQL* (a pattern's reagents, a writ's reputation rewards). The world map is never filtered or joined at all — every request that needs it loads the whole file and renders it as-is (a handful of nested polygon arrays, read wholesale). Normalizing ~52 zones' worth of nested ring/point arrays into relational tables would add real schema and query complexity for zero query benefit. Revisit only if some future feature needs to filter/query map geometry in SQL, which nothing does today.

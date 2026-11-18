@@ -23,7 +23,7 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
   since a repeated watch-list entry would be meaningless to it.
   """
 
-  alias WowForeverRecipeFinder.{Writ, WritEfficiencyResult}
+  alias WowForeverRecipeFinder.{AuctionatorExport, Writ, WritEfficiencyResult}
 
   @type line :: %{
           display_name: String.t(),
@@ -66,12 +66,9 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
     end
   end
 
-  @doc "Auctionator's real Shopping List import/export text — see the moduledoc for where this format was verified."
+  @doc "Auctionator's real Shopping List import/export text — see `AuctionatorExport` for where this format was verified."
   @spec to_auctionator_text(String.t(), [line()]) :: String.t()
-  def to_auctionator_text(list_name, lines) do
-    names = lines |> Enum.uniq_by(& &1.display_name) |> Enum.map(& &1.display_name)
-    "*** #{list_name}\n" <> Enum.join(names, "\n") <> "\n"
-  end
+  def to_auctionator_text(list_name, lines), do: AuctionatorExport.to_text(list_name, lines)
 
   defp writ_lines(%WritEfficiencyResult{} = result) do
     writ = result.writ

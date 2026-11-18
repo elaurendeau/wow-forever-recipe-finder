@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merchant's Favor Crate Ranking — Reference Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d12;
+    --surface: #16161e;
+    --surface-2: #1d1d27;
+    --fg: #ece9e2;
+    --muted: #8b8a97;
+    --border: #2b2b38;
+    --accent: #cf9a35;
+    --accent-fg: #1a1206;
+    --good: #4ade8a;
+    --bad: #f0786a;
+    --mock-bg: #2a2410;
+    --mock-fg: #e0b957;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+  a { color: var(--accent); }
+  ::placeholder { color: var(--muted); opacity: 1; }
+  button { font-family: inherit; }
+
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+  .topbar-left { display: flex; align-items: center; gap: 12px; }
+  h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 19px; }
+  .mock-pill {
+    background: var(--mock-bg); color: var(--mock-fg); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+  }
+  .nav-link {
+    font-size: 12.5px; font-weight: 600; text-decoration: none; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px 11px;
+  }
+  .freshness { color: var(--muted); font-size: 12.5px; font-family: var(--font-mono); }
+  .upload-pill {
+    display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 12px; background: var(--surface-2);
+  }
+  .upload-pill button { all: unset; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--accent); }
+
+  .page { padding: 20px 24px 50px; display: flex; flex-direction: column; gap: 14px; }
+
+  .intro {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 90ch;
+  }
+
+  .filterbar {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;
+  }
+  .filterbar input[type="text"] {
+    padding: 8px 10px; border-radius: 7px; border: 1px solid var(--border); background: var(--bg);
+    color: var(--fg); font-family: var(--font-body); font-size: 13px;
+  }
+  .filterbar label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  .side-toggle { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+  .side-toggle-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-right: 2px; }
+  .side-chip { border: 1px solid var(--border); background: var(--surface); color: var(--fg); font-size: 12.5px; font-weight: 600; padding: 5px 11px; border-radius: 999px; cursor: pointer; }
+  .side-chip.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+
+  .shopping-fab {
+    position: fixed; right: 24px; bottom: 24px; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center;
+    justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.4); z-index: 60;
+  }
+  .shopping-fab-badge {
+    position: absolute; top: -3px; right: -3px; background: var(--bad); color: #fff; font-size: 11px;
+    font-weight: 700; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; border: 2px solid var(--bg);
+  }
+  .shopping-popup {
+    position: fixed; right: 24px; bottom: 84px; width: 360px; max-width: calc(100vw - 48px); max-height: 70vh;
+    overflow-y: auto; background: var(--surface); border: 1px solid var(--accent); border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5); z-index: 61; padding: 14px 16px; display: flex;
+    flex-direction: column; gap: 10px; font-size: 13px;
+  }
+  .shopping-popup-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .shopping-popup-close { all: unset; cursor: pointer; color: var(--muted); font-size: 18px; line-height: 1; padding: 2px 6px; }
+  .shopping-popup-close:hover { color: var(--fg); }
+  .shopping-popup[hidden] { display: none; }
+  .shopping-list-actions { display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .shopping-list-groups { display: flex; flex-direction: column; gap: 10px; }
+  .shopping-group { display: flex; flex-direction: column; gap: 3px; }
+  .shopping-group-header { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; }
+  .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); padding-left: 26px; }
+  .copy-btn { background: var(--accent); color: var(--accent-fg); border: none; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .clear-link { background: none; border: none; padding: 0; color: var(--accent); font-family: var(--font-mono); font-size: 12.5px; text-decoration: underline; cursor: pointer; }
+  .qty-input {
+    width: 48px; padding: 5px 6px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg);
+    color: var(--fg); font-family: var(--font-mono); font-size: 13px; text-align: center;
+  }
+  .writ-number {
+    display: inline-flex; align-items: center; justify-content: center; min-width: 18px; height: 18px;
+    border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-size: 11px;
+    font-weight: 700; font-family: var(--font-mono); flex-shrink: 0; padding: 0 4px;
+  }
+
+  .stats { display: flex; gap: 18px; font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+  .stats strong { color: var(--fg); font-size: 15px; font-family: var(--font-display); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 900px; }
+  th {
+    text-align: left; padding: 9px 14px 2px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); border-bottom: 1px solid var(--border);
+  }
+  th.num { text-align: right; }
+  th.sorted { color: var(--accent); }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  td { padding: 10px 14px; vertical-align: middle; }
+  td.num { text-align: right; font-family: var(--font-mono); }
+  .item-name { font-weight: 600; color: var(--fg); text-decoration: none; display: inline-block; }
+  .item-name:hover { color: var(--accent); text-decoration: underline; }
+  .item-sub { color: var(--muted); font-size: 11px; }
+  .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .pending-pill {
+    font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px dashed var(--border);
+    color: var(--muted); cursor: help;
+  }
+  .profit-pos { color: var(--good); font-weight: 600; }
+  .muted-cell { color: var(--muted); }
+
+  .mock-note { font-size: 11.5px; color: var(--muted); font-style: italic; margin-top: -4px; }
+
+  @media (max-width: 600px) {
+    .page { padding: 16px; }
+    .topbar { padding: 12px 16px; flex-wrap: wrap; }
+    .freshness { order: 3; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <h1>Merchant's Favor Crate Ranking</h1>
+    <a class="nav-link" href="#">← Recipe Finder</a>
+    <a class="nav-link" href="#">Craftsman's Writs →</a>
+    <span class="mock-pill">Mockup</span>
+  </div>
+  <div class="freshness">Snapshot from 2026-11-18 01:14 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
+  <div class="upload-pill">
+    <button type="button">Upload</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="intro">
+    A Waylaid Crate, filled with any one of its listed material bundles, becomes a Sealed Crate turned in for
+    Merchant's Favor. Cost is always TSM's realm-level <strong>Recent Value</strong> for the crate itself and every
+    possible fill material — the cheapest fill option is picked automatically, since any one of them works. Lower
+    total cost = more cost-effective. Choosing how many crates to buy and turning that into a Merchant's Favor
+    target is planned next, once the hand-in-quest data is complete.
+  </div>
+
+  <div class="filterbar">
+    <input type="text" placeholder="Search crate name or category...">
+    <label>Max cost <input type="text" placeholder="any"></label>
+    <span class="mock-note">filter shown for layout — not wired up in this mockup</span>
+  </div>
+
+  <div class="side-toggle">
+    <span class="side-toggle-label">Tier</span>
+    <button type="button" class="side-chip on">Any</button>
+    <button type="button" class="side-chip">Apprentice</button>
+    <button type="button" class="side-chip">Journeyman</button>
+    <button type="button" class="side-chip">Expert</button>
+    <button type="button" class="side-chip">Artisan</button>
+  </div>
+
+  <div class="stats" style="margin-bottom: 4px;">
+    <span><strong id="statShown"></strong> shown</span>
+    <span><strong id="statFull"></strong> total crates</span>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Qty</th>
+          <th>Crate</th>
+          <th>Tier</th>
+          <th>Category</th>
+          <th>Quality</th>
+          <th class="num">Crate cost</th>
+          <th>Cheapest fill</th>
+          <th class="num">Fill cost</th>
+          <th class="num sorted">Total cost &uarr;</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<button type="button" class="shopping-fab" id="shoppingFab" aria-label="Shopping list" title="Shopping list">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="9" cy="20" r="1" fill="#1a1206"/><circle cx="17" cy="20" r="1" fill="#1a1206"/>
+    <path d="M3 4h2l2.4 12.2a2 2 0 002 1.8h7.2a2 2 0 002-1.8L20 8H6" stroke="#1a1206" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span class="shopping-fab-badge" id="shoppingFabBadge">!</span>
+</button>
+
+<div class="shopping-popup" id="shoppingPopup" hidden>
+  <div class="shopping-popup-header">
+    <strong>Crate Shopping List</strong>
+    <button type="button" class="shopping-popup-close" id="shoppingPopupClose" aria-label="Close">&times;</button>
+  </div>
+  <div><strong>5</strong> crates — 24s 90c total cost</div>
+  <div class="shopping-list-groups">
+    <div class="shopping-group">
+      <div class="shopping-group-header"><span class="writ-number">3</span><span>Waylaid Crate: Apprentice Curiosities</span></div>
+      <div class="shopping-list-line"><span>Waylaid Crate: Apprentice Curiosities x3</span><span class="muted-cell">1s 38c</span></div>
+      <div class="shopping-list-line"><span>Greater Magic Essence x12</span><span class="muted-cell">8s 52c</span></div>
+    </div>
+    <div class="shopping-group">
+      <div class="shopping-group-header"><span class="writ-number">2</span><span>Waylaid Crate: Journeyman Herbs</span></div>
+      <div class="shopping-list-line"><span>Waylaid Crate: Journeyman Herbs x2</span><span class="muted-cell">9s 0c</span></div>
+      <div class="shopping-list-line"><span>Kingsblood x20</span><span class="muted-cell">6s 0c</span></div>
+    </div>
+  </div>
+  <div class="shopping-list-actions">
+    <button type="button" class="clear-link">clear</button>
+    <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
+  </div>
+</div>
+
+<script>
+  // Demonstrates the real behavior: the FAB carries a red "modified
+  // since last opened" badge; opening the popup clears it. Not wired
+  // to the quantity inputs above in this mockup — just the open/close
+  // and badge mechanics, which is the part this mockup exists to show.
+  const fab = document.getElementById("shoppingFab");
+  const badge = document.getElementById("shoppingFabBadge");
+  const popup = document.getElementById("shoppingPopup");
+  fab.addEventListener("click", () => {
+    popup.hidden = !popup.hidden;
+    if (!popup.hidden) badge.style.display = "none";
+  });
+  document.getElementById("shoppingPopupClose").addEventListener("click", () => { popup.hidden = true; });
+</script>
+
+<script>
+  const ROWS = [
+    {
+      name: "Waylaid Crate: Apprentice Curiosities", level: 10, tier: "Apprentice", category: "Curiosities",
+      variant: null, quality: "Common", crateCost: "46c", fill: "Greater Magic Essence x4", fillCost: "2s 84c",
+      total: "3s 30c", qty: 3,
+    },
+    {
+      name: "Waylaid Crate: Journeyman Herbs", level: 10, tier: "Journeyman", category: "Herbs",
+      variant: null, quality: "Common", crateCost: "4s 50c", fill: "Kingsblood x10", fillCost: "3s 0c",
+      total: "7s 50c", qty: 2,
+    },
+    {
+      name: "Waylaid Crate: Apprentice Ore", level: 10, tier: "Apprentice", category: "Ore",
+      variant: null, quality: "Common", crateCost: "38c", fill: null, noPriceable: true, fillCost: "—",
+      total: "—", qty: 0,
+    },
+    {
+      name: "Waylaid Crate: Expert Ingots", level: 20, tier: "Expert", category: "Ingots",
+      variant: null, quality: "Uncommon", crateCost: "3s 10c", fill: null, notCaptured: true, fillCost: "—",
+      total: "—", qty: 0,
+    },
+    {
+      name: "Waylaid Crate: Earthly Expert Herbs", level: 20, tier: "Expert", category: "Herbs",
+      variant: "earthly herbs", quality: "Common", crateCost: "1s 12c", fill: "Khadgar's Whisker x10",
+      fillCost: "25s 10c", total: "26s 22c", qty: 0,
+    },
+  ];
+
+  document.getElementById("statShown").textContent = ROWS.length;
+  document.getElementById("statFull").textContent = "30";
+
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = ROWS.map((row) => `
+    <tr>
+      <td><input type="number" min="0" class="qty-input" value="${row.qty}"></td>
+      <td>
+        <a class="item-name" href="#" title="Opens the crate's Wowhead item page — not wired up in this mockup">${row.name}</a>
+        <div class="item-sub">lvl ${row.level}+</div>
+      </td>
+      <td><span class="source-pill">${row.tier}</span></td>
+      <td class="muted-cell">${row.category}${row.variant ? ` <span class="muted-cell">(${row.variant})</span>` : ""}</td>
+      <td class="muted-cell">${row.quality}</td>
+      <td class="num muted-cell">${row.crateCost}</td>
+      <td class="muted-cell">${
+        row.notCaptured
+          ? `<span class="pending-pill" title="Wowhead rate-limited the extraction before this crate's fill options were captured — not that it needs nothing.">not captured yet</span>`
+          : row.noPriceable
+          ? `<span class="pending-pill" title="None of this crate's fill materials have a resolvable item ID or a price in your snapshot.">no priceable option</span>`
+          : row.fill
+      }</td>
+      <td class="num muted-cell">${row.fillCost}</td>
+      <td class="num profit-pos">${row.total}</td>
+    </tr>
+  `).join("");
+</script>
+</body>
+</html>

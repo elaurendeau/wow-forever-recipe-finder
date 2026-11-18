@@ -41,6 +41,10 @@ defmodule WowForeverRecipeFinder do
         WritEfficiencyResult,
         WritResultsFilter,
         WritShoppingList,
-        WritMapPlacement
+        WritMapPlacement,
+        CrateEfficiency,
+        CrateCatalogSeeder,
+        CrateResultsFilter,
+        CrateShoppingList
       ] ++ test_only_exports
 end

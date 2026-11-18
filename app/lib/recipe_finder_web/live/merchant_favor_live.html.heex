@@ -1,0 +1,241 @@
+<div class="rf-topbar" id="merchant-favor-page" phx-hook="TsmSnapshot">
+  <div class="rf-topbar-left">
+    <h1 class="rf-title">Merchant's Favor Crate Ranking</h1>
+    <a class="rf-nav-link" href={~p"/"}>← Recipe Finder</a>
+    <a class="rf-nav-link" href={~p"/writs"}>Craftsman's Writs →</a>
+  </div>
+  <div class="rf-freshness">
+    <%= if @captured_at do %>
+      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")} — saved in this browser
+      <button type="button" class="rf-forget-link" phx-click="clear_snapshot">forget</button>
+    <% else %>
+      No data uploaded yet
+    <% end %>
+  </div>
+  <form id="upload-form" phx-change="validate_upload" phx-submit="process_upload">
+    <div class="rf-upload-pill">
+      <.live_file_input upload={@uploads.tsm_export} />
+      <button type="submit">Upload</button>
+    </div>
+  </form>
+</div>
+
+<div class="rf-page">
+  <div class="rf-writs-intro">
+    A Waylaid Crate, filled with any one of its listed material bundles, becomes a Sealed Crate turned in for
+    Merchant's Favor. Cost is always TSM's realm-level <strong>Recent Value</strong>
+    for the crate itself and every possible fill material — the cheapest fill option is picked automatically,
+    since any one of them works. Lower total cost = more cost-effective. Choosing how many crates to buy and
+    turning that into a Merchant's Favor target is planned next, once the hand-in-quest data is complete.
+  </div>
+
+  <%= if @upload_error do %>
+    <div class="rf-error">{@upload_error}</div>
+  <% end %>
+
+  <% filtered = CrateResultsFilter.apply(@results, @filter) %>
+  <form id="filter-form" phx-change="filter_changed">
+    <div class="rf-filterbar">
+      <input
+        type="text"
+        name="filter[search]"
+        placeholder="Search crate name or category..."
+        value={@filter.search}
+      />
+      <label>
+        Max cost
+        <input
+          type="text"
+          name="filter[max_cost_copper]"
+          placeholder="any"
+          value={@filter.max_cost_copper}
+        />
+      </label>
+    </div>
+  </form>
+
+  <div class="rf-side-toggle" id="crate-tier-toggle">
+    <span class="rf-side-toggle-label">Tier</span>
+    <button
+      :for={{param, label} <- tiers()}
+      type="button"
+      class={["rf-side-chip", tier_selected?(@filter, param) && "on"]}
+      phx-click="set_tier"
+      phx-value-tier={param}
+    >
+      {label}
+    </button>
+  </div>
+
+  <div class="rf-stats" style="margin: 12px 0;">
+    <span><strong>{length(filtered)}</strong> shown</span>
+    <span><strong>{length(@results)}</strong> total crates</span>
+  </div>
+
+  <div class="rf-table-wrap">
+    <table class="rf-table">
+      <thead>
+        <tr>
+          <th>Qty</th>
+          <th>Crate</th>
+          <th>Tier</th>
+          <th>Category</th>
+          <th>Quality</th>
+          <th class="num">Crate cost</th>
+          <th>Cheapest fill</th>
+          <th class="num">Fill cost</th>
+          <th class="num sorted" phx-click="toggle_sort_dir">
+            Total cost{sort_indicator(@filter)}
+          </th>
+        </tr>
+      </thead>
+      <tbody id="crates-table-body">
+        <%= for r <- filtered do %>
+          <tr>
+            <td class="rf-writ-select">
+              <form
+                id={"qty-form-#{r.crate.id}"}
+                phx-change="set_quantity"
+                phx-value-id={r.crate.id}
+              >
+                <input
+                  type="number"
+                  name="value"
+                  min="0"
+                  class="rf-qty-input"
+                  value={Map.get(@quantities, r.crate.id, 0)}
+                />
+              </form>
+            </td>
+            <td>
+              <a
+                class="rf-item-name"
+                href={wowhead_item_url(r.crate.wowhead_id)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {r.crate.name}
+              </a>
+              <div class="rf-item-tier">lvl {r.crate.required_level}+</div>
+            </td>
+            <td><span class="rf-source-pill">{tier_label(r.crate.tier)}</span></td>
+            <td class="rf-muted">
+              {category_label(r.crate.category)}
+              <%= if r.crate.variant do %>
+                <span class="rf-muted">({r.crate.variant})</span>
+              <% end %>
+            </td>
+            <td class="rf-muted">{quality_label(r.crate.quality)}</td>
+            <td class="num rf-muted">
+              <%= if r.crate_cost_copper do %>
+                {format_copper(r.crate_cost_copper)}
+              <% else %>
+                <span
+                  class="writ-pending-pill"
+                  title="No Recent Value for this crate in your uploaded snapshot."
+                >
+                  unknown
+                </span>
+              <% end %>
+            </td>
+            <td class="rf-muted">
+              <%= cond do %>
+                <% no_fill_data?(r) -> %>
+                  <span
+                    class="writ-pending-pill"
+                    title="Wowhead rate-limited the extraction before this crate's fill options were captured — not that it needs nothing."
+                  >
+                    not captured yet
+                  </span>
+                <% no_priceable_fill?(r) -> %>
+                  <span
+                    class="writ-pending-pill"
+                    title="None of this crate's fill materials have a resolvable item ID or a price in your snapshot."
+                  >
+                    no priceable option
+                  </span>
+                <% r.best_fill_option -> %>
+                  {r.best_fill_option.display_name} x{r.best_fill_option.quantity}
+              <% end %>
+            </td>
+            <td class="num rf-muted">{format_copper(r.fill_cost_copper)}</td>
+            <td class="num rf-profit-pos">{format_copper(r.total_cost_copper)}</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<% selected_quantities = for {id, qty} <- @quantities, qty > 0, into: %{}, do: {id, qty} %>
+<%= if selected_quantities != %{} do %>
+  <button
+    type="button"
+    class="rf-shopping-fab"
+    phx-click="toggle_shopping_list_panel"
+    aria-label="Shopping list"
+    title="Shopping list"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="9" cy="20" r="1" fill="#1a1206" /><circle cx="17" cy="20" r="1" fill="#1a1206" />
+      <path
+        d="M3 4h2l2.4 12.2a2 2 0 002 1.8h7.2a2 2 0 002-1.8L20 8H6"
+        stroke="#1a1206"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <%= if @shopping_list_unseen? do %>
+      <span class="rf-shopping-fab-badge">!</span>
+    <% end %>
+  </button>
+
+  <%= if @shopping_list_open? do %>
+    <% groups = CrateShoppingList.build_groups(@results, selected_quantities) %>
+    <% all_lines = Enum.flat_map(groups, & &1.lines) %>
+    <div class="rf-shopping-popup">
+      <div class="rf-shopping-popup-header">
+        <strong>Crate Shopping List</strong>
+        <button
+          type="button"
+          class="rf-shopping-popup-close"
+          phx-click="toggle_shopping_list_panel"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+      </div>
+      <div>
+        <strong>{Enum.map(groups, & &1.quantity) |> Enum.sum()}</strong>
+        crates — {format_copper(CrateShoppingList.total_cost_copper(all_lines))} total cost
+      </div>
+      <div class="rf-shopping-list-groups">
+        <%= for group <- groups do %>
+          <div class="rf-shopping-group">
+            <div class="rf-shopping-group-header">
+              <span class="rf-writ-number">{group.quantity}</span>
+              <span>{group.crate.name}</span>
+            </div>
+            <%= for line <- group.lines do %>
+              <div class="rf-shopping-list-line">
+                <span>{line.display_name} x{line.quantity}</span>
+                <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="rf-shopping-list-actions">
+        <button type="button" class="rf-forget-link" phx-click="clear_selection">clear</button>
+        <span
+          id="auctionator-copy"
+          phx-hook="CopyButton"
+          data-copy={CrateShoppingList.to_auctionator_text("WoW Forever Crates", all_lines)}
+        >
+          <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
+        </span>
+      </div>
+    </div>
+  <% end %>
+<% end %>

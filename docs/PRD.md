@@ -210,3 +210,47 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 - The world map itself is loaded once at mount (static reference data, identical for every visitor) — checking/unchecking a writ re-renders which of the already-loaded pins are visible, never re-fetches the map.
 
 **Deliberately not done in this round:** matching every one of the vector file's ~50 zone/subzone polygons individually back to a specific writ's zone by name beyond what `zone_id` already resolves; a fidelity toggle between this map view and a future full flight-path-time-aware route (the map now has the real flight-master/ship/zeppelin/tram route data to build that from, but using it for actual pathing is new, scoped work, not assumed here).
+
+### 7.11 Feature K — Merchant's Favor Crate Ranking
+
+**Added 2026-11-18.** A third separate page, for WoW Forever's Waylaid Crate / Merchant's Favor system: a Waylaid Crate (looted or AH-bought) is filled with any ONE of several listed material bundles, which turns it into a matching-tier Sealed Crate, which is turned in via an "A Sealed Crate" quest for Merchant's Favor currency (`wowhead_id` 3402). Crates pay no reputation at all — reputation only comes from writs (§ 7.8–7.10); this feature is purely about the cheapest way to convert AH gold into Merchant's Favor.
+
+**Scope cut, made explicitly by the user mid-session, not assumed:** the user's original ask was "choose a number of tokens OR a number of crates, get a shopping list." That requires knowing which Sealed Crate (and therefore which Merchant's Favor amount) each Waylaid Crate becomes once filled — and the delivered extraction has that mapping **unresolved**: every one of the 8 captured "A Sealed Crate" hand-in quests has `sealed_crate_id: null` (not yet read off each quest's own page), against 15 real Sealed Crate variants. Rather than guess a mapping or block the whole feature on it, the user chose, via an explicit prompted choice, to **ship the cost-ranking half now and defer the favor-target half** until a future extraction pass resolves `sealed_crate_id` on the hand-in quests (and ideally the quest→favor-amount relationship generally, since 8 quests for 15 crate variants means even a complete mapping may still be many-to-one in a way that isn't obvious yet). Nothing about the favor-target mode is modeled or persisted in this round.
+
+**Data provenance:** a Wowhead-sourced extraction delivered on the `feat/waylaid-crates-data` branch (`app/priv/crates/waylaid_supply_crates.json` there; copied into this app as `priv/crate_seeds/waylaid_supply_crates.json`) — same extraction family/caveats as the writ catalog (§ 7.8), see [DATA_SOURCES.md](DATA_SOURCES.md#waylaid-crates-privcrate_seedswaylaid_supply_cratesjson) for the verified specifics once committed.
+
+**Cost, same rule as every other page in this app:** a crate's own cost and every fill-option material's cost are both TSM realm-level **Recent Value** (`recent_value_copper`) — never Region Sale Avg, never a crafting-reagent cost. The cheapest priceable fill option is picked automatically for the "total cost" column, since any one option fills the crate equally well — this is a genuine optimization (pick the min), not an arbitrary default.
+
+**Use cases discovered (per docs/ELIXIR_TEST_MANIFESTO.md's discovery procedure) — each must have a covering test:**
+
+*Happy path:*
+- A crate with a Recent Value in the visitor's snapshot, and at least one fill option that's both resolved to a real item ID and priced in that snapshot, computes `crate_cost + cheapest_fill_cost` and ranks among the rest by that total.
+- Visiting this page after already uploading a snapshot on the main Recipe Finder or Writs page shows computed rows immediately — same shared `localStorage` snapshot, same `TsmSnapshot` hook, as every other page in this app.
+- Setting a quantity on one or more crates' Qty input shows a shopping-list FAB; opening it groups by crate (crate line + its cheapest fill option's line, both quantity-multiplied), with an Auctionator-ready copy button — same FAB/popup/group pattern as § 7.9's writ shopping list, reusing its CSS and `AuctionatorExport` export format rather than duplicating either.
+
+*Boundary/edge conditions:*
+- **6 of the 30 captured crates have `fill_options: null`** (Wowhead rate-limited the extraction session before their options were read) — rendered with a "not captured yet" pending pill in the Cheapest Fill column, never hidden and never priced as free. All 6 are Expert/Artisan-tier Ingots/Parts/Fabrics crates.
+- **Every Ore crate's fill options (Copper Ore, Tin Ore, …) resolve to `wowhead_id: null`** — not a data-entry gap specific to this feature, but the same structural finding already documented for Mining in DATA_SOURCES.md: this app's catalog seeds have no Mining/raw-ore items at all (Mining was never one of the scraped professions), so there's no id to resolve a raw-ore fill option's name against. These crates show "no priceable option," distinct from "not captured yet."
+- A crate whose fill options ARE captured, but none of them has both a resolved id and a price in the visitor's own snapshot, shows the same "no priceable option" pending state — distinguished in the UI (and in `CrateEfficiencyResult.missing_data_reasons`, which can hold more than one reason at once) from "not captured yet."
+- A crate itself missing a Recent Value in the snapshot (independent of whether its fill options are priceable) shows "unknown" in the Crate Cost column and a `nil` total cost — never summed as if it were free.
+- A crate with several fill options where more than one is priceable picks the strictly cheapest one, not the first one listed or an arbitrary one — verified by a mixed-resolution fixture where the cheapest priceable option is not Wowhead's own listed order.
+- A fill option that has a resolved item id but no price in the snapshot is excluded from the "cheapest" comparison (never treated as free/zero-cost) — only an option with a real price can win.
+- `variant` (`"earthly herbs"` / `"flowering herbs"`, both only on Expert/Artisan Herbs crates) is shown alongside Category where present and omitted entirely where it's `null` — it does not apply to most crates.
+
+*Error/failure paths:*
+- An uploaded file that isn't a recognizable TSM export surfaces the same existing parse-error messages as every other page — reuses `ProfitComputation.parse_export/1`, not a reimplementation.
+- A malformed crate-catalog seed entry fails the seeder loudly inside its transaction, same discipline as the writ and profession-catalog seeders.
+
+*State-dependent variations:*
+- Quantities are keyed by crate id in LiveView socket state only, same deliberate "survives this session, not a reload" scope cut as the writs' selection (§ 7.9) — not persisted to `localStorage`.
+- Forgetting the snapshot on any page clears it everywhere (shared storage); visiting this page afterward shows the same no-data state as a fresh visit.
+
+**Requirements (this round):**
+- New page, linked from the main Recipe Finder's and the Writs page's nav (not a tab).
+- Table columns: Qty (quantity input), Crate (name + required level, links to its Wowhead item page), Tier, Category (+ variant where present), Quality, Crate cost, Cheapest fill (material + quantity), Fill cost, Total cost — sortable by Total cost only (the other numeric columns don't need independent sort for a ranking-focused table this size).
+- Search by crate name or category; a tier filter (Any/Apprentice/Journeyman/Expert/Artisan); an optional max-cost threshold — same filter-row conventions as the other two pages.
+- A shopping-list FAB + popup, grouped by crate, Auctionator copy button — reusing § 7.9's CSS classes and the newly-extracted shared `AuctionatorExport` module (also now used by the writ shopping list, replacing its own prior duplicate of the same export-text logic).
+
+**Deferred, pending the missing `sealed_crate_id` mapping (documented so a future session doesn't have to re-derive the decision):**
+- **Favor-target mode** — the user's original ask: pick a target number of Merchant's Favor, or a target number of crates, and get a shopping list sized to reach it. Needs `sealed_crate_id` resolved on each of the 8 hand-in quests (and the Sealed-Crate↔Waylaid-Crate tier/quality correspondence, which the current extraction doesn't carry either) before it can be built without guessing.
+- **The 6 not-yet-captured crates' fill options**, and **resolving ore/raw-material item ids** (would need a Mining catalog seed this app has never had, for any feature) — both real, scoped follow-ups, not assumed here.

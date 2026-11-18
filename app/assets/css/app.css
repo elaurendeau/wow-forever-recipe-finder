@@ -839,3 +839,18 @@ a {
     grid-template-rows: minmax(0, 1fr) 200px;
   }
 }
+
+/* ---------------------------------------------------------------------
+   Merchant's Favor crate ranking (docs/PRD.md § 7.11).
+   --------------------------------------------------------------------- */
+.rf-qty-input {
+  width: 48px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-align: center;
+}

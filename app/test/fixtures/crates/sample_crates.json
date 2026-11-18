@@ -1,0 +1,57 @@
+{
+  "source": {
+    "note": "Hand-trimmed fixture for tests — see docs/ELIXIR_TEST_MANIFESTO.md. Real-shaped, not a live Wowhead capture.",
+    "retrieved": "2026-11-18"
+  },
+  "currency": { "wowhead_id": 3402, "name": "Merchant's Favor" },
+  "waylaid_crates": [
+    {
+      "wowhead_id": 248683,
+      "name": "Waylaid Crate: Apprentice Curiosities",
+      "tier": "apprentice",
+      "category": "curiosities",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "fill_options": [
+        { "display_name": "Elixir of Ogre Strength", "wowhead_id": 264031, "quantity": 1 }
+      ]
+    },
+    {
+      "wowhead_id": 248684,
+      "name": "Waylaid Crate: Apprentice Herbs",
+      "tier": "apprentice",
+      "category": "herbs",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "fill_options": [
+        { "display_name": "Craftsman's Writ: Elixir of Ogre's Strength", "wowhead_id": 5571, "quantity": 1 },
+        { "display_name": "Unresolved Reagent", "wowhead_id": null, "quantity": 5 }
+      ]
+    },
+    {
+      "wowhead_id": 248685,
+      "name": "Waylaid Crate: Apprentice Ore",
+      "tier": "apprentice",
+      "category": "ore",
+      "variant": null,
+      "quality": "common",
+      "required_level": 10,
+      "fill_options": [
+        { "display_name": "Copper Ore", "wowhead_id": null, "quantity": 20 },
+        { "display_name": "Tin Ore", "wowhead_id": null, "quantity": 20 }
+      ]
+    },
+    {
+      "wowhead_id": 248686,
+      "name": "Waylaid Crate: Expert Ingots",
+      "tier": "expert",
+      "category": "ingots",
+      "variant": null,
+      "quality": "uncommon",
+      "required_level": 20,
+      "fill_options": null
+    }
+  ]
+}
