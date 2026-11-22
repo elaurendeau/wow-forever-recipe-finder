@@ -42,8 +42,15 @@
     A Waylaid Crate, filled with any one of its listed material bundles, becomes a Sealed Crate turned in for
     Merchant's Favor. Cost is always TSM's realm-level <strong>Recent Value</strong>
     for the crate itself and every possible fill material — the cheapest fill option is picked automatically,
-    since any one of them works. Lower total cost = more cost-effective. Choosing how many crates to buy and
-    turning that into a Merchant's Favor target is planned next, once the hand-in-quest data is complete.
+    since any one of them works. Ranked by <strong>cost per Favor</strong>, not raw cost — a pricier crate can
+    still be the better deal if it pays enough more Favor.
+    <span
+      class="writ-pending-pill"
+      title="Inferred from the 8 Favor amounts the source extraction actually captured (5/10/15/20/10/20/30/40), which fit Favor = 5 × tier × quality exactly — not read directly off a Wowhead quest page (Wowhead blocks this app's own tooling from reaching it). See docs/PRD.md § 7.11 and MerchantFavorFormula."
+    >
+      Favor amounts are estimated
+    </span>
+    — choosing a target number of tokens (rather than reading the total off the shopping list) is still planned, pending the hand-in-quest mapping.
   </div>
 
   <%= if @upload_error do %>
@@ -101,8 +108,21 @@
           <th class="num">Crate cost</th>
           <th>Cheapest fill</th>
           <th class="num">Fill cost</th>
-          <th class="num sorted" phx-click="toggle_sort_dir">
-            Total cost{sort_indicator(@filter)}
+          <th
+            class={th_class(@filter, :total_cost)}
+            phx-click="sort_by"
+            phx-value-field="total_cost"
+          >
+            Total cost{sort_indicator(@filter, :total_cost)}
+          </th>
+          <th class="num" title="Estimated — see the note above the table">Favor</th>
+          <th
+            class={th_class(@filter, :price_per_favor)}
+            phx-click="sort_by"
+            phx-value-field="price_per_favor"
+            title="Total cost ÷ Favor — estimated, since Favor itself is estimated"
+          >
+            Price/Favor{sort_indicator(@filter, :price_per_favor)}
           </th>
         </tr>
       </thead>
@@ -177,6 +197,14 @@
             </td>
             <td class="num rf-muted">{format_copper(r.fill_cost_copper)}</td>
             <td class="num rf-profit-pos">{format_copper(r.total_cost_copper)}</td>
+            <td class="num rf-muted">{r.favor_amount}</td>
+            <td class="num rf-profit-pos">
+              <%= if r.price_per_favor_copper do %>
+                {format_copper(r.price_per_favor_copper)}
+              <% else %>
+                —
+              <% end %>
+            </td>
           </tr>
         <% end %>
       </tbody>
@@ -225,7 +253,10 @@
       </div>
       <div>
         <strong>{Enum.map(groups, & &1.quantity) |> Enum.sum()}</strong>
-        crates — {format_copper(CrateShoppingList.total_cost_copper(all_lines))} total cost
+        crates — <strong>{CrateShoppingList.total_favor(@results, selected_quantities)}</strong>
+        total Merchant's Favor (estimated) — {format_copper(
+          CrateShoppingList.total_cost_copper(all_lines)
+        )} total cost
       </div>
       <div class="rf-shopping-list-groups">
         <%= for group <- groups do %>

@@ -51,6 +51,10 @@
     padding: 7px 12px; background: var(--surface-2);
   }
   .upload-pill button { all: unset; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--accent); }
+  .realm-select {
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; background: var(--surface-2);
+    color: var(--fg); font-family: var(--font-mono); font-size: 12.5px; cursor: pointer;
+  }
 
   .page { padding: 20px 24px 50px; display: flex; flex-direction: column; gap: 14px; }
 
@@ -191,6 +195,10 @@
     <span class="mock-pill">Mockup</span>
   </div>
   <div class="freshness">Snapshot from 2026-11-16 23:17 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
+  <select class="realm-select" title="Recent Value prices come from this realm's own AH scans — pick the right one if you've scanned more than one.">
+    <option selected>PvP-Horde</option>
+    <option>Stale-OldRealm</option>
+  </select>
   <div class="upload-pill">
     <button type="button">Upload</button>
   </div>

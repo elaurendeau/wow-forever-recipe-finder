@@ -163,9 +163,17 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
     {:noreply, assign(socket, filter: filter)}
   end
 
-  def handle_event("toggle_sort_dir", _params, socket) do
-    new_dir = if socket.assigns.filter.sort_dir == :asc, do: :desc, else: :asc
-    {:noreply, assign(socket, filter: %{socket.assigns.filter | sort_dir: new_dir})}
+  def handle_event("sort_by", %{"field" => field}, socket) do
+    field = String.to_existing_atom(field)
+    current = socket.assigns.filter
+
+    # Cheapest-first on the first click of a column, same convention
+    # as the default criteria — lower is always better for both
+    # columns this page sorts by (cost, cost per Favor), unlike
+    # RecipeFinderLive's own sort_by where higher profit is better.
+    new_dir = if current.sort_by == field and current.sort_dir == :asc, do: :desc, else: :asc
+
+    {:noreply, assign(socket, filter: %{current | sort_by: field, sort_dir: new_dir})}
   end
 
   defp load_export(socket, export_text, captured_at, saved_realm) do
@@ -251,7 +259,15 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
   defp no_fill_data?(result), do: :no_fill_options_data in result.missing_data_reasons
   defp no_priceable_fill?(result), do: :no_priceable_fill_option in result.missing_data_reasons
 
-  defp sort_indicator(filter) do
-    if filter.sort_dir == :desc, do: " ▼", else: " ▲"
+  defp sort_indicator(filter, field) do
+    cond do
+      filter.sort_by != field -> ""
+      filter.sort_dir == :desc -> " ▼"
+      true -> " ▲"
+    end
+  end
+
+  defp th_class(filter, field) do
+    if filter.sort_by == field, do: "num sorted", else: "num"
   end
 end

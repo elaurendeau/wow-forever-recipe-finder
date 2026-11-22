@@ -102,15 +102,35 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
     refute html =~ "Waylaid Crate: Apprentice Curiosities"
   end
 
-  test "the sort toggle flips row order by total cost", %{conn: conn} do
+  test "defaults to sorting by Price/Favor ascending, cheapest-per-token first", %{conn: conn} do
     {:ok, view, _html} = live(conn, ~p"/merchant-favor")
     html = upload_tsm_export(view)
 
-    # Ascending (default): the cheapest priced crate — Curiosities at
-    # 3s 68c — sorts before the pricier Herbs crate at 7s 97c.
+    # Both known-cost crates in this fixture are Apprentice/Common (the
+    # same Favor amount, 5, for each), so Price/Favor and Total cost
+    # happen to agree here — Curiosities (5s 0c, cheaper) sorts before
+    # Herbs (7s 97c). The dedicated unit test in
+    # crate_results_filter_test.exs covers a case where the two
+    # columns actually disagree.
     assert html =~ ~r/Apprentice Curiosities.*Apprentice Herbs/s
+  end
 
-    desc_html = view |> element("th.sorted") |> render_click()
+  test "clicking the Total cost header sorts by that column specifically", %{conn: conn} do
+    {:ok, view, _html} = live(conn, ~p"/merchant-favor")
+    upload_tsm_export(view)
+
+    asc_html = view |> element("th", "Total cost") |> render_click()
+    assert asc_html =~ ~r/Apprentice Curiosities.*Apprentice Herbs/s
+
+    desc_html = view |> element("th", "Total cost") |> render_click()
+    assert desc_html =~ ~r/Apprentice Herbs.*Apprentice Curiosities/s
+  end
+
+  test "clicking the Price/Favor header sorts by that column specifically", %{conn: conn} do
+    {:ok, view, _html} = live(conn, ~p"/merchant-favor")
+    upload_tsm_export(view)
+
+    desc_html = view |> element("th", "Price/Favor") |> render_click()
     assert desc_html =~ ~r/Apprentice Herbs.*Apprentice Curiosities/s
   end
 
@@ -229,7 +249,28 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
       # Elixir of Ogre Strength at 300c/unit * 3 = 900c = 9s 0c.
       assert html =~ "Elixir of Ogre Strength x3"
       assert html =~ "9s 0c"
+      # Apprentice/Common pays 5 Favor (MerchantFavorFormula) * 3 crates = 15.
+      assert html =~ "15"
+      assert html =~ "total Merchant&#39;s Favor"
       assert html =~ "Copy for Auctionator"
+    end
+
+    test "the popup totals Merchant's Favor across every selected crate, not just one", %{
+      conn: conn
+    } do
+      {:ok, view, _html} = live(conn, ~p"/merchant-favor")
+      upload_tsm_export(view)
+
+      curiosities_id = crate_id!("Waylaid Crate: Apprentice Curiosities")
+      herbs_id = crate_id!("Waylaid Crate: Apprentice Herbs")
+
+      set_quantity(view, curiosities_id, "2")
+      set_quantity(view, herbs_id, "3")
+      html = open_shopping_list(view)
+
+      # Both are Apprentice/Common (5 Favor each): 2*5 + 3*5 = 25.
+      assert html =~ "25"
+      assert html =~ "total Merchant&#39;s Favor"
     end
 
     test "the Auctionator export text has Auctionator's real *** header and one item name per line, no quantities",

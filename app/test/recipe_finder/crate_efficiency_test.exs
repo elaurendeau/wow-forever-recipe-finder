@@ -72,6 +72,39 @@ defmodule WowForeverRecipeFinder.CrateEfficiencyTest do
       assert result.best_fill_option.display_name == "Silverleaf"
       assert result.missing_data_reasons == []
     end
+
+    test "favor_amount comes from MerchantFavorFormula (tier/quality), and price_per_favor_copper divides the total cost by it" do
+      c =
+        crate(
+          wowhead_id: 1,
+          tier: :journeyman,
+          quality: :uncommon,
+          fill_options: [fill_option(display_name: "Peacebloom", wowhead_id: 10, quantity: 20)]
+        )
+
+      snap = snapshot(%{1 => 400, 10 => 30})
+
+      result = CrateEfficiency.compute_result(c, snap)
+
+      # Journeyman(2) * Uncommon(2) * 5 = 20 Favor.
+      assert result.favor_amount == 20
+      # Crate 400c + fill 600c (20 * 30) = 1000c total.
+      assert result.total_cost_copper == 1_000
+      assert result.price_per_favor_copper == 50
+    end
+
+    test "price_per_favor_copper is nil when total_cost_copper is nil, never computed against a missing cost" do
+      c = crate(wowhead_id: 1, fill_options: nil)
+      snap = snapshot(%{1 => 500})
+
+      result = CrateEfficiency.compute_result(c, snap)
+
+      assert result.total_cost_copper == nil
+      assert result.price_per_favor_copper == nil
+      # favor_amount is still always known — it's derived from the
+      # crate's own tier/quality, independent of any snapshot data.
+      assert result.favor_amount == 5
+    end
   end
 
   describe "compute_result/2 — boundary/edge conditions" do

@@ -9,23 +9,27 @@ defmodule WowForeverRecipeFinder.CrateResultsFilter do
 
   alias WowForeverRecipeFinder.CrateEfficiencyResult
 
+  @type sort_field :: :total_cost | :price_per_favor
+
   @type criteria :: %{
           optional(:search) => String.t(),
           optional(:tier) => WowForeverRecipeFinder.WaylaidCrate.tier() | :any,
           optional(:max_cost_copper) => non_neg_integer() | nil,
-          optional(:sort_by) => :cost,
+          optional(:sort_by) => sort_field(),
           optional(:sort_dir) => :asc | :desc
         }
 
-  # Cheapest first by default — "most cost-effective" means lowest
-  # total AH cost, per docs/PRD.md § 7.11 (every crate becomes exactly
-  # one Sealed Crate of its own tier regardless of fill option, so
-  # cost alone ranks them, no ratio needed).
+  # Cheapest cost-per-Favor first by default — per docs/PRD.md § 7.11,
+  # "most cost-effective" means the lowest price per Merchant's Favor
+  # earned, not raw total cost: two crates can cost the same but pay
+  # different amounts of Favor (see MerchantFavorFormula), so cost
+  # alone doesn't actually answer "which is most cost-effective" on
+  # its own. Total cost is still shown and still sortable.
   @default_criteria %{
     search: "",
     tier: :any,
     max_cost_copper: nil,
-    sort_by: :cost,
+    sort_by: :price_per_favor,
     sort_dir: :asc
   }
 
@@ -38,7 +42,7 @@ defmodule WowForeverRecipeFinder.CrateResultsFilter do
 
     results
     |> Enum.filter(&matches?(&1, criteria))
-    |> sort(criteria.sort_dir)
+    |> sort(criteria.sort_by, criteria.sort_dir)
   end
 
   defp matches?(%CrateEfficiencyResult{} = result, criteria) do
@@ -68,11 +72,18 @@ defmodule WowForeverRecipeFinder.CrateResultsFilter do
   defp threshold_match?(nil, _threshold), do: false
   defp threshold_match?(value, threshold), do: value <= threshold
 
-  defp sort(results, dir) do
-    Enum.sort_by(results, &sort_key(&1, dir), :asc)
+  defp sort(results, sort_by, dir) do
+    Enum.sort_by(results, &sort_key(&1, sort_by, dir), :asc)
   end
 
-  defp sort_key(%CrateEfficiencyResult{total_cost_copper: nil}, _dir), do: {1, 0.0}
-  defp sort_key(%CrateEfficiencyResult{total_cost_copper: v}, :asc), do: {0, v * 1.0}
-  defp sort_key(%CrateEfficiencyResult{total_cost_copper: v}, :desc), do: {0, v * -1.0}
+  defp sort_value(%CrateEfficiencyResult{total_cost_copper: v}, :total_cost), do: v
+  defp sort_value(%CrateEfficiencyResult{price_per_favor_copper: v}, :price_per_favor), do: v
+
+  defp sort_key(result, sort_by, dir) do
+    case sort_value(result, sort_by) do
+      nil -> {1, 0.0}
+      v when dir == :asc -> {0, v * 1.0}
+      v when dir == :desc -> {0, v * -1.0}
+    end
+  end
 end

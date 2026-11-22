@@ -14,11 +14,24 @@ defmodule WowForeverRecipeFinder.CrateEfficiency do
   **Cost is always the AH "Recent Value"** (`recent_value_copper`,
   TSM's realm-level figure), same deliberate choice as `WritEfficiency`
   — never this app's crafting-reagent-cost engine.
+
+  **Ranked by cost per Merchant's Favor, not raw cost.** Two crates can
+  cost the same but pay different amounts of Favor (a higher-tier/
+  quality crate pays more) — see `MerchantFavorFormula` for the Favor
+  amount itself (an inferred, not Wowhead-confirmed, figure) and why
+  cost-per-Favor, not raw cost, is the actual "most cost-effective"
+  question a visitor farming Favor is asking.
   """
 
-  alias WowForeverRecipeFinder.{CrateEfficiencyResult, FillOption, PriceSnapshot, WaylaidCrate}
+  alias WowForeverRecipeFinder.{
+    CrateEfficiencyResult,
+    FillOption,
+    MerchantFavorFormula,
+    PriceSnapshot,
+    WaylaidCrate
+  }
 
-  @doc "Every crate in the catalog, joined against an already-parsed `PriceSnapshot`, sorted by total cost ascending (cheapest first)."
+  @doc "Every crate in the catalog, joined against an already-parsed `PriceSnapshot`, sorted by cost per Merchant's Favor ascending (cheapest first)."
   @spec compute_results(PriceSnapshot.t()) :: [CrateEfficiencyResult.t()]
   def compute_results(%PriceSnapshot{} = snapshot) do
     crate_gateway().list_crates()
@@ -45,12 +58,17 @@ defmodule WowForeverRecipeFinder.CrateEfficiency do
     {best_option, fill_cost, reasons} =
       pick_best_fill_option(crate.fill_options, snapshot, reasons)
 
+    total_cost = sum_if_both_present(crate_cost, fill_cost)
+    favor_amount = MerchantFavorFormula.favor_amount(crate.tier, crate.quality)
+
     %CrateEfficiencyResult{
       crate: crate,
       crate_cost_copper: crate_cost,
       best_fill_option: best_option,
       fill_cost_copper: fill_cost,
-      total_cost_copper: sum_if_both_present(crate_cost, fill_cost),
+      total_cost_copper: total_cost,
+      favor_amount: favor_amount,
+      price_per_favor_copper: total_cost && round(total_cost / favor_amount),
       missing_data_reasons: Enum.reverse(reasons)
     }
   end
@@ -99,8 +117,8 @@ defmodule WowForeverRecipeFinder.CrateEfficiency do
   defp sum_if_both_present(a, b) when is_integer(a) and is_integer(b), do: a + b
   defp sum_if_both_present(_a, _b), do: nil
 
-  defp sort_key(%CrateEfficiencyResult{total_cost_copper: nil}), do: {1, 0}
-  defp sort_key(%CrateEfficiencyResult{total_cost_copper: v}), do: {0, v}
+  defp sort_key(%CrateEfficiencyResult{price_per_favor_copper: nil}), do: {1, 0}
+  defp sort_key(%CrateEfficiencyResult{price_per_favor_copper: v}), do: {0, v}
 
   defp crate_gateway do
     Application.get_env(

@@ -1,14 +1,24 @@
 defmodule WowForeverRecipeFinder.CrateResultsFilterTest do
   use ExUnit.Case, async: true
 
-  alias WowForeverRecipeFinder.{CrateEfficiencyResult, CrateResultsFilter, WaylaidCrate}
+  alias WowForeverRecipeFinder.{
+    CrateEfficiencyResult,
+    CrateResultsFilter,
+    MerchantFavorFormula,
+    WaylaidCrate
+  }
 
   defp result(name, opts \\ []) do
+    tier = Keyword.get(opts, :tier, :apprentice)
+    quality = Keyword.get(opts, :quality, :common)
+    cost = Keyword.get(opts, :cost)
+    favor_amount = MerchantFavorFormula.favor_amount(tier, quality)
+
     crate = %WaylaidCrate{
       name: name,
-      tier: Keyword.get(opts, :tier, :apprentice),
+      tier: tier,
       category: Keyword.get(opts, :category, "herbs"),
-      quality: :common,
+      quality: quality,
       wowhead_id: 1,
       required_level: 10,
       fill_options: []
@@ -16,7 +26,9 @@ defmodule WowForeverRecipeFinder.CrateResultsFilterTest do
 
     %CrateEfficiencyResult{
       crate: crate,
-      total_cost_copper: Keyword.get(opts, :cost),
+      total_cost_copper: cost,
+      favor_amount: favor_amount,
+      price_per_favor_copper: cost && round(cost / favor_amount),
       missing_data_reasons: Keyword.get(opts, :reasons, [])
     }
   end
@@ -67,7 +79,7 @@ defmodule WowForeverRecipeFinder.CrateResultsFilterTest do
     assert Enum.map(filtered, & &1.crate.name) == ["Known"]
   end
 
-  test "defaults to cheapest-first (ascending cost), unknowns always last" do
+  test "defaults to cheapest-cost-per-Favor-first, unknowns always last" do
     results = [
       result("Pricey", cost: 5_000),
       result("Unknown", cost: nil, reasons: [:no_fill_options_data]),
@@ -77,6 +89,29 @@ defmodule WowForeverRecipeFinder.CrateResultsFilterTest do
     sorted = CrateResultsFilter.apply(results, %{})
 
     assert Enum.map(sorted, & &1.crate.name) == ["Cheap", "Pricey", "Unknown"]
+  end
+
+  test "sort_by: :price_per_favor and :total_cost can disagree when crates pay different amounts of Favor" do
+    results = [
+      # Artisan pays 4x an Apprentice crate's Favor (MerchantFavorFormula),
+      # so despite costing more in raw copper, it's cheaper per Favor.
+      result("Cheaper raw cost, worse per Favor", tier: :apprentice, cost: 100),
+      result("Pricier raw cost, better per Favor", tier: :artisan, cost: 200)
+    ]
+
+    by_total_cost = CrateResultsFilter.apply(results, %{sort_by: :total_cost})
+
+    assert Enum.map(by_total_cost, & &1.crate.name) == [
+             "Cheaper raw cost, worse per Favor",
+             "Pricier raw cost, better per Favor"
+           ]
+
+    by_price_per_favor = CrateResultsFilter.apply(results, %{sort_by: :price_per_favor})
+
+    assert Enum.map(by_price_per_favor, & &1.crate.name) == [
+             "Pricier raw cost, better per Favor",
+             "Cheaper raw cost, worse per Favor"
+           ]
   end
 
   test "sort_dir: :desc reverses the priced rows but unknowns stay last" do

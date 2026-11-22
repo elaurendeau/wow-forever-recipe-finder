@@ -27,6 +27,7 @@ defmodule WowForeverRecipeFinder.CrateShoppingListTest do
       crate_cost_copper: Keyword.get(opts, :crate_cost),
       best_fill_option: Keyword.get(opts, :best_fill_option),
       fill_cost_copper: Keyword.get(opts, :fill_cost),
+      favor_amount: Keyword.get(opts, :favor_amount, 5),
       missing_data_reasons: Keyword.get(opts, :reasons, [])
     }
   end
@@ -38,6 +39,14 @@ defmodule WowForeverRecipeFinder.CrateShoppingListTest do
     groups = CrateShoppingList.build_groups([a, b], %{1 => 3, 2 => 0})
 
     assert Enum.map(groups, &{&1.crate.name, &1.quantity}) == [{"Waylaid Crate: A", 3}]
+  end
+
+  test "build_groups/2 carries each group's favor_amount through from the result" do
+    a = result(id: 1, favor_amount: 20)
+
+    [group] = CrateShoppingList.build_groups([a], %{1 => 1})
+
+    assert group.favor_amount == 20
   end
 
   test "each group's lines are the crate (x quantity) then its cheapest fill material (x quantity)" do
@@ -127,6 +136,26 @@ defmodule WowForeverRecipeFinder.CrateShoppingListTest do
 
   test "total_cost_copper/1 is 0 for an empty list" do
     assert CrateShoppingList.total_cost_copper([]) == 0
+  end
+
+  test "total_favor/2 sums each chosen crate's favor_amount times its quantity" do
+    a = result(id: 1, favor_amount: 5)
+    b = result(id: 2, favor_amount: 20)
+
+    assert CrateShoppingList.total_favor([a, b], %{1 => 3, 2 => 2}) == 55
+  end
+
+  test "total_favor/2 ignores crates with a zero quantity" do
+    a = result(id: 1, favor_amount: 5)
+    b = result(id: 2, favor_amount: 20)
+
+    assert CrateShoppingList.total_favor([a, b], %{1 => 3, 2 => 0}) == 15
+  end
+
+  test "total_favor/2 is 0 when nothing is selected" do
+    a = result(id: 1, favor_amount: 5)
+
+    assert CrateShoppingList.total_favor([a], %{1 => 0}) == 0
   end
 
   test "to_auctionator_text/2 matches Auctionator's real Shopping List format: *** header then one name per line, no quantities" do
