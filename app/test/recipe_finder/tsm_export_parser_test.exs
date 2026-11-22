@@ -32,7 +32,9 @@ defmodule WowForeverRecipeFinder.TsmExportParserTest do
       # most of the region-wide price map's items (commodities like
       # cloth/ore bars) should have no recent value at all, never a
       # fabricated figure for an item TSM didn't actually track there.
-      with_recent = Enum.count(snapshot.prices_by_item_id, fn {_id, p} -> p.recent_value_copper end)
+      with_recent =
+        Enum.count(snapshot.prices_by_item_id, fn {_id, p} -> p.recent_value_copper end)
+
       assert with_recent > 0
       assert with_recent < map_size(snapshot.prices_by_item_id)
     end
@@ -49,6 +51,70 @@ defmodule WowForeverRecipeFinder.TsmExportParserTest do
 
       assert {:ok, %PriceSnapshot{} = snapshot} = TsmExportParser.parse(export)
       assert map_size(snapshot.prices_by_item_id) > 0
+    end
+
+    test "when an export carries more than one realm's AUCTIONDB_NON_COMMODITY_DATA, the most recently scanned realm's recent value wins, not whichever realm happened to be written last in the file" do
+      # Regression test: TSM keeps history for every realm it has ever
+      # scanned, not just the one currently played, so a real export
+      # can carry several AUCTIONDB_NON_COMMODITY_DATA blocks. The
+      # fixture lists the OLDER-timestamped realm FIRST and the NEWER
+      # one SECOND — happens to match file order here on purpose, so
+      # this test isolates the timestamp-based tie-break itself rather
+      # than also exercising the separate base-32-ambiguity bug below
+      # (every token in this fixture contains a letter).
+      export = read_fixture!("multi_realm.lua")
+
+      assert {:ok, snapshot} = TsmExportParser.parse(export)
+      assert {:ok, price} = PriceSnapshot.fetch_price(snapshot, 4625)
+      assert price.recent_value_copper == 1544
+    end
+
+    test "the snapshot defaults to the most recently scanned realm and lists every realm available to switch to" do
+      # The user's own real question: there's no way to tell (or
+      # choose) which realm's prices are being shown. The fixture
+      # carries two realms' AUCTIONDB_NON_COMMODITY_DATA — the
+      # snapshot must default to the more recently scanned one and
+      # list both so a visitor can pick via the realm selector.
+      export = read_fixture!("multi_realm.lua")
+
+      assert {:ok, snapshot} = TsmExportParser.parse(export)
+      assert snapshot.realm == "PvP-Horde"
+      assert snapshot.available_realms == ["PvP-Horde", "Stale-OldRealm"]
+    end
+
+    test "PriceSnapshot.for_realm/2 switches to another realm's figures without blending them" do
+      export = read_fixture!("multi_realm.lua")
+      assert {:ok, snapshot} = TsmExportParser.parse(export)
+
+      switched = PriceSnapshot.for_realm(snapshot, "Stale-OldRealm")
+      assert switched.realm == "Stale-OldRealm"
+      assert {:ok, price} = PriceSnapshot.fetch_price(switched, 4625)
+      assert price.recent_value_copper == 109
+    end
+
+    test "a single-realm export reports that realm as the only one available" do
+      export = read_fixture!("snapshot_1.lua")
+
+      assert {:ok, snapshot} = TsmExportParser.parse(export)
+      assert snapshot.realm == "PvP-Horde"
+      assert snapshot.available_realms == ["PvP-Horde"]
+    end
+
+    test "a base-32 price whose digits all happen to be 0-9 is still read as base-32, not misread as decimal" do
+      # Regression test for the actual bug behind a real user report:
+      # a price of 1033 copper is "109" in TSM's base-32 encoding (no
+      # A-V letters needed for that particular value) — decode_token/2
+      # used to guess a token's base from its own shape ("all digits"
+      # meant decimal), which silently misread this as decimal 109
+      # instead of base-32 1033. A ~9.5x understatement, confirmed
+      # against the real screenshot that reported it. Deciding by the
+      # field's name (itemString is the one genuinely-decimal field;
+      # everything else is always base-32) has no such ambiguity.
+      export = read_fixture!("ambiguous_base32_token.lua")
+
+      assert {:ok, snapshot} = TsmExportParser.parse(export)
+      assert {:ok, price} = PriceSnapshot.fetch_price(snapshot, 4625)
+      assert price.recent_value_copper == 1033
     end
 
     test "every decoded price has a non-negative copper value and a 0-100 confidence" do

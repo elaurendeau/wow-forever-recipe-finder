@@ -103,6 +103,19 @@ a {
   padding: 7px 12px;
   background: var(--surface-2);
 }
+.rf-realm-select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 10px;
+  background: var(--surface-2);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.rf-realm-select:hover {
+  border-color: var(--accent);
+}
 
 .rf-page {
   padding: 20px 24px 50px;

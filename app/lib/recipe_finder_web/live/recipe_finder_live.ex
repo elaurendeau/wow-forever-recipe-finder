@@ -9,7 +9,7 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
 
   use WowForeverRecipeFinderWeb, :live_view
 
-  alias WowForeverRecipeFinder.{ProfitComputation, ResultsFilter}
+  alias WowForeverRecipeFinder.{PriceSnapshot, ProfitComputation, ResultsFilter}
 
   # Jewelcrafting and Inscription don't exist in WoW Forever at all
   # (confirmed: the Wowhead export tool's own profession list in
@@ -61,7 +61,7 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
       [export_text] ->
         captured_at = DateTime.utc_now()
 
-        case load_export(socket, export_text, captured_at) do
+        case load_export(socket, export_text, captured_at, nil) do
           {:ok, socket} ->
             {:noreply,
              push_event(socket, "store_snapshot", %{
@@ -89,7 +89,7 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         {:error, _reason} -> DateTime.utc_now()
       end
 
-    case load_export(socket, export_text, captured_at) do
+    case load_export(socket, export_text, captured_at, params["realm"]) do
       {:ok, socket} -> {:noreply, socket}
       {:error, socket} -> {:noreply, push_event(socket, "clear_snapshot", %{})}
     end
@@ -100,6 +100,23 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
       socket
       |> assign(price_snapshot: nil, captured_at: nil, results: [], upload_error: nil)
       |> push_event("clear_snapshot", %{})
+
+    {:noreply, socket}
+  end
+
+  # The realm selector, shared across every page (per docs/PRD.md): a
+  # visitor who's scanned more than one realm with TSM picks which
+  # one's Recent Value figures to use everywhere this snapshot is
+  # read, since recent-value prices are realm-specific and this app
+  # can't know which realm the visitor actually plays on. Persisted
+  # via localStorage (the TsmSnapshot hook) so the choice follows them
+  # across pages without re-selecting it each time.
+  def handle_event("select_realm", %{"realm" => realm}, socket) do
+    socket =
+      socket
+      |> assign(price_snapshot: PriceSnapshot.for_realm(socket.assigns.price_snapshot, realm))
+      |> recompute_results()
+      |> push_event("store_realm", %{realm: realm})
 
     {:noreply, socket}
   end
@@ -133,9 +150,11 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
     {:noreply, assign(socket, filter: %{current | sort_by: field, sort_dir: new_dir})}
   end
 
-  defp load_export(socket, export_text, captured_at) do
+  defp load_export(socket, export_text, captured_at, saved_realm) do
     case ProfitComputation.parse_export(export_text) do
       {:ok, snapshot} ->
+        snapshot = PriceSnapshot.for_realm(snapshot, saved_realm)
+
         socket =
           socket
           |> assign(price_snapshot: snapshot, captured_at: captured_at, upload_error: nil)
@@ -154,7 +173,9 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         assign(socket, results: [])
 
       snapshot ->
-        assign(socket, results: ProfitComputation.compute_results(socket.assigns.active_profession, snapshot))
+        assign(socket,
+          results: ProfitComputation.compute_results(socket.assigns.active_profession, snapshot)
+        )
     end
   end
 
@@ -185,7 +206,8 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
     do: "This export has no #{table} table — it may be from an unsupported TSM version."
 
   defp format_parse_error({:no_usable_rows, table}),
-    do: "This export's #{table} table has no price data yet — try running a fresh AH scan in TSM first."
+    do:
+      "This export's #{table} table has no price data yet — try running a fresh AH scan in TSM first."
 
   defp format_parse_error(_other), do: "Couldn't read this file as a TSM export."
 

@@ -52,6 +52,18 @@
       "quality": "uncommon",
       "required_level": 20,
       "fill_options": null
+    },
+    {
+      "wowhead_id": 248687,
+      "name": "Waylaid Crate: Earthly Expert Herbs",
+      "tier": "expert",
+      "category": "herbs (earthly)",
+      "variant": "earthly herbs",
+      "quality": "common",
+      "required_level": 20,
+      "fill_options": [
+        { "display_name": "Fireblood", "wowhead_id": 4625, "quantity": 10 }
+      ]
     }
   ]
 }

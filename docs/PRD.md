@@ -254,3 +254,30 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 **Deferred, pending the missing `sealed_crate_id` mapping (documented so a future session doesn't have to re-derive the decision):**
 - **Favor-target mode** — the user's original ask: pick a target number of Merchant's Favor, or a target number of crates, and get a shopping list sized to reach it. Needs `sealed_crate_id` resolved on each of the 8 hand-in quests (and the Sealed-Crate↔Waylaid-Crate tier/quality correspondence, which the current extraction doesn't carry either) before it can be built without guessing.
 - **The 6 not-yet-captured crates' fill options**, and **resolving ore/raw-material item ids** (would need a Mining catalog seed this app has never had, for any feature) — both real, scoped follow-ups, not assumed here.
+
+### 7.12 Feature L — Realm Selector
+
+**Added 2026-11-22.** A dropdown in the top-right of every page's topbar, listing every realm TSM has ever scanned in the visitor's uploaded export, so they can pick which realm's **Recent Value** figures apply. Cross-cutting: it affects every cost computed on all three pages (Recipe Finder, Writs, Merchant's Favor), since Recent Value is this app's one cost basis everywhere.
+
+**Why this exists — a real, confirmed bug, not a hypothetical:** a visitor asked how the app decides which realm's prices it's showing, since there was no way to tell or control it. Checking the code directly (per CLAUDE.md's Diagnosis Discipline) turned up two real, distinct bugs, both now fixed and regression-tested:
+1. **TSM keeps history for every realm it has ever scanned**, not just the one currently played, so a visitor's export can carry more than one `AUCTIONDB_NON_COMMODITY_DATA` block. The app used to silently merge them, with whichever block happened to be written last in the file winning — an arbitrary, undefined outcome that could show a stale/alt-realm price for an item instead of the current realm's. Fixed by reading each block's own trailing-comment timestamp and using it to order them, and — per this feature — by not silently picking a winner at all anymore: every realm's figures are kept separate and the visitor chooses.
+2. **A base-32-encoded price whose digits all happen to be `0`–`9` was misread as a plain decimal number** — e.g. 1033 copper encodes to `"109"` in base-32, which the parser's old per-token heuristic silently read as decimal 109, a ~9.5x understatement. Confirmed against a real reported case before fixing. See [DATA_SOURCES.md](DATA_SOURCES.md#tsm-export-format-appdatalua) for the full technical explanation.
+
+**Never blended across realms.** Switching to a realm shows that realm's own figures only — an item the selected realm never scanned shows "unknown," never a different realm's price standing in for it. This is the explicit requirement behind `PriceSnapshot.for_realm/2`'s design: rebuild every item's Recent Value from scratch for the chosen realm, not patch over the existing map.
+
+**Defaults to the most recently scanned realm**, so a visitor who's only ever played one realm sees no behavior change at all. A visitor who's scanned several sees a sensible default and can override it.
+
+**Persisted across every page, the same way the uploaded snapshot already is:** a separate `localStorage` key (not bundled into the snapshot blob, so switching realms never re-saves the whole multi-hundred-KB export text), restored via the same `TsmSnapshot` JS hook and `restore_snapshot` event every page already uses. A visitor who picks a realm on one page and navigates to another sees the same realm already selected — confirmed in a real browser, not just asserted. A refresh preserves the choice the same way.
+
+**Use cases discovered:**
+
+*Happy path:*
+- A single-realm export shows no meaningful choice to make but still renders the dropdown with that one realm selected — consistent, not a special-cased hidden state.
+- A multi-realm export defaults to the most recently scanned realm; picking another from the dropdown recomputes every cost on the page immediately, no re-upload needed.
+- The choice follows the visitor to the other two pages and survives a page reload.
+
+*Boundary/edge conditions:*
+- An item the selected realm never scanned (but a different realm in the same export did) shows an unknown/missing Recent Value — the other realm's figure is never substituted in.
+- A saved realm choice from localStorage that isn't among the current export's `available_realms` (e.g. a different file was uploaded since) is ignored safely, falling back to the new export's own default — never a crash or a stale reference.
+
+**Deliberately not done in this round:** a per-page override (e.g. viewing Writs on one realm and Merchant's Favor on another simultaneously) — one visitor is assumed to care about one realm's economy at a time, consistent with how the uploaded snapshot itself is already shared, not per-page.

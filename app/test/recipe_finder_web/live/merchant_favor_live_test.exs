@@ -16,6 +16,14 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
 
   @crates_fixture Path.join([__DIR__, "..", "..", "fixtures", "crates", "sample_crates.json"])
   @tsm_fixture Path.join([__DIR__, "..", "..", "fixtures", "tsm_export", "snapshot_1.lua"])
+  @multi_realm_fixture Path.join([
+                         __DIR__,
+                         "..",
+                         "..",
+                         "fixtures",
+                         "tsm_export",
+                         "multi_realm.lua"
+                       ])
 
   setup do
     :ok = CrateCatalogSeeder.load_from_file!(@crates_fixture)
@@ -53,9 +61,9 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
 
     html = upload_tsm_export(view)
 
-    # Crate cost 68c + cheapest fill (Elixir of Ogre Strength, 300c) = 368c = 3s 68c.
+    # Crate cost 200c + cheapest fill (Elixir of Ogre Strength, 300c) = 500c = 5s 0c.
     assert html =~ "Waylaid Crate: Apprentice Curiosities"
-    assert html =~ "3s 68c"
+    assert html =~ "5s 0c"
 
     # Crate cost 497c + cheapest priceable fill (300c, the unresolved
     # 5-quantity reagent is skipped since it has no wowhead_id) = 797c = 7s 97c.
@@ -104,6 +112,60 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
 
     desc_html = view |> element("th.sorted") |> render_click()
     assert desc_html =~ ~r/Apprentice Herbs.*Apprentice Curiosities/s
+  end
+
+  describe "realm selector (the user's own real question: there's no way to tell which realm's prices are shown)" do
+    test "no realm dropdown is shown until a snapshot is uploaded", %{conn: conn} do
+      {:ok, _view, html} = live(conn, ~p"/merchant-favor")
+
+      refute html =~ "rf-realm-select"
+    end
+
+    test "uploading a multi-realm export shows a dropdown defaulting to the most recently scanned realm",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/merchant-favor")
+
+      export = File.read!(@multi_realm_fixture)
+
+      file =
+        file_input(view, "#upload-form", :tsm_export, [
+          %{name: "AppData.lua", content: export, type: "text/x-lua"}
+        ])
+
+      render_upload(file, "AppData.lua")
+      html = view |> form("#upload-form", %{}) |> render_submit()
+
+      assert html =~ "rf-realm-select"
+      assert html =~ "PvP-Horde"
+      assert html =~ "Stale-OldRealm"
+      # Fireblood (item 4625) is priced at 1544c on the PvP-Horde realm
+      # (the more recently scanned one, selected by default) — x10 for
+      # the Earthly Expert Herbs crate's fill option = 15440c = 1g 54s 40c.
+      assert html =~ "1g 54s 40c"
+    end
+
+    test "switching realms recomputes Fill cost from that realm's own Recent Value only, never blending realms",
+         %{conn: conn} do
+      {:ok, view, _html} = live(conn, ~p"/merchant-favor")
+
+      export = File.read!(@multi_realm_fixture)
+
+      file =
+        file_input(view, "#upload-form", :tsm_export, [
+          %{name: "AppData.lua", content: export, type: "text/x-lua"}
+        ])
+
+      render_upload(file, "AppData.lua")
+      view |> form("#upload-form", %{}) |> render_submit()
+
+      html = view |> form("#realm-form", %{"realm" => "Stale-OldRealm"}) |> render_change()
+
+      # Fireblood is 109c on Stale-OldRealm — x10 = 1090c = 10s 90c.
+      # The PvP-Horde figure (1g 54s 40c) must be gone, not just added
+      # alongside it: a visitor should never see a blend of two realms.
+      assert html =~ "10s 90c"
+      refute html =~ "1g 54s 40c"
+    end
   end
 
   test "clearing the snapshot empties the table and asks the client to clear localStorage", %{
@@ -162,8 +224,8 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLiveTest do
 
       refute html =~ "rf-shopping-fab-badge"
       assert html =~ "Waylaid Crate: Apprentice Curiosities x3"
-      # 68c * 3 = 204c = 2s 4c.
-      assert html =~ "2s 4c"
+      # 200c * 3 = 600c = 6s 0c.
+      assert html =~ "6s 0c"
       # Elixir of Ogre Strength at 300c/unit * 3 = 900c = 9s 0c.
       assert html =~ "Elixir of Ogre Strength x3"
       assert html =~ "9s 0c"

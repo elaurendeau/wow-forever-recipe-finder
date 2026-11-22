@@ -21,6 +21,7 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
     CrateEfficiency,
     CrateResultsFilter,
     CrateShoppingList,
+    PriceSnapshot,
     ProfitComputation
   }
 
@@ -56,7 +57,7 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
       [export_text] ->
         captured_at = DateTime.utc_now()
 
-        case load_export(socket, export_text, captured_at) do
+        case load_export(socket, export_text, captured_at, nil) do
           {:ok, socket} ->
             {:noreply,
              push_event(socket, "store_snapshot", %{
@@ -82,10 +83,23 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
         {:error, _reason} -> DateTime.utc_now()
       end
 
-    case load_export(socket, export_text, captured_at) do
+    case load_export(socket, export_text, captured_at, params["realm"]) do
       {:ok, socket} -> {:noreply, socket}
       {:error, socket} -> {:noreply, push_event(socket, "clear_snapshot", %{})}
     end
+  end
+
+  # Same shared realm selector as every page — see RecipeFinderLive's
+  # own handler for the full rationale.
+  def handle_event("select_realm", %{"realm" => realm}, socket) do
+    snapshot = PriceSnapshot.for_realm(socket.assigns.price_snapshot, realm)
+
+    socket =
+      socket
+      |> assign(price_snapshot: snapshot, results: CrateEfficiency.compute_results(snapshot))
+      |> push_event("store_realm", %{realm: realm})
+
+    {:noreply, socket}
   end
 
   def handle_event("clear_snapshot", _params, socket) do
@@ -154,9 +168,11 @@ defmodule WowForeverRecipeFinderWeb.MerchantFavorLive do
     {:noreply, assign(socket, filter: %{socket.assigns.filter | sort_dir: new_dir})}
   end
 
-  defp load_export(socket, export_text, captured_at) do
+  defp load_export(socket, export_text, captured_at, saved_realm) do
     case ProfitComputation.parse_export(export_text) do
       {:ok, snapshot} ->
+        snapshot = PriceSnapshot.for_realm(snapshot, saved_realm)
+
         socket =
           socket
           |> assign(price_snapshot: snapshot, captured_at: captured_at, upload_error: nil)

@@ -29,18 +29,24 @@ import topbar from "../vendor/topbar"
 // revisit skips re-uploading entirely rather than pre-filling a picker.
 const SNAPSHOT_KEY = "rf_tsm_export"
 const CAPTURED_AT_KEY = "rf_tsm_captured_at"
+// A visitor's chosen realm (per the top-right realm selector, shared
+// across every page) — kept separate from the snapshot blob above
+// since switching realms shouldn't re-save the whole multi-hundred-KB
+// export text, only this small string.
+const REALM_KEY = "rf_tsm_realm"
 
 const Hooks = {
   TsmSnapshot: {
     mounted() {
-      let data, capturedAt
+      let data, capturedAt, realm
       try {
         data = localStorage.getItem(SNAPSHOT_KEY)
         capturedAt = localStorage.getItem(CAPTURED_AT_KEY)
+        realm = localStorage.getItem(REALM_KEY)
       } catch (_e) {
         data = null
       }
-      if (data) this.pushEvent("restore_snapshot", {data, captured_at: capturedAt})
+      if (data) this.pushEvent("restore_snapshot", {data, captured_at: capturedAt, realm})
 
       this.handleEvent("store_snapshot", ({data, captured_at}) => {
         try {
@@ -52,10 +58,20 @@ const Hooks = {
         }
       })
 
+      this.handleEvent("store_realm", ({realm}) => {
+        try {
+          localStorage.setItem(REALM_KEY, realm)
+        } catch (_e) {
+          // Storage full or unavailable — the selection still applies
+          // for this page view, it just won't follow to another page.
+        }
+      })
+
       this.handleEvent("clear_snapshot", () => {
         try {
           localStorage.removeItem(SNAPSHOT_KEY)
           localStorage.removeItem(CAPTURED_AT_KEY)
+          localStorage.removeItem(REALM_KEY)
         } catch (_e) {
           // Nothing to clean up if storage was never writable.
         }

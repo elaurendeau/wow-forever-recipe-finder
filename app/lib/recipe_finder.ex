@@ -33,6 +33,7 @@ defmodule WowForeverRecipeFinder do
     exports:
       [
         ProfitComputation,
+        PriceSnapshot,
         CatalogSeeder,
         ProfitResult,
         ResultsFilter,

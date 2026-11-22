@@ -12,6 +12,23 @@
       No data uploaded yet
     <% end %>
   </div>
+  <%= if @price_snapshot && length(@price_snapshot.available_realms) > 0 do %>
+    <form id="realm-form" phx-change="select_realm">
+      <select
+        name="realm"
+        class="rf-realm-select"
+        title="Recent Value prices come from this realm's own AH scans — TSM keeps history for every realm you've scanned, not just the one you play now, so pick the right one."
+      >
+        <option
+          :for={r <- @price_snapshot.available_realms}
+          value={r}
+          selected={r == @price_snapshot.realm}
+        >
+          {r}
+        </option>
+      </select>
+    </form>
+  <% end %>
   <form id="upload-form" phx-change="validate_upload" phx-submit="process_upload">
     <div class="rf-upload-pill">
       <.live_file_input upload={@uploads.tsm_export} />
