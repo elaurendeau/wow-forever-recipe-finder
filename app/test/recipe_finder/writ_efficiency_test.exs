@@ -73,14 +73,16 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
 
     snap = snapshot([{1, 300}, {2, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.writ_item_cost_copper == 300
     assert result.required_items_cost_copper == 300
     assert result.total_cost_copper == 600
-    assert result.total_reputation == 150
-    # 150 rep / (600 copper / 10_000 copper-per-gold) = 150 / 0.06 = 2500.0
-    assert_in_delta result.rep_per_gold, 2500.0, 0.0001
+    # The selected side's own amount (75), never both factions summed
+    # (150) — see the regression tests below for why.
+    assert result.total_reputation == 75
+    # 75 rep / (600 copper / 10_000 copper-per-gold) = 75 / 0.06 = 1250.0
+    assert_in_delta result.rep_per_gold, 1250.0, 0.0001
     assert result.missing_data_reasons == []
 
     assert result.required_item_breakdown == [
@@ -93,11 +95,65 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
            ]
   end
 
+  describe "reputation is the selected side's own amount, never both factions summed" do
+    # Regression test for a real user report: this app said 5 selected
+    # writs would pay 1050 reputation (both factions' amounts summed);
+    # turning them in actually paid 525 — exactly the sum of just the
+    # Horde-side ("Durotar Supply and Logistics") amounts. See
+    # WritEfficiency's own moduledoc.
+    test "side: :horde picks the Durotar Supply and Logistics amount, not the Alliance one" do
+      w =
+        writ(
+          writ_item_wowhead_id: 1,
+          reputation_rewards: [
+            reward("Azeroth Commerce Authority", 75),
+            reward("Durotar Supply and Logistics", 125)
+          ]
+        )
+
+      result = WritEfficiency.compute_result(w, snapshot([{1, 100}]), :horde)
+
+      assert result.total_reputation == 125
+    end
+
+    test "side: :alliance picks the Azeroth Commerce Authority amount, not the Horde one" do
+      w =
+        writ(
+          writ_item_wowhead_id: 1,
+          reputation_rewards: [
+            reward("Azeroth Commerce Authority", 75),
+            reward("Durotar Supply and Logistics", 125)
+          ]
+        )
+
+      result = WritEfficiency.compute_result(w, snapshot([{1, 100}]), :alliance)
+
+      assert result.total_reputation == 75
+    end
+
+    test "side: :any has no single real amount to report — nil, never a fabricated sum of both" do
+      w =
+        writ(
+          writ_item_wowhead_id: 1,
+          reputation_rewards: [
+            reward("Azeroth Commerce Authority", 75),
+            reward("Durotar Supply and Logistics", 125)
+          ]
+        )
+
+      result = WritEfficiency.compute_result(w, snapshot([{1, 100}]), :any)
+
+      assert result.total_reputation == nil
+      # rep_per_gold must also be nil, not crash on nil / cost.
+      assert result.rep_per_gold == nil
+    end
+  end
+
   test "a required item needed more than once multiplies its unit Recent Value by quantity" do
     w = writ(writ_item_wowhead_id: 1, required_items: [required_item(2, 3)])
     snap = snapshot([{1, 100}, {2, 50}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.required_items_cost_copper == 150
     assert result.total_cost_copper == 250
@@ -108,7 +164,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     # item 3 is missing from the snapshot
     snap = snapshot([{1, 100}, {2, 50}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.required_items_cost_copper == nil
     assert :missing_required_item_recent_value in result.missing_data_reasons
@@ -133,7 +189,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     w = writ(writ_item_wowhead_id: 1, resolution_status: :pending_quest_page, required_items: [])
     snap = snapshot([{1, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.writ_item_cost_copper == 300
     assert result.required_items_cost_copper == nil
@@ -146,7 +202,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     w = writ(writ_item_wowhead_id: 1, resolution_status: :complete, required_items: [])
     snap = snapshot([{1, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.total_cost_copper == nil
     assert :no_required_items_data in result.missing_data_reasons
@@ -157,7 +213,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     # item 1 (the writ item) is absent from the snapshot entirely
     snap = snapshot([{2, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.writ_item_cost_copper == nil
     assert result.total_cost_copper == nil
@@ -168,7 +224,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     w = writ(writ_item_wowhead_id: 1, required_items: [required_item(2)])
     snap = snapshot([{1, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.required_items_cost_copper == nil
     assert result.total_cost_copper == nil
@@ -179,7 +235,7 @@ defmodule WowForeverRecipeFinder.WritEfficiencyTest do
     w = writ(writ_item_wowhead_id: 1, required_items: [required_item(2)])
     snap = snapshot([{1, 300}])
 
-    result = WritEfficiency.compute_result(w, snap)
+    result = WritEfficiency.compute_result(w, snap, :alliance)
 
     assert result.rep_per_gold == nil
   end

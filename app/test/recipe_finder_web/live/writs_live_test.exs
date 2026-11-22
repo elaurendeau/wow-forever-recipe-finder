@@ -355,18 +355,21 @@ defmodule WowForeverRecipeFinderWeb.WritsLiveTest do
       view |> element("input[phx-value-id='#{id}']") |> render_click()
       view |> element("button.rf-map-fab") |> render_click()
 
-      # The fixture writ pays 75 rep to each of two factions — the
-      # total shown is the sum (150), same as the main table's own
-      # Reputation column, not either faction's amount alone. Scoped
-      # to the on-canvas badge specifically, not the whole page, so
-      # this can't pass from an unrelated "75" elsewhere (e.g. the
-      # table's own per-faction breakdown text).
+      # The fixture writ pays 75 rep to each of two factions, but only
+      # one of those amounts is real for a given player — the default
+      # side is Horde, so the total shown is the Durotar Supply and
+      # Logistics amount (75) alone, never both factions summed (150;
+      # a real prior bug, confirmed against an actual user report —
+      # see WritEfficiency's own moduledoc). Scoped to the on-canvas
+      # badge specifically, not the whole page, so this can't pass
+      # from an unrelated "75" elsewhere (e.g. the table's own
+      # per-faction breakdown text) for the wrong reason.
       canvas_badge = view |> element(".rf-map-total-rep") |> render()
-      assert canvas_badge =~ "150"
+      assert canvas_badge =~ "75"
       assert canvas_badge =~ "total rep if you do all of them"
 
       panel_total = view |> element(".rf-map-panel-head") |> render()
-      assert panel_total =~ "150"
+      assert panel_total =~ "75"
       assert panel_total =~ "total rep if you do all of them"
     end
 

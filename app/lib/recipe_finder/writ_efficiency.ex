@@ -15,26 +15,49 @@ defmodule WowForeverRecipeFinder.WritEfficiency do
   deliberate decision locked in for this feature (see docs/PRD.md §
   7.8), not an oversight: `price_copper` (region Sale Avg) is never
   read here at all.
+
+  **Reputation is the selected side's own amount, never both factions
+  summed.** Every writ's `reputation_rewards` lists an amount for
+  *each* of the two factions ("Azeroth Commerce Authority" and
+  "Durotar Supply and Logistics") — these are the Alliance and Horde
+  versions of the same reward, not two simultaneous grants. Confirmed
+  directly against a real user's report: turning in 5 writs this app
+  said would pay 1050 reputation (both factions' amounts summed)
+  actually paid 525 — exactly the sum of just the Horde-side
+  ("Durotar Supply and Logistics") amounts. Summing both was a real
+  bug, not a simplification; see `reputation_for_side/2`.
   """
 
-  alias WowForeverRecipeFinder.{PriceSnapshot, Writ, WritEfficiencyResult}
+  alias WowForeverRecipeFinder.{PriceSnapshot, Writ, WritEfficiencyResult, WritResultsFilter}
 
-  @doc "Every writ in the catalog, joined against an already-parsed `PriceSnapshot`, sorted by rep-per-gold descending."
-  @spec compute_results(PriceSnapshot.t()) :: [WritEfficiencyResult.t()]
-  def compute_results(%PriceSnapshot{} = snapshot) do
+  # The two factions a writ's reputation_rewards always lists, by the
+  # side they actually belong to — confirmed against the real
+  # extraction (exactly these two names, every writ, no exceptions —
+  # see docs/DATA_SOURCES.md). :any has no single answer (a visitor
+  # browsing both sides' writs isn't committed to either faction), so
+  # it deliberately has no entry here — see reputation_for_side/2.
+  @faction_name_by_side %{
+    horde: "Durotar Supply and Logistics",
+    alliance: "Azeroth Commerce Authority"
+  }
+
+  @doc "Every writ in the catalog, joined against an already-parsed `PriceSnapshot`, sorted by rep-per-gold descending for the given side."
+  @spec compute_results(PriceSnapshot.t(), WritResultsFilter.side()) :: [WritEfficiencyResult.t()]
+  def compute_results(%PriceSnapshot{} = snapshot, side) do
     writ_gateway().list_writs()
-    |> Enum.map(&compute_result(&1, snapshot))
+    |> Enum.map(&compute_result(&1, snapshot, side))
     |> Enum.sort_by(&sort_key/1)
   end
 
   @doc """
-  The pure join/compute for one writ against one snapshot — no
-  gateway call, no I/O. A field is `nil`, with its reason recorded in
-  `missing_data_reasons`, whenever the data to compute it isn't
+  The pure join/compute for one writ against one snapshot and side —
+  no gateway call, no I/O. A field is `nil`, with its reason recorded
+  in `missing_data_reasons`, whenever the data to compute it isn't
   there; never a fabricated zero.
   """
-  @spec compute_result(Writ.t(), PriceSnapshot.t()) :: WritEfficiencyResult.t()
-  def compute_result(%Writ{} = writ, %PriceSnapshot{} = snapshot) do
+  @spec compute_result(Writ.t(), PriceSnapshot.t(), WritResultsFilter.side()) ::
+          WritEfficiencyResult.t()
+  def compute_result(%Writ{} = writ, %PriceSnapshot{} = snapshot, side) do
     reasons = []
 
     {writ_item_cost, reasons} =
@@ -46,7 +69,7 @@ defmodule WowForeverRecipeFinder.WritEfficiency do
     {required_items_cost, reasons} = compute_required_items_cost(writ, snapshot, reasons)
 
     total_cost = sum_if_both_present(writ_item_cost, required_items_cost)
-    total_reputation = Enum.sum(Enum.map(writ.reputation_rewards, & &1.amount))
+    total_reputation = reputation_for_side(writ.reputation_rewards, side)
     rep_per_gold = compute_rep_per_gold(total_reputation, total_cost)
 
     %WritEfficiencyResult{
@@ -126,6 +149,23 @@ defmodule WowForeverRecipeFinder.WritEfficiency do
     end
   end
 
+  # `:any` means "browsing both sides' writs," not "I'm both
+  # factions at once" — there's no single real reputation amount to
+  # report, so this is the one case that returns `nil` on purpose,
+  # same "don't fabricate a number" rule as everywhere else.
+  defp reputation_for_side(_rewards, :any), do: nil
+
+  defp reputation_for_side(rewards, side) do
+    faction_name = Map.fetch!(@faction_name_by_side, side)
+
+    rewards
+    |> Enum.find(&(&1.faction_display_name == faction_name))
+    |> case do
+      %{amount: amount} -> amount
+      nil -> nil
+    end
+  end
+
   defp fetch_recent_value(wowhead_id, snapshot) do
     case PriceSnapshot.fetch_price(snapshot, wowhead_id) do
       {:ok, %{recent_value_copper: copper}} when is_integer(copper) -> {:ok, copper}
@@ -139,6 +179,7 @@ defmodule WowForeverRecipeFinder.WritEfficiency do
   # Undefined (not zero or infinite) when cost can't be computed at
   # all — same "undefined ROI" discipline as ProfitComputation's
   # profit_pct for a free craft.
+  defp compute_rep_per_gold(nil, _total_cost_copper), do: nil
   defp compute_rep_per_gold(_total_reputation, nil), do: nil
   defp compute_rep_per_gold(_total_reputation, 0), do: nil
 

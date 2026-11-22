@@ -120,10 +120,14 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
   # own handler for the full rationale.
   def handle_event("select_realm", %{"realm" => realm}, socket) do
     snapshot = PriceSnapshot.for_realm(socket.assigns.price_snapshot, realm)
+    side = socket.assigns.filter.side
 
     socket =
       socket
-      |> assign(price_snapshot: snapshot, results: WritEfficiency.compute_results(snapshot))
+      |> assign(
+        price_snapshot: snapshot,
+        results: WritEfficiency.compute_results(snapshot, side)
+      )
       |> push_event("store_realm", %{realm: realm})
 
     {:noreply, socket}
@@ -205,9 +209,28 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
     {:noreply, assign(socket, filter: filter)}
   end
 
+  # Side isn't just a display filter — it decides WHICH faction's
+  # reputation amount is the real one (see WritEfficiency's own doc),
+  # so changing it has to recompute `results`, not just re-filter the
+  # existing ones.
   def handle_event("set_side", %{"side" => side}, socket) do
-    filter = %{socket.assigns.filter | side: String.to_existing_atom(side)}
-    {:noreply, assign(socket, filter: filter, selected_pin_id: nil)}
+    side = String.to_existing_atom(side)
+    filter = %{socket.assigns.filter | side: side}
+
+    socket =
+      case socket.assigns.price_snapshot do
+        nil ->
+          assign(socket, filter: filter, selected_pin_id: nil)
+
+        snapshot ->
+          assign(socket,
+            filter: filter,
+            selected_pin_id: nil,
+            results: WritEfficiency.compute_results(snapshot, side)
+          )
+      end
+
+    {:noreply, socket}
   end
 
   def handle_event("toggle_map_panel", _params, socket) do
@@ -246,7 +269,7 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
         socket =
           socket
           |> assign(price_snapshot: snapshot, captured_at: captured_at, upload_error: nil)
-          |> assign(results: WritEfficiency.compute_results(snapshot))
+          |> assign(results: WritEfficiency.compute_results(snapshot, socket.assigns.filter.side))
 
         {:ok, socket}
 
@@ -310,6 +333,10 @@ defmodule WowForeverRecipeFinderWeb.WritsLive do
 
   defp format_rep_per_gold(nil), do: "—"
   defp format_rep_per_gold(v), do: "#{:erlang.float_to_binary(v * 1.0, decimals: 1)} rep/g"
+
+  # nil only when side: :any — see WritEfficiency's own doc.
+  defp format_reputation(nil), do: "—"
+  defp format_reputation(v), do: v
 
   defp pending_data?(result), do: :no_required_items_data in result.missing_data_reasons
 

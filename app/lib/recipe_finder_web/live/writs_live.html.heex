@@ -209,7 +209,7 @@
               <% end %>
             </td>
             <td class="num">
-              {r.total_reputation}
+              {format_reputation(r.total_reputation)}
               <div class="rf-item-tier">
                 {Enum.map_join(
                   r.writ.reputation_rewards,
@@ -268,7 +268,9 @@
       <div>
         <strong>{length(@selected_writ_ids)}</strong>
         writs selected —
-        <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+        <strong>{format_reputation(
+          WritShoppingList.total_reputation(@results, @selected_writ_ids)
+        )}</strong>
         total rep, {format_copper(WritShoppingList.total_cost_copper(all_lines))} total cost
       </div>
       <div class="rf-shopping-list-groups">
@@ -368,7 +370,9 @@
           </div>
           <%= if @selected_writ_ids != [] do %>
             <div class="rf-map-total-rep">
-              <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+              <strong>{format_reputation(
+                WritShoppingList.total_reputation(@results, @selected_writ_ids)
+              )}</strong>
               total rep if you do all of them
             </div>
           <% end %>
@@ -472,7 +476,9 @@
               <h3>{length(checked_pins)} checked writ(s) on the map</h3>
               <%= if @selected_writ_ids != [] do %>
                 <div>
-                  <strong>{WritShoppingList.total_reputation(@results, @selected_writ_ids)}</strong>
+                  <strong>{format_reputation(
+                    WritShoppingList.total_reputation(@results, @selected_writ_ids)
+                  )}</strong>
                   total rep if you do all of them
                 </div>
               <% end %>

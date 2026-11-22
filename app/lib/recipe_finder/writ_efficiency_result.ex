@@ -39,7 +39,11 @@ defmodule WowForeverRecipeFinder.WritEfficiencyResult do
           writ_item_cost_copper: non_neg_integer() | nil,
           required_items_cost_copper: non_neg_integer() | nil,
           total_cost_copper: non_neg_integer() | nil,
-          total_reputation: non_neg_integer(),
+          # `nil` only when side: :any — a visitor browsing both
+          # sides' writs isn't committed to either faction, so there's
+          # no single real reputation amount to report (never a
+          # fabricated sum of both). See WritEfficiency's own doc.
+          total_reputation: non_neg_integer() | nil,
           rep_per_gold: float() | nil,
           missing_data_reasons: [missing_data_reason()],
           required_item_breakdown: [required_item_line()]

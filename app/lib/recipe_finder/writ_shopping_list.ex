@@ -47,13 +47,22 @@ defmodule WowForeverRecipeFinder.WritShoppingList do
     end)
   end
 
-  @doc "Total reputation if every selected writ were turned in."
-  @spec total_reputation([WritEfficiencyResult.t()], [pos_integer()]) :: non_neg_integer()
+  @doc """
+  Total reputation if every selected writ were turned in, or `nil` if
+  any selected writ's own reputation is unknown (side: :any — see
+  `WritEfficiency`'s own doc) — never a partial sum presented as the
+  whole, same rule as `total_cost_copper/1`.
+  """
+  @spec total_reputation([WritEfficiencyResult.t()], [pos_integer()]) :: non_neg_integer() | nil
   def total_reputation(results, selected_writ_ids) do
-    results
-    |> Enum.filter(&(&1.writ.id in selected_writ_ids))
-    |> Enum.map(& &1.total_reputation)
-    |> Enum.sum()
+    amounts =
+      results
+      |> Enum.filter(&(&1.writ.id in selected_writ_ids))
+      |> Enum.map(& &1.total_reputation)
+
+    if Enum.all?(amounts, &is_integer/1) do
+      Enum.sum(amounts)
+    end
   end
 
   @doc "Total cost in copper across every line, or nil if any line's cost is unknown — never a partial sum presented as the whole."
