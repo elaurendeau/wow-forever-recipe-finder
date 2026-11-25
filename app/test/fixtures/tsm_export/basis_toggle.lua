@@ -1,0 +1,2 @@
+select(2, ...).LoadData("AUCTIONDB_REGION_SALE","Forever-US",[[return {downloadTime=1794374562,fields={"itemString","regionSale","regionSoldPerDay","regionSalePercent"},data={{9001,9C,4S8,P0},{9002,1I,4S8,P0}}}]]) --<AUCTIONDB_REGION_SALE,Forever-US,1794374562>
+select(2, ...).LoadData("AUCTIONDB_NON_COMMODITY_DATA","PvP-Horde",[[return {downloadTime=1794374562,fields={"itemString","minBuyout","numAuctions","marketValueRecent"},data={{9001,CG,5,CG},{9002,U,5,U}}}]]) --<AUCTIONDB_NON_COMMODITY_DATA,PvP-Horde,1794374562,1>

@@ -29,7 +29,7 @@
       </select>
     </form>
   <% end %>
-  <form phx-change="validate_upload" phx-submit="process_upload">
+  <form id="upload-form" phx-change="validate_upload" phx-submit="process_upload">
     <div class="rf-upload-pill">
       <.live_file_input upload={@uploads.tsm_export} />
       <button type="submit">Upload</button>
@@ -80,7 +80,28 @@
 
   <%= if MapSet.member?(@known_slugs, @active_profession) do %>
     <% filtered = ResultsFilter.apply(@results, @filter) %>
-    <form phx-change="filter_changed">
+    <div class="rf-side-toggle" id="price-basis-toggle">
+      <span class="rf-side-toggle-label">Price &amp; cost basis</span>
+      <button
+        type="button"
+        class={["rf-side-chip", @price_basis == :recent && "on"]}
+        phx-click="set_price_basis"
+        phx-value-basis="recent"
+        title="TSM's realm-level Recent Value — only tracked for non-commodity items, so most raw-material reagents will show as unknown under this basis."
+      >
+        DB Recent
+      </button>
+      <button
+        type="button"
+        class={["rf-side-chip", @price_basis == :region_avg && "on"]}
+        phx-click="set_price_basis"
+        phx-value-basis="region_avg"
+        title="TSM's region-wide Region Sale Avg — tracked for every item, including commodities."
+      >
+        Region Sale Avg
+      </button>
+    </div>
+    <form id="filter-form" phx-change="filter_changed">
       <div class="rf-filterbar">
         <input
           type="text"
@@ -136,14 +157,6 @@
               <th class={th_class(@filter, :price)} phx-click="sort_by" phx-value-field="price">
                 Price{sort_indicator(@filter, :price)}
               </th>
-              <th
-                class={th_class(@filter, :recent_value)}
-                phx-click="sort_by"
-                phx-value-field="recent_value"
-                title="TSM's realm-level &quot;Recent Value&quot; — only tracked for non-commodity items"
-              >
-                Recent{sort_indicator(@filter, :recent_value)}
-              </th>
               <th class="num">Cost</th>
               <th class={th_class(@filter, :profit)} phx-click="sort_by" phx-value-field="profit">
                 Profit{sort_indicator(@filter, :profit)}
@@ -154,14 +167,6 @@
                 phx-value-field="profit_pct"
               >
                 %{sort_indicator(@filter, :profit_pct)}
-              </th>
-              <th
-                class={th_class(@filter, :recent_profit)}
-                phx-click="sort_by"
-                phx-value-field="recent_profit"
-                title="Profit if sold at Recent Value instead of Region Sale Avg"
-              >
-                Recent Profit{sort_indicator(@filter, :recent_profit)}
               </th>
             </tr>
             <tr class="rf-table-filter-row">
@@ -192,14 +197,6 @@
                   value={@filter.max_price_copper}
                 />
               </td>
-              <td>
-                <input
-                  type="text"
-                  name="filter[max_recent_value_copper]"
-                  placeholder="max"
-                  value={@filter.max_recent_value_copper}
-                />
-              </td>
               <td></td>
               <td>
                 <input
@@ -215,14 +212,6 @@
                   name="filter[min_profit_pct]"
                   placeholder="min %"
                   value={@filter.min_profit_pct}
-                />
-              </td>
-              <td>
-                <input
-                  type="text"
-                  name="filter[min_recent_profit_copper]"
-                  placeholder="min"
-                  value={@filter.min_recent_profit_copper}
                 />
               </td>
             </tr>
@@ -250,7 +239,6 @@
                 <td class="num">{format_number(r.sold_per_day)}</td>
                 <td class="num rf-muted">{format_pct(r.sale_confidence_pct)}</td>
                 <td class="num">{format_copper(r.price_copper)}</td>
-                <td class="num rf-muted">{format_copper(r.recent_value_copper)}</td>
                 <td class="num rf-muted">
                   <%= if r.reagent_breakdown == [] do %>
                     {format_copper(r.mat_cost_copper)}
@@ -299,15 +287,6 @@
                   r.profit_pct && r.profit_pct <= 0 && "rf-profit-neg"
                 ]}>
                   {format_pct(r.profit_pct)}
-                </td>
-                <td class={[
-                  "num",
-                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper > 0 &&
-                    "rf-profit-pos",
-                  r.recent_profit_per_unit_copper && r.recent_profit_per_unit_copper <= 0 &&
-                    "rf-profit-neg"
-                ]}>
-                  {format_profit(r.recent_profit_per_unit_copper)}
                 </td>
               </tr>
             <% end %>

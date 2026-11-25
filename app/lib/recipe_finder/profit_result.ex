@@ -5,6 +5,14 @@ defmodule WowForeverRecipeFinder.ProfitResult do
   the underlying data to compute it is missing — see
   `missing_data_reasons` and docs/ARCHITECTURE.md § Validate at the
   Boundary, Fail Loudly.
+
+  **`price_copper` and every reagent price feeding `mat_cost_copper`
+  follow whichever `ProfitComputation.price_basis/0` the visitor picked**
+  (DB Recent Value or Region Sale Avg, DB Recent by default) — this
+  struct doesn't carry which basis produced it; the caller already knows,
+  since it's the same basis for every result in a given render. See
+  `ProfitComputation`'s own moduledoc for why both sides (sale price and
+  reagent cost) always use the same basis rather than mixing them.
   """
 
   alias WowForeverRecipeFinder.Pattern
@@ -13,13 +21,11 @@ defmodule WowForeverRecipeFinder.ProfitResult do
   defstruct [
     :pattern,
     :price_copper,
-    :recent_value_copper,
     :sold_per_day,
     :sale_confidence_pct,
     :mat_cost_copper,
     :net_profit_per_unit_copper,
     :profit_pct,
-    :recent_profit_per_unit_copper,
     :missing_data_reasons,
     reagent_breakdown: []
   ]
@@ -38,13 +44,11 @@ defmodule WowForeverRecipeFinder.ProfitResult do
   @type t :: %__MODULE__{
           pattern: Pattern.t(),
           price_copper: non_neg_integer() | nil,
-          recent_value_copper: non_neg_integer() | nil,
           sold_per_day: float() | nil,
           sale_confidence_pct: float() | nil,
           mat_cost_copper: non_neg_integer() | nil,
           net_profit_per_unit_copper: integer() | nil,
           profit_pct: float() | nil,
-          recent_profit_per_unit_copper: integer() | nil,
           missing_data_reasons: [missing_data_reason()],
           reagent_breakdown: [reagent_line()]
         }

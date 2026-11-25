@@ -1,0 +1,27 @@
+{
+  "profession": { "slug": "tailoring", "display_name": "Tailoring" },
+  "patterns": [
+    {
+      "name": "Test Robe",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "trainer",
+      "wiki_slug": "Test_Robe",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9001,
+        "display_name": "Test Robe",
+        "wiki_slug": "Test_Robe"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 9002,
+          "display_name": "Test Cloth",
+          "wiki_slug": "Test_Cloth",
+          "quantity": 2
+        }
+      ],
+      "wowhead_spell_id": 9101
+    }
+  ]
+}

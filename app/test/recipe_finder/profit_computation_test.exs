@@ -1,13 +1,21 @@
 defmodule WowForeverRecipeFinder.ProfitComputationTest do
   use ExUnit.Case, async: true
 
-  alias WowForeverRecipeFinder.{Item, Pattern, PriceSnapshot, ProfitComputation, ProfitResult, Reagent}
+  alias WowForeverRecipeFinder.{
+    Item,
+    Pattern,
+    PriceSnapshot,
+    ProfitComputation,
+    ProfitResult,
+    Reagent
+  }
 
   # Pure-function unit tests per docs/ELIXIR_TEST_MANIFESTO.md § What
-  # Still Gets a Plain Unit Test: `compute_result/2` has no I/O, so real
+  # Still Gets a Plain Unit Test: `compute_result/3` has no I/O, so real
   # in-memory structs are enough — no fixtures, no gateway.
 
-  defp item(wowhead_id, name), do: %Item{wowhead_id: wowhead_id, display_name: name, wiki_slug: name}
+  defp item(wowhead_id, name),
+    do: %Item{wowhead_id: wowhead_id, display_name: name, wiki_slug: name}
 
   defp pattern(crafted_item, reagents) do
     %Pattern{
@@ -26,23 +34,24 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     %PriceSnapshot{
       prices_by_item_id:
         Map.new(prices, fn {id, price, spd, conf} ->
-          {id, %WowForeverRecipeFinder.ItemPrice{
-            wowhead_id: id,
-            price_copper: price,
-            sold_per_day: spd,
-            sale_confidence_pct: conf
-          }}
+          {id,
+           %WowForeverRecipeFinder.ItemPrice{
+             wowhead_id: id,
+             price_copper: price,
+             sold_per_day: spd,
+             sale_confidence_pct: conf
+           }}
         end)
     }
   end
 
-  test "full data: computes price, mat cost, and net profit after the AH cut correctly" do
+  test "full data: computes price, mat cost, and net profit after the AH cut correctly, at the Region Sale Avg basis" do
     cloth = item(1, "Bolt of Linen Cloth")
     shirt = item(2, "White Linen Shirt")
     pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
     snap = snapshot([{1, 50, 100.0, 90.0}, {2, 200, 10.0, 80.0}])
 
-    result = ProfitComputation.compute_result(pat, snap)
+    result = ProfitComputation.compute_result(pat, snap, :region_avg)
 
     assert result.price_copper == 200
     assert result.mat_cost_copper == 100
@@ -51,59 +60,116 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     assert result.profit_pct == 90.0
     assert result.missing_data_reasons == []
     assert ProfitResult.profitable?(result)
+
     assert result.reagent_breakdown == [
-             %{display_name: "Bolt of Linen Cloth", quantity: 2, unit_price_copper: 50, line_total_copper: 100}
+             %{
+               display_name: "Bolt of Linen Cloth",
+               quantity: 2,
+               unit_price_copper: 50,
+               line_total_copper: 100
+             }
            ]
   end
 
-  test "recent profit is computed from recent_value_copper, independently of price_copper" do
-    cloth = item(1, "Bolt of Linen Cloth")
-    shirt = item(2, "White Linen Shirt")
-    pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
+  describe "price_basis: :recent uses Recent Value for both the sale price and every reagent's cost" do
+    test "price, reagent cost, and profit all come from recent_value_copper, independently of price_copper" do
+      cloth = item(1, "Bolt of Linen Cloth")
+      shirt = item(2, "White Linen Shirt")
+      pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
 
-    snap = %PriceSnapshot{
-      prices_by_item_id: %{
-        1 => %WowForeverRecipeFinder.ItemPrice{wowhead_id: 1, price_copper: 50, sold_per_day: 100.0, sale_confidence_pct: 90.0},
-        2 => %WowForeverRecipeFinder.ItemPrice{
-          wowhead_id: 2,
-          price_copper: 200,
-          sold_per_day: 10.0,
-          sale_confidence_pct: 80.0,
-          recent_value_copper: 300
+      snap = %PriceSnapshot{
+        prices_by_item_id: %{
+          1 => %WowForeverRecipeFinder.ItemPrice{
+            wowhead_id: 1,
+            price_copper: 999_999,
+            sold_per_day: 100.0,
+            sale_confidence_pct: 90.0,
+            recent_value_copper: 50
+          },
+          2 => %WowForeverRecipeFinder.ItemPrice{
+            wowhead_id: 2,
+            price_copper: 999_999,
+            sold_per_day: 10.0,
+            sale_confidence_pct: 80.0,
+            recent_value_copper: 200
+          }
         }
       }
-    }
 
-    result = ProfitComputation.compute_result(pat, snap)
+      result = ProfitComputation.compute_result(pat, snap, :recent)
 
-    assert result.price_copper == 200
-    assert result.recent_value_copper == 300
-    # Price-based profit stays on the 200 price: round(200*0.95)-100 = 90.
-    assert result.net_profit_per_unit_copper == 90
-    # Recent profit uses recent_value_copper instead: round(300*0.95)-100 = 185.
-    assert result.recent_profit_per_unit_copper == 185
+      assert result.price_copper == 200
+      assert result.mat_cost_copper == 100
+      assert result.net_profit_per_unit_copper == 90
+
+      assert result.reagent_breakdown == [
+               %{
+                 display_name: "Bolt of Linen Cloth",
+                 quantity: 2,
+                 unit_price_copper: 50,
+                 line_total_copper: 100
+               }
+             ]
+    end
+
+    test "a found item with no Recent Value (e.g. a commodity) is :no_sale_data, never a fabricated price" do
+      cloth = item(1, "Bolt of Linen Cloth")
+      shirt = item(2, "White Linen Shirt")
+      pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
+      # item 2 is found in the snapshot, but has no recent_value_copper
+      # (the AUCTIONDB_NON_COMMODITY_DATA table never tracks commodities).
+      snap = snapshot([{1, 50, 100.0, 90.0}, {2, 200, 10.0, 80.0}])
+
+      result = ProfitComputation.compute_result(pat, snap, :recent)
+
+      assert result.price_copper == nil
+      assert result.net_profit_per_unit_copper == nil
+      assert :no_sale_data in result.missing_data_reasons
+      # sold_per_day/confidence are still real, region-wide figures,
+      # independent of the basis — not hidden just because price is.
+      assert result.sold_per_day == 10.0
+      assert result.sale_confidence_pct == 80.0
+    end
+
+    test "a reagent with no Recent Value makes the whole mat cost nil, not a partial sum" do
+      cloth = item(1, "Bolt of Linen Cloth")
+      shirt = item(2, "White Linen Shirt")
+      pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
+
+      snap = %PriceSnapshot{
+        prices_by_item_id: %{
+          # cloth has no recent_value_copper at all.
+          1 => %WowForeverRecipeFinder.ItemPrice{
+            wowhead_id: 1,
+            price_copper: 50,
+            sold_per_day: 100.0,
+            sale_confidence_pct: 90.0
+          },
+          2 => %WowForeverRecipeFinder.ItemPrice{
+            wowhead_id: 2,
+            price_copper: 999_999,
+            sold_per_day: 10.0,
+            sale_confidence_pct: 80.0,
+            recent_value_copper: 200
+          }
+        }
+      }
+
+      result = ProfitComputation.compute_result(pat, snap, :recent)
+
+      assert result.mat_cost_copper == nil
+      assert :missing_reagent_price in result.missing_data_reasons
+    end
   end
 
-  test "recent profit is nil when recent_value_copper is nil (e.g. a commodity item)" do
-    cloth = item(1, "Bolt of Linen Cloth")
-    shirt = item(2, "White Linen Shirt")
-    pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
-    snap = snapshot([{1, 50, 100.0, 90.0}, {2, 200, 10.0, 80.0}])
-
-    result = ProfitComputation.compute_result(pat, snap)
-
-    assert result.recent_value_copper == nil
-    assert result.recent_profit_per_unit_copper == nil
-  end
-
-  test "crafted item has no sale data: price/profit are nil, reason recorded, never a fabricated zero" do
+  test "crafted item has no sale data at all: price/profit are nil, reason recorded, never a fabricated zero" do
     cloth = item(1, "Bolt of Linen Cloth")
     shirt = item(2, "White Linen Shirt")
     pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}])
     # item 2 (the crafted item) is absent from the snapshot entirely
     snap = snapshot([{1, 50, 100.0, 90.0}])
 
-    result = ProfitComputation.compute_result(pat, snap)
+    result = ProfitComputation.compute_result(pat, snap, :region_avg)
 
     assert result.price_copper == nil
     assert result.net_profit_per_unit_copper == nil
@@ -116,7 +182,7 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     pat = pattern(shirt, [])
     snap = snapshot([{2, 200, 10.0, 80.0}])
 
-    result = ProfitComputation.compute_result(pat, snap)
+    result = ProfitComputation.compute_result(pat, snap, :region_avg)
 
     assert result.mat_cost_copper == nil
     assert result.net_profit_per_unit_copper == nil
@@ -127,11 +193,14 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     cloth = item(1, "Bolt of Linen Cloth")
     thread = item(3, "Coarse Thread")
     shirt = item(2, "White Linen Shirt")
-    pat = pattern(shirt, [%Reagent{item: cloth, quantity: 2}, %Reagent{item: thread, quantity: 1}])
+
+    pat =
+      pattern(shirt, [%Reagent{item: cloth, quantity: 2}, %Reagent{item: thread, quantity: 1}])
+
     # thread (item 3) is missing from the snapshot
     snap = snapshot([{1, 50, 100.0, 90.0}, {2, 200, 10.0, 80.0}])
 
-    result = ProfitComputation.compute_result(pat, snap)
+    result = ProfitComputation.compute_result(pat, snap, :region_avg)
 
     assert result.mat_cost_copper == nil
     assert :missing_reagent_price in result.missing_data_reasons
@@ -140,12 +209,22 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
     # rather than going all-or-nothing the way mat_cost_copper does —
     # it's exactly the one that's missing that a visitor needs to see.
     assert result.reagent_breakdown == [
-             %{display_name: "Bolt of Linen Cloth", quantity: 2, unit_price_copper: 50, line_total_copper: 100},
-             %{display_name: "Coarse Thread", quantity: 1, unit_price_copper: nil, line_total_copper: nil}
+             %{
+               display_name: "Bolt of Linen Cloth",
+               quantity: 2,
+               unit_price_copper: 50,
+               line_total_copper: 100
+             },
+             %{
+               display_name: "Coarse Thread",
+               quantity: 1,
+               unit_price_copper: nil,
+               line_total_copper: nil
+             }
            ]
   end
 
-  test "compute_results/2 sorts by net per-unit profit descending, incomplete results last" do
+  test "compute_results/3 sorts by net per-unit profit descending, incomplete results last" do
     gold_item = item(10, "Gold Bar")
     silver_item = item(20, "Silver Bar")
     mystery_item = item(30, "Mystery Box")
@@ -163,7 +242,10 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
       ])
 
     results =
-      Enum.map([incomplete, profitable_b, profitable_a], &ProfitComputation.compute_result(&1, snap))
+      Enum.map(
+        [incomplete, profitable_b, profitable_a],
+        &ProfitComputation.compute_result(&1, snap, :region_avg)
+      )
       |> Enum.sort_by(fn
         %ProfitResult{net_profit_per_unit_copper: nil} -> {1, 0}
         %ProfitResult{net_profit_per_unit_copper: profit} -> {0, -profit}
@@ -174,5 +256,9 @@ defmodule WowForeverRecipeFinder.ProfitComputationTest do
              "Silver Bar",
              "Mystery Box"
            ]
+  end
+
+  test "default_price_basis/0 is :recent" do
+    assert ProfitComputation.default_price_basis() == :recent
   end
 end

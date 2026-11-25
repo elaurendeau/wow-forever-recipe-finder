@@ -40,7 +40,12 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         captured_at: nil,
         results: [],
         upload_error: nil,
-        filter: ResultsFilter.default_criteria()
+        filter: ResultsFilter.default_criteria(),
+        # DB Recent by default — see ProfitComputation's own doc for
+        # why, and for the real consequence (many commodity reagents
+        # have no Recent Value at all, so they show as "no sale data"
+        # until switched to Region Sale Avg).
+        price_basis: ProfitComputation.default_price_basis()
       )
       |> allow_upload(:tsm_export, accept: ~w(.lua), max_entries: 1, max_file_size: 20_000_000)
 
@@ -121,6 +126,15 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
     {:noreply, socket}
   end
 
+  # The pricing-basis toggle, per docs/PRD.md § 7.3: applies to both
+  # the crafted item's sale price and every reagent's cost at once —
+  # see ProfitComputation's own doc for why both sides always use the
+  # same basis.
+  def handle_event("set_price_basis", %{"basis" => basis}, socket) do
+    {:noreply,
+     socket |> assign(price_basis: String.to_existing_atom(basis)) |> recompute_results()}
+  end
+
   def handle_event("filter_changed", %{"filter" => params}, socket) do
     filter =
       socket.assigns.filter
@@ -131,10 +145,8 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         min_sold_per_day: parse_float(Map.get(params, "min_sold_per_day")),
         min_confidence_pct: parse_float(Map.get(params, "min_confidence_pct")),
         max_price_copper: parse_int(Map.get(params, "max_price_copper")),
-        max_recent_value_copper: parse_int(Map.get(params, "max_recent_value_copper")),
         min_profit_copper: parse_int(Map.get(params, "min_profit_copper")),
-        min_profit_pct: parse_float(Map.get(params, "min_profit_pct")),
-        min_recent_profit_copper: parse_int(Map.get(params, "min_recent_profit_copper"))
+        min_profit_pct: parse_float(Map.get(params, "min_profit_pct"))
       })
 
     {:noreply, assign(socket, filter: filter)}
@@ -174,7 +186,12 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
 
       snapshot ->
         assign(socket,
-          results: ProfitComputation.compute_results(socket.assigns.active_profession, snapshot)
+          results:
+            ProfitComputation.compute_results(
+              socket.assigns.active_profession,
+              snapshot,
+              socket.assigns.price_basis
+            )
         )
     end
   end

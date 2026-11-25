@@ -19,13 +19,11 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
     %ProfitResult{
       pattern: pattern,
       price_copper: Keyword.get(opts, :price, 100),
-      recent_value_copper: Keyword.get(opts, :recent_value),
       sold_per_day: Keyword.get(opts, :spd, 10.0),
       sale_confidence_pct: Keyword.get(opts, :conf, 50.0),
       mat_cost_copper: 10,
       net_profit_per_unit_copper: Keyword.get(opts, :profit, 90),
       profit_pct: Keyword.get(opts, :profit_pct, 900.0),
-      recent_profit_per_unit_copper: Keyword.get(opts, :recent_profit),
       missing_data_reasons: Keyword.get(opts, :reasons, [])
     }
   end
@@ -41,7 +39,8 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
   test "source filter" do
     results = [result("A", :trainer), result("B", :drop), result("C", :vendor)]
 
-    filtered = ResultsFilter.apply(results, %{sources: MapSet.new(["drop"]), profitable_only?: false})
+    filtered =
+      ResultsFilter.apply(results, %{sources: MapSet.new(["drop"]), profitable_only?: false})
 
     assert Enum.map(filtered, & &1.pattern.name) == ["B"]
   end
@@ -49,7 +48,8 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
   test "source filter always shows patterns with no source category" do
     results = [result("A", :trainer), result("Uncategorized", nil)]
 
-    filtered = ResultsFilter.apply(results, %{sources: MapSet.new(["vendor"]), profitable_only?: false})
+    filtered =
+      ResultsFilter.apply(results, %{sources: MapSet.new(["vendor"]), profitable_only?: false})
 
     assert Enum.map(filtered, & &1.pattern.name) == ["Uncategorized"]
   end
@@ -84,10 +84,14 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
       result("Low", :trainer, profit: 10)
     ]
 
-    desc = ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :desc, profitable_only?: false})
+    desc =
+      ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :desc, profitable_only?: false})
+
     assert Enum.map(desc, & &1.pattern.name) == ["High", "Low", "Missing"]
 
-    asc = ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :asc, profitable_only?: false})
+    asc =
+      ResultsFilter.apply(results, %{sort_by: :profit, sort_dir: :asc, profitable_only?: false})
+
     assert Enum.map(asc, & &1.pattern.name) == ["Low", "High", "Missing"]
   end
 
@@ -98,7 +102,13 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
       result("No ROI", :trainer, profit_pct: nil, reasons: [:no_reagents_found])
     ]
 
-    desc = ResultsFilter.apply(results, %{sort_by: :profit_pct, sort_dir: :desc, profitable_only?: false})
+    desc =
+      ResultsFilter.apply(results, %{
+        sort_by: :profit_pct,
+        sort_dir: :desc,
+        profitable_only?: false
+      })
+
     assert Enum.map(desc, & &1.pattern.name) == ["High ROI", "Low ROI", "No ROI"]
   end
 
@@ -111,49 +121,5 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
     filtered = ResultsFilter.apply(results, %{min_profit_pct: 100.0, profitable_only?: false})
 
     assert Enum.map(filtered, & &1.pattern.name) == ["High ROI"]
-  end
-
-  test "sorting by recent value" do
-    results = [
-      result("Cheap", :trainer, recent_value: 50),
-      result("Pricey", :trainer, recent_value: 500),
-      result("Commodity", :trainer, recent_value: nil)
-    ]
-
-    desc = ResultsFilter.apply(results, %{sort_by: :recent_value, sort_dir: :desc, profitable_only?: false})
-    assert Enum.map(desc, & &1.pattern.name) == ["Pricey", "Cheap", "Commodity"]
-  end
-
-  test "threshold filter on max recent value excludes rows above the max" do
-    results = [
-      result("Cheap", :trainer, recent_value: 50),
-      result("Pricey", :trainer, recent_value: 500)
-    ]
-
-    filtered = ResultsFilter.apply(results, %{max_recent_value_copper: 100, profitable_only?: false})
-
-    assert Enum.map(filtered, & &1.pattern.name) == ["Cheap"]
-  end
-
-  test "sorting by recent profit" do
-    results = [
-      result("Low", :trainer, recent_profit: 10),
-      result("High", :trainer, recent_profit: 500),
-      result("Unknown", :trainer, recent_profit: nil)
-    ]
-
-    desc = ResultsFilter.apply(results, %{sort_by: :recent_profit, sort_dir: :desc, profitable_only?: false})
-    assert Enum.map(desc, & &1.pattern.name) == ["High", "Low", "Unknown"]
-  end
-
-  test "threshold filter on min recent profit excludes rows below the minimum" do
-    results = [
-      result("Loss", :trainer, recent_profit: -10),
-      result("Gain", :trainer, recent_profit: 500)
-    ]
-
-    filtered = ResultsFilter.apply(results, %{min_recent_profit_copper: 0, profitable_only?: false})
-
-    assert Enum.map(filtered, & &1.pattern.name) == ["Gain"]
   end
 end
