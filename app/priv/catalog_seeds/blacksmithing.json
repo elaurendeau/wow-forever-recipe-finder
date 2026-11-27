@@ -24,7 +24,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1245287
+      "wowhead_spell_id": 1245287,
+      "skill_up_colors": [
+        0,
+        10,
+        12,
+        15
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Chain Pants",
@@ -46,7 +53,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 2662
+      "wowhead_spell_id": 2662,
+      "skill_up_colors": [
+        15,
+        50,
+        70,
+        90
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Mace",
@@ -80,7 +94,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2737
+      "wowhead_spell_id": 2737,
+      "skill_up_colors": [
+        15,
+        55,
+        75,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Copper Vest",
@@ -102,7 +123,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12260
+      "wowhead_spell_id": 12260,
+      "skill_up_colors": [
+        0,
+        15,
+        35,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Sharpening Stone",
@@ -124,7 +152,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2660
+      "wowhead_spell_id": 2660,
+      "skill_up_colors": [
+        0,
+        15,
+        35,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Weightstone",
@@ -146,7 +181,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3115
+      "wowhead_spell_id": 3115,
+      "skill_up_colors": [
+        0,
+        15,
+        35,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Axe",
@@ -180,7 +222,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2738
+      "wowhead_spell_id": 2738,
+      "skill_up_colors": [
+        20,
+        60,
+        80,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Bracers",
@@ -202,7 +251,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2663
+      "wowhead_spell_id": 2663,
+      "skill_up_colors": [
+        0,
+        20,
+        40,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Chain Boots",
@@ -224,7 +280,14 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 3319
+      "wowhead_spell_id": 3319,
+      "skill_up_colors": [
+        20,
+        60,
+        80,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sharpening Wheel",
@@ -252,7 +315,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1230171
+      "wowhead_spell_id": 1230171,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Claymore",
@@ -292,7 +362,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9983
+      "wowhead_spell_id": 9983,
+      "skill_up_colors": [
+        25,
+        65,
+        85,
+        105
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Dagger",
@@ -332,7 +409,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8880
+      "wowhead_spell_id": 8880,
+      "skill_up_colors": [
+        25,
+        65,
+        85,
+        105
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Shortsword",
@@ -366,7 +450,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2739
+      "wowhead_spell_id": 2739,
+      "skill_up_colors": [
+        25,
+        65,
+        85,
+        105
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Grinding Stone",
@@ -388,7 +479,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3320
+      "wowhead_spell_id": 3320,
+      "skill_up_colors": [
+        25,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Battle Axe",
@@ -434,7 +532,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3293
+      "wowhead_spell_id": 3293,
+      "skill_up_colors": [
+        30,
+        70,
+        90,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Chain Belt",
@@ -456,7 +561,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 2661
+      "wowhead_spell_id": 2661,
+      "skill_up_colors": [
+        30,
+        70,
+        90,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Chain Vest",
@@ -490,7 +602,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3321
+      "wowhead_spell_id": 3321,
+      "skill_up_colors": [
+        30,
+        70,
+        90,
+        110
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3609,
+        "display_name": "Plans: Copper Chain Vest",
+        "source_detail": "Drops from: Supplying the Front"
+      }
     },
     {
       "name": "Gemmed Copper Boots",
@@ -530,7 +653,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252229
+      "wowhead_spell_id": 1252229,
+      "skill_up_colors": [
+        35,
+        40,
+        40,
+        40
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gemmed Copper Gauntlets",
@@ -564,7 +694,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3325
+      "wowhead_spell_id": 3325,
+      "skill_up_colors": [
+        35,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3610,
+        "display_name": "Plans: Gemmed Copper Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Glowing Copper Boots",
@@ -598,7 +739,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252231
+      "wowhead_spell_id": 1252231,
+      "skill_up_colors": [
+        35,
+        40,
+        40,
+        40
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Copper Gauntlets",
@@ -626,7 +774,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3323
+      "wowhead_spell_id": 3323,
+      "skill_up_colors": [
+        35,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Copper Pants",
@@ -660,7 +815,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3324
+      "wowhead_spell_id": 3324,
+      "skill_up_colors": [
+        35,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Strange Copper Boots",
@@ -694,7 +856,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252230
+      "wowhead_spell_id": 1252230,
+      "skill_up_colors": [
+        35,
+        40,
+        40,
+        40
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Coarse Sharpening Stone",
@@ -716,7 +885,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2665
+      "wowhead_spell_id": 2665,
+      "skill_up_colors": [
+        40,
+        40,
+        47,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Coarse Weightstone",
@@ -738,7 +914,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3116
+      "wowhead_spell_id": 3116,
+      "skill_up_colors": [
+        40,
+        40,
+        47,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Copper Maul",
@@ -772,7 +955,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7408
+      "wowhead_spell_id": 7408,
+      "skill_up_colors": [
+        40,
+        80,
+        100,
+        120
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Acolyte's Chain Belt",
@@ -812,7 +1002,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252265
+      "wowhead_spell_id": 1252265,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251368,
+        "display_name": "Plans: Acolyte's Chain Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Chain Belt",
@@ -852,7 +1053,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252266
+      "wowhead_spell_id": 1252266,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251369,
+        "display_name": "Plans: Crusader's Chain Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Chain Belt",
@@ -892,7 +1104,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252263
+      "wowhead_spell_id": 1252263,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251366,
+        "display_name": "Plans: Guard's Chain Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Chain Belt",
@@ -932,7 +1155,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252264
+      "wowhead_spell_id": 1252264,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251367,
+        "display_name": "Plans: Protector's Chain Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Runed Copper Belt",
@@ -954,7 +1188,14 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 2666
+      "wowhead_spell_id": 2666,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Thick War Axe",
@@ -1000,7 +1241,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3294
+      "wowhead_spell_id": 3294,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Veteran's Chain Belt",
@@ -1040,7 +1288,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252262
+      "wowhead_spell_id": 1252262,
+      "skill_up_colors": [
+        45,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251365,
+        "display_name": "Plans: Veteran's Chain Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Skyforged Chain",
@@ -1062,7 +1321,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1301448
+      "wowhead_spell_id": 1301448,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276955,
+        "display_name": "Plans: Azure Skyforged Chain",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Skyforged Wristguards",
@@ -1084,7 +1354,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1301446
+      "wowhead_spell_id": 1301446,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276953,
+        "display_name": "Plans: Azure Skyforged Wristguards",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Chain",
@@ -1106,7 +1387,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1301424
+      "wowhead_spell_id": 1301424,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276931,
+        "display_name": "Plans: Cloudy Skyforged Chain",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Wristguards",
@@ -1128,7 +1420,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1301422
+      "wowhead_spell_id": 1301422,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276929,
+        "display_name": "Plans: Cloudy Skyforged Wristguards",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Coarse Grinding Stone",
@@ -1150,7 +1453,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3326
+      "wowhead_spell_id": 3326,
+      "skill_up_colors": [
+        50,
+        50,
+        70,
+        90
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Copper Chain Boots",
@@ -1172,7 +1482,18 @@
           "quantity": 9
         }
       ],
-      "wowhead_spell_id": 1302598
+      "wowhead_spell_id": 1302598,
+      "skill_up_colors": [
+        50,
+        60,
+        65,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 277673,
+        "display_name": "Plans: Rough Copper Chain Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Skyforged Gauntlets",
@@ -1194,7 +1515,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1301447
+      "wowhead_spell_id": 1301447,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276954,
+        "display_name": "Plans: Azure Skyforged Gauntlets",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Skyforged Greaves",
@@ -1216,7 +1548,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1301450
+      "wowhead_spell_id": 1301450,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276957,
+        "display_name": "Plans: Azure Skyforged Greaves",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Gauntlets",
@@ -1238,7 +1581,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1301423
+      "wowhead_spell_id": 1301423,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276930,
+        "display_name": "Plans: Cloudy Skyforged Gauntlets",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Greaves",
@@ -1260,7 +1614,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1301426
+      "wowhead_spell_id": 1301426,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276933,
+        "display_name": "Plans: Cloudy Skyforged Greaves",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Skyforged Chainmail",
@@ -1288,7 +1653,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301445
+      "wowhead_spell_id": 1301445,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276952,
+        "display_name": "Plans: Azure Skyforged Chainmail",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Skyforged Legguards",
@@ -1316,7 +1692,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301449
+      "wowhead_spell_id": 1301449,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276956,
+        "display_name": "Plans: Azure Skyforged Legguards",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Chainmail",
@@ -1344,7 +1731,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301421
+      "wowhead_spell_id": 1301421,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276928,
+        "display_name": "Plans: Cloudy Skyforged Chainmail",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Skyforged Legguards",
@@ -1372,7 +1770,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301425
+      "wowhead_spell_id": 1301425,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276932,
+        "display_name": "Plans: Cloudy Skyforged Legguards",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Runed Copper Bracers",
@@ -1400,7 +1809,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 2664
+      "wowhead_spell_id": 2664,
+      "skill_up_colors": [
+        65,
+        90,
+        102,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Copper Broadsword",
@@ -1440,7 +1856,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3292
+      "wowhead_spell_id": 3292,
+      "skill_up_colors": [
+        70,
+        110,
+        130,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Bronze Boots",
@@ -1468,7 +1891,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 7817
+      "wowhead_spell_id": 7817,
+      "skill_up_colors": [
+        70,
+        100,
+        115,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silver Rod",
@@ -1496,7 +1926,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7818
+      "wowhead_spell_id": 7818,
+      "skill_up_colors": [
+        75,
+        80,
+        82,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silver Skeleton Key",
@@ -1524,7 +1961,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19666
+      "wowhead_spell_id": 19666,
+      "skill_up_colors": [
+        75,
+        75,
+        85,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Acolyte's Chain Shirt",
@@ -1558,7 +2002,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252240
+      "wowhead_spell_id": 1252240,
+      "skill_up_colors": [
+        80,
+        85,
+        85,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251343,
+        "display_name": "Plans: Acolyte's Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Acolyte's Gloves",
@@ -1598,7 +2053,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252260
+      "wowhead_spell_id": 1252260,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251363,
+        "display_name": "Plans: Acolyte's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Big Bronze Knife",
@@ -1644,7 +2110,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3491
+      "wowhead_spell_id": 3491,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Brass Knuckles",
@@ -1690,7 +2163,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252351
+      "wowhead_spell_id": 1252351,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251454,
+        "display_name": "Plans: Brass Knuckles",
+        "source_detail": "Drops from: Gogger Rock Keeper"
+      }
     },
     {
       "name": "Crusader's Chain Shirt",
@@ -1724,7 +2208,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252241
+      "wowhead_spell_id": 1252241,
+      "skill_up_colors": [
+        80,
+        85,
+        85,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251344,
+        "display_name": "Plans: Crusader's Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Gloves",
@@ -1764,7 +2259,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252261
+      "wowhead_spell_id": 1252261,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251364,
+        "display_name": "Plans: Crusader's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Chain Shirt",
@@ -1798,7 +2304,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252238
+      "wowhead_spell_id": 1252238,
+      "skill_up_colors": [
+        80,
+        85,
+        85,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251341,
+        "display_name": "Plans: Guard's Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Gloves",
@@ -1838,7 +2355,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252258
+      "wowhead_spell_id": 1252258,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251361,
+        "display_name": "Plans: Guard's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Chain Shirt",
@@ -1872,7 +2400,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252239
+      "wowhead_spell_id": 1252239,
+      "skill_up_colors": [
+        80,
+        85,
+        85,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251342,
+        "display_name": "Plans: Protector's Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Gloves",
@@ -1912,7 +2451,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252259
+      "wowhead_spell_id": 1252259,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251362,
+        "display_name": "Plans: Protector's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Rough Bronze Cuirass",
@@ -1934,7 +2484,14 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 2670
+      "wowhead_spell_id": 2670,
+      "skill_up_colors": [
+        80,
+        120,
+        135,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Bronze Leggings",
@@ -1956,7 +2513,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 2668
+      "wowhead_spell_id": 2668,
+      "skill_up_colors": [
+        80,
+        120,
+        135,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Copper Breastplate",
@@ -1990,7 +2554,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2667
+      "wowhead_spell_id": 2667,
+      "skill_up_colors": [
+        80,
+        95,
+        115,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2881,
+        "display_name": "Plans: Runed Copper Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Veteran's Chain Shirt",
@@ -2024,7 +2599,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252237
+      "wowhead_spell_id": 1252237,
+      "skill_up_colors": [
+        80,
+        85,
+        85,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251340,
+        "display_name": "Plans: Veteran's Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Veteran's Gloves",
@@ -2064,7 +2650,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252257
+      "wowhead_spell_id": 1252257,
+      "skill_up_colors": [
+        80,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251360,
+        "display_name": "Plans: Veteran's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Acolyte's Boots",
@@ -2104,7 +2701,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1252255
+      "wowhead_spell_id": 1252255,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251358,
+        "display_name": "Plans: Acolyte's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Mace",
@@ -2138,7 +2746,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2740
+      "wowhead_spell_id": 2740,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crusader's Boots",
@@ -2178,7 +2793,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1252256
+      "wowhead_spell_id": 1252256,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251359,
+        "display_name": "Plans: Crusader's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Boots",
@@ -2218,7 +2844,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1252253
+      "wowhead_spell_id": 1252253,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251356,
+        "display_name": "Plans: Guard's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Pearl-handled Dagger",
@@ -2258,7 +2895,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 6517
+      "wowhead_spell_id": 6517,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Protector's Boots",
@@ -2298,7 +2942,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1252254
+      "wowhead_spell_id": 1252254,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251357,
+        "display_name": "Plans: Protector's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Rough Bronze Shoulders",
@@ -2332,7 +2987,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3328
+      "wowhead_spell_id": 3328,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Veteran's Boots",
@@ -2372,7 +3034,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1252252
+      "wowhead_spell_id": 1252252,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251355,
+        "display_name": "Plans: Veteran's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Axe",
@@ -2406,7 +3079,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2741
+      "wowhead_spell_id": 2741,
+      "skill_up_colors": [
+        90,
+        120,
+        135,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Acolyte's Chain Leggings",
@@ -2440,7 +3120,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252245
+      "wowhead_spell_id": 1252245,
+      "skill_up_colors": [
+        95,
+        100,
+        100,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251348,
+        "display_name": "Plans: Acolyte's Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Acolyte's Silvered Chain Helm",
@@ -2486,7 +3177,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252280
+      "wowhead_spell_id": 1252280,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251383,
+        "display_name": "Plans: Acolyte's Silvered Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Dory",
@@ -2520,7 +3222,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252352
+      "wowhead_spell_id": 1252352,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251455,
+        "display_name": "Plans: Bronze Dory",
+        "source_detail": "Drops from: Dark Strand Enforcer"
+      }
     },
     {
       "name": "Bronze Shortsword",
@@ -2554,7 +3267,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2742
+      "wowhead_spell_id": 2742,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crusader's Chain Leggings",
@@ -2588,7 +3308,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252246
+      "wowhead_spell_id": 1252246,
+      "skill_up_colors": [
+        95,
+        100,
+        100,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251349,
+        "display_name": "Plans: Crusader's Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Silvered Chain Helm",
@@ -2634,7 +3365,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252281
+      "wowhead_spell_id": 1252281,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251384,
+        "display_name": "Plans: Crusader's Silvered Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Chain Leggings",
@@ -2668,7 +3410,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252243
+      "wowhead_spell_id": 1252243,
+      "skill_up_colors": [
+        95,
+        100,
+        100,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251346,
+        "display_name": "Plans: Guard's Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Silvered Chain Helm",
@@ -2714,7 +3467,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252278
+      "wowhead_spell_id": 1252278,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251381,
+        "display_name": "Plans: Guard's Silvered Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Patterned Bronze Bracers",
@@ -2742,7 +3506,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2672
+      "wowhead_spell_id": 2672,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Protector's Chain Leggings",
@@ -2776,7 +3547,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252244
+      "wowhead_spell_id": 1252244,
+      "skill_up_colors": [
+        95,
+        100,
+        100,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251347,
+        "display_name": "Plans: Protector's Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Silvered Chain Helm",
@@ -2822,7 +3604,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252279
+      "wowhead_spell_id": 1252279,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251382,
+        "display_name": "Plans: Protector's Silvered Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Veteran's Chain Leggings",
@@ -2856,7 +3649,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252242
+      "wowhead_spell_id": 1252242,
+      "skill_up_colors": [
+        95,
+        100,
+        100,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251345,
+        "display_name": "Plans: Veteran's Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Veteran's Silvered Chain Helm",
@@ -2902,7 +3706,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252277
+      "wowhead_spell_id": 1252277,
+      "skill_up_colors": [
+        95,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251380,
+        "display_name": "Plans: Veteran's Silvered Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Warhammer",
@@ -2936,7 +3751,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9985
+      "wowhead_spell_id": 9985,
+      "skill_up_colors": [
+        100,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Grinding Stone",
@@ -2958,7 +3780,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3337
+      "wowhead_spell_id": 3337,
+      "skill_up_colors": [
+        100,
+        100,
+        112,
+        125
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Sharpening Stone",
@@ -2980,7 +3809,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2674
+      "wowhead_spell_id": 2674,
+      "skill_up_colors": [
+        100,
+        100,
+        107,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Weightstone",
@@ -3002,7 +3838,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3117
+      "wowhead_spell_id": 3117,
+      "skill_up_colors": [
+        100,
+        100,
+        107,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Ironforge Breastplate",
@@ -3036,7 +3879,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 8367
+      "wowhead_spell_id": 8367,
+      "skill_up_colors": [
+        100,
+        115,
+        135,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6735,
+        "display_name": "Plans: Ironforge Breastplate",
+        "source_detail": "Quest: Gearing Redridge"
+      }
     },
     {
       "name": "Sterling Silver Boots",
@@ -3076,7 +3930,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252232
+      "wowhead_spell_id": 1252232,
+      "skill_up_colors": [
+        100,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251335,
+        "display_name": "Plans: Sterling Silver Boots",
+        "source_detail": "Drops from: Syndicate Watchman"
+      }
     },
     {
       "name": "Bronze Greatsword",
@@ -3110,7 +3975,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9986
+      "wowhead_spell_id": 9986,
+      "skill_up_colors": [
+        105,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Bronze Mace",
@@ -3162,7 +4034,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3296
+      "wowhead_spell_id": 3296,
+      "skill_up_colors": [
+        105,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silvered Bronze Boots",
@@ -3196,7 +4075,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3331
+      "wowhead_spell_id": 3331,
+      "skill_up_colors": [
+        105,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sterling Silver Gauntlet",
@@ -3230,7 +4116,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252234
+      "wowhead_spell_id": 1252234,
+      "skill_up_colors": [
+        105,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251337,
+        "display_name": "Plans: Sterling Silver Gauntlet",
+        "source_detail": "Drops from: Wrathtail Myrmidon"
+      }
     },
     {
       "name": "Sterling Silver Leggings",
@@ -3264,7 +4161,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252233
+      "wowhead_spell_id": 1252233,
+      "skill_up_colors": [
+        105,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251336,
+        "display_name": "Plans: Sterling Silver Leggings",
+        "source_detail": "Drops from: Skeletal Warrior"
+      }
     },
     {
       "name": "Acolyte's Silvered Chain Shirt",
@@ -3310,7 +4218,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252270
+      "wowhead_spell_id": 1252270,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251373,
+        "display_name": "Plans: Acolyte's Silvered Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Battle Axe",
@@ -3344,7 +4263,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9987
+      "wowhead_spell_id": 9987,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cracked Blacksmith Hammer",
@@ -3378,7 +4304,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317962
+      "wowhead_spell_id": 1317962,
+      "skill_up_colors": [
+        110,
+        115,
+        117,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285289,
+        "display_name": "Plans: Cracked Blacksmith Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Silvered Chain Shirt",
@@ -3424,7 +4361,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252271
+      "wowhead_spell_id": 1252271,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251374,
+        "display_name": "Plans: Crusader's Silvered Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Silvered Chain Shirt",
@@ -3470,7 +4418,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252268
+      "wowhead_spell_id": 1252268,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251371,
+        "display_name": "Plans: Guard's Silvered Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Silvered Chain Shirt",
@@ -3516,7 +4475,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252269
+      "wowhead_spell_id": 1252269,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251372,
+        "display_name": "Plans: Protector's Silvered Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Silvered Bronze Gauntlets",
@@ -3550,7 +4520,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3333
+      "wowhead_spell_id": 3333,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sterling Silver Shoulders",
@@ -3584,7 +4561,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252235
+      "wowhead_spell_id": 1252235,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251338,
+        "display_name": "Plans: Sterling Silver Shoulders",
+        "source_detail": "Drops from: Shadowhide Gnoll"
+      }
     },
     {
       "name": "Veteran's Silvered Chain Shirt",
@@ -3630,7 +4618,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252267
+      "wowhead_spell_id": 1252267,
+      "skill_up_colors": [
+        110,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251370,
+        "display_name": "Plans: Veteran's Silvered Chain Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Silver Breastplate",
@@ -3676,7 +4675,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 2675
+      "wowhead_spell_id": 2675,
+      "skill_up_colors": [
+        120,
+        150,
+        165,
+        180
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Acolyte's Chain Helm",
@@ -3710,7 +4716,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252250
+      "wowhead_spell_id": 1252250,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251353,
+        "display_name": "Plans: Acolyte's Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Acolyte's Silvered Chain Leggings",
@@ -3756,7 +4773,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252275
+      "wowhead_spell_id": 1252275,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251378,
+        "display_name": "Plans: Acolyte's Silvered Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Chain Helm",
@@ -3790,7 +4818,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252251
+      "wowhead_spell_id": 1252251,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251354,
+        "display_name": "Plans: Crusader's Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Crusader's Silvered Chain Leggings",
@@ -3836,7 +4875,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252276
+      "wowhead_spell_id": 1252276,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251379,
+        "display_name": "Plans: Crusader's Silvered Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Deadly Bronze Poniard",
@@ -3888,7 +4938,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3295
+      "wowhead_spell_id": 3295,
+      "skill_up_colors": [
+        125,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2883,
+        "display_name": "Plans: Deadly Bronze Poniard",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Rod",
@@ -3916,7 +4977,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 14379
+      "wowhead_spell_id": 14379,
+      "skill_up_colors": [
+        125,
+        130,
+        132,
+        135
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Golden Skeleton Key",
@@ -3944,7 +5012,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19667
+      "wowhead_spell_id": 19667,
+      "skill_up_colors": [
+        125,
+        125,
+        135,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Guard's Chain Helm",
@@ -3978,7 +5053,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252248
+      "wowhead_spell_id": 1252248,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251351,
+        "display_name": "Plans: Guard's Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Guard's Silvered Chain Leggings",
@@ -4024,7 +5110,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252273
+      "wowhead_spell_id": 1252273,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251376,
+        "display_name": "Plans: Guard's Silvered Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Iron Buckle",
@@ -4046,7 +5143,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8768
+      "wowhead_spell_id": 8768,
+      "skill_up_colors": [
+        125,
+        125,
+        127,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Protector's Chain Helm",
@@ -4080,7 +5184,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252249
+      "wowhead_spell_id": 1252249,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251352,
+        "display_name": "Plans: Protector's Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Protector's Silvered Chain Leggings",
@@ -4126,7 +5241,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252274
+      "wowhead_spell_id": 1252274,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251377,
+        "display_name": "Plans: Protector's Silvered Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Silvered Bronze Shoulders",
@@ -4160,7 +5286,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3330
+      "wowhead_spell_id": 3330,
+      "skill_up_colors": [
+        125,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2882,
+        "display_name": "Plans: Silvered Bronze Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Sterling Silver Breastplate",
@@ -4194,7 +5331,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252236
+      "wowhead_spell_id": 1252236,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251339,
+        "display_name": "Plans: Sterling Silver Breastplate",
+        "source_detail": "Drops from: Grimtotem Bandit"
+      }
     },
     {
       "name": "Veteran's Chain Helm",
@@ -4228,7 +5376,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252247
+      "wowhead_spell_id": 1252247,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251350,
+        "display_name": "Plans: Veteran's Chain Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Veteran's Silvered Chain Leggings",
@@ -4274,7 +5433,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1252272
+      "wowhead_spell_id": 1252272,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251375,
+        "display_name": "Plans: Veteran's Silvered Chain Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Iron Leggings",
@@ -4308,7 +5478,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3506
+      "wowhead_spell_id": 3506,
+      "skill_up_colors": [
+        130,
+        155,
+        167,
+        180
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Iron Fists",
@@ -4354,7 +5531,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252353
+      "wowhead_spell_id": 1252353,
+      "skill_up_colors": [
+        130,
+        155,
+        167,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251456,
+        "display_name": "Plans: Iron Fists",
+        "source_detail": "Drops from: Bleakheart Hellcaller"
+      }
     },
     {
       "name": "Silvered Bronze Breastplate",
@@ -4394,7 +5582,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2673
+      "wowhead_spell_id": 2673,
+      "skill_up_colors": [
+        130,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5578,
+        "display_name": "Plans: Silvered Bronze Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Anvil",
@@ -4428,7 +5627,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1263041
+      "wowhead_spell_id": 1263041,
+      "skill_up_colors": [
+        140,
+        140,
+        140,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273086,
+        "display_name": "Blueprint: Anvil",
+        "source_detail": "Drops from: Gilnid"
+      }
     },
     {
       "name": "Green Iron Bracers",
@@ -4456,7 +5666,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3501
+      "wowhead_spell_id": 3501,
+      "skill_up_colors": [
+        140,
+        165,
+        177,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Iridescent Hammer",
@@ -4502,7 +5719,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 6518
+      "wowhead_spell_id": 6518,
+      "skill_up_colors": [
+        140,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5543,
+        "display_name": "Plans: Iridescent Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Iron Boots",
@@ -4542,7 +5770,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3334
+      "wowhead_spell_id": 3334,
+      "skill_up_colors": [
+        145,
+        150,
+        165,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3611,
+        "display_name": "Plans: Green Iron Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Iron Helm",
@@ -4576,7 +5815,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3502
+      "wowhead_spell_id": 3502,
+      "skill_up_colors": [
+        145,
+        170,
+        182,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hard Gold Cuirass",
@@ -4610,7 +5856,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252282
+      "wowhead_spell_id": 1252282,
+      "skill_up_colors": [
+        145,
+        170,
+        182,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251385,
+        "display_name": "Plans: Hard Gold Cuirass",
+        "source_detail": "Drops from: Screeching Roguefeather"
+      }
     },
     {
       "name": "Mighty Iron Hammer",
@@ -4662,7 +5919,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3297
+      "wowhead_spell_id": 3297,
+      "skill_up_colors": [
+        145,
+        150,
+        165,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3608,
+        "display_name": "Plans: Mighty Iron Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Iron Gauntlets",
@@ -4702,7 +5970,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3336
+      "wowhead_spell_id": 3336,
+      "skill_up_colors": [
+        150,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3612,
+        "display_name": "Plans: Green Iron Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Hard Gold Boots",
@@ -4742,7 +6021,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252283
+      "wowhead_spell_id": 1252283,
+      "skill_up_colors": [
+        150,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251386,
+        "display_name": "Plans: Hard Gold Boots",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Iron Shield Spike",
@@ -4770,7 +6060,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 7221
+      "wowhead_spell_id": 7221,
+      "skill_up_colors": [
+        150,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6044,
+        "display_name": "Plans: Iron Shield Spike",
+        "source_detail": null
+      }
     },
     {
       "name": "Justicar's Belt",
@@ -4804,7 +6105,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252309
+      "wowhead_spell_id": 1252309,
+      "skill_up_colors": [
+        150,
+        155,
+        155,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Officer's Belt",
@@ -4838,7 +6146,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252305
+      "wowhead_spell_id": 1252305,
+      "skill_up_colors": [
+        150,
+        155,
+        155,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Prefect's Belt",
@@ -4872,7 +6187,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252308
+      "wowhead_spell_id": 1252308,
+      "skill_up_colors": [
+        150,
+        155,
+        155,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sentinel's Belt",
@@ -4906,7 +6228,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252306
+      "wowhead_spell_id": 1252306,
+      "skill_up_colors": [
+        150,
+        155,
+        155,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Warder's Belt",
@@ -4940,7 +6269,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252307
+      "wowhead_spell_id": 1252307,
+      "skill_up_colors": [
+        150,
+        155,
+        155,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Glinting Steel Dagger",
@@ -4986,7 +6322,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15972
+      "wowhead_spell_id": 15972,
+      "skill_up_colors": [
+        155,
+        180,
+        192,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Iron Hauberk",
@@ -5032,7 +6375,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3508
+      "wowhead_spell_id": 3508,
+      "skill_up_colors": [
+        155,
+        180,
+        192,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silvered Bronze Leggings",
@@ -5066,7 +6416,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12259
+      "wowhead_spell_id": 12259,
+      "skill_up_colors": [
+        155,
+        155,
+        167,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10424,
+        "display_name": "Plans: Silvered Bronze Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Solid Iron Maul",
@@ -5112,7 +6473,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3494
+      "wowhead_spell_id": 3494,
+      "skill_up_colors": [
+        155,
+        155,
+        167,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10858,
+        "display_name": "Plans: Solid Iron Maul",
+        "source_detail": null
+      }
     },
     {
       "name": "Barbaric Iron Breastplate",
@@ -5140,7 +6512,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9813
+      "wowhead_spell_id": 9813,
+      "skill_up_colors": [
+        160,
+        160,
+        172,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7979,
+        "display_name": "Plans: Barbaric Iron Breastplate",
+        "source_detail": "Quest: Barbaric Battlements"
+      }
     },
     {
       "name": "Barbaric Iron Shoulders",
@@ -5180,7 +6563,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9811
+      "wowhead_spell_id": 9811,
+      "skill_up_colors": [
+        160,
+        160,
+        172,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7978,
+        "display_name": "Plans: Barbaric Iron Shoulders",
+        "source_detail": "Quest: On Iron Pauldrons"
+      }
     },
     {
       "name": "Golden Scale Bracers",
@@ -5208,7 +6602,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7223
+      "wowhead_spell_id": 7223,
+      "skill_up_colors": [
+        160,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Iron Shoulders",
@@ -5242,7 +6643,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3504
+      "wowhead_spell_id": 3504,
+      "skill_up_colors": [
+        160,
+        160,
+        172,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3870,
+        "display_name": "Plans: Green Iron Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Hard Gold Bracers",
@@ -5276,7 +6688,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252284
+      "wowhead_spell_id": 1252284,
+      "skill_up_colors": [
+        160,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251387,
+        "display_name": "Plans: Hard Gold Bracers",
+        "source_detail": "Drops from: Slitherblade Naga"
+      }
     },
     {
       "name": "Hardened Iron Shortsword",
@@ -5322,7 +6745,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3492
+      "wowhead_spell_id": 3492,
+      "skill_up_colors": [
+        160,
+        160,
+        172,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12162,
+        "display_name": "Plans: Hardened Iron Shortsword",
+        "source_detail": null
+      }
     },
     {
       "name": "Steel Spear",
@@ -5368,7 +6802,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252354
+      "wowhead_spell_id": 1252354,
+      "skill_up_colors": [
+        160,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251457,
+        "display_name": "Plans: Steel Spear",
+        "source_detail": "Drops from: Saltstone Crystalhide"
+      }
     },
     {
       "name": "Hard Gold Leggings",
@@ -5402,7 +6847,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252285
+      "wowhead_spell_id": 1252285,
+      "skill_up_colors": [
+        165,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251388,
+        "display_name": "Plans: Hard Gold Leggings",
+        "source_detail": "Drops from: Kurzen Jungle Fighter"
+      }
     },
     {
       "name": "Iron Counterweight",
@@ -5436,7 +6892,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7222
+      "wowhead_spell_id": 7222,
+      "skill_up_colors": [
+        165,
+        165,
+        177,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6045,
+        "display_name": "Plans: Iron Counterweight",
+        "source_detail": null
+      }
     },
     {
       "name": "Iron Morningstar",
@@ -5482,7 +6949,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252355
+      "wowhead_spell_id": 1252355,
+      "skill_up_colors": [
+        165,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251458,
+        "display_name": "Plans: Iron Morningstar",
+        "source_detail": "Quest: Big, No, MASSIVE Iron Axes; vendor"
+      }
     },
     {
       "name": "Golden Iron Destroyer",
@@ -5534,7 +7012,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3495
+      "wowhead_spell_id": 3495,
+      "skill_up_colors": [
+        170,
+        170,
+        182,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3867,
+        "display_name": "Plans: Golden Iron Destroyer",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Scale Leggings",
@@ -5568,7 +7057,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3507
+      "wowhead_spell_id": 3507,
+      "skill_up_colors": [
+        170,
+        170,
+        182,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3872,
+        "display_name": "Plans: Golden Scale Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Hard Gold Coif",
@@ -5602,7 +7102,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252286
+      "wowhead_spell_id": 1252286,
+      "skill_up_colors": [
+        170,
+        195,
+        207,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251389,
+        "display_name": "Plans: Hard Gold Coif",
+        "source_detail": "Drops from: Dustbelcher Warrior"
+      }
     },
     {
       "name": "Azure Skyforged Helm",
@@ -5636,7 +7147,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301534
+      "wowhead_spell_id": 1301534,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276984,
+        "display_name": "Plans: Azure Skyforged Helm",
+        "source_detail": "Vendor: Archmage Alvareaux"
+      }
     },
     {
       "name": "Azure Skyforged Pauldrons",
@@ -5670,7 +7192,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301535
+      "wowhead_spell_id": 1301535,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276985,
+        "display_name": "Plans: Azure Skyforged Pauldrons",
+        "source_detail": "Vendor: Archmage Alvareaux"
+      }
     },
     {
       "name": "Barbaric Iron Helm",
@@ -5704,7 +7237,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9814
+      "wowhead_spell_id": 9814,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7980,
+        "display_name": "Plans: Barbaric Iron Helm",
+        "source_detail": "Quest: Horns of Frenzy"
+      }
     },
     {
       "name": "Cloudy Skyforged Helm",
@@ -5738,7 +7282,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301526
+      "wowhead_spell_id": 1301526,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276976,
+        "display_name": "Plans: Cloudy Skyforged Helm",
+        "source_detail": "Vendor: Sutara Plainstalker"
+      }
     },
     {
       "name": "Cloudy Skyforged Pauldrons",
@@ -5772,7 +7327,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1301527
+      "wowhead_spell_id": 1301527,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276977,
+        "display_name": "Plans: Cloudy Skyforged Pauldrons",
+        "source_detail": "Vendor: Sutara Plainstalker"
+      }
     },
     {
       "name": "Golden Scale Shoulders",
@@ -5806,7 +7372,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3505
+      "wowhead_spell_id": 3505,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3871,
+        "display_name": "Plans: Golden Scale Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Hard Gold Gauntlet",
@@ -5840,7 +7417,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252287
+      "wowhead_spell_id": 1252287,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251390,
+        "display_name": "Plans: Hard Gold Gauntlet",
+        "source_detail": "Quest: Big, No, MASSIVE Iron Axes; vendor"
+      }
     },
     {
       "name": "Hard Gold Pauldrons",
@@ -5874,7 +7462,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252288
+      "wowhead_spell_id": 1252288,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251391,
+        "display_name": "Plans: Hard Gold Pauldrons",
+        "source_detail": "Drops from: Crushridge Ogre"
+      }
     },
     {
       "name": "Jade Serpentblade",
@@ -5920,7 +7519,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3493
+      "wowhead_spell_id": 3493,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3866,
+        "display_name": "Plans: Jade Serpentblade",
+        "source_detail": null
+      }
     },
     {
       "name": "Justicar's Gauntlet",
@@ -5966,7 +7576,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252319
+      "wowhead_spell_id": 1252319,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251422,
+        "display_name": "Plans: Justicar's Gauntlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Officer's Gauntlet",
@@ -6012,7 +7633,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252315
+      "wowhead_spell_id": 1252315,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251418,
+        "display_name": "Plans: Officer's Gauntlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Prefect's Gauntlet",
@@ -6058,7 +7690,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252318
+      "wowhead_spell_id": 1252318,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251421,
+        "display_name": "Plans: Prefect's Gauntlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Gauntlet",
@@ -6104,7 +7747,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252316
+      "wowhead_spell_id": 1252316,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251419,
+        "display_name": "Plans: Sentinel's Gauntlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Solid Grinding Stone",
@@ -6126,7 +7780,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9920
+      "wowhead_spell_id": 9920,
+      "skill_up_colors": [
+        175,
+        175,
+        180,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Solid Sharpening Stone",
@@ -6148,7 +7809,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9918
+      "wowhead_spell_id": 9918,
+      "skill_up_colors": [
+        175,
+        175,
+        180,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Solid Weightstone",
@@ -6170,7 +7838,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9921
+      "wowhead_spell_id": 9921,
+      "skill_up_colors": [
+        175,
+        175,
+        180,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Steel Breastplate",
@@ -6198,7 +7873,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 9916
+      "wowhead_spell_id": 9916,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Truesilver Rod",
@@ -6226,7 +7908,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 14380
+      "wowhead_spell_id": 14380,
+      "skill_up_colors": [
+        175,
+        180,
+        182,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Truesilver Skeleton Key",
@@ -6254,7 +7943,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19668
+      "wowhead_spell_id": 19668,
+      "skill_up_colors": [
+        175,
+        175,
+        185,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Warder's Gauntlet",
@@ -6300,7 +7996,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252317
+      "wowhead_spell_id": 1252317,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251420,
+        "display_name": "Plans: Warder's Gauntlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Barbaric Iron Boots",
@@ -6340,7 +8047,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9818
+      "wowhead_spell_id": 9818,
+      "skill_up_colors": [
+        180,
+        180,
+        192,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7981,
+        "display_name": "Plans: Barbaric Iron Boots",
+        "source_detail": "Quest: Trampled Under Foot"
+      }
     },
     {
       "name": "Heavy Mithril Gauntlet",
@@ -6368,7 +8086,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9928
+      "wowhead_spell_id": 9928,
+      "skill_up_colors": [
+        180,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Mithril Shoulder",
@@ -6396,7 +8121,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 9926
+      "wowhead_spell_id": 9926,
+      "skill_up_colors": [
+        180,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mithril Shortsword",
@@ -6442,7 +8174,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252356
+      "wowhead_spell_id": 1252356,
+      "skill_up_colors": [
+        180,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251459,
+        "display_name": "Plans: Mithril Shortsword",
+        "source_detail": "Drops from: Mirefin Coastrunner"
+      }
     },
     {
       "name": "Moonsteel Broadsword",
@@ -6488,7 +8231,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3496
+      "wowhead_spell_id": 3496,
+      "skill_up_colors": [
+        180,
+        180,
+        192,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12163,
+        "display_name": "Plans: Moonsteel Broadsword",
+        "source_detail": "Vendor: Zarena Cromwind"
+      }
     },
     {
       "name": "Barbaric Iron Gloves",
@@ -6522,7 +8276,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9820
+      "wowhead_spell_id": 9820,
+      "skill_up_colors": [
+        185,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7982,
+        "display_name": "Plans: Barbaric Iron Gloves",
+        "source_detail": "Quest: Joys of Omosh"
+      }
     },
     {
       "name": "Heavy Mithril Axe",
@@ -6562,7 +8327,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9993
+      "wowhead_spell_id": 9993,
+      "skill_up_colors": [
+        185,
+        210,
+        222,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Massive Iron Axe",
@@ -6608,7 +8380,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3498
+      "wowhead_spell_id": 3498,
+      "skill_up_colors": [
+        185,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12164,
+        "display_name": "Plans: Massive Iron Axe",
+        "source_detail": "vendor"
+      }
     },
     {
       "name": "Mithril Plate Pants",
@@ -6630,7 +8413,14 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 9931
+      "wowhead_spell_id": 9931,
+      "skill_up_colors": [
+        185,
+        205,
+        215,
+        225
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Polished Steel Boots",
@@ -6670,7 +8460,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3513
+      "wowhead_spell_id": 3513,
+      "skill_up_colors": [
+        185,
+        185,
+        197,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3874,
+        "display_name": "Plans: Polished Steel Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Edge of Winter",
@@ -6716,7 +8517,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 21913
+      "wowhead_spell_id": 21913,
+      "skill_up_colors": [
+        190,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17706,
+        "display_name": "Plans: Edge of Winter",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Scale Coif",
@@ -6750,7 +8562,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3503
+      "wowhead_spell_id": 3503,
+      "skill_up_colors": [
+        190,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6047,
+        "display_name": "Plans: Golden Scale Coif",
+        "source_detail": "Vendor: Krinkle Goodsteel"
+      }
     },
     {
       "name": "Mithril Warhammer",
@@ -6790,7 +8613,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252357
+      "wowhead_spell_id": 1252357,
+      "skill_up_colors": [
+        190,
+        210,
+        220,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251460,
+        "display_name": "Plans: Mithril Warhammer",
+        "source_detail": "Quest: Step Two: More Rock; vendor"
+      }
     },
     {
       "name": "Searing Golden Blade",
@@ -6830,7 +8664,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 15973
+      "wowhead_spell_id": 15973,
+      "skill_up_colors": [
+        190,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12261,
+        "display_name": "Plans: Searing Golden Blade",
+        "source_detail": null
+      }
     },
     {
       "name": "Steel Plate Helm",
@@ -6858,7 +8703,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9935
+      "wowhead_spell_id": 9935,
+      "skill_up_colors": [
+        190,
+        210,
+        220,
+        230
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Steel Weapon Chain",
@@ -6892,7 +8744,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 7224
+      "wowhead_spell_id": 7224,
+      "skill_up_colors": [
+        190,
+        190,
+        202,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6046,
+        "display_name": "Plans: Steel Weapon Chain",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Scale Cuirass",
@@ -6932,7 +8795,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3511
+      "wowhead_spell_id": 3511,
+      "skill_up_colors": [
+        195,
+        195,
+        207,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3873,
+        "display_name": "Plans: Golden Scale Cuirass",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Blacksmith Hammer",
@@ -6966,7 +8840,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317963
+      "wowhead_spell_id": 1317963,
+      "skill_up_colors": [
+        195,
+        200,
+        202,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285290,
+        "display_name": "Plans: Mithril Blacksmith Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Claws",
@@ -7006,7 +8891,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252358
+      "wowhead_spell_id": 1252358,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251461,
+        "display_name": "Plans: Mithril Claws",
+        "source_detail": "Drops from: Stonevault Bonesnapper"
+      }
     },
     {
       "name": "Mithril Claymore",
@@ -7046,7 +8942,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252359
+      "wowhead_spell_id": 1252359,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251462,
+        "display_name": "Plans: Mithril Claymore",
+        "source_detail": "Drops from: Woodpaw Mongrel"
+      }
     },
     {
       "name": "Ornate Mithril Pants",
@@ -7086,7 +8993,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9945
+      "wowhead_spell_id": 9945,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7983,
+        "display_name": "Plans: Ornate Mithril Pants",
+        "source_detail": "Quest: Smelt On, Smelt Off"
+      }
     },
     {
       "name": "Shining Mithril Breastplate",
@@ -7126,7 +9044,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252289
+      "wowhead_spell_id": 1252289,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251392,
+        "display_name": "Plans: Shining Mithril Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Mithril Pauldrons",
@@ -7166,7 +9095,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252290
+      "wowhead_spell_id": 1252290,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251393,
+        "display_name": "Plans: Shining Mithril Pauldrons",
+        "source_detail": "Drops from: Daggerspine Sorceress"
+      }
     },
     {
       "name": "Frost Tiger Blade",
@@ -7218,7 +9158,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3497
+      "wowhead_spell_id": 3497,
+      "skill_up_colors": [
+        200,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3868,
+        "display_name": "Plans: Frost Tiger Blade",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Scale Boots",
@@ -7258,7 +9209,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3515
+      "wowhead_spell_id": 3515,
+      "skill_up_colors": [
+        200,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3875,
+        "display_name": "Plans: Golden Scale Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Inlaid Mithril Cylinder",
@@ -7292,7 +9254,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 11454
+      "wowhead_spell_id": 11454,
+      "skill_up_colors": [
+        200,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10713,
+        "display_name": "Plans: Inlaid Mithril Cylinder",
+        "source_detail": "1"
+      }
     },
     {
       "name": "Justicar's Boots",
@@ -7326,7 +9299,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252299
+      "wowhead_spell_id": 1252299,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251402,
+        "display_name": "Plans: Justicar's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Low-Background Truesilver Plates",
@@ -7354,7 +9338,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 435910
+      "wowhead_spell_id": 435910,
+      "skill_up_colors": [
+        200,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 215384,
+        "display_name": "Plans: Low-Background Truesilver Plates",
+        "source_detail": "Vendor: Ziri \"The Wrench\" Littlesprocket"
+      }
     },
     {
       "name": "Officer's Boots",
@@ -7388,7 +9383,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252295
+      "wowhead_spell_id": 1252295,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251398,
+        "display_name": "Plans: Officer's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Prefect's Boots",
@@ -7422,7 +9428,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252298
+      "wowhead_spell_id": 1252298,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251401,
+        "display_name": "Plans: Prefect's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Boots",
@@ -7456,7 +9473,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252296
+      "wowhead_spell_id": 1252296,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251399,
+        "display_name": "Plans: Sentinel's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Crescent Axe",
@@ -7508,7 +9536,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3500
+      "wowhead_spell_id": 3500,
+      "skill_up_colors": [
+        200,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3869,
+        "display_name": "Plans: Shadow Crescent Axe",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Mithril Boots",
@@ -7548,7 +9587,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252291
+      "wowhead_spell_id": 1252291,
+      "skill_up_colors": [
+        200,
+        220,
+        230,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251394,
+        "display_name": "Plans: Shining Mithril Boots",
+        "source_detail": "Drops from: Stonevault Shaman"
+      }
     },
     {
       "name": "Truesilver Gauntlets",
@@ -7600,7 +9650,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9954
+      "wowhead_spell_id": 9954,
+      "skill_up_colors": [
+        200,
+        220,
+        230,
+        240
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Warder's Boots",
@@ -7634,7 +9691,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252297
+      "wowhead_spell_id": 1252297,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251400,
+        "display_name": "Plans: Warder's Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Big Black Mace",
@@ -7680,7 +9748,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 10001
+      "wowhead_spell_id": 10001,
+      "skill_up_colors": [
+        205,
+        230,
+        242,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Golden Scale Gauntlets",
@@ -7720,7 +9795,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 11643
+      "wowhead_spell_id": 11643,
+      "skill_up_colors": [
+        0,
+        205,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 9367,
+        "display_name": "Plans: Golden Scale Gauntlets",
+        "source_detail": "Quest: The Origins of Smithing"
+      }
     },
     {
       "name": "Heavy Mithril Breastplate",
@@ -7742,7 +9828,14 @@
           "quantity": 16
         }
       ],
-      "wowhead_spell_id": 9959
+      "wowhead_spell_id": 9959,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mithril Coif",
@@ -7770,7 +9863,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 9961
+      "wowhead_spell_id": 9961,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Mithril Boots",
@@ -7798,7 +9898,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9968
+      "wowhead_spell_id": 9968,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Mithril Pants",
@@ -7826,7 +9933,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9933
+      "wowhead_spell_id": 9933,
+      "skill_up_colors": [
+        0,
+        210,
+        215,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7975,
+        "display_name": "Plans: Heavy Mithril Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Justicar's Pauldrons",
@@ -7878,7 +9996,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252329
+      "wowhead_spell_id": 1252329,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251432,
+        "display_name": "Plans: Justicar's Pauldrons",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Stiletto",
@@ -7918,7 +10047,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252360
+      "wowhead_spell_id": 1252360,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251463,
+        "display_name": "Plans: Mithril Stiletto",
+        "source_detail": "Drops from: Lost One Hunter"
+      }
     },
     {
       "name": "Officer's Pauldrons",
@@ -7970,7 +10110,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252325
+      "wowhead_spell_id": 1252325,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251428,
+        "display_name": "Plans: Officer's Pauldrons",
+        "source_detail": null
+      }
     },
     {
       "name": "Prefect's Pauldrons",
@@ -8022,7 +10173,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252328
+      "wowhead_spell_id": 1252328,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251431,
+        "display_name": "Plans: Prefect's Pauldrons",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Pauldrons",
@@ -8074,7 +10236,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252326
+      "wowhead_spell_id": 1252326,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251429,
+        "display_name": "Plans: Sentinel's Pauldrons",
+        "source_detail": null
+      }
     },
     {
       "name": "The Shatterer",
@@ -8132,7 +10305,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 10003
+      "wowhead_spell_id": 10003,
+      "skill_up_colors": [
+        210,
+        235,
+        247,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Warder's Pauldrons",
@@ -8184,7 +10364,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252327
+      "wowhead_spell_id": 1252327,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251430,
+        "display_name": "Plans: Warder's Pauldrons",
+        "source_detail": null
+      }
     },
     {
       "name": "Charged Mithril Battleaxe",
@@ -8224,7 +10415,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252361
+      "wowhead_spell_id": 1252361,
+      "skill_up_colors": [
+        215,
+        235,
+        245,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251464,
+        "display_name": "Plans: Charged Mithril Battleaxe",
+        "source_detail": "Drops from: Gordunni Brute"
+      }
     },
     {
       "name": "Mithril Plate Bracers",
@@ -8252,7 +10454,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9937
+      "wowhead_spell_id": 9937,
+      "skill_up_colors": [
+        0,
+        215,
+        220,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7995,
+        "display_name": "Plans: Mithril Plate Bracers",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Shield Spike",
@@ -8286,7 +10499,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9939
+      "wowhead_spell_id": 9939,
+      "skill_up_colors": [
+        0,
+        215,
+        220,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7976,
+        "display_name": "Plans: Mithril Shield Spike",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Mithril Helm",
@@ -8326,7 +10550,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252292
+      "wowhead_spell_id": 1252292,
+      "skill_up_colors": [
+        215,
+        235,
+        245,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251395,
+        "display_name": "Plans: Shining Mithril Helm",
+        "source_detail": "Drops from: Naga Explorer"
+      }
     },
     {
       "name": "Blue Glittering Axe",
@@ -8366,7 +10601,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9995
+      "wowhead_spell_id": 9995,
+      "skill_up_colors": [
+        220,
+        220,
+        232,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7992,
+        "display_name": "Plans: Blue Glittering Axe",
+        "source_detail": null
+      }
     },
     {
       "name": "Ornate Mithril Gloves",
@@ -8406,7 +10652,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9950
+      "wowhead_spell_id": 9950,
+      "skill_up_colors": [
+        0,
+        220,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7984,
+        "display_name": "Plans: Ornate Mithril Gloves",
+        "source_detail": "Quest: The Great Silver Deceiver"
+      }
     },
     {
       "name": "Phantom Blade",
@@ -8464,7 +10721,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 10007
+      "wowhead_spell_id": 10007,
+      "skill_up_colors": [
+        220,
+        245,
+        257,
+        270
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Shining Mithril Gauntlet",
@@ -8504,7 +10768,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252294
+      "wowhead_spell_id": 1252294,
+      "skill_up_colors": [
+        220,
+        240,
+        250,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251397,
+        "display_name": "Plans: Shining Mithril Gauntlet",
+        "source_detail": "Drops from: Southsea Pirate"
+      }
     },
     {
       "name": "Shining Mithril Pants",
@@ -8544,7 +10819,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252293
+      "wowhead_spell_id": 1252293,
+      "skill_up_colors": [
+        220,
+        240,
+        250,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251396,
+        "display_name": "Plans: Shining Mithril Pants",
+        "source_detail": "Drops from: Witherbark Sadist"
+      }
     },
     {
       "name": "Truesilver Breastplate",
@@ -8590,7 +10876,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9974
+      "wowhead_spell_id": 9974,
+      "skill_up_colors": [
+        220,
+        240,
+        250,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blight",
@@ -8636,7 +10929,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 10011
+      "wowhead_spell_id": 10011,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dense Grinding Stone",
@@ -8658,7 +10958,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16639
+      "wowhead_spell_id": 16639,
+      "skill_up_colors": [
+        225,
+        230,
+        232,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dense Sharpening Stone",
@@ -8680,7 +10987,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16641
+      "wowhead_spell_id": 16641,
+      "skill_up_colors": [
+        225,
+        230,
+        232,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dense Weightstone",
@@ -8702,7 +11016,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16640
+      "wowhead_spell_id": 16640,
+      "skill_up_colors": [
+        225,
+        230,
+        232,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Justicar's Wristguards",
@@ -8754,7 +11075,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252334
+      "wowhead_spell_id": 1252334,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251437,
+        "display_name": "Plans: Justicar's Wristguards",
+        "source_detail": null
+      }
     },
     {
       "name": "Officer's Wristguards",
@@ -8806,7 +11138,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252330
+      "wowhead_spell_id": 1252330,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Ornate Mithril Shoulders",
@@ -8840,7 +11179,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 9952
+      "wowhead_spell_id": 9952,
+      "skill_up_colors": [
+        0,
+        225,
+        230,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7985,
+        "display_name": "Plans: Ornate Mithril Shoulders",
+        "source_detail": "Quest: The Art of the Imbue"
+      }
     },
     {
       "name": "Prefect's Wristguards",
@@ -8892,7 +11242,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252333
+      "wowhead_spell_id": 1252333,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sentinel's Wristguards",
@@ -8944,7 +11301,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252331
+      "wowhead_spell_id": 1252331,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Warder's Wristguards",
@@ -8996,7 +11360,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252332
+      "wowhead_spell_id": 1252332,
+      "skill_up_colors": [
+        225,
+        250,
+        262,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Wicked Mithril Blade",
@@ -9036,7 +11407,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 9997
+      "wowhead_spell_id": 9997,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 8029,
+        "display_name": "Plans: Wicked Mithril Blade",
+        "source_detail": null
+      }
     },
     {
       "name": "Orcish War Leggings",
@@ -9064,7 +11446,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9957
+      "wowhead_spell_id": 9957,
+      "skill_up_colors": [
+        0,
+        230,
+        235,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7994,
+        "display_name": "Plans: Orcish War Leggings",
+        "source_detail": "Quest: The Old Ways; Vendor: Sumi"
+      }
     },
     {
       "name": "Mithril Plate Shoulders",
@@ -9098,7 +11491,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 9966
+      "wowhead_spell_id": 9966,
+      "skill_up_colors": [
+        0,
+        235,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7991,
+        "display_name": "Plans: Mithril Plate Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Spurs",
@@ -9126,7 +11530,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 9964
+      "wowhead_spell_id": 9964,
+      "skill_up_colors": [
+        0,
+        235,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7989,
+        "display_name": "Plans: Mithril Spurs",
+        "source_detail": null
+      }
     },
     {
       "name": "Truesilver Champion",
@@ -9178,7 +11593,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 10015
+      "wowhead_spell_id": 10015,
+      "skill_up_colors": [
+        235,
+        260,
+        272,
+        285
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blessed Plate Boots",
@@ -9212,7 +11634,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252336
+      "wowhead_spell_id": 1252336,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251439,
+        "display_name": "Plans: Blessed Plate Boots",
+        "source_detail": "Drops from: Dark Iron Lookout"
+      }
     },
     {
       "name": "Blessed Plate Pauldrons",
@@ -9246,7 +11679,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252335
+      "wowhead_spell_id": 1252335,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251438,
+        "display_name": "Plans: Blessed Plate Pauldrons",
+        "source_detail": "Drops from: Highborne Lichling"
+      }
     },
     {
       "name": "Dazzling Mithril Rapier",
@@ -9298,7 +11742,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 10005
+      "wowhead_spell_id": 10005,
+      "skill_up_colors": [
+        240,
+        240,
+        252,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7993,
+        "display_name": "Plans: Dazzling Mithril Rapier",
+        "source_detail": null
+      }
     },
     {
       "name": "Justicar's Sabatons",
@@ -9350,7 +11805,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252314
+      "wowhead_spell_id": 1252314,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251417,
+        "display_name": "Plans: Justicar's Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Officer's Sabatons",
@@ -9402,7 +11868,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252310
+      "wowhead_spell_id": 1252310,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251413,
+        "display_name": "Plans: Officer's Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Ornate Mithril Breastplate",
@@ -9442,7 +11919,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9972
+      "wowhead_spell_id": 9972,
+      "skill_up_colors": [
+        0,
+        240,
+        245,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Prefect's Sabatons",
@@ -9494,7 +11978,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252313
+      "wowhead_spell_id": 1252313,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251416,
+        "display_name": "Plans: Prefect's Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Sabatons",
@@ -9546,7 +12041,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252311
+      "wowhead_spell_id": 1252311,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251414,
+        "display_name": "Plans: Sentinel's Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Warder's Sabatons",
@@ -9598,7 +12104,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252312
+      "wowhead_spell_id": 1252312,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251415,
+        "display_name": "Plans: Warder's Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Blessed Plate Gauntlet",
@@ -9626,7 +12143,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252337
+      "wowhead_spell_id": 1252337,
+      "skill_up_colors": [
+        245,
+        265,
+        275,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251440,
+        "display_name": "Plans: Blessed Plate Gauntlet",
+        "source_detail": "Drops from: Deadwood Pathfinder"
+      }
     },
     {
       "name": "Heavy Mithril Helm",
@@ -9654,7 +12182,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9970
+      "wowhead_spell_id": 9970,
+      "skill_up_colors": [
+        0,
+        0,
+        245,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7990,
+        "display_name": "Plans: Heavy Mithril Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Ornate Mithril Boots",
@@ -9700,7 +12239,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9979
+      "wowhead_spell_id": 9979,
+      "skill_up_colors": [
+        0,
+        245,
+        250,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Ornate Mithril Helm",
@@ -9740,7 +12286,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9980
+      "wowhead_spell_id": 9980,
+      "skill_up_colors": [
+        0,
+        245,
+        250,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Mithril Hammer",
@@ -9780,7 +12333,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 10009
+      "wowhead_spell_id": 10009,
+      "skill_up_colors": [
+        245,
+        245,
+        257,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 8028,
+        "display_name": "Plans: Runed Mithril Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Arcanite Rod",
@@ -9808,7 +12372,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 20201
+      "wowhead_spell_id": 20201,
+      "skill_up_colors": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Arcanite Skeleton Key",
@@ -9836,7 +12407,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19669
+      "wowhead_spell_id": 19669,
+      "skill_up_colors": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Justicar's Gloves",
@@ -9870,7 +12448,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252304
+      "wowhead_spell_id": 1252304,
+      "skill_up_colors": [
+        250,
+        255,
+        255,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251407,
+        "display_name": "Plans: Justicar's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Justicar's Waistguard",
@@ -9916,7 +12505,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1252324
+      "wowhead_spell_id": 1252324,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251427,
+        "display_name": "Plans: Justicar's Waistguard",
+        "source_detail": null
+      }
     },
     {
       "name": "Officer's Gloves",
@@ -9950,7 +12550,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252300
+      "wowhead_spell_id": 1252300,
+      "skill_up_colors": [
+        250,
+        255,
+        255,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251403,
+        "display_name": "Plans: Officer's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Officer's Waistguard",
@@ -9996,7 +12607,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1252320
+      "wowhead_spell_id": 1252320,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251423,
+        "display_name": "Plans: Officer's Waistguard",
+        "source_detail": null
+      }
     },
     {
       "name": "Prefect's Gloves",
@@ -10030,7 +12652,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252303
+      "wowhead_spell_id": 1252303,
+      "skill_up_colors": [
+        250,
+        255,
+        255,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251406,
+        "display_name": "Plans: Prefect's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Prefect's Waistguard",
@@ -10076,7 +12709,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1252323
+      "wowhead_spell_id": 1252323,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251426,
+        "display_name": "Plans: Prefect's Waistguard",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Gloves",
@@ -10110,7 +12754,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252301
+      "wowhead_spell_id": 1252301,
+      "skill_up_colors": [
+        250,
+        255,
+        255,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251404,
+        "display_name": "Plans: Sentinel's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Sentinel's Waistguard",
@@ -10156,7 +12811,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1252321
+      "wowhead_spell_id": 1252321,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251424,
+        "display_name": "Plans: Sentinel's Waistguard",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Armor",
@@ -10190,7 +12856,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16642
+      "wowhead_spell_id": 16642,
+      "skill_up_colors": [
+        0,
+        250,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12682,
+        "display_name": "Plans: Thorium Armor",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Belt",
@@ -10218,7 +12895,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16643
+      "wowhead_spell_id": 16643,
+      "skill_up_colors": [
+        0,
+        250,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12683,
+        "display_name": "Plans: Thorium Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Cestus",
@@ -10264,7 +12952,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252363
+      "wowhead_spell_id": 1252363,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251466,
+        "display_name": "Plans: Thorium Cestus",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Greatmace",
@@ -10310,7 +13009,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252362
+      "wowhead_spell_id": 1252362,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251465,
+        "display_name": "Plans: Thorium Greatmace",
+        "source_detail": null
+      }
     },
     {
       "name": "Warder's Gloves",
@@ -10344,7 +13054,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252302
+      "wowhead_spell_id": 1252302,
+      "skill_up_colors": [
+        250,
+        255,
+        255,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251405,
+        "display_name": "Plans: Warder's Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Warder's Waistguard",
@@ -10390,7 +13111,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1252322
+      "wowhead_spell_id": 1252322,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251425,
+        "display_name": "Plans: Warder's Waistguard",
+        "source_detail": null
+      }
     },
     {
       "name": "Blessed Plate Bracers",
@@ -10418,7 +13150,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252339
+      "wowhead_spell_id": 1252339,
+      "skill_up_colors": [
+        255,
+        275,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251442,
+        "display_name": "Plans: Blessed Plate Bracers",
+        "source_detail": "Drops from: Jadefire Betrayer"
+      }
     },
     {
       "name": "Ebon Shiv",
@@ -10464,7 +13207,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 10013
+      "wowhead_spell_id": 10013,
+      "skill_up_colors": [
+        255,
+        255,
+        267,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 8030,
+        "display_name": "Plans: Ebon Shiv",
+        "source_detail": "Vendor: Magnus Frostwake"
+      }
     },
     {
       "name": "Imperial Plate Gauntlets",
@@ -10492,7 +13246,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252338
+      "wowhead_spell_id": 1252338,
+      "skill_up_colors": [
+        255,
+        275,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251441,
+        "display_name": "Plans: Imperial Plate Gauntlets",
+        "source_detail": "Drops from: Blood Elf Reclaimer"
+      }
     },
     {
       "name": "Thorium Bracers",
@@ -10520,7 +13285,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16644
+      "wowhead_spell_id": 16644,
+      "skill_up_colors": [
+        0,
+        255,
+        260,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12684,
+        "display_name": "Plans: Thorium Bracers",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Belt",
@@ -10548,7 +13324,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16645
+      "wowhead_spell_id": 16645,
+      "skill_up_colors": [
+        0,
+        260,
+        265,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12685,
+        "display_name": "Plans: Radiant Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Poleaxe",
@@ -10594,7 +13381,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252364
+      "wowhead_spell_id": 1252364,
+      "skill_up_colors": [
+        260,
+        280,
+        292,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251467,
+        "display_name": "Plans: Thorium Poleaxe",
+        "source_detail": "Drops from: Anvilrage Soldier"
+      }
     },
     {
       "name": "Dark Iron Pulverizer",
@@ -10622,7 +13420,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 15292
+      "wowhead_spell_id": 15292,
+      "skill_up_colors": [
+        0,
+        265,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11610,
+        "display_name": "Plans: Dark Iron Pulverizer",
+        "source_detail": "Drops from: Grizzle"
+      }
     },
     {
       "name": "Imperial Plate Belt",
@@ -10656,7 +13465,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16647
+      "wowhead_spell_id": 16647,
+      "skill_up_colors": [
+        0,
+        265,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12688,
+        "display_name": "Plans: Imperial Plate Belt",
+        "source_detail": "Quest: Imperial Plate Belt"
+      }
     },
     {
       "name": "Imperial Plate Shoulders",
@@ -10690,7 +13510,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16646
+      "wowhead_spell_id": 16646,
+      "skill_up_colors": [
+        0,
+        265,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12687,
+        "display_name": "Plans: Imperial Plate Shoulders",
+        "source_detail": "Quest: Imperial Plate Shoulders"
+      }
     },
     {
       "name": "Arcanite Blacksmith Hammer",
@@ -10724,7 +13555,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317964
+      "wowhead_spell_id": 1317964,
+      "skill_up_colors": [
+        270,
+        275,
+        277,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285291,
+        "display_name": "Plans: Arcanite Blacksmith Hammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Blessed Plate Belt",
@@ -10764,7 +13606,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1252341
+      "wowhead_spell_id": 1252341,
+      "skill_up_colors": [
+        270,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251444,
+        "display_name": "Plans: Blessed Plate Belt",
+        "source_detail": "Drops from: Plaguebat"
+      }
     },
     {
       "name": "Blessed Plate Leggings",
@@ -10792,7 +13645,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252340
+      "wowhead_spell_id": 1252340,
+      "skill_up_colors": [
+        270,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251443,
+        "display_name": "Plans: Blessed Plate Leggings",
+        "source_detail": "Drops from: Raging Owlbeast"
+      }
     },
     {
       "name": "Bold Dirk",
@@ -10832,7 +13696,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252365
+      "wowhead_spell_id": 1252365,
+      "skill_up_colors": [
+        270,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251468,
+        "display_name": "Plans: Bold Dirk",
+        "source_detail": "Quest: Back to the Grind; Vendor: Pexmit"
+      }
     },
     {
       "name": "Dark Iron Mail",
@@ -10860,7 +13735,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 15293
+      "wowhead_spell_id": 15293,
+      "skill_up_colors": [
+        0,
+        270,
+        275,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11614,
+        "display_name": "Plans: Dark Iron Mail",
+        "source_detail": null
+      }
     },
     {
       "name": "Imperial Plate Bracers",
@@ -10888,7 +13774,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16649
+      "wowhead_spell_id": 16649,
+      "skill_up_colors": [
+        0,
+        270,
+        275,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12690,
+        "display_name": "Plans: Imperial Plate Bracers",
+        "source_detail": "Quest: Imperial Plate Bracer"
+      }
     },
     {
       "name": "Radiant Breastplate",
@@ -10922,7 +13819,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16648
+      "wowhead_spell_id": 16648,
+      "skill_up_colors": [
+        0,
+        270,
+        275,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12689,
+        "display_name": "Plans: Radiant Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Blessed Plate Helm",
@@ -10950,7 +13858,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252342
+      "wowhead_spell_id": 1252342,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251445,
+        "display_name": "Plans: Blessed Plate Helm",
+        "source_detail": "Drops from: Scarlet Paladin"
+      }
     },
     {
       "name": "Dark Iron Sunderer",
@@ -10978,7 +13897,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 15294
+      "wowhead_spell_id": 15294,
+      "skill_up_colors": [
+        0,
+        275,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11611,
+        "display_name": "Plans: Dark Iron Sunderer",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Dawn's Edge",
@@ -11030,7 +13960,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16970
+      "wowhead_spell_id": 16970,
+      "skill_up_colors": [
+        275,
+        275,
+        287,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12821,
+        "display_name": "Plans: Dawn's Edge",
+        "source_detail": "Quest: Snakestone of the Shadow Huntress"
+      }
     },
     {
       "name": "Ornate Thorium Handaxe",
@@ -11070,7 +14011,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16969
+      "wowhead_spell_id": 16969,
+      "skill_up_colors": [
+        275,
+        275,
+        287,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12819,
+        "display_name": "Plans: Ornate Thorium Handaxe",
+        "source_detail": "Vendor: Magnus Frostwake"
+      }
     },
     {
       "name": "Thorium Shield Spike",
@@ -11104,7 +14056,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16651
+      "wowhead_spell_id": 16651,
+      "skill_up_colors": [
+        0,
+        275,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12692,
+        "display_name": "Plans: Thorium Shield Spike",
+        "source_detail": null
+      }
     },
     {
       "name": "Blazing Rapier",
@@ -11150,7 +14113,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16978
+      "wowhead_spell_id": 16978,
+      "skill_up_colors": [
+        280,
+        280,
+        292,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12825,
+        "display_name": "Plans: Blazing Rapier",
+        "source_detail": "Quest: Corruption"
+      }
     },
     {
       "name": "Blessed Plate Chest",
@@ -11178,7 +14152,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252343
+      "wowhead_spell_id": 1252343,
+      "skill_up_colors": [
+        280,
+        300,
+        310,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251446,
+        "display_name": "Plans: Blessed Plate Chest",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Dark Iron Shoulders",
@@ -11206,7 +14191,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15295
+      "wowhead_spell_id": 15295,
+      "skill_up_colors": [
+        0,
+        280,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11615,
+        "display_name": "Plans: Dark Iron Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Enchanted Battlehammer",
@@ -11252,7 +14248,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16973
+      "wowhead_spell_id": 16973,
+      "skill_up_colors": [
+        280,
+        280,
+        292,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12824,
+        "display_name": "Plans: Enchanted Battlehammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Huge Thorium Battleaxe",
@@ -11286,7 +14293,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 16971
+      "wowhead_spell_id": 16971,
+      "skill_up_colors": [
+        280,
+        280,
+        292,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12823,
+        "display_name": "Plans: Huge Thorium Battleaxe",
+        "source_detail": "Vendor: Magnus Frostwake"
+      }
     },
     {
       "name": "Thorium Boots",
@@ -11320,7 +14338,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16652
+      "wowhead_spell_id": 16652,
+      "skill_up_colors": [
+        0,
+        280,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12693,
+        "display_name": "Plans: Thorium Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Helm",
@@ -11354,7 +14383,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16653
+      "wowhead_spell_id": 16653,
+      "skill_up_colors": [
+        0,
+        280,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12694,
+        "display_name": "Plans: Thorium Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Clutchlord's Grips",
@@ -11394,7 +14434,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297141
+      "wowhead_spell_id": 1297141,
+      "skill_up_colors": [
+        285,
+        290,
+        292,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275601,
+        "display_name": "Plans: Clutchlord's Grips",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Dark Iron Plate",
@@ -11422,7 +14473,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 15296
+      "wowhead_spell_id": 15296,
+      "skill_up_colors": [
+        0,
+        285,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11612,
+        "display_name": "Plans: Dark Iron Plate",
+        "source_detail": "Drops from: Ribbly Screwspigot"
+      }
     },
     {
       "name": "Demon Forged Breastplate",
@@ -11462,7 +14524,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16667
+      "wowhead_spell_id": 16667,
+      "skill_up_colors": [
+        0,
+        285,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12696,
+        "display_name": "Plans: Demon Forged Breastplate",
+        "source_detail": "Quest: The Demon Forge"
+      }
     },
     {
       "name": "Goregasher Grips",
@@ -11502,7 +14575,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297138
+      "wowhead_spell_id": 1297138,
+      "skill_up_colors": [
+        285,
+        290,
+        292,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275598,
+        "display_name": "Plans: Goregasher Grips",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Radiant Gloves",
@@ -11530,7 +14614,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16654
+      "wowhead_spell_id": 16654,
+      "skill_up_colors": [
+        0,
+        285,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12695,
+        "display_name": "Plans: Radiant Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Serenity",
@@ -11582,7 +14677,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16983
+      "wowhead_spell_id": 16983,
+      "skill_up_colors": [
+        285,
+        285,
+        297,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12827,
+        "display_name": "Plans: Serenity",
+        "source_detail": "Drops from: Blacksmithing Plans"
+      }
     },
     {
       "name": "Clutchlord's Support",
@@ -11622,7 +14728,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297142
+      "wowhead_spell_id": 1297142,
+      "skill_up_colors": [
+        290,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275602,
+        "display_name": "Plans: Clutchlord's Support",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Corruption",
@@ -11680,7 +14797,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16985
+      "wowhead_spell_id": 16985,
+      "skill_up_colors": [
+        290,
+        290,
+        302,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12830,
+        "display_name": "Plans: Corruption",
+        "source_detail": "Drops from: Blacksmithing Plans"
+      }
     },
     {
       "name": "Dawnbringer Shoulders",
@@ -11720,7 +14848,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16660
+      "wowhead_spell_id": 16660,
+      "skill_up_colors": [
+        0,
+        290,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12698,
+        "display_name": "Plans: Dawnbringer Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Fiery Plate Gauntlets",
@@ -11760,7 +14899,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16655
+      "wowhead_spell_id": 16655,
+      "skill_up_colors": [
+        0,
+        290,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12699,
+        "display_name": "Plans: Fiery Plate Gauntlets",
+        "source_detail": "Quest: Fiery Plate Gauntlets"
+      }
     },
     {
       "name": "Girdle of the Dawn",
@@ -11794,7 +14944,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23632
+      "wowhead_spell_id": 23632,
+      "skill_up_colors": [
+        0,
+        290,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19203,
+        "display_name": "Plans: Girdle of the Dawn",
+        "source_detail": null
+      }
     },
     {
       "name": "Goregasher Support",
@@ -11834,7 +14995,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297139
+      "wowhead_spell_id": 1297139,
+      "skill_up_colors": [
+        290,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275599,
+        "display_name": "Plans: Goregasher Support",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Radiant Boots",
@@ -11862,7 +15034,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16656
+      "wowhead_spell_id": 16656,
+      "skill_up_colors": [
+        0,
+        290,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12697,
+        "display_name": "Plans: Radiant Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Volcanic Hammer",
@@ -11902,7 +15085,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16984
+      "wowhead_spell_id": 16984,
+      "skill_up_colors": [
+        290,
+        290,
+        302,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12828,
+        "display_name": "Plans: Volcanic Hammer",
+        "source_detail": "Drops from: Volchan"
+      }
     },
     {
       "name": "Clutchlord's Stompers",
@@ -11942,7 +15136,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297143
+      "wowhead_spell_id": 1297143,
+      "skill_up_colors": [
+        295,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275603,
+        "display_name": "Plans: Clutchlord's Stompers",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Dark Iron Bracers",
@@ -11976,7 +15181,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20874
+      "wowhead_spell_id": 20874,
+      "skill_up_colors": [
+        0,
+        295,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17051,
+        "display_name": "Plans: Dark Iron Bracers",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Fiery Chain Girdle",
@@ -12010,7 +15226,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 20872
+      "wowhead_spell_id": 20872,
+      "skill_up_colors": [
+        0,
+        295,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17049,
+        "display_name": "Plans: Fiery Chain Girdle",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Goregasher Stompers",
@@ -12050,7 +15277,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1297140
+      "wowhead_spell_id": 1297140,
+      "skill_up_colors": [
+        295,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275600,
+        "display_name": "Plans: Goregasher Stompers",
+        "source_detail": "Vendor: Vargus"
+      }
     },
     {
       "name": "Imperial Plate Boots",
@@ -12084,7 +15322,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16657
+      "wowhead_spell_id": 16657,
+      "skill_up_colors": [
+        0,
+        295,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12700,
+        "display_name": "Plans: Imperial Plate Boots",
+        "source_detail": "Quest: Imperial Plate Boots"
+      }
     },
     {
       "name": "Imperial Plate Helm",
@@ -12112,7 +15361,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16658
+      "wowhead_spell_id": 16658,
+      "skill_up_colors": [
+        0,
+        295,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12701,
+        "display_name": "Plans: Imperial Plate Helm",
+        "source_detail": "Quest: Imperial Plate Helm"
+      }
     },
     {
       "name": "Radiant Circlet",
@@ -12140,7 +15400,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16659
+      "wowhead_spell_id": 16659,
+      "skill_up_colors": [
+        0,
+        295,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12702,
+        "display_name": "Plans: Radiant Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Annihilator",
@@ -12192,7 +15463,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16991
+      "wowhead_spell_id": 16991,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12835,
+        "display_name": "Plans: Annihilator",
+        "source_detail": "Drops from: Quartermaster Zigris"
+      }
     },
     {
       "name": "Arcanite Champion",
@@ -12244,7 +15526,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16990
+      "wowhead_spell_id": 16990,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12834,
+        "display_name": "Plans: Arcanite Champion",
+        "source_detail": "Drops from: Goraluk Anvilcrack"
+      }
     },
     {
       "name": "Arcanite Reaper",
@@ -12278,7 +15571,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16994
+      "wowhead_spell_id": 16994,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12838,
+        "display_name": "Plans: Arcanite Reaper",
+        "source_detail": "Drops from: Bannok Grimaxe"
+      }
     },
     {
       "name": "Azerothium Legplates",
@@ -12312,7 +15616,18 @@
           "quantity": 18
         }
       ],
-      "wowhead_spell_id": 1306539
+      "wowhead_spell_id": 1306539,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279314,
+        "display_name": "Plans: Azerothium Legplates",
+        "source_detail": null
+      }
     },
     {
       "name": "Bagh Nakh",
@@ -12358,7 +15673,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252367
+      "wowhead_spell_id": 1252367,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251470,
+        "display_name": "Plans: Bagh Nakh",
+        "source_detail": "Vendor: Meilosh"
+      }
     },
     {
       "name": "Black Amnesty",
@@ -12404,7 +15730,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23638
+      "wowhead_spell_id": 23638,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19208,
+        "display_name": "Plans: Black Amnesty",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Black Grasp of the Destroyer",
@@ -12444,7 +15781,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 27589
+      "wowhead_spell_id": 27589,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22220,
+        "display_name": "Plans: Black Grasp of the Destroyer",
+        "source_detail": "Drops from: Moam"
+      }
     },
     {
       "name": "Blackfury",
@@ -12484,7 +15832,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 23639
+      "wowhead_spell_id": 23639,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19209,
+        "display_name": "Plans: Blackfury",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Blackguard",
@@ -12530,7 +15889,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 23652
+      "wowhead_spell_id": 23652,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19211,
+        "display_name": "Plans: Blackguard",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Bloodsoul Breastplate",
@@ -12570,7 +15940,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24136
+      "wowhead_spell_id": 24136,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19776,
+        "display_name": "Plans: Bloodsoul Breastplate",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Bloodsoul Gauntlets",
@@ -12610,7 +15991,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 24138
+      "wowhead_spell_id": 24138,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19778,
+        "display_name": "Plans: Bloodsoul Gauntlets",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Bloodsoul Shoulders",
@@ -12650,7 +16042,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 24137
+      "wowhead_spell_id": 24137,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19777,
+        "display_name": "Plans: Bloodsoul Shoulders",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Breastplate of Salvation",
@@ -12696,7 +16099,18 @@
           "quantity": 20
         }
       ],
-      "wowhead_spell_id": 1252350
+      "wowhead_spell_id": 1252350,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251453,
+        "display_name": "Plans: Breastplate of Salvation",
+        "source_detail": "Drops from: Legashi Summoner"
+      }
     },
     {
       "name": "Champion's Legplates",
@@ -12736,7 +16150,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252347
+      "wowhead_spell_id": 1252347,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251450,
+        "display_name": "Plans: Champion's Legplates",
+        "source_detail": null
+      }
     },
     {
       "name": "Dark Iron Boots",
@@ -12776,7 +16201,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 24399
+      "wowhead_spell_id": 24399,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20040,
+        "display_name": "Plans: Dark Iron Boots",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Dark Iron Destroyer",
@@ -12816,7 +16252,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20897
+      "wowhead_spell_id": 20897,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17060,
+        "display_name": "Plans: Dark Iron Destroyer",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Dark Iron Gauntlets",
@@ -12862,7 +16309,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23637
+      "wowhead_spell_id": 23637,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19207,
+        "display_name": "Plans: Dark Iron Gauntlets",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Dark Iron Helm",
@@ -12896,7 +16354,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23636
+      "wowhead_spell_id": 23636,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19206,
+        "display_name": "Plans: Dark Iron Helm",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Dark Iron Leggings",
@@ -12930,7 +16399,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 20876
+      "wowhead_spell_id": 20876,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17052,
+        "display_name": "Plans: Dark Iron Leggings",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Dark Iron Reaver",
@@ -12970,7 +16450,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20890
+      "wowhead_spell_id": 20890,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17059,
+        "display_name": "Plans: Dark Iron Reaver",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Darkrune Breastplate",
@@ -13004,7 +16495,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 24914
+      "wowhead_spell_id": 24914,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20554,
+        "display_name": "Plans: Darkrune Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Darkrune Gauntlets",
@@ -13044,7 +16546,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24912
+      "wowhead_spell_id": 24912,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20553,
+        "display_name": "Plans: Darkrune Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Darkrune Helm",
@@ -13084,7 +16597,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 24913
+      "wowhead_spell_id": 24913,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20555,
+        "display_name": "Plans: Darkrune Helm",
+        "source_detail": "Drops from: Cenarion Hold Infantry"
+      }
     },
     {
       "name": "Darksoul Breastplate",
@@ -13118,7 +16642,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24139
+      "wowhead_spell_id": 24139,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19779,
+        "display_name": "Plans: Darksoul Breastplate",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Darksoul Leggings",
@@ -13152,7 +16687,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24140
+      "wowhead_spell_id": 24140,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19780,
+        "display_name": "Plans: Darksoul Leggings",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Darksoul Shoulders",
@@ -13186,7 +16732,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 24141
+      "wowhead_spell_id": 24141,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19781,
+        "display_name": "Plans: Darksoul Shoulders",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Depleted Thorium Sabatons",
@@ -13220,7 +16777,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306537
+      "wowhead_spell_id": 1306537,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279312,
+        "display_name": "Plans: Depleted Thorium Sabatons",
+        "source_detail": null
+      }
     },
     {
       "name": "Ebon Hand",
@@ -13266,7 +16834,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23650
+      "wowhead_spell_id": 23650,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19210,
+        "display_name": "Plans: Ebon Hand",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Elemental Sharpening Stone",
@@ -13294,7 +16873,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 22757
+      "wowhead_spell_id": 22757,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18264,
+        "display_name": "Plans: Elemental Sharpening Stone",
+        "source_detail": "Drops from: Magmadar"
+      }
     },
     {
       "name": "Enchanted Thorium Breastplate",
@@ -13346,7 +16936,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16745
+      "wowhead_spell_id": 16745,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12727,
+        "display_name": "Plans: Enchanted Thorium Breastplate",
+        "source_detail": "Quest: Enchanted Thorium Platemail: Volume I"
+      }
     },
     {
       "name": "Enchanted Thorium Helm",
@@ -13392,7 +16993,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16742
+      "wowhead_spell_id": 16742,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12725,
+        "display_name": "Plans: Enchanted Thorium Helm",
+        "source_detail": "Quest: Enchanted Thorium Platemail: Volume III"
+      }
     },
     {
       "name": "Enchanted Thorium Leggings",
@@ -13438,7 +17050,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16744
+      "wowhead_spell_id": 16744,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12726,
+        "display_name": "Plans: Enchanted Thorium Leggings",
+        "source_detail": "Quest: Enchanted Thorium Platemail: Volume II"
+      }
     },
     {
       "name": "Enriched Thorium Breastplate",
@@ -13484,7 +17107,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1252344
+      "wowhead_spell_id": 1252344,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251447,
+        "display_name": "Plans: Enriched Thorium Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Enriched Thorium Helm",
@@ -13524,7 +17158,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252346
+      "wowhead_spell_id": 1252346,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251449,
+        "display_name": "Plans: Enriched Thorium Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Enriched Thorium Leggings",
@@ -13564,7 +17209,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1252345
+      "wowhead_spell_id": 1252345,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251448,
+        "display_name": "Plans: Enriched Thorium Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Evergreen Shield",
@@ -13598,7 +17254,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 1306536
+      "wowhead_spell_id": 1306536,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279311,
+        "display_name": "Plans: Evergreen Shield",
+        "source_detail": null
+      }
     },
     {
       "name": "Fiery Chain Shoulders",
@@ -13632,7 +17299,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 20873
+      "wowhead_spell_id": 20873,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17053,
+        "display_name": "Plans: Fiery Chain Shoulders",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Forest Defender's Axe",
@@ -13666,7 +17344,18 @@
           "quantity": 20
         }
       ],
-      "wowhead_spell_id": 1306534
+      "wowhead_spell_id": 1306534,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279309,
+        "display_name": "Plans: Forest Defender's Axe",
+        "source_detail": null
+      }
     },
     {
       "name": "Frostguard",
@@ -13718,7 +17407,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16992
+      "wowhead_spell_id": 16992,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12836,
+        "display_name": "Plans: Frostguard",
+        "source_detail": "Drops from: Foreman Marcrid"
+      }
     },
     {
       "name": "Gauntlets of Glory",
@@ -13758,7 +17458,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292982
+      "wowhead_spell_id": 1292982,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274013,
+        "display_name": "Plans: Gauntlets of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Gloves of the Dawn",
@@ -13792,7 +17503,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23633
+      "wowhead_spell_id": 23633,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19205,
+        "display_name": "Plans: Gloves of the Dawn",
+        "source_detail": null
+      }
     },
     {
       "name": "Greaves of Glory",
@@ -13832,7 +17554,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292984
+      "wowhead_spell_id": 1292984,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274015,
+        "display_name": "Plans: Greaves of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Greenhammer",
@@ -13866,7 +17599,18 @@
           "quantity": 16
         }
       ],
-      "wowhead_spell_id": 1306535
+      "wowhead_spell_id": 1306535,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279310,
+        "display_name": "Plans: Greenhammer",
+        "source_detail": null
+      }
     },
     {
       "name": "Hammer of the Titans",
@@ -13912,7 +17656,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 16988
+      "wowhead_spell_id": 16988,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12833,
+        "display_name": "Plans: Hammer of the Titans",
+        "source_detail": "Drops from: Maleki the Pallid"
+      }
     },
     {
       "name": "Handguards of Glory",
@@ -13952,7 +17707,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292986
+      "wowhead_spell_id": 1292986,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274017,
+        "display_name": "Plans: Handguards of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Heartseeker",
@@ -14010,7 +17776,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16995
+      "wowhead_spell_id": 16995,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12839,
+        "display_name": "Plans: Heartseeker",
+        "source_detail": "Drops from: Cannon Master Willey"
+      }
     },
     {
       "name": "Heavy Obsidian Belt",
@@ -14044,7 +17821,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27585
+      "wowhead_spell_id": 27585,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Thorium Gauntlets",
@@ -14078,7 +17862,18 @@
           "quantity": 14
         }
       ],
-      "wowhead_spell_id": 1306538
+      "wowhead_spell_id": 1306538,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279313,
+        "display_name": "Plans: Heavy Thorium Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Icebane Bracers",
@@ -14118,7 +17913,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 28244
+      "wowhead_spell_id": 28244,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22705,
+        "display_name": "Plans: Icebane Bracers",
+        "source_detail": null
+      }
     },
     {
       "name": "Icebane Breastplate",
@@ -14158,7 +17964,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 28242
+      "wowhead_spell_id": 28242,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22703,
+        "display_name": "Plans: Icebane Breastplate",
+        "source_detail": null
+      }
     },
     {
       "name": "Icebane Gauntlets",
@@ -14198,7 +18015,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 28243
+      "wowhead_spell_id": 28243,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22704,
+        "display_name": "Plans: Icebane Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Imperial Plate Chest",
@@ -14226,7 +18054,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16663
+      "wowhead_spell_id": 16663,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12705,
+        "display_name": "Plans: Imperial Plate Chest",
+        "source_detail": "Quest: Imperial Plate Chest"
+      }
     },
     {
       "name": "Imperial Plate Leggings",
@@ -14254,7 +18093,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16730
+      "wowhead_spell_id": 16730,
+      "skill_up_colors": [
+        300,
+        300,
+        310,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12715,
+        "display_name": "Plans: Imperial Plate Leggings",
+        "source_detail": "Quest: Imperial Plate Leggings"
+      }
     },
     {
       "name": "Ironwood Blade",
@@ -14288,7 +18138,18 @@
           "quantity": 14
         }
       ],
-      "wowhead_spell_id": 1306533
+      "wowhead_spell_id": 1306533,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279308,
+        "display_name": "Plans: Ironwood Blade",
+        "source_detail": null
+      }
     },
     {
       "name": "Jagged Obsidian Shield",
@@ -14328,7 +18189,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27586
+      "wowhead_spell_id": 27586,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22219,
+        "display_name": "Plans: Jagged Obsidian Shield",
+        "source_detail": "Vendor: Lieutenant General Andorov"
+      }
     },
     {
       "name": "Justice Epaulets",
@@ -14368,7 +18240,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292951
+      "wowhead_spell_id": 1292951,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273982,
+        "display_name": "Plans: Justice Epaulets",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Gauntlets",
@@ -14408,7 +18291,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292946
+      "wowhead_spell_id": 1292946,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273977,
+        "display_name": "Plans: Justice Gauntlets",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Gloves",
@@ -14448,7 +18342,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292950
+      "wowhead_spell_id": 1292950,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273981,
+        "display_name": "Plans: Justice Gloves",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Greaves",
@@ -14488,7 +18393,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292948
+      "wowhead_spell_id": 1292948,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273979,
+        "display_name": "Plans: Justice Greaves",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Handguards",
@@ -14528,7 +18444,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292954
+      "wowhead_spell_id": 1292954,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273985,
+        "display_name": "Plans: Justice Handguards",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Leggings",
@@ -14568,7 +18495,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292945
+      "wowhead_spell_id": 1292945,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273976,
+        "display_name": "Plans: Justice Leggings",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Legguards",
@@ -14608,7 +18546,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292953
+      "wowhead_spell_id": 1292953,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273984,
+        "display_name": "Plans: Justice Legguards",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Legplates",
@@ -14648,7 +18597,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292949
+      "wowhead_spell_id": 1292949,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273980,
+        "display_name": "Plans: Justice Legplates",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Pauldrons",
@@ -14688,7 +18648,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292955
+      "wowhead_spell_id": 1292955,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273986,
+        "display_name": "Plans: Justice Pauldrons",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Sabatons",
@@ -14728,7 +18699,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292956
+      "wowhead_spell_id": 1292956,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273987,
+        "display_name": "Plans: Justice Sabatons",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Spaulders",
@@ -14768,7 +18750,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292947
+      "wowhead_spell_id": 1292947,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273978,
+        "display_name": "Plans: Justice Spaulders",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Justice Treads",
@@ -14808,7 +18801,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292952
+      "wowhead_spell_id": 1292952,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273983,
+        "display_name": "Plans: Justice Treads",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Legguards of Glory",
@@ -14848,7 +18852,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292985
+      "wowhead_spell_id": 1292985,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274016,
+        "display_name": "Plans: Legguards of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Legionite Glaive",
@@ -14894,7 +18909,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252368
+      "wowhead_spell_id": 1252368,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251471,
+        "display_name": "Plans: Legionite Glaive",
+        "source_detail": null
+      }
     },
     {
       "name": "Legplates of Glory",
@@ -14934,7 +18960,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292981
+      "wowhead_spell_id": 1292981,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274012,
+        "display_name": "Plans: Legplates of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Light Obsidian Belt",
@@ -14962,7 +18999,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27588
+      "wowhead_spell_id": 27588,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lionheart Helm",
@@ -15008,7 +19052,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16729
+      "wowhead_spell_id": 16729,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12717,
+        "display_name": "Plans: Lionheart Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Martyr's Legplates",
@@ -15048,7 +19103,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252349
+      "wowhead_spell_id": 1252349,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251452,
+        "display_name": "Plans: Martyr's Legplates",
+        "source_detail": "Drops from: Gordok Brute"
+      }
     },
     {
       "name": "Master Forge",
@@ -15082,7 +19148,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1263073
+      "wowhead_spell_id": 1263073,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273113,
+        "display_name": "Blueprint: Master Forge",
+        "source_detail": "Drops from: Golem Lord Argelmach"
+      }
     },
     {
       "name": "Masterwork Stormhammer",
@@ -15128,7 +19205,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16993
+      "wowhead_spell_id": 16993,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12837,
+        "display_name": "Plans: Masterwork Stormhammer",
+        "source_detail": "Drops from: Goraluk Anvilcrack"
+      }
     },
     {
       "name": "Nightfall",
@@ -15174,7 +19262,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23653
+      "wowhead_spell_id": 23653,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19212,
+        "display_name": "Plans: Nightfall",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Obsidian Mail Tunic",
@@ -15220,7 +19319,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27590
+      "wowhead_spell_id": 27590,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22221,
+        "display_name": "Plans: Obsidian Mail Tunic",
+        "source_detail": "Vendor: Lieutenant General Andorov"
+      }
     },
     {
       "name": "Pauldrons of Glory",
@@ -15260,7 +19370,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292987
+      "wowhead_spell_id": 1292987,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274018,
+        "display_name": "Plans: Pauldrons of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Persuader",
@@ -15312,7 +19433,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27830
+      "wowhead_spell_id": 27830,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22390,
+        "display_name": "Plans: Persuader",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Leggings",
@@ -15340,7 +19472,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16725
+      "wowhead_spell_id": 16725,
+      "skill_up_colors": [
+        300,
+        300,
+        310,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12713,
+        "display_name": "Plans: Radiant Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Runic Breastplate",
@@ -15374,7 +19517,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16731
+      "wowhead_spell_id": 16731,
+      "skill_up_colors": [
+        300,
+        305,
+        315,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12718,
+        "display_name": "Plans: Runic Breastplate",
+        "source_detail": "Drops from: Strashaz Myrmidon"
+      }
     },
     {
       "name": "Runic Plate Boots",
@@ -15408,7 +19562,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 16665
+      "wowhead_spell_id": 16665,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12707,
+        "display_name": "Plans: Runic Plate Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Runic Plate Helm",
@@ -15448,7 +19613,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16726
+      "wowhead_spell_id": 16726,
+      "skill_up_colors": [
+        300,
+        300,
+        310,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12714,
+        "display_name": "Plans: Runic Plate Helm",
+        "source_detail": null
+      }
     },
     {
       "name": "Runic Plate Leggings",
@@ -15482,7 +19658,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 16732
+      "wowhead_spell_id": 16732,
+      "skill_up_colors": [
+        300,
+        305,
+        315,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12719,
+        "display_name": "Plans: Runic Plate Leggings",
+        "source_detail": "Drops from: Scarlet Smith"
+      }
     },
     {
       "name": "Runic Plate Shoulders",
@@ -15516,7 +19703,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 16664
+      "wowhead_spell_id": 16664,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12706,
+        "display_name": "Plans: Runic Plate Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Sabatons of Glory",
@@ -15556,7 +19754,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292988
+      "wowhead_spell_id": 1292988,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274019,
+        "display_name": "Plans: Sabatons of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Sageblade",
@@ -15596,7 +19805,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27832
+      "wowhead_spell_id": 27832,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22389,
+        "display_name": "Plans: Sageblade",
+        "source_detail": null
+      }
     },
     {
       "name": "Shoulders of Glory",
@@ -15636,7 +19856,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1292983
+      "wowhead_spell_id": 1292983,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274014,
+        "display_name": "Plans: Shoulders of Glory",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Stalwart Helm",
@@ -15682,7 +19913,18 @@
           "quantity": 20
         }
       ],
-      "wowhead_spell_id": 1252348
+      "wowhead_spell_id": 1252348,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251451,
+        "display_name": "Plans: Stalwart Helm",
+        "source_detail": "Drops from: Bloodaxe Veteran"
+      }
     },
     {
       "name": "Stormcarver",
@@ -15716,7 +19958,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1252366
+      "wowhead_spell_id": 1252366,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251469,
+        "display_name": "Plans: Stormcarver",
+        "source_detail": "Vendor: Meilosh"
+      }
     },
     {
       "name": "Stronghold Gauntlets",
@@ -15762,7 +20015,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16741
+      "wowhead_spell_id": 16741,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12720,
+        "display_name": "Plans: Stronghold Gauntlets",
+        "source_detail": null
+      }
     },
     {
       "name": "Sulfuron Hammer",
@@ -15820,7 +20084,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 21161
+      "wowhead_spell_id": 21161,
+      "skill_up_colors": [
+        300,
+        325,
+        337,
+        350
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18592,
+        "display_name": "Plans: Sulfuron Hammer",
+        "source_detail": "Quest: A Binding Contract"
+      }
     },
     {
       "name": "Thick Obsidian Breastplate",
@@ -15866,7 +20141,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27587
+      "wowhead_spell_id": 27587,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22222,
+        "display_name": "Plans: Thick Obsidian Breastplate",
+        "source_detail": "Drops from: The Prophet Skeram"
+      }
     },
     {
       "name": "Thorium Leggings",
@@ -15894,7 +20180,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 16662
+      "wowhead_spell_id": 16662,
+      "skill_up_colors": [
+        0,
+        300,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12704,
+        "display_name": "Plans: Thorium Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Titanic Leggings",
@@ -15934,7 +20231,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27829
+      "wowhead_spell_id": 27829,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22388,
+        "display_name": "Plans: Titanic Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Whitesoul Helm",
@@ -15980,7 +20288,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 16724
+      "wowhead_spell_id": 16724,
+      "skill_up_colors": [
+        300,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12711,
+        "display_name": "Plans: Whitesoul Helm",
+        "source_detail": null
+      }
     }
   ]
 }

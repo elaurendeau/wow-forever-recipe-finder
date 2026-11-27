@@ -46,6 +46,7 @@ defmodule WowForeverRecipeFinder do
         CrateEfficiency,
         CrateCatalogSeeder,
         CrateResultsFilter,
-        CrateShoppingList
+        CrateShoppingList,
+        ProfessionLeveling
       ] ++ test_only_exports
 end

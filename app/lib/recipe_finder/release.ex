@@ -45,7 +45,11 @@ defmodule WowForeverRecipeFinder.Release do
           fn _repo ->
             load_seeds("catalog_seeds", &WowForeverRecipeFinder.CatalogSeeder.load_from_file!/1)
             load_seeds("writ_seeds", &WowForeverRecipeFinder.WritCatalogSeeder.load_from_file!/1)
-            load_seeds("crate_seeds", &WowForeverRecipeFinder.CrateCatalogSeeder.load_from_file!/1)
+
+            load_seeds(
+              "crate_seeds",
+              &WowForeverRecipeFinder.CrateCatalogSeeder.load_from_file!/1
+            )
           end,
           timeout: 120_000
         )

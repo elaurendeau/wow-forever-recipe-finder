@@ -15,6 +15,8 @@ defmodule WowForeverRecipeFinder.Gateways.Schema.Pattern do
     field :source, :string
     field :wiki_slug, :string
     field :resolution_status, :string
+    field :skill_up_colors, {:array, :integer}
+    field :recipe_cost_item, :map
 
     belongs_to :profession, Profession
     belongs_to :crafted_item, Item

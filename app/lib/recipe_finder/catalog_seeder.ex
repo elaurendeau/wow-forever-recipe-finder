@@ -59,7 +59,9 @@ defmodule WowForeverRecipeFinder.CatalogSeeder do
         skill: attrs["skill"],
         source: attrs["source"],
         wiki_slug: attrs["wiki_slug"],
-        resolution_status: attrs["resolution_status"]
+        resolution_status: attrs["resolution_status"],
+        skill_up_colors: attrs["skill_up_colors"],
+        recipe_cost_item: attrs["recipe_cost_item"]
       })
 
     Enum.each(attrs["reagents"], fn reagent_attrs ->
@@ -75,10 +77,21 @@ defmodule WowForeverRecipeFinder.CatalogSeeder do
     pattern
   end
 
-  defp upsert_item!(%{"wowhead_id" => wowhead_id, "display_name" => display_name, "wiki_slug" => wiki_slug}) do
+  defp upsert_item!(%{
+         "wowhead_id" => wowhead_id,
+         "display_name" => display_name,
+         "wiki_slug" => wiki_slug
+       }) do
     case Repo.get_by(Item, wowhead_id: wowhead_id) do
-      nil -> Repo.insert!(%Item{wowhead_id: wowhead_id, display_name: display_name, wiki_slug: wiki_slug})
-      existing -> existing
+      nil ->
+        Repo.insert!(%Item{
+          wowhead_id: wowhead_id,
+          display_name: display_name,
+          wiki_slug: wiki_slug
+        })
+
+      existing ->
+        existing
     end
   end
 

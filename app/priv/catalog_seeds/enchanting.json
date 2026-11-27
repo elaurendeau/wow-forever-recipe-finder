@@ -30,7 +30,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7421
+      "wowhead_spell_id": 7421,
+      "skill_up_colors": [
+        0,
+        5,
+        7,
+        10
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dust to Motes",
@@ -52,7 +59,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1245320
+      "wowhead_spell_id": 1245320,
+      "skill_up_colors": [
+        0,
+        10,
+        12,
+        15
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lesser Magic Wand",
@@ -80,7 +94,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 14293
+      "wowhead_spell_id": 14293,
+      "skill_up_colors": [
+        10,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Novice's Practice Wand",
@@ -108,7 +129,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1245321
+      "wowhead_spell_id": 1245321,
+      "skill_up_colors": [
+        0,
+        10,
+        12,
+        15
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Enchanted Lute",
@@ -136,7 +164,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1230643
+      "wowhead_spell_id": 1230643,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Minor Wizard Oil",
@@ -170,7 +205,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25124
+      "wowhead_spell_id": 25124,
+      "skill_up_colors": [
+        0,
+        45,
+        47,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20758,
+        "display_name": "Formula: Minor Wizard Oil",
+        "source_detail": null
+      }
     },
     {
       "name": "Greater Magic Wand",
@@ -198,7 +244,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 14807
+      "wowhead_spell_id": 14807,
+      "skill_up_colors": [
+        70,
+        110,
+        130,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Silver Rod",
@@ -238,7 +291,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7795
+      "wowhead_spell_id": 7795,
+      "skill_up_colors": [
+        100,
+        130,
+        150,
+        170
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Scroll of Spatial Mending",
@@ -266,7 +326,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 448624
+      "wowhead_spell_id": 448624,
+      "skill_up_colors": [
+        120,
+        120,
+        140,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 223163,
+        "display_name": "Formula: Scroll of Spatial Mending",
+        "source_detail": null
+      }
     },
     {
       "name": "Mystic Mushroom",
@@ -306,7 +377,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248752
+      "wowhead_spell_id": 1248752,
+      "skill_up_colors": [
+        130,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249476,
+        "display_name": "Formula: Mystic Mushroom",
+        "source_detail": null
+      }
     },
     {
       "name": "Polished Driftwood Icon",
@@ -346,7 +428,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248755
+      "wowhead_spell_id": 1248755,
+      "skill_up_colors": [
+        130,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249478,
+        "display_name": "Formula: Polished Driftwood Icon",
+        "source_detail": null
+      }
     },
     {
       "name": "Tenets of the Silver Hand",
@@ -386,7 +479,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1248754
+      "wowhead_spell_id": 1248754,
+      "skill_up_colors": [
+        130,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249477,
+        "display_name": "Formula: Tenets of the Silver Hand",
+        "source_detail": null
+      }
     },
     {
       "name": "Arcane Salvager",
@@ -414,7 +518,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1263056
+      "wowhead_spell_id": 1263056,
+      "skill_up_colors": [
+        140,
+        140,
+        140,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273103,
+        "display_name": "Blueprint: Arcane Salvager",
+        "source_detail": null
+      }
     },
     {
       "name": "Glimmering Staff",
@@ -466,7 +581,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1248703
+      "wowhead_spell_id": 1248703,
+      "skill_up_colors": [
+        140,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249482,
+        "display_name": "Formula: Glimmering Staff",
+        "source_detail": null
+      }
     },
     {
       "name": "Orb of Mystic Insight",
@@ -500,7 +626,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1248745
+      "wowhead_spell_id": 1248745,
+      "skill_up_colors": [
+        140,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249484,
+        "display_name": "Formula: Orb of Mystic Insight",
+        "source_detail": null
+      }
     },
     {
       "name": "Orb of Souls",
@@ -534,7 +671,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1248748
+      "wowhead_spell_id": 1248748,
+      "skill_up_colors": [
+        140,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249485,
+        "display_name": "Formula: Orb of Souls",
+        "source_detail": null
+      }
     },
     {
       "name": "Soulstaff",
@@ -586,7 +734,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1248739
+      "wowhead_spell_id": 1248739,
+      "skill_up_colors": [
+        140,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249483,
+        "display_name": "Formula: Soulstaff",
+        "source_detail": null
+      }
     },
     {
       "name": "Minor Mana Oil",
@@ -620,7 +779,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25125
+      "wowhead_spell_id": 25125,
+      "skill_up_colors": [
+        150,
+        160,
+        170,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20752,
+        "display_name": "Formula: Minor Mana Oil",
+        "source_detail": null
+      }
     },
     {
       "name": "Runed Golden Rod",
@@ -660,7 +830,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 13628
+      "wowhead_spell_id": 13628,
+      "skill_up_colors": [
+        150,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lesser Mystic Wand",
@@ -688,7 +865,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 14809
+      "wowhead_spell_id": 14809,
+      "skill_up_colors": [
+        155,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Greater Mystic Wand",
@@ -722,7 +906,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 14810
+      "wowhead_spell_id": 14810,
+      "skill_up_colors": [
+        175,
+        195,
+        215,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Twisted Nether Wand",
@@ -756,7 +947,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248461
+      "wowhead_spell_id": 1248461,
+      "skill_up_colors": [
+        185,
+        205,
+        225,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249487,
+        "display_name": "Formula: Twisted Nether Wand",
+        "source_detail": "Drops from: Boulderfist Magus"
+      }
     },
     {
       "name": "Lesser Wizard Oil",
@@ -790,7 +992,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25126
+      "wowhead_spell_id": 25126,
+      "skill_up_colors": [
+        200,
+        210,
+        220,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20753,
+        "display_name": "Formula: Lesser Wizard Oil",
+        "source_detail": null
+      }
     },
     {
       "name": "Runed Truesilver Rod",
@@ -830,7 +1043,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 13702
+      "wowhead_spell_id": 13702,
+      "skill_up_colors": [
+        200,
+        220,
+        240,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Libram of Invocation",
@@ -882,7 +1102,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249006
+      "wowhead_spell_id": 1249006,
+      "skill_up_colors": [
+        210,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249494,
+        "display_name": "Formula: Libram of Invocation",
+        "source_detail": null
+      }
     },
     {
       "name": "Talons of Wrath",
@@ -934,7 +1165,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248974
+      "wowhead_spell_id": 1248974,
+      "skill_up_colors": [
+        210,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249493,
+        "display_name": "Formula: Talons of Wrath",
+        "source_detail": null
+      }
     },
     {
       "name": "Totem of Ancestral Protection",
@@ -986,7 +1228,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249015
+      "wowhead_spell_id": 1249015,
+      "skill_up_colors": [
+        210,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249495,
+        "display_name": "Formula: Totem of Ancestral Protection",
+        "source_detail": null
+      }
     },
     {
       "name": "Dreambough Wand",
@@ -1020,7 +1273,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248509
+      "wowhead_spell_id": 1248509,
+      "skill_up_colors": [
+        215,
+        235,
+        255,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249512,
+        "display_name": "Formula: Dreambough Wand",
+        "source_detail": "Drops from: Dustbelcher Ogre Mage"
+      }
     },
     {
       "name": "Dreamstaff",
@@ -1078,7 +1342,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249064
+      "wowhead_spell_id": 1249064,
+      "skill_up_colors": [
+        220,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249507,
+        "display_name": "Formula: Dreamstaff",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Staff",
@@ -1136,7 +1411,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249061
+      "wowhead_spell_id": 1249061,
+      "skill_up_colors": [
+        220,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249506,
+        "display_name": "Formula: Radiant Staff",
+        "source_detail": null
+      }
     },
     {
       "name": "Truesilver Conduit",
@@ -1194,7 +1480,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249069
+      "wowhead_spell_id": 1249069,
+      "skill_up_colors": [
+        220,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249508,
+        "display_name": "Formula: Truesilver Conduit",
+        "source_detail": null
+      }
     },
     {
       "name": "Twisting Essence Jar",
@@ -1240,7 +1537,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249070
+      "wowhead_spell_id": 1249070,
+      "skill_up_colors": [
+        220,
+        225,
+        245,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249509,
+        "display_name": "Formula: Twisting Essence Jar",
+        "source_detail": null
+      }
     },
     {
       "name": "Lesser Eternal Wand",
@@ -1274,7 +1582,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248505
+      "wowhead_spell_id": 1248505,
+      "skill_up_colors": [
+        245,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249515,
+        "display_name": "Formula: Lesser Eternal Wand",
+        "source_detail": "Drops from: Muculent Ooze"
+      }
     },
     {
       "name": "Enchanted Leather",
@@ -1302,7 +1621,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 17181
+      "wowhead_spell_id": 17181,
+      "skill_up_colors": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Enchanted Thorium",
@@ -1330,7 +1656,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 17180
+      "wowhead_spell_id": 17180,
+      "skill_up_colors": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lesser Mana Oil",
@@ -1364,7 +1697,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25127
+      "wowhead_spell_id": 25127,
+      "skill_up_colors": [
+        250,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20754,
+        "display_name": "Formula: Lesser Mana Oil",
+        "source_detail": null
+      }
     },
     {
       "name": "Dormant Heart of the Mountain",
@@ -1398,7 +1742,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1249114
+      "wowhead_spell_id": 1249114,
+      "skill_up_colors": [
+        265,
+        285,
+        305,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249521,
+        "display_name": "Formula: Dormant Heart of the Mountain",
+        "source_detail": "Drops from: Mother Smolderweb"
+      }
     },
     {
       "name": "Frozen Heart of the Mountain",
@@ -1432,7 +1787,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1249107
+      "wowhead_spell_id": 1249107,
+      "skill_up_colors": [
+        265,
+        285,
+        305,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249519,
+        "display_name": "Formula: Frozen Heart of the Mountain",
+        "source_detail": "Drops from: Mor Grayhoof"
+      }
     },
     {
       "name": "Molten Heart of the Mountain",
@@ -1466,7 +1832,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1249112
+      "wowhead_spell_id": 1249112,
+      "skill_up_colors": [
+        265,
+        285,
+        305,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249520,
+        "display_name": "Formula: Molten Heart of the Mountain",
+        "source_detail": "Drops from: Pyroguard Emberseer"
+      }
     },
     {
       "name": "Smoking Heart of the Mountain",
@@ -1500,7 +1877,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 15596
+      "wowhead_spell_id": 15596,
+      "skill_up_colors": [
+        265,
+        285,
+        305,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11813,
+        "display_name": "Formula: Smoking Heart of the Mountain",
+        "source_detail": "Drops from: Lord Roccor"
+      }
     },
     {
       "name": "Brilliant Wand",
@@ -1540,7 +1928,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248650
+      "wowhead_spell_id": 1248650,
+      "skill_up_colors": [
+        275,
+        320,
+        340,
+        360
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249537,
+        "display_name": "Formula: Brilliant Wand",
+        "source_detail": null
+      }
     },
     {
       "name": "Greater Eternal Wand",
@@ -1574,7 +1973,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1248515
+      "wowhead_spell_id": 1248515,
+      "skill_up_colors": [
+        275,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249522,
+        "display_name": "Formula: Greater Eternal Wand",
+        "source_detail": "Drops from: Flamekin Torcher"
+      }
     },
     {
       "name": "Wizard Oil",
@@ -1608,7 +2018,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25128
+      "wowhead_spell_id": 25128,
+      "skill_up_colors": [
+        275,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20755,
+        "display_name": "Formula: Wizard Oil",
+        "source_detail": null
+      }
     },
     {
       "name": "Runed Arcanite Rod",
@@ -1660,7 +2081,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20051
+      "wowhead_spell_id": 20051,
+      "skill_up_colors": [
+        290,
+        310,
+        330,
+        350
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16243,
+        "display_name": "Formula: Runed Arcanite Rod",
+        "source_detail": "Vendor: Lorelae Wintersong"
+      }
     },
     {
       "name": "Arcane Forge",
@@ -1694,7 +2126,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1263082
+      "wowhead_spell_id": 1263082,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273116,
+        "display_name": "Blueprint: Arcane Forge",
+        "source_detail": "Drops from: Nanaya"
+      }
     },
     {
       "name": "Brilliant Mana Oil",
@@ -1728,7 +2171,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25130
+      "wowhead_spell_id": 25130,
+      "skill_up_colors": [
+        300,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20757,
+        "display_name": "Formula: Brilliant Mana Oil",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Brilliant Wizard Oil",
@@ -1762,7 +2216,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25129
+      "wowhead_spell_id": 25129,
+      "skill_up_colors": [
+        300,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20756,
+        "display_name": "Formula: Brilliant Wizard Oil",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Idol of Swiftness",
@@ -1802,7 +2267,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306524
+      "wowhead_spell_id": 1306524,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279299,
+        "display_name": "Formula: Idol of Swiftness",
+        "source_detail": null
+      }
     },
     {
       "name": "Idol of the Dream",
@@ -1860,7 +2336,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249128
+      "wowhead_spell_id": 1249128,
+      "skill_up_colors": [
+        300,
+        320,
+        340,
+        360
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249529,
+        "display_name": "Formula: Idol of the Dream",
+        "source_detail": null
+      }
     },
     {
       "name": "Idol of the Ursine Twins",
@@ -1900,7 +2387,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306525
+      "wowhead_spell_id": 1306525,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279300,
+        "display_name": "Formula: Idol of the Ursine Twins",
+        "source_detail": null
+      }
     },
     {
       "name": "Libram of Holy Alacrity",
@@ -1958,7 +2456,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249152
+      "wowhead_spell_id": 1249152,
+      "skill_up_colors": [
+        300,
+        320,
+        340,
+        360
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249530,
+        "display_name": "Formula: Libram of Holy Alacrity",
+        "source_detail": null
+      }
     },
     {
       "name": "Libram of Infusion",
@@ -1998,7 +2507,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306522
+      "wowhead_spell_id": 1306522,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279297,
+        "display_name": "Formula: Libram of Infusion",
+        "source_detail": null
+      }
     },
     {
       "name": "Steadfast Libram",
@@ -2038,7 +2558,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306521
+      "wowhead_spell_id": 1306521,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279296,
+        "display_name": "Formula: Steadfast Libram",
+        "source_detail": null
+      }
     },
     {
       "name": "Torch of Light",
@@ -2078,7 +2609,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1306520
+      "wowhead_spell_id": 1306520,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279295,
+        "display_name": "Formula: Torch of Light",
+        "source_detail": null
+      }
     },
     {
       "name": "Totem of Thunder",
@@ -2136,7 +2678,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1249154
+      "wowhead_spell_id": 1249154,
+      "skill_up_colors": [
+        300,
+        320,
+        340,
+        360
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249532,
+        "display_name": "Formula: Totem of Thunder",
+        "source_detail": null
+      }
     },
     {
       "name": "Totem of Urgency",
@@ -2176,7 +2729,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306523
+      "wowhead_spell_id": 1306523,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279298,
+        "display_name": "Formula: Totem of Urgency",
+        "source_detail": null
+      }
     }
   ]
 }

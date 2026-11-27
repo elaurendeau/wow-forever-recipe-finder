@@ -20,6 +20,7 @@ defmodule WowForeverRecipeFinderWeb.Router do
     live "/", RecipeFinderLive
     live "/writs", WritsLive
     live "/merchant-favor", MerchantFavorLive
+    live "/profession-leveling", ProfessionLevelingLive
   end
 
   # Other scopes may use custom stacks.

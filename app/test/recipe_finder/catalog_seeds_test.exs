@@ -19,8 +19,11 @@ defmodule WowForeverRecipeFinder.CatalogSeedsTest do
 
   defp pattern!(slug, name) do
     case Enum.filter(seed(slug)["patterns"], &(&1["name"] == name)) do
-      [pattern] -> pattern
-      other -> flunk("expected exactly one #{slug} pattern named #{inspect(name)}, got #{length(other)}")
+      [pattern] ->
+        pattern
+
+      other ->
+        flunk("expected exactly one #{slug} pattern named #{inspect(name)}, got #{length(other)}")
     end
   end
 
@@ -44,7 +47,10 @@ defmodule WowForeverRecipeFinder.CatalogSeedsTest do
           end
 
           ids = Enum.map(p["reagents"], & &1["wowhead_id"])
-          assert ids == Enum.uniq(ids), "duplicate reagent on #{p["name"]} (violates pattern_reagent unique index)"
+
+          assert ids == Enum.uniq(ids),
+                 "duplicate reagent on #{p["name"]} (violates pattern_reagent unique index)"
+
           assert Enum.all?(p["reagents"], &(&1["quantity"] >= 1))
         end
       end
@@ -57,7 +63,13 @@ defmodule WowForeverRecipeFinder.CatalogSeedsTest do
           p <- seed(slug)["patterns"],
           item <- [p["crafted_item"] | p["reagents"]],
           reduce: %{} do
-        acc -> Map.update(acc, item["wowhead_id"], MapSet.new([item["display_name"]]), &MapSet.put(&1, item["display_name"]))
+        acc ->
+          Map.update(
+            acc,
+            item["wowhead_id"],
+            MapSet.new([item["display_name"]]),
+            &MapSet.put(&1, item["display_name"])
+          )
       end
 
     conflicts = for {id, set} <- names, MapSet.size(set) > 1, do: {id, MapSet.to_list(set)}
@@ -80,12 +92,18 @@ defmodule WowForeverRecipeFinder.CatalogSeedsTest do
     end
 
     test "Engineering schematics use Blank Parchment (10648), not the WotLK-era item 39354" do
-      assert reagent_map(pattern!("engineering", "Goblin Rocket Fuel Recipe")) == %{10648 => 1, 10647 => 1}
+      assert reagent_map(pattern!("engineering", "Goblin Rocket Fuel Recipe")) == %{
+               10648 => 1,
+               10647 => 1
+             }
     end
 
     test "Season of Discovery-only items are not in the Forever catalog" do
       crafted_ids =
-        for slug <- @professions, p <- seed(slug)["patterns"], into: MapSet.new(), do: p["crafted_item"]["wowhead_id"]
+        for slug <- @professions,
+            p <- seed(slug)["patterns"],
+            into: MapSet.new(),
+            do: p["crafted_item"]["wowhead_id"]
 
       # Phoenix Bindings, Scarlet Augur's Hood, Soul Vessel, Elixir of Coalesced Regret, Speedstone
       for sod_id <- [210_781, 238_264, 211_427, 210_708, 233_990] do

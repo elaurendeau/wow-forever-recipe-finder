@@ -36,7 +36,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244431
+      "wowhead_spell_id": 1244431,
+      "skill_up_colors": [
+        1,
+        55,
+        75,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "First Aid Kit",
@@ -64,7 +71,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1230117
+      "wowhead_spell_id": 1230117,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Bandage",
@@ -86,7 +100,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3275
+      "wowhead_spell_id": 3275,
+      "skill_up_colors": [
+        0,
+        30,
+        45,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Linen Bandage",
@@ -108,7 +129,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3276
+      "wowhead_spell_id": 3276,
+      "skill_up_colors": [
+        40,
+        50,
+        75,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lesser Healing Potion",
@@ -142,7 +170,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244432
+      "wowhead_spell_id": 1244432,
+      "skill_up_colors": [
+        55,
+        85,
+        105,
+        125
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Anti-Venom",
@@ -164,7 +199,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7934
+      "wowhead_spell_id": 7934,
+      "skill_up_colors": [
+        80,
+        80,
+        115,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Wool Bandage",
@@ -186,7 +228,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3277
+      "wowhead_spell_id": 3277,
+      "skill_up_colors": [
+        80,
+        80,
+        115,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Simple Poultice",
@@ -220,7 +269,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1259342
+      "wowhead_spell_id": 1259342,
+      "skill_up_colors": [
+        90,
+        90,
+        125,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Healing Potion",
@@ -254,7 +310,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244433
+      "wowhead_spell_id": 1244433,
+      "skill_up_colors": [
+        110,
+        135,
+        155,
+        175
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Wool Bandage",
@@ -276,7 +339,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3278
+      "wowhead_spell_id": 3278,
+      "skill_up_colors": [
+        115,
+        115,
+        150,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Woolen Tourniquet",
@@ -304,7 +374,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1259347
+      "wowhead_spell_id": 1259347,
+      "skill_up_colors": [
+        120,
+        120,
+        155,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Strong Anti-Venom",
@@ -326,7 +403,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7935
+      "wowhead_spell_id": 7935,
+      "skill_up_colors": [
+        130,
+        130,
+        165,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6454,
+        "display_name": "Manual: Strong Anti-Venom",
+        "source_detail": null
+      }
     },
     {
       "name": "Toxin Study",
@@ -360,7 +448,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1262996
+      "wowhead_spell_id": 1262996,
+      "skill_up_colors": [
+        140,
+        140,
+        140,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273105,
+        "display_name": "Blueprint: Toxin Study",
+        "source_detail": "Drops from: Commander Springvale"
+      }
     },
     {
       "name": "Silk Bandage",
@@ -382,7 +481,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7928
+      "wowhead_spell_id": 7928,
+      "skill_up_colors": [
+        150,
+        150,
+        180,
+        210
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Clever Poultice",
@@ -416,7 +522,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1259343
+      "wowhead_spell_id": 1259343,
+      "skill_up_colors": [
+        0,
+        160,
+        190,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255724,
+        "display_name": "Manual: Clever Poultice",
+        "source_detail": "Drops from: Defias Enchanter"
+      }
     },
     {
       "name": "Greater Healing Potion",
@@ -450,7 +567,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244434
+      "wowhead_spell_id": 1244434,
+      "skill_up_colors": [
+        0,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255723,
+        "display_name": "Manual: Greater Healing Potion",
+        "source_detail": "Drops from: Syndicate Mercenary"
+      }
     },
     {
       "name": "Heavy Silk Bandage",
@@ -472,7 +600,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7929
+      "wowhead_spell_id": 7929,
+      "skill_up_colors": [
+        0,
+        180,
+        210,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16112,
+        "display_name": "Manual: Heavy Silk Bandage",
+        "source_detail": null
+      }
     },
     {
       "name": "Mageweave Bandage",
@@ -494,7 +633,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 10840
+      "wowhead_spell_id": 10840,
+      "skill_up_colors": [
+        0,
+        210,
+        240,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16113,
+        "display_name": "Manual: Mageweave Bandage",
+        "source_detail": null
+      }
     },
     {
       "name": "Leather Tourniquet",
@@ -522,7 +672,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1259348
+      "wowhead_spell_id": 1259348,
+      "skill_up_colors": [
+        0,
+        220,
+        250,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255726,
+        "display_name": "Manual: Leather Tourniquet",
+        "source_detail": "Drops from: Shadowforge Tunneler"
+      }
     },
     {
       "name": "Superior Poultice",
@@ -556,7 +717,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1259344
+      "wowhead_spell_id": 1259344,
+      "skill_up_colors": [
+        0,
+        225,
+        255,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255727,
+        "display_name": "Manual: Superior Poultice",
+        "source_detail": "Drops from: Syndicate Sentry"
+      }
     },
     {
       "name": "Potent Anti-Venom",
@@ -578,7 +750,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1259341
+      "wowhead_spell_id": 1259341,
+      "skill_up_colors": [
+        0,
+        230,
+        260,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255728,
+        "display_name": "Manual: Potent Anti-Venom",
+        "source_detail": "Drops from: Lost One Muckdweller"
+      }
     },
     {
       "name": "Superior Healing Potion",
@@ -612,7 +795,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244435
+      "wowhead_spell_id": 1244435,
+      "skill_up_colors": [
+        0,
+        230,
+        250,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255725,
+        "display_name": "Manual: Superior Healing Potion",
+        "source_detail": "Drops from: Gordunni Shaman"
+      }
     },
     {
       "name": "Heavy Mageweave Bandage",
@@ -634,7 +828,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 10841
+      "wowhead_spell_id": 10841,
+      "skill_up_colors": [
+        0,
+        240,
+        270,
+        300
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runecloth Bandage",
@@ -656,7 +857,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18629
+      "wowhead_spell_id": 18629,
+      "skill_up_colors": [
+        0,
+        260,
+        290,
+        320
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Surgical Tourniquet",
@@ -690,7 +898,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1259349
+      "wowhead_spell_id": 1259349,
+      "skill_up_colors": [
+        0,
+        280,
+        310,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255730,
+        "display_name": "Manual: Surgical Tourniquet",
+        "source_detail": "Drops from: Scarlet Trainee"
+      }
     },
     {
       "name": "Heavy Runecloth Bandage",
@@ -712,7 +931,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18630
+      "wowhead_spell_id": 18630,
+      "skill_up_colors": [
+        0,
+        290,
+        320,
+        350
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Major Healing Potion",
@@ -746,7 +972,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1244436
+      "wowhead_spell_id": 1244436,
+      "skill_up_colors": [
+        0,
+        290,
+        310,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255729,
+        "display_name": "Manual: Major Healing Potion",
+        "source_detail": "Quest: A Rest Without Pain; Vendor: Pexmit"
+      }
     },
     {
       "name": "Powerful Poultice",
@@ -780,7 +1017,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1259345
+      "wowhead_spell_id": 1259345,
+      "skill_up_colors": [
+        0,
+        295,
+        325,
+        355
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 255731,
+        "display_name": "Manual: Powerful Poultice",
+        "source_detail": "Quest: Transmuted Tincture"
+      }
     },
     {
       "name": "Plague Doctor's Laboratory",
@@ -814,7 +1062,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1263001
+      "wowhead_spell_id": 1263001,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273118,
+        "display_name": "Blueprint: Plague Doctor's Laboratory",
+        "source_detail": "Drops from: Doctor Theolen Krastinov"
+      }
     },
     {
       "name": "Powerful Anti-Venom",
@@ -836,7 +1095,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23787
+      "wowhead_spell_id": 23787,
+      "skill_up_colors": [
+        300,
+        300,
+        330,
+        360
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19442,
+        "display_name": "Formula: Powerful Anti-Venom",
+        "source_detail": null
+      }
     }
   ]
 }

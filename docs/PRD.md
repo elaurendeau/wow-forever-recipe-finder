@@ -1,7 +1,7 @@
 # PRD: WoW Forever Recipe Finder
 
 **Owner:** elaurendeau
-**Last updated:** 2026-11-15
+**Last updated:** 2026-11-27
 
 **Related docs:** [ARCHITECTURE.md](ARCHITECTURE.md) (resilience & system design) · [DATA_SOURCES.md](DATA_SOURCES.md) (verified external sources: Warcraft Wiki pattern/reagent data, TSM export format) · [TECH_STACK.md](TECH_STACK.md) (technology decisions) · [SCHEMA.md](SCHEMA.md) (database schema) · [CODE_STYLE.md](CODE_STYLE.md) (Elixir code style/design) · [DEPLOYMENT.md](DEPLOYMENT.md) (packaging & pipeline)
 
@@ -52,6 +52,7 @@ Primarily the builder (elaurendeau), extended to any other WoW Forever player wh
 | **Craftsman's Writ** | A repeatable quest: buy a "writ" item from the AH, buy (never craft, per § 7.8) the specific item it asks for, hand both in to a named NPC in a named zone for reputation (and sometimes gold). See § 7.8. |
 | **Recent Value** | `marketValueRecent` from the TSM export's realm-level `AUCTIONDB_NON_COMMODITY_DATA` table — unlike Sale Avg, never populated for commodity items. The only price figure used for Craftsman's Writ cost (§ 7.8), per this session's explicit decision. |
 | **Rep per gold spent** | A writ's total reputation reward divided by its total cost in gold (writ item + every required item, all at Recent Value) — § 7.8's ranking objective. |
+| **Skill-up band** | A recipe's own real `[orange, yellow, green, grey]` skill thresholds, read from Wowhead's per-recipe data (never Classic's generic offset formula) — `grey` is the one boundary every recipe has; a recipe stops giving skill-ups once the visitor's skill reaches it. See § 7.13. |
 
 ## 7. Core Features
 
@@ -295,3 +296,45 @@ The UI displays when the currently-shown snapshot was computed (from the upload 
 - A saved realm choice from localStorage that isn't among the current export's `available_realms` (e.g. a different file was uploaded since) is ignored safely, falling back to the new export's own default — never a crash or a stale reference.
 
 **Deliberately not done in this round:** a per-page override (e.g. viewing Writs on one realm and Merchant's Favor on another simultaneously) — one visitor is assumed to care about one realm's economy at a time, consistent with how the uploaded snapshot itself is already shared, not per-page.
+
+### 7.13 Feature M — Profession Leveling
+
+**Added 2026-11-27.** A fourth separate page: pick a profession, see a full 1→max-skill leveling path, each skill range paired with the one recipe to craft there — picked by the visitor's own stated priority, **never lose money, and among the recipes that don't, craft whichever sells fastest.** Not a side-effect of the existing profit table (§ 7.3) — a visitor asked explicitly for this as its own page, confirming "a new page" (not a tab) when the distinction was raised, and explicitly rejected a simpler skill-bracket ranker in favor of the full path.
+
+**Why "sells fastest," not "most profitable":** the visitor's own framing — crafting something that sells fast matters more than squeezing out extra profit, since a recipe that never sells doesn't actually generate gold no matter its margin. The ranking is therefore: filter to recipes that are still in range (§ below) and never lose money, then pick the single highest `sold_per_day` among them — not the highest profit. A fast-selling recipe that's merely break-even still beats a high-margin recipe nobody's buying.
+
+**No skill-up probability model, by deliberate design — not a gap.** Classic WoW's generic color-offset formula (orange/yellow/green/grey tied to a fixed offset from the recipe's own skill requirement) does not reliably apply to WoW Forever: the community's own leveling tools fall back to it only for lack of anything better, and their own analysis flags at least 595 recipes that turn yellow/grey at different points than Classic. Rather than build on that assumption, this feature uses a real, Forever-specific capture of each recipe's own `[orange, yellow, green, grey]` skill-up thresholds, read directly off Wowhead's own per-recipe listview data (not scraped from a rendered page — see [DATA_SOURCES.md § Profession Leveling capture](DATA_SOURCES.md#profession-leveling-capture-skill_up_colors--recipe_cost_item-on-pattern-added-2026-11-27)) and provided by the visitor as a one-time merge onto the existing catalog. No source — Wowhead's own data included — carries the *probability* of a skill-up within a color band, only the band boundaries, so none is modeled: a recipe is simply "still useful" (`learned_at <= skill < grey`) or not, a boolean, never a fabricated percentage.
+
+**The recipe's own purchase cost is counted separately from its per-craft reagent cost, per an explicit mid-session request.** Many non-trainer recipes (Vendor/Drop/Quest) must themselves be bought from the AH as an item ("Pattern: X", "Plans: X", etc.) before they can be learned at all — a real one-time cost distinct from the reagents consumed on every craft after that. `recipe_cost_copper` surfaces this, using the same visitor-chosen price basis (§ 7.3) as everything else; it is `nil`, never a fabricated zero, for trainer-taught recipes (no AH purchase applies) and for the real cases this app's capture couldn't match a recipe to its own purchasable item (**~3–4%** of non-trainer recipes across the professions checked — see DATA_SOURCES.md).
+
+**Mining, Herbalism, Skinning and Fishing are excluded from this page entirely**, per an explicit instruction once the capture confirmed they have no `recipe_items` data at all (0 for each — consistent with being gathering skills whose few recipes are mostly auto-learned). They were never part of this app's catalog to begin with (§ 7.2), so this is a non-change for them, not a removal.
+
+**The path's own max skill is the highest `grey` threshold any pattern in the chosen profession actually has — never a hardcoded 300.** Professions cap at different real skill levels; assuming one universal cap would be exactly the kind of un-verified guess this feature's data-gathering effort exists to avoid.
+
+**Use cases discovered (per docs/ELIXIR_TEST_MANIFESTO.md's discovery procedure) — each must have a covering test:**
+
+*Happy path:*
+- A profession with real skill-up band and recipe-cost data computes a path from skill 1 to its real max (highest `grey` present), one segment per contiguous skill range recommending the same recipe.
+- A segment's recipe shows its sell price, sold/day, per-craft profit, and (if non-trainer) its one-time recipe cost — all under the visitor's currently-chosen price basis and realm, same shared snapshot as every other page.
+- A better-selling recipe becoming available mid-range (e.g. newly learnable at a higher skill) starts a new segment exactly at the skill it becomes the better choice, not one skill early or late.
+- Switching the profession tab recomputes the whole path for the newly chosen profession's own real max skill.
+
+*Boundary/edge conditions:*
+- **A skill range with no recipe that's both in range and never losing money is its own segment, shown with a visible "no safe recipe" gap state — never silently skipped or merged into a neighboring segment**, since hiding a real gap would misrepresent the leveling path as more complete than the data supports.
+- A recipe with no known skill-up band at all (the rare capture miss, not the common leading-zero case) is never treated as available at any skill — it simply never appears as a candidate, rather than defaulting to "always available."
+- A non-trainer recipe whose purchase item has no price in the visitor's snapshot shows "unknown" for recipe cost, distinct from and never confused with a trainer recipe's `nil` (no AH purchase applies at all).
+- The last skill level before a recipe turns `grey` is still in range; the skill level equal to `grey` itself is not (strictly `skill < grey`) — confirmed against the real WoW Forever skill-up mechanic, not assumed.
+
+*Error/failure paths:*
+- An uploaded file that isn't a recognizable TSM export surfaces the same existing parse-error messages as every other page — reuses `ProfitComputation.parse_export/1`, not a reimplementation.
+
+*State-dependent variations:*
+- Forgetting the snapshot clears it everywhere (shared storage); visiting this page afterward shows the same no-data/empty state as a fresh visit, matching every other page's existing pattern of requiring an upload before any computed table renders.
+
+**Reference mockup:** [docs/mockups/profession-leveling-reference.html](mockups/profession-leveling-reference.html) — same working non-framework HTML/CSS/vanilla-JS treatment as this app's other pages' own mockups.
+
+**Requirements (this round):**
+- New page at `/profession-leveling`, linked from every other page's nav and linking back to all three.
+- A profession tab bar, limited to the 8 professions this app actually has a catalog for (no gathering skills, no "soon" placeholders — the ones that don't exist in WoW Forever at all were already excluded from every page's tab list per § 7.4).
+- Shares the uploaded snapshot, realm selector, and price-basis toggle with every other page (same `TsmSnapshot` hook, same `localStorage` keys).
+- Table columns: Skill range, Recipe (name + tier + source, links to its Wowhead item page), Sold/day, Profit/craft, Recipe cost (one-time, blank for trainer recipes). A gap segment renders as a single muted row spanning the table, explaining that no recipe both stays in range and never loses money there.

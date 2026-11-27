@@ -36,7 +36,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2393
+      "wowhead_spell_id": 2393,
+      "skill_up_colors": [
+        1,
+        35,
+        47,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Bag",
@@ -64,7 +71,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3755
+      "wowhead_spell_id": 3755,
+      "skill_up_colors": [
+        5,
+        30,
+        47,
+        65
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Reagent Bag",
@@ -92,7 +106,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257013
+      "wowhead_spell_id": 1257013,
+      "skill_up_colors": [
+        5,
+        30,
+        47,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253665,
+        "display_name": "Pattern: Linen Reagent Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Brown Linen Vest",
@@ -120,7 +145,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2385
+      "wowhead_spell_id": 2385,
+      "skill_up_colors": [
+        10,
+        45,
+        57,
+        70
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Belt",
@@ -148,7 +180,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8776
+      "wowhead_spell_id": 8776,
+      "skill_up_colors": [
+        15,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Faction Banner",
@@ -176,7 +215,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1263425
+      "wowhead_spell_id": 1263425,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Faction Banner",
@@ -204,7 +250,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1229504
+      "wowhead_spell_id": 1229504,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Simple Linen Boots",
@@ -238,7 +291,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12045
+      "wowhead_spell_id": 12045,
+      "skill_up_colors": [
+        20,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blue Linen Shirt",
@@ -272,7 +332,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2394
+      "wowhead_spell_id": 2394,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Bolt of Linen Cloth",
@@ -294,7 +361,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2963
+      "wowhead_spell_id": 2963,
+      "skill_up_colors": [
+        0,
+        25,
+        37,
+        50
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Brown Linen Pants",
@@ -322,7 +396,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3914
+      "wowhead_spell_id": 3914,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Brown Linen Robe",
@@ -350,7 +431,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7623
+      "wowhead_spell_id": 7623,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Linen Gloves",
@@ -378,7 +466,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3840
+      "wowhead_spell_id": 3840,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Red Linen Robe",
@@ -412,7 +507,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2389
+      "wowhead_spell_id": 2389,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2598,
+        "display_name": "Pattern: Red Linen Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Linen Shirt",
@@ -446,7 +552,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2392
+      "wowhead_spell_id": 2392,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Simple Dress",
@@ -486,7 +599,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8465
+      "wowhead_spell_id": 8465,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "White Linen Robe",
@@ -520,7 +640,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7624
+      "wowhead_spell_id": 7624,
+      "skill_up_colors": [
+        25,
+        50,
+        67,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blue Linen Vest",
@@ -554,7 +681,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7630
+      "wowhead_spell_id": 7630,
+      "skill_up_colors": [
+        35,
+        60,
+        77,
+        95
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6270,
+        "display_name": "Pattern: Blue Linen Vest",
+        "source_detail": null
+      }
     },
     {
       "name": "Brown Linen Shirt",
@@ -582,7 +720,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3915
+      "wowhead_spell_id": 3915,
+      "skill_up_colors": [
+        0,
+        35,
+        47,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Linen Bracers",
@@ -616,7 +761,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3841
+      "wowhead_spell_id": 3841,
+      "skill_up_colors": [
+        35,
+        60,
+        77,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Cloak",
@@ -644,7 +796,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2387
+      "wowhead_spell_id": 2387,
+      "skill_up_colors": [
+        0,
+        35,
+        47,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Novice Arcanist's Sash",
@@ -678,7 +837,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257368
+      "wowhead_spell_id": 1257368,
+      "skill_up_colors": [
+        35,
+        55,
+        55,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Novice Ardent's Sash",
@@ -712,7 +878,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257369
+      "wowhead_spell_id": 1257369,
+      "skill_up_colors": [
+        35,
+        55,
+        55,
+        55
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Red Linen Vest",
@@ -746,7 +919,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7629
+      "wowhead_spell_id": 7629,
+      "skill_up_colors": [
+        35,
+        60,
+        77,
+        95
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6271,
+        "display_name": "Pattern: Red Linen Vest",
+        "source_detail": null
+      }
     },
     {
       "name": "Reinforced Linen Cape",
@@ -774,7 +958,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 2397
+      "wowhead_spell_id": 2397,
+      "skill_up_colors": [
+        35,
+        60,
+        77,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Barbaric Linen Vest",
@@ -808,7 +999,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2395
+      "wowhead_spell_id": 2395,
+      "skill_up_colors": [
+        40,
+        65,
+        82,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Linen Shirt",
@@ -842,7 +1040,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2396
+      "wowhead_spell_id": 2396,
+      "skill_up_colors": [
+        40,
+        65,
+        82,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Linen Boots",
@@ -876,7 +1081,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2386
+      "wowhead_spell_id": 2386,
+      "skill_up_colors": [
+        40,
+        65,
+        82,
+        100
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Simple Linen Pants",
@@ -904,7 +1116,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12044
+      "wowhead_spell_id": 12044,
+      "skill_up_colors": [
+        0,
+        40,
+        50,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blue Linen Robe",
@@ -938,7 +1157,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7633
+      "wowhead_spell_id": 7633,
+      "skill_up_colors": [
+        45,
+        70,
+        87,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6272,
+        "display_name": "Pattern: Blue Linen Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Handstitched Linen Britches",
@@ -966,7 +1196,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3842
+      "wowhead_spell_id": 3842,
+      "skill_up_colors": [
+        45,
+        70,
+        87,
+        105
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Azure Stormsewn Cord",
@@ -994,7 +1231,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301466
+      "wowhead_spell_id": 1301466,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276973,
+        "display_name": "Pattern: Azure Stormsewn Cord",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Stormsewn Cuffs",
@@ -1022,7 +1270,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301464
+      "wowhead_spell_id": 1301464,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276971,
+        "display_name": "Pattern: Azure Stormsewn Cuffs",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Stormsewn Cord",
@@ -1050,7 +1309,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301442
+      "wowhead_spell_id": 1301442,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276949,
+        "display_name": "Pattern: Cloudy Stormsewn Cord",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Stormsewn Cuffs",
@@ -1078,7 +1348,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301440
+      "wowhead_spell_id": 1301440,
+      "skill_up_colors": [
+        50,
+        55,
+        57,
+        60
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276947,
+        "display_name": "Pattern: Cloudy Stormsewn Cuffs",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Red Linen Bag",
@@ -1112,7 +1393,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6686
+      "wowhead_spell_id": 6686,
+      "skill_up_colors": [
+        50,
+        75,
+        92,
+        110
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5771,
+        "display_name": "Pattern: Red Linen Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Simple Kilt",
@@ -1140,7 +1432,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12046
+      "wowhead_spell_id": 12046,
+      "skill_up_colors": [
+        50,
+        75,
+        92,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Woolen Bag",
@@ -1168,7 +1467,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3757
+      "wowhead_spell_id": 3757,
+      "skill_up_colors": [
+        50,
+        75,
+        92,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Azure Stormsewn Handwraps",
@@ -1196,7 +1502,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1301465
+      "wowhead_spell_id": 1301465,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276972,
+        "display_name": "Pattern: Azure Stormsewn Handwraps",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Stormsewn Shoes",
@@ -1224,7 +1541,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301469
+      "wowhead_spell_id": 1301469,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276975,
+        "display_name": "Pattern: Azure Stormsewn Shoes",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Bolt of Woolen Cloth",
@@ -1246,7 +1574,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 2964
+      "wowhead_spell_id": 2964,
+      "skill_up_colors": [
+        55,
+        70,
+        77,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cloudy Stormsewn Handwraps",
@@ -1274,7 +1609,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1301441
+      "wowhead_spell_id": 1301441,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276948,
+        "display_name": "Pattern: Cloudy Stormsewn Handwraps",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Stormsewn Shoes",
@@ -1302,7 +1648,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301444
+      "wowhead_spell_id": 1301444,
+      "skill_up_colors": [
+        55,
+        60,
+        62,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276951,
+        "display_name": "Pattern: Cloudy Stormsewn Shoes",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Soft-soled Linen Boots",
@@ -1336,7 +1693,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3845
+      "wowhead_spell_id": 3845,
+      "skill_up_colors": [
+        55,
+        80,
+        97,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Woolen Cape",
@@ -1364,7 +1728,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2402
+      "wowhead_spell_id": 2402,
+      "skill_up_colors": [
+        55,
+        80,
+        97,
+        115
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Azure Stormsewn Leggings",
@@ -1392,7 +1763,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1301468
+      "wowhead_spell_id": 1301468,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276974,
+        "display_name": "Pattern: Azure Stormsewn Leggings",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Azure Stormsewn Vest",
@@ -1420,7 +1802,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1301463
+      "wowhead_spell_id": 1301463,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276970,
+        "display_name": "Pattern: Azure Stormsewn Vest",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Stormsewn Leggings",
@@ -1448,7 +1841,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1301443
+      "wowhead_spell_id": 1301443,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276950,
+        "display_name": "Pattern: Cloudy Stormsewn Leggings",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Cloudy Stormsewn Vest",
@@ -1476,7 +1880,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1301439
+      "wowhead_spell_id": 1301439,
+      "skill_up_colors": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276946,
+        "display_name": "Pattern: Cloudy Stormsewn Vest",
+        "source_detail": "Vendor: Vayn Moongaze"
+      }
     },
     {
       "name": "Flame Boots",
@@ -1516,7 +1931,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257372
+      "wowhead_spell_id": 1257372,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253894,
+        "display_name": "Pattern: Flame Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Woolen Vest",
@@ -1550,7 +1976,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2399
+      "wowhead_spell_id": 2399,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Woolen Gloves",
@@ -1578,7 +2011,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3843
+      "wowhead_spell_id": 3843,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Pearly Boots",
@@ -1618,7 +2058,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257374
+      "wowhead_spell_id": 1257374,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253898,
+        "display_name": "Pattern: Pearly Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Boots",
@@ -1658,7 +2109,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257370
+      "wowhead_spell_id": 1257370,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253890,
+        "display_name": "Pattern: Pristine Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Boots",
@@ -1698,7 +2160,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257373
+      "wowhead_spell_id": 1257373,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253896,
+        "display_name": "Pattern: Shadow Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Boots",
@@ -1738,7 +2211,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257375
+      "wowhead_spell_id": 1257375,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253900,
+        "display_name": "Pattern: Shining Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Silky Boots",
@@ -1778,7 +2262,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257371
+      "wowhead_spell_id": 1257371,
+      "skill_up_colors": [
+        60,
+        85,
+        102,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253892,
+        "display_name": "Pattern: Silky Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Colorful Kilt",
@@ -1812,7 +2307,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12047
+      "wowhead_spell_id": 12047,
+      "skill_up_colors": [
+        70,
+        95,
+        112,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10316,
+        "display_name": "Pattern: Colorful Kilt",
+        "source_detail": null
+      }
     },
     {
       "name": "Pearl-clasped Cloak",
@@ -1846,7 +2352,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6521
+      "wowhead_spell_id": 6521,
+      "skill_up_colors": [
+        70,
+        95,
+        112,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Woolen Boots",
@@ -1880,7 +2393,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 2401
+      "wowhead_spell_id": 2401,
+      "skill_up_colors": [
+        70,
+        95,
+        112,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Woolen Reagent Bag",
@@ -1914,7 +2434,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257017
+      "wowhead_spell_id": 1257017,
+      "skill_up_colors": [
+        70,
+        75,
+        92,
+        110
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253668,
+        "display_name": "Pattern: Woolen Reagent Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Blue Overalls",
@@ -1948,7 +2479,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 7639
+      "wowhead_spell_id": 7639,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6274,
+        "display_name": "Pattern: Blue Overalls",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Flame Gown",
@@ -1988,7 +2530,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257378
+      "wowhead_spell_id": 1257378,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253906,
+        "display_name": "Pattern: Filigreed Flame Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pearly Gown",
@@ -2028,7 +2581,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257380
+      "wowhead_spell_id": 1257380,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253910,
+        "display_name": "Pattern: Filigreed Pearly Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pristine Gown",
@@ -2068,7 +2632,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257376
+      "wowhead_spell_id": 1257376,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253902,
+        "display_name": "Pattern: Filigreed Pristine Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shadow Gown",
@@ -2108,7 +2683,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257379
+      "wowhead_spell_id": 1257379,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253908,
+        "display_name": "Pattern: Filigreed Shadow Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shining Gown",
@@ -2148,7 +2734,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257381
+      "wowhead_spell_id": 1257381,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253912,
+        "display_name": "Pattern: Filigreed Shining Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Silky Gown",
@@ -2188,7 +2785,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257377
+      "wowhead_spell_id": 1257377,
+      "skill_up_colors": [
+        75,
+        80,
+        80,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253904,
+        "display_name": "Pattern: Filigreed Silky Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Flame Gloves",
@@ -2228,7 +2836,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257384
+      "wowhead_spell_id": 1257384,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253918,
+        "display_name": "Pattern: Flame Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Woolen Bag",
@@ -2262,7 +2881,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3758
+      "wowhead_spell_id": 3758,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4292,
+        "display_name": "Pattern: Green Woolen Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Pearly Gloves",
@@ -2302,7 +2932,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257386
+      "wowhead_spell_id": 1257386,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253922,
+        "display_name": "Pattern: Pearly Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Gloves",
@@ -2342,7 +2983,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257382
+      "wowhead_spell_id": 1257382,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253914,
+        "display_name": "Pattern: Pristine Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Woolen Boots",
@@ -2382,7 +3034,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3847
+      "wowhead_spell_id": 3847,
+      "skill_up_colors": [
+        75,
+        80,
+        97,
+        115
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4345,
+        "display_name": "Pattern: Red Woolen Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Gloves",
@@ -2422,7 +3085,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257385
+      "wowhead_spell_id": 1257385,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253920,
+        "display_name": "Pattern: Shadow Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Gloves",
@@ -2462,7 +3136,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257387
+      "wowhead_spell_id": 1257387,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253924,
+        "display_name": "Pattern: Shining Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Silky Gloves",
@@ -2502,7 +3187,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257383
+      "wowhead_spell_id": 1257383,
+      "skill_up_colors": [
+        75,
+        100,
+        117,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253916,
+        "display_name": "Pattern: Silky Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Gray Woolen Robe",
@@ -2536,7 +3232,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2403
+      "wowhead_spell_id": 2403,
+      "skill_up_colors": [
+        80,
+        105,
+        122,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2601,
+        "display_name": "Pattern: Gray Woolen Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Gray Woolen Shirt",
@@ -2570,7 +3277,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2406
+      "wowhead_spell_id": 2406,
+      "skill_up_colors": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Woolen Cloak",
@@ -2604,7 +3318,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3844
+      "wowhead_spell_id": 3844,
+      "skill_up_colors": [
+        80,
+        105,
+        122,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4346,
+        "display_name": "Pattern: Heavy Woolen Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Double-stitched Woolen Shoulders",
@@ -2632,7 +3357,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3848
+      "wowhead_spell_id": 3848,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Flame Sash",
@@ -2672,7 +3404,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257390
+      "wowhead_spell_id": 1257390,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253930,
+        "display_name": "Pattern: Flame Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Heavy Woolen Pants",
@@ -2700,7 +3443,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3850
+      "wowhead_spell_id": 3850,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Pearly Sash",
@@ -2740,7 +3490,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257392
+      "wowhead_spell_id": 1257392,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253934,
+        "display_name": "Pattern: Pearly Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Sash",
@@ -2780,7 +3541,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257388
+      "wowhead_spell_id": 1257388,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253926,
+        "display_name": "Pattern: Pristine Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Sash",
@@ -2820,7 +3592,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257391
+      "wowhead_spell_id": 1257391,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253932,
+        "display_name": "Pattern: Shadow Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Sash",
@@ -2860,7 +3643,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257393
+      "wowhead_spell_id": 1257393,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253936,
+        "display_name": "Pattern: Shining Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Silky Sash",
@@ -2900,7 +3694,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257389
+      "wowhead_spell_id": 1257389,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253928,
+        "display_name": "Pattern: Silky Sash",
+        "source_detail": null
+      }
     },
     {
       "name": "Stylish Red Shirt",
@@ -2934,7 +3739,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3866
+      "wowhead_spell_id": 3866,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "White Woolen Dress",
@@ -2968,7 +3780,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8467
+      "wowhead_spell_id": 8467,
+      "skill_up_colors": [
+        85,
+        110,
+        127,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Greater Adept's Robe",
@@ -3002,7 +3821,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 7643
+      "wowhead_spell_id": 7643,
+      "skill_up_colors": [
+        90,
+        115,
+        132,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6275,
+        "display_name": "Pattern: Greater Adept's Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Woolen Bag",
@@ -3036,7 +3866,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6688
+      "wowhead_spell_id": 6688,
+      "skill_up_colors": [
+        90,
+        115,
+        132,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5772,
+        "display_name": "Pattern: Red Woolen Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Reinforced Woolen Shoulders",
@@ -3070,7 +3911,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3849
+      "wowhead_spell_id": 3849,
+      "skill_up_colors": [
+        95,
+        120,
+        137,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4347,
+        "display_name": "Pattern: Reinforced Woolen Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Stylish Blue Shirt",
@@ -3110,7 +3962,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7892
+      "wowhead_spell_id": 7892,
+      "skill_up_colors": [
+        95,
+        120,
+        137,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6390,
+        "display_name": "Pattern: Stylish Blue Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Stylish Green Shirt",
@@ -3150,7 +4013,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7893
+      "wowhead_spell_id": 7893,
+      "skill_up_colors": [
+        95,
+        120,
+        137,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6391,
+        "display_name": "Pattern: Stylish Green Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Bolt of Silk Cloth",
@@ -3172,7 +4046,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3839
+      "wowhead_spell_id": 3839,
+      "skill_up_colors": [
+        100,
+        110,
+        115,
+        120
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Filigreed Flame Leggings",
@@ -3212,7 +4093,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257396
+      "wowhead_spell_id": 1257396,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253942,
+        "display_name": "Pattern: Filigreed Flame Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pearly Leggings",
@@ -3252,7 +4144,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257398
+      "wowhead_spell_id": 1257398,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253946,
+        "display_name": "Pattern: Filigreed Pearly Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pristine Leggings",
@@ -3292,7 +4195,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257394
+      "wowhead_spell_id": 1257394,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253938,
+        "display_name": "Pattern: Filigreed Pristine Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shadow Leggings",
@@ -3332,7 +4246,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257397
+      "wowhead_spell_id": 1257397,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253944,
+        "display_name": "Pattern: Filigreed Shadow Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shining Leggings",
@@ -3372,7 +4297,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257399
+      "wowhead_spell_id": 1257399,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253948,
+        "display_name": "Pattern: Filigreed Shining Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Silky Leggings",
@@ -3412,7 +4348,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257395
+      "wowhead_spell_id": 1257395,
+      "skill_up_colors": [
+        100,
+        105,
+        105,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253940,
+        "display_name": "Pattern: Filigreed Silky Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Flame Circlet",
@@ -3464,7 +4411,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257402
+      "wowhead_spell_id": 1257402,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253954,
+        "display_name": "Pattern: Flame Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Pearly Circlet",
@@ -3516,7 +4474,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257404
+      "wowhead_spell_id": 1257404,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253958,
+        "display_name": "Pattern: Pearly Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Phoenix Gloves",
@@ -3556,7 +4525,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3868
+      "wowhead_spell_id": 3868,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4348,
+        "display_name": "Pattern: Phoenix Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Phoenix Pants",
@@ -3590,7 +4570,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3851
+      "wowhead_spell_id": 3851,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4349,
+        "display_name": "Pattern: Phoenix Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Circlet",
@@ -3642,7 +4633,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257400
+      "wowhead_spell_id": 1257400,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253950,
+        "display_name": "Pattern: Pristine Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Circlet",
@@ -3694,7 +4696,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257403
+      "wowhead_spell_id": 1257403,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253956,
+        "display_name": "Pattern: Shadow Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Circlet",
@@ -3746,7 +4759,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257405
+      "wowhead_spell_id": 1257405,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253960,
+        "display_name": "Pattern: Shining Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Silky Circlet",
@@ -3798,7 +4822,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257401
+      "wowhead_spell_id": 1257401,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253952,
+        "display_name": "Pattern: Silky Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Spidersilk Boots",
@@ -3838,7 +4873,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3855
+      "wowhead_spell_id": 3855,
+      "skill_up_colors": [
+        100,
+        125,
+        142,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gloves of Meditation",
@@ -3872,7 +4914,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3852
+      "wowhead_spell_id": 3852,
+      "skill_up_colors": [
+        105,
+        125,
+        140,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Bright Yellow Shirt",
@@ -3906,7 +4955,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3869
+      "wowhead_spell_id": 3869,
+      "skill_up_colors": [
+        110,
+        120,
+        125,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14627,
+        "display_name": "Pattern: Bright Yellow Shirt",
+        "source_detail": "Vendor: Danielle Zipstitch"
+      }
     },
     {
       "name": "Flame Gown",
@@ -3958,7 +5018,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257408
+      "wowhead_spell_id": 1257408,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253966,
+        "display_name": "Pattern: Flame Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Lesser Wizard's Robe",
@@ -3992,7 +5063,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 6690
+      "wowhead_spell_id": 6690,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Pearly Gown",
@@ -4044,7 +5122,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257410
+      "wowhead_spell_id": 1257410,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253970,
+        "display_name": "Pattern: Pearly Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Gown",
@@ -4096,7 +5185,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257406
+      "wowhead_spell_id": 1257406,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253962,
+        "display_name": "Pattern: Pristine Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Gown",
@@ -4148,7 +5248,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257409
+      "wowhead_spell_id": 1257409,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253968,
+        "display_name": "Pattern: Shadow Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Gown",
@@ -4200,7 +5311,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257411
+      "wowhead_spell_id": 1257411,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253972,
+        "display_name": "Pattern: Shining Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Silky Gown",
@@ -4252,7 +5374,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257407
+      "wowhead_spell_id": 1257407,
+      "skill_up_colors": [
+        110,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253964,
+        "display_name": "Pattern: Silky Gown",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Silk Pants",
@@ -4286,7 +5419,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 8758
+      "wowhead_spell_id": 8758,
+      "skill_up_colors": [
+        115,
+        135,
+        150,
+        165
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Spider Silk Slippers",
@@ -4320,7 +5460,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3856
+      "wowhead_spell_id": 3856,
+      "skill_up_colors": [
+        115,
+        135,
+        147,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4350,
+        "display_name": "Pattern: Spider Silk Slippers",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Silk Gloves",
@@ -4360,7 +5511,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3854
+      "wowhead_spell_id": 3854,
+      "skill_up_colors": [
+        120,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7114,
+        "display_name": "Pattern: Azure Silk Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Silk Hood",
@@ -4394,7 +5556,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8760
+      "wowhead_spell_id": 8760,
+      "skill_up_colors": [
+        120,
+        130,
+        135,
+        140
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dark Silk Shirt",
@@ -4428,7 +5597,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3870
+      "wowhead_spell_id": 3870,
+      "skill_up_colors": [
+        120,
+        130,
+        135,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6401,
+        "display_name": "Pattern: Dark Silk Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Hands of Darkness",
@@ -4468,7 +5648,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8780
+      "wowhead_spell_id": 8780,
+      "skill_up_colors": [
+        120,
+        140,
+        155,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7092,
+        "display_name": "Pattern: Hands of Darkness",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Silk Vest",
@@ -4496,7 +5687,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3859
+      "wowhead_spell_id": 3859,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Filigreed Flame Circlet",
@@ -4536,7 +5734,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257415
+      "wowhead_spell_id": 1257415,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253980,
+        "display_name": "Pattern: Filigreed Flame Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pearly Circlet",
@@ -4576,7 +5785,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257417
+      "wowhead_spell_id": 1257417,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253984,
+        "display_name": "Pattern: Filigreed Pearly Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Pristine Circlet",
@@ -4616,7 +5836,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257413
+      "wowhead_spell_id": 1257413,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253976,
+        "display_name": "Pattern: Filigreed Pristine Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shadow Circlet",
@@ -4656,7 +5887,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257416
+      "wowhead_spell_id": 1257416,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253982,
+        "display_name": "Pattern: Filigreed Shadow Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Shining Circlet",
@@ -4696,7 +5938,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257418
+      "wowhead_spell_id": 1257418,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253986,
+        "display_name": "Pattern: Filigreed Shining Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Filigreed Silky Circlet",
@@ -4736,7 +5989,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1257414
+      "wowhead_spell_id": 1257414,
+      "skill_up_colors": [
+        125,
+        130,
+        130,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253978,
+        "display_name": "Pattern: Filigreed Silky Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Flame Leggings",
@@ -4788,7 +6052,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257421
+      "wowhead_spell_id": 1257421,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253992,
+        "display_name": "Pattern: Flame Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Pearly Leggings",
@@ -4840,7 +6115,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257423
+      "wowhead_spell_id": 1257423,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253996,
+        "display_name": "Pattern: Pearly Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Pristine Leggings",
@@ -4892,7 +6178,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257419
+      "wowhead_spell_id": 1257419,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253988,
+        "display_name": "Pattern: Pristine Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Robes of Arcana",
@@ -4926,7 +6223,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 6692
+      "wowhead_spell_id": 6692,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5773,
+        "display_name": "Pattern: Robes of Arcana",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadow Leggings",
@@ -4978,7 +6286,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257422
+      "wowhead_spell_id": 1257422,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253994,
+        "display_name": "Pattern: Shadow Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Shining Leggings",
@@ -5030,7 +6349,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257424
+      "wowhead_spell_id": 1257424,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253998,
+        "display_name": "Pattern: Shining Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Silk Headband",
@@ -5058,7 +6388,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8762
+      "wowhead_spell_id": 8762,
+      "skill_up_colors": [
+        125,
+        135,
+        140,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silk Reagent Bag",
@@ -5098,7 +6435,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257412
+      "wowhead_spell_id": 1257412,
+      "skill_up_colors": [
+        125,
+        135,
+        137,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253974,
+        "display_name": "Pattern: Silk Reagent Bag",
+        "source_detail": "Quest: I Need a Tailor; vendor"
+      }
     },
     {
       "name": "Silky Leggings",
@@ -5150,7 +6498,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257420
+      "wowhead_spell_id": 1257420,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 253990,
+        "display_name": "Pattern: Silky Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Silk Pack",
@@ -5184,7 +6543,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3813
+      "wowhead_spell_id": 3813,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Truefaith Gloves",
@@ -5224,7 +6590,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8782
+      "wowhead_spell_id": 8782,
+      "skill_up_colors": [
+        125,
+        145,
+        160,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7091,
+        "display_name": "Pattern: Truefaith Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "White Swashbuckler's Shirt",
@@ -5258,7 +6635,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8483
+      "wowhead_spell_id": 8483,
+      "skill_up_colors": [
+        125,
+        135,
+        140,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Enchanter's Cowl",
@@ -5292,7 +6676,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3857
+      "wowhead_spell_id": 3857,
+      "skill_up_colors": [
+        130,
+        150,
+        165,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14630,
+        "display_name": "Pattern: Enchanter's Cowl",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Silk Armor",
@@ -5326,7 +6721,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8784
+      "wowhead_spell_id": 8784,
+      "skill_up_colors": [
+        130,
+        150,
+        165,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7090,
+        "display_name": "Pattern: Green Silk Armor",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthen Vest",
@@ -5360,7 +6766,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8764
+      "wowhead_spell_id": 8764,
+      "skill_up_colors": [
+        135,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Formal White Shirt",
@@ -5394,7 +6807,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3871
+      "wowhead_spell_id": 3871,
+      "skill_up_colors": [
+        135,
+        145,
+        150,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Shadow Hood",
@@ -5428,7 +6848,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3858
+      "wowhead_spell_id": 3858,
+      "skill_up_colors": [
+        135,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4351,
+        "display_name": "Pattern: Shadow Hood",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Silk Belt",
@@ -5474,7 +6905,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8766
+      "wowhead_spell_id": 8766,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Azure Silk Cloak",
@@ -5508,7 +6946,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8786
+      "wowhead_spell_id": 8786,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7089,
+        "display_name": "Pattern: Azure Silk Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Bolt of Mageweave",
@@ -5530,7 +6979,14 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 3865
+      "wowhead_spell_id": 3865,
+      "skill_up_colors": [
+        140,
+        145,
+        147,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Boots of the Enchanter",
@@ -5564,7 +7020,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3860
+      "wowhead_spell_id": 3860,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4352,
+        "display_name": "Pattern: Boots of the Enchanter",
+        "source_detail": null
+      }
     },
     {
       "name": "Crimson Silk Belt",
@@ -5604,7 +7071,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8772
+      "wowhead_spell_id": 8772,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Earthen Leggings",
@@ -5638,7 +7112,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257425
+      "wowhead_spell_id": 1257425,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254000,
+        "display_name": "Pattern: Earthen Leggings",
+        "source_detail": "Drops from: Gravelsnout Surveyor"
+      }
     },
     {
       "name": "Green Silk Pack",
@@ -5678,7 +7163,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6693
+      "wowhead_spell_id": 6693,
+      "skill_up_colors": [
+        140,
+        160,
+        175,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5774,
+        "display_name": "Pattern: Green Silk Pack",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Swashbuckler's Shirt",
@@ -5712,7 +7208,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8489
+      "wowhead_spell_id": 8489,
+      "skill_up_colors": [
+        140,
+        150,
+        155,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Spinning Wheel",
@@ -5746,7 +7249,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1263032
+      "wowhead_spell_id": 1263032,
+      "skill_up_colors": [
+        140,
+        140,
+        140,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273099,
+        "display_name": "Blueprint: Spinning Wheel",
+        "source_detail": "Drops from: Unstable Sentinel"
+      }
     },
     {
       "name": "Tuxedo Jacket",
@@ -5774,7 +7288,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12093
+      "wowhead_spell_id": 12093,
+      "skill_up_colors": [
+        140,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10326,
+        "display_name": "Pattern: Tuxedo Jacket",
+        "source_detail": null
+      }
     },
     {
       "name": "Tuxedo Pants",
@@ -5802,7 +7327,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12089
+      "wowhead_spell_id": 12089,
+      "skill_up_colors": [
+        140,
+        205,
+        210,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10323,
+        "display_name": "Pattern: Tuxedo Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "White Wedding Dress",
@@ -5836,7 +7372,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12091
+      "wowhead_spell_id": 12091,
+      "skill_up_colors": [
+        140,
+        145,
+        150,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10325,
+        "display_name": "Pattern: White Wedding Dress",
+        "source_detail": null
+      }
     },
     {
       "name": "Crimson Silk Cloak",
@@ -5876,7 +7423,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8789
+      "wowhead_spell_id": 8789,
+      "skill_up_colors": [
+        145,
+        165,
+        180,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7087,
+        "display_name": "Pattern: Crimson Silk Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthen Silk Slippers",
@@ -5916,7 +7474,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257432
+      "wowhead_spell_id": 1257432,
+      "skill_up_colors": [
+        145,
+        165,
+        180,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254014,
+        "display_name": "Pattern: Earthen Silk Slippers",
+        "source_detail": "Drops from: Witherbark Troll"
+      }
     },
     {
       "name": "Green Silken Shoulders",
@@ -5944,7 +7513,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8774
+      "wowhead_spell_id": 8774,
+      "skill_up_colors": [
+        145,
+        165,
+        180,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Spider Belt",
@@ -5978,7 +7554,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3863
+      "wowhead_spell_id": 3863,
+      "skill_up_colors": [
+        145,
+        165,
+        180,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4353,
+        "display_name": "Pattern: Spider Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Silk Pack",
@@ -6012,7 +7599,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 6695
+      "wowhead_spell_id": 6695,
+      "skill_up_colors": [
+        150,
+        170,
+        185,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5775,
+        "display_name": "Pattern: Black Silk Pack",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Slippers",
@@ -6058,7 +7656,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257429
+      "wowhead_spell_id": 1257429,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crimson Silk Vest",
@@ -6092,7 +7697,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8791
+      "wowhead_spell_id": 8791,
+      "skill_up_colors": [
+        150,
+        170,
+        180,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Earthen Silk Hood",
@@ -6126,7 +7738,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257433
+      "wowhead_spell_id": 1257433,
+      "skill_up_colors": [
+        150,
+        170,
+        185,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254016,
+        "display_name": "Pattern: Earthen Silk Hood",
+        "source_detail": "Drops from: Slitherblade Sea Witch"
+      }
     },
     {
       "name": "Fiery Slippers",
@@ -6172,7 +7795,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257428
+      "wowhead_spell_id": 1257428,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Frothing Slippers",
@@ -6218,7 +7848,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257427
+      "wowhead_spell_id": 1257427,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gilded Slippers",
@@ -6264,7 +7901,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257426
+      "wowhead_spell_id": 1257426,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Golden Slippers",
@@ -6310,7 +7954,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257430
+      "wowhead_spell_id": 1257430,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Long Silken Cloak",
@@ -6344,7 +7995,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3861
+      "wowhead_spell_id": 3861,
+      "skill_up_colors": [
+        150,
+        170,
+        185,
+        200
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Radiant Slippers",
@@ -6390,7 +8048,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257431
+      "wowhead_spell_id": 1257431,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rich Purple Silk Shirt",
@@ -6424,7 +8089,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3872
+      "wowhead_spell_id": 3872,
+      "skill_up_colors": [
+        150,
+        160,
+        165,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4354,
+        "display_name": "Pattern: Rich Purple Silk Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Azure Shoulders",
@@ -6464,7 +8140,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8795
+      "wowhead_spell_id": 8795,
+      "skill_up_colors": [
+        155,
+        175,
+        190,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7085,
+        "display_name": "Pattern: Azure Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Crimson Silk Shoulders",
@@ -6504,7 +8191,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8793
+      "wowhead_spell_id": 8793,
+      "skill_up_colors": [
+        155,
+        175,
+        190,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7084,
+        "display_name": "Pattern: Crimson Silk Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Holiday Shirt",
@@ -6538,7 +8236,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 21945
+      "wowhead_spell_id": 21945,
+      "skill_up_colors": [
+        155,
+        165,
+        170,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17724,
+        "display_name": "Pattern: Green Holiday Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Robe of Power",
@@ -6590,7 +8299,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8770
+      "wowhead_spell_id": 8770,
+      "skill_up_colors": [
+        155,
+        175,
+        190,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crimson Silk Pantaloons",
@@ -6624,7 +8340,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8799
+      "wowhead_spell_id": 8799,
+      "skill_up_colors": [
+        160,
+        180,
+        190,
+        200
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Earthen Silk Belt",
@@ -6670,7 +8393,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8797
+      "wowhead_spell_id": 8797,
+      "skill_up_colors": [
+        160,
+        180,
+        195,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7086,
+        "display_name": "Pattern: Earthen Silk Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthen Silk Gloves",
@@ -6704,7 +8438,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257434
+      "wowhead_spell_id": 1257434,
+      "skill_up_colors": [
+        160,
+        180,
+        195,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254018,
+        "display_name": "Pattern: Earthen Silk Gloves",
+        "source_detail": "Drops from: Bloodscalp Mystic"
+      }
     },
     {
       "name": "Black Handwraps",
@@ -6750,7 +8495,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257439
+      "wowhead_spell_id": 1257439,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254028,
+        "display_name": "Pattern: Black Handwraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Swashbuckler's Shirt",
@@ -6784,7 +8540,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3873
+      "wowhead_spell_id": 3873,
+      "skill_up_colors": [
+        165,
+        175,
+        180,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10728,
+        "display_name": "Pattern: Black Swashbuckler's Shirt",
+        "source_detail": "Vendor: Narkk"
+      }
     },
     {
       "name": "Earthen Silk Cuffs",
@@ -6818,7 +8585,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257435
+      "wowhead_spell_id": 1257435,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254020,
+        "display_name": "Pattern: Earthen Silk Cuffs",
+        "source_detail": "Drops from: Mirefin Murloc"
+      }
     },
     {
       "name": "Fiery Handwraps",
@@ -6864,7 +8642,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257438
+      "wowhead_spell_id": 1257438,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254026,
+        "display_name": "Pattern: Fiery Handwraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Frothing Handwraps",
@@ -6910,7 +8699,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257437
+      "wowhead_spell_id": 1257437,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254024,
+        "display_name": "Pattern: Frothing Handwraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Gilded Handwraps",
@@ -6956,7 +8756,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257436
+      "wowhead_spell_id": 1257436,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254022,
+        "display_name": "Pattern: Gilded Handwraps",
+        "source_detail": "Drops from: Saltscale Oracle"
+      }
     },
     {
       "name": "Golden Handwraps",
@@ -7002,7 +8813,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257440
+      "wowhead_spell_id": 1257440,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254030,
+        "display_name": "Pattern: Golden Handwraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Icy Cloak",
@@ -7042,7 +8864,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3862
+      "wowhead_spell_id": 3862,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4355,
+        "display_name": "Pattern: Icy Cloak",
+        "source_detail": "Drops from: Shadowforge Surveyor"
+      }
     },
     {
       "name": "Radiant Handwraps",
@@ -7088,7 +8921,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257441
+      "wowhead_spell_id": 1257441,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254032,
+        "display_name": "Pattern: Radiant Handwraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Star Belt",
@@ -7134,7 +8978,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3864
+      "wowhead_spell_id": 3864,
+      "skill_up_colors": [
+        165,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4356,
+        "display_name": "Pattern: Star Belt",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Mageweave Leggings",
@@ -7162,7 +9017,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12049
+      "wowhead_spell_id": 12049,
+      "skill_up_colors": [
+        170,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Black Mageweave Vest",
@@ -7190,7 +9052,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12048
+      "wowhead_spell_id": 12048,
+      "skill_up_colors": [
+        170,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crimson Silk Robe",
@@ -7236,7 +9105,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8802
+      "wowhead_spell_id": 8802,
+      "skill_up_colors": [
+        170,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7088,
+        "display_name": "Pattern: Crimson Silk Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthen Silk Shoulders",
@@ -7270,7 +9150,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1257442
+      "wowhead_spell_id": 1257442,
+      "skill_up_colors": [
+        170,
+        185,
+        200,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254034,
+        "display_name": "Pattern: Earthen Silk Shoulders",
+        "source_detail": "Drops from: Dustbelcher Mystic"
+      }
     },
     {
       "name": "Azure Stormsewn Cowl",
@@ -7310,7 +9201,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1301540
+      "wowhead_spell_id": 1301540,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276990,
+        "display_name": "Pattern: Azure Stormsewn Cowl",
+        "source_detail": "Vendor: Archmage Alvareaux"
+      }
     },
     {
       "name": "Azure Stormsewn Epaulets",
@@ -7350,7 +9252,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1301541
+      "wowhead_spell_id": 1301541,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276991,
+        "display_name": "Pattern: Azure Stormsewn Epaulets",
+        "source_detail": "Vendor: Archmage Alvareaux"
+      }
     },
     {
       "name": "Black Mageweave Robe",
@@ -7378,7 +9291,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12050
+      "wowhead_spell_id": 12050,
+      "skill_up_colors": [
+        175,
+        190,
+        205,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cloudy Stormsewn Cowl",
@@ -7418,7 +9338,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1301532
+      "wowhead_spell_id": 1301532,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276982,
+        "display_name": "Pattern: Cloudy Stormsewn Cowl",
+        "source_detail": "Vendor: Sutara Plainstalker"
+      }
     },
     {
       "name": "Cloudy Stormsewn Epaulets",
@@ -7458,7 +9389,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1301533
+      "wowhead_spell_id": 1301533,
+      "skill_up_colors": [
+        175,
+        185,
+        187,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 276983,
+        "display_name": "Pattern: Cloudy Stormsewn Epaulets",
+        "source_detail": "Vendor: Sutara Plainstalker"
+      }
     },
     {
       "name": "Crimson Silk Gloves",
@@ -7510,7 +9452,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 8804
+      "wowhead_spell_id": 8804,
+      "skill_up_colors": [
+        175,
+        190,
+        205,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Shadoweave Pants",
@@ -7544,7 +9493,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12052
+      "wowhead_spell_id": 12052,
+      "skill_up_colors": [
+        175,
+        190,
+        205,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Black Mageweave Gloves",
@@ -7572,7 +9528,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12053
+      "wowhead_spell_id": 12053,
+      "skill_up_colors": [
+        180,
+        195,
+        210,
+        225
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Orange Mageweave Shirt",
@@ -7606,7 +9569,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12061
+      "wowhead_spell_id": 12061,
+      "skill_up_colors": [
+        180,
+        185,
+        190,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Red Mageweave Pants",
@@ -7640,7 +9610,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12060
+      "wowhead_spell_id": 12060,
+      "skill_up_colors": [
+        180,
+        195,
+        210,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10302,
+        "display_name": "Pattern: Red Mageweave Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Mageweave Vest",
@@ -7674,7 +9655,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12056
+      "wowhead_spell_id": 12056,
+      "skill_up_colors": [
+        180,
+        195,
+        210,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10300,
+        "display_name": "Pattern: Red Mageweave Vest",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadoweave Robe",
@@ -7708,7 +9700,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12055
+      "wowhead_spell_id": 12055,
+      "skill_up_colors": [
+        180,
+        195,
+        210,
+        225
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "White Bandit Mask",
@@ -7742,7 +9741,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12059
+      "wowhead_spell_id": 12059,
+      "skill_up_colors": [
+        180,
+        185,
+        190,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10301,
+        "display_name": "Pattern: White Bandit Mask",
+        "source_detail": null
+      }
     },
     {
       "name": "Orange Martial Shirt",
@@ -7776,7 +9786,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12064
+      "wowhead_spell_id": 12064,
+      "skill_up_colors": [
+        185,
+        190,
+        195,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10311,
+        "display_name": "Pattern: Orange Martial Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Cord",
@@ -7822,7 +9843,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257447
+      "wowhead_spell_id": 1257447,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254044,
+        "display_name": "Pattern: Black Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Mageweave Boots",
@@ -7856,7 +9888,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12073
+      "wowhead_spell_id": 12073,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Black Mageweave Headband",
@@ -7884,7 +9923,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12072
+      "wowhead_spell_id": 12072,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Black Mageweave Shoulders",
@@ -7912,7 +9958,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12074
+      "wowhead_spell_id": 12074,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cindercloth Robe",
@@ -7946,7 +9999,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12069
+      "wowhead_spell_id": 12069,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dreamweave Gloves",
@@ -7986,7 +10046,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12067
+      "wowhead_spell_id": 12067,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dreamweave Vest",
@@ -8026,7 +10093,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12070
+      "wowhead_spell_id": 12070,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Enchanted Mageweave Pouch",
@@ -8060,7 +10134,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27658
+      "wowhead_spell_id": 27658,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22307,
+        "display_name": "Pattern: Enchanted Mageweave Pouch",
+        "source_detail": null
+      }
     },
     {
       "name": "Fiery Cord",
@@ -8106,7 +10191,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257446
+      "wowhead_spell_id": 1257446,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254042,
+        "display_name": "Pattern: Fiery Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Frothing Cord",
@@ -8152,7 +10248,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257445
+      "wowhead_spell_id": 1257445,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254040,
+        "display_name": "Pattern: Frothing Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Gilded Cord",
@@ -8198,7 +10305,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257444
+      "wowhead_spell_id": 1257444,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254038,
+        "display_name": "Pattern: Gilded Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Cord",
@@ -8244,7 +10362,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257448
+      "wowhead_spell_id": 1257448,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254046,
+        "display_name": "Pattern: Golden Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Lavender Mageweave Shirt",
@@ -8278,7 +10407,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12075
+      "wowhead_spell_id": 12075,
+      "skill_up_colors": [
+        190,
+        195,
+        200,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10314,
+        "display_name": "Pattern: Lavender Mageweave Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Mageweave Bag",
@@ -8306,7 +10446,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12065
+      "wowhead_spell_id": 12065,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mageweave Reagent Bag",
@@ -8346,7 +10493,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257443
+      "wowhead_spell_id": 1257443,
+      "skill_up_colors": [
+        190,
+        205,
+        210,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254036,
+        "display_name": "Pattern: Mageweave Reagent Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Cord",
@@ -8392,7 +10550,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257449
+      "wowhead_spell_id": 1257449,
+      "skill_up_colors": [
+        190,
+        195,
+        195,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254048,
+        "display_name": "Pattern: Radiant Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Mageweave Gloves",
@@ -8426,7 +10595,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12066
+      "wowhead_spell_id": 12066,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10312,
+        "display_name": "Pattern: Red Mageweave Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadoweave Gloves",
@@ -8460,7 +10640,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12071
+      "wowhead_spell_id": 12071,
+      "skill_up_colors": [
+        190,
+        205,
+        220,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Netherflame Shoulders",
@@ -8512,7 +10699,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257452
+      "wowhead_spell_id": 1257452,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254054,
+        "display_name": "Pattern: Netherflame Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherfroth Shoulders",
@@ -8564,7 +10762,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257451
+      "wowhead_spell_id": 1257451,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254052,
+        "display_name": "Pattern: Netherfroth Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Nethergeld Shoulders",
@@ -8616,7 +10825,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257450
+      "wowhead_spell_id": 1257450,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254050,
+        "display_name": "Pattern: Nethergeld Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherlight Shoulders",
@@ -8668,7 +10888,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257455
+      "wowhead_spell_id": 1257455,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254060,
+        "display_name": "Pattern: Netherlight Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherpearl Shoulders",
@@ -8720,7 +10951,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257453
+      "wowhead_spell_id": 1257453,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254056,
+        "display_name": "Pattern: Netherpearl Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Nethershine Shoulders",
@@ -8772,7 +11014,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1257454
+      "wowhead_spell_id": 1257454,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254058,
+        "display_name": "Pattern: Nethershine Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Pink Mageweave Shirt",
@@ -8806,7 +11059,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12080
+      "wowhead_spell_id": 12080,
+      "skill_up_colors": [
+        195,
+        200,
+        205,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10317,
+        "display_name": "Pattern: Pink Mageweave Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Mageweave Bag",
@@ -8840,7 +11104,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12079
+      "wowhead_spell_id": 12079,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Red Mageweave Shoulders",
@@ -8874,7 +11145,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12078
+      "wowhead_spell_id": 12078,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10315,
+        "display_name": "Pattern: Red Mageweave Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadoweave Shoulders",
@@ -8908,7 +11190,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12076
+      "wowhead_spell_id": 12076,
+      "skill_up_colors": [
+        195,
+        210,
+        225,
+        240
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Simple Black Dress",
@@ -8948,7 +11237,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12077
+      "wowhead_spell_id": 12077,
+      "skill_up_colors": [
+        195,
+        200,
+        205,
+        210
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cindercloth Boots",
@@ -8988,7 +11284,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12088
+      "wowhead_spell_id": 12088,
+      "skill_up_colors": [
+        200,
+        215,
+        230,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hyperconductive Arcano-Filament",
@@ -9022,7 +11325,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 435827
+      "wowhead_spell_id": 435827,
+      "skill_up_colors": [
+        200,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 215368,
+        "display_name": "Pattern: Hyperconductive Arcano-Filament",
+        "source_detail": "Vendor: Ziri \"The Wrench\" Littlesprocket"
+      }
     },
     {
       "name": "Red Mageweave Headband",
@@ -9056,7 +11370,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12084
+      "wowhead_spell_id": 12084,
+      "skill_up_colors": [
+        200,
+        215,
+        230,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10320,
+        "display_name": "Pattern: Red Mageweave Headband",
+        "source_detail": null
+      }
     },
     {
       "name": "Shadoweave Boots",
@@ -9096,7 +11421,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12082
+      "wowhead_spell_id": 12082,
+      "skill_up_colors": [
+        200,
+        215,
+        230,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Tuxedo Shirt",
@@ -9124,7 +11456,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12085
+      "wowhead_spell_id": 12085,
+      "skill_up_colors": [
+        200,
+        205,
+        210,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10321,
+        "display_name": "Pattern: Tuxedo Shirt",
+        "source_detail": null
+      }
     },
     {
       "name": "Bolt of Runecloth",
@@ -9146,7 +11489,14 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 18401
+      "wowhead_spell_id": 18401,
+      "skill_up_colors": [
+        205,
+        210,
+        212,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dreamweave Circlet",
@@ -9198,7 +11548,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12092
+      "wowhead_spell_id": 12092,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Netherflame Cuffs",
@@ -9250,7 +11607,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257458
+      "wowhead_spell_id": 1257458,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254066,
+        "display_name": "Pattern: Netherflame Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherfroth Cuffs",
@@ -9302,7 +11670,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257457
+      "wowhead_spell_id": 1257457,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254064,
+        "display_name": "Pattern: Netherfroth Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Nethergeld Cuffs",
@@ -9354,7 +11733,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257456
+      "wowhead_spell_id": 1257456,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254062,
+        "display_name": "Pattern: Nethergeld Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherlight Cuffs",
@@ -9406,7 +11796,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257461
+      "wowhead_spell_id": 1257461,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254072,
+        "display_name": "Pattern: Netherlight Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Netherpearl Cuffs",
@@ -9458,7 +11859,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257459
+      "wowhead_spell_id": 1257459,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254068,
+        "display_name": "Pattern: Netherpearl Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Nethershine Cuffs",
@@ -9510,7 +11922,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257460
+      "wowhead_spell_id": 1257460,
+      "skill_up_colors": [
+        205,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254070,
+        "display_name": "Pattern: Nethershine Cuffs",
+        "source_detail": null
+      }
     },
     {
       "name": "Frostweave Robe",
@@ -9544,7 +11967,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18404
+      "wowhead_spell_id": 18404,
+      "skill_up_colors": [
+        210,
+        225,
+        240,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14467,
+        "display_name": "Pattern: Frostweave Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Frostweave Tunic",
@@ -9578,7 +12012,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18403
+      "wowhead_spell_id": 18403,
+      "skill_up_colors": [
+        210,
+        225,
+        240,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14466,
+        "display_name": "Pattern: Frostweave Tunic",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Belt",
@@ -9606,7 +12051,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18402
+      "wowhead_spell_id": 18402,
+      "skill_up_colors": [
+        210,
+        225,
+        240,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Black Waistcord",
@@ -9652,7 +12104,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257469
+      "wowhead_spell_id": 1257469,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254088,
+        "display_name": "Pattern: Black Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Cindercloth Vest",
@@ -9686,7 +12149,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18408
+      "wowhead_spell_id": 18408,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14471,
+        "display_name": "Pattern: Cindercloth Vest",
+        "source_detail": "Drops from: Twilight Fire Guard"
+      }
     },
     {
       "name": "Earthenweave Cord",
@@ -9720,7 +12194,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257464
+      "wowhead_spell_id": 1257464,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254078,
+        "display_name": "Pattern: Earthenweave Cord",
+        "source_detail": "Drops from: Vilebranch Soothsayer"
+      }
     },
     {
       "name": "Earthenweave Gloves",
@@ -9754,7 +12239,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257463
+      "wowhead_spell_id": 1257463,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254076,
+        "display_name": "Pattern: Earthenweave Gloves",
+        "source_detail": "Drops from: Inferno Elemental"
+      }
     },
     {
       "name": "Fiery Waistcord",
@@ -9800,7 +12296,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257468
+      "wowhead_spell_id": 1257468,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254086,
+        "display_name": "Pattern: Fiery Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Frostweave Gloves",
@@ -9834,7 +12341,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18411
+      "wowhead_spell_id": 18411,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14474,
+        "display_name": "Pattern: Frostweave Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Frothing Waistcord",
@@ -9880,7 +12398,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257467
+      "wowhead_spell_id": 1257467,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254084,
+        "display_name": "Pattern: Frothing Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Ghostweave Cord",
@@ -9920,7 +12449,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257462
+      "wowhead_spell_id": 1257462,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254074,
+        "display_name": "Pattern: Ghostweave Cord",
+        "source_detail": "Drops from: Haldarr Trickster"
+      }
     },
     {
       "name": "Gilded Waistcord",
@@ -9966,7 +12506,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257466
+      "wowhead_spell_id": 1257466,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254082,
+        "display_name": "Pattern: Gilded Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Waistcord",
@@ -10012,7 +12563,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257470
+      "wowhead_spell_id": 1257470,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254090,
+        "display_name": "Pattern: Golden Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Waistcord",
@@ -10058,7 +12620,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1257471
+      "wowhead_spell_id": 1257471,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254092,
+        "display_name": "Pattern: Radiant Waistcord",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Bag",
@@ -10104,7 +12677,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18405
+      "wowhead_spell_id": 18405,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14468,
+        "display_name": "Pattern: Runecloth Bag",
+        "source_detail": "Drops from: Ice Thistle Yeti; Vendor: Qia"
+      }
     },
     {
       "name": "Runecloth Reagent Bag",
@@ -10144,7 +12728,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257465
+      "wowhead_spell_id": 1257465,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254080,
+        "display_name": "Pattern: Runecloth Reagent Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Robe",
@@ -10178,7 +12773,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18406
+      "wowhead_spell_id": 18406,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14469,
+        "display_name": "Pattern: Runecloth Robe",
+        "source_detail": "Vendor: Darnall"
+      }
     },
     {
       "name": "Runecloth Tunic",
@@ -10212,7 +12818,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18407
+      "wowhead_spell_id": 18407,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14470,
+        "display_name": "Pattern: Runecloth Tunic",
+        "source_detail": null
+      }
     },
     {
       "name": "Soul Pouch",
@@ -10252,7 +12869,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26085
+      "wowhead_spell_id": 26085,
+      "skill_up_colors": [
+        215,
+        230,
+        245,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21358,
+        "display_name": "Pattern: Soul Pouch",
+        "source_detail": null
+      }
     },
     {
       "name": "Ghostweave Belt",
@@ -10292,7 +12920,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18410
+      "wowhead_spell_id": 18410,
+      "skill_up_colors": [
+        220,
+        235,
+        250,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14473,
+        "display_name": "Pattern: Ghostweave Belt",
+        "source_detail": "Drops from: Lingering Highborne"
+      }
     },
     {
       "name": "Runecloth Cloak",
@@ -10326,7 +12965,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18409
+      "wowhead_spell_id": 18409,
+      "skill_up_colors": [
+        220,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14472,
+        "display_name": "Pattern: Runecloth Cloak",
+        "source_detail": "Vendor: Darnall"
+      }
     },
     {
       "name": "Brightcloth Gloves",
@@ -10360,7 +13010,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18415
+      "wowhead_spell_id": 18415,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14479,
+        "display_name": "Pattern: Brightcloth Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Brightcloth Robe",
@@ -10394,7 +13055,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18414
+      "wowhead_spell_id": 18414,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14478,
+        "display_name": "Pattern: Brightcloth Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Cindercloth Gloves",
@@ -10428,7 +13100,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18412
+      "wowhead_spell_id": 18412,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14476,
+        "display_name": "Pattern: Cindercloth Gloves",
+        "source_detail": "Drops from: Twilight Fire Guard"
+      }
     },
     {
       "name": "Earthenweave Boots",
@@ -10468,7 +13151,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257472
+      "wowhead_spell_id": 1257472,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254094,
+        "display_name": "Pattern: Earthenweave Boots",
+        "source_detail": "Drops from: Elder Rage Scar"
+      }
     },
     {
       "name": "Ghostweave Gloves",
@@ -10508,7 +13202,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18413
+      "wowhead_spell_id": 18413,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14477,
+        "display_name": "Pattern: Ghostweave Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Ghostweave Vest",
@@ -10548,7 +13253,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18416
+      "wowhead_spell_id": 18416,
+      "skill_up_colors": [
+        225,
+        240,
+        255,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14480,
+        "display_name": "Pattern: Ghostweave Vest",
+        "source_detail": "Drops from: Unseen Servant"
+      }
     },
     {
       "name": "Brightcloth Cloak",
@@ -10582,7 +13298,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18420
+      "wowhead_spell_id": 18420,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14484,
+        "display_name": "Pattern: Brightcloth Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Cenarion Herb Bag",
@@ -10622,7 +13349,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27724
+      "wowhead_spell_id": 27724,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22310,
+        "display_name": "Pattern: Cenarion Herb Bag",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Cindercloth Cloak",
@@ -10656,7 +13394,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18418
+      "wowhead_spell_id": 18418,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14482,
+        "display_name": "Pattern: Cindercloth Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Enchanted Runecloth Bag",
@@ -10690,7 +13439,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 27659
+      "wowhead_spell_id": 27659,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22308,
+        "display_name": "Pattern: Enchanted Runecloth Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Felcloth Pants",
@@ -10724,7 +13484,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18419
+      "wowhead_spell_id": 18419,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14483,
+        "display_name": "Pattern: Felcloth Pants",
+        "source_detail": "Vendor: Lorelae Wintersong"
+      }
     },
     {
       "name": "Mooncloth",
@@ -10746,7 +13517,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18560
+      "wowhead_spell_id": 18560,
+      "skill_up_colors": [
+        230,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14526,
+        "display_name": "Pattern: Mooncloth",
+        "source_detail": "Vendor: Qia"
+      }
     },
     {
       "name": "Runecloth Gloves",
@@ -10780,7 +13562,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18417
+      "wowhead_spell_id": 18417,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14481,
+        "display_name": "Pattern: Runecloth Gloves",
+        "source_detail": "Vendor: Qia"
+      }
     },
     {
       "name": "Wizardweave Leggings",
@@ -10814,7 +13607,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18421
+      "wowhead_spell_id": 18421,
+      "skill_up_colors": [
+        230,
+        245,
+        260,
+        275
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14485,
+        "display_name": "Pattern: Wizardweave Leggings",
+        "source_detail": "Drops from: Dark Summoner"
+      }
     },
     {
       "name": "Black Gloves",
@@ -10860,7 +13664,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257476
+      "wowhead_spell_id": 1257476,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254102,
+        "display_name": "Pattern: Black Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Black Sandals",
@@ -10912,7 +13727,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257482
+      "wowhead_spell_id": 1257482,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254114,
+        "display_name": "Pattern: Black Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Cindercloth Pants",
@@ -10946,7 +13772,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18434
+      "wowhead_spell_id": 18434,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14490,
+        "display_name": "Pattern: Cindercloth Pants",
+        "source_detail": "Drops from: Thaurissan Firewalker"
+      }
     },
     {
       "name": "Fiery Gloves",
@@ -10992,7 +13829,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257475
+      "wowhead_spell_id": 1257475,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254100,
+        "display_name": "Pattern: Fiery Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Fiery Sandals",
@@ -11044,7 +13892,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257481
+      "wowhead_spell_id": 1257481,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254112,
+        "display_name": "Pattern: Fiery Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Frostweave Pants",
@@ -11078,7 +13937,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18424
+      "wowhead_spell_id": 18424,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14489,
+        "display_name": "Pattern: Frostweave Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Frothing Gloves",
@@ -11124,7 +13994,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257474
+      "wowhead_spell_id": 1257474,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254098,
+        "display_name": "Pattern: Frothing Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Frothing Sandals",
@@ -11176,7 +14057,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257480
+      "wowhead_spell_id": 1257480,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254110,
+        "display_name": "Pattern: Frothing Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Gilded Gloves",
@@ -11222,7 +14114,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257473
+      "wowhead_spell_id": 1257473,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254096,
+        "display_name": "Pattern: Gilded Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Gilded Sandals",
@@ -11274,7 +14177,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257479
+      "wowhead_spell_id": 1257479,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254108,
+        "display_name": "Pattern: Gilded Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Gloves",
@@ -11320,7 +14234,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257477
+      "wowhead_spell_id": 1257477,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254104,
+        "display_name": "Pattern: Golden Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Golden Sandals",
@@ -11372,7 +14297,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257483
+      "wowhead_spell_id": 1257483,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254116,
+        "display_name": "Pattern: Golden Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Gloves",
@@ -11418,7 +14354,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257478
+      "wowhead_spell_id": 1257478,
+      "skill_up_colors": [
+        235,
+        240,
+        240,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254106,
+        "display_name": "Pattern: Radiant Gloves",
+        "source_detail": null
+      }
     },
     {
       "name": "Radiant Sandals",
@@ -11470,7 +14417,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1257484
+      "wowhead_spell_id": 1257484,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254118,
+        "display_name": "Pattern: Radiant Sandals",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Boots",
@@ -11510,7 +14468,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18423
+      "wowhead_spell_id": 18423,
+      "skill_up_colors": [
+        235,
+        250,
+        265,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14488,
+        "display_name": "Pattern: Runecloth Boots",
+        "source_detail": "Vendor: Darnall"
+      }
     },
     {
       "name": "Admiral's Hat",
@@ -11544,7 +14513,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12081
+      "wowhead_spell_id": 12081,
+      "skill_up_colors": [
+        0,
+        0,
+        240,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10318,
+        "display_name": "Pattern: Admiral's Hat",
+        "source_detail": "Drops from: Bloodsail Swabby; Vendor: Cowardly Crosby"
+      }
     },
     {
       "name": "Earthenweave Mantle",
@@ -11578,7 +14558,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257485
+      "wowhead_spell_id": 1257485,
+      "skill_up_colors": [
+        240,
+        255,
+        270,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254120,
+        "display_name": "Pattern: Earthenweave Mantle",
+        "source_detail": "Drops from: Skeletal Terror"
+      }
     },
     {
       "name": "Felcloth Boots",
@@ -11618,7 +14609,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18437
+      "wowhead_spell_id": 18437,
+      "skill_up_colors": [
+        240,
+        255,
+        270,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14492,
+        "display_name": "Pattern: Felcloth Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Pants",
@@ -11652,7 +14654,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18438
+      "wowhead_spell_id": 18438,
+      "skill_up_colors": [
+        240,
+        255,
+        270,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14491,
+        "display_name": "Pattern: Runecloth Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Brightcloth Pants",
@@ -11692,7 +14705,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18439
+      "wowhead_spell_id": 18439,
+      "skill_up_colors": [
+        245,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14494,
+        "display_name": "Pattern: Brightcloth Pants",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthenweave Leggings",
@@ -11726,7 +14750,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257488
+      "wowhead_spell_id": 1257488,
+      "skill_up_colors": [
+        245,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254126,
+        "display_name": "Pattern: Earthenweave Leggings",
+        "source_detail": "Drops from: Irontree Stomper"
+      }
     },
     {
       "name": "Felcloth Hood",
@@ -11760,7 +14795,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18442
+      "wowhead_spell_id": 18442,
+      "skill_up_colors": [
+        245,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14496,
+        "display_name": "Pattern: Felcloth Hood",
+        "source_detail": null
+      }
     },
     {
       "name": "Ghostweave Pants",
@@ -11794,7 +14840,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18441
+      "wowhead_spell_id": 18441,
+      "skill_up_colors": [
+        245,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14495,
+        "display_name": "Pattern: Ghostweave Pants",
+        "source_detail": "Drops from: Spectral Citizen"
+      }
     },
     {
       "name": "Mooncloth Leggings",
@@ -11828,7 +14885,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18440
+      "wowhead_spell_id": 18440,
+      "skill_up_colors": [
+        245,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14497,
+        "display_name": "Pattern: Mooncloth Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Robe of Winter Night",
@@ -11874,7 +14942,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18436
+      "wowhead_spell_id": 18436,
+      "skill_up_colors": [
+        245,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14493,
+        "display_name": "Pattern: Robe of Winter Night",
+        "source_detail": "Drops from: Cobalt Mageweaver"
+      }
     },
     {
       "name": "Shadoweave Mask",
@@ -11908,7 +14987,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12086
+      "wowhead_spell_id": 12086,
+      "skill_up_colors": [
+        0,
+        0,
+        245,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10463,
+        "display_name": "Pattern: Shadoweave Mask",
+        "source_detail": "Quest: The Undermarket"
+      }
     },
     {
       "name": "Crusader's Knapsack",
@@ -11948,7 +15038,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1227723
+      "wowhead_spell_id": 1227723,
+      "skill_up_colors": [
+        250,
+        260,
+        262,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 239149,
+        "display_name": "Pattern: Crusader's Knapsack",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthenweave Vest",
@@ -11982,7 +15083,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257486
+      "wowhead_spell_id": 1257486,
+      "skill_up_colors": [
+        250,
+        265,
+        280,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254122,
+        "display_name": "Pattern: Earthenweave Vest",
+        "source_detail": "Drops from: Suffering Highborne"
+      }
     },
     {
       "name": "Festival Dress",
@@ -12022,7 +15134,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26403
+      "wowhead_spell_id": 26403,
+      "skill_up_colors": [
+        0,
+        0,
+        250,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21722,
+        "display_name": "Pattern: Festival Dress",
+        "source_detail": "Quest: Festive Recipes"
+      }
     },
     {
       "name": "Festival Suit",
@@ -12062,7 +15185,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26407
+      "wowhead_spell_id": 26407,
+      "skill_up_colors": [
+        0,
+        0,
+        250,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21723,
+        "display_name": "Pattern: Festival Suit",
+        "source_detail": "Quest: Festive Recipes"
+      }
     },
     {
       "name": "Ghostweave Mantle",
@@ -12102,7 +15236,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257489
+      "wowhead_spell_id": 1257489,
+      "skill_up_colors": [
+        250,
+        265,
+        280,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254128,
+        "display_name": "Pattern: Ghostweave Mantle",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Winter Clothes",
@@ -12142,7 +15287,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 44950
+      "wowhead_spell_id": 44950,
+      "skill_up_colors": [
+        250,
+        250,
+        252,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 34261,
+        "display_name": "Pattern: Green Winter Clothes",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Winter Clothes",
@@ -12182,7 +15338,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 44958
+      "wowhead_spell_id": 44958,
+      "skill_up_colors": [
+        250,
+        250,
+        252,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 34319,
+        "display_name": "Pattern: Red Winter Clothes",
+        "source_detail": null
+      }
     },
     {
       "name": "Runecloth Cuffs",
@@ -12216,7 +15383,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257487
+      "wowhead_spell_id": 1257487,
+      "skill_up_colors": [
+        250,
+        265,
+        280,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254124,
+        "display_name": "Pattern: Runecloth Cuffs",
+        "source_detail": "Quest: Threading a Solution; Vendor: Pexmit"
+      }
     },
     {
       "name": "Runecloth Headband",
@@ -12250,7 +15428,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18444
+      "wowhead_spell_id": 18444,
+      "skill_up_colors": [
+        250,
+        265,
+        280,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14498,
+        "display_name": "Pattern: Runecloth Headband",
+        "source_detail": null
+      }
     },
     {
       "name": "Big Bag of Enchantment",
@@ -12290,7 +15479,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27660
+      "wowhead_spell_id": 27660,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22309,
+        "display_name": "Pattern: Big Bag of Enchantment",
+        "source_detail": "Drops from: Magister Kalendris"
+      }
     },
     {
       "name": "Earthenweave Cuffs",
@@ -12324,7 +15524,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257491
+      "wowhead_spell_id": 1257491,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254132,
+        "display_name": "Pattern: Earthenweave Cuffs",
+        "source_detail": "Drops from: Tortured Druid"
+      }
     },
     {
       "name": "Ghostweave Boots",
@@ -12370,7 +15581,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257490
+      "wowhead_spell_id": 1257490,
+      "skill_up_colors": [
+        255,
+        265,
+        280,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254130,
+        "display_name": "Pattern: Ghostweave Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Mooncloth Bag",
@@ -12422,7 +15644,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 18445
+      "wowhead_spell_id": 18445,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14499,
+        "display_name": "Pattern: Mooncloth Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Mooncloth Reagent Bag",
@@ -12474,7 +15707,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257492
+      "wowhead_spell_id": 1257492,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254134,
+        "display_name": "Pattern: Mooncloth Reagent Bag",
+        "source_detail": "Vendor: Dala Fairmaw"
+      }
     },
     {
       "name": "Satchel of Cenarius",
@@ -12514,7 +15758,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 27725
+      "wowhead_spell_id": 27725,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22312,
+        "display_name": "Pattern: Satchel of Cenarius",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Wisdom of the Timbermaw",
@@ -12554,7 +15809,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23662
+      "wowhead_spell_id": 23662,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19215,
+        "display_name": "Pattern: Wisdom of the Timbermaw",
+        "source_detail": "Vendor: Meilosh"
+      }
     },
     {
       "name": "Wizardweave Robe",
@@ -12588,7 +15854,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18446
+      "wowhead_spell_id": 18446,
+      "skill_up_colors": [
+        255,
+        270,
+        285,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14500,
+        "display_name": "Pattern: Wizardweave Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Earthenweave Crown",
@@ -12622,7 +15899,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257494
+      "wowhead_spell_id": 1257494,
+      "skill_up_colors": [
+        260,
+        275,
+        290,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254138,
+        "display_name": "Pattern: Earthenweave Crown",
+        "source_detail": "Drops from: Searing Ghoul"
+      }
     },
     {
       "name": "Felcloth Robe",
@@ -12662,7 +15950,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18451
+      "wowhead_spell_id": 18451,
+      "skill_up_colors": [
+        260,
+        275,
+        290,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14506,
+        "display_name": "Pattern: Felcloth Robe",
+        "source_detail": null
+      }
     },
     {
       "name": "Ghostweave Hood",
@@ -12702,7 +16001,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1257493
+      "wowhead_spell_id": 1257493,
+      "skill_up_colors": [
+        260,
+        275,
+        290,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254136,
+        "display_name": "Pattern: Ghostweave Hood",
+        "source_detail": "Drops from: Withered Protector"
+      }
     },
     {
       "name": "Runecloth Shoulders",
@@ -12742,7 +16052,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18449
+      "wowhead_spell_id": 18449,
+      "skill_up_colors": [
+        260,
+        275,
+        290,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14504,
+        "display_name": "Pattern: Runecloth Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Wizardweave Turban",
@@ -12782,7 +16103,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18450
+      "wowhead_spell_id": 18450,
+      "skill_up_colors": [
+        260,
+        275,
+        290,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14505,
+        "display_name": "Pattern: Wizardweave Turban",
+        "source_detail": "Drops from: Dark Caster"
+      }
     },
     {
       "name": "Felcloth Shoulders",
@@ -12828,7 +16160,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18453
+      "wowhead_spell_id": 18453,
+      "skill_up_colors": [
+        265,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14508,
+        "display_name": "Pattern: Felcloth Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Mooncloth Vest",
@@ -12862,7 +16205,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18447
+      "wowhead_spell_id": 18447,
+      "skill_up_colors": [
+        270,
+        285,
+        300,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14501,
+        "display_name": "Pattern: Mooncloth Vest",
+        "source_detail": null
+      }
     },
     {
       "name": "Cloak of Fire",
@@ -12908,7 +16262,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18422
+      "wowhead_spell_id": 18422,
+      "skill_up_colors": [
+        0,
+        0,
+        275,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14486,
+        "display_name": "Pattern: Cloak of Fire",
+        "source_detail": "Drops from: Overmaster Pyron"
+      }
     },
     {
       "name": "Mooncloth Robe",
@@ -12948,7 +16313,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22902
+      "wowhead_spell_id": 22902,
+      "skill_up_colors": [
+        275,
+        290,
+        305,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18487,
+        "display_name": "Pattern: Mooncloth Robe",
+        "source_detail": "Drops from: Wildspawn Hellcaller; Vendor: Shen'dralar Provisioner"
+      }
     },
     {
       "name": "Mooncloth Shoulders",
@@ -12982,7 +16358,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18448
+      "wowhead_spell_id": 18448,
+      "skill_up_colors": [
+        275,
+        290,
+        305,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14507,
+        "display_name": "Pattern: Mooncloth Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Cloak of Warding",
@@ -13022,7 +16409,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22870
+      "wowhead_spell_id": 22870,
+      "skill_up_colors": [
+        280,
+        295,
+        310,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18418,
+        "display_name": "Pattern: Cloak of Warding",
+        "source_detail": "Drops from: Knot Thimblejack's Cache"
+      }
     },
     {
       "name": "Felcloth Gloves",
@@ -13068,7 +16466,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22867
+      "wowhead_spell_id": 22867,
+      "skill_up_colors": [
+        280,
+        295,
+        310,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18415,
+        "display_name": "Pattern: Felcloth Gloves",
+        "source_detail": "Drops from: Knot Thimblejack's Cache"
+      }
     },
     {
       "name": "Inferno Gloves",
@@ -13108,7 +16517,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22868
+      "wowhead_spell_id": 22868,
+      "skill_up_colors": [
+        280,
+        295,
+        310,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18416,
+        "display_name": "Pattern: Inferno Gloves",
+        "source_detail": "Drops from: Knot Thimblejack's Cache"
+      }
     },
     {
       "name": "Mooncloth Circlet",
@@ -13154,7 +16574,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18452
+      "wowhead_spell_id": 18452,
+      "skill_up_colors": [
+        280,
+        295,
+        310,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14509,
+        "display_name": "Pattern: Mooncloth Circlet",
+        "source_detail": null
+      }
     },
     {
       "name": "Mooncloth Gloves",
@@ -13194,7 +16625,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22869
+      "wowhead_spell_id": 22869,
+      "skill_up_colors": [
+        280,
+        295,
+        310,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18417,
+        "display_name": "Pattern: Mooncloth Gloves",
+        "source_detail": "Drops from: Knot Thimblejack's Cache"
+      }
     },
     {
       "name": "Felcloth Bag",
@@ -13234,7 +16676,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 26086
+      "wowhead_spell_id": 26086,
+      "skill_up_colors": [
+        0,
+        0,
+        285,
+        290
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gordok Ogre Suit",
@@ -13274,7 +16723,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 22813
+      "wowhead_spell_id": 22813,
+      "skill_up_colors": [
+        0,
+        285,
+        290,
+        295
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mooncloth Boots",
@@ -13314,7 +16770,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19435
+      "wowhead_spell_id": 19435,
+      "skill_up_colors": [
+        0,
+        285,
+        300,
+        315
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Runed Stygian Belt",
@@ -13360,7 +16823,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24902
+      "wowhead_spell_id": 24902,
+      "skill_up_colors": [
+        285,
+        300,
+        315,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20548,
+        "display_name": "Pattern: Runed Stygian Belt",
+        "source_detail": "Drops from: Decoded True Believer Clippings"
+      }
     },
     {
       "name": "Runed Stygian Boots",
@@ -13406,7 +16880,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24903
+      "wowhead_spell_id": 24903,
+      "skill_up_colors": [
+        285,
+        300,
+        315,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20547,
+        "display_name": "Pattern: Runed Stygian Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Runed Stygian Leggings",
@@ -13446,7 +16931,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24901
+      "wowhead_spell_id": 24901,
+      "skill_up_colors": [
+        285,
+        300,
+        315,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20546,
+        "display_name": "Pattern: Runed Stygian Leggings",
+        "source_detail": null
+      }
     },
     {
       "name": "Swarmtender's Gloves",
@@ -13486,7 +16982,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297123
+      "wowhead_spell_id": 1297123,
+      "skill_up_colors": [
+        285,
+        290,
+        292,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275583,
+        "display_name": "Pattern: Swarmtender's Gloves",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Venomspew Gloves",
@@ -13526,7 +17033,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297120
+      "wowhead_spell_id": 1297120,
+      "skill_up_colors": [
+        285,
+        290,
+        292,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275580,
+        "display_name": "Pattern: Venomspew Gloves",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Argent Boots",
@@ -13572,7 +17090,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23664
+      "wowhead_spell_id": 23664,
+      "skill_up_colors": [
+        0,
+        0,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 227896,
+        "display_name": "Pattern: Argent Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Crimson Dawnwoven Bag",
@@ -13618,7 +17147,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1227724
+      "wowhead_spell_id": 1227724,
+      "skill_up_colors": [
+        290,
+        300,
+        302,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 239150,
+        "display_name": "Pattern: Crimson Dawnwoven Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Mantle of the Timbermaw",
@@ -13658,7 +17198,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23663
+      "wowhead_spell_id": 23663,
+      "skill_up_colors": [
+        290,
+        305,
+        319,
+        334
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19218,
+        "display_name": "Pattern: Mantle of the Timbermaw",
+        "source_detail": "Vendor: Meilosh"
+      }
     },
     {
       "name": "Swarmtender's Cord",
@@ -13698,7 +17249,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297124
+      "wowhead_spell_id": 1297124,
+      "skill_up_colors": [
+        290,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275584,
+        "display_name": "Pattern: Swarmtender's Cord",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Venomspew Cord",
@@ -13738,7 +17300,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297121
+      "wowhead_spell_id": 1297121,
+      "skill_up_colors": [
+        290,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275581,
+        "display_name": "Pattern: Venomspew Cord",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Belt of the Archmage",
@@ -13802,7 +17375,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 22866
+      "wowhead_spell_id": 22866,
+      "skill_up_colors": [
+        295,
+        310,
+        325,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18414,
+        "display_name": "Pattern: Belt of the Archmage",
+        "source_detail": "Drops from: Knot Thimblejack's Cache"
+      }
     },
     {
       "name": "Gloves of Spell Mastery",
@@ -13866,7 +17450,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 18454
+      "wowhead_spell_id": 18454,
+      "skill_up_colors": [
+        295,
+        310,
+        325,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14511,
+        "display_name": "Pattern: Gloves of Spell Mastery",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Robe of the Archmage",
@@ -13924,7 +17519,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 18457
+      "wowhead_spell_id": 18457,
+      "skill_up_colors": [
+        295,
+        310,
+        325,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14513,
+        "display_name": "Pattern: Robe of the Archmage",
+        "source_detail": "Drops from: Firebrand Pyromancer"
+      }
     },
     {
       "name": "Robe of the Void",
@@ -13982,7 +17588,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 18458
+      "wowhead_spell_id": 18458,
+      "skill_up_colors": [
+        295,
+        310,
+        325,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14514,
+        "display_name": "Pattern: Robe of the Void",
+        "source_detail": "Drops from: Darkmaster Gandling"
+      }
     },
     {
       "name": "Swarmtender's Footpads",
@@ -14022,7 +17639,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297125
+      "wowhead_spell_id": 1297125,
+      "skill_up_colors": [
+        295,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275585,
+        "display_name": "Pattern: Swarmtender's Footpads",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Truefaith Vestments",
@@ -14080,7 +17708,18 @@
           "quantity": 10
         }
       ],
-      "wowhead_spell_id": 18456
+      "wowhead_spell_id": 18456,
+      "skill_up_colors": [
+        295,
+        310,
+        325,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14512,
+        "display_name": "Pattern: Truefaith Vestments",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Venomspew Footpads",
@@ -14120,7 +17759,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1297122
+      "wowhead_spell_id": 1297122,
+      "skill_up_colors": [
+        295,
+        295,
+        297,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 275582,
+        "display_name": "Pattern: Venomspew Footpads",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Argent Shoulders",
@@ -14154,7 +17804,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23665
+      "wowhead_spell_id": 23665,
+      "skill_up_colors": [
+        300,
+        305,
+        320,
+        335
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 227897,
+        "display_name": "Pattern: Argent Shoulders",
+        "source_detail": null
+      }
     },
     {
       "name": "Bloodvine Boots",
@@ -14200,7 +17861,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 24093
+      "wowhead_spell_id": 24093,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19766,
+        "display_name": "Pattern: Bloodvine Boots",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Bloodvine Leggings",
@@ -14246,7 +17918,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24092
+      "wowhead_spell_id": 24092,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19765,
+        "display_name": "Pattern: Bloodvine Leggings",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Bloodvine Vest",
@@ -14292,7 +17975,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 24091
+      "wowhead_spell_id": 24091,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19764,
+        "display_name": "Pattern: Bloodvine Vest",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Boots of Conviction",
@@ -14332,7 +18026,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292964
+      "wowhead_spell_id": 1292964,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273995,
+        "display_name": "Pattern: Boots of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Bottomless Bag",
@@ -14390,7 +18095,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18455
+      "wowhead_spell_id": 18455,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14510,
+        "display_name": "Pattern: Bottomless Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Bottomless Reagent Bag",
@@ -14448,7 +18164,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1257495
+      "wowhead_spell_id": 1257495,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 254140,
+        "display_name": "Pattern: Bottomless Reagent Bag",
+        "source_detail": "Drops from: Venom Belcher"
+      }
     },
     {
       "name": "Cloak of Earth and Sky",
@@ -14482,7 +18209,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1306544
+      "wowhead_spell_id": 1306544,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279319,
+        "display_name": "Pattern: Cloak of Earth and Sky",
+        "source_detail": null
+      }
     },
     {
       "name": "Core Felcloth Bag",
@@ -14528,7 +18266,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 26087
+      "wowhead_spell_id": 26087,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21371,
+        "display_name": "Pattern: Core Felcloth Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Demonheart Boots",
@@ -14568,7 +18317,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292980
+      "wowhead_spell_id": 1292980,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274011,
+        "display_name": "Pattern: Demonheart Boots",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Demonheart Gloves",
@@ -14608,7 +18368,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292978
+      "wowhead_spell_id": 1292978,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274009,
+        "display_name": "Pattern: Demonheart Gloves",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Demonheart Leggings",
@@ -14648,7 +18419,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292977
+      "wowhead_spell_id": 1292977,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274008,
+        "display_name": "Pattern: Demonheart Leggings",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Demonheart Spaulders",
@@ -14688,7 +18470,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292979
+      "wowhead_spell_id": 1292979,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274010,
+        "display_name": "Pattern: Demonheart Spaulders",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Fel Cape",
@@ -14722,7 +18515,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1306543
+      "wowhead_spell_id": 1306543,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279318,
+        "display_name": "Pattern: Fel Cape",
+        "source_detail": null
+      }
     },
     {
       "name": "Felblood Soul Bag",
@@ -14750,7 +18554,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 1306545
+      "wowhead_spell_id": 1306545,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279320,
+        "display_name": "Pattern: Felblood Soul Bag",
+        "source_detail": null
+      }
     },
     {
       "name": "Flarecore Gloves",
@@ -14796,7 +18611,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20849
+      "wowhead_spell_id": 20849,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17018,
+        "display_name": "Pattern: Flarecore Gloves",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Flarecore Leggings",
@@ -14842,7 +18668,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23667
+      "wowhead_spell_id": 23667,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19220,
+        "display_name": "Pattern: Flarecore Leggings",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Flarecore Mantle",
@@ -14888,7 +18725,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 20848
+      "wowhead_spell_id": 20848,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17017,
+        "display_name": "Pattern: Flarecore Mantle",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Flarecore Robe",
@@ -14934,7 +18782,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23666
+      "wowhead_spell_id": 23666,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19219,
+        "display_name": "Pattern: Flarecore Robe",
+        "source_detail": "Vendor: Lokhtos Darkbargainer"
+      }
     },
     {
       "name": "Flarecore Wraps",
@@ -14980,7 +18839,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 22759
+      "wowhead_spell_id": 22759,
+      "skill_up_colors": [
+        300,
+        320,
+        335,
+        350
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18265,
+        "display_name": "Pattern: Flarecore Wraps",
+        "source_detail": null
+      }
     },
     {
       "name": "Gaea's Embrace",
@@ -15020,7 +18890,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 28210
+      "wowhead_spell_id": 28210,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22683,
+        "display_name": "Pattern: Gaea's Embrace",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Glacial Cloak",
@@ -15060,7 +18941,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 28208
+      "wowhead_spell_id": 28208,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Glacial Gloves",
@@ -15100,7 +18988,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 28205
+      "wowhead_spell_id": 28205,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Glacial Vest",
@@ -15140,7 +19035,14 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 28207
+      "wowhead_spell_id": 28207,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Glacial Wrists",
@@ -15180,7 +19082,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 28209
+      "wowhead_spell_id": 28209,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gloves of Conviction",
@@ -15220,7 +19129,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292958
+      "wowhead_spell_id": 1292958,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273989,
+        "display_name": "Pattern: Gloves of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Handguards of Conviction",
@@ -15260,7 +19180,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292962
+      "wowhead_spell_id": 1292962,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273993,
+        "display_name": "Pattern: Handguards of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Leggings of Conviction",
@@ -15300,7 +19231,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292961
+      "wowhead_spell_id": 1292961,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273992,
+        "display_name": "Pattern: Leggings of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Loom",
@@ -15334,7 +19276,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1263080
+      "wowhead_spell_id": 1263080,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273124,
+        "display_name": "Blueprint: Loom",
+        "source_detail": "Drops from: Baroness Anastari"
+      }
     },
     {
       "name": "Mana-infused Cord",
@@ -15368,7 +19321,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1306541
+      "wowhead_spell_id": 1306541,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279316,
+        "display_name": "Pattern: Mana-infused Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Manaflare Boots",
@@ -15408,7 +19372,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292944
+      "wowhead_spell_id": 1292944,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273975,
+        "display_name": "Pattern: Manaflare Boots",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Manaflare Gloves",
@@ -15448,7 +19423,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292942
+      "wowhead_spell_id": 1292942,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273973,
+        "display_name": "Pattern: Manaflare Gloves",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Manaflare Mantle",
@@ -15488,7 +19474,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292943
+      "wowhead_spell_id": 1292943,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273974,
+        "display_name": "Pattern: Manaflare Mantle",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Manaflare Pants",
@@ -15528,7 +19525,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292941
+      "wowhead_spell_id": 1292941,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273972,
+        "display_name": "Pattern: Manaflare Pants",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Mantle of Conviction",
@@ -15568,7 +19576,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292959
+      "wowhead_spell_id": 1292959,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273990,
+        "display_name": "Pattern: Mantle of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Pants of Conviction",
@@ -15608,7 +19627,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292957
+      "wowhead_spell_id": 1292957,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273988,
+        "display_name": "Pattern: Pants of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Pauldrons of Conviction",
@@ -15648,7 +19678,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292963
+      "wowhead_spell_id": 1292963,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273994,
+        "display_name": "Pattern: Pauldrons of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     },
     {
       "name": "Rime-encrusted Boots",
@@ -15682,7 +19723,18 @@
           "quantity": 7
         }
       ],
-      "wowhead_spell_id": 1306542
+      "wowhead_spell_id": 1306542,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279317,
+        "display_name": "Pattern: Rime-encrusted Boots",
+        "source_detail": null
+      }
     },
     {
       "name": "Robes of Fiery Devastation",
@@ -15716,7 +19768,18 @@
           "quantity": 9
         }
       ],
-      "wowhead_spell_id": 1306540
+      "wowhead_spell_id": 1306540,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279315,
+        "display_name": "Pattern: Robes of Fiery Devastation",
+        "source_detail": null
+      }
     },
     {
       "name": "Sylvan Crown",
@@ -15756,7 +19819,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 28481
+      "wowhead_spell_id": 28481,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22773,
+        "display_name": "Pattern: Sylvan Crown",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Sylvan Shoulders",
@@ -15790,7 +19864,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 28482
+      "wowhead_spell_id": 28482,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22772,
+        "display_name": "Pattern: Sylvan Shoulders",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Sylvan Vest",
@@ -15830,7 +19915,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 28480
+      "wowhead_spell_id": 28480,
+      "skill_up_colors": [
+        300,
+        315,
+        330,
+        345
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22774,
+        "display_name": "Pattern: Sylvan Vest",
+        "source_detail": "Vendor: Mishta"
+      }
     },
     {
       "name": "Treads of Conviction",
@@ -15870,7 +19966,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1292960
+      "wowhead_spell_id": 1292960,
+      "skill_up_colors": [
+        300,
+        320,
+        325,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273991,
+        "display_name": "Pattern: Treads of Conviction",
+        "source_detail": "Vendor: Aisarra Nightmeadow"
+      }
     }
   ]
 }

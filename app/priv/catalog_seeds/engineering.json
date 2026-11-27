@@ -30,7 +30,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1230656
+      "wowhead_spell_id": 1230656,
+      "skill_up_colors": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Blasting Powder",
@@ -52,7 +59,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3918
+      "wowhead_spell_id": 3918,
+      "skill_up_colors": [
+        0,
+        20,
+        30,
+        40
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "SAF-T Dynamite",
@@ -80,7 +94,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266905
+      "wowhead_spell_id": 1266905,
+      "skill_up_colors": [
+        25,
+        25,
+        30,
+        35
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264202,
+        "display_name": "Schematic: SAF-T Dynamite",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Tabs",
@@ -108,7 +133,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266893
+      "wowhead_spell_id": 1266893,
+      "skill_up_colors": [
+        25,
+        25,
+        27,
+        30
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264201,
+        "display_name": "Schematic: SAF-T Tabs",
+        "source_detail": null
+      }
     },
     {
       "name": "Crafted Light Shot",
@@ -136,7 +172,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3920
+      "wowhead_spell_id": 3920,
+      "skill_up_colors": [
+        0,
+        30,
+        45,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Handful of Copper Bolts",
@@ -158,7 +201,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3922
+      "wowhead_spell_id": 3922,
+      "skill_up_colors": [
+        30,
+        45,
+        52,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Copper Bomb",
@@ -198,7 +248,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3923
+      "wowhead_spell_id": 3923,
+      "skill_up_colors": [
+        30,
+        60,
+        75,
+        90
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Dynamite",
@@ -226,7 +283,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3919
+      "wowhead_spell_id": 3919,
+      "skill_up_colors": [
+        0,
+        30,
+        45,
+        60
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Arclight Spanner",
@@ -248,7 +312,14 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 7430
+      "wowhead_spell_id": 7430,
+      "skill_up_colors": [
+        50,
+        70,
+        80,
+        90
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Tube",
@@ -276,7 +347,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3924
+      "wowhead_spell_id": 3924,
+      "skill_up_colors": [
+        50,
+        80,
+        95,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rough Boomstick",
@@ -310,7 +388,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3925
+      "wowhead_spell_id": 3925,
+      "skill_up_colors": [
+        50,
+        80,
+        95,
+        110
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "SAF-T Copper Bomb",
@@ -356,7 +441,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266906
+      "wowhead_spell_id": 1266906,
+      "skill_up_colors": [
+        55,
+        55,
+        60,
+        65
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264203,
+        "display_name": "Schematic: SAF-T Copper Bomb",
+        "source_detail": null
+      }
     },
     {
       "name": "Crude Scope",
@@ -390,7 +486,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3977
+      "wowhead_spell_id": 3977,
+      "skill_up_colors": [
+        60,
+        90,
+        105,
+        120
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Copper Modulator",
@@ -424,7 +527,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3926
+      "wowhead_spell_id": 3926,
+      "skill_up_colors": [
+        65,
+        95,
+        110,
+        125
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Harvester Override Signalcaster",
@@ -458,7 +568,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1302161
+      "wowhead_spell_id": 1302161,
+      "skill_up_colors": [
+        65,
+        65,
+        72,
+        80
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 277470,
+        "display_name": "Schematic: Harvester Override Signalcaster",
+        "source_detail": "Drops from: Decrepit Harvester; Quest: Harvesting the Harvesters"
+      }
     },
     {
       "name": "Coarse Blasting Powder",
@@ -480,7 +601,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3929
+      "wowhead_spell_id": 3929,
+      "skill_up_colors": [
+        75,
+        85,
+        90,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Coarse Dynamite",
@@ -508,7 +636,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3931
+      "wowhead_spell_id": 3931,
+      "skill_up_colors": [
+        75,
+        90,
+        97,
+        105
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Crafted Heavy Shot",
@@ -536,7 +671,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3930
+      "wowhead_spell_id": 3930,
+      "skill_up_colors": [
+        75,
+        85,
+        90,
+        95
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mechanical Squirrel",
@@ -576,7 +718,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3928
+      "wowhead_spell_id": 3928,
+      "skill_up_colors": [
+        75,
+        105,
+        120,
+        135
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4408,
+        "display_name": "Schematic: Mechanical Squirrel",
+        "source_detail": null
+      }
     },
     {
       "name": "Satchel of Copper Bombs",
@@ -610,7 +763,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1317958
+      "wowhead_spell_id": 1317958,
+      "skill_up_colors": [
+        85,
+        90,
+        92,
+        95
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285285,
+        "display_name": "Schematic: Satchel of Copper Bombs",
+        "source_detail": null
+      }
     },
     {
       "name": "Target Dummy",
@@ -650,7 +814,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3932
+      "wowhead_spell_id": 3932,
+      "skill_up_colors": [
+        85,
+        115,
+        130,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Silver Contact",
@@ -672,7 +843,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3973
+      "wowhead_spell_id": 3973,
+      "skill_up_colors": [
+        90,
+        110,
+        125,
+        140
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "EZ-Thro Dynamite",
@@ -706,7 +884,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8339
+      "wowhead_spell_id": 8339,
+      "skill_up_colors": [
+        100,
+        115,
+        122,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6716,
+        "display_name": "Schematic: EZ-Thro Dynamite",
+        "source_detail": null
+      }
     },
     {
       "name": "EZ-Thro Wrap",
@@ -734,7 +923,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266907
+      "wowhead_spell_id": 1266907,
+      "skill_up_colors": [
+        100,
+        100,
+        102,
+        105
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264204,
+        "display_name": "Schematic: EZ-Thro Wrap",
+        "source_detail": null
+      }
     },
     {
       "name": "Flying Tiger Goggles",
@@ -762,7 +962,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3934
+      "wowhead_spell_id": 3934,
+      "skill_up_colors": [
+        100,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Practice Lock",
@@ -796,7 +1003,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8334
+      "wowhead_spell_id": 8334,
+      "skill_up_colors": [
+        100,
+        115,
+        122,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Small Seaforium Charge",
@@ -836,7 +1050,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3933
+      "wowhead_spell_id": 3933,
+      "skill_up_colors": [
+        100,
+        130,
+        145,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4409,
+        "display_name": "Schematic: Small Seaforium Charge",
+        "source_detail": null
+      }
     },
     {
       "name": "Bronze Tube",
@@ -864,7 +1089,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3938
+      "wowhead_spell_id": 3938,
+      "skill_up_colors": [
+        105,
+        105,
+        130,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Deadly Blunderbuss",
@@ -904,7 +1136,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3936
+      "wowhead_spell_id": 3936,
+      "skill_up_colors": [
+        105,
+        130,
+        142,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Large Copper Bomb",
@@ -938,7 +1177,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3937
+      "wowhead_spell_id": 3937,
+      "skill_up_colors": [
+        105,
+        105,
+        130,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Standard Scope",
@@ -966,7 +1212,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3978
+      "wowhead_spell_id": 3978,
+      "skill_up_colors": [
+        110,
+        135,
+        147,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lovingly Crafted Boomstick",
@@ -1006,7 +1259,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3939
+      "wowhead_spell_id": 3939,
+      "skill_up_colors": [
+        120,
+        145,
+        157,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13309,
+        "display_name": "Schematic: Lovingly Crafted Boomstick",
+        "source_detail": null
+      }
     },
     {
       "name": "Sandpaper",
@@ -1034,7 +1298,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249634
+      "wowhead_spell_id": 1249634,
+      "skill_up_colors": [
+        120,
+        130,
+        142,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Shadow Goggles",
@@ -1062,7 +1333,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3940
+      "wowhead_spell_id": 3940,
+      "skill_up_colors": [
+        120,
+        145,
+        157,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4410,
+        "display_name": "Schematic: Shadow Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Bronze Bomb",
@@ -1102,7 +1384,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3941
+      "wowhead_spell_id": 3941,
+      "skill_up_colors": [
+        120,
+        120,
+        145,
+        170
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "9-60 Battery Pack",
@@ -1136,7 +1425,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1293088
+      "wowhead_spell_id": 1293088,
+      "skill_up_colors": [
+        125,
+        125,
+        135,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274049,
+        "display_name": "Schematic: 9-60 Battery Pack",
+        "source_detail": "Drops from: Crowd Pummeler 9-60"
+      }
     },
     {
       "name": "Crafted Solid Shot",
@@ -1164,7 +1464,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3947
+      "wowhead_spell_id": 3947,
+      "skill_up_colors": [
+        125,
+        125,
+        135,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Flame Deflector",
@@ -1192,7 +1499,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3944
+      "wowhead_spell_id": 3944,
+      "skill_up_colors": [
+        125,
+        125,
+        150,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4411,
+        "display_name": "Schematic: Flame Deflector",
+        "source_detail": "Drops from: Mekgineer Thermaplugg"
+      }
     },
     {
       "name": "Gnomish Universal Remote",
@@ -1238,7 +1556,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9269
+      "wowhead_spell_id": 9269,
+      "skill_up_colors": [
+        125,
+        150,
+        162,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7560,
+        "display_name": "Schematic: Gnomish Universal Remote",
+        "source_detail": null
+      }
     },
     {
       "name": "Heavy Blasting Powder",
@@ -1260,7 +1589,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3945
+      "wowhead_spell_id": 3945,
+      "skill_up_colors": [
+        125,
+        125,
+        135,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Heavy Dynamite",
@@ -1288,7 +1624,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3946
+      "wowhead_spell_id": 3946,
+      "skill_up_colors": [
+        125,
+        125,
+        135,
+        145
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Small Blue Rocket",
@@ -1316,7 +1659,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26416
+      "wowhead_spell_id": 26416,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21724,
+        "display_name": "Schematic: Small Blue Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Green Rocket",
@@ -1344,7 +1698,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26417
+      "wowhead_spell_id": 26417,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21725,
+        "display_name": "Schematic: Small Green Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Purple Rocket",
@@ -1372,7 +1737,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319154
+      "wowhead_spell_id": 1319154,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286076,
+        "display_name": "Schematic: Small Purple Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Red Rocket",
@@ -1400,7 +1776,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26418
+      "wowhead_spell_id": 26418,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21726,
+        "display_name": "Schematic: Small Red Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Small White Rocket",
@@ -1428,7 +1815,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319155
+      "wowhead_spell_id": 1319155,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286077,
+        "display_name": "Schematic: Small White Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Small Yellow Rocket",
@@ -1456,7 +1854,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319156
+      "wowhead_spell_id": 1319156,
+      "skill_up_colors": [
+        125,
+        125,
+        137,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286078,
+        "display_name": "Schematic: Small Yellow Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Whirring Bronze Gizmo",
@@ -1484,7 +1893,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3942
+      "wowhead_spell_id": 3942,
+      "skill_up_colors": [
+        125,
+        125,
+        150,
+        175
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "EZ-Thro Copper Bomb XL",
@@ -1524,7 +1940,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266908
+      "wowhead_spell_id": 1266908,
+      "skill_up_colors": [
+        130,
+        130,
+        155,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264205,
+        "display_name": "Schematic: EZ-Thro Copper Bomb XL",
+        "source_detail": null
+      }
     },
     {
       "name": "Silver-plated Shotgun",
@@ -1564,7 +1991,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 3949
+      "wowhead_spell_id": 3949,
+      "skill_up_colors": [
+        130,
+        155,
+        167,
+        180
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Ornate Spyglass",
@@ -1604,7 +2038,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6458
+      "wowhead_spell_id": 6458,
+      "skill_up_colors": [
+        135,
+        160,
+        172,
+        185
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Shredder Autosalvage Unit",
@@ -1638,7 +2079,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 424641
+      "wowhead_spell_id": 424641,
+      "skill_up_colors": [
+        135,
+        135,
+        140,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 210178,
+        "display_name": "Schematic: Shredder Autosalvage Unit",
+        "source_detail": null
+      }
     },
     {
       "name": "Big Bronze Bomb",
@@ -1672,7 +2124,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3950
+      "wowhead_spell_id": 3950,
+      "skill_up_colors": [
+        140,
+        140,
+        165,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hoof-Shaped Foot Pedal",
@@ -1718,7 +2177,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1286796
+      "wowhead_spell_id": 1286796,
+      "skill_up_colors": [
+        140,
+        150,
+        155,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 269903,
+        "display_name": "Schematic: Hoof-Shaped Foot Pedal",
+        "source_detail": "Quest: Gizmo for Warug; vendor"
+      }
     },
     {
       "name": "Minor Recombobulator",
@@ -1758,7 +2228,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3952
+      "wowhead_spell_id": 3952,
+      "skill_up_colors": [
+        140,
+        165,
+        177,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 14639,
+        "display_name": "Schematic: Minor Recombobulator",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Repair Bot",
@@ -1792,7 +2273,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1263034
+      "wowhead_spell_id": 1263034,
+      "skill_up_colors": [
+        140,
+        140,
+        140,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273092,
+        "display_name": "Blueprint: Repair Bot",
+        "source_detail": "Drops from: Sneed"
+      }
     },
     {
       "name": "Bronze Framework",
@@ -1826,7 +2318,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3953
+      "wowhead_spell_id": 3953,
+      "skill_up_colors": [
+        145,
+        145,
+        170,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Moonsight Rifle",
@@ -1866,7 +2365,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3954
+      "wowhead_spell_id": 3954,
+      "skill_up_colors": [
+        145,
+        170,
+        182,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4412,
+        "display_name": "Schematic: Moonsight Rifle",
+        "source_detail": null
+      }
     },
     {
       "name": "No Slip SAF-T Padding",
@@ -1894,7 +2404,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266909
+      "wowhead_spell_id": 1266909,
+      "skill_up_colors": [
+        145,
+        145,
+        147,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264206,
+        "display_name": "Schematic: No Slip SAF-T Padding",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Bronze Bomb",
@@ -1940,7 +2461,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266910
+      "wowhead_spell_id": 1266910,
+      "skill_up_colors": [
+        145,
+        145,
+        170,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264207,
+        "display_name": "Schematic: SAF-T Bronze Bomb",
+        "source_detail": "Drops from: Scarlet Scout"
+      }
     },
     {
       "name": "Aquadynamic Fish Attractor",
@@ -1974,7 +2506,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9271
+      "wowhead_spell_id": 9271,
+      "skill_up_colors": [
+        150,
+        150,
+        160,
+        170
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Blue Firework",
@@ -2002,7 +2541,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23067
+      "wowhead_spell_id": 23067,
+      "skill_up_colors": [
+        150,
+        150,
+        162,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18649,
+        "display_name": "Schematic: Blue Firework",
+        "source_detail": null
+      }
     },
     {
       "name": "Explosive Sheep",
@@ -2042,7 +2592,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3955
+      "wowhead_spell_id": 3955,
+      "skill_up_colors": [
+        150,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gold Power Core",
@@ -2064,7 +2621,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12584
+      "wowhead_spell_id": 12584,
+      "skill_up_colors": [
+        150,
+        150,
+        170,
+        190
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Firework",
@@ -2092,7 +2656,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23068
+      "wowhead_spell_id": 23068,
+      "skill_up_colors": [
+        150,
+        150,
+        162,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18648,
+        "display_name": "Schematic: Green Firework",
+        "source_detail": null
+      }
     },
     {
       "name": "Green Tinted Goggles",
@@ -2126,7 +2701,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3956
+      "wowhead_spell_id": 3956,
+      "skill_up_colors": [
+        150,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Red Firework",
@@ -2154,7 +2736,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23066
+      "wowhead_spell_id": 23066,
+      "skill_up_colors": [
+        150,
+        150,
+        162,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18647,
+        "display_name": "Schematic: Red Firework",
+        "source_detail": "Vendor: Sovik"
+      }
     },
     {
       "name": "SAF-T Jumbo Dynamite",
@@ -2188,7 +2781,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266911
+      "wowhead_spell_id": 1266911,
+      "skill_up_colors": [
+        150,
+        150,
+        160,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264208,
+        "display_name": "Schematic: SAF-T Jumbo Dynamite",
+        "source_detail": null
+      }
     },
     {
       "name": "Ice Deflector",
@@ -2216,7 +2820,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3957
+      "wowhead_spell_id": 3957,
+      "skill_up_colors": [
+        155,
+        175,
+        185,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13308,
+        "display_name": "Schematic: Ice Deflector",
+        "source_detail": null
+      }
     },
     {
       "name": "Discombobulator Ray",
@@ -2256,7 +2871,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3959
+      "wowhead_spell_id": 3959,
+      "skill_up_colors": [
+        160,
+        180,
+        190,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4413,
+        "display_name": "Schematic: Discombobulator Ray",
+        "source_detail": "Drops from: Mekgineer Thermaplugg"
+      }
     },
     {
       "name": "Iron Strut",
@@ -2278,7 +2904,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3958
+      "wowhead_spell_id": 3958,
+      "skill_up_colors": [
+        160,
+        160,
+        170,
+        180
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Jumper Cables",
@@ -2330,7 +2963,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9273
+      "wowhead_spell_id": 9273,
+      "skill_up_colors": [
+        0,
+        165,
+        180,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7561,
+        "display_name": "Schematic: Goblin Jumper Cables",
+        "source_detail": "Drops from: Daggerspine Siren"
+      }
     },
     {
       "name": "Portable Bronze Mortar",
@@ -2370,7 +3014,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3960
+      "wowhead_spell_id": 3960,
+      "skill_up_colors": [
+        165,
+        185,
+        195,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4414,
+        "display_name": "Schematic: Portable Bronze Mortar",
+        "source_detail": null
+      }
     },
     {
       "name": "Satchel of Bronze Bombs",
@@ -2404,7 +3059,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317959
+      "wowhead_spell_id": 1317959,
+      "skill_up_colors": [
+        165,
+        170,
+        172,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285286,
+        "display_name": "Schematic: Satchel of Bronze Bombs",
+        "source_detail": null
+      }
     },
     {
       "name": "Gyrochronatom",
@@ -2432,7 +3098,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3961
+      "wowhead_spell_id": 3961,
+      "skill_up_colors": [
+        170,
+        170,
+        190,
+        210
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Bright-Eye Goggles",
@@ -2460,7 +3133,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12587
+      "wowhead_spell_id": 12587,
+      "skill_up_colors": [
+        175,
+        195,
+        205,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10601,
+        "display_name": "Schematic: Bright-Eye Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Clanking Cord",
@@ -2494,7 +3178,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1308180
+      "wowhead_spell_id": 1308180,
+      "skill_up_colors": [
+        175,
+        180,
+        182,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280323,
+        "display_name": "Schematic: Clanking Cord",
+        "source_detail": null
+      }
     },
     {
       "name": "Compact Harvest Reaper Kit",
@@ -2534,7 +3229,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3963
+      "wowhead_spell_id": 3963,
+      "skill_up_colors": [
+        175,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gizmo Girdle",
@@ -2568,7 +3270,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1308179
+      "wowhead_spell_id": 1308179,
+      "skill_up_colors": [
+        175,
+        180,
+        182,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280322,
+        "display_name": "Schematic: Gizmo Girdle",
+        "source_detail": null
+      }
     },
     {
       "name": "Gyromatic Micro-Adjustor",
@@ -2590,7 +3303,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12590
+      "wowhead_spell_id": 12590,
+      "skill_up_colors": [
+        175,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Iron Grenade",
@@ -2624,7 +3344,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3962
+      "wowhead_spell_id": 3962,
+      "skill_up_colors": [
+        175,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Large Blue Rocket",
@@ -2652,7 +3379,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26420
+      "wowhead_spell_id": 26420,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21727,
+        "display_name": "Schematic: Large Blue Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Green Rocket",
@@ -2680,7 +3418,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26421
+      "wowhead_spell_id": 26421,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21728,
+        "display_name": "Schematic: Large Green Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Purple Rocket",
@@ -2708,7 +3457,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319157
+      "wowhead_spell_id": 1319157,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286079,
+        "display_name": "Schematic: Large Purple Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Red Rocket",
@@ -2736,7 +3496,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26422
+      "wowhead_spell_id": 26422,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21729,
+        "display_name": "Schematic: Large Red Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Large White Rocket",
@@ -2764,7 +3535,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319158
+      "wowhead_spell_id": 1319158,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286080,
+        "display_name": "Schematic: Large White Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Yellow Rocket",
@@ -2792,7 +3574,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319159
+      "wowhead_spell_id": 1319159,
+      "skill_up_colors": [
+        175,
+        175,
+        187,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286081,
+        "display_name": "Schematic: Large Yellow Rocket",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Bell",
@@ -2820,7 +3613,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266912
+      "wowhead_spell_id": 1266912,
+      "skill_up_colors": [
+        175,
+        175,
+        177,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264209,
+        "display_name": "Schematic: SAF-T Bell",
+        "source_detail": null
+      }
     },
     {
       "name": "Shafety Sheep",
@@ -2866,7 +3670,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266913
+      "wowhead_spell_id": 1266913,
+      "skill_up_colors": [
+        175,
+        200,
+        212,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264210,
+        "display_name": "Schematic: Shafety Sheep",
+        "source_detail": "Drops from: Venture Co. Miner"
+      }
     },
     {
       "name": "Solid Blasting Powder",
@@ -2888,7 +3703,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12585
+      "wowhead_spell_id": 12585,
+      "skill_up_colors": [
+        175,
+        175,
+        185,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Solid Dynamite",
@@ -2916,7 +3738,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12586
+      "wowhead_spell_id": 12586,
+      "skill_up_colors": [
+        175,
+        175,
+        185,
+        195
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Whimsical Waistwrap",
@@ -2950,7 +3779,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1308178
+      "wowhead_spell_id": 1308178,
+      "skill_up_colors": [
+        175,
+        180,
+        182,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280321,
+        "display_name": "Schematic: Whimsical Waistwrap",
+        "source_detail": null
+      }
     },
     {
       "name": "Accurate Scope",
@@ -2984,7 +3824,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3979
+      "wowhead_spell_id": 3979,
+      "skill_up_colors": [
+        180,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13310,
+        "display_name": "Schematic: Accurate Scope",
+        "source_detail": null
+      }
     },
     {
       "name": "Advanced Target Dummy",
@@ -3024,7 +3875,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 3965
+      "wowhead_spell_id": 3965,
+      "skill_up_colors": [
+        185,
+        185,
+        205,
+        225
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Craftsman's Monocle",
@@ -3052,7 +3910,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 3966
+      "wowhead_spell_id": 3966,
+      "skill_up_colors": [
+        185,
+        205,
+        215,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4415,
+        "display_name": "Schematic: Craftsman's Monocle",
+        "source_detail": null
+      }
     },
     {
       "name": "Flash Bomb",
@@ -3086,7 +3955,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8243
+      "wowhead_spell_id": 8243,
+      "skill_up_colors": [
+        185,
+        185,
+        205,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6672,
+        "display_name": "Schematic: Flash Bomb",
+        "source_detail": "Drops from: Mekgineer Thermaplugg; Quest: Flash Bomb Recipe"
+      }
     },
     {
       "name": "Big Iron Bomb",
@@ -3120,7 +4000,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3967
+      "wowhead_spell_id": 3967,
+      "skill_up_colors": [
+        190,
+        190,
+        210,
+        230
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Centaur Banner Deployment Device",
@@ -3160,7 +4047,18 @@
           "quantity": 30
         }
       ],
-      "wowhead_spell_id": 1286792
+      "wowhead_spell_id": 1286792,
+      "skill_up_colors": [
+        190,
+        190,
+        197,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 269901,
+        "display_name": "Schematic: Centaur Banner Deployment Device",
+        "source_detail": "Quest: Gizmo for Warug; vendor"
+      }
     },
     {
       "name": "EZ-Thro Bronze Mortar",
@@ -3206,7 +4104,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266915
+      "wowhead_spell_id": 1266915,
+      "skill_up_colors": [
+        190,
+        210,
+        220,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264212,
+        "display_name": "Schematic: EZ-Thro Bronze Mortar",
+        "source_detail": "Drops from: Boulderfist Shaman"
+      }
     },
     {
       "name": "EZ-Thro Fireproof Fuse",
@@ -3234,7 +4143,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266914
+      "wowhead_spell_id": 1266914,
+      "skill_up_colors": [
+        190,
+        190,
+        192,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264211,
+        "display_name": "Schematic: EZ-Thro Fireproof Fuse",
+        "source_detail": null
+      }
     },
     {
       "name": "Snowmaster 9000",
@@ -3274,7 +4194,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 21940
+      "wowhead_spell_id": 21940,
+      "skill_up_colors": [
+        190,
+        190,
+        210,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17720,
+        "display_name": "Schematic: Snowmaster 9000",
+        "source_detail": null
+      }
     },
     {
       "name": "Goblin Land Mine",
@@ -3308,7 +4239,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3968
+      "wowhead_spell_id": 3968,
+      "skill_up_colors": [
+        195,
+        215,
+        225,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4416,
+        "display_name": "Schematic: Goblin Land Mine",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Tube",
@@ -3330,7 +4272,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12589
+      "wowhead_spell_id": 12589,
+      "skill_up_colors": [
+        195,
+        195,
+        215,
+        235
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Bent Goggles",
@@ -3364,7 +4313,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1308184
+      "wowhead_spell_id": 1308184,
+      "skill_up_colors": [
+        200,
+        205,
+        207,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280326,
+        "display_name": "Schematic: Bent Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Dented Goggles",
@@ -3398,7 +4358,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1308186
+      "wowhead_spell_id": 1308186,
+      "skill_up_colors": [
+        200,
+        205,
+        207,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280328,
+        "display_name": "Schematic: Dented Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "EZ-Thro Dynamite II",
@@ -3432,7 +4403,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23069
+      "wowhead_spell_id": 23069,
+      "skill_up_colors": [
+        200,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18650,
+        "display_name": "Schematic: EZ-Thro Dynamite II",
+        "source_detail": null
+      }
     },
     {
       "name": "EZ-Thro Grenade",
@@ -3472,7 +4454,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266916
+      "wowhead_spell_id": 1266916,
+      "skill_up_colors": [
+        200,
+        200,
+        220,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264213,
+        "display_name": "Schematic: EZ-Thro Grenade",
+        "source_detail": "Drops from: Shadowforge Geologist"
+      }
     },
     {
       "name": "Floppy Goggles",
@@ -3506,7 +4499,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1308183
+      "wowhead_spell_id": 1308183,
+      "skill_up_colors": [
+        200,
+        205,
+        207,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280325,
+        "display_name": "Schematic: Floppy Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Gnomish Cloaking Device",
@@ -3552,7 +4556,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3971
+      "wowhead_spell_id": 3971,
+      "skill_up_colors": [
+        200,
+        220,
+        230,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7742,
+        "display_name": "Schematic: Gnomish Cloaking Device",
+        "source_detail": "Vendor: Zan Shivsproket"
+      }
     },
     {
       "name": "Large Seaforium Charge",
@@ -3586,7 +4601,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3972
+      "wowhead_spell_id": 3972,
+      "skill_up_colors": [
+        200,
+        200,
+        220,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4417,
+        "display_name": "Schematic: Large Seaforium Charge",
+        "source_detail": null
+      }
     },
     {
       "name": "Mechanical Dragonling",
@@ -3632,7 +4658,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3969
+      "wowhead_spell_id": 3969,
+      "skill_up_colors": [
+        200,
+        220,
+        230,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13311,
+        "display_name": "Schematic: Mechanical Dragonling",
+        "source_detail": "Drops from: Venture Co. Tinkerer; Vendor: Gnaz Blunderflame"
+      }
     },
     {
       "name": "Mechanical Repair Kit",
@@ -3666,7 +4703,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15255
+      "wowhead_spell_id": 15255,
+      "skill_up_colors": [
+        200,
+        200,
+        220,
+        240
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Polished Truesilver Gears",
@@ -3694,7 +4738,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 435956
+      "wowhead_spell_id": 435956,
+      "skill_up_colors": [
+        200,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 215429,
+        "display_name": "Schematic: Polished Truesilver Gears",
+        "source_detail": "Vendor: Ziri \"The Wrench\" Littlesprocket"
+      }
     },
     {
       "name": "Stuckbutton Goggles",
@@ -3728,7 +4783,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1308185
+      "wowhead_spell_id": 1308185,
+      "skill_up_colors": [
+        200,
+        205,
+        207,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 280327,
+        "display_name": "Schematic: Stuckbutton Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Unstable Trigger",
@@ -3762,7 +4828,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12591
+      "wowhead_spell_id": 12591,
+      "skill_up_colors": [
+        200,
+        200,
+        220,
+        240
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Fire Goggles",
@@ -3802,7 +4875,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12594
+      "wowhead_spell_id": 12594,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gnomish Shrink Ray",
@@ -3848,7 +4928,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12899
+      "wowhead_spell_id": 12899,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Construction Helmet",
@@ -3882,7 +4969,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12718
+      "wowhead_spell_id": 12718,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Mining Helmet",
@@ -3916,7 +5010,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12717
+      "wowhead_spell_id": 12717,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 221336,
+        "display_name": "Schematic: Goblin Mining Helmet",
+        "source_detail": "Vendor: Maximillian \"The Greaser\""
+      }
     },
     {
       "name": "Goblin Mortar",
@@ -3962,7 +5067,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12716
+      "wowhead_spell_id": 12716,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Rocket Fuel Recipe",
@@ -3990,7 +5102,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12715
+      "wowhead_spell_id": 12715,
+      "skill_up_colors": [
+        205,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Sapper Charge",
@@ -4024,7 +5143,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12760
+      "wowhead_spell_id": 12760,
+      "skill_up_colors": [
+        205,
+        205,
+        225,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Inlaid Mithril Cylinder Plans",
@@ -4052,7 +5178,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12895
+      "wowhead_spell_id": 12895,
+      "skill_up_colors": [
+        205,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Lil' Smoky",
@@ -4098,7 +5231,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15633
+      "wowhead_spell_id": 15633,
+      "skill_up_colors": [
+        205,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11827,
+        "display_name": "Schematic: Lil' Smoky",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Blunderbuss",
@@ -4144,7 +5288,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12595
+      "wowhead_spell_id": 12595,
+      "skill_up_colors": [
+        205,
+        225,
+        235,
+        245
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Pet Bombling",
@@ -4184,7 +5335,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 15628
+      "wowhead_spell_id": 15628,
+      "skill_up_colors": [
+        205,
+        205,
+        207,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 11828,
+        "display_name": "Schematic: Pet Bombling",
+        "source_detail": null
+      }
     },
     {
       "name": "The Mortar: Reloaded",
@@ -4218,7 +5380,9 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 13240
+      "wowhead_spell_id": 13240,
+      "skill_up_colors": null,
+      "recipe_cost_item": null
     },
     {
       "name": "Deadly Scope",
@@ -4252,7 +5416,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12597
+      "wowhead_spell_id": 12597,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10602,
+        "display_name": "Schematic: Deadly Scope",
+        "source_detail": null
+      }
     },
     {
       "name": "Gnomish Goggles",
@@ -4298,7 +5473,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12897
+      "wowhead_spell_id": 12897,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gnomish Net-o-Matic Projector",
@@ -4344,7 +5526,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12902
+      "wowhead_spell_id": 12902,
+      "skill_up_colors": [
+        210,
+        230,
+        240,
+        250
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hi-Impact Mithril Slugs",
@@ -4372,7 +5561,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12596
+      "wowhead_spell_id": 12596,
+      "skill_up_colors": [
+        210,
+        210,
+        230,
+        250
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gnomish Harm Prevention Belt",
@@ -4418,7 +5614,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12903
+      "wowhead_spell_id": 12903,
+      "skill_up_colors": [
+        215,
+        235,
+        245,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mithril Casing",
@@ -4440,7 +5643,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 12599
+      "wowhead_spell_id": 12599,
+      "skill_up_colors": [
+        215,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mithril Frag Bomb",
@@ -4474,7 +5684,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12603
+      "wowhead_spell_id": 12603,
+      "skill_up_colors": [
+        215,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "SAF-T Bomb",
@@ -4514,7 +5731,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266918
+      "wowhead_spell_id": 1266918,
+      "skill_up_colors": [
+        215,
+        215,
+        230,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264215,
+        "display_name": "Schematic: SAF-T Bomb",
+        "source_detail": "Drops from: Wastewander Thief"
+      }
     },
     {
       "name": "SAF-T Casing",
@@ -4542,7 +5770,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266917
+      "wowhead_spell_id": 1266917,
+      "skill_up_colors": [
+        215,
+        215,
+        217,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264214,
+        "display_name": "Schematic: SAF-T Casing",
+        "source_detail": "Drops from: Dark Iron Geologist"
+      }
     },
     {
       "name": "Catseye Ultra Goggles",
@@ -4576,7 +5815,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12607
+      "wowhead_spell_id": 12607,
+      "skill_up_colors": [
+        220,
+        240,
+        250,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10603,
+        "display_name": "Schematic: Catseye Ultra Goggles",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Heavy-bore Rifle",
@@ -4622,7 +5872,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12614
+      "wowhead_spell_id": 12614,
+      "skill_up_colors": [
+        220,
+        240,
+        250,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10604,
+        "display_name": "Schematic: Mithril Heavy-bore Rifle",
+        "source_detail": null
+      }
     },
     {
       "name": "Blue Rocket Cluster",
@@ -4650,7 +5911,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26423
+      "wowhead_spell_id": 26423,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21730,
+        "display_name": "Schematic: Blue Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Compact Critter Carrier",
@@ -4690,7 +5962,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266920
+      "wowhead_spell_id": 1266920,
+      "skill_up_colors": [
+        225,
+        230,
+        232,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264217,
+        "display_name": "Schematic: Compact Critter Carrier",
+        "source_detail": null
+      }
     },
     {
       "name": "Emergency Field Cloak",
@@ -4718,7 +6001,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266919
+      "wowhead_spell_id": 1266919,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264216,
+        "display_name": "Schematic: Emergency Field Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Ez-Thro Radiation Bomb",
@@ -4752,7 +6046,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 435966
+      "wowhead_spell_id": 435966,
+      "skill_up_colors": [
+        225,
+        225,
+        230,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 215432,
+        "display_name": "Schematic: Ez-Thro Radiation Bomb",
+        "source_detail": "Vendor: Ziri \"The Wrench\" Littlesprocket"
+      }
     },
     {
       "name": "Firework Launcher",
@@ -4792,7 +6097,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26442
+      "wowhead_spell_id": 26442,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21738,
+        "display_name": "Schematic: Firework Launcher",
+        "source_detail": "Quest: Firework Launcher"
+      }
     },
     {
       "name": "Gnomish Rocket Boots",
@@ -4838,7 +6154,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12905
+      "wowhead_spell_id": 12905,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Rocket Boots",
@@ -4884,7 +6207,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8895
+      "wowhead_spell_id": 8895,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7192,
+        "display_name": "Schematic: Goblin Rocket Boots",
+        "source_detail": "Drops from: Mekgineer Thermaplugg"
+      }
     },
     {
       "name": "Green Rocket Cluster",
@@ -4912,7 +6246,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26424
+      "wowhead_spell_id": 26424,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21731,
+        "display_name": "Schematic: Green Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "High-Yield Radiation Bomb",
@@ -4946,7 +6291,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 435964
+      "wowhead_spell_id": 435964,
+      "skill_up_colors": [
+        225,
+        225,
+        230,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 215431,
+        "display_name": "Schematic: High-Yield Radiation Bomb",
+        "source_detail": "Vendor: Ziri \"The Wrench\" Littlesprocket"
+      }
     },
     {
       "name": "Parachute Cloak",
@@ -4986,7 +6342,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12616
+      "wowhead_spell_id": 12616,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10606,
+        "display_name": "Schematic: Parachute Cloak",
+        "source_detail": null
+      }
     },
     {
       "name": "Purple Rocket Cluster",
@@ -5014,7 +6381,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319160
+      "wowhead_spell_id": 1319160,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286082,
+        "display_name": "Schematic: Purple Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Red Rocket Cluster",
@@ -5042,7 +6420,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26425
+      "wowhead_spell_id": 26425,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21732,
+        "display_name": "Schematic: Red Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Spellpower Goggles Xtreme",
@@ -5070,7 +6459,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12615
+      "wowhead_spell_id": 12615,
+      "skill_up_colors": [
+        225,
+        245,
+        255,
+        265
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10605,
+        "display_name": "Schematic: Spellpower Goggles Xtreme",
+        "source_detail": null
+      }
     },
     {
       "name": "White Rocket Cluster",
@@ -5098,7 +6498,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319161
+      "wowhead_spell_id": 1319161,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286083,
+        "display_name": "Schematic: White Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Yellow Rocket Cluster",
@@ -5126,7 +6537,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319162
+      "wowhead_spell_id": 1319162,
+      "skill_up_colors": [
+        225,
+        225,
+        237,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286084,
+        "display_name": "Schematic: Yellow Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Deepdive Helmet",
@@ -5172,7 +6594,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12617
+      "wowhead_spell_id": 12617,
+      "skill_up_colors": [
+        230,
+        250,
+        260,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10607,
+        "display_name": "Schematic: Deepdive Helmet",
+        "source_detail": "Vendor: Jubie Gadgetspring"
+      }
     },
     {
       "name": "Gnomish Battle Chicken",
@@ -5224,7 +6657,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12906
+      "wowhead_spell_id": 12906,
+      "skill_up_colors": [
+        230,
+        250,
+        260,
+        270
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Bomb Dispenser",
@@ -5270,7 +6710,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12755
+      "wowhead_spell_id": 12755,
+      "skill_up_colors": [
+        230,
+        230,
+        250,
+        270
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Rose Colored Goggles",
@@ -5298,7 +6745,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12618
+      "wowhead_spell_id": 12618,
+      "skill_up_colors": [
+        230,
+        250,
+        260,
+        270
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Satchel of Iron Bombs",
@@ -5332,7 +6786,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317960
+      "wowhead_spell_id": 1317960,
+      "skill_up_colors": [
+        230,
+        235,
+        237,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285287,
+        "display_name": "Schematic: Satchel of Iron Bombs",
+        "source_detail": null
+      }
     },
     {
       "name": "Gnomish Mind Control Cap",
@@ -5378,7 +6843,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 12907
+      "wowhead_spell_id": 12907,
+      "skill_up_colors": [
+        235,
+        255,
+        265,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hi-Explosive Bomb",
@@ -5412,7 +6884,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12619
+      "wowhead_spell_id": 12619,
+      "skill_up_colors": [
+        235,
+        235,
+        255,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "The Big One",
@@ -5452,7 +6931,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12754
+      "wowhead_spell_id": 12754,
+      "skill_up_colors": [
+        235,
+        235,
+        255,
+        275
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "EZ-Thro Tru-Trigger",
@@ -5480,7 +6966,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266921
+      "wowhead_spell_id": 1266921,
+      "skill_up_colors": [
+        240,
+        240,
+        242,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264218,
+        "display_name": "Schematic: EZ-Thro Tru-Trigger",
+        "source_detail": "Drops from: Jade Ooze"
+      }
     },
     {
       "name": "Gnomish Death Ray",
@@ -5526,7 +7023,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12759
+      "wowhead_spell_id": 12759,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Dragon Gun",
@@ -5572,7 +7076,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12908
+      "wowhead_spell_id": 12908,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sniper Scope",
@@ -5606,7 +7117,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12620
+      "wowhead_spell_id": 12620,
+      "skill_up_colors": [
+        240,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10608,
+        "display_name": "Schematic: Sniper Scope",
+        "source_detail": null
+      }
     },
     {
       "name": "Tru-Trigger Frag Bomb",
@@ -5646,7 +7168,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266922
+      "wowhead_spell_id": 1266922,
+      "skill_up_colors": [
+        240,
+        240,
+        260,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264219,
+        "display_name": "Schematic: Tru-Trigger Frag Bomb",
+        "source_detail": "Drops from: Dunemaul Brute"
+      }
     },
     {
       "name": "Goblin Rocket Helmet",
@@ -5686,7 +7219,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 12758
+      "wowhead_spell_id": 12758,
+      "skill_up_colors": [
+        245,
+        265,
+        275,
+        285
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Green Lens",
@@ -5732,7 +7272,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12622
+      "wowhead_spell_id": 12622,
+      "skill_up_colors": [
+        245,
+        265,
+        275,
+        285
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mithril Gyro-Shot",
@@ -5760,7 +7307,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12621
+      "wowhead_spell_id": 12621,
+      "skill_up_colors": [
+        245,
+        245,
+        265,
+        285
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dense Blasting Powder",
@@ -5782,7 +7336,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 19788
+      "wowhead_spell_id": 19788,
+      "skill_up_colors": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Dense Dynamite",
@@ -5810,7 +7371,14 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 23070
+      "wowhead_spell_id": 23070,
+      "skill_up_colors": [
+        250,
+        250,
+        260,
+        270
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gnomish Army Knife",
@@ -5844,7 +7412,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266924
+      "wowhead_spell_id": 1266924,
+      "skill_up_colors": [
+        250,
+        250,
+        252,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264221,
+        "display_name": "Schematic: Gnomish Army Knife",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Mechanical Dragonling",
@@ -5896,7 +7475,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 12624
+      "wowhead_spell_id": 12624,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 10609,
+        "display_name": "Schematic: Mithril Mechanical Dragonling",
+        "source_detail": "Drops from: Dark Iron Sentry; Vendor: Ruppo Zipcoil"
+      }
     },
     {
       "name": "Pop-Up Shrub",
@@ -5930,7 +7520,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1228088
+      "wowhead_spell_id": 1228088,
+      "skill_up_colors": [
+        250,
+        255,
+        257,
+        260
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 239222,
+        "display_name": "Schematic: Pop-Up Shrub",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Disposable Parachute",
@@ -5958,7 +7559,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266923
+      "wowhead_spell_id": 1266923,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264220,
+        "display_name": "Schematic: SAF-T Disposable Parachute",
+        "source_detail": null
+      }
     },
     {
       "name": "Salt Shaker",
@@ -5998,7 +7610,14 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 19567
+      "wowhead_spell_id": 19567,
+      "skill_up_colors": [
+        250,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Snake Burst Firework",
@@ -6032,7 +7651,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23507
+      "wowhead_spell_id": 23507,
+      "skill_up_colors": [
+        250,
+        250,
+        260,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 19027,
+        "display_name": "Schematic: Snake Burst Firework",
+        "source_detail": "Vendor: Zorbin Fandazzle"
+      }
     },
     {
       "name": "Tinkerbox",
@@ -6060,7 +7690,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1226206
+      "wowhead_spell_id": 1226206,
+      "skill_up_colors": [
+        250,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Gyrofreeze Ice Reflector",
@@ -6112,7 +7749,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 23077
+      "wowhead_spell_id": 23077,
+      "skill_up_colors": [
+        260,
+        280,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18652,
+        "display_name": "Schematic: Gyrofreeze Ice Reflector",
+        "source_detail": "Vendor: Xizzer Fizzbolt"
+      }
     },
     {
       "name": "Thorium Grenade",
@@ -6152,7 +7800,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 19790
+      "wowhead_spell_id": 19790,
+      "skill_up_colors": [
+        260,
+        280,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16041,
+        "display_name": "Schematic: Thorium Grenade",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Rifle",
@@ -6198,7 +7857,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19792
+      "wowhead_spell_id": 19792,
+      "skill_up_colors": [
+        260,
+        280,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16043,
+        "display_name": "Schematic: Thorium Rifle",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Widget",
@@ -6226,7 +7896,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19791
+      "wowhead_spell_id": 19791,
+      "skill_up_colors": [
+        260,
+        280,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16042,
+        "display_name": "Schematic: Thorium Widget",
+        "source_detail": null
+      }
     },
     {
       "name": "Tinkerbox: Magnetic Displacement",
@@ -6260,7 +7941,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1226209
+      "wowhead_spell_id": 1226209,
+      "skill_up_colors": [
+        260,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Tinkerbox: Nitro Boosts",
@@ -6294,7 +7982,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1226208
+      "wowhead_spell_id": 1226208,
+      "skill_up_colors": [
+        260,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Tinkerbox: Teleport",
@@ -6328,7 +8023,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1226207
+      "wowhead_spell_id": 1226207,
+      "skill_up_colors": [
+        260,
+        270,
+        280,
+        290
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Truesilver Transformer",
@@ -6362,7 +8064,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23071
+      "wowhead_spell_id": 23071,
+      "skill_up_colors": [
+        260,
+        270,
+        275,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18651,
+        "display_name": "Schematic: Truesilver Transformer",
+        "source_detail": "Vendor: Mazk Snipeshot"
+      }
     },
     {
       "name": "Unsanctified Grenade",
@@ -6402,7 +8115,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1317270
+      "wowhead_spell_id": 1317270,
+      "skill_up_colors": [
+        260,
+        280,
+        290,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 284870,
+        "display_name": "Schematic: Unsanctified Grenade",
+        "source_detail": "Drops from: Crushridge Warmonger"
+      }
     },
     {
       "name": "World Enlarger",
@@ -6448,7 +8172,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23129
+      "wowhead_spell_id": 23129,
+      "skill_up_colors": [
+        260,
+        260,
+        265,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18661,
+        "display_name": "Schematic: World Enlarger",
+        "source_detail": "Drops from: Weapon Technician"
+      }
     },
     {
       "name": "Alarm-O-Bot",
@@ -6494,7 +8229,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23096
+      "wowhead_spell_id": 23096,
+      "skill_up_colors": [
+        265,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goblin Jumper Cables XL",
@@ -6540,7 +8282,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23078
+      "wowhead_spell_id": 23078,
+      "skill_up_colors": [
+        265,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18653,
+        "display_name": "Schematic: Goblin Jumper Cables XL",
+        "source_detail": "Drops from: Plugger Spazzring"
+      }
     },
     {
       "name": "Lifelike Mechanical Toad",
@@ -6580,7 +8333,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19793
+      "wowhead_spell_id": 19793,
+      "skill_up_colors": [
+        265,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16044,
+        "display_name": "Schematic: Lifelike Mechanical Toad",
+        "source_detail": null
+      }
     },
     {
       "name": "Spellpower Goggles Xtreme Plus",
@@ -6620,7 +8384,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 19794
+      "wowhead_spell_id": 19794,
+      "skill_up_colors": [
+        270,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16045,
+        "display_name": "Schematic: Spellpower Goggles Xtreme Plus",
+        "source_detail": "Drops from: Spitelash Siren"
+      }
     },
     {
       "name": "Dark Iron Rifle",
@@ -6672,7 +8447,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 19796
+      "wowhead_spell_id": 19796,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16048,
+        "display_name": "Schematic: Dark Iron Rifle",
+        "source_detail": "Drops from: Doomforge Craftsman"
+      }
     },
     {
       "name": "Firework Cluster Launcher",
@@ -6712,7 +8498,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26443
+      "wowhead_spell_id": 26443,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Large Blue Rocket Cluster",
@@ -6740,7 +8533,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26426
+      "wowhead_spell_id": 26426,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21733,
+        "display_name": "Schematic: Large Blue Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Green Rocket Cluster",
@@ -6768,7 +8572,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26427
+      "wowhead_spell_id": 26427,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21734,
+        "display_name": "Schematic: Large Green Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Purple Rocket Cluster",
@@ -6796,7 +8611,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319163
+      "wowhead_spell_id": 1319163,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286085,
+        "display_name": "Schematic: Large Purple Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Red Rocket Cluster",
@@ -6824,7 +8650,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26428
+      "wowhead_spell_id": 26428,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21735,
+        "display_name": "Schematic: Large Red Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Large White Rocket Cluster",
@@ -6852,7 +8689,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319164
+      "wowhead_spell_id": 1319164,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286086,
+        "display_name": "Schematic: Large White Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Large Yellow Rocket Cluster",
@@ -6880,7 +8728,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319165
+      "wowhead_spell_id": 1319165,
+      "skill_up_colors": [
+        275,
+        275,
+        280,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286087,
+        "display_name": "Schematic: Large Yellow Rocket Cluster",
+        "source_detail": null
+      }
     },
     {
       "name": "Loot-A-Rang",
@@ -6908,7 +8767,18 @@
           "quantity": 5
         }
       ],
-      "wowhead_spell_id": 1266925
+      "wowhead_spell_id": 1266925,
+      "skill_up_colors": [
+        275,
+        275,
+        277,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264222,
+        "display_name": "Schematic: Loot-A-Rang",
+        "source_detail": null
+      }
     },
     {
       "name": "Major Recombobulator",
@@ -6942,7 +8812,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23079
+      "wowhead_spell_id": 23079,
+      "skill_up_colors": [
+        275,
+        285,
+        290,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18655,
+        "display_name": "Schematic: Major Recombobulator",
+        "source_detail": "Drops from: Gordok Tribute"
+      }
     },
     {
       "name": "Masterwork Target Dummy",
@@ -6994,7 +8875,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 19814
+      "wowhead_spell_id": 19814,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16046,
+        "display_name": "Schematic: Masterwork Target Dummy",
+        "source_detail": null
+      }
     },
     {
       "name": "Powerful Seaforium Charge",
@@ -7034,7 +8926,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23080
+      "wowhead_spell_id": 23080,
+      "skill_up_colors": [
+        275,
+        275,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18656,
+        "display_name": "Schematic: Powerful Seaforium Charge",
+        "source_detail": "Drops from: Scarlet Sentinel; Vendor: Xizzer Fizzbolt"
+      }
     },
     {
       "name": "SAF-T Clever Dynamite",
@@ -7068,7 +8971,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266927
+      "wowhead_spell_id": 1266927,
+      "skill_up_colors": [
+        275,
+        275,
+        285,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264224,
+        "display_name": "Schematic: SAF-T Clever Dynamite",
+        "source_detail": "Drops from: Firegut Ogre"
+      }
     },
     {
       "name": "SAF-T Tube",
@@ -7096,7 +9010,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266926
+      "wowhead_spell_id": 1266926,
+      "skill_up_colors": [
+        275,
+        275,
+        277,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264223,
+        "display_name": "Schematic: SAF-T Tube",
+        "source_detail": "Drops from: Thaurissan Firewalker"
+      }
     },
     {
       "name": "Steam Tonk Controller",
@@ -7130,7 +9055,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 28327
+      "wowhead_spell_id": 28327,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 22729,
+        "display_name": "Schematic: Steam Tonk Controller",
+        "source_detail": "Quest: 40 Tickets - Schematic: Steam Tonk Controller; Vendor: Gelvas Grimegate"
+      }
     },
     {
       "name": "Thorium Tube",
@@ -7152,7 +9088,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 19795
+      "wowhead_spell_id": 19795,
+      "skill_up_colors": [
+        275,
+        295,
+        305,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16047,
+        "display_name": "Schematic: Thorium Tube",
+        "source_detail": null
+      }
     },
     {
       "name": "Dark Iron Bomb",
@@ -7192,7 +9139,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 19799
+      "wowhead_spell_id": 19799,
+      "skill_up_colors": [
+        285,
+        305,
+        315,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16049,
+        "display_name": "Schematic: Dark Iron Bomb",
+        "source_detail": "Drops from: Weapon Technician"
+      }
     },
     {
       "name": "Delicate Arcanite Converter",
@@ -7220,7 +9178,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19815
+      "wowhead_spell_id": 19815,
+      "skill_up_colors": [
+        285,
+        305,
+        315,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16050,
+        "display_name": "Schematic: Delicate Arcanite Converter",
+        "source_detail": "Vendor: Xizzer Fizzbolt"
+      }
     },
     {
       "name": "Dimensional Ripper - Everlook",
@@ -7266,7 +9235,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23486
+      "wowhead_spell_id": 23486,
+      "skill_up_colors": [
+        0,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "EZ-Thro Shell",
@@ -7294,7 +9270,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266928
+      "wowhead_spell_id": 1266928,
+      "skill_up_colors": [
+        285,
+        285,
+        287,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264225,
+        "display_name": "Schematic: EZ-Thro Shell",
+        "source_detail": "Drops from: Deadwind Warlock"
+      }
     },
     {
       "name": "EZ-Thro Thorium Grenade",
@@ -7340,7 +9327,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266929
+      "wowhead_spell_id": 1266929,
+      "skill_up_colors": [
+        285,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264226,
+        "display_name": "Schematic: EZ-Thro Thorium Grenade",
+        "source_detail": "Drops from: Scourge Guard"
+      }
     },
     {
       "name": "Satchel of Dark Iron Bombs",
@@ -7374,7 +9372,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1317961
+      "wowhead_spell_id": 1317961,
+      "skill_up_colors": [
+        285,
+        290,
+        292,
+        295
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 285288,
+        "display_name": "Schematic: Satchel of Dark Iron Bombs",
+        "source_detail": null
+      }
     },
     {
       "name": "Thorium Shells",
@@ -7402,7 +9411,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19800
+      "wowhead_spell_id": 19800,
+      "skill_up_colors": [
+        285,
+        305,
+        315,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16051,
+        "display_name": "Schematic: Thorium Shells",
+        "source_detail": null
+      }
     },
     {
       "name": "Ultrasafe Transporter - Gadgetzan",
@@ -7454,7 +9474,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 23489
+      "wowhead_spell_id": 23489,
+      "skill_up_colors": [
+        0,
+        285,
+        295,
+        305
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hyper-Radiant Flame Reflector",
@@ -7500,7 +9527,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23081
+      "wowhead_spell_id": 23081,
+      "skill_up_colors": [
+        290,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18657,
+        "display_name": "Schematic: Hyper-Radiant Flame Reflector",
+        "source_detail": "Drops from: Solakar Flamewreath"
+      }
     },
     {
       "name": "Master Engineer's Goggles",
@@ -7534,7 +9572,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 19825
+      "wowhead_spell_id": 19825,
+      "skill_up_colors": [
+        290,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16053,
+        "display_name": "Schematic: Master Engineer's Goggles",
+        "source_detail": "Drops from: Doomforge Arcanasmith"
+      }
     },
     {
       "name": "Voice Amplification Modulator",
@@ -7574,7 +9623,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19819
+      "wowhead_spell_id": 19819,
+      "skill_up_colors": [
+        290,
+        310,
+        320,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16052,
+        "display_name": "Schematic: Voice Amplification Modulator",
+        "source_detail": "Drops from: Crimson Inquisitor"
+      }
     },
     {
       "name": "Anarchist's Workbench",
@@ -7602,7 +9662,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1263083
+      "wowhead_spell_id": 1263083,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273117,
+        "display_name": "Blueprint: Anarchist's Workbench",
+        "source_detail": "Drops from: Ezra Grimm"
+      }
     },
     {
       "name": "Arcane Bomb",
@@ -7636,7 +9707,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 19831
+      "wowhead_spell_id": 19831,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16055,
+        "display_name": "Schematic: Arcane Bomb",
+        "source_detail": null
+      }
     },
     {
       "name": "Arcanite Dragonling",
@@ -7688,7 +9770,18 @@
           "quantity": 6
         }
       ],
-      "wowhead_spell_id": 19830
+      "wowhead_spell_id": 19830,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16054,
+        "display_name": "Schematic: Arcanite Dragonling",
+        "source_detail": "Drops from: Cobalt Mageweaver"
+      }
     },
     {
       "name": "Biznicks 247x128 Accurascope",
@@ -7734,7 +9827,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 22793
+      "wowhead_spell_id": 22793,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18290,
+        "display_name": "Schematic: Biznicks 247x128 Accurascope",
+        "source_detail": null
+      }
     },
     {
       "name": "Bloodvine Goggles",
@@ -7780,7 +9884,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 24356
+      "wowhead_spell_id": 24356,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20000,
+        "display_name": "Schematic: Bloodvine Goggles",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Bloodvine Lens",
@@ -7826,7 +9941,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 24357
+      "wowhead_spell_id": 24357,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20001,
+        "display_name": "Schematic: Bloodvine Lens",
+        "source_detail": "Vendor: Rin'wosho the Trader"
+      }
     },
     {
       "name": "Core Marksman Rifle",
@@ -7872,7 +9998,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 22795
+      "wowhead_spell_id": 22795,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18292,
+        "display_name": "Schematic: Core Marksman Rifle",
+        "source_detail": null
+      }
     },
     {
       "name": "Dimensional Transporter - Mt. Hyjal",
@@ -7918,7 +10055,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266936
+      "wowhead_spell_id": 1266936,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "EZ and SAF Field Transporter: Mt. Hyjal",
@@ -7952,7 +10096,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266934
+      "wowhead_spell_id": 1266934,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264231,
+        "display_name": "Schematic: EZ and SAF Field Transporter: Mt. Hyjal",
+        "source_detail": "Drops from: Blackmaw Headhunter"
+      }
     },
     {
       "name": "EZ-Thro Dark Bomb",
@@ -7998,7 +10153,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266930
+      "wowhead_spell_id": 1266930,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264227,
+        "display_name": "Schematic: EZ-Thro Dark Bomb",
+        "source_detail": "Drops from: Abomination"
+      }
     },
     {
       "name": "EZ-Thro Field Transporter: Gadgetzan",
@@ -8026,7 +10192,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266932
+      "wowhead_spell_id": 1266932,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264229,
+        "display_name": "Schematic: EZ-Thro Field Transporter: Gadgetzan",
+        "source_detail": "Drops from: Spectral Tutor"
+      }
     },
     {
       "name": "EZ-Thro Magnetic Displacer",
@@ -8054,7 +10231,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266942
+      "wowhead_spell_id": 1266942,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264239,
+        "display_name": "Schematic: EZ-Thro Magnetic Displacer",
+        "source_detail": null
+      }
     },
     {
       "name": "EZ-Thro Mana Bomb",
@@ -8094,7 +10282,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266931
+      "wowhead_spell_id": 1266931,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264228,
+        "display_name": "Schematic: EZ-Thro Mana Bomb",
+        "source_detail": "Drops from: Jaedenar Legionnaire"
+      }
     },
     {
       "name": "Field Repair Bot 74A",
@@ -8140,7 +10339,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 22704
+      "wowhead_spell_id": 22704,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18235,
+        "display_name": "Schematic: Field Repair Bot 74A",
+        "source_detail": null
+      }
     },
     {
       "name": "Flawless Arcanite Rifle",
@@ -8192,7 +10402,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 19833
+      "wowhead_spell_id": 19833,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16056,
+        "display_name": "Schematic: Flawless Arcanite Rifle",
+        "source_detail": "Drops from: Mossflayer Shadowhunter"
+      }
     },
     {
       "name": "Force Reactive Disk",
@@ -8238,7 +10459,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 22797
+      "wowhead_spell_id": 22797,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18291,
+        "display_name": "Schematic: Force Reactive Disk",
+        "source_detail": null
+      }
     },
     {
       "name": "Gnomish Poultryizer",
@@ -8278,7 +10510,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266937
+      "wowhead_spell_id": 1266937,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264234,
+        "display_name": "Schematic: Gnomish Poultryizer",
+        "source_detail": null
+      }
     },
     {
       "name": "Gnomish Weather Machine",
@@ -8324,7 +10567,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266939
+      "wowhead_spell_id": 1266939,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264236,
+        "display_name": "Schematic: Gnomish Weather Machine",
+        "source_detail": null
+      }
     },
     {
       "name": "Hyper Deluxe Sniper Rifle Mk XVII",
@@ -8364,7 +10618,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1306547
+      "wowhead_spell_id": 1306547,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279322,
+        "display_name": "Schematic: Hyper Deluxe Sniper Rifle Mk XVII",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Emergency Ripper: Everlook",
@@ -8392,7 +10657,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266933
+      "wowhead_spell_id": 1266933,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264230,
+        "display_name": "Schematic: SAF-T Emergency Ripper: Everlook",
+        "source_detail": "Drops from: Crimson Inquisitor"
+      }
     },
     {
       "name": "SAF-T Nitro Boosts",
@@ -8420,7 +10696,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266941
+      "wowhead_spell_id": 1266941,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264238,
+        "display_name": "Schematic: SAF-T Nitro Boosts",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Teleport",
@@ -8448,7 +10735,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1266943
+      "wowhead_spell_id": 1266943,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264240,
+        "display_name": "Schematic: SAF-T Teleport",
+        "source_detail": null
+      }
     },
     {
       "name": "SAF-T Ultra Precision Scope",
@@ -8476,7 +10774,18 @@
           "quantity": 12
         }
       ],
-      "wowhead_spell_id": 1306546
+      "wowhead_spell_id": 1306546,
+      "skill_up_colors": [
+        300,
+        310,
+        317,
+        325
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 279321,
+        "display_name": "Schematic: SAF-T Ultra Precision Scope",
+        "source_detail": null
+      }
     },
     {
       "name": "Stealthman 52",
@@ -8522,7 +10831,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1266940
+      "wowhead_spell_id": 1266940,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264237,
+        "display_name": "Schematic: Stealthman 52",
+        "source_detail": null
+      }
     },
     {
       "name": "Swiftfeather Arrow",
@@ -8556,7 +10876,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1293849
+      "wowhead_spell_id": 1293849,
+      "skill_up_colors": [
+        300,
+        310,
+        315,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274389,
+        "display_name": "Schematic: Swiftfeather Arrow",
+        "source_detail": null
+      }
     },
     {
       "name": "Swiftstrike Shot",
@@ -8590,7 +10921,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1293850
+      "wowhead_spell_id": 1293850,
+      "skill_up_colors": [
+        300,
+        310,
+        315,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274390,
+        "display_name": "Schematic: Swiftstrike Shot",
+        "source_detail": null
+      }
     },
     {
       "name": "Ultra-Flash Shadow Reflector",
@@ -8642,7 +10984,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 23082
+      "wowhead_spell_id": 23082,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18658,
+        "display_name": "Schematic: Ultra-Flash Shadow Reflector",
+        "source_detail": "Drops from: Crimson Inquisitor"
+      }
     },
     {
       "name": "Ultralight Goblin Glider",
@@ -8682,7 +11035,18 @@
           "quantity": 8
         }
       ],
-      "wowhead_spell_id": 1266938
+      "wowhead_spell_id": 1266938,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264235,
+        "display_name": "Schematic: Ultralight Goblin Glider",
+        "source_detail": null
+      }
     },
     {
       "name": "Ultrasafe Rechargeable Battery",
@@ -8734,7 +11098,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1266935
+      "wowhead_spell_id": 1266935,
+      "skill_up_colors": [
+        300,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 264232,
+        "display_name": "Schematic: Ultrasafe Rechargeable Battery",
+        "source_detail": null
+      }
     },
     {
       "name": "Tranquil Mechanical Yeti",
@@ -8780,7 +11155,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 26011
+      "wowhead_spell_id": 26011,
+      "skill_up_colors": [
+        0,
+        320,
+        330,
+        340
+      ],
+      "recipe_cost_item": null
     }
   ]
 }

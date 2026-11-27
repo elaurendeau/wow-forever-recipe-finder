@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profession Leveling — Reference Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d12;
+    --surface: #16161e;
+    --surface-2: #1d1d27;
+    --fg: #ece9e2;
+    --muted: #8b8a97;
+    --border: #2b2b38;
+    --accent: #cf9a35;
+    --accent-fg: #1a1206;
+    --good: #4ade8a;
+    --bad: #f0786a;
+    --mock-bg: #2a2410;
+    --mock-fg: #e0b957;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+  a { color: var(--accent); }
+  button { font-family: inherit; }
+
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+  .topbar-left { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 19px; }
+  .mock-pill {
+    background: var(--mock-bg); color: var(--mock-fg); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+  }
+  .nav-link {
+    font-size: 12.5px; font-weight: 600; text-decoration: none; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px 11px;
+  }
+  .freshness { color: var(--muted); font-size: 12.5px; font-family: var(--font-mono); }
+  .upload-pill {
+    display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 12px; background: var(--surface-2);
+  }
+  .upload-pill button { all: unset; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--accent); }
+  .realm-select {
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; background: var(--surface-2);
+    color: var(--fg); font-family: var(--font-mono); font-size: 12.5px; cursor: pointer;
+  }
+
+  .page { padding: 20px 24px 50px; display: flex; flex-direction: column; gap: 14px; }
+
+  .intro {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 95ch;
+  }
+
+  .tabs { display: flex; gap: 22px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .tab {
+    border: none; cursor: pointer; background: transparent; padding: 0 0 11px; font-family: var(--font-body);
+    font-size: 13.5px; font-weight: 600; display: flex; align-items: center; color: var(--fg);
+    border-bottom: 2px solid transparent;
+  }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .side-toggle { display: flex; align-items: center; gap: 6px; }
+  .side-toggle-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-right: 2px; }
+  .side-chip { border: 1px solid var(--border); background: var(--surface); color: var(--fg); font-size: 12.5px; font-weight: 600; padding: 5px 11px; border-radius: 999px; cursor: pointer; }
+  .side-chip.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 760px; }
+  th {
+    text-align: left; padding: 9px 14px 2px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); border-bottom: 1px solid var(--border);
+  }
+  th.num { text-align: right; }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  td { padding: 10px 14px; vertical-align: middle; }
+  td.num { text-align: right; font-family: var(--font-mono); }
+  .item-name { font-weight: 600; color: var(--fg); text-decoration: none; display: inline-block; }
+  .item-name:hover { color: var(--accent); text-decoration: underline; }
+  .item-tier { color: var(--muted); font-size: 11px; }
+  .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .profit-pos { color: var(--good); font-weight: 600; }
+  .muted-cell { color: var(--muted); }
+
+  .gap-row td {
+    color: var(--muted); font-style: italic;
+    background: repeating-linear-gradient(135deg, transparent, transparent 10px, var(--surface-2) 10px, var(--surface-2) 20px);
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 16px; }
+    .topbar { padding: 12px 16px; flex-wrap: wrap; }
+    .freshness { order: 3; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <h1>Profession Leveling</h1>
+    <a class="nav-link" href="#">← Recipe Finder</a>
+    <a class="nav-link" href="#">Craftsman's Writs →</a>
+    <a class="nav-link" href="#">Merchant's Favor →</a>
+    <span class="mock-pill">Mockup</span>
+  </div>
+  <div class="freshness">Snapshot from 2026-11-27 23:36 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
+  <select class="realm-select" title="Recent Value prices come from this realm's own AH scans — pick the right one if you've scanned more than one.">
+    <option selected>Forever-US</option>
+  </select>
+  <div class="upload-pill">
+    <button type="button">Upload</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="intro">
+    The recipe to craft at each skill level, picked by one rule: <strong>never lose money</strong>, and among the
+    recipes that don't, craft whichever <strong>sells fastest</strong> — not whichever is most profitable.
+    Skill-up thresholds are Wowhead's own real per-recipe data, not Classic's generic formula; a recipe stops
+    counting the moment its skill reaches <code>grey</code>.
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="side-toggle" id="basisToggle">
+    <span class="side-toggle-label">Price &amp; cost basis</span>
+    <button type="button" class="side-chip on">DB Recent</button>
+    <button type="button" class="side-chip">Region Sale Avg</button>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="num">Skill</th>
+          <th>Recipe</th>
+          <th class="num">Sold/day</th>
+          <th class="num">Profit/craft</th>
+          <th class="num">Recipe cost</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  const PATHS = {
+    tailoring: [
+      { from: 1, to: 59, name: "White Linen Shirt", tier: "Apprentice", source: "Trainer", spd: "5.200", profit: "(1s 46c profit)", cost: "—" },
+      { from: 60, to: 64, name: "Linen Reagent Bag", tier: "Apprentice", source: "Vendor", spd: "1.800", profit: "(50s 30c profit)", cost: "88s 0c" },
+      { from: 65, to: 94, name: "Red Linen Vest", tier: "Apprentice", source: "Drop", spd: "0.600", profit: "(13s 35c profit)", cost: "2g 40s 0c" },
+      { from: 95, to: 350, gap: true },
+    ],
+    enchanting: [
+      { from: 1, to: 70, name: "Enchant Bracer — Minor Health", tier: "Apprentice", source: "Trainer", spd: "48.100", profit: "(0g 0s 9c profit)", cost: "—" },
+      { from: 71, to: 360, gap: true },
+    ],
+  };
+  const PROFESSIONS = [
+    { key: "tailoring", label: "Tailoring" },
+    { key: "enchanting", label: "Enchanting" },
+    { key: "blacksmithing", label: "Blacksmithing" },
+    { key: "leatherworking", label: "Leatherworking" },
+    { key: "alchemy", label: "Alchemy" },
+    { key: "engineering", label: "Engineering" },
+    { key: "cooking", label: "Cooking" },
+    { key: "firstaid", label: "First Aid" },
+  ];
+
+  let active = "tailoring";
+
+  const tabsEl = document.getElementById("tabs");
+  function renderTabs() {
+    tabsEl.innerHTML = "";
+    PROFESSIONS.forEach((p) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "tab" + (p.key === active ? " active" : "");
+      btn.textContent = p.label;
+      btn.addEventListener("click", () => { active = p.key; render(); });
+      tabsEl.appendChild(btn);
+    });
+  }
+
+  function render() {
+    renderTabs();
+    const rows = PATHS[active] || [];
+    const tbody = document.getElementById("tableBody");
+    tbody.innerHTML = rows.map((row) => row.gap ? `
+      <tr class="gap-row">
+        <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
+        <td colspan="4">No recipe both still gives a skill-up here and is known not to lose money.</td>
+      </tr>
+    ` : `
+      <tr>
+        <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
+        <td>
+          <a class="item-name" href="#" title="Opens the item's Wowhead page — not wired up in this mockup">${row.name}</a>
+          <div class="item-tier">${row.tier}</div>
+          <span class="source-pill">${row.source}</span>
+        </td>
+        <td class="num">${row.spd}</td>
+        <td class="num profit-pos">${row.profit}</td>
+        <td class="num muted-cell">${row.cost}</td>
+      </tr>
+    `).join("");
+  }
+
+  document.getElementById("basisToggle").addEventListener("click", (e) => {
+    const chip = e.target.closest(".side-chip");
+    if (!chip) return;
+    document.querySelectorAll("#basisToggle .side-chip").forEach((c) => c.classList.remove("on"));
+    chip.classList.add("on");
+  });
+
+  render();
+</script>
+</body>
+</html>

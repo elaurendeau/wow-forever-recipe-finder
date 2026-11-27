@@ -867,3 +867,18 @@ a {
   font-size: 12.5px;
   text-align: center;
 }
+
+/* ---------------------------------------------------------------------
+   Profession Leveling path (docs/PRD.md § 7.13).
+   --------------------------------------------------------------------- */
+.rf-leveling-gap td {
+  color: var(--muted);
+  font-style: italic;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 10px,
+    var(--surface) 10px,
+    var(--surface) 20px
+  );
+}

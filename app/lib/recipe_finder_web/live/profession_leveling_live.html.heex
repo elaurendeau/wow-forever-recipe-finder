@@ -1,0 +1,168 @@
+<div class="rf-topbar" id="profession-leveling-page" phx-hook="TsmSnapshot">
+  <div class="rf-topbar-left">
+    <h1 class="rf-title">Profession Leveling</h1>
+    <a class="rf-nav-link" href={~p"/"}>← Recipe Finder</a>
+    <a class="rf-nav-link" href={~p"/writs"}>Craftsman's Writs →</a>
+    <a class="rf-nav-link" href={~p"/merchant-favor"}>Merchant's Favor →</a>
+  </div>
+  <div class="rf-freshness">
+    <%= if @captured_at do %>
+      Snapshot from {Calendar.strftime(@captured_at, "%Y-%m-%d %H:%M UTC")} — saved in this browser
+      <button type="button" class="rf-forget-link" phx-click="clear_snapshot">forget</button>
+    <% else %>
+      No data uploaded yet
+    <% end %>
+  </div>
+  <%= if @price_snapshot && length(@price_snapshot.available_realms) > 0 do %>
+    <form id="realm-form" phx-change="select_realm">
+      <select
+        name="realm"
+        class="rf-realm-select"
+        title="Recent Value prices come from this realm's own AH scans — TSM keeps history for every realm you've scanned, not just the one you play now, so pick the right one."
+      >
+        <option
+          :for={r <- @price_snapshot.available_realms}
+          value={r}
+          selected={r == @price_snapshot.realm}
+        >
+          {r}
+        </option>
+      </select>
+    </form>
+  <% end %>
+  <form id="upload-form" phx-change="validate_upload" phx-submit="process_upload">
+    <div class="rf-upload-pill">
+      <.live_file_input upload={@uploads.tsm_export} />
+      <button type="submit">Upload</button>
+    </div>
+  </form>
+</div>
+
+<div class="rf-page">
+  <p class="rf-writs-intro">
+    The recipe to craft at each skill level, picked by one rule: <strong>never lose money</strong>,
+    and among the recipes that don't, craft whichever <strong>sells fastest</strong>
+    — not whichever
+    is most profitable. Skill-up thresholds are Wowhead's own real per-recipe data, not Classic's
+    generic formula; a recipe stops counting the moment its skill reaches <code>grey</code>.
+  </p>
+
+  <%= unless @captured_at do %>
+    <div class="rf-path-hint">
+      Default TSM export folder:
+      <code>C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns\TradeSkillMaster_AppHelper</code>
+      <button
+        type="button"
+        id="copy-tsm-path"
+        class="rf-copy-btn"
+        phx-hook="CopyButton"
+        data-copy="C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns\TradeSkillMaster_AppHelper"
+      >
+        Copy
+      </button>
+    </div>
+  <% end %>
+
+  <%= if @upload_error do %>
+    <div class="rf-error">{@upload_error}</div>
+  <% end %>
+
+  <div class="rf-tabs">
+    <%= for {slug, label} <- professions() do %>
+      <button
+        type="button"
+        class={["rf-tab", @active_profession == slug && "active"]}
+        phx-click="select_tab"
+        phx-value-slug={slug}
+      >
+        {label}
+      </button>
+    <% end %>
+  </div>
+
+  <div class="rf-side-toggle" id="price-basis-toggle">
+    <span class="rf-side-toggle-label">Price &amp; cost basis</span>
+    <button
+      type="button"
+      class={["rf-side-chip", @price_basis == :recent && "on"]}
+      phx-click="set_price_basis"
+      phx-value-basis="recent"
+      title="TSM's realm-level Recent Value — only tracked for non-commodity items, so most raw-material reagents and recipe-item purchases will show as unknown under this basis."
+    >
+      DB Recent
+    </button>
+    <button
+      type="button"
+      class={["rf-side-chip", @price_basis == :region_avg && "on"]}
+      phx-click="set_price_basis"
+      phx-value-basis="region_avg"
+      title="TSM's region-wide Region Sale Avg — tracked for every item, including commodities."
+    >
+      Region Sale Avg
+    </button>
+  </div>
+
+  <%= if @captured_at do %>
+    <div class="rf-table-wrap">
+      <table class="rf-table">
+        <thead>
+          <tr>
+            <th class="num">Skill</th>
+            <th>Recipe</th>
+            <th class="num">Sold/day</th>
+            <th class="num">Profit/craft</th>
+            <th class="num">Recipe cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= for segment <- @path do %>
+            <%= if segment.result do %>
+              <tr>
+                <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
+                <td>
+                  <a
+                    class="rf-item-name"
+                    href={wowhead_url(segment.result.pattern.crafted_item.wowhead_id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {segment.result.pattern.name}
+                  </a>
+                  <div class="rf-item-tier">{to_string(segment.result.pattern.tier)}</div>
+                  <span class="rf-source-pill">{to_string(segment.result.pattern.source)}</span>
+                </td>
+                <td class="num">{format_number(segment.result.profit_result.sold_per_day)}</td>
+                <td class={[
+                  "num",
+                  segment.result.profit_result.net_profit_per_unit_copper &&
+                    segment.result.profit_result.net_profit_per_unit_copper > 0 &&
+                    "rf-profit-pos",
+                  segment.result.profit_result.net_profit_per_unit_copper &&
+                    segment.result.profit_result.net_profit_per_unit_copper <= 0 &&
+                    "rf-profit-neg"
+                ]}>
+                  {format_profit(segment.result.profit_result.net_profit_per_unit_copper)}
+                </td>
+                <td class="num rf-muted">{format_copper(segment.result.recipe_cost_copper)}</td>
+              </tr>
+            <% else %>
+              <tr class="rf-leveling-gap">
+                <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
+                <td colspan="4">
+                  No recipe both still gives a skill-up here and is known not to lose money.
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  <% else %>
+    <div class="rf-empty">
+      <h3>Upload a TSM export to see the leveling path</h3>
+      <p>
+        The skill ranges and recipe thresholds are real; the prices come from your own snapshot.
+      </p>
+    </div>
+  <% end %>
+</div>

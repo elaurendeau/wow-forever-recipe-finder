@@ -11,7 +11,13 @@ defmodule WowForeverRecipeFinder.ItemPrice do
   """
 
   @enforce_keys [:wowhead_id, :price_copper, :sold_per_day, :sale_confidence_pct]
-  defstruct [:wowhead_id, :price_copper, :sold_per_day, :sale_confidence_pct, :recent_value_copper]
+  defstruct [
+    :wowhead_id,
+    :price_copper,
+    :sold_per_day,
+    :sale_confidence_pct,
+    :recent_value_copper
+  ]
 
   @type t :: %__MODULE__{
           wowhead_id: pos_integer(),

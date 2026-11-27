@@ -35,6 +35,16 @@ pattern
   resolution_status enum: resolved | no_wiki_page | reagent_cost_incomplete — per ARCHITECTURE.md's
                     "flagged on that pattern, not a scrape failure" rule; a pattern with no wiki page
                     yet is still a row here, just unresolved, never silently dropped
+  skill_up_colors   {:array, :integer}, nullable — [orange, yellow, green, grey] skill thresholds,
+                    added 2026-11-27 for PRD.md § 7.13 (Profession Leveling). Real Wowhead data
+                    (g_listviews.spells.data[].colors), not a Classic-formula assumption — see
+                    DATA_SOURCES.md for provenance and the "a leading 0 means that band is skipped,
+                    never skill-0" finding. null for the handful of recipes Wowhead has no color
+                    data for; `grey` (the 4th element) is never 0 in any recipe checked.
+  recipe_cost_item  :map, nullable — {wowhead_id, display_name, source_detail} for the recipe's own
+                    purchasable item ("Pattern: X" etc.), added 2026-11-27 alongside skill_up_colors.
+                    null for trainer-taught recipes (no AH cost applies — see Pattern's own `source`)
+                    and for non-trainer recipes the capture couldn't match to a specific item.
 
 pattern_reagent
   id          PK

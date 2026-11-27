@@ -6,7 +6,7 @@ defmodule WowForeverRecipeFinder.Pattern do
   `WowForeverRecipeFinder.Gateways.Schema.Pattern`.
   """
 
-  alias WowForeverRecipeFinder.{Item, Reagent}
+  alias WowForeverRecipeFinder.{Item, Reagent, RecipeCostItem, SkillUpBands}
 
   @enforce_keys [
     :profession_slug,
@@ -28,7 +28,9 @@ defmodule WowForeverRecipeFinder.Pattern do
     :source,
     :wiki_slug,
     :resolution_status,
-    :reagents
+    :reagents,
+    :skill_up_bands,
+    :recipe_cost_item
   ]
 
   @type tier :: :apprentice | :journeyman | :expert | :artisan
@@ -45,6 +47,14 @@ defmodule WowForeverRecipeFinder.Pattern do
           source: source(),
           wiki_slug: String.t(),
           resolution_status: resolution_status(),
-          reagents: [Reagent.t()]
+          reagents: [Reagent.t()],
+          # `nil` for the handful of recipes Wowhead has no color data
+          # for at all — see docs/PRD.md § 7.13 and SkillUpBands's own
+          # doc, never treated as "always gives a skill-up."
+          skill_up_bands: SkillUpBands.t() | nil,
+          # `nil` for trainer recipes (no AH cost applies) and for
+          # non-trainer recipes this app's data capture couldn't match
+          # to a specific item — see RecipeCostItem's own doc.
+          recipe_cost_item: RecipeCostItem.t() | nil
         }
 end

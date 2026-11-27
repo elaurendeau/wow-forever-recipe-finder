@@ -12,7 +12,7 @@ defmodule WowForeverRecipeFinder.Gateways.EctoCatalogRepositoryGateway do
   import Ecto.Query
 
   alias WowForeverRecipeFinder.Repo
-  alias WowForeverRecipeFinder.{Item, Pattern, Reagent}
+  alias WowForeverRecipeFinder.{Item, Pattern, Reagent, RecipeCostItem, SkillUpBands}
   alias WowForeverRecipeFinder.Gateways.Schema
 
   @impl true
@@ -47,7 +47,32 @@ defmodule WowForeverRecipeFinder.Gateways.EctoCatalogRepositoryGateway do
       source: row.source && parse_source!(row.source),
       wiki_slug: row.wiki_slug,
       resolution_status: parse_resolution_status!(row.resolution_status),
-      reagents: Enum.map(row.pattern_reagents, &to_reagent/1)
+      reagents: Enum.map(row.pattern_reagents, &to_reagent/1),
+      skill_up_bands: row.skill_up_colors && to_skill_up_bands(row.skill_up_colors),
+      recipe_cost_item: row.recipe_cost_item && to_recipe_cost_item(row.recipe_cost_item)
+    }
+  end
+
+  # A leading 0 means Wowhead skips that band for this recipe — never a
+  # literal skill-0 threshold. See SkillUpBands's own doc for how this
+  # was verified against the real capture.
+  defp to_skill_up_bands([orange, yellow, green, grey]) do
+    %SkillUpBands{
+      orange: zero_to_nil(orange),
+      yellow: zero_to_nil(yellow),
+      green: zero_to_nil(green),
+      grey: grey
+    }
+  end
+
+  defp zero_to_nil(0), do: nil
+  defp zero_to_nil(value), do: value
+
+  defp to_recipe_cost_item(%{"wowhead_id" => wowhead_id, "display_name" => display_name} = map) do
+    %RecipeCostItem{
+      wowhead_id: wowhead_id,
+      display_name: display_name,
+      source_detail: Map.get(map, "source_detail")
     }
   end
 
@@ -78,7 +103,12 @@ defmodule WowForeverRecipeFinder.Gateways.EctoCatalogRepositoryGateway do
     do: raise(ArgumentError, "unknown pattern resolution_status: #{inspect(other)}")
 
   defp to_item(%Schema.Item{} = row) do
-    %Item{id: row.id, wowhead_id: row.wowhead_id, display_name: row.display_name, wiki_slug: row.wiki_slug}
+    %Item{
+      id: row.id,
+      wowhead_id: row.wowhead_id,
+      display_name: row.display_name,
+      wiki_slug: row.wiki_slug
+    }
   end
 
   defp to_reagent(%Schema.PatternReagent{} = row) do

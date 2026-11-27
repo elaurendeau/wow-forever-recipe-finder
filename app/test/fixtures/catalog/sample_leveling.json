@@ -1,0 +1,56 @@
+{
+  "profession": { "slug": "tailoring", "display_name": "Tailoring" },
+  "patterns": [
+    {
+      "name": "Early Robe",
+      "tier": "apprentice",
+      "skill": 1,
+      "source": "trainer",
+      "wiki_slug": "Early_Robe",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9301,
+        "display_name": "Early Robe",
+        "wiki_slug": "Early_Robe"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 9302,
+          "display_name": "Test Cloth",
+          "wiki_slug": "Test_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 9401,
+      "skill_up_colors": [1, 5, 8, 10],
+      "recipe_cost_item": null
+    },
+    {
+      "name": "Later Robe",
+      "tier": "journeyman",
+      "skill": 15,
+      "source": "vendor",
+      "wiki_slug": "Later_Robe",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9303,
+        "display_name": "Later Robe",
+        "wiki_slug": "Later_Robe"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 9302,
+          "display_name": "Test Cloth",
+          "wiki_slug": "Test_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 9402,
+      "skill_up_colors": [15, 18, 20, 25],
+      "recipe_cost_item": {
+        "wowhead_id": 9304,
+        "display_name": "Pattern: Later Robe"
+      }
+    }
+  ]
+}

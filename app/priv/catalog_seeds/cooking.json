@@ -24,7 +24,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7751
+      "wowhead_spell_id": 7751,
+      "skill_up_colors": [
+        1,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6325,
+        "display_name": "Recipe: Brilliant Smallfish",
+        "source_detail": null
+      }
     },
     {
       "name": "Crispy Bat Wing",
@@ -52,7 +63,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15935
+      "wowhead_spell_id": 15935,
+      "skill_up_colors": [
+        1,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12226,
+        "display_name": "Recipe: Crispy Bat Wing",
+        "source_detail": "Vendor: Abigail Shiel"
+      }
     },
     {
       "name": "Gingerbread Cookie",
@@ -80,7 +102,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 21143
+      "wowhead_spell_id": 21143,
+      "skill_up_colors": [
+        1,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17200,
+        "display_name": "Recipe: Gingerbread Cookie",
+        "source_detail": null
+      }
     },
     {
       "name": "Herb Baked Egg",
@@ -108,7 +141,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8604
+      "wowhead_spell_id": 8604,
+      "skill_up_colors": [
+        1,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Slitherskin Mackerel",
@@ -130,7 +170,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7752
+      "wowhead_spell_id": 7752,
+      "skill_up_colors": [
+        1,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6326,
+        "display_name": "Recipe: Slitherskin Mackerel",
+        "source_detail": null
+      }
     },
     {
       "name": "Kaldorei Spider Kabob",
@@ -152,7 +203,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6412
+      "wowhead_spell_id": 6412,
+      "skill_up_colors": [
+        10,
+        50,
+        70,
+        90
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5482,
+        "display_name": "Recipe: Kaldorei Spider Kabob",
+        "source_detail": "Quest: Recipe of the Kaldorei"
+      }
     },
     {
       "name": "Spiced Wolf Meat",
@@ -180,7 +242,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2539
+      "wowhead_spell_id": 2539,
+      "skill_up_colors": [
+        10,
+        50,
+        70,
+        90
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Basic Campfire",
@@ -202,7 +271,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1229737
+      "wowhead_spell_id": 1229737,
+      "skill_up_colors": [
+        0,
+        0,
+        0,
+        20
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Scorpid Surprise",
@@ -224,7 +300,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6413
+      "wowhead_spell_id": 6413,
+      "skill_up_colors": [
+        20,
+        60,
+        80,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5483,
+        "display_name": "Recipe: Scorpid Surprise",
+        "source_detail": null
+      }
     },
     {
       "name": "Beer Basted Boar Ribs",
@@ -252,7 +339,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2795
+      "wowhead_spell_id": 2795,
+      "skill_up_colors": [
+        25,
+        60,
+        80,
+        100
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2889,
+        "display_name": "Recipe: Beer Basted Boar Ribs",
+        "source_detail": "Quest: Beer Basted Boar Ribs; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Peace Tea",
@@ -280,7 +378,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249957
+      "wowhead_spell_id": 1249957,
+      "skill_up_colors": [
+        25,
+        30,
+        37,
+        45
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249879,
+        "display_name": "Recipe: Peace Tea",
+        "source_detail": "Drops from: Frostmane Seer"
+      }
     },
     {
       "name": "Skywall Souffle",
@@ -308,7 +417,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1270633
+      "wowhead_spell_id": 1270633,
+      "skill_up_colors": [
+        25,
+        30,
+        37,
+        45
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 263511,
+        "display_name": "Recipe: Skywall Souffle",
+        "source_detail": "Quest: Restocking the Larders"
+      }
     },
     {
       "name": "Tasty Raptor Bites",
@@ -336,7 +456,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250156
+      "wowhead_spell_id": 1250156,
+      "skill_up_colors": [
+        25,
+        35,
+        55,
+        75
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250187,
+        "display_name": "Recipe: Tasty Raptor Bites",
+        "source_detail": null
+      }
     },
     {
       "name": "Venomous Smoothie",
@@ -370,7 +501,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249963
+      "wowhead_spell_id": 1249963,
+      "skill_up_colors": [
+        25,
+        30,
+        37,
+        45
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249885,
+        "display_name": "Recipe: Venomous Smoothie",
+        "source_detail": null
+      }
     },
     {
       "name": "Egg Nog",
@@ -410,7 +552,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 21144
+      "wowhead_spell_id": 21144,
+      "skill_up_colors": [
+        35,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 17201,
+        "display_name": "Recipe: Egg Nog",
+        "source_detail": null
+      }
     },
     {
       "name": "Pincer Bites",
@@ -438,7 +591,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1270635
+      "wowhead_spell_id": 1270635,
+      "skill_up_colors": [
+        35,
+        40,
+        47,
+        55
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 263513,
+        "display_name": "Recipe: Pincer Bites",
+        "source_detail": "Quest: Crab Season"
+      }
     },
     {
       "name": "Roasted Kodo Meat",
@@ -466,7 +630,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6414
+      "wowhead_spell_id": 6414,
+      "skill_up_colors": [
+        35,
+        75,
+        95,
+        115
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5484,
+        "display_name": "Recipe: Roasted Kodo Meat",
+        "source_detail": "Vendor: Wunna Darkmane"
+      }
     },
     {
       "name": "Smoked Bear Meat",
@@ -488,7 +663,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8607
+      "wowhead_spell_id": 8607,
+      "skill_up_colors": [
+        40,
+        80,
+        100,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6892,
+        "display_name": "Recipe: Smoked Bear Meat",
+        "source_detail": null
+      }
     },
     {
       "name": "Charred Wolf Meat",
@@ -510,7 +696,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2538
+      "wowhead_spell_id": 2538,
+      "skill_up_colors": [
+        0,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Roasted Boar Meat",
@@ -532,7 +725,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2540
+      "wowhead_spell_id": 2540,
+      "skill_up_colors": [
+        0,
+        45,
+        65,
+        85
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Boiled Clams",
@@ -560,7 +760,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6499
+      "wowhead_spell_id": 6499,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Coyote Steak",
@@ -582,7 +789,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2541
+      "wowhead_spell_id": 2541,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Fillet of Frenzy",
@@ -610,7 +824,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6415
+      "wowhead_spell_id": 6415,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5485,
+        "display_name": "Recipe: Fillet of Frenzy",
+        "source_detail": "Vendor: Laird"
+      }
     },
     {
       "name": "Goretusk Liver Pie",
@@ -638,7 +863,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2542
+      "wowhead_spell_id": 2542,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2697,
+        "display_name": "Recipe: Goretusk Liver Pie",
+        "source_detail": "Quest: Goretusk Liver Pie; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Loch Frenzy Delight",
@@ -666,7 +902,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7754
+      "wowhead_spell_id": 7754,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6329,
+        "display_name": "Recipe: Loch Frenzy Delight",
+        "source_detail": "Vendor: Khara Deepwater"
+      }
     },
     {
       "name": "Longjaw Mud Snapper",
@@ -688,7 +935,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7753
+      "wowhead_spell_id": 7753,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6328,
+        "display_name": "Recipe: Longjaw Mud Snapper",
+        "source_detail": null
+      }
     },
     {
       "name": "Rainbow Fin Albacore",
@@ -710,7 +968,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7827
+      "wowhead_spell_id": 7827,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6368,
+        "display_name": "Recipe: Rainbow Fin Albacore",
+        "source_detail": null
+      }
     },
     {
       "name": "Strider Stew",
@@ -738,7 +1007,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6416
+      "wowhead_spell_id": 6416,
+      "skill_up_colors": [
+        50,
+        90,
+        110,
+        130
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5486,
+        "display_name": "Recipe: Strider Stew",
+        "source_detail": "Quest: Easy Strider Living; Vendor: Tari'qa"
+      }
     },
     {
       "name": "Blood Sausage",
@@ -772,7 +1052,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3371
+      "wowhead_spell_id": 3371,
+      "skill_up_colors": [
+        60,
+        100,
+        120,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3679,
+        "display_name": "Recipe: Blood Sausage",
+        "source_detail": "Quest: Thelsamar Blood Sausages; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Thistle Tea",
@@ -800,7 +1091,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 9513
+      "wowhead_spell_id": 9513,
+      "skill_up_colors": [
+        60,
+        100,
+        120,
+        140
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 7678,
+        "display_name": "Recipe: Thistle Tea",
+        "source_detail": null
+      }
     },
     {
       "name": "Breakfast Omelette",
@@ -828,7 +1130,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250157
+      "wowhead_spell_id": 1250157,
+      "skill_up_colors": [
+        75,
+        80,
+        87,
+        95
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250188,
+        "display_name": "Recipe: Breakfast Omelette",
+        "source_detail": "Drops from: Dire Condor"
+      }
     },
     {
       "name": "Crab Cake",
@@ -856,7 +1169,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2544
+      "wowhead_spell_id": 2544,
+      "skill_up_colors": [
+        75,
+        115,
+        135,
+        155
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Twice-Spiced Raptor Slice",
@@ -884,7 +1204,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1250154
+      "wowhead_spell_id": 1250154,
+      "skill_up_colors": [
+        75,
+        115,
+        132,
+        150
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250185,
+        "display_name": "Recipe: Twice-Spiced Raptor Slice",
+        "source_detail": "Drops from: Young Stranglethorn Raptor; Quest: Changing Tastes"
+      }
     },
     {
       "name": "Westfall Stew",
@@ -918,7 +1249,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2543
+      "wowhead_spell_id": 2543,
+      "skill_up_colors": [
+        75,
+        115,
+        135,
+        155
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 728,
+        "display_name": "Recipe: Westfall Stew",
+        "source_detail": "Quest: Westfall Stew; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Crocolisk Steak",
@@ -946,7 +1288,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3370
+      "wowhead_spell_id": 3370,
+      "skill_up_colors": [
+        80,
+        120,
+        140,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3678,
+        "display_name": "Recipe: Crocolisk Steak",
+        "source_detail": "Quest: Crocolisk Hunting; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Dry Pork Ribs",
@@ -974,7 +1327,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2546
+      "wowhead_spell_id": 2546,
+      "skill_up_colors": [
+        80,
+        120,
+        140,
+        160
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Smoked Sagefish",
@@ -1002,7 +1362,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25704
+      "wowhead_spell_id": 25704,
+      "skill_up_colors": [
+        80,
+        120,
+        140,
+        160
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21099,
+        "display_name": "Recipe: Smoked Sagefish",
+        "source_detail": null
+      }
     },
     {
       "name": "Cooked Crab Claw",
@@ -1030,7 +1401,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2545
+      "wowhead_spell_id": 2545,
+      "skill_up_colors": [
+        85,
+        125,
+        145,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2698,
+        "display_name": "Recipe: Cooked Crab Claw",
+        "source_detail": "Drops from: Kendor Kabonka"
+      }
     },
     {
       "name": "Savory Deviate Delight",
@@ -1058,7 +1440,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 8238
+      "wowhead_spell_id": 8238,
+      "skill_up_colors": [
+        85,
+        125,
+        145,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6661,
+        "display_name": "Recipe: Savory Deviate Delight",
+        "source_detail": null
+      }
     },
     {
       "name": "Savory Whimsyfin Delight",
@@ -1086,7 +1479,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1252566
+      "wowhead_spell_id": 1252566,
+      "skill_up_colors": [
+        85,
+        125,
+        145,
+        165
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 251526,
+        "display_name": "Recipe: Savory Whimsyfin Delight",
+        "source_detail": null
+      }
     },
     {
       "name": "Clam Chowder",
@@ -1120,7 +1524,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6501
+      "wowhead_spell_id": 6501,
+      "skill_up_colors": [
+        90,
+        130,
+        150,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5528,
+        "display_name": "Recipe: Clam Chowder",
+        "source_detail": null
+      }
     },
     {
       "name": "Dig Rat Stew",
@@ -1142,7 +1557,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6417
+      "wowhead_spell_id": 6417,
+      "skill_up_colors": [
+        90,
+        130,
+        150,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5487,
+        "display_name": "Recipe: Dig Rat Stew",
+        "source_detail": "Quest: Dig Rat Stew"
+      }
     },
     {
       "name": "Journeyman Campfire",
@@ -1164,7 +1590,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1283400
+      "wowhead_spell_id": 1283400,
+      "skill_up_colors": [
+        90,
+        95,
+        95,
+        95
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273087,
+        "display_name": "Blueprint: Journeyman Campfire",
+        "source_detail": "Drops from: Lord Serpentis"
+      }
     },
     {
       "name": "Murloc Fin Soup",
@@ -1192,7 +1629,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3372
+      "wowhead_spell_id": 3372,
+      "skill_up_colors": [
+        90,
+        130,
+        150,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3680,
+        "display_name": "Recipe: Murloc Fin Soup",
+        "source_detail": "Quest: Selling Fish; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Bristle Whisker Catfish",
@@ -1214,7 +1662,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7755
+      "wowhead_spell_id": 7755,
+      "skill_up_colors": [
+        100,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6330,
+        "display_name": "Recipe: Bristle Whisker Catfish",
+        "source_detail": null
+      }
     },
     {
       "name": "Crispy Lizard Tail",
@@ -1242,7 +1701,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6418
+      "wowhead_spell_id": 6418,
+      "skill_up_colors": [
+        100,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5488,
+        "display_name": "Recipe: Crispy Lizard Tail",
+        "source_detail": "Vendor: Tari'qa"
+      }
     },
     {
       "name": "Redridge Goulash",
@@ -1270,7 +1740,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2547
+      "wowhead_spell_id": 2547,
+      "skill_up_colors": [
+        100,
+        135,
+        155,
+        175
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2699,
+        "display_name": "Recipe: Redridge Goulash",
+        "source_detail": "Quest: Redridge Goulash; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Royal Tea",
@@ -1298,7 +1779,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249958
+      "wowhead_spell_id": 1249958,
+      "skill_up_colors": [
+        100,
+        105,
+        115,
+        125
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249880,
+        "display_name": "Recipe: Royal Tea",
+        "source_detail": "Drops from: Windshear Geomancer"
+      }
     },
     {
       "name": "Seasoned Wolf Kabob",
@@ -1326,7 +1818,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2549
+      "wowhead_spell_id": 2549,
+      "skill_up_colors": [
+        100,
+        140,
+        160,
+        180
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2701,
+        "display_name": "Recipe: Seasoned Wolf Kabob",
+        "source_detail": "Quest: Seasoned Wolf Kabobs; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Slimy Smoothie",
@@ -1360,7 +1863,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249964
+      "wowhead_spell_id": 1249964,
+      "skill_up_colors": [
+        100,
+        105,
+        112,
+        120
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249886,
+        "display_name": "Recipe: Slimy Smoothie",
+        "source_detail": null
+      }
     },
     {
       "name": "Big Bear Steak",
@@ -1388,7 +1902,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3397
+      "wowhead_spell_id": 3397,
+      "skill_up_colors": [
+        110,
+        150,
+        170,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3734,
+        "display_name": "Recipe: Big Bear Steak",
+        "source_detail": "Quest: The Rescue"
+      }
     },
     {
       "name": "Gooey Spider Cake",
@@ -1416,7 +1941,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3377
+      "wowhead_spell_id": 3377,
+      "skill_up_colors": [
+        110,
+        150,
+        170,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3683,
+        "display_name": "Recipe: Gooey Spider Cake",
+        "source_detail": "Quest: Dusky Crab Cakes; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Lean Venison",
@@ -1444,7 +1980,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 6419
+      "wowhead_spell_id": 6419,
+      "skill_up_colors": [
+        110,
+        150,
+        170,
+        190
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 5489,
+        "display_name": "Recipe: Lean Venison",
+        "source_detail": null
+      }
     },
     {
       "name": "Succulent Pork Ribs",
@@ -1472,7 +2019,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 2548
+      "wowhead_spell_id": 2548,
+      "skill_up_colors": [
+        110,
+        130,
+        150,
+        170
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 2700,
+        "display_name": "Recipe: Succulent Pork Ribs",
+        "source_detail": "Drops from: Kendor Kabonka"
+      }
     },
     {
       "name": "Crocolisk Gumbo",
@@ -1500,7 +2058,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3373
+      "wowhead_spell_id": 3373,
+      "skill_up_colors": [
+        120,
+        160,
+        180,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3681,
+        "display_name": "Recipe: Crocolisk Gumbo",
+        "source_detail": "Quest: Apprentice's Duties; Vendor: Kendor Kabonka"
+      }
     },
     {
       "name": "Goblin Deviled Clams",
@@ -1528,7 +2097,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 6500
+      "wowhead_spell_id": 6500,
+      "skill_up_colors": [
+        125,
+        165,
+        185,
+        205
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Hot Lion Chops",
@@ -1556,7 +2132,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3398
+      "wowhead_spell_id": 3398,
+      "skill_up_colors": [
+        125,
+        175,
+        195,
+        215
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3735,
+        "display_name": "Recipe: Hot Lion Chops",
+        "source_detail": "Quest: Elixir of Pain"
+      }
     },
     {
       "name": "Lean Wolf Steak",
@@ -1584,7 +2171,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15853
+      "wowhead_spell_id": 15853,
+      "skill_up_colors": [
+        125,
+        165,
+        185,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12227,
+        "display_name": "Recipe: Lean Wolf Steak",
+        "source_detail": "Vendor: Super-Seller 680"
+      }
     },
     {
       "name": "Mrrggl Smrrthle",
@@ -1618,7 +2216,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249965
+      "wowhead_spell_id": 1249965,
+      "skill_up_colors": [
+        125,
+        135,
+        140,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249887,
+        "display_name": "Recipe: Mrrggl Smrrthle",
+        "source_detail": null
+      }
     },
     {
       "name": "Root Tea",
@@ -1646,7 +2255,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249959
+      "wowhead_spell_id": 1249959,
+      "skill_up_colors": [
+        125,
+        155,
+        170,
+        185
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249881,
+        "display_name": "Recipe: Root Tea",
+        "source_detail": "Drops from: Torn Fin Oracle"
+      }
     },
     {
       "name": "Curiously Tasty Omelet",
@@ -1674,7 +2294,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3376
+      "wowhead_spell_id": 3376,
+      "skill_up_colors": [
+        130,
+        170,
+        190,
+        210
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3682,
+        "display_name": "Recipe: Curiously Tasty Omelet",
+        "source_detail": "Quest: Ormer's Revenge"
+      }
     },
     {
       "name": "Cookie's Feast",
@@ -1708,7 +2339,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1262978
+      "wowhead_spell_id": 1262978,
+      "skill_up_colors": [
+        140,
+        145,
+        145,
+        145
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273102,
+        "display_name": "Blueprint: Cookie's Feast",
+        "source_detail": "Drops from: Cookie"
+      }
     },
     {
       "name": "Heavy Crocolisk Stew",
@@ -1736,7 +2378,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 24418
+      "wowhead_spell_id": 24418,
+      "skill_up_colors": [
+        150,
+        160,
+        180,
+        200
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 20075,
+        "display_name": "Recipe: Heavy Crocolisk Stew",
+        "source_detail": "Vendor: Ogg'marr"
+      }
     },
     {
       "name": "Tasty Lion Steak",
@@ -1764,7 +2417,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3399
+      "wowhead_spell_id": 3399,
+      "skill_up_colors": [
+        150,
+        190,
+        210,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3736,
+        "display_name": "Recipe: Tasty Lion Steak",
+        "source_detail": "Quest: Costly Menace"
+      }
     },
     {
       "name": "Barbecued Buzzard Wing",
@@ -1792,7 +2456,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 4094
+      "wowhead_spell_id": 4094,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 4609,
+        "display_name": "Recipe: Barbecued Buzzard Wing",
+        "source_detail": "Quest: Barbecued Buzzard Wings"
+      }
     },
     {
       "name": "Bear Brisket",
@@ -1820,7 +2495,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250151
+      "wowhead_spell_id": 1250151,
+      "skill_up_colors": [
+        175,
+        200,
+        210,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250182,
+        "display_name": "Recipe: Bear Brisket",
+        "source_detail": "Drops from: Ashenvale Bear"
+      }
     },
     {
       "name": "Carrion Surprise",
@@ -1848,7 +2534,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15863
+      "wowhead_spell_id": 15863,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12232,
+        "display_name": "Recipe: Carrion Surprise",
+        "source_detail": null
+      }
     },
     {
       "name": "Giant Clam Scorcho",
@@ -1876,7 +2573,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7213
+      "wowhead_spell_id": 7213,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6039,
+        "display_name": "Recipe: Giant Clam Scorcho",
+        "source_detail": "Vendor: Kelsey Yance"
+      }
     },
     {
       "name": "Giant Scrambled Eggs",
@@ -1904,7 +2612,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250155
+      "wowhead_spell_id": 1250155,
+      "skill_up_colors": [
+        175,
+        195,
+        207,
+        220
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250186,
+        "display_name": "Recipe: Giant Scrambled Eggs",
+        "source_detail": "Drops from: Lost One Cook"
+      }
     },
     {
       "name": "Hot Wolf Ribs",
@@ -1932,7 +2651,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15856
+      "wowhead_spell_id": 15856,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12229,
+        "display_name": "Recipe: Hot Wolf Ribs",
+        "source_detail": null
+      }
     },
     {
       "name": "Jungle Stew",
@@ -1966,7 +2696,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 15861
+      "wowhead_spell_id": 15861,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12231,
+        "display_name": "Recipe: Jungle Stew",
+        "source_detail": null
+      }
     },
     {
       "name": "Mithril Headed Trout",
@@ -1988,7 +2729,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 20916
+      "wowhead_spell_id": 20916,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Mystery Stew",
@@ -2016,7 +2764,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15865
+      "wowhead_spell_id": 15865,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12233,
+        "display_name": "Recipe: Mystery Stew",
+        "source_detail": null
+      }
     },
     {
       "name": "Roast Raptor",
@@ -2044,7 +2803,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15855
+      "wowhead_spell_id": 15855,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12228,
+        "display_name": "Recipe: Roast Raptor",
+        "source_detail": null
+      }
     },
     {
       "name": "Rockscale Cod",
@@ -2066,7 +2836,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 7828
+      "wowhead_spell_id": 7828,
+      "skill_up_colors": [
+        175,
+        190,
+        210,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 6369,
+        "display_name": "Recipe: Rockscale Cod",
+        "source_detail": null
+      }
     },
     {
       "name": "Sagefish Delight",
@@ -2094,7 +2875,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25954
+      "wowhead_spell_id": 25954,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21219,
+        "display_name": "Recipe: Sagefish Delight",
+        "source_detail": null
+      }
     },
     {
       "name": "Soothing Turtle Bisque",
@@ -2122,7 +2914,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 3400
+      "wowhead_spell_id": 3400,
+      "skill_up_colors": [
+        175,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 3737,
+        "display_name": "Recipe: Soothing Turtle Bisque",
+        "source_detail": "quest"
+      }
     },
     {
       "name": "Calcified Smoothie",
@@ -2156,7 +2959,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249966
+      "wowhead_spell_id": 1249966,
+      "skill_up_colors": [
+        180,
+        185,
+        190,
+        195
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249888,
+        "display_name": "Recipe: Calcified Smoothie",
+        "source_detail": null
+      }
     },
     {
       "name": "Raging Raptor Ribs",
@@ -2184,7 +2998,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250150
+      "wowhead_spell_id": 1250150,
+      "skill_up_colors": [
+        180,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250181,
+        "display_name": "Recipe: Raging Raptor Ribs",
+        "source_detail": "Drops from: Venomhide Ravasaur"
+      }
     },
     {
       "name": "Triage Tea",
@@ -2212,7 +3037,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249960
+      "wowhead_spell_id": 1249960,
+      "skill_up_colors": [
+        180,
+        195,
+        215,
+        235
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249882,
+        "display_name": "Recipe: Triage Tea",
+        "source_detail": "Drops from: Woodpaw Mystic"
+      }
     },
     {
       "name": "Plain Ol' Paletusk",
@@ -2240,7 +3076,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1295834
+      "wowhead_spell_id": 1295834,
+      "skill_up_colors": [
+        185,
+        200,
+        215,
+        230
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274977,
+        "display_name": "Recipe: Plain Ol' Paletusk",
+        "source_detail": "Quest: Paletusk Harvesting; vendor"
+      }
     },
     {
       "name": "Briny Seafood Stew",
@@ -2274,7 +3121,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1295805
+      "wowhead_spell_id": 1295805,
+      "skill_up_colors": [
+        200,
+        220,
+        230,
+        240
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274972,
+        "display_name": "Recipe: Briny Seafood Stew",
+        "source_detail": "Quest: A Taste of the Sea; Vendor: Fimbo Greasemitz"
+      }
     },
     {
       "name": "Dragonbreath Chili",
@@ -2308,7 +3166,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15906
+      "wowhead_spell_id": 15906,
+      "skill_up_colors": [
+        200,
+        240,
+        260,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12239,
+        "display_name": "Recipe: Dragonbreath Chili",
+        "source_detail": "Drops from: Searing Hatchling"
+      }
     },
     {
       "name": "Expert Campfire",
@@ -2330,7 +3199,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1291341
+      "wowhead_spell_id": 1291341,
+      "skill_up_colors": [
+        200,
+        205,
+        205,
+        205
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273101,
+        "display_name": "Blueprint: Expert Campfire",
+        "source_detail": "Drops from: Slavecrusher Grox"
+      }
     },
     {
       "name": "Heavy Kodo Stew",
@@ -2364,7 +3244,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 15910
+      "wowhead_spell_id": 15910,
+      "skill_up_colors": [
+        200,
+        240,
+        260,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 12240,
+        "display_name": "Recipe: Heavy Kodo Stew",
+        "source_detail": "vendor"
+      }
     },
     {
       "name": "Spicy Smoothie",
@@ -2398,7 +3289,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249967
+      "wowhead_spell_id": 1249967,
+      "skill_up_colors": [
+        200,
+        215,
+        220,
+        225
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249889,
+        "display_name": "Recipe: Spicy Smoothie",
+        "source_detail": null
+      }
     },
     {
       "name": "Spider Sausage",
@@ -2420,7 +3322,14 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 21175
+      "wowhead_spell_id": 21175,
+      "skill_up_colors": [
+        200,
+        240,
+        260,
+        280
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Sunny Tea",
@@ -2448,7 +3357,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249961
+      "wowhead_spell_id": 1249961,
+      "skill_up_colors": [
+        200,
+        220,
+        235,
+        250
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249883,
+        "display_name": "Recipe: Sunny Tea",
+        "source_detail": "Drops from: Marsh Oracle"
+      }
     },
     {
       "name": "Spinefin Halibut",
@@ -2470,7 +3390,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1247741
+      "wowhead_spell_id": 1247741,
+      "skill_up_colors": [
+        0,
+        210,
+        215,
+        220
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Goldthorn Tea",
@@ -2498,7 +3425,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 13028
+      "wowhead_spell_id": 13028,
+      "skill_up_colors": [
+        0,
+        215,
+        235,
+        255
+      ],
+      "recipe_cost_item": null
     },
     {
       "name": "Cooked Glossy Mightfish",
@@ -2526,7 +3460,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18239
+      "wowhead_spell_id": 18239,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13940,
+        "display_name": "Recipe: Cooked Glossy Mightfish",
+        "source_detail": "Vendor: Kelsey Yance"
+      }
     },
     {
       "name": "Filet of Redgill",
@@ -2548,7 +3493,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18241
+      "wowhead_spell_id": 18241,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13941,
+        "display_name": "Recipe: Filet of Redgill",
+        "source_detail": "Vendor: Kelsey Yance"
+      }
     },
     {
       "name": "Monster Omelet",
@@ -2576,7 +3532,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 15933
+      "wowhead_spell_id": 15933,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16110,
+        "display_name": "Recipe: Monster Omelet",
+        "source_detail": null
+      }
     },
     {
       "name": "Plated Armorfish",
@@ -2604,7 +3571,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1319313
+      "wowhead_spell_id": 1319313,
+      "skill_up_colors": [
+        225,
+        245,
+        250,
+        255
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 286153,
+        "display_name": "Recipe: Plated Armorfish",
+        "source_detail": "Drops from: Recipe: Raw Plated Armorfish"
+      }
     },
     {
       "name": "Raptor Rouladen",
@@ -2632,7 +3610,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250153
+      "wowhead_spell_id": 1250153,
+      "skill_up_colors": [
+        225,
+        230,
+        237,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250184,
+        "display_name": "Recipe: Raptor Rouladen",
+        "source_detail": "Drops from: Bloodfen Lashtail"
+      }
     },
     {
       "name": "Savory Stag Sliders",
@@ -2660,7 +3649,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250142
+      "wowhead_spell_id": 1250142,
+      "skill_up_colors": [
+        225,
+        230,
+        237,
+        245
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250173,
+        "display_name": "Recipe: Savory Stag Sliders",
+        "source_detail": "Vendor: Qia"
+      }
     },
     {
       "name": "Spiced Chili Crab",
@@ -2688,7 +3688,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 15915
+      "wowhead_spell_id": 15915,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16111,
+        "display_name": "Recipe: Spiced Chili Crab",
+        "source_detail": null
+      }
     },
     {
       "name": "Spotted Yellowtail",
@@ -2710,7 +3721,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18238
+      "wowhead_spell_id": 18238,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13939,
+        "display_name": "Recipe: Spotted Yellowtail",
+        "source_detail": "Vendor: Gikkix"
+      }
     },
     {
       "name": "Tender Wolf Steak",
@@ -2738,7 +3760,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 22480
+      "wowhead_spell_id": 22480,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18046,
+        "display_name": "Recipe: Tender Wolf Steak",
+        "source_detail": null
+      }
     },
     {
       "name": "Undermine Clam Chowder",
@@ -2772,7 +3805,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 20626
+      "wowhead_spell_id": 20626,
+      "skill_up_colors": [
+        225,
+        265,
+        285,
+        305
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 16767,
+        "display_name": "Recipe: Undermine Clam Chowder",
+        "source_detail": null
+      }
     },
     {
       "name": "Grilled Squid",
@@ -2800,7 +3844,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18240
+      "wowhead_spell_id": 18240,
+      "skill_up_colors": [
+        240,
+        280,
+        300,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13942,
+        "display_name": "Recipe: Grilled Squid",
+        "source_detail": "Vendor: Gikkix"
+      }
     },
     {
       "name": "Hot Smoked Bass",
@@ -2828,7 +3883,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 18242
+      "wowhead_spell_id": 18242,
+      "skill_up_colors": [
+        240,
+        280,
+        300,
+        320
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13943,
+        "display_name": "Recipe: Hot Smoked Bass",
+        "source_detail": "Vendor: Kelsey Yance"
+      }
     },
     {
       "name": "Filet o' Flank",
@@ -2856,7 +3922,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1225759
+      "wowhead_spell_id": 1225759,
+      "skill_up_colors": [
+        250,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 238646,
+        "display_name": "Recipe: Filet o' Flank",
+        "source_detail": null
+      }
     },
     {
       "name": "Nightfin Soup",
@@ -2884,7 +3961,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18243
+      "wowhead_spell_id": 18243,
+      "skill_up_colors": [
+        250,
+        290,
+        310,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13945,
+        "display_name": "Recipe: Nightfin Soup",
+        "source_detail": "Vendor: Gikkix"
+      }
     },
     {
       "name": "Poached Sunscale Salmon",
@@ -2906,7 +3994,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18244
+      "wowhead_spell_id": 18244,
+      "skill_up_colors": [
+        250,
+        290,
+        310,
+        330
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13946,
+        "display_name": "Recipe: Poached Sunscale Salmon",
+        "source_detail": "Vendor: Gikkix"
+      }
     },
     {
       "name": "Prowler Steak",
@@ -2934,7 +4033,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1225758
+      "wowhead_spell_id": 1225758,
+      "skill_up_colors": [
+        250,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 238645,
+        "display_name": "Recipe: Prowler Steak",
+        "source_detail": null
+      }
     },
     {
       "name": "Sage's Tea",
@@ -2962,7 +4072,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1249962
+      "wowhead_spell_id": 1249962,
+      "skill_up_colors": [
+        250,
+        260,
+        275,
+        290
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249884,
+        "display_name": "Recipe: Sage's Tea",
+        "source_detail": "Drops from: Deadwind Ogre Mage"
+      }
     },
     {
       "name": "Sunrise Omelette",
@@ -2990,7 +4111,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1225760
+      "wowhead_spell_id": 1225760,
+      "skill_up_colors": [
+        250,
+        260,
+        270,
+        280
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 238647,
+        "display_name": "Recipe: Sunrise Omelette",
+        "source_detail": null
+      }
     },
     {
       "name": "Wicked Smoothie",
@@ -3024,7 +4156,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1249968
+      "wowhead_spell_id": 1249968,
+      "skill_up_colors": [
+        250,
+        255,
+        262,
+        270
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 249890,
+        "display_name": "Recipe: Wicked Smoothie",
+        "source_detail": null
+      }
     },
     {
       "name": "Baked Salmon",
@@ -3052,7 +4195,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18247
+      "wowhead_spell_id": 18247,
+      "skill_up_colors": [
+        275,
+        315,
+        335,
+        355
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13949,
+        "display_name": "Recipe: Baked Salmon",
+        "source_detail": "vendor"
+      }
     },
     {
       "name": "Bat Hachee",
@@ -3080,7 +4234,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1250144
+      "wowhead_spell_id": 1250144,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250175,
+        "display_name": "Recipe: Bat Hachee",
+        "source_detail": "Drops from: Monstrous Plaguebat"
+      }
     },
     {
       "name": "Bear Bruscitti",
@@ -3108,7 +4273,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250147
+      "wowhead_spell_id": 1250147,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250178,
+        "display_name": "Recipe: Bear Bruscitti",
+        "source_detail": "Drops from: Rabid Shardtooth"
+      }
     },
     {
       "name": "Clam Linguine",
@@ -3136,7 +4312,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250158
+      "wowhead_spell_id": 1250158,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250189,
+        "display_name": "Recipe: Clam Linguine",
+        "source_detail": "Drops from: Spitelash Enchantress"
+      }
     },
     {
       "name": "Flank au Poivre",
@@ -3164,7 +4351,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250146
+      "wowhead_spell_id": 1250146,
+      "skill_up_colors": [
+        275,
+        285,
+        300,
+        315
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250177,
+        "display_name": "Recipe: Flank au Poivre",
+        "source_detail": "Drops from: Ghostfang Alpha"
+      }
     },
     {
       "name": "Lobster Stew",
@@ -3192,7 +4390,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18245
+      "wowhead_spell_id": 18245,
+      "skill_up_colors": [
+        275,
+        315,
+        335,
+        355
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13947,
+        "display_name": "Recipe: Lobster Stew",
+        "source_detail": "vendor"
+      }
     },
     {
       "name": "Mightfish Steak",
@@ -3226,7 +4435,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 18246
+      "wowhead_spell_id": 18246,
+      "skill_up_colors": [
+        275,
+        315,
+        335,
+        355
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 13948,
+        "display_name": "Recipe: Mightfish Steak",
+        "source_detail": "vendor"
+      }
     },
     {
       "name": "Prehistoric Pulled Raptor",
@@ -3254,7 +4474,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250152
+      "wowhead_spell_id": 1250152,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250183,
+        "display_name": "Recipe: Prehistoric Pulled Raptor",
+        "source_detail": "drop"
+      }
     },
     {
       "name": "Runn Tum Tuber Surprise",
@@ -3282,7 +4513,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 22761
+      "wowhead_spell_id": 22761,
+      "skill_up_colors": [
+        275,
+        315,
+        335,
+        355
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 18267,
+        "display_name": "Recipe: Runn Tum Tuber Surprise",
+        "source_detail": "Drops from: Pusillin"
+      }
     },
     {
       "name": "Savory Turtle Stew",
@@ -3310,7 +4552,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250145
+      "wowhead_spell_id": 1250145,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250176,
+        "display_name": "Recipe: Savory Turtle Stew",
+        "source_detail": "Drops from: Child of Tortolla"
+      }
     },
     {
       "name": "Soaring Pamplona",
@@ -3338,7 +4591,18 @@
           "quantity": 3
         }
       ],
-      "wowhead_spell_id": 1250143
+      "wowhead_spell_id": 1250143,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250174,
+        "display_name": "Recipe: Soaring Pamplona",
+        "source_detail": null
+      }
     },
     {
       "name": "Steaming Stag Steak",
@@ -3366,7 +4630,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1250148
+      "wowhead_spell_id": 1250148,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250179,
+        "display_name": "Recipe: Steaming Stag Steak",
+        "source_detail": "quest"
+      }
     },
     {
       "name": "Sweetpaw Jam",
@@ -3394,7 +4669,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1294014
+      "wowhead_spell_id": 1294014,
+      "skill_up_colors": [
+        275,
+        280,
+        282,
+        285
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 274415,
+        "display_name": "Recipe: Sweetpaw Jam",
+        "source_detail": "Vendor: Dala Fairmaw"
+      }
     },
     {
       "name": "Swiftstrike Steak",
@@ -3422,7 +4708,18 @@
           "quantity": 2
         }
       ],
-      "wowhead_spell_id": 1250149
+      "wowhead_spell_id": 1250149,
+      "skill_up_colors": [
+        275,
+        280,
+        295,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 250180,
+        "display_name": "Recipe: Swiftstrike Steak",
+        "source_detail": "Drops from: Frostsaber Pride Watcher"
+      }
     },
     {
       "name": "Grand Lobster Banquet",
@@ -3462,7 +4759,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1225763
+      "wowhead_spell_id": 1225763,
+      "skill_up_colors": [
+        280,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 238650,
+        "display_name": "Recipe: Grand Lobster Banquet",
+        "source_detail": null
+      }
     },
     {
       "name": "Specklefin Feast",
@@ -3502,7 +4810,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 1225762
+      "wowhead_spell_id": 1225762,
+      "skill_up_colors": [
+        280,
+        290,
+        300,
+        310
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 238649,
+        "display_name": "Recipe: Specklefin Feast",
+        "source_detail": null
+      }
     },
     {
       "name": "Dirge's Kickin' Chimaerok Chops",
@@ -3542,7 +4861,18 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 25659
+      "wowhead_spell_id": 25659,
+      "skill_up_colors": [
+        300,
+        325,
+        345,
+        365
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 21025,
+        "display_name": "Recipe: Dirge's Kickin' Chimaerok Chops",
+        "source_detail": "Quest: Dirge's Kickin' Chimaerok Chops"
+      }
     },
     {
       "name": "Iron Oven",
@@ -3576,7 +4906,18 @@
           "quantity": 4
         }
       ],
-      "wowhead_spell_id": 1263067
+      "wowhead_spell_id": 1263067,
+      "skill_up_colors": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "recipe_cost_item": {
+        "wowhead_id": 273115,
+        "display_name": "Blueprint: Iron Oven",
+        "source_detail": "Drops from: Quartermaster Zigris"
+      }
     },
     {
       "name": "Smoked Desert Dumplings",
@@ -3604,7 +4945,14 @@
           "quantity": 1
         }
       ],
-      "wowhead_spell_id": 24801
+      "wowhead_spell_id": 24801,
+      "skill_up_colors": [
+        0,
+        325,
+        345,
+        365
+      ],
+      "recipe_cost_item": null
     }
   ]
 }

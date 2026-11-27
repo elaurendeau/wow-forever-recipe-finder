@@ -31,12 +31,17 @@ defmodule WowForeverRecipeFinder.Gateways.EctoCrateRepositoryGateway do
       quality: parse_quality!(row.quality),
       wowhead_id: row.wowhead_id,
       required_level: row.required_level,
-      fill_options: if(row.fill_options_captured, do: Enum.map(row.fill_options, &to_fill_option/1))
+      fill_options:
+        if(row.fill_options_captured, do: Enum.map(row.fill_options, &to_fill_option/1))
     }
   end
 
   defp to_fill_option(%Schema.WaylaidCrateFillOption{} = row) do
-    %FillOption{display_name: row.display_name, wowhead_id: row.wowhead_id, quantity: row.quantity}
+    %FillOption{
+      display_name: row.display_name,
+      wowhead_id: row.wowhead_id,
+      quantity: row.quantity
+    }
   end
 
   defp parse_tier!("apprentice"), do: :apprentice
