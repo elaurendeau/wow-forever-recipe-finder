@@ -44,7 +44,16 @@
     and among the recipes that don't, craft whichever <strong>sells fastest</strong>
     — not whichever
     is most profitable. Skill-up thresholds are Wowhead's own real per-recipe data, not Classic's
-    generic formula; a recipe stops counting the moment its skill reaches <code>grey</code>.
+    generic formula; a recipe stops counting the moment it turns <code>green</code>, not
+    <code>grey</code>
+    — green's skill-up chance is low enough that switching (or a gap) beats
+    grinding it out.
+    <span
+      class="rf-source-pill"
+      title="No source has a real per-recipe skill-up probability for WoW Forever. Est. crafts, Total cost and Total sell use a commonly-cited Classic-era community formula (100% until yellow, declining to 0% at grey) applied to the real band boundaries above — an estimate, not a fact."
+    >
+      crafts/cost/sell are estimated
+    </span>
   </p>
 
   <%= unless @captured_at do %>
@@ -111,7 +120,17 @@
             <th>Recipe</th>
             <th class="num">Sold/day</th>
             <th class="num">Profit/craft</th>
-            <th class="num">Recipe cost</th>
+            <th class="num" title="Estimated — see the note above the table">Est. crafts</th>
+            <th
+              class="num"
+              title="Estimated — includes the recipe's own one-time purchase, if it has one"
+            >
+              Total cost
+            </th>
+            <th class="num" title="Estimated — gross sale value, before the AH cut">
+              Total sell
+            </th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -143,12 +162,32 @@
                 ]}>
                   {format_profit(segment.result.profit_result.net_profit_per_unit_copper)}
                 </td>
-                <td class="num rf-muted">{format_copper(segment.result.recipe_cost_copper)}</td>
+                <td class="num rf-muted">~{crafts_needed(segment)}</td>
+                <td class="num rf-muted">
+                  {format_copper(
+                    LevelingResult.total_cost_copper(segment.result, crafts_needed(segment))
+                  )}
+                </td>
+                <td class="num rf-muted">
+                  {format_copper(
+                    LevelingResult.total_sell_copper(segment.result, crafts_needed(segment))
+                  )}
+                </td>
+                <td class="num">
+                  <button
+                    type="button"
+                    class="rf-side-chip"
+                    phx-click="show_shopping_list"
+                    phx-value-from={segment.from_skill}
+                  >
+                    Shopping list
+                  </button>
+                </td>
               </tr>
             <% else %>
               <tr class="rf-leveling-gap">
                 <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
-                <td colspan="4">
+                <td colspan="7">
                   No recipe both still gives a skill-up here and is known not to lose money.
                 </td>
               </tr>
@@ -166,3 +205,49 @@
     </div>
   <% end %>
 </div>
+
+<%= if @shopping_segment do %>
+  <% crafts = crafts_needed(@shopping_segment) %>
+  <% lines = LevelingShoppingList.build_lines(@shopping_segment.result, crafts) %>
+  <div class="rf-shopping-popup">
+    <div class="rf-shopping-popup-header">
+      <strong>{@shopping_segment.result.pattern.name} Shopping List</strong>
+      <button
+        type="button"
+        class="rf-shopping-popup-close"
+        phx-click="close_shopping_list"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+    </div>
+    <div>
+      <strong>~{crafts}</strong>
+      crafts (estimated) for skill {skill_range_label(
+        @shopping_segment.from_skill,
+        @shopping_segment.to_skill
+      )} — {format_copper(LevelingShoppingList.total_cost_copper(lines))} total cost
+    </div>
+    <div class="rf-shopping-list-groups">
+      <div class="rf-shopping-group">
+        <%= for line <- lines do %>
+          <div class="rf-shopping-list-line">
+            <span>{line.display_name} x{line.quantity}</span>
+            <span class="rf-muted">{format_copper(line.line_total_copper)}</span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="rf-shopping-list-actions" style="justify-content: flex-end;">
+      <span
+        id="leveling-auctionator-copy"
+        phx-hook="CopyButton"
+        data-copy={
+          LevelingShoppingList.to_auctionator_text(@shopping_segment.result.pattern.name, lines)
+        }
+      >
+        <button type="button" class="rf-copy-btn">Copy for Auctionator</button>
+      </span>
+    </div>
+  </div>
+<% end %>

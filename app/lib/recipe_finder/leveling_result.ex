@@ -7,7 +7,7 @@ defmodule WowForeverRecipeFinder.LevelingResult do
   band this recipe has. See docs/PRD.md § 7.13.
   """
 
-  alias WowForeverRecipeFinder.{Pattern, ProfitResult}
+  alias WowForeverRecipeFinder.{Pattern, ProfitResult, SkillUpBands, SkillUpCurve}
 
   @enforce_keys [:pattern, :profit_result]
   defstruct [:pattern, :profit_result, :recipe_cost_copper]
@@ -31,13 +31,57 @@ defmodule WowForeverRecipeFinder.LevelingResult do
   def never_loses_money?(%__MODULE__{profit_result: %{net_profit_per_unit_copper: p}}), do: p >= 0
 
   @doc """
-  Still gives a skill-up at the given skill level — both learnable
-  (`skill >= pattern.skill`) and not yet grey. `false` (never a
-  fabricated yes) when the recipe has no known skill-up band at all.
+  Still worth crafting at the given skill level for leveling — both
+  learnable (`skill >= pattern.skill`) and not yet turned green (per
+  the visitor's own explicit "stop once it's green" preference; see
+  `SkillUpBands.worth_crafting_at?/2`). `false` (never a fabricated
+  yes) when the recipe has no known skill-up band at all.
   """
   @spec still_useful_at?(t(), non_neg_integer()) :: boolean()
   def still_useful_at?(%__MODULE__{pattern: %{skill_up_bands: nil}}, _skill), do: false
 
   def still_useful_at?(%__MODULE__{pattern: %{skill: learned_at, skill_up_bands: bands}}, skill),
-    do: skill >= learned_at and WowForeverRecipeFinder.SkillUpBands.still_useful_at?(bands, skill)
+    do: skill >= learned_at and SkillUpBands.worth_crafting_at?(bands, skill)
+
+  @doc """
+  Estimated crafts needed to go from `from_skill` through `to_skill`
+  with this recipe — see `SkillUpCurve`'s own doc for the formula and
+  why it's an estimate, never a fact. `nil` when this recipe has no
+  known skill-up band at all (never a fabricated number).
+  """
+  @spec expected_crafts(t(), pos_integer(), pos_integer()) :: float() | nil
+  def expected_crafts(%__MODULE__{pattern: %{skill_up_bands: nil}}, _from, _to), do: nil
+
+  def expected_crafts(
+        %__MODULE__{pattern: %{skill: learned_at, skill_up_bands: bands}},
+        from,
+        to
+      ),
+      do: SkillUpCurve.expected_crafts(bands, learned_at, from, to)
+
+  @doc "Total reagent cost across `crafts` crafts — the per-craft `mat_cost_copper` times `crafts`. Always known for a result that `never_loses_money?/1` ever accepted (that already required a known mat cost)."
+  @spec total_reagent_cost_copper(t(), pos_integer()) :: non_neg_integer()
+  def total_reagent_cost_copper(%__MODULE__{profit_result: %{mat_cost_copper: cost}}, crafts),
+    do: cost * crafts
+
+  @doc """
+  Total cost across `crafts` crafts: the reagent total, plus the
+  recipe's own one-time AH purchase if it has one. Trainer recipes add
+  nothing (no AH cost applies at all); a non-trainer recipe whose
+  purchase price isn't known in the current snapshot makes the whole
+  total `nil` — never silently treated as free.
+  """
+  @spec total_cost_copper(t(), pos_integer()) :: non_neg_integer() | nil
+  def total_cost_copper(%__MODULE__{pattern: %{source: :trainer}} = result, crafts),
+    do: total_reagent_cost_copper(result, crafts)
+
+  def total_cost_copper(%__MODULE__{recipe_cost_copper: nil}, _crafts), do: nil
+
+  def total_cost_copper(%__MODULE__{recipe_cost_copper: recipe_cost} = result, crafts),
+    do: total_reagent_cost_copper(result, crafts) + recipe_cost
+
+  @doc "Total gross sale value across `crafts` crafts — the per-craft list price times `crafts`, before the AH cut (same convention as the Price column elsewhere in this app)."
+  @spec total_sell_copper(t(), pos_integer()) :: non_neg_integer()
+  def total_sell_copper(%__MODULE__{profit_result: %{price_copper: price}}, crafts),
+    do: price * crafts
 end

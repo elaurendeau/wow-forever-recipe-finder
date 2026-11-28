@@ -61,6 +61,10 @@
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
     padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 95ch;
   }
+  .estimate-pill {
+    font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px dashed var(--border);
+    color: var(--muted); cursor: help; white-space: nowrap;
+  }
 
   .tabs { display: flex; gap: 22px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
   .tab {
@@ -76,7 +80,7 @@
   .side-chip.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 
   .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
-  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 760px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 980px; }
   th {
     text-align: left; padding: 9px 14px 2px; font-size: 10.5px; text-transform: uppercase;
     letter-spacing: 0.05em; color: var(--muted); background: var(--surface-2); border-bottom: 1px solid var(--border);
@@ -98,6 +102,21 @@
     background: repeating-linear-gradient(135deg, transparent, transparent 10px, var(--surface-2) 10px, var(--surface-2) 20px);
   }
 
+  .shopping-popup {
+    position: fixed; right: 24px; bottom: 24px; width: 360px; max-width: calc(100vw - 48px); max-height: 70vh;
+    overflow-y: auto; background: var(--surface); border: 1px solid var(--accent); border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5); z-index: 61; padding: 14px 16px; display: flex;
+    flex-direction: column; gap: 10px; font-size: 13px;
+  }
+  .shopping-popup[hidden] { display: none; }
+  .shopping-popup-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .shopping-popup-close { all: unset; cursor: pointer; color: var(--muted); font-size: 18px; line-height: 1; padding: 2px 6px; }
+  .shopping-popup-close:hover { color: var(--fg); }
+  .shopping-list-groups { display: flex; flex-direction: column; gap: 3px; }
+  .shopping-list-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; font-family: var(--font-mono); }
+  .shopping-list-actions { display: flex; justify-content: flex-end; border-top: 1px solid var(--border); padding-top: 10px; }
+  .copy-btn { background: var(--accent); color: var(--accent-fg); border: none; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; cursor: pointer; }
+
   @media (max-width: 600px) {
     .page { padding: 16px; }
     .topbar { padding: 12px 16px; flex-wrap: wrap; }
@@ -115,7 +134,7 @@
     <a class="nav-link" href="#">Merchant's Favor →</a>
     <span class="mock-pill">Mockup</span>
   </div>
-  <div class="freshness">Snapshot from 2026-11-27 23:36 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
+  <div class="freshness">Snapshot from 2026-11-28 01:52 UTC — saved in this browser <a href="#" style="color: var(--accent); text-decoration: underline;">forget</a></div>
   <select class="realm-select" title="Recent Value prices come from this realm's own AH scans — pick the right one if you've scanned more than one.">
     <option selected>Forever-US</option>
   </select>
@@ -129,7 +148,9 @@
     The recipe to craft at each skill level, picked by one rule: <strong>never lose money</strong>, and among the
     recipes that don't, craft whichever <strong>sells fastest</strong> — not whichever is most profitable.
     Skill-up thresholds are Wowhead's own real per-recipe data, not Classic's generic formula; a recipe stops
-    counting the moment its skill reaches <code>grey</code>.
+    counting the moment it turns <code>green</code>, not <code>grey</code> — green's skill-up chance is low enough
+    that switching (or a gap) beats grinding it out.
+    <span class="estimate-pill" title="No source has a real per-recipe skill-up probability for WoW Forever. Est. crafts, Total cost and Total sell use a commonly-cited Classic-era community formula (100% until yellow, declining to 0% at grey) applied to the real band boundaries above — an estimate, not a fact.">crafts/cost/sell are estimated</span>
   </div>
 
   <div class="tabs" id="tabs"></div>
@@ -148,7 +169,10 @@
           <th>Recipe</th>
           <th class="num">Sold/day</th>
           <th class="num">Profit/craft</th>
-          <th class="num">Recipe cost</th>
+          <th class="num" title="Estimated — see the note above the table">Est. crafts</th>
+          <th class="num" title="Estimated — includes the recipe's own one-time purchase, if it has one">Total cost</th>
+          <th class="num" title="Estimated — gross sale value, before the AH cut">Total sell</th>
+          <th></th>
         </tr>
       </thead>
       <tbody id="tableBody"></tbody>
@@ -156,17 +180,40 @@
   </div>
 </div>
 
+<div class="shopping-popup" id="shoppingPopup" hidden>
+  <div class="shopping-popup-header">
+    <strong id="shoppingTitle"></strong>
+    <button type="button" class="shopping-popup-close" id="shoppingClose" aria-label="Close">&times;</button>
+  </div>
+  <div id="shoppingSummary"></div>
+  <div class="shopping-list-groups" id="shoppingLines"></div>
+  <div class="shopping-list-actions">
+    <button type="button" class="copy-btn" title="Copies Auctionator's own *** &lt;list name&gt; / one item name per line format — verified from its Lua source, no quantities">Copy for Auctionator</button>
+  </div>
+</div>
+
 <script>
   const PATHS = {
     tailoring: [
-      { from: 1, to: 59, name: "White Linen Shirt", tier: "Apprentice", source: "Trainer", spd: "5.200", profit: "(1s 46c profit)", cost: "—" },
-      { from: 60, to: 64, name: "Linen Reagent Bag", tier: "Apprentice", source: "Vendor", spd: "1.800", profit: "(50s 30c profit)", cost: "88s 0c" },
-      { from: 65, to: 94, name: "Red Linen Vest", tier: "Apprentice", source: "Drop", spd: "0.600", profit: "(13s 35c profit)", cost: "2g 40s 0c" },
-      { from: 95, to: 350, gap: true },
+      {
+        from: 1, to: 46, name: "White Linen Shirt", tier: "Apprentice", source: "Trainer", spd: "5.200",
+        profit: "(1s 46c profit)", crafts: 50, totalCost: "60s 0c", totalSell: "1g 40s 0c",
+        lines: [{ name: "Bolt of Linen Cloth", qty: 50, cost: "25s 0c" }, { name: "Coarse Thread", qty: 50, cost: "15s 0c" }, { name: "Bleach", qty: 50, cost: "20s 0c" }],
+      },
+      {
+        from: 47, to: 76, name: "Red Linen Vest", tier: "Apprentice", source: "Drop", spd: "0.600",
+        profit: "(13s 35c profit)", crafts: 36, totalCost: "3g 40s 80c", totalSell: "6g 12s 0c",
+        lines: [{ name: "Pattern: Red Linen Vest", qty: 1, cost: "2g 50s 0c" }, { name: "Bolt of Linen Cloth", qty: 72, cost: "36s 0c" }, { name: "Red Dye", qty: 36, cost: "4s 80c" }],
+      },
+      { from: 77, to: 350, gap: true },
     ],
     enchanting: [
-      { from: 1, to: 70, name: "Enchant Bracer — Minor Health", tier: "Apprentice", source: "Trainer", spd: "48.100", profit: "(0g 0s 9c profit)", cost: "—" },
-      { from: 71, to: 360, gap: true },
+      {
+        from: 1, to: 65, name: "Enchant Bracer — Minor Health", tier: "Apprentice", source: "Trainer", spd: "48.100",
+        profit: "(0g 0s 9c profit)", crafts: 72, totalCost: "4s 32c", totalSell: "6s 48c",
+        lines: [{ name: "Strange Dust", qty: 72, cost: "4s 32c" }],
+      },
+      { from: 66, to: 360, gap: true },
     ],
   };
   const PROFESSIONS = [
@@ -199,10 +246,10 @@
     renderTabs();
     const rows = PATHS[active] || [];
     const tbody = document.getElementById("tableBody");
-    tbody.innerHTML = rows.map((row) => row.gap ? `
+    tbody.innerHTML = rows.map((row, i) => row.gap ? `
       <tr class="gap-row">
         <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
-        <td colspan="4">No recipe both still gives a skill-up here and is known not to lose money.</td>
+        <td colspan="7">No recipe both still gives a skill-up here and is known not to lose money.</td>
       </tr>
     ` : `
       <tr>
@@ -214,14 +261,35 @@
         </td>
         <td class="num">${row.spd}</td>
         <td class="num profit-pos">${row.profit}</td>
-        <td class="num muted-cell">${row.cost}</td>
+        <td class="num muted-cell">~${row.crafts}</td>
+        <td class="num muted-cell">${row.totalCost}</td>
+        <td class="num muted-cell">${row.totalSell}</td>
+        <td class="num"><button type="button" class="side-chip" data-row="${i}">Shopping list</button></td>
       </tr>
     `).join("");
+
+    tbody.querySelectorAll("button[data-row]").forEach((btn) => {
+      btn.addEventListener("click", () => openShoppingList(rows[Number(btn.dataset.row)]));
+    });
   }
+
+  function openShoppingList(row) {
+    document.getElementById("shoppingTitle").textContent = row.name + " Shopping List";
+    document.getElementById("shoppingSummary").innerHTML =
+      `<strong>~${row.crafts}</strong> crafts (estimated) for skill ${row.from}–${row.to} — ${row.totalCost} total cost`;
+    document.getElementById("shoppingLines").innerHTML = row.lines.map((line) => `
+      <div class="shopping-list-line"><span>${line.name} x${line.qty}</span><span class="muted-cell">${line.cost}</span></div>
+    `).join("");
+    document.getElementById("shoppingPopup").hidden = false;
+  }
+
+  document.getElementById("shoppingClose").addEventListener("click", () => {
+    document.getElementById("shoppingPopup").hidden = true;
+  });
 
   document.getElementById("basisToggle").addEventListener("click", (e) => {
     const chip = e.target.closest(".side-chip");
-    if (!chip) return;
+    if (!chip || !chip.closest("#basisToggle")) return;
     document.querySelectorAll("#basisToggle .side-chip").forEach((c) => c.classList.remove("on"));
     chip.classList.add("on");
   });

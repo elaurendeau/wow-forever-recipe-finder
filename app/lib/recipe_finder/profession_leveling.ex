@@ -3,12 +3,21 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   The use case behind docs/PRD.md § 7.13: a full 1→max-skill leveling
   path for a profession, built from the visitor's own stated priority —
   **never lose money, and among the recipes that don't, craft whichever
-  sells fastest.** No probability model, no assumed Classic-era
-  skill-up curve: a recipe is a candidate at a given skill level purely
-  from its own real, Forever-verified skill-up band (`SkillUpBands`,
-  `nil` for recipes with no known band — never treated as available),
-  and the winner at each skill level is simply the highest-`sold_per_day`
-  candidate with a known, non-negative profit.
+  sells fastest.** *Which* recipe is a candidate at a given skill level
+  is decided purely from its own real, Forever-verified skill-up band
+  (`SkillUpBands`, `nil` for recipes with no known band — never treated
+  as available) — specifically `worth_crafting_at?/2`'s green cutoff,
+  per the visitor's own explicit "stop once it turns green" choice, not
+  grey. No probability is involved in *that* decision at all.
+
+  A segment's `expected_crafts` (and the total cost/total sell that
+  depend on it) is a different matter: those genuinely need a
+  per-skill probability, which no public source has for WoW Forever, so
+  `SkillUpCurve`'s estimated Classic-era formula is used there — see its
+  own moduledoc. Keeping the ranking decision probability-free while
+  still offering an estimated craft count is a deliberate split, not an
+  inconsistency: one is real data, the other is clearly labeled as a
+  guess wherever it's shown.
 
   Reuses `ProfitComputation`'s own per-craft profit math (same price
   basis as every other page) rather than duplicating it — this
@@ -25,7 +34,10 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   @type path_segment :: %{
           from_skill: pos_integer(),
           to_skill: pos_integer(),
-          result: LevelingResult.t() | nil
+          result: LevelingResult.t() | nil,
+          # Estimated — see `SkillUpCurve`'s own doc. `nil` for a gap
+          # segment (no result at all).
+          expected_crafts: float() | nil
         }
 
   @doc """
@@ -116,7 +128,13 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   defp to_segment(chunk) do
     {from_skill, _} = List.first(chunk)
     {to_skill, result} = List.last(chunk)
-    %{from_skill: from_skill, to_skill: to_skill, result: result}
+
+    %{
+      from_skill: from_skill,
+      to_skill: to_skill,
+      result: result,
+      expected_crafts: result && LevelingResult.expected_crafts(result, from_skill, to_skill)
+    }
   end
 
   defp max_skill(results) do

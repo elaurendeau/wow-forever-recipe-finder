@@ -10,7 +10,13 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLive do
 
   use WowForeverRecipeFinderWeb, :live_view
 
-  alias WowForeverRecipeFinder.{PriceSnapshot, ProfessionLeveling, ProfitComputation}
+  alias WowForeverRecipeFinder.{
+    LevelingResult,
+    LevelingShoppingList,
+    PriceSnapshot,
+    ProfessionLeveling,
+    ProfitComputation
+  }
 
   # Mining, Herbalism, Skinning and Fishing are excluded per docs/PRD.md
   # § 7.13 — confirmed via the real capture to have zero recipe_items,
@@ -36,7 +42,8 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLive do
         captured_at: nil,
         path: [],
         upload_error: nil,
-        price_basis: ProfitComputation.default_price_basis()
+        price_basis: ProfitComputation.default_price_basis(),
+        shopping_segment: nil
       )
       |> allow_upload(:tsm_export, accept: ~w(.lua), max_entries: 1, max_file_size: 20_000_000)
 
@@ -113,6 +120,22 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLive do
     {:noreply, socket |> assign(price_basis: String.to_existing_atom(basis)) |> recompute_path()}
   end
 
+  # Opens the per-segment "copy for Auctionator" popup — the visitor's
+  # own request: click a segment, see exactly what to buy (the recipe's
+  # own purchase item plus every reagent) for the estimated number of
+  # crafts that segment needs. Only a real segment can be clicked (a
+  # gap's row has no button at all), so the lookup always succeeds.
+  def handle_event("show_shopping_list", %{"from" => from_str}, socket) do
+    from_skill = String.to_integer(from_str)
+    segment = Enum.find(socket.assigns.path, &(&1.from_skill == from_skill))
+
+    {:noreply, assign(socket, shopping_segment: segment)}
+  end
+
+  def handle_event("close_shopping_list", _params, socket) do
+    {:noreply, assign(socket, shopping_segment: nil)}
+  end
+
   defp load_export(socket, export_text, captured_at, saved_realm) do
     case ProfitComputation.parse_export(export_text) do
       {:ok, snapshot} ->
@@ -131,6 +154,11 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLive do
   end
 
   defp recompute_path(socket) do
+    # Closes any open shopping-list popup — it would otherwise go on
+    # showing a segment from the profession/basis/realm this path no
+    # longer reflects.
+    socket = assign(socket, shopping_segment: nil)
+
     case socket.assigns.price_snapshot do
       nil ->
         assign(socket, path: [])
@@ -194,4 +222,9 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLive do
 
   defp format_profit(nil), do: "—"
   defp format_profit(copper), do: "(#{format_copper(copper)} profit)"
+
+  # Rounded up — a shopping list needs a whole number of crafts, and an
+  # estimate floor would understate it. See SkillUpCurve's own doc for
+  # why this is an estimate, never a fact.
+  defp crafts_needed(%{expected_crafts: expected}), do: ceil(expected)
 end

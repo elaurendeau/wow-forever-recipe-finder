@@ -33,7 +33,21 @@ defmodule WowForeverRecipeFinder.SkillUpBands do
           grey: pos_integer()
         }
 
-  @doc "Whether this recipe can still grant a skill-up at the given skill level — strictly below `grey`, never equal to or above it."
+  @doc "Whether this recipe can still grant a skill-up at the given skill level at all — strictly below `grey`, never equal to or above it. The real, factual boundary; see `worth_crafting_at?/2` for the Profession Leveling page's own, stricter cutoff."
   @spec still_useful_at?(t(), non_neg_integer()) :: boolean()
   def still_useful_at?(%__MODULE__{grey: grey}, skill), do: skill < grey
+
+  @doc """
+  Whether this recipe is still *worth* crafting for leveling — strictly
+  below `green`, not `grey`. A visitor's own explicit choice: once a
+  recipe turns green, its skill-up chance is low enough (see
+  `SkillUpCurve`) that switching to a different recipe, or accepting a
+  gap, beats grinding it out. Falls back to `grey` when `green` itself
+  is unknown (Wowhead's own leading-zero-skip, or the rare recipe with
+  no band data past grey at all) — never silently treating an unknown
+  green threshold as "always past it."
+  """
+  @spec worth_crafting_at?(t(), non_neg_integer()) :: boolean()
+  def worth_crafting_at?(%__MODULE__{green: green, grey: grey}, skill),
+    do: skill < (green || grey)
 end

@@ -5,11 +5,13 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
     Item,
     ItemPrice,
     LevelingResult,
+    LevelingShoppingList,
     Pattern,
     PriceSnapshot,
     ProfessionLeveling,
     RecipeCostItem,
-    SkillUpBands
+    SkillUpBands,
+    SkillUpCurve
   }
 
   # Pure-function unit tests per docs/ELIXIR_TEST_MANIFESTO.md § What
@@ -116,6 +118,65 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
     test "at or above grey is no longer available" do
       refute LevelingResult.still_useful_at?(result_with_bands(10, grey: 50), 50)
       refute LevelingResult.still_useful_at?(result_with_bands(10, grey: 50), 60)
+    end
+
+    test "stops at green (the leveling page's own stricter, visitor-chosen cutoff), not grey" do
+      assert LevelingResult.still_useful_at?(result_with_bands(10, green: 40, grey: 50), 39)
+      refute LevelingResult.still_useful_at?(result_with_bands(10, green: 40, grey: 50), 40)
+    end
+  end
+
+  describe "SkillUpBands.worth_crafting_at?/2" do
+    test "stops at green, not grey — the visitor's own explicit choice" do
+      bands = %SkillUpBands{orange: 1, yellow: 10, green: 20, grey: 30}
+      assert SkillUpBands.worth_crafting_at?(bands, 19)
+      refute SkillUpBands.worth_crafting_at?(bands, 20)
+      refute SkillUpBands.worth_crafting_at?(bands, 25)
+    end
+
+    test "falls back to grey when green itself is unknown" do
+      bands = %SkillUpBands{orange: nil, yellow: nil, green: nil, grey: 30}
+      assert SkillUpBands.worth_crafting_at?(bands, 29)
+      refute SkillUpBands.worth_crafting_at?(bands, 30)
+    end
+  end
+
+  describe "SkillUpCurve.probability/3" do
+    test "always succeeds before yellow (the orange range)" do
+      bands = %SkillUpBands{yellow: 20, grey: 40}
+      assert SkillUpCurve.probability(bands, 1, 1) == 1.0
+      assert SkillUpCurve.probability(bands, 19, 1) == 1.0
+    end
+
+    test "declines linearly from 1.0 at yellow to 0.0 at grey" do
+      bands = %SkillUpBands{yellow: 20, grey: 40}
+      assert SkillUpCurve.probability(bands, 20, 1) == 1.0
+      assert SkillUpCurve.probability(bands, 30, 1) == 0.5
+      assert_in_delta SkillUpCurve.probability(bands, 39, 1), 0.05, 0.001
+    end
+
+    test "never succeeds at or past grey" do
+      bands = %SkillUpBands{yellow: 20, grey: 40}
+      assert SkillUpCurve.probability(bands, 40, 1) == 0.0
+      assert SkillUpCurve.probability(bands, 50, 1) == 0.0
+    end
+
+    test "anchors the decline at learned_at when yellow itself is unknown" do
+      bands = %SkillUpBands{yellow: nil, grey: 20}
+      assert SkillUpCurve.probability(bands, 10, 10) == 1.0
+      assert SkillUpCurve.probability(bands, 15, 10) == 0.5
+    end
+  end
+
+  describe "SkillUpCurve.expected_crafts/4" do
+    test "is exactly the number of skill points when every one is guaranteed (orange)" do
+      bands = %SkillUpBands{yellow: 100, grey: 200}
+      assert SkillUpCurve.expected_crafts(bands, 1, 1, 10) == 10.0
+    end
+
+    test "grows larger than the number of skill points once probability drops below 1.0" do
+      bands = %SkillUpBands{yellow: 10, grey: 20}
+      assert SkillUpCurve.expected_crafts(bands, 1, 10, 15) > 6
     end
   end
 
@@ -237,6 +298,20 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
 
       assert ProfessionLeveling.best_at(results, 10) == nil
     end
+
+    test "stops recommending a recipe once skill reaches its own green threshold, not grey" do
+      results = [
+        leveling_result(
+          wowhead_id: 1,
+          name: "Early",
+          bands: [green: 20, grey: 40],
+          sold_per_day: 50.0
+        )
+      ]
+
+      assert ProfessionLeveling.candidates_at(results, 19) != []
+      assert ProfessionLeveling.candidates_at(results, 20) == []
+    end
   end
 
   describe "build_path/1" do
@@ -318,6 +393,188 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
 
     test "no results with any band at all gives an empty path, not a crash" do
       assert ProfessionLeveling.build_path([]) == []
+    end
+  end
+
+  describe "LevelingResult.expected_crafts/3" do
+    test "nil when the recipe has no known skill-up band at all, never a fabricated number" do
+      p = pattern(wowhead_id: 1, skill: 1, bands: nil)
+
+      lr = %LevelingResult{
+        pattern: p,
+        profit_result: %WowForeverRecipeFinder.ProfitResult{pattern: p, missing_data_reasons: []}
+      }
+
+      assert LevelingResult.expected_crafts(lr, 1, 10) == nil
+    end
+
+    test "delegates to SkillUpCurve using the pattern's own bands and learned-at skill" do
+      p = pattern(wowhead_id: 1, skill: 1, bands: [yellow: 100, grey: 200])
+
+      lr = %LevelingResult{
+        pattern: p,
+        profit_result: %WowForeverRecipeFinder.ProfitResult{pattern: p, missing_data_reasons: []}
+      }
+
+      assert LevelingResult.expected_crafts(lr, 1, 10) == 10.0
+    end
+  end
+
+  describe "LevelingResult.total_cost_copper/2 and total_sell_copper/2" do
+    defp cost_result(opts) do
+      p =
+        pattern(
+          wowhead_id: 1,
+          skill: 1,
+          source: Keyword.get(opts, :source, :trainer),
+          recipe_cost_item: Keyword.get(opts, :recipe_cost_item)
+        )
+
+      %LevelingResult{
+        pattern: p,
+        profit_result: %WowForeverRecipeFinder.ProfitResult{
+          pattern: p,
+          price_copper: Keyword.fetch!(opts, :price_copper),
+          mat_cost_copper: Keyword.fetch!(opts, :mat_cost_copper),
+          missing_data_reasons: []
+        },
+        recipe_cost_copper: Keyword.get(opts, :recipe_cost_copper)
+      }
+    end
+
+    test "a trainer recipe's total cost is just the reagent total, over every craft" do
+      result = cost_result(source: :trainer, price_copper: 100, mat_cost_copper: 10)
+
+      assert LevelingResult.total_cost_copper(result, 5) == 50
+    end
+
+    test "a non-trainer recipe's total cost adds its own one-time purchase" do
+      item = %RecipeCostItem{wowhead_id: 2, display_name: "Pattern: Test"}
+
+      result =
+        cost_result(
+          source: :vendor,
+          recipe_cost_item: item,
+          recipe_cost_copper: 1000,
+          price_copper: 100,
+          mat_cost_copper: 10
+        )
+
+      assert LevelingResult.total_cost_copper(result, 5) == 50 + 1000
+    end
+
+    test "a non-trainer recipe with an unknown purchase price makes the whole total unknown" do
+      item = %RecipeCostItem{wowhead_id: 2, display_name: "Pattern: Test"}
+
+      result =
+        cost_result(
+          source: :vendor,
+          recipe_cost_item: item,
+          recipe_cost_copper: nil,
+          price_copper: 100,
+          mat_cost_copper: 10
+        )
+
+      assert LevelingResult.total_cost_copper(result, 5) == nil
+    end
+
+    test "total sell is the gross list price over every craft, before the AH cut" do
+      result = cost_result(price_copper: 100, mat_cost_copper: 10)
+
+      assert LevelingResult.total_sell_copper(result, 5) == 500
+    end
+  end
+
+  describe "LevelingShoppingList" do
+    test "a trainer recipe's lines are just its reagents, scaled by crafts needed" do
+      p = pattern(wowhead_id: 1, skill: 1, source: :trainer)
+
+      result = %LevelingResult{
+        pattern: p,
+        profit_result: %WowForeverRecipeFinder.ProfitResult{
+          pattern: p,
+          reagent_breakdown: [
+            %{
+              display_name: "Linen Cloth",
+              quantity: 2,
+              unit_price_copper: 10,
+              line_total_copper: 20
+            }
+          ],
+          missing_data_reasons: []
+        }
+      }
+
+      assert LevelingShoppingList.build_lines(result, 5) == [
+               %{
+                 display_name: "Linen Cloth",
+                 quantity: 10,
+                 unit_price_copper: 10,
+                 line_total_copper: 100
+               }
+             ]
+    end
+
+    test "a non-trainer recipe's lines lead with its own one-time purchase, quantity 1 regardless of crafts needed" do
+      item = %RecipeCostItem{wowhead_id: 2, display_name: "Pattern: Test"}
+      p = pattern(wowhead_id: 1, skill: 1, source: :vendor, recipe_cost_item: item)
+
+      result = %LevelingResult{
+        pattern: p,
+        profit_result: %WowForeverRecipeFinder.ProfitResult{
+          pattern: p,
+          reagent_breakdown: [
+            %{
+              display_name: "Linen Cloth",
+              quantity: 1,
+              unit_price_copper: 10,
+              line_total_copper: 10
+            }
+          ],
+          missing_data_reasons: []
+        },
+        recipe_cost_copper: 500
+      }
+
+      assert LevelingShoppingList.build_lines(result, 5) == [
+               %{
+                 display_name: "Pattern: Test",
+                 quantity: 1,
+                 unit_price_copper: 500,
+                 line_total_copper: 500
+               },
+               %{
+                 display_name: "Linen Cloth",
+                 quantity: 5,
+                 unit_price_copper: 10,
+                 line_total_copper: 50
+               }
+             ]
+    end
+
+    test "total_cost_copper/1 sums every line, or nil if any line's cost is unknown" do
+      assert LevelingShoppingList.total_cost_copper([
+               %{display_name: "a", quantity: 1, unit_price_copper: 10, line_total_copper: 10},
+               %{display_name: "b", quantity: 1, unit_price_copper: 20, line_total_copper: 20}
+             ]) == 30
+
+      assert LevelingShoppingList.total_cost_copper([
+               %{display_name: "a", quantity: 1, unit_price_copper: nil, line_total_copper: nil}
+             ]) == nil
+    end
+
+    test "to_auctionator_text/2 reuses the real Auctionator format" do
+      lines = [
+        %{
+          display_name: "Linen Cloth",
+          quantity: 10,
+          unit_price_copper: 10,
+          line_total_copper: 100
+        }
+      ]
+
+      assert LevelingShoppingList.to_auctionator_text("Test List", lines) ==
+               "*** Test List\nLinen Cloth\n"
     end
   end
 end
