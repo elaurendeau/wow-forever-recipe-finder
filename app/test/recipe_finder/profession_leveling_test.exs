@@ -291,12 +291,46 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
       assert ProfessionLeveling.best_at(results, 10).pattern.name == "Fast"
     end
 
-    test "best_at/2 is nil when nothing qualifies, never a fabricated pick" do
+    test "best_at/2 is nil only when no in-range recipe has a computable profit at all" do
       results = [
-        leveling_result(wowhead_id: 1, name: "Loses money", sold_per_day: 100.0, profit: -1)
+        leveling_result(wowhead_id: 1, name: "Unknown profit", sold_per_day: 100.0, profit: nil)
       ]
 
       assert ProfessionLeveling.best_at(results, 10) == nil
+    end
+
+    test "best_at/2 falls back to the least-bad losing recipe once nothing is safe" do
+      results = [
+        leveling_result(wowhead_id: 1, name: "Loses a lot", sold_per_day: 100.0, profit: -50),
+        leveling_result(wowhead_id: 2, name: "Loses a little", sold_per_day: 1.0, profit: -1)
+      ]
+
+      assert ProfessionLeveling.best_at(results, 10).pattern.name == "Loses a little"
+    end
+
+    test "loss_candidates_at/2 excludes a recipe with an unknown profit, never a fabricated loss" do
+      results = [
+        leveling_result(wowhead_id: 1, name: "Unknown profit", sold_per_day: 100.0, profit: nil)
+      ]
+
+      assert ProfessionLeveling.loss_candidates_at(results, 10) == []
+    end
+
+    test "loss_candidates_at/2 never includes a safe (non-losing) recipe" do
+      results = [
+        leveling_result(wowhead_id: 1, name: "Breaks even", sold_per_day: 100.0, profit: 0)
+      ]
+
+      assert ProfessionLeveling.loss_candidates_at(results, 10) == []
+    end
+
+    test "a safe recipe always wins over a losing one, regardless of sold/day" do
+      results = [
+        leveling_result(wowhead_id: 1, name: "Loses but fast", sold_per_day: 100.0, profit: -1),
+        leveling_result(wowhead_id: 2, name: "Safe but slow", sold_per_day: 1.0, profit: 1)
+      ]
+
+      assert ProfessionLeveling.best_at(results, 10).pattern.name == "Safe but slow"
     end
 
     test "stops recommending a recipe once skill reaches its own green threshold, not grey" do
@@ -393,6 +427,27 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
 
     test "no results with any band at all gives an empty path, not a crash" do
       assert ProfessionLeveling.build_path([]) == []
+    end
+
+    test "recommends the least-bad losing recipe rather than a gap when nothing is safe" do
+      p = pattern(wowhead_id: 1, name: "Only Option", skill: 1, bands: [grey: 10])
+
+      results = [
+        %LevelingResult{
+          pattern: p,
+          profit_result: %WowForeverRecipeFinder.ProfitResult{
+            pattern: p,
+            sold_per_day: 5.0,
+            net_profit_per_unit_copper: -1,
+            missing_data_reasons: []
+          }
+        }
+      ]
+
+      path = ProfessionLeveling.build_path(results)
+
+      assert Enum.map(path, &{&1.from_skill, &1.to_skill, &1.result && &1.result.pattern.name}) ==
+               [{1, 9, "Only Option"}, {10, 10, nil}]
     end
   end
 

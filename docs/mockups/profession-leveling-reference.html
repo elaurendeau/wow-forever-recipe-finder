@@ -95,12 +95,14 @@
   .item-tier { color: var(--muted); font-size: 11px; }
   .source-pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
   .profit-pos { color: var(--good); font-weight: 600; }
+  .profit-neg { color: var(--bad); font-weight: 600; }
   .muted-cell { color: var(--muted); }
 
   .gap-row td {
     color: var(--muted); font-style: italic;
     background: repeating-linear-gradient(135deg, transparent, transparent 10px, var(--surface-2) 10px, var(--surface-2) 20px);
   }
+  .loss-row { background: rgba(240, 120, 106, 0.08); }
 
   .shopping-popup {
     position: fixed; right: 24px; bottom: 24px; width: 360px; max-width: calc(100vw - 48px); max-height: 70vh;
@@ -149,7 +151,10 @@
     recipes that don't, craft whichever <strong>sells fastest</strong> — not whichever is most profitable.
     Skill-up thresholds are Wowhead's own real per-recipe data, not Classic's generic formula; a recipe stops
     counting the moment it turns <code>green</code>, not <code>grey</code> — green's skill-up chance is low enough
-    that switching (or a gap) beats grinding it out.
+    that switching (or a gap) beats grinding it out. When nothing is safe, the least-bad option is shown instead
+    of a gap — <span class="profit-neg">marked red</span>, sold on the <strong>Auction House</strong> at the
+    smallest known loss.
+    <span class="estimate-pill" title="This app has no vendor sell-price data at all — TSM's export only tracks Auction House activity, never vendor prices. Every figure and every recommendation on this page is an Auction House sale; there is currently no vendor comparison.">AH only — no vendor data yet</span>
     <span class="estimate-pill" title="No source has a real per-recipe skill-up probability for WoW Forever. Est. crafts, Total cost and Total sell use a commonly-cited Classic-era community formula (100% until yellow, declining to 0% at grey) applied to the real band boundaries above — an estimate, not a fact.">crafts/cost/sell are estimated</span>
   </div>
 
@@ -213,7 +218,12 @@
         profit: "(0g 0s 9c profit)", crafts: 72, totalCost: "4s 32c", totalSell: "6s 48c",
         lines: [{ name: "Strange Dust", qty: 72, cost: "4s 32c" }],
       },
-      { from: 66, to: 360, gap: true },
+      {
+        from: 66, to: 150, name: "Enchant Weapon — Minor Beastslayer", tier: "Journeyman", source: "Trainer", spd: "1.000",
+        profit: "(-0g 5c profit)", crafts: 85, totalCost: "6s 80c", totalSell: "5s 95c", loses: true,
+        lines: [{ name: "Small Glimmering Shard", qty: 85, cost: "6s 80c" }],
+      },
+      { from: 151, to: 360, gap: true },
     ],
   };
   const PROFESSIONS = [
@@ -249,18 +259,20 @@
     tbody.innerHTML = rows.map((row, i) => row.gap ? `
       <tr class="gap-row">
         <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
-        <td colspan="7">No recipe both still gives a skill-up here and is known not to lose money.</td>
+        <td colspan="7">No recipe is both still in range here and has a known price and reagent cost to compute a profit (or loss) from.</td>
       </tr>
     ` : `
-      <tr>
+      <tr${row.loses ? ' class="loss-row"' : ""}>
         <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
         <td>
           <a class="item-name" href="#" title="Opens the item's Wowhead page — not wired up in this mockup">${row.name}</a>
           <div class="item-tier">${row.tier}</div>
           <span class="source-pill">${row.source}</span>
+          <span class="source-pill" title="Every figure on this page is an Auction House sale — there is no vendor comparison yet (no vendor sell-price data exists).">sell: AH</span>
+          ${row.loses ? '<span class="source-pill profit-neg" title="No recipe in range at this skill is known not to lose money — this is the least-bad option, picked by smallest known loss then fastest sale.">loses money</span>' : ""}
         </td>
         <td class="num">${row.spd}</td>
-        <td class="num profit-pos">${row.profit}</td>
+        <td class="num ${row.loses ? "profit-neg" : "profit-pos"}">${row.profit}</td>
         <td class="num muted-cell">~${row.crafts}</td>
         <td class="num muted-cell">${row.totalCost}</td>
         <td class="num muted-cell">${row.totalSell}</td>

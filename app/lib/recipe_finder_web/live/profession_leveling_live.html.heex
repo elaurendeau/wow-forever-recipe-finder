@@ -47,7 +47,16 @@
     generic formula; a recipe stops counting the moment it turns <code>green</code>, not
     <code>grey</code>
     — green's skill-up chance is low enough that switching (or a gap) beats
-    grinding it out.
+    grinding it out. When nothing is safe, the least-bad option is shown instead of a gap —
+    <span class="rf-profit-neg" style="font-weight: 600;">marked red</span>
+    , sold on the <strong>Auction House</strong>
+    at the smallest known loss.
+    <span
+      class="rf-source-pill"
+      title="This app has no vendor sell-price data at all — TSM's export only tracks Auction House activity, never vendor prices. Every figure and every recommendation on this page is an Auction House sale; there is currently no vendor comparison."
+    >
+      AH only — no vendor data yet
+    </span>
     <span
       class="rf-source-pill"
       title="No source has a real per-recipe skill-up probability for WoW Forever. Est. crafts, Total cost and Total sell use a commonly-cited Classic-era community formula (100% until yellow, declining to 0% at grey) applied to the real band boundaries above — an estimate, not a fact."
@@ -135,8 +144,11 @@
         </thead>
         <tbody>
           <%= for segment <- @path do %>
+            <% loses_money? =
+              segment.result && segment.result.profit_result.net_profit_per_unit_copper &&
+                segment.result.profit_result.net_profit_per_unit_copper < 0 %>
             <%= if segment.result do %>
-              <tr>
+              <tr class={loses_money? && "rf-leveling-loss"}>
                 <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
                 <td>
                   <a
@@ -149,6 +161,20 @@
                   </a>
                   <div class="rf-item-tier">{to_string(segment.result.pattern.tier)}</div>
                   <span class="rf-source-pill">{to_string(segment.result.pattern.source)}</span>
+                  <span
+                    class="rf-source-pill"
+                    title="Every figure on this page is an Auction House sale — there is no vendor comparison yet (no vendor sell-price data exists)."
+                  >
+                    sell: AH
+                  </span>
+                  <%= if loses_money? do %>
+                    <span
+                      class="rf-source-pill rf-profit-neg"
+                      title="No recipe in range at this skill is known not to lose money — this is the least-bad option, picked by smallest known loss then fastest sale."
+                    >
+                      loses money
+                    </span>
+                  <% end %>
                 </td>
                 <td class="num">{format_number(segment.result.profit_result.sold_per_day)}</td>
                 <td class={[
@@ -188,7 +214,8 @@
               <tr class="rf-leveling-gap">
                 <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
                 <td colspan="7">
-                  No recipe both still gives a skill-up here and is known not to lose money.
+                  No recipe is both still in range here and has a known price and reagent cost to
+                  compute a profit (or loss) from.
                 </td>
               </tr>
             <% end %>
@@ -209,6 +236,9 @@
 <%= if @shopping_segment do %>
   <% crafts = crafts_needed(@shopping_segment) %>
   <% lines = LevelingShoppingList.build_lines(@shopping_segment.result, crafts) %>
+  <% loses_money? =
+    @shopping_segment.result.profit_result.net_profit_per_unit_copper &&
+      @shopping_segment.result.profit_result.net_profit_per_unit_copper < 0 %>
   <div class="rf-shopping-popup">
     <div class="rf-shopping-popup-header">
       <strong>{@shopping_segment.result.pattern.name} Shopping List</strong>
@@ -221,6 +251,11 @@
         &times;
       </button>
     </div>
+    <%= if loses_money? do %>
+      <div class="rf-profit-neg">
+        Sells on the AH at a loss — the least-bad option here, not a profitable one.
+      </div>
+    <% end %>
     <div>
       <strong>~{crafts}</strong>
       crafts (estimated) for skill {skill_range_label(

@@ -882,3 +882,6 @@ a {
     var(--surface) 20px
   );
 }
+.rf-leveling-loss {
+  background: rgba(240, 120, 106, 0.08);
+}

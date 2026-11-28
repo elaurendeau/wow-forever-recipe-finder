@@ -53,10 +53,10 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLiveTest do
     assert html =~ "1–7"
     assert html =~ "Early Robe"
 
-    # No recipe covers skill 8-14 (Early Robe already green, Later Robe
-    # not learnable yet) — a real gap, shown, never hidden.
-    assert html =~ "8–14"
-    assert html =~ "No recipe both still gives a skill-up here"
+    # Skill 14 alone is a real gap: Loss Filler (see below) already
+    # green by then, Later Robe not learnable yet.
+    assert html =~ "14"
+    assert html =~ "No recipe is both still in range here and has a known price and reagent cost"
 
     # Later Robe (vendor, learned 15, colors [15,18,20,25]) covers
     # 15-19, stopping at its own green (20), not grey (25).
@@ -72,6 +72,29 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLiveTest do
     # one-time AH purchase (item 9304, Recent Value 1900c) on top of
     # its reagent total (10c x 6 = 60c) = 1960c = 19s 60c.
     assert html =~ ~r{Later Robe.*?~6.*?19s 60c}s
+  end
+
+  test "recommends the least-bad losing recipe, clearly marked, instead of a gap",
+       %{conn: conn} do
+    {:ok, view, _html} = live(conn, ~p"/profession-leveling")
+    html = upload_tsm_export(view)
+
+    # Loss Filler (trainer, learned 8, colors [8,10,14,15]) is the only
+    # recipe in range for skill 8-13 — Early Robe is already green,
+    # Later Robe isn't learnable yet — and it loses 5c per craft (price
+    # 5c recent, reagent cost 10c). It's recommended anyway, not shown
+    # as a gap, since it's still the least-bad real option.
+    assert html =~ "8–13"
+    assert html =~ "Loss Filler"
+    assert html =~ ~r{Loss Filler.*?class="rf-source-pill rf-profit-neg"[^>]*>\s*loses money}s
+
+    # Every real recommendation — safe or losing — is marked as an AH
+    # sale, since this app has no vendor data at all.
+    assert html =~ "sell: AH"
+
+    # The row itself gets a distinct loss styling, not the same
+    # treatment as a safe recommendation.
+    assert html =~ ~r{<tr class="rf-leveling-loss">.*?Loss Filler}s
   end
 
   test "switching price basis recomputes the path's total cost", %{conn: conn} do

@@ -26,6 +26,30 @@
       "recipe_cost_item": null
     },
     {
+      "name": "Loss Filler",
+      "tier": "apprentice",
+      "skill": 8,
+      "source": "trainer",
+      "wiki_slug": "Loss_Filler",
+      "resolution_status": "resolved",
+      "crafted_item": {
+        "wowhead_id": 9305,
+        "display_name": "Loss Filler",
+        "wiki_slug": "Loss_Filler"
+      },
+      "reagents": [
+        {
+          "wowhead_id": 9302,
+          "display_name": "Test Cloth",
+          "wiki_slug": "Test_Cloth",
+          "quantity": 1
+        }
+      ],
+      "wowhead_spell_id": 9403,
+      "skill_up_colors": [8, 10, 14, 15],
+      "recipe_cost_item": null
+    },
+    {
       "name": "Later Robe",
       "tier": "journeyman",
       "skill": 15,

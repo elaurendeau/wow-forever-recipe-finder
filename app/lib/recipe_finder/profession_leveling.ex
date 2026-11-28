@@ -22,6 +22,24 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   Reuses `ProfitComputation`'s own per-craft profit math (same price
   basis as every other page) rather than duplicating it — this
   context's only job is the one-time recipe cost and the path itself.
+
+  **Revised 2026-11-28 — a "least-bad" fallback when nothing is safe.**
+  Previously a skill range with no never-loses-money candidate was
+  always a gap. Now, when that happens, `best_at/2` falls back to
+  `loss_candidates_at/2`: every in-range recipe with a *known* profit
+  figure that does lose money, ranked by the smallest loss first (tied
+  by sold/day, same priority as the safe path) — selling on the Auction
+  House anyway, just at the least-bad recipe available, rather than
+  doing nothing. **This is an Auction House recommendation, same as
+  every other figure on this page — there is no "vendor" option here.**
+  WoW Forever items do have a vendor sell price, but it isn't anywhere
+  in this app's catalog or in TSM's own export (AuctionDB tracks AH
+  activity only, never vendor prices) — comparing "sell on AH at a
+  small loss" against "vendor it instead" would need that data
+  captured first; see docs/PRD.md § 7.13 for the explicit, open
+  follow-up. A gap still appears when no in-range recipe has a
+  *computable* profit at all (price or reagent cost missing from the
+  snapshot) — never a fabricated number standing in for real data.
   """
 
   alias WowForeverRecipeFinder.{
@@ -86,15 +104,39 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   end
 
   @doc """
+  Every result still in range at `skill` with a *known* profit figure
+  that does lose money — the fallback pool once no safe recipe is
+  available (see this module's own doc for why this is an Auction
+  House recommendation, never a vendor one). Sorted by the smallest
+  loss first (highest, i.e. least negative, `net_profit_per_unit_copper`),
+  tied by sold/day descending — same priority order as `candidates_at/2`.
+  """
+  @spec loss_candidates_at([LevelingResult.t()], non_neg_integer()) :: [LevelingResult.t()]
+  def loss_candidates_at(results, skill) do
+    results
+    |> Enum.filter(&(LevelingResult.still_useful_at?(&1, skill) and known_loss?(&1)))
+    |> Enum.sort_by(&loss_sort_key/1)
+  end
+
+  @doc """
   The best single candidate at `skill` — highest sold/day among every
-  recipe that's both still useful and never loses money. `nil` (never
-  a fabricated pick) when nothing qualifies at that skill level.
+  recipe that's both still useful and never loses money, if any exist.
+  Otherwise the least-bad `loss_candidates_at/2` option (still an
+  Auction House sale, just one that loses the smallest known amount).
+  `nil` (never a fabricated pick) only when nothing at all qualifies —
+  no recipe in range at that skill, or none with a computable profit.
   """
   @spec best_at([LevelingResult.t()], non_neg_integer()) :: LevelingResult.t() | nil
   def best_at(results, skill) do
     case candidates_at(results, skill) do
-      [best | _rest] -> best
-      [] -> nil
+      [best | _rest] ->
+        best
+
+      [] ->
+        case loss_candidates_at(results, skill) do
+          [best | _rest] -> best
+          [] -> nil
+        end
     end
   end
 
@@ -105,9 +147,11 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
   universal cap would be exactly the kind of un-verified guess this
   feature exists to avoid). Consecutive skill levels recommending the
   same result are collapsed into one segment; a segment with `result:
-  nil` means no known recipe both still gives a skill-up and is known
-  not to lose money at that skill — shown, never hidden, so a gap in
-  the data or the market is visible rather than silently skipped.
+  nil` means no recipe in range at that skill has a *computable* profit
+  at all (never that every option merely loses money — `best_at/2`
+  falls back to the least-bad losing recipe before giving up) — shown,
+  never hidden, so a real gap in the data or the market stays visible
+  rather than silently skipped.
   """
   @spec build_path([LevelingResult.t()]) :: [path_segment()]
   def build_path(results) do
@@ -151,6 +195,12 @@ defmodule WowForeverRecipeFinder.ProfessionLeveling do
 
   defp sold_per_day_sort_key(%LevelingResult{profit_result: %{sold_per_day: nil}}), do: {1, 0.0}
   defp sold_per_day_sort_key(%LevelingResult{profit_result: %{sold_per_day: spd}}), do: {0, -spd}
+
+  defp known_loss?(%LevelingResult{profit_result: %{net_profit_per_unit_copper: nil}}), do: false
+  defp known_loss?(%LevelingResult{profit_result: %{net_profit_per_unit_copper: p}}), do: p < 0
+
+  defp loss_sort_key(%LevelingResult{profit_result: %{net_profit_per_unit_copper: p}} = lr),
+    do: {-p, sold_per_day_sort_key(lr)}
 
   # The recipe's own one-time cost — never conflated with the per-craft
   # mat_cost_copper. `nil` whenever any part of the chain is unknown
