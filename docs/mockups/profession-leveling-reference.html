@@ -177,6 +177,7 @@
           <th class="num" title="Estimated — see the note above the table">Est. crafts</th>
           <th class="num" title="Estimated — includes the recipe's own one-time purchase, if it has one">Total cost</th>
           <th class="num" title="Estimated — gross sale value, before the AH cut">Total sell</th>
+          <th class="num" title="Estimated — total sell minus total cost, including the recipe's own one-time purchase (unlike Profit/craft, which only covers reagents)">Total profit/loss</th>
           <th></th>
         </tr>
       </thead>
@@ -202,12 +203,12 @@
     tailoring: [
       {
         from: 1, to: 46, name: "White Linen Shirt", tier: "Apprentice", source: "Trainer", spd: "5.200",
-        profit: "(1s 46c profit)", crafts: 50, totalCost: "60s 0c", totalSell: "1g 40s 0c",
+        profit: "(1s 46c profit)", crafts: 50, totalCost: "60s 0c", totalSell: "1g 40s 0c", totalProfit: "80s 0c",
         lines: [{ name: "Bolt of Linen Cloth", qty: 50, cost: "25s 0c" }, { name: "Coarse Thread", qty: 50, cost: "15s 0c" }, { name: "Bleach", qty: 50, cost: "20s 0c" }],
       },
       {
         from: 47, to: 76, name: "Red Linen Vest", tier: "Apprentice", source: "Drop", spd: "0.600",
-        profit: "(13s 35c profit)", crafts: 36, totalCost: "3g 40s 80c", totalSell: "6g 12s 0c",
+        profit: "(13s 35c profit)", crafts: 36, totalCost: "3g 40s 80c", totalSell: "6g 12s 0c", totalProfit: "2g 71s 20c",
         lines: [{ name: "Pattern: Red Linen Vest", qty: 1, cost: "2g 50s 0c" }, { name: "Bolt of Linen Cloth", qty: 72, cost: "36s 0c" }, { name: "Red Dye", qty: 36, cost: "4s 80c" }],
       },
       { from: 77, to: 350, gap: true },
@@ -215,12 +216,12 @@
     enchanting: [
       {
         from: 1, to: 65, name: "Enchant Bracer — Minor Health", tier: "Apprentice", source: "Trainer", spd: "48.100",
-        profit: "(0g 0s 9c profit)", crafts: 72, totalCost: "4s 32c", totalSell: "6s 48c",
+        profit: "(0g 0s 9c profit)", crafts: 72, totalCost: "4s 32c", totalSell: "6s 48c", totalProfit: "2s 16c",
         lines: [{ name: "Strange Dust", qty: 72, cost: "4s 32c" }],
       },
       {
         from: 66, to: 150, name: "Enchant Weapon — Minor Beastslayer", tier: "Journeyman", source: "Trainer", spd: "1.000",
-        profit: "(-0g 5c profit)", crafts: 85, totalCost: "6s 80c", totalSell: "5s 95c", loses: true,
+        profit: "(-0g 5c profit)", crafts: 85, totalCost: "6s 80c", totalSell: "5s 95c", totalProfit: "-85c", loses: true,
         lines: [{ name: "Small Glimmering Shard", qty: 85, cost: "6s 80c" }],
       },
       { from: 151, to: 360, gap: true },
@@ -259,7 +260,7 @@
     tbody.innerHTML = rows.map((row, i) => row.gap ? `
       <tr class="gap-row">
         <td class="num">${row.from}${row.from === row.to ? "" : "–" + row.to}</td>
-        <td colspan="7">No recipe is both still in range here and has a known price and reagent cost to compute a profit (or loss) from.</td>
+        <td colspan="8">No recipe is both still in range here and has a known price and reagent cost to compute a profit (or loss) from.</td>
       </tr>
     ` : `
       <tr${row.loses ? ' class="loss-row"' : ""}>
@@ -276,6 +277,7 @@
         <td class="num muted-cell">~${row.crafts}</td>
         <td class="num muted-cell">${row.totalCost}</td>
         <td class="num muted-cell">${row.totalSell}</td>
+        <td class="num ${row.totalProfit.startsWith("-") ? "profit-neg" : "profit-pos"}">${row.totalProfit}</td>
         <td class="num"><button type="button" class="side-chip" data-row="${i}">Shopping list</button></td>
       </tr>
     `).join("");

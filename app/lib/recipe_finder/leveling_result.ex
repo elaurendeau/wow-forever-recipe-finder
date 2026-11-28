@@ -66,13 +66,19 @@ defmodule WowForeverRecipeFinder.LevelingResult do
 
   @doc """
   Total cost across `crafts` crafts: the reagent total, plus the
-  recipe's own one-time AH purchase if it has one. Trainer recipes add
-  nothing (no AH cost applies at all); a non-trainer recipe whose
-  purchase price isn't known in the current snapshot makes the whole
-  total `nil` — never silently treated as free.
+  recipe's own one-time AH purchase if it has one. Branches on
+  `recipe_cost_item` itself, never on `pattern.source` — a pattern with
+  no recorded source at all (a real, non-trivial share of the catalog —
+  see docs/DATA_SOURCES.md) is not "unknown whether it needs a
+  purchase," it's simply read the same as a trainer recipe: no
+  `recipe_cost_item` attached, no one-time cost to add. Only a recipe
+  whose purchase item IS known but whose price isn't in the current
+  snapshot makes the whole total `nil` — that's the one case where a
+  real cost exists and genuinely can't be quantified; never silently
+  treated as free.
   """
   @spec total_cost_copper(t(), pos_integer()) :: non_neg_integer() | nil
-  def total_cost_copper(%__MODULE__{pattern: %{source: :trainer}} = result, crafts),
+  def total_cost_copper(%__MODULE__{pattern: %{recipe_cost_item: nil}} = result, crafts),
     do: total_reagent_cost_copper(result, crafts)
 
   def total_cost_copper(%__MODULE__{recipe_cost_copper: nil}, _crafts), do: nil
@@ -84,4 +90,21 @@ defmodule WowForeverRecipeFinder.LevelingResult do
   @spec total_sell_copper(t(), pos_integer()) :: non_neg_integer()
   def total_sell_copper(%__MODULE__{profit_result: %{price_copper: price}}, crafts),
     do: price * crafts
+
+  @doc """
+  Total profit or loss across `crafts` crafts: total sell minus total
+  cost — unlike `profit_result.net_profit_per_unit_copper` (per-craft,
+  reagents only), this nets out the recipe's own one-time purchase too,
+  so it's the real bottom line for actually leveling through this
+  segment. `nil` whenever `total_cost_copper/2` itself is (a known
+  one-time purchase with no price in the snapshot) — never a partial
+  sum presented as the whole.
+  """
+  @spec total_profit_copper(t(), pos_integer()) :: integer() | nil
+  def total_profit_copper(%__MODULE__{} = result, crafts) do
+    case total_cost_copper(result, crafts) do
+      nil -> nil
+      cost -> total_sell_copper(result, crafts) - cost
+    end
+  end
 end

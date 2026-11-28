@@ -533,10 +533,60 @@ defmodule WowForeverRecipeFinder.ProfessionLevelingTest do
       assert LevelingResult.total_cost_copper(result, 5) == nil
     end
 
+    test "a recipe with no recorded source at all, but no recipe_cost_item either, is just the reagent total" do
+      # Regression: the first clause used to key off pattern.source ==
+      # :trainer, so a pattern with no recorded source (a real,
+      # non-trivial share of the catalog) fell through to "unknown
+      # total" even with no recipe_cost_item at all to justify it.
+      result = cost_result(source: nil, price_copper: 100, mat_cost_copper: 10)
+
+      assert LevelingResult.total_cost_copper(result, 5) == 50
+    end
+
     test "total sell is the gross list price over every craft, before the AH cut" do
       result = cost_result(price_copper: 100, mat_cost_copper: 10)
 
       assert LevelingResult.total_sell_copper(result, 5) == 500
+    end
+  end
+
+  describe "LevelingResult.total_profit_copper/2" do
+    test "total sell minus total cost, for a trainer recipe (reagents only)" do
+      result = cost_result(source: :trainer, price_copper: 100, mat_cost_copper: 10)
+
+      # sell: 100 * 5 = 500; cost: 10 * 5 = 50
+      assert LevelingResult.total_profit_copper(result, 5) == 450
+    end
+
+    test "nets out the recipe's own one-time purchase too, unlike per-craft profit" do
+      item = %RecipeCostItem{wowhead_id: 2, display_name: "Pattern: Test"}
+
+      result =
+        cost_result(
+          source: :vendor,
+          recipe_cost_item: item,
+          recipe_cost_copper: 200,
+          price_copper: 100,
+          mat_cost_copper: 10
+        )
+
+      # sell: 100 * 5 = 500; cost: 10 * 5 + 200 = 250
+      assert LevelingResult.total_profit_copper(result, 5) == 250
+    end
+
+    test "nil when the one-time purchase price is unknown, never a partial sum" do
+      item = %RecipeCostItem{wowhead_id: 2, display_name: "Pattern: Test"}
+
+      result =
+        cost_result(
+          source: :vendor,
+          recipe_cost_item: item,
+          recipe_cost_copper: nil,
+          price_copper: 100,
+          mat_cost_copper: 10
+        )
+
+      assert LevelingResult.total_profit_copper(result, 5) == nil
     end
   end
 

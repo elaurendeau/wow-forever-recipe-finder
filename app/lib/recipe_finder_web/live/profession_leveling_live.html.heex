@@ -139,6 +139,12 @@
             <th class="num" title="Estimated — gross sale value, before the AH cut">
               Total sell
             </th>
+            <th
+              class="num"
+              title="Estimated — total sell minus total cost, including the recipe's own one-time purchase (unlike Profit/craft, which only covers reagents)"
+            >
+              Total profit/loss
+            </th>
             <th></th>
           </tr>
         </thead>
@@ -160,7 +166,9 @@
                     {segment.result.pattern.name}
                   </a>
                   <div class="rf-item-tier">{to_string(segment.result.pattern.tier)}</div>
-                  <span class="rf-source-pill">{to_string(segment.result.pattern.source)}</span>
+                  <%= if segment.result.pattern.source do %>
+                    <span class="rf-source-pill">{to_string(segment.result.pattern.source)}</span>
+                  <% end %>
                   <span
                     class="rf-source-pill"
                     title="Every figure on this page is an Auction House sale — there is no vendor comparison yet (no vendor sell-price data exists)."
@@ -199,6 +207,15 @@
                     LevelingResult.total_sell_copper(segment.result, crafts_needed(segment))
                   )}
                 </td>
+                <% total_profit =
+                  LevelingResult.total_profit_copper(segment.result, crafts_needed(segment)) %>
+                <td class={[
+                  "num",
+                  total_profit && total_profit > 0 && "rf-profit-pos",
+                  total_profit && total_profit <= 0 && "rf-profit-neg"
+                ]}>
+                  {format_copper(total_profit)}
+                </td>
                 <td class="num">
                   <button
                     type="button"
@@ -213,7 +230,7 @@
             <% else %>
               <tr class="rf-leveling-gap">
                 <td class="num">{skill_range_label(segment.from_skill, segment.to_skill)}</td>
-                <td colspan="7">
+                <td colspan="8">
                   No recipe is both still in range here and has a known price and reagent cost to
                   compute a profit (or loss) from.
                 </td>

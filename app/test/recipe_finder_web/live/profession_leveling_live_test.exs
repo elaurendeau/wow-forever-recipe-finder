@@ -72,6 +72,11 @@ defmodule WowForeverRecipeFinderWeb.ProfessionLevelingLiveTest do
     # one-time AH purchase (item 9304, Recent Value 1900c) on top of
     # its reagent total (10c x 6 = 60c) = 1960c = 19s 60c.
     assert html =~ ~r{Later Robe.*?~6.*?19s 60c}s
+
+    # Total profit/loss nets out everything (unlike Profit/craft, which
+    # is reagents-only): Early Robe sells at 95c recent x 8 crafts =
+    # 760c, minus its 80c reagent-only total cost = 680c = 6s 80c.
+    assert html =~ ~r{Early Robe.*?6s 80c}s
   end
 
   test "recommends the least-bad losing recipe, clearly marked, instead of a gap",
