@@ -93,7 +93,7 @@ The main view is a row of profession tabs; selecting one shows that profession's
 **Requirements:**
 - Free-text search by pattern/item name.
 - Source-type toggle (Trainer / Drop / Vendor / Quest).
-- Inline min/max threshold filters built into the relevant column headers (min sold/day, min confidence, max price, min profit, min profit %) — not a separate filter bar.
+- Inline min/max threshold filters built into the relevant column headers (min/max skill, min sold/day, min confidence, max price, min profit, min profit %) — not a separate filter bar. The skill filter is the only min/max *pair* (every other column is a single bound) — added 2026-11-28 so a visitor can scope the table to their own current skill bracket.
 - Sortable columns with a visible active-sort indicator.
 - A "profitable only" toggle (hide anything with net profit ≤ 0).
 

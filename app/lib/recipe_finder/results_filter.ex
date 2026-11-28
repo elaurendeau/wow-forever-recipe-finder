@@ -13,6 +13,8 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
           optional(:search) => String.t(),
           optional(:sources) => MapSet.t(String.t()),
           optional(:profitable_only?) => boolean(),
+          optional(:min_skill) => non_neg_integer() | nil,
+          optional(:max_skill) => non_neg_integer() | nil,
           optional(:min_sold_per_day) => float() | nil,
           optional(:min_confidence_pct) => float() | nil,
           optional(:max_price_copper) => non_neg_integer() | nil,
@@ -26,6 +28,8 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
     search: "",
     sources: MapSet.new(@known_sources),
     profitable_only?: true,
+    min_skill: nil,
+    max_skill: nil,
     min_sold_per_day: nil,
     min_confidence_pct: nil,
     max_price_copper: nil,
@@ -55,11 +59,17 @@ defmodule WowForeverRecipeFinder.ResultsFilter do
     search_match?(result, criteria.search) and
       source_match?(result, criteria.sources) and
       profitable_match?(result, criteria.profitable_only?) and
+      skill_match?(result, criteria) and
       threshold_match?(result.sold_per_day, criteria.min_sold_per_day, :min) and
       threshold_match?(result.sale_confidence_pct, criteria.min_confidence_pct, :min) and
       threshold_match?(result.price_copper, criteria.max_price_copper, :max) and
       threshold_match?(result.net_profit_per_unit_copper, criteria.min_profit_copper, :min) and
       threshold_match?(result.profit_pct, criteria.min_profit_pct, :min)
+  end
+
+  defp skill_match?(%ProfitResult{pattern: %{skill: skill}}, criteria) do
+    threshold_match?(skill, criteria.min_skill, :min) and
+      threshold_match?(skill, criteria.max_skill, :max)
   end
 
   defp search_match?(_result, ""), do: true

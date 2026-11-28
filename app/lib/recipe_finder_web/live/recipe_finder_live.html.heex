@@ -172,7 +172,20 @@
             </tr>
             <tr class="rf-table-filter-row">
               <td></td>
-              <td></td>
+              <td class="rf-skill-filter">
+                <input
+                  type="text"
+                  name="filter[min_skill]"
+                  placeholder="min"
+                  value={@filter.min_skill}
+                />
+                <input
+                  type="text"
+                  name="filter[max_skill]"
+                  placeholder="max"
+                  value={@filter.max_skill}
+                />
+              </td>
               <td></td>
               <td>
                 <input

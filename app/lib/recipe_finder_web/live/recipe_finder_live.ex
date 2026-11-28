@@ -142,6 +142,8 @@ defmodule WowForeverRecipeFinderWeb.RecipeFinderLive do
         search: Map.get(params, "search", socket.assigns.filter.search),
         sources: MapSet.new(Map.get(params, "sources", [])),
         profitable_only?: Map.has_key?(params, "profitable_only"),
+        min_skill: parse_int(Map.get(params, "min_skill")),
+        max_skill: parse_int(Map.get(params, "max_skill")),
         min_sold_per_day: parse_float(Map.get(params, "min_sold_per_day")),
         min_confidence_pct: parse_float(Map.get(params, "min_confidence_pct")),
         max_price_copper: parse_int(Map.get(params, "max_price_copper")),

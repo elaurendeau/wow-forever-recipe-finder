@@ -9,7 +9,7 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
       crafted_item: %Item{wowhead_id: 1, display_name: name, wiki_slug: name},
       name: name,
       tier: :apprentice,
-      skill: 1,
+      skill: Keyword.get(opts, :skill, 1),
       source: source,
       wiki_slug: name,
       resolution_status: :resolved,
@@ -110,6 +110,31 @@ defmodule WowForeverRecipeFinder.ResultsFilterTest do
       })
 
     assert Enum.map(desc, & &1.pattern.name) == ["High ROI", "Low ROI", "No ROI"]
+  end
+
+  test "min_skill and max_skill filter by the pattern's own required skill level" do
+    results = [
+      result("Low skill", :trainer, skill: 1),
+      result("Mid skill", :trainer, skill: 150),
+      result("High skill", :trainer, skill: 300)
+    ]
+
+    filtered =
+      ResultsFilter.apply(results, %{min_skill: 100, max_skill: 200, profitable_only?: false})
+
+    assert Enum.map(filtered, & &1.pattern.name) == ["Mid skill"]
+  end
+
+  test "min_skill and max_skill are inclusive of the boundary values" do
+    results = [
+      result("Exactly min", :trainer, skill: 100),
+      result("Exactly max", :trainer, skill: 200)
+    ]
+
+    filtered =
+      ResultsFilter.apply(results, %{min_skill: 100, max_skill: 200, profitable_only?: false})
+
+    assert Enum.map(filtered, & &1.pattern.name) == ["Exactly min", "Exactly max"]
   end
 
   test "threshold filter on profit percentage excludes rows below the minimum" do

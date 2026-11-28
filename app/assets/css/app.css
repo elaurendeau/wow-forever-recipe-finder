@@ -259,6 +259,14 @@ a {
   border-bottom: 1px solid var(--border);
   text-align: right;
 }
+.rf-skill-filter {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+}
+.rf-skill-filter input {
+  width: 44px !important;
+}
 .rf-table-filter-row input {
   width: 64px;
   font-size: 11px;
